@@ -1,3 +1,7 @@
+<?php
+include_once "autoloader.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +13,12 @@
 </head>
 
 <body>
-
+    <?= Nav::bar() ?>
+    <?php echo <<<SOME
+    <div><h1>Home</h1></div>
+    SOME;
+    ?>
+    <?= Tst::test() ?>
 </body>
 
 </html>
