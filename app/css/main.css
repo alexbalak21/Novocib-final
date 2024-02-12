@@ -4,6 +4,8 @@
     --darker-blue: #4167b1;
     --grey: #dbdbdb;
     --dark-blue: #274f8c;
+    --bs-btn-bg: #3771c8 !important;
+    --primary: #3771c8 !important;
 }
 
 * {
