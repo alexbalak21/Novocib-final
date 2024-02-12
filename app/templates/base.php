@@ -16,20 +16,30 @@ if (!isset($lang)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app/css/main.css">
+    <!-- BOOTSTRAP  -->
+    <link rel="stylesheet" href="app/css/bootstrap.min.css">
+    <script src="app/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://kit.fontawesome.com/6502c70df0.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="app/static/img/icon.png" />
     <title><?= $title ?></title>
 </head>
 
 <body>
     <?= Nav::bar() ?>
     <?php
-    if (!isset($content)) {
-        $content = "<div>
-        <h1>Base Template</h1>
-        <p>Use '\$content to output the content of the page.</p>
-        </div>";
+    global $content;
+    $content = "";
+    function addContent($passedContent = "")
+    {
+        global $content;
+        $content .= $passedContent;
     }
-    echo $content;
+    function render()
+    {
+        global $content;
+        echo $content;
+    }
+
     ?>
 
 </body>

@@ -6,8 +6,6 @@ $req_uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 //REQUETS PARAMETERS
 // $_REQUEST
 
-echo "request : $req_uri";
-
 switch ($req_uri) {
     case '/':
     case '/home':
