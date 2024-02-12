@@ -5,7 +5,7 @@ class Nav
     {
         return <<<NAVBAR
     <div class="navigation">
-    <a class="logo" href=""><img src="logo.png" /></a>
+    <a class="logo" href="/"><img src="app/static/img/logo.png" alt="Novocib logo" /></a>
     <input type="checkbox" id="nav-toggle" />
     <label class="navbars" for="nav-toggle"><i id="nav-bars" class="fa-solid fa-bars"></i></label>
     <nav>
@@ -14,13 +14,13 @@ class Nav
             <li>
                 <a>
                     LINK
-                    <i class="fa-solid fa-caret-down"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <ul>
                     <li class="">
                         <a>
                             DOWN
-                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </a>
                         <ul>
                             <li><a href="">LINK 1</a></li>
@@ -30,7 +30,7 @@ class Nav
                     <li class="">
                         <a>
                             DWON
-                            <i class="fa-solid fa-caret-right"></i>
+                            <i class="fa-solid fa-chevron-right"></i>
                         </a>
                         <ul>
                             <li><a href="">LINK 1</a></li>
@@ -42,7 +42,7 @@ class Nav
             <li>
                 <a>
                     LINK
-                    <i class="fa-solid fa-caret-down"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </a>
                 <ul>
                     <li><a href="">LINK</a></li>
@@ -60,11 +60,11 @@ NAVBAR;
 
 <style>
     .navigation {
-        position: initial;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
-        background: white;
+        background-color: rgba(200, 200, 200, 0.9);
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         display: flex;
         align-items: center;
@@ -103,6 +103,7 @@ NAVBAR;
     nav ul li ul {
         position: absolute;
         left: 0;
+        margin-top: -1px;
         background: white;
         display: none;
     }
@@ -117,7 +118,7 @@ NAVBAR;
         top: 0;
     }
 
-    nav ul li.open>ul {
+    nav ul li:hover.open>ul {
         display: initial;
     }
 
