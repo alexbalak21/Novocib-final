@@ -1,24 +1,40 @@
 <?php
-include_once "autoloader.php";
-?>
+$req_uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
-<!DOCTYPE html>
-<html lang="en">
+// $req_uri = substr($req_uri, -1) == '/' ? substr_replace($req_uri, "", -1) : $req_uri;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Novocib</title>
-</head>
+//REQUETS PARAMETERS
+// $_REQUEST
 
-<body>
-    <?= Nav::bar() ?>
-    <?php echo <<<SOME
-    <div><h1>Home</h1></div>
-    SOME;
-    ?>
-    <?= Tst::test() ?>
-</body>
+echo "request : $req_uri";
 
-</html>
+switch ($req_uri) {
+    case '/':
+    case '/home':
+        require_once "app/views/home.php";
+        break;
+
+    case '/post':
+        require_once "./views/post.php";
+        break;
+
+    case '/user':
+        require_once "./views/user.php";
+        break;
+
+    case '/about':
+        require_once "./views/about.php";
+        break;
+
+    case '/version':
+        require_once "./views/version.php";
+        break;
+
+    case '/resetpass':
+        require_once "./views/resetpass.php";
+        break;
+
+    default:
+        require_once "app/views/404.php";
+        break;
+}

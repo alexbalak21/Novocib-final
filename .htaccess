@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Redirect requests to index.php
+
+RewriteCond %{REQUEST_URI} !=/index.php
+RewriteRule .\* /index.php
