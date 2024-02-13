@@ -54,3 +54,11 @@ class Carousel
 CAROUSEL;
     }
 }
+
+?>
+
+<style>
+    .carousel-inner {
+        height: 800px;
+    }
+</style>

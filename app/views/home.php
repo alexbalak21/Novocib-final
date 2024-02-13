@@ -25,6 +25,9 @@ $card_container = <<<CARD_CONTAINER
 </div>  
 </div>
 CARD_CONTAINER;
-
 addContent($card_container);
+
+$aboutus = Aboutus::get();
+addContent($aboutus);
+
 render();

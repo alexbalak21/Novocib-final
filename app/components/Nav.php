@@ -1,9 +1,9 @@
 <?php
 class Nav
 {
-    static function bar()
-    {
-        return <<<NAVBAR
+  static function bar()
+  {
+    return <<<NAVBAR
 
         <nav class="navbar-default navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -24,9 +24,9 @@ class Nav
                   Dropdown
                 </a>
                 <ul class="dropdown-menu">
-                //   <li><a class="dropdown-item" href="#">Action</a></li>
-                //   <li><hr class="dropdown-divider"></li>
-                //   <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -42,5 +42,23 @@ class Nav
       </nav>    
 
 NAVBAR;
-    }
+  }
 }
+
+?>
+
+<style>
+  nav ul li a {
+    font-size: 18px !important;
+    margin: 0 20px;
+    font-weight: 500 !important;
+  }
+
+  .dropdown-item:hover {
+    background-color: initial !important;
+  }
+
+  nav ul li a:hover {
+    color: var(--novo-blue) !important;
+  }
+</style>

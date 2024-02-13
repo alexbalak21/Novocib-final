@@ -1,7 +1,12 @@
-<link rel="stylesheet" href="app/css/bootstrap.min.css" />
+<?php
+class Aboutus
+{
+    static function get()
+    {
+        return <<<ABOUTUS
 
-<div class="contactus container-fluild pt-3">
-    <div class="container">
+        <div class="contactus container-fluild pt-3">
+        <div class="container">
         <h2 class="text-center mb-5">About us</h2>
         <div class="row">
             <div class="col-lg-5 d-flex align-items-center">
@@ -28,10 +33,17 @@
     </div>
 </div>
 
+
+ABOUTUS;
+    }
+}
+?>
+
 <style>
     .contactus {
         background-color: WhiteSmoke;
     }
+
     .contactus h2 {
         margin-bottom: 10px;
         position: relative;
@@ -40,7 +52,7 @@
     .contactus h2:after {
         content: "";
         position: absolute;
-        bottom: -10;
+        bottom: -10px;
         left: 50%;
         transform: translateX(-50%);
         height: 4px;

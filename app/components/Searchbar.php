@@ -19,7 +19,7 @@ class Searchbar
         margin-bottom: auto;
         margin-top: auto;
         height: 60px;
-        background-color: #D8D8D8;
+        background-color: #E8E8E8;
         border-radius: 30px;
         padding: 10px;
     }
