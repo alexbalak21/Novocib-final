@@ -15,10 +15,12 @@ if (!isset($lang)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTAWASOME -->
+    <!-- <script src="https://kit.fontawesome.com/6502c70df0.js" crossorigin="anonymous"></script> -->
+    <script src="app/FA6/js/all.min.js"></script>
     <!-- BOOTSTRAP  -->
     <link rel="stylesheet" href="app/css/bootstrap.min.css">
     <script src="app/js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://kit.fontawesome.com/6502c70df0.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="app/static/img/icon.png" />
     <link rel="stylesheet" href="app/css/main.css">
 

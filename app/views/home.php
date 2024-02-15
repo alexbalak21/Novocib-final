@@ -2,7 +2,19 @@
 $title = "Novocib";
 require_once "app/templates/base.php";
 
+$novoblue = "#4167b1";
+
 addContent(Carousel::gen());
+
+
+$preface_title = UnderlinedTitle::get(content: "Reliable solutions for nucleotides assessment", underColor: "novoblue");
+$preface = <<<XYZ
+    <div class="container text-center my-5">
+    $preface_title
+    <p>Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide to quantify nucleotides in their biological samples.</p>
+    </div>
+    XYZ;
+addContent($preface);
 $searchbar = Searchbar::get();
 $search_container = <<<SEARCH
     <div class="container mt-4">
@@ -25,10 +37,19 @@ $card_container = <<<CARD_CONTAINER
 </div>  
 </div>
 CARD_CONTAINER;
-
 addContent($card_container);
+
 addContent(Aboutus::get());
-addContent(Parallax::get());
+
+$paralax_title = UnderlinedTitle::get("Ressource", "white");
+$parallax_content = <<<PARALAX
+<div class="container py-5">
+$paralax_title
+GMP proteins are proteins for pharmaceutical use and have revolutionized the treatment of diseases due to their high selectivity and low toxicity. Protein therapeutics support specifically targeted therapeutic processes, allowing for individualized treatment.
+</div>
+
+PARALAX;
+addContent(Parallax::get($img = "app/static/img/header1.jpg", $ParallaxContent = $parallax_content, $color = "white"));
 
 
 render();

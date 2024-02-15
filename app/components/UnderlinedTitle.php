@@ -1,25 +1,11 @@
 <?php
 class UnderlinedTitle
 {
-    static function get($content = "Title", $undelineColor = "#4167b1")
+    static function get($content = "Title", $underColor = "")
     {
         return <<<UnderlinedTitle
-        <h2 class="underlined">$content</h2>
-        <style>
-        .underlined:after {
-            content: "";
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 4px;
-            width: 80px;
-            background-color: $undelineColor;
-        }
-        </style>
-
-
-UnderlinedTitle;
+        <h2 class="underlined $underColor">$content</h2>
+    UnderlinedTitle;
     }
 }
 ?>
@@ -28,6 +14,24 @@ UnderlinedTitle;
         position: relative;
         text-align: center;
         margin-bottom: 35px;
+    }
 
+    .underlined:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 80px;
+        background-color: black;
+    }
+
+    .underlined.white:after {
+        background-color: white;
+    }
+
+    .underlined.novoblue:after {
+        background-color: #4167b1;
     }
 </style>

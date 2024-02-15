@@ -58,7 +58,11 @@ CAROUSEL;
 ?>
 
 <style>
-    .carousel-inner {
+    .carousel-inner>.item>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
         height: 800px;
     }
 </style>

@@ -6,9 +6,8 @@ class Searchbar
         return <<<SERACHBAR
         <div class="searchbar">
                 <input class="search_input" type="text" name="" placeholder="Search..." />
-                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
-        
     SERACHBAR;
     }
 }
@@ -41,7 +40,7 @@ class Searchbar
         width: 450px;
         transition: width 0.4s linear;
         caret-color: dimgray;
-        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     .searchbar:hover>.search_icon {
