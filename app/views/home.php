@@ -25,9 +25,10 @@ $card_container = <<<CARD_CONTAINER
 </div>  
 </div>
 CARD_CONTAINER;
-addContent($card_container);
 
-$aboutus = Aboutus::get();
-addContent($aboutus);
+addContent($card_container);
+addContent(Aboutus::get());
+addContent(Parallax::get());
+
 
 render();
