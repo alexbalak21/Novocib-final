@@ -1,50 +1,30 @@
 <?php
 class Carousel
 {
-    static function gen()
+    static function gen(string $carousel_inner)
     {
         return <<<CAROUSEL
 
-        <div id="topPageCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div id="crouselItem" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button
+            <button 
                 type="button"
-                data-bs-target="#topPageCarousel"
+                data-bs-target="#crouselItem"
                 data-bs-slide-to="0"
                 class="active"
                 aria-current="true"
                 aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#topPageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#topPageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#crouselItem" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#crouselItem" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="7000">
-                <img src="/app/static/img/brand-table.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="7000">
-                <img src="/app/static/img/helix.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="7000">
-                <img src="/app/static/img/stand-blue.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
+        $carousel_inner
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#topPageCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#crouselItem" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#topPageCarousel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#crouselItem" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -55,14 +35,54 @@ CAROUSEL;
     }
 }
 
+
+
 ?>
 
 <style>
-    .carousel-inner>.item>img {
-        position: absolute;
-        top: 0;
+    .carousel-item {
+        height: 600px;
+        width: 100%;
+        position: relative;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+            "Open Sans", "Helvetica Neue", sans-serif;
+
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            object-fit: cover;
+        }
+    }
+
+    .carousel-indicators button {
+        width: 12px !important;
+        height: 12px !important;
+        border-radius: 5px !important;
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
         left: 0;
-        min-width: 100%;
-        height: 800px;
+        right: 0;
+        top: 0 !important;
+        bottom: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h5 {
+            margin-bottom: 50px;
+            font-weight: 400;
+        }
+
+        p {
+            margin-bottom: 50px;
+            font-size: 26px;
+        }
     }
 </style>

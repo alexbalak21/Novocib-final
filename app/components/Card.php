@@ -18,7 +18,6 @@ CARD;
 <style>
   .box {
     width: 20rem;
-    box-shadow: 0 0 45px rgba(0, 0, 0, 0.06);
     box-shadow: 1px 0 1.04rem rgba(21, 21, 21, 0.1);
     margin-top: 6px;
     margin-bottom: 60px;

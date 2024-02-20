@@ -48,6 +48,10 @@ NAVBAR;
 ?>
 
 <style>
+  nav {
+    margin-bottom: 0px;
+  }
+
   nav ul li a {
     font-size: 18px !important;
     margin: 0 20px;

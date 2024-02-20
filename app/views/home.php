@@ -4,7 +4,45 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-addContent(Carousel::gen());
+$div = "<div></div>";
+
+addContent($div);
+
+
+$first_slide = true;
+$slide = new Slide(
+    img_url: "app/static/img/brand-table.jpg",
+    duration: 10000,
+    title: "Placeholder Title",
+    content: "Some placeholder Connet.",
+    button_text: "Read More",
+    button_link: ""
+);
+$slide1 = $slide->gen();
+$slide = new Slide(
+    img_url: "app/static/img/helix.jpg",
+    duration: 8000,
+    title: "Placeholder Title",
+    content: "Some placeholder Connet.",
+    button_text: "Read More",
+    button_link: ""
+);
+$slide2 = $slide->gen();
+$slide = new Slide(
+    img_url: "app/static/img/brand-table.jpg",
+    duration: 8000,
+    title: "Placeholder Title",
+    content: "Some placeholder Connet.",
+    button_text: "Read More",
+    button_link: ""
+);
+$slide3 = $slide->gen();
+
+$carousel_content = $slide1 . $slide2 . $slide3;
+$carousel = Carousel::gen($carousel_content);
+addContent($carousel);
+
+
 
 
 $preface_title = UnderlinedTitle::get(content: "Reliable solutions for nucleotides assessment", underColor: "novoblue");
