@@ -34,9 +34,6 @@ class Carousel
 CAROUSEL;
     }
 }
-
-
-
 ?>
 
 <style>
@@ -46,13 +43,12 @@ CAROUSEL;
         position: relative;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
             "Open Sans", "Helvetica Neue", sans-serif;
+    }
 
-        img {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            object-fit: cover;
-        }
+    .carousel-item img {
+        height: 600px;
+        object-fit: cover !important;
+
     }
 
     .carousel-indicators button {
