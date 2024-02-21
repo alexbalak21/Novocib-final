@@ -15,17 +15,22 @@ class Aboutus
             <div class="text-container col-lg-7 d-flex justify-content-center align-items-center">
                 <div>
                     <p>
-                        Novocib is a biotechnology company created in 2005 after winning National Innovation Contest
-                        Award (I-Lab). Since 2005 the Company is focused on nucleotides and RNA metabolism and has
-                        developed a range of innovative assays for nucleotide analysis in research and food safety. The
-                        company manufactures active enzymes such as purine metabolism enzymes, nucleoside kinases,
-                        bacterial bioluminescence enzymes, a number of assays for non-radioactive detection of several
-                        purine metabolism disorders and for screening of novel inhibitors of nucleotide biosynthesis,
-                        and kits for testing of fish, poultry and meat products in the food industry. Novocib also
-                        offers analytical testing for RNA and nucleotides and research services. NovoCIB Founders:
-                        Larissa Balakireva, Founder & CEO of NovoCIB, was awarded with the Trophy of "Femmes en Or,
-                        Femme de l'Innovation" in September 2011.
+                    Novocib is a biotechnology company created in 2005 and focused on nucleotides metabolism. Company has developed a range of innovative products and services for nucleotide analysis in cells, food, feed ingredients:
                     </p>
+                    <ul>
+                    <li>
+                    Analytical service for whole spectra of nucleotides (heterocyclic bases, nucleosides, nucleotides and nucleic acids, DNA and RNA);
+                    </li>
+                    <li>
+                    Enzymatic Assay kits for nucleotides;
+                    </li>
+                    <li>
+                    Purified active enzymes of nucleotide metabolism;
+                    </li>
+                    <li>
+                    Assistance in the development of new products and ingredients enriched in nucleotides.
+                    </li>
+                    </ul>
                     <div class="text-center my-5"><a cl href="#" class="btn btn-primary">Read More</a></div>
                 </div>
             </div>

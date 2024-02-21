@@ -37,7 +37,10 @@ class UnderlinedTitle
 
     .underlined.right:after {
         left: 0;
-        transform: translateX(0);
+        transform: translateX(16px);
+    }
 
+    .underlined.right {
+        text-align: start;
     }
 </style>

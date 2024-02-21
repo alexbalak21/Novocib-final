@@ -71,7 +71,8 @@ Footer;
 
     footer {
         background-image: url(app/static/img/helix.jpg);
-        padding: 0;
+        padding: 0 !important;
+
 
         .copyright {
             border-top: 1px solid rgba(256, 256, 256, 0.1);

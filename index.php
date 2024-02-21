@@ -9,27 +9,16 @@ $req_uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 switch ($req_uri) {
     case '/':
     case '/home':
+    case "/Home":
         require_once "app/views/home.php";
         break;
 
-    case '/post':
-        require_once "./views/post.php";
+    case '/products':
+        require_once "app/views/products.php";
         break;
 
-    case '/user':
-        require_once "./views/user.php";
-        break;
-
-    case '/about':
-        require_once "./views/about.php";
-        break;
-
-    case '/version':
-        require_once "./views/version.php";
-        break;
-
-    case '/resetpass':
-        require_once "./views/resetpass.php";
+    case '/services':
+        require_once "app/views/services.php";
         break;
 
     default:

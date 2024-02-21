@@ -4,11 +4,6 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-$div = "<div></div>";
-
-addContent($div);
-
-
 $first_slide = true;
 $slide = new Slide(
     img_url: "app/static/img/brand-table.jpg",
@@ -79,11 +74,11 @@ addContent($card_container);
 
 addContent(Aboutus::get());
 
-$paralax_title = UnderlinedTitle::get("Ressource", "white");
+$paralax_title = UnderlinedTitle::get("Awards", "white");
 $parallax_content = <<<PARALAX
 <div class="container py-5">
 $paralax_title
-GMP proteins are proteins for pharmaceutical use and have revolutionized the treatment of diseases due to their high selectivity and low toxicity. Protein therapeutics support specifically targeted therapeutic processes, allowing for individualized treatment.
+NOVOCIB SAS is  french biotechnology company founded in 2005, a double Laureate of Concours National pour la Création d'Entreprises de Technologie Innovante  (I-LAB) in 2003 and 2005  and “Tremplin Entreprises” organized by French Senate (2004). Since its creation in 2005, the company has developed multiple innovative solutions helping scientists and engineers worldwide to quantify nucleotides in their biological samples.
 </div>
 
 PARALAX;
