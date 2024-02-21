@@ -1,10 +1,10 @@
 <?php
 class UnderlinedTitle
 {
-    static function get($content = "Title", $underColor = "")
+    static function get($content = "Title", $underColor = "", $position = "")
     {
         return <<<UnderlinedTitle
-        <h2 class="underlined $underColor">$content</h2>
+        <h2 class="underlined $underColor $position">$content</h2>
     UnderlinedTitle;
     }
 }
@@ -33,5 +33,11 @@ class UnderlinedTitle
 
     .underlined.novoblue:after {
         background-color: #4167b1;
+    }
+
+    .underlined.right:after {
+        left: 0;
+        transform: translateX(0);
+
     }
 </style>

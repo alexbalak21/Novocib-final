@@ -73,12 +73,12 @@ CAROUSEL;
 
         h5 {
             margin-bottom: 50px;
-            font-weight: 400;
+            font-weight: 400 !important;
         }
 
         p {
             margin-bottom: 50px;
-            font-size: 26px;
+            font-size: 26px !important;
         }
     }
 </style>

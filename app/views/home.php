@@ -88,6 +88,7 @@ GMP proteins are proteins for pharmaceutical use and have revolutionized the tre
 
 PARALAX;
 addContent(Parallax::get($img = "app/static/img/header1.jpg", $ParallaxContent = $parallax_content, $color = "white"));
-
+addContent("<div style='height: 400px;'></div>");
+addContent(Footer::gen());
 
 render();
