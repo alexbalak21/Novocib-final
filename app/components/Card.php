@@ -6,9 +6,9 @@ class Card
     return <<<CARD
     <div class="box text-center" >
         <img src="$img_src"/>
-        <a href=""><h5>Analytical services</h5></a>
-        <p>Description of services and products, Description of services and products</p>
-        <div class="text-center my-4"><a href="#" class="btn btn-primary">Go to Service</a></div>
+        <a href=""><h5>$card_title</h5></a>
+        <p>$card_content</p>
+        <div class="text-center my-4"><a href="#" class="btn btn-primary">Go to Page</a></div>
     </div>
 CARD;
   }

@@ -25,8 +25,10 @@ class Nav
                 </a>
                 <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/services">Services</a></li>
+                <li><a class="dropdown-item" href="/analytical-services">Analytical Services</a></li>
+                <li><a class="dropdown-item" href="/analytical-services/yeast-extract-nucleotide-analysis">Yeast Extract Nucleotide Analysis</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="yeast-extract-nucleotide-analysis">yeast-extract-nucleotide-analysis</a></li>
                 </ul>
               </li>
               <li class="nav-item">

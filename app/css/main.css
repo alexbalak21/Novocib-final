@@ -69,3 +69,13 @@ p {
     color: white;
     text-decoration: none;
 }
+
+img.zoom {
+    cursor: zoom-in;
+    width: 50%;
+    height: auto;
+}
+
+h2.primary {
+    color: var(--novo-blue);
+}

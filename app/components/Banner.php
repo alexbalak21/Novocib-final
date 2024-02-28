@@ -1,7 +1,7 @@
 <?php
 class Banner
 {
-    static function gen($img_url = "app/static/img/helix.jpg")
+    static function gen($img_url = "/app/static/img/helix.jpg")
     {
         global $title;
         global $path_way;
@@ -31,6 +31,11 @@ Banner;
 ?>
 
 <style>
+    .banner {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .banner .overlay {
         color: white;
         width: 100%;

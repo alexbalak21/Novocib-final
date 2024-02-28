@@ -70,7 +70,7 @@ Footer;
     }
 
     footer {
-        background-image: url(app/static/img/helix.jpg);
+        background-image: url(/app/static/img/helix.jpg);
         padding: 0 !important;
 
 

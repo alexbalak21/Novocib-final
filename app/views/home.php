@@ -57,9 +57,36 @@ $search_container = <<<SEARCH
     </div>
 SEARCH;
 addContent($search_container);
-$card1 = Card::get("app/static/img/catalogue/analysis.jpg", "Analytical Services", "Description of services and products");
-$card2 = Card::get("app/static/img/catalogue/centry.jpg", "Active Enzymes", "Description of services and products");
-$card3 = Card::get("app/static/img/catalogue/microscope.jpg", "PRECICE® One-step Kits", "Description of services and products");
+$card1_content = <<<CARD
+<ul>
+    <li>Whole nucleotides spectra (heterocyclic bases, nucleosides and nucleotides, nucleic acids RNA and DNA);</li>
+    <li>Total Potentially Available Nucleotides analysis (TPAN);</li>
+    <li>Purine analysis.</li>
+</ul>
+CARD;
+
+
+$card2_content = <<<CARD
+<ul>
+    <li>Include precise amounts of enzymes, buffers, cofactors and substrates at optimal concentrations;</li>
+    <li>96-well microplate form;</li>
+    <li>Convenient, saves time and preempts possible errors.</li>
+</ul>
+CARD;
+
+$card3_content = <<<CARD
+<ul>
+    <li>Nucleoside kinases;</li>
+    <li>Purine metabolism enzyme;</li>
+    <li>Small and bulk amounts;</li>
+    <li>Shipped worldwide in stable lyophilized form without dry ice or cold blocks.</li>
+</ul>
+CARD;
+
+
+$card1 = Card::get("app/static/img/catalogue/analysis.jpg", "Analytical Services", $card1_content);
+$card2 = Card::get("app/static/img/catalogue/centry.jpg", "PRECICE® One-step Kits", $card2_content);
+$card3 = Card::get("app/static/img/catalogue/microscope.jpg", "Active purified enzymes", $card3_content);
 
 $card_container = <<<CARD_CONTAINER
 <div class="container mt-5">
@@ -84,6 +111,5 @@ NOVOCIB SAS is  french biotechnology company founded in 2005, a double Laureate 
 PARALAX;
 addContent(Parallax::get($img = "app/static/img/header1.jpg", $ParallaxContent = $parallax_content, $color = "white"));
 addContent("<div style='height: 400px;'></div>");
-addContent(Footer::gen());
 
 render();
