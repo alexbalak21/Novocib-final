@@ -47,18 +47,18 @@ $content_title
 <p>5'-nucleotides IMP and GMP (also known as Inosinate and Guanylate) are strong flavour enhancers (E626-E633) involved in "umami" taste. Since yeasts are rich in ribonucleic acid (RNA), a natural source of 5' nucleotides (GMP, AMP, CMP and UMP), yeast extracts enriched in 5' nucleotides IMP and GMP are currently used as taste enhancers</p>
 </article>
 
-<article>
+<article class="mb-5">
 <h6>NovoCIB provides an analytical service for simultaneous analysis of whole spectra of nucleotides present in biological samples of various nature:</h6>
-<h6>Catalogue:</h6>
-<ol>
-<li>HPLC analysis of bases, nucleosides, NMP and nucleic acids in feed ingredients or products (request a quote);</li>
-<li>HPLC analysis nucleic acids (RNA and DNA) quantification (request a quote);</li>
-<li>purine analysis (request a quote)</li>
-<li>HPLC analysis of whole spectra of cellular nucleotides: <br>
-(deoxy-) ribonucleotides mono-, di-, and triphosphate present in biological samples (cell extracts) (request a quote);
-</li>
-</ol>
+<h4 class="text-center mt-2">Catalogue</h4>
+<div class="box"><a href="">HPLC analysis of bases, nucleosides, NMP and nucleic acids in feed ingredients or products (request a quote)</a></div>
+<div class="box"><a href="">HPLC analysis nucleic acids (RNA and DNA) quantification (request a quote);</a></div>
+<div class="box"><a href="">Purine analysis (request a quote)</a></div>
+<div class="box"><a href="">HPLC analysis of whole spectra of cellular nucleotides: <br>
+(deoxy-) ribonucleotides mono-, di-, and triphosphate present in biological samples (cell extracts) (request a quote);</a></div>
 </article>
+
+
+
 <div class="row">
 <img class="mx-4" style="border: 1px solid silver; width: 40%;" src="app/static/img/hplc-column.jpg" alt="">
 <img class="mx-4" style="border: 1px solid silver; width: 40%;" src="app/static/img/column-evolution-time.jpg" alt="">
