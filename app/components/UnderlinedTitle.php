@@ -4,26 +4,35 @@ class UnderlinedTitle
     static function get($content = "Title", $underColor = "", $position = "")
     {
         return <<<UnderlinedTitle
-        <h2 class="underlined $underColor $position">$content</h2>
+        <h2 class="underlinedTitle $position"><span class="underlined $underColor $position">$content</span></h2>
+        
     UnderlinedTitle;
     }
 }
 ?>
 <style>
+    .underlinedTitle {
+        margin-bottom: 35px;
+    }
+
+
     .underlined {
         position: relative;
+        width: fit-content;
+    }
+
+    .underlinedTitle.center {
         text-align: center;
-        margin-bottom: 35px;
     }
 
     .underlined:after {
         content: "";
         position: absolute;
         bottom: -10px;
-        left: 50%;
+        left: 50% !important;
         transform: translateX(-50%);
         height: 4px;
-        width: 80px;
+        width: 75%;
         background-color: black;
     }
 
@@ -36,8 +45,7 @@ class UnderlinedTitle
     }
 
     .underlined.right:after {
-        left: 0;
-        transform: translateX(16px);
+        left: 0
     }
 
     .underlined.right {

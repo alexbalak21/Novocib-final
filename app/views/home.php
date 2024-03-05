@@ -40,7 +40,7 @@ addContent($carousel);
 
 
 
-$preface_title = UnderlinedTitle::get(content: "Reliable solutions for nucleotides assessment", underColor: "novoblue");
+$preface_title = UnderlinedTitle::get(content: "Reliable solutions for nucleotides assessment", underColor: "novoblue center");
 $preface = <<<XYZ
     <div class="container text-center my-5">
     $preface_title
@@ -105,7 +105,9 @@ $paralax_title = UnderlinedTitle::get("Awards", "white");
 $parallax_content = <<<PARALAX
 <div class="container py-5">
 $paralax_title
-NOVOCIB SAS is  french biotechnology company founded in 2005, a double Laureate of Concours National pour la Création d'Entreprises de Technologie Innovante  (I-LAB) in 2003 and 2005  and “Tremplin Entreprises” organized by French Senate (2004). Since its creation in 2005, the company has developed multiple innovative solutions helping scientists and engineers worldwide to quantify nucleotides in their biological samples.
+<p>
+NOVOCIB SAS is french biotechnology company founded in 2005, a double Laureate of Concours National pour la Création d'Entreprises de Technologie Innovante (I-LAB) in 2003 and 2005 and “Tremplin Entreprises” organized by French Senate (2004). <br> Since its creation in 2005, the company has developed multiple innovative solutions helping scientists and engineers worldwide to quantify nucleotides in their biological samples.
+</p>
 </div>
 
 PARALAX;

@@ -21,6 +21,10 @@ switch ($req_uri) {
         require_once "app/views/services.php";
         break;
 
+    case '/hplc-analysis-of-bases-nucleosides':
+        require_once "app/views/hplc-analysis-of-bases-nucleosides.php";
+        break;
+
     case '/inquiry':
         require_once "app/views/inquiry.php";
         break;

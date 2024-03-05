@@ -100,6 +100,12 @@ table.product {
     td:last-child {
         padding: 8px;
     }
+    a:not(.btn) {
+        text-decoration: none;
+        color: var(--novo-blue);
+        font-size: 18px;
+        font-weight: 500;
+    }
 }
 
 span.novocib {
@@ -121,7 +127,7 @@ span.novocib {
     }
 }
 
-.box {
+.shadow-box {
     box-shadow: 1px 0 1.04rem rgba(21, 21, 21, 0.1);
     font-size: 20px;
     font-weight: 500;
