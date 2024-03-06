@@ -14,7 +14,7 @@ class Banner
             }
         }
         return <<<Banner
-        <div class="banner" style="background-image: url($img_url); height: 400px">
+        <div class="banner" style="background-image: url($img_url); height: 500px">
     <div class="overlay">
         <div class="caption">
             <h1 class="title display-4">$title</h1>

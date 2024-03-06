@@ -113,5 +113,6 @@ NOVOCIB SAS is french biotechnology company founded in 2005, a double Laureate o
 PARALAX;
 addContent(Parallax::get($img = "app/static/img/header1.jpg", $ParallaxContent = $parallax_content, $color = "white"));
 addContent("<div style='height: 400px;'></div>");
+addContent(Table::gen());
 
 render();
