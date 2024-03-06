@@ -8,8 +8,8 @@ $first_slide = true;
 $slide = new Slide(
     img_url: "app/static/img/brand-table.jpg",
     duration: 10000,
-    title: "Placeholder Title",
-    content: "Some placeholder Connet.",
+    title: "Reliable solutions for nucleotides assessment",
+    content: "Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide <br> to quantify nucleotides in their biological samples.",
     button_text: "Read More",
     button_link: ""
 );
@@ -33,7 +33,7 @@ $slide = new Slide(
 );
 $slide3 = $slide->gen();
 
-$carousel_content = $slide1 . $slide2 . $slide3;
+$carousel_content = $slide1;
 $carousel = Carousel::gen($carousel_content);
 addContent($carousel);
 
@@ -84,9 +84,9 @@ $card3_content = <<<CARD
 CARD;
 
 
-$card1 = Card::get("app/static/img/catalogue/analysis.jpg", "Analytical Services", $card1_content);
-$card2 = Card::get("app/static/img/catalogue/centry.jpg", "PRECICE® One-step Kits", $card2_content);
-$card3 = Card::get("app/static/img/catalogue/microscope.jpg", "Active purified enzymes", $card3_content);
+$card1 = Card::get("/app/static/img/analisis-gloves.jpg", "Analytical Services", $card1_content);
+$card2 = Card::get("/app/static/img/viles.jpg", "PRECICE® One-step Kits", $card2_content);
+$card3 = Card::get("/app/static/img/structure.jpg", "Active purified enzymes", $card3_content);
 
 $card_container = <<<CARD_CONTAINER
 <div class="container mt-5">
