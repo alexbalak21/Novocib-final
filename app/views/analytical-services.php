@@ -17,12 +17,14 @@ $page_content = <<<Services
 $content_title
 
 <article class="row">
-<h5 class="text-center my-3">Nucleotides are present in cells in different forms:</h5>
+
 <div class="col-lg-6 text-end">
 <img class="h-50 w-100 h-100"  style="border: 1px solid silver;" src="/app/static/img/nucleotides-3.jpg" alt="">
 </div>
 <div class="col-lg-6 list-1 d-flex align-items-center">
+
 <ul>
+<h6>Nucleotides are present in cells in different forms:</h6>
 <li>Apolar free heterocyclic bases 
 adenine, guanine, cytosine, and uracil (RNA) or thymine (DNA);
 </li>
@@ -73,25 +75,25 @@ Negatively charged free ribo- and deoxyribonucleotides mono-, di- and triphospha
         <tr>
             <td>#S1200-03</td>
             <td class="text-center"><h6>Dietary Nucleotides Analysis:</h6><p>HPLC-UV analysis for full spectra of soluble dietary nucleotides (bases, nucleosides and NMP, unhydrolyzed nucleic acid) present in feed or ingredients</p></td>
-            <td class="text-center">€ 350.00 per Sample</td>
+            <td class="price">€ 350.00 / sample</td>
             <td><a class="btn btn-primary" href="/inquiry?product=Yeast Free Bases, Nucleosides, Nucleotides and RNA & Bases">Inquiry</a></td>
         </tr>
         <tr>
             <td>#S1200-04</td>
             <td class="text-center"><h6>Celullar Nucleotides Analysis:</h6><p>HPLC-UV analysis for full spectra of cellular nucleotides (bases, nucleosides, NMP, NDP and NTP) in cell extracts.</p></td>
-            <td class="text-center">€ 350.00 per Sample</td>
+            <td class="price">€ 350.00 / sample</td>
             <td><a class="btn btn-primary" href="/inquiry?product=Yeast Free Bases, Nucleosides, Nucleotides and RNA & Bases">Inquiry</a></td>
         </tr>
         <tr>
             <td>#S1200-05</td>
             <td class="text-center">Nucleic acid RNA and DNA quantification by HPLC-UV analysis <br> &nbsp;</td>
-            <td class="text-center">€ 300.00 per Sample</td>
+            <td class="price">€ 300.00 / sample</td>
             <td><a class="btn btn-primary" href="/inquiry?product=Yeast Free Bases, Nucleosides, Nucleotides and RNA & Bases">Inquiry</a></td>
         </tr>
         <tr>
             <td>#S1200-06</td>
             <td class="text-center">HPLC-UV analysis for purines <br> &nbsp;</td>
-            <td class="text-center">€ 300.00 per Sample</td>
+            <td class="price">€ 300.00 / sample</td>
             <td><a class="btn btn-primary" href="/inquiry?product=Yeast Free Bases, Nucleosides, Nucleotides and RNA & Bases">Inquiry</a></td>
         </tr>
     </tbody>
@@ -112,5 +114,10 @@ render();
         li {
             margin: 16px 0;
         }
+    }
+
+    .product tr td {
+
+        vertical-align: middle !important;
     }
 </style>
