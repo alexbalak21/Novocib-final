@@ -19,8 +19,7 @@ $content_title
 <article class="row">
 <h5 class="text-center my-3">Nucleotides are present in cells in different forms:</h5>
 <div class="col-lg-6 text-end">
-<img class="h-50 mb-1"  style="width: 488px; border: 1px solid silver;" src="/app/static/img/nucleotides-1.jpg" alt="">
-<img class="h-50" style="width: 488px; border: 1px solid silver;" src="/app/static/img/nucleotides-2.jpg" alt="">
+<img class="h-50 w-100 h-100"  style="border: 1px solid silver;" src="/app/static/img/nucleotides-3.jpg" alt="">
 </div>
 <div class="col-lg-6 list-1 d-flex align-items-center">
 <ul>
@@ -40,18 +39,17 @@ Negatively charged free ribo- and deoxyribonucleotides mono-, di- and triphospha
 </ul>
 </div>
 
-<div class="col-lg-5 d-flex align-items-center">
+<div class="col-lg-6 d-flex align-items-center">
 <div class="">
 <p>NOVOCIB offers a range of analytical services from characterisation of free 5' nucleotides to full spectrum of nucleotides  (RNA, DNA, NMP, nucleosides and bases)  in feed/ food products and ingredients using  ion-pair high-performance liquid chromatography with diode array detection (Agilent 1200 HPLC-UV).</p>
 </div>
 </div>
 
-
 <div class="col-lg-6">
 <img class="mt-5 mb-4 w-100" style="border: 1px solid silver;" src="/app/static/img/column-evolution-time.jpg" alt="">
 </div>
 
-</article>
+</article>  
 
 <article class="my-5">
 <div class="d-flex justify-content-center">

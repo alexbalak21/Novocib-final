@@ -47,7 +47,6 @@ $preface = <<<XYZ
     <p>Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide to quantify nucleotides in their biological samples.</p>
     </div>
     XYZ;
-addContent($preface);
 $searchbar = Searchbar::get();
 $search_container = <<<SEARCH
     <div class="container mt-4">
