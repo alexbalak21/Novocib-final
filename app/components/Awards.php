@@ -4,11 +4,11 @@ class Awards
     static function gen($awards_title, $awards_introduction)
     {
         return <<<Awards
-<article class="awards container mt-4 mb-5 text-center">
+<article class="awards container mt-4 mb-4 text-center">
 $awards_title
 <p class="mb-5">$awards_introduction</p>
     <div class="row justify-content-center">
-        <div class="award col-3">
+        <div class="award col-lg-3">
             <img class="w-100 mt-2" src="/app/static/img/i-lab-1.jpg" alt="i-lab logo" />
             <h4 class="text-center mt-3 novo-blue">I-LAB</h4>
             <h5 class="text-center mb-3">2003 & 2005</h5>
@@ -26,7 +26,7 @@ $awards_title
             </div>
         </div>
 
-        <div class="award col-3">
+        <div class="award col-lg-3">
             <img class="w-100 mt-2" src="/app/static/img/tremplin.png" alt="femmes en or brand" />
             <h4 class="text-center mt-3 novo-blue">Tremplin des Entreprises</h4>
             <h5 class="text-center mb-3">2005</h5>
@@ -44,7 +44,7 @@ $awards_title
             </div>
         </div>
 
-        <div class="award col-3">
+        <div class="award col-lg-3">
             <img class="w-100 mt-2" src="/app/static/img/femme-en-or.webp" alt="femmes en or brand" />
             <h4 class="text-center mt-3 novo-blue">Femmes en Or</h4>
             <h5 class="text-center mb-3">2011</h5>
@@ -63,3 +63,26 @@ $awards_title
 Awards;
     }
 }
+
+?>
+
+<style>
+    .award {
+        box-shadow: 1px 0 1.04rem rgba(21, 21, 21, 0.1);
+        border-radius: 8px;
+        margin: 16px 20px;
+
+        img {
+            height: 140px;
+        }
+
+        p {}
+    }
+
+    .award .btn.btn-outline-primary {
+        --bs-btn-color: var(--novo-blue);
+        --bs-btn-border-color: var(--novo-blue);
+        --bs-btn-hover-bg: var(--novo-blue);
+        --bs-btn-hover-border-color: var(--novo-blue);
+    }
+</style>
