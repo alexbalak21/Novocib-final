@@ -1,7 +1,12 @@
-<link rel="stylesheet" href="/app/css/bootstrap.min.css" />
-<script src="/app/js/bootstrap.bundle.min.js" defer></script>
-
-<article class="awards container my-5">
+<?php
+class Awards
+{
+    static function gen($awards_title, $awards_introduction)
+    {
+        return <<<Awards
+<article class="awards container mt-4 mb-5 text-center">
+$awards_title
+<p class="mb-5">$awards_introduction</p>
     <div class="row justify-content-center">
         <div class="award col-3">
             <img class="w-100 mt-2" src="/app/static/img/i-lab-1.jpg" alt="i-lab logo" />
@@ -55,13 +60,6 @@
     </div>
 </article>
 
-<style>
-    :root {
-        --novo-blue: #3771c8;
-        --novo-grey: #39515b;
-        --darker-blue: #3a61af;
-        --grey: #dbdbdb;
-        --dark-blue: rgb(39, 79, 140);
-        --primary: #3771c8;
+Awards;
     }
-</style>
+}

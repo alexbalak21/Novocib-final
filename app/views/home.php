@@ -100,18 +100,20 @@ addContent($card_container);
 
 addContent(Aboutus::get());
 
-$paralax_title = UnderlinedTitle::get("Awards", "white");
+$paralax_title = UnderlinedTitle::get("CIR", "white");
 $parallax_content = <<<PARALAX
 <div class="container py-5">
 $paralax_title
 <p>
-NOVOCIB SAS is french biotechnology company founded in 2005, a double Laureate of Concours National pour la Création d'Entreprises de Technologie Innovante (I-LAB) in 2003 and 2005 and “Tremplin Entreprises” organized by French Senate (2004). <br> Since its creation in 2005, the company has developed multiple innovative solutions helping scientists and engineers worldwide to quantify nucleotides in their biological samples.
+    NOVOCIB is certified by the French Ministry of Higher Education and Research as a "Research Tax Credit" (Crédit
+    Impôt Recherche - CIR) company. This agreement allows NOVOCIB's clients who are subject to corporate income tax in
+    France to benefit from a significant tax credit upon R&D expenditures outsourced to NOVOCIB.
 </p>
 </div>
 
 PARALAX;
 addContent(Parallax::get($img = "app/static/img/header1.jpg", $ParallaxContent = $parallax_content, $color = "white"));
-addContent("<div style='height: 400px;'></div>");
-addContent(Table::gen());
+$awards_title = UnderlinedTitle::get(content: "Awards", underColor: "novoblue", position: "center");
+addContent(Awards::gen($awards_title, awards_introduction: "NOVOCIB SAS is french biotechnology company founded in 2005, a double Laureate of Concours National pour la Création d'Entreprises de Technologie Innovante (I-LAB) in 2003 and 2005 and “Tremplin Entreprises” organized by French Senate (2004). <br> Since its creation in 2005, the company has developed multiple innovative solutions helping scientists and engineers worldwide to quantify nucleotides in their biological samples."));
 
 render();
