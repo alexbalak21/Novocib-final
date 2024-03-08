@@ -100,10 +100,12 @@ addContent($card_container);
 
 addContent(Aboutus::get());
 
-$paralax_title = UnderlinedTitle::get("CIR", "white");
+$paralax_title = UnderlinedTitle::get("CIR (French Research Tax Credit)", "white", position: "right");
+
 $parallax_content = <<<PARALAX
 <div class="container py-5">
-$paralax_title
+<div class="text-center d-flex justify-content-center align-items-center">$paralax_title <img class="ms-5 mb-3" src="/app/static/img/marianne.png" height="60" alt="french marianne"></div>
+
 <p>
     NOVOCIB is certified by the French Ministry of Higher Education and Research as a "Research Tax Credit" (Crédit
     Impôt Recherche - CIR) company. This agreement allows NOVOCIB's clients who are subject to corporate income tax in

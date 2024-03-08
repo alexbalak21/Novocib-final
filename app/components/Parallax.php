@@ -7,6 +7,7 @@ class Parallax
         return <<<Parallax
         <div class="parallax" style="background-image: url($img); color: $color;">
         <div class="overlay">
+        
         $ParallaxContent
         </div>
         </div>
@@ -22,7 +23,10 @@ class Parallax
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        text-align: center;
+
+        p {
+            text-align: center;
+        }
     }
 
     .overlay {
