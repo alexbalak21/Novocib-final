@@ -100,7 +100,7 @@ addContent($card_container);
 
 addContent(Aboutus::get());
 
-$paralax_title = UnderlinedTitle::get("CIR (French Research Tax Credit)", "white", position: "right");
+$paralax_title = UnderlinedTitle::get("CIR (Research Tax Credit)", "white", position: "right");
 
 $parallax_content = <<<PARALAX
 <div class="container py-5">
