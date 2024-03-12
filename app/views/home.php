@@ -1,6 +1,16 @@
 <?php
 $title = "Novocib";
 require_once "app/templates/base.php";
+?>
+<!-- OWL CAROUSEL -->
+<link href="/app/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/app/lib/owlcarousel/assets/owl.theme.default.min.css" />
+<script src="/app/lib/owlcarousel/owl.carousel.min.js" defer></script>
+<script src="/app/lib/jquery/jquery-3.7.1.min.js"></script>
+<!-- CUSTOM PARAMETERS FOR OWLCAROUSEL -->
+<link rel="stylesheet" href="/app/css/owlcarousel.css" />
+<script src="/app/js/owlcarousel.js" defer></script>
+<?php
 
 $novoblue = "#4167b1";
 
@@ -117,5 +127,5 @@ PARALAX;
 addContent(Parallax::get($img = "app/static/img/header1.jpg", $ParallaxContent = $parallax_content, $color = "white"));
 $awards_title = UnderlinedTitle::get(content: "Awards", underColor: "novoblue", position: "center");
 addContent(Awards::gen($awards_title, awards_introduction: "NOVOCIB SAS is french biotechnology company founded in 2005, a double Laureate of Concours National pour la Création d'Entreprises de Technologie Innovante (I-LAB) in 2003 and 2005 and “Tremplin Entreprises” organized by French Senate (2004). <br> Since its creation in 2005, the company has developed multiple innovative solutions helping scientists and engineers worldwide to quantify nucleotides in their biological samples."));
-
+addContent(OwlCarousel::gen());
 render();
