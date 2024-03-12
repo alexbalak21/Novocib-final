@@ -10,7 +10,7 @@ class Aboutus
         <h2 class="text-center mb-5">About us</h2>
         <div class="row">
             <div class="col-lg-5 d-flex align-items-center">
-                <img class="mb-5" width="450" height="400" src="/app/static/img/analysis4.jpg" alt="analysis" />
+                <img class="mb-5 w-100" src="/app/static/img/analysis4.jpg" alt="analysis" />
             </div>
             <div class="text-container col-lg-7 d-flex justify-content-center align-items-center">
                 <div>

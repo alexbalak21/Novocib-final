@@ -21,6 +21,8 @@ class Searchbar
         background-color: #E8E8E8;
         border-radius: 30px;
         padding: 10px;
+        width: 90%;
+        max-width: 600px;
     }
 
     .search_input {
@@ -37,7 +39,7 @@ class Searchbar
     /* .searchbar:hover>.search_input { */
     .searchbar>.search_input {
         padding: 0 10px;
-        width: 450px;
+        width: 85%;
         transition: width 0.4s linear;
         caret-color: dimgray;
         font-family: Arial, Helvetica, sans-serif;
