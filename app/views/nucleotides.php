@@ -9,11 +9,13 @@ $path_way = ["home", "nucleotides"];
 
 addContent(Banner::gen("/app/static/img/adn3d.jpg"));
 $content_title = UnderlinedTitle::get("Biological role of nucleotides", "novoblue", "center");
+$table_nucleotides = Table::gen();
 
 $page_content = <<<CONTENT
 <main class="container mt-5">
     <section class="mb-5">
         $content_title
+        $table_nucleotides
         <h3>Nucleotides: 'conditionally essential' nutrients</h3>
         <p class="my-4">
             Since nucleotides can be synthesized de novo and recycled through salvage pathways, they are considered as
@@ -127,7 +129,7 @@ $page_content = <<<CONTENT
                     enriched products and ingredients.
                 </p>
                 <div class="text-center">
-                    <img src="/app/static/img/single-cell-protein.jpg" alt="" />
+                    <img class="w-100" src="/app/static/img/single-cell-protein.jpg" alt="" />
                 </div>
             </div>
 
