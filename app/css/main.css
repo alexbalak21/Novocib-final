@@ -146,3 +146,10 @@ span.novocib {
 .novo-blue {
     color: var(--novo-blue);
 }
+
+figure {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
