@@ -132,16 +132,6 @@ $page_content = <<<CONTENT
                     <img class="w-100" src="/app/static/img/single-cell-protein.jpg" alt="" />
                 </div>
             </div>
-
-            <div>
-                <h4 class="novo-blue">Biochemical Assay Kits for Life Science</h4>
-                <p>
-                    <span class="novo-blue">NOVOCIB</span>
-                    develops original biochemical assay kits based on active nucleotide metabolism enzymes. This
-                    portfolio of assays represents a unique range of powerful tools for Drug Discovery and research in
-                    the field of nucleoside and nucleotide metabolism.
-                </p>
-            </div>
         </div>
     </section>
 </main>

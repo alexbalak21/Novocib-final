@@ -133,6 +133,3 @@ TABLE;
         border-radius: 6px;
     }
 </style>
-
-
-</styl.bg-blue>
