@@ -168,7 +168,8 @@ figure {
 }
 
 .bg-blue {
-    margin-bottom: 16px;
+    margin-bottom: 0.1rem;
+    margin-top: 1.5rem;
     background-color: #3771c8;
     color: white;
     border-radius: 6px;
