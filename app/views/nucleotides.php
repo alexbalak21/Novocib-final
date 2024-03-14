@@ -18,12 +18,33 @@ $page_content = <<<CONTENT
         $table_nucleotides
         <h3>Nucleotides: 'conditionally essential' nutrients</h3>
         <p class="my-4">
-            Since nucleotides can be synthesized de novo and recycled through salvage pathways, they are considered as
-            semi-essential nutrients.
+        Since nucleotides can be synthesized de novo and recycled through salvage pathways, they are considered as semi-essential nutrients.
         </p>
-        <div class="text-center">
-            <img class="w-100" src="/app/static/img/purine-novo-synthesys.jpg" alt="" />
+        <div class="nucleotides-schema mt-5">
+        <div class="row">
+            <div class="col-6">
+                <img class="w-100" src="/app/static/img/nucleotides-p1.png" alt="" />
+            </div>
+            <div class="col-6 d-flex align-items-center">
+                <p class="">
+                    <span class="novo-blue">De novo pathway of AMP and GMP biosynthesis</span>
+                    is long and energy consuming process (6 moles of ATP per each mole of nucleotide produced).
+                </p>
+            </div>
         </div>
+        <hr />
+        <div class="row">
+            <div class="col-6">
+                <img class="w-100" src="/app/static/img/nucleotides-p2.png" alt="" />
+            </div>
+            <div class="col-6 mt-3">
+                <p class="">
+                    <span class="novo-blue">Purine salvage produces</span>
+                    GMP or AMP directly from nucleosides and bases in one step.
+                </p>
+            </div>
+        </div>
+    </div>
         <p class="mt-4">
             However, rapidly growing tissues or proliferating immune cells during infection have higher requirements for
             nucleotides that cannot be met only through de novo synthesis. In these cases, nucleotides become
@@ -34,105 +55,119 @@ $page_content = <<<CONTENT
         </p>
     </section>
     <section>
-        <h3 class="mb-4">Nucleotide supplementation</h3>
-        <div class="row mb-5">
-            <div class="col-lg-3">
-                <img class="w-100" src="/app/static/img/baby.jpg" alt="photo of baby feeding by bottle" />
-            </div>
-            <div class="col-lg-9">
-                <p>
-                    Human breast milk contains significantly higher amounts of nucleotides compared to bovine milk or
-                    cow milk protein-based infant formula. After being identified as one of the components of human milk
-                    enhancing immune function, nucleotides (Nucleotide Monosphosphates) have been added to infant
-                    formulas and have beneficial effects on early infant growth, small intestinal growth and
-                    development, intestinal microflora, and immune function.
+    <h3 class="text-center bg-blue">BIOLOGICAL ROLE OF NUCLEOTIDES</h3>
+    <div class="row">
+        <div class="card col-lg-3 col-md-4 col-sm-6">
+            <img
+                class="card-img-top"
+                src="/app/static/img/dna-card.png"
+                style="height: 200px; object-fit: contain"
+                alt="dna" />
+            <div class="card-body">
+                <h5 class="card-title text-center mb-4">PROLIFERATION</h5>
+                <p class="card-text mb-4">
+                    dNTPs are building blocks of DNA, required for rapidly proliferating cells of the immune
+                    system, intestinal epithelium and unicellular microorganisms.
                 </p>
             </div>
         </div>
-
-        <h3 class="mb-4">Nucleotide Supplementation in Aquaculture</h3>
-        <div class="row mb-5">
-            <div class="col-lg-3">
-                <img class="w-100" src="/app/static/img/aquaculture.jpg" alt="aquaculture sea photo" />
-            </div>
-            <div class="col-lg-9">
-                <span>
-                    After establishing health benefits of nucleotides supplementation for humans, supplementation of
-                    aquafeed with nucleotides has been also shown as beneficial:
-                </span>
-                <ul>
-                    <li>by improving growth performance of fish at early stages of development;</li>
-                    <li>by enhancing fish immune response and resistance against pathogens;</li>
-                    <li>by improving osmoregulation.</li>
-                </ul>
-            </div>
-        </div>
-
-        <h3 class="mb-4">Fish Meal</h3>
-        <div class="row mb-5">
-            <div class="col-lg-3">
-                <img class="w-100" src="/app/static/img/fish-meal.jpg" alt="photo of fish meal" />
-            </div>
-            <div class="col-lg-9">
-                <p>
-                    Fish meal is a natural source of nucleotides IMP, inosines and hypoxanthine issued from post-mortem
-                    breakdown of ATP fish flesh.The content of IMP, nucleotide-precursor of adenine and guanine
-                    nucleotides and feed stimulant, depends on the quality of raw material and the content of muscle
-                    tissues used for fishmeal preparation. Since fishmeal is a limited natural resource, considerable
-                    efforts are done toward its replacement by alternative products. Yeast are naturally rich in RNA
-                    that are rapidly degraded to nucleotides and yeast extract are used as nucleotide supplement.
-                    However, nucleotide content of yeast extracts is different from that of fishmeal. Yeast extract
-                    contains much less of purine nucleotides required for ATP synthesis and more of pyrimidine
-                    nucleotides. NOVOCIB offers analytical service for quantification of purine and pyrimidine bases,
-                    nucleosides and nucleotides in fish meal.
+        <div class="card col-lg-3 col-md-4 col-sm-6">
+            <img
+                class="card-img-top"
+                src="/app/static/img/RNA.png"
+                style="height: 200px; object-fit: contain"
+                alt="dna" />
+            <div class="card-body">
+                <h5 class="card-title text-center mb-4">PROTEIN SYNTHESIS</h5>
+                <p class="card-text mb-4">
+                    NTPs are building blocks of tRNA, rRNA and mRNA involved in protein synthesis and cell
+                    growth.
                 </p>
             </div>
         </div>
-
-        <h3 class="mb-4">Yeast Tasty Nucleotide</h3>
-        <div class="row mb-5">
-            <figure class="col-lg-3" style="border: 1px solid silver">
-                <img class="w-100" src="/app/static/img/yeast.webp" alt="picture of yeast under a microscope" />
-                <figcaption class="text-muted ps-1">
-                    <small>
-                        La levure Saccharomyces est un champignon unicellulaire dont les cellules restent libres. ©Getty
-                        - STEVE GSCHMEISSNER/SCIENCE PHOTO LIBRARY
-                    </small>
-                </figcaption>
-            </figure>
-            <div class="col-lg-9">
-                <p>
-                    Baker yeasts are rapidly proliferating cells naturally rich in tRNA. Baker yeast has been known as
-                    an excellent source of both purine and pyrimidine nucleotides for decades. Prior to RNA hydrolysis
-                    to NMP, yeast phosphatases must be inactivated or separated from RNA. Palatability of yeast extracts
-                    can be further improved by enzymatic conversion of AMP to IMP.
+        <div class="card col-lg-3 col-md-4 col-sm-6">
+            <img
+                class="card-img-top"
+                src="/app/static/img/energy.png"
+                style="height: 200px; object-fit: contain"
+                alt="dna" />
+            <div class="card-body">
+                <h5 class="card-title text-center mb-4">ENERGY</h5>
+                <p class="card-text mb-4">
+                    ATP is an universal energy currency in all biological systems particularly abundant in
+                    muscles.
                 </p>
-            </div>
-            <div class="col-12 mt-5 mb-3 text-center">
-                <img src="/app/static/img/yeast-rna.jpg" alt="yeast RNA Schematics" />
-            </div>
-            <p class="mb-4">
-                5'-nucleotides IMP and GMP (also known as Inosinate and Guanylate) are strong flavour enhancers
-                (E626-E633) involved in "umami" taste and meat taste. Since yeasts are rich in ribonucleic acid (RNA), a
-                natural source of 5' nucleotides (GMP, AMP, CMP and UMP), yeast extracts enriched in 5' nucleotides IMP
-                and GMP are currently used as taste enhancers.
-            </p>
-
-            <div class="mb-5">
-                <h4>New sources of dietary nucleotides :</h4>
-                <p>
-                    Yeasts are not the only source of nucleotides. Edible unicellular microorganisms currently used in
-                    the production of single-cell proteins (SCP) are also rich in RNA and can be used also excellent
-                    source of nucleotides.
-                    <br />
-                    Using analytical skills and knowledge Novocib assists in the development of novel nucleotides
-                    enriched products and ingredients.
-                </p>
-                <div class="text-center">
-                    <img class="w-100" src="/app/static/img/single-cell-protein.jpg" alt="" />
-                </div>
             </div>
         </div>
+        <div class="card col-lg-3 col-md-4 col-sm-6">
+            <img
+                class="card-img-top"
+                src="/app/static/img/coenzyme.png"
+                style="height: 200px; object-fit: contain"
+                alt="dna" />
+            <div class="card-body">
+                <h5 class="card-title text-center mb-4">COENZYME</h5>
+                <p class="card-text mb-4">
+                    Adenine nucleotides are components of three major coenzymes, NAD+, FAD, and CoA involved in
+                    numerous biosynthesis pathways.
+                </p>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-sm-6">
+            <img
+                class="card-img-top"
+                src="/app/static/img/glycogen.png"
+                style="height: 200px; object-fit: contain"
+                alt="dna" />
+            <div class="card-body">
+                <h5 class="card-title text-center mb-4">NEOGLYCOGENESIS</h5>
+                <p class="card-text mb-4">
+                    UDP-activated glucose is required for glycogen synthesis in liver and skeletal muscles.
+                </p>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-sm-6">
+            <img
+                class="card-img-top"
+                src="/app/static/img/neuron.png"
+                style="height: 200px; object-fit: contain"
+                alt="dna" />
+            <div class="card-body">
+                <h5 class="card-title text-center mb-4">PHOSPHOLIPIDS</h5>
+                <p class="card-text mb-4">
+                    CDP-activated choline is involved in the biosynthesis of phospholipids particularly in the
+                    neuronal membranes.
+                </p>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-sm-6">
+            <img
+                class="card-img-top"
+                src="/app/static/img/salt.jpg"
+                style="height: 200px; object-fit: contain"
+                alt="dna" />
+            <div class="card-body">
+                <h5 class="card-title text-center mb-4">TASTE</h5>
+                <p class="card-text mb-4">
+                    GMP and IMP nucleotides are flavor compounds that drastically enhance the umami taste of
+                    glutamate and improve the palatability of the food with reduced salt.
+                </p>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-sm-6">
+            <img
+                class="card-img-top"
+                src="/app/static/img/lumi.webp"
+                style="height: 200px; object-fit: contain"
+                alt="dna" />
+            <div class="card-body">
+                <h5 class="card-title text-center mb-4">LIGHT REFLECTANCE</h5>
+                <p class="card-text mb-4">
+                    Multilayer stacks of guanine crystals are responsible for the metallic luster of fish skin.
+                </p>
+            </div>
+        </div>
+    </div>
     </section>
 </main>
 CONTENT;

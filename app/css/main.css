@@ -153,3 +153,23 @@ figure {
     border-radius: 8px;
     overflow: hidden;
 }
+
+.nucleotides-schema {
+    p {
+        font-size: 1.5rem !important;
+        font-weight: 400;
+    }
+    hr {
+        border-color: red;
+        border-style: dashed;
+        border-width: 0.1rem;
+        width: 100% !important;
+    }
+}
+
+.bg-blue {
+    margin-bottom: 16px;
+    background-color: #3771c8;
+    color: white;
+    border-radius: 6px;
+}
