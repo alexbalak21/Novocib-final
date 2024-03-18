@@ -72,13 +72,31 @@ $section1_title
     </tbody>
 </table>
 <p><strong class="novo-blue">Validated</strong> with antimetabolites (known inhibitors of nucleotide synthesis): MPA, hydroxyurea, methotrexate, ribavirin, mizoribine, leflunomide, gemcitabine. These reference drugs do impact differently on nucleotide metabolism, each showing its own mode of action through a specific nucleotide profile. Any new compound's mode of action is analyzed by establishing its nucleotide profile which is then compared with those obtained with reference drugs.</p>
-<p class="mt-2">Download our brochure <a href="" style="font-weight:500">"Mode of Action Studies by Nucleotide Profiling"</a></p>
+<p class="mt-2">Download our brochure <a title="Download our PDF documenattion." href="/app/documents/NovoCIB MOA Studies - Nucleotide Profiling.pdf" style="font-weight:500">"Mode of Action Studies by Nucleotide Profiling" <i class="fa-solid fa-file-pdf"></i></a></p>
 </section>
 <section class="mt-5">
 $section2_title
-
 <p>To study the effect of nucleoside analogues on the whole spectra of cellular purine and pyrimidine ribo- and deoxyribonucleotides, <strong class="novo-blue">NOVOCIB</strong> has developed an original cell-based analytical approach in which more than 31 (deoxy)ribonucleotides (mono-, di-, triphosphate) and nucleotide co-factors are extracted from cultured cells, separated by ion-pared chromatography and quantified.</p>
-<div class="img-container">
+<div class="nuclotides-profile row align-items-center justify-content-center">
+<div class="col-2">
+<img class="w-100" src="/app/static/img/cell-analysis.jpg" alt="">
+<h5 class="text-center">Cells teatment</h5>
+</div>
+<div class="col-1 text-center" ><i class="col-1 fa-solid fa-arrow-right"></i></div>
+<div class="col-2">
+<img class="w-100" src="/app/static/img/hplc-analysis.jpg" alt="">
+<h5 class="text-center">Nucleotides extraction (SPE)</h5>
+</div>
+<div class="col-1 text-center" ><i class="col-1 fa-solid fa-arrow-right"></i></div>
+<div class="col-2">
+<img class="w-100" src="/app/static/img/identifiaction.jpg" alt="">
+<h5 class="text-center">Nuclotides ldentification and Quantification</h5>
+</div>
+<div class="col-1 text-center" ><i class="col-1 fa-solid fa-arrow-right"></i></div>
+<div class="col-2">
+<img class="w-100" src="/app/static/img/nuclotide-profile.jpg" alt="">
+<h5 class="text-center">Nucleotide pofile</h5>
+</div>
 
 </div>
 

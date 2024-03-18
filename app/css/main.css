@@ -156,14 +156,14 @@ figure {
 
 .nucleotides-schema {
     p {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
         font-weight: 400;
     }
     hr {
         border-color: red;
         border-style: dashed;
         border-width: 0.1rem;
-        width: 100% !important;
+        width: 77%;
     }
 }
 
