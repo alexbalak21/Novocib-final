@@ -24,7 +24,7 @@ class Slide
     <img src="$this->img_url" class="d-block w-100" alt="$this->img_url" />
     <div class="carousel-caption">
         <div>
-            <h5 class="display-5">$this->title</h5>
+            <h2 class="display-2 carousel-caption-title">$this->title</h2>
             <p class="lead">$this->content</p>
             <div class="text-center"><a href="$this->button_link" class="btn btn-primary">$this->button_text</a></div>
         </div>

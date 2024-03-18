@@ -48,6 +48,7 @@ CAROUSEL;
     .carousel-item img {
         height: 600px;
         object-fit: cover !important;
+        object-position: bottom;
 
     }
 
@@ -71,7 +72,7 @@ CAROUSEL;
         justify-content: center;
         align-items: center;
 
-        h5 {
+        .carousel-caption-title {
             margin-bottom: 50px;
             font-weight: 400 !important;
         }
