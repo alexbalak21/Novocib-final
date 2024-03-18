@@ -149,6 +149,60 @@ The technical presentation of NOVOCIB's Customized Nucleotide Analytical service
 
 <p class="mt-5"><strong>Cell culture and treatment: </strong> The choice of the cell line and culture conditions has been optimized to get highly reproducible results. Assays are usually done with human hepatoma cell line Huh7. Cells are grown in DMEM supplemented with FCS (5%), glutamine (1mM), sodium pyruvate (1mM) and maintained in exponential phase. Cells are seeded on 10cm-dishes and allowed to adhere overnight. The drug is added next day at the agreed concentration and at a cell confluence of about 50%.
 The following metabolites are routinely analyzed*:</p>
+<div class="d-flex justify-content-center">
+<table class="atp-table w-75">
+<tr>
+<td>ATP</td>
+<td>ADP</td>
+<td>AMP</td>
+<td>Uridine</td>
+<td>Hypoxanthine</td>
+</tr>
+<tr>
+<td>GTP</td>
+<td>GDP</td>
+<td>GMP</td>
+<td>dGTP</td>
+<td>Tryptophane*</td>
+<td></td>
+</tr>
+<tr>
+<td>UTP</td>
+<td>UDP</td>
+<td>IMP</td>
+<td>dATP</td>
+<td></td>
+</tr>
+<tr>
+<td>CTP</td>
+<td>Uracyl</td>
+<td>CMP</td>
+<td>dTTP</td>
+<td></td>
+</tr>
+<tr>
+<td>Cytidine</td>
+<td>Guanine</td>
+<td>Guanosine</td>
+<td>Adenosine</td>
+<td></td>
+</tr>
+</table>
+</div>
+<p class="mt-5"><strong>Cultured cell: </strong>Nucleosides and Nucleotides Analysis is usually performed by extraction of ≈107 treated cells, per compound and per concentration tested. Control untreated cells are cultured under the same conditions to provide a reference metabolic profile.</p>
+<p>
+Depending on the cell line or the experimental conditions, a 0.5-1.105 cell-extract can be sufficient to analyze the major metabolites (e.g. ATP, ADPï¿½).
+</p>
+<p>
+<strong>Blood cells:</strong> Typically, a 200µl-sample of blood is sufficient to analyze the major metabolites in Red Blood Cells (RBC), and a 1ml-sample for Peripheral Blood Mononuclear cells(PBMC). <br>
+If needed, for instance to focus on naturally low-level metabolites, larger samples can be prepared, e.g. up to 108 of cultured cells.
+</p>
+<p><strong>Nucleosides & nucleotides separation and analysis: </strong>The extraction and separation procedures have been optimized and specially developed by NOVOCIB. After a 48h-treatment, nucleosides and nucleotides are extracted; Nucleosides, nucleotides mono-, di-, and triphosphates, deoxynucleotides triphosphates and bases are separated by ion-pairing HPLC (Agilent 1100) with a Zorbax EclipsePlus C18 column and quantified using an Agilent ChemStation software. The resulting values are normalized by cell number. A mixture of 30 authentic standards (Sigma Aldrich, Roth) is run before and after every set of samples analysis.</p>
+<figure class="text-center">
+<figcaption class="w-50 mx-auto"><strong>Figure 1:</strong> Separation by ion-pairing HPLC of a 6.6pmol / 20 µl standard mixture of 30 nucleosides, nucleotide mono-, di-, and triphosphates, deoxynucleotide triphosphates and bases</figcaption>
+<img style="width:50%" onclick="enlargeImg(this)" src="/app/static/img/Standards-Spectrum.png" alt="">
+<p class="text-muted" style="font-size:18px !important;"><i class="fa-solid fa-hand-pointer"></i> Click to enlarge</p>
+</figure>
 </section>
 </main>
 CONTENT;
@@ -201,5 +255,21 @@ render();
 
     .nucleotides-table .table-side {
         border-bottom: none;
+    }
+
+    .atp-table {
+        text-align: center;
+
+        tr:nth-child(odd) {
+            background-color: WhiteSmoke;
+        }
+
+        td {
+            padding: 4px 10px;
+        }
+    }
+
+    figure img {
+        border: 1px solid silver;
     }
 </style>
