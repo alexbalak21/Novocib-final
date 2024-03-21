@@ -5,6 +5,7 @@
     --grey: #dbdbdb;
     --dark-blue: rgb(39, 79, 140);
     --primary: #3771c8;
+    --novo-light: #5f8dd3;
 }
 
 * {
@@ -177,4 +178,8 @@ figure {
 
 a {
     text-decoration: none;
+}
+
+strong {
+    font-weight: 500;
 }

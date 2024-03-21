@@ -1,64 +1,117 @@
-<table>
-    <thead>
-        <tr>
-            <th>Assays</th>
-            <th>
-                Targeted Enzyme(s)
-                <br />
-                / Targeted Nucleotide Synthesis Pathway
-            </th>
-            <th>Antimetabolite</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Cellular Assay for IMPDH inhibitors</td>
-            <td>
-                Inosine Monophosphate Dehydrogenase
-                <br />
-                (IMPDH)
-            </td>
-            <td>
-                Ribavirin
-                <br />
-                Mycophenolic Acid (MPA)
-            </td>
-        </tr>
-        <tr>
-            <td>Cellular Assay for RNR inhibitors</td>
-            <td>
-                Ribonucleotide Reductase
-                <br />
-                (RNR)
-            </td>
-            <td>
-                Hydroxyurea (HU)
-                <br />
-                Gemcitabine
-            </td>
-        </tr>
-        <tr>
-            <td>Cellular Assay for Antifolates</td>
-            <td>
-                de novo Purine synthesis :
-                <br />
-                GAR transformylase, AICAR transformylase
-                <br />
-                Thymidylate Synthase (TS)
-            </td>
-            <td>Methotrexate (MTX)</td>
-        </tr>
-    </tbody>
-</table>
+<div class="d-flex justify-content-center">
+    <table class="metabolites w-75">
+        <thead>
+            <tr>
+                <th width="100">Metabolites</th>
+                <th colspan="2">
+                    pmol / 10
+                    <sup>6</sup>
+                    cells *
+                </th>
+                <th width="100">Published data **</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>UMP</td>
+                <td width="75">728.1</td>
+                <td width="75">&#177; 56.8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>GMP</td>
+                <td>34.4</td>
+                <td>&#177; 4.8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>IMP</td>
+                <td>72.7</td>
+                <td>&#177; 21.4</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>NAD</td>
+                <td>1,825.1</td>
+                <td>&#177; 155.5</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>UDP-Glu</td>
+                <td>1,113.9</td>
+                <td>&#177; 87.1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>AMP</td>
+                <td>122.7</td>
+                <td>&#177; 12.9</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>UDP</td>
+                <td>1,730.3</td>
+                <td>&#177; 207.1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CTP</td>
+                <td>2,754.5</td>
+                <td>&#177; 165.4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ADP</td>
+                <td>4,652.4</td>
+                <td>&#177; 609.8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>UTP</td>
+                <td>2,494.2</td>
+                <td>&#177; 156.1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>GTP</td>
+                <td>1,449.7</td>
+                <td>&#177; 81.4</td>
+                <td>1,540</td>
+            </tr>
+            <tr>
+                <td>ATP</td>
+                <td>6,561.0</td>
+                <td>&#177; 346.0</td>
+                <td>6,580</td>
+            </tr>
+            <tr>
+                <td colspan="4" width="350">
+                    * Mean &#177; SD for 5 independent experiments
+                    <br />
+                    ** J. Balzarini
+                    <em>et al.</em>
+                    (1993)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <style>
-    table {
-        margin: 100px;
-        border: 1px solid black;
+    .metabolites {
+        text-align: center;
 
-        td,
-        th {
-            border: 1px solid black;
+        tr:nth-child(odd) {
+            background-color: WhiteSmoke;
+        }
+
+        thead tr {
+            background-color: var(--novo-light) !important;
+        }
+
+        th,
+        td {
+            padding: 12px 0;
         }
     }
 </style>

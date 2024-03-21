@@ -150,7 +150,7 @@ The technical presentation of NOVOCIB's Customized Nucleotide Analytical service
 <p class="mt-5"><strong>Cell culture and treatment: </strong> The choice of the cell line and culture conditions has been optimized to get highly reproducible results. Assays are usually done with human hepatoma cell line Huh7. Cells are grown in DMEM supplemented with FCS (5%), glutamine (1mM), sodium pyruvate (1mM) and maintained in exponential phase. Cells are seeded on 10cm-dishes and allowed to adhere overnight. The drug is added next day at the agreed concentration and at a cell confluence of about 50%.
 The following metabolites are routinely analyzed*:</p>
 <div class="d-flex justify-content-center">
-<table class="atp-table w-75">
+<table class="atp-table">
 <tr>
 <td>ATP</td>
 <td>ADP</td>
@@ -198,11 +198,130 @@ Depending on the cell line or the experimental conditions, a 0.5-1.105 cell-extr
 If needed, for instance to focus on naturally low-level metabolites, larger samples can be prepared, e.g. up to 108 of cultured cells.
 </p>
 <p><strong>Nucleosides & nucleotides separation and analysis: </strong>The extraction and separation procedures have been optimized and specially developed by NOVOCIB. After a 48h-treatment, nucleosides and nucleotides are extracted; Nucleosides, nucleotides mono-, di-, and triphosphates, deoxynucleotides triphosphates and bases are separated by ion-pairing HPLC (Agilent 1100) with a Zorbax EclipsePlus C18 column and quantified using an Agilent ChemStation software. The resulting values are normalized by cell number. A mixture of 30 authentic standards (Sigma Aldrich, Roth) is run before and after every set of samples analysis.</p>
-<figure class="text-center">
-<figcaption class="w-50 mx-auto"><strong>Figure 1:</strong> Separation by ion-pairing HPLC of a 6.6pmol / 20 µl standard mixture of 30 nucleosides, nucleotide mono-, di-, and triphosphates, deoxynucleotide triphosphates and bases</figcaption>
-<img style="width:50%" onclick="enlargeImg(this)" src="/app/static/img/Standards-Spectrum.png" alt="">
+<figure class="text-center my-5">
+<figcaption class="w-50 mx-auto"><strong>Figure 1:</strong> Separation by ion-pairing HPLC of a 6.6pmol / 20 µl standard mixture of 30 nucleosides, nucleotide mono-, di-, and triphosphates, deoxynucleotide triphosphates and bases.</figcaption>
+<img style="width:50%" onclick="enlargeImg(this)" src="/app/static/img/Standards-Spectrum.png" alt="Separation by ion-pairing HPLC">
 <p class="text-muted" style="font-size:18px !important;"><i class="fa-solid fa-hand-pointer"></i> Click to enlarge</p>
 </figure>
+<figure class="text-center my-5">
+<figcaption class="w-50 mx-auto"><strong>Figure 2:</strong> Quantification of intracellular metabolites in Huh-7 non-treated cells.</figcaption>
+<img style="width:50%" onclick="enlargeImg(this)" src="/app/static/img/HuhSpectrum.png" alt="Quantification of intracellular metabolites in Huh-7 non-treated cells">
+<p class="text-muted" style="font-size:18px !important;"><i class="fa-solid fa-hand-pointer"></i> Click to enlarge</p>
+</figure>
+<div class="d-flex justify-content-center my-4">
+    <table class="metabolites col-lg-8 col-12">
+        <thead>
+            <tr>
+                <th width="100">Metabolites</th>
+                <th colspan="2">
+                    pmol / 10
+                    <sup>6</sup>
+                    cells *
+                </th>
+                <th width="100">Published data **</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>UMP</td>
+                <td width="75">728.1</td>
+                <td width="75">&#177; 56.8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>GMP</td>
+                <td>34.4</td>
+                <td>&#177; 4.8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>IMP</td>
+                <td>72.7</td>
+                <td>&#177; 21.4</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>NAD</td>
+                <td>1,825.1</td>
+                <td>&#177; 155.5</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>UDP-Glu</td>
+                <td>1,113.9</td>
+                <td>&#177; 87.1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>AMP</td>
+                <td>122.7</td>
+                <td>&#177; 12.9</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>UDP</td>
+                <td>1,730.3</td>
+                <td>&#177; 207.1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>CTP</td>
+                <td>2,754.5</td>
+                <td>&#177; 165.4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ADP</td>
+                <td>4,652.4</td>
+                <td>&#177; 609.8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>UTP</td>
+                <td>2,494.2</td>
+                <td>&#177; 156.1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>GTP</td>
+                <td>1,449.7</td>
+                <td>&#177; 81.4</td>
+                <td>1,540</td>
+            </tr>
+            <tr>
+                <td>ATP</td>
+                <td>6,561.0</td>
+                <td>&#177; 346.0</td>
+                <td>6,580</td>
+            </tr>
+            <tr>
+                <td colspan="4" width="350">
+                    * Mean &#177; SD for 5 independent experiments
+                    <br />
+                    ** J. Balzarini
+                    <em>et al.</em>
+                    (1993)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p class="my-5"><strong>Nucleotide profiling:</strong> For every nucleotide and nucleoside metabolite, drug-treated / non-treated cells concentration ratios are calculated and graphically reported. The base line indicates the control level.</p>
+<div class="row justify-content-center my-4">
+<img class="col-lg-2 col-4 h-100" src="/app/static/img/pubmed-logo.png" alt="PubMed Logo">
+<div class="col-lg-8 col-11">
+<strong>
+References (Link to PubMed) <br>
+</strong>
+<a href="https://pubmed.ncbi.nlm.nih.gov/7901217/">Eicar (5-ethynyl-1-beta-D-ribofuranosylimidazole-4-carboxamide). A novel potent inhibitor of inosinate dehydrogenase activity and guanylate biosynthesis</a>
+</div>
+<div class="text-end mt-5">
+<strong>View or Download this document</strong> <a href="/app/documents/NovoCIB-Customized-Nucleotide-Analysis.pdf">"NovoCIB Customized Nucleotide Analysis" <i style="font-size:22px; color:black" class="fa-regular fa-file-pdf"></i></a> 
+</div>
+
+</div>
+
 </section>
 </main>
 CONTENT;
@@ -259,17 +378,41 @@ render();
 
     .atp-table {
         text-align: center;
+        width: 100%;
+        max-width: 800px;
 
         tr:nth-child(odd) {
             background-color: WhiteSmoke;
         }
 
         td {
-            padding: 4px 10px;
+            padding: 4px 0;
+
         }
     }
 
     figure img {
         border: 1px solid silver;
+    }
+
+    .metabolites {
+        text-align: center;
+
+        th {
+            color: #F8F8F8;
+        }
+
+        tr:nth-child(odd) {
+            background-color: WhiteSmoke;
+        }
+
+        thead tr {
+            background-color: var(--novo-light) !important;
+        }
+
+        th,
+        td {
+            padding: 12px 0;
+        }
     }
 </style>
