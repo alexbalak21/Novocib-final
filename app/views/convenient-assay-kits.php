@@ -76,7 +76,7 @@ $content_title
         </div>
     </div>
 </section>
-<section class="container my-4">
+<section class="container my-4 therapeutic">
     <h2 class="mb-3 text-center">Therapeutic Targets</h2>
     <div class="kit row align-items-center">
         <div class="col-3 me-3 text-center">
@@ -163,6 +163,15 @@ render();
         padding: 0.5rem;
         margin: 0.8rem 0;
         border-radius: 4px;
+        background-color: white;
+    }
+
+    .kit:hover,
+    .therapeutic .kit:hover {
         background-color: #F8F8F8;
+    }
+
+    .therapeutic .kit {
+        background-color: white;
     }
 </style>
