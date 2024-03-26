@@ -19,6 +19,9 @@ class Nav
               <li class="nav-item">
                 <a class="nav-link" href="/products">Products</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/convenient-assay-kits">Convenient Assay Kits</a>
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services
