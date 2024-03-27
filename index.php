@@ -33,6 +33,10 @@ switch ($req_uri) {
         require_once "app/views/hprt-Assay-kit.php";
         break;
 
+    case '/convenient-assay-kits/prpp-s-assay-kit':
+        require_once "app/views/prpp-s-assay-kit.php";
+        break;
+
     case '/hplc-analysis-of-bases-nucleosides':
         require_once "app/views/hplc-analysis-of-bases-nucleosides.php";
         break;
