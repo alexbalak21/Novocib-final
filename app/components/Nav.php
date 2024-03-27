@@ -19,9 +19,22 @@ class Nav
               <li class="nav-item">
                 <a class="nav-link" href="/products">Products</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/convenient-assay-kits">Convenient Assay Kits</a>
-              </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Convenient Assay Kits
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/convenient-assay-kits">Convenient Assay Kits</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/hprt-assay-kit">HPRT Assay Kit</a></li>
+              <li><a class="dropdown-item" href="/nucleotides">Nucleotides</a></li>
+              <li><a class="dropdown-item" href="/cellular-nucleotides-analysis">Cellular Nucleotides Analysis</a></li>
+              <li><a class="dropdown-item" href="/active-purified-enzymes">Active Purified Enzymes</a></li>
+              
+              <li><a class="dropdown-item" href="/inquiry">Inquiry</a></li>
+              <li><a class="dropdown-item" href="/hplc-analysis-of-bases-nucleosides">HPLC analysis of bases nucleosides</a></li>
+              </ul>
+            </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services

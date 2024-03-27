@@ -29,6 +29,10 @@ switch ($req_uri) {
         require_once "app/views/convenient-assay-kits.php";
         break;
 
+    case '/convenient-assay-kits/hprt-assay-kit':
+        require_once "app/views/hprt-Assay-kit.php";
+        break;
+
     case '/hplc-analysis-of-bases-nucleosides':
         require_once "app/views/hplc-analysis-of-bases-nucleosides.php";
         break;
