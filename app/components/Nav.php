@@ -27,12 +27,6 @@ class Nav
               <li><a class="dropdown-item" href="/convenient-assay-kits">Convenient Assay Kits</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/hprt-assay-kit">HPRT Assay Kit</a></li>
-              <li><a class="dropdown-item" href="/nucleotides">Nucleotides</a></li>
-              <li><a class="dropdown-item" href="/cellular-nucleotides-analysis">Cellular Nucleotides Analysis</a></li>
-              <li><a class="dropdown-item" href="/active-purified-enzymes">Active Purified Enzymes</a></li>
-              
-              <li><a class="dropdown-item" href="/inquiry">Inquiry</a></li>
-              <li><a class="dropdown-item" href="/hplc-analysis-of-bases-nucleosides">HPLC analysis of bases nucleosides</a></li>
               </ul>
             </li>
               <li class="nav-item dropdown">

@@ -22,6 +22,10 @@ p {
     font-size: 16px !important;
 }
 
+a {
+    font-size: 18px;
+}
+
 .navbar-default {
     box-shadow: 0 1px 3px rgba(17, 24, 39, 0.09);
 }
@@ -127,6 +131,9 @@ span.novocib {
         display: none;
     }
 }
+.path .display-6 a {
+    font-style: 100px !important;
+}
 
 .shadow-box {
     box-shadow: 1px 0 1.04rem rgba(21, 21, 21, 0.1);
@@ -182,8 +189,4 @@ a {
 
 strong {
     font-weight: 500;
-}
-
-a {
-    font-size: 18px;
 }

@@ -8,10 +8,11 @@ global $path_way;
 $path_way = ["home", "HPRT Assay Kit"];
 
 addContent(Banner::gen());
-$content_title = UnderlinedTitle::get("Non radioactive HPRT assay", "novoblue", "right");
+$content_title = UnderlinedTitle::get("Non radioactive HPRT assay", "novoblue", "center");
 
 $page_content = <<<CONTENT
-<main class="container mt-5">
+<main class="mt-5">
+<div class="container">
 $content_title
 <div class="row">
 <div class="col-lg-6">
@@ -90,14 +91,24 @@ $content_title
 <div class="col-lg-9 text-center bg-light">
 <p>Specific activities of HPRT in lysates of erythrocytes, PBMC and cultured cells measured by PRECICE® HPRT Assay kit are comparable to those obtained previously by radiochemical procedure.</p>
 </div>
-<div class="text-center">
+<div class="text-center mt-3">
 <img class="col-lg-8 col-12" src="/app/static/img/hprt-activity.png" alt="">
 </div>
 <div class="text-center my-2">
 <p class="my-2"><a target="_blank" href="https://www.nature.com/nmeth/articles?type=application-note"><i class="fa-solid fa-arrow-up-right-from-square"></i> Find more <strong style="font-size:19px" class="text-dark">nature methods Application Notes</strong></a></p>
 <p>Download our <a target="_blank" href="/app/documents/ANK0709-001v1-110609.pdf">Application Notes <i class="fa-regular fa-file-pdf"></i></a></p>
 </div>
-
+</div>
+</div>
+<div class="bg-light">
+<div class="container">
+<div class="text-center py-4">
+<img class="col-lg-6 col-12" src="/app/static/img/HPRT-Assay-Kit-Calibration.png" alt="">
+<h6 class="mt-3">Calibration curve of IMPDH-based PRECICE® HPRT Assay</h6>
+<p>
+The rate of the increase in absorbance at 340nm per hour as a function of the concentration of human recombinant HPRT enzyme (NovoCIB, ref. E-Nov-9). The changes in absorbance corresponding to 3 different control hemolysates diluted in complete reaction mixture to final hemoglobin concentration 1mg/ml (n=4) are shown by filled squares, filled triangles and filled circles. The insert shows a linear correlation observed in whole range of 21ng/ml up to 1.5ï¿½g/ml of recombinant HPRT; the units are the same.</p>
+</div>
+</div>
 </div>
 </main>
 CONTENT;

@@ -59,6 +59,7 @@ Banner;
     .banner .path a {
         color: white;
         text-decoration: none;
+        font-size: 2.5rem;
     }
 
     .banner .path a:hover {
