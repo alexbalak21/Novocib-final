@@ -106,7 +106,7 @@ $content_title
 <img class="col-lg-6 col-12" src="/app/static/img/HPRT-Assay-Kit-Calibration.png" alt="">
 <h6 class="mt-3">Calibration curve of IMPDH-based PRECICE® HPRT Assay</h6>
 <p>
-The rate of the increase in absorbance at 340nm per hour as a function of the concentration of human recombinant HPRT enzyme (NovoCIB, ref. E-Nov-9). The changes in absorbance corresponding to 3 different control hemolysates diluted in complete reaction mixture to final hemoglobin concentration 1mg/ml (n=4) are shown by filled squares, filled triangles and filled circles. The insert shows a linear correlation observed in whole range of 21ng/ml up to 1.5ï¿½g/ml of recombinant HPRT; the units are the same.</p>
+The rate of the increase in absorbance at 340nm per hour as a function of the concentration of human recombinant HPRT enzyme (NovoCIB, ref. E-Nov-9). The changes in absorbance corresponding to 3 different control hemolysates diluted in complete reaction mixture to final hemoglobin concentration 1mg/ml (n=4) are shown by filled squares, filled triangles and filled circles. The insert shows a linear correlation observed in whole range of 21ng/ml up to 1.5µg/ml of recombinant HPRT; the units are the same.</p>
 </div>
 </div>
 </div>

@@ -191,7 +191,7 @@ The following metabolites are routinely analyzed*:</p>
 </div>
 <p class="mt-5"><strong>Cultured cell: </strong>Nucleosides and Nucleotides Analysis is usually performed by extraction of ≈107 treated cells, per compound and per concentration tested. Control untreated cells are cultured under the same conditions to provide a reference metabolic profile.</p>
 <p>
-Depending on the cell line or the experimental conditions, a 0.5-1.105 cell-extract can be sufficient to analyze the major metabolites (e.g. ATP, ADPï¿½).
+Depending on the cell line or the experimental conditions, a 0.5-1.105 cell-extract can be sufficient to analyze the major metabolites (e.g. ATP, ADPµ).
 </p>
 <p>
 <strong>Blood cells:</strong> Typically, a 200µl-sample of blood is sufficient to analyze the major metabolites in Red Blood Cells (RBC), and a 1ml-sample for Peripheral Blood Mononuclear cells(PBMC). <br>
