@@ -83,7 +83,7 @@ $content_title
 <h4 class="novo-blue">Convenient</h4>
 </div>
 <div class="col-lg-9 text-center">
-<p>No sample preparation nor prior inactivation of cellular 5’-nucleotidase required. Cell lysates are directly used for continuous monitoring of HPRT activity.</p>
+<p>No sample preparation nor prior inactivation of cellular 5'-nucleotidase required. Cell lysates are directly used for continuous monitoring of HPRT activity.</p>
 </div>
 <div class="col-lg-3 text-center pt-3 bg-light">
 <h4 class="novo-blue">Validated</h4>
