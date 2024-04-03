@@ -28,6 +28,7 @@ class Nav
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/hprt-assay-kit">HPRT Assay Kit</a></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/prpp-s-assay-kit">PRPP-S Assay Kit</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/ampda-assay-kit">AMPDA Assay Kit</a></li>
               </ul>
             </li>
               <li class="nav-item dropdown">

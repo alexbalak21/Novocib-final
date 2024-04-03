@@ -31,7 +31,7 @@ $content_title
                             <h5 class="text-center"><a href="/convenient-assay-kits/prpp-s-assay-kit">PRPP-S Assay Kit</a></h5>
                         </div>
                         <div class="kit">
-                            <h5 class="text-center"><a href="">AMPD Assay Kit</a></h5>
+                            <h5 class="text-center"><a href="/convenient-assay-kits/ampda-assay-kit">AMPD Assay Kit</a></h5>
                         </div>
                         <div class="kit">
                             <h5 class="text-center"><a href="">ITPase Assay Kit</a></h5>
