@@ -34,13 +34,7 @@ $content_title
                             <h5 class="text-center"><a href="/convenient-assay-kits/ampda-assay-kit">AMPD Assay Kit</a></h5>
                         </div>
                         <div class="kit">
-                            <h5 class="text-center"><a href="">ITPase Assay Kit</a></h5>
-                        </div>
-                        <div class="kit">
-                            <h5 class="text-center"><a href="">PNP Assay Kit</a></h5>
-                        </div>
-                        <div class="kit">
-                            <h5 class="text-center"><a href="">ADA Assay Kit</a></h5>
+                            <h5 class="text-center"><a href="convenient-assay-kits/itp-ase-deficiency-assay-kit">ITPase Assay Kit</a></h5>
                         </div>
                     </div>
                     <div class="col-6 d-flex align-items-center">
