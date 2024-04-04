@@ -74,7 +74,7 @@ $content_title
     <h2 class="mb-3 text-center">Therapeutic Targets</h2>
     <div class="kit row align-items-center">
         <div class="col-3 me-3 text-center">
-            <h5><a href="">Human IMPDH type II</a></h5>
+            <h5><a href="/convenient-assay-kits/human-recombinant-impdh">Human IMPDH type II</a></h5>
         </div>
         <div class="col-8">
             <p>
