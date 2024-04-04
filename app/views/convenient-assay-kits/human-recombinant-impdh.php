@@ -113,7 +113,7 @@ Download this Document: <a href="/app/documents/NovoCIB IMPDH Services.pdf">"NOV
 </div>
 </section>
 <section>
-<div class="container">
+<div class="container mt-4">
 <h3 class="novo-blue">IMPDH - a choice target for major therapeutic applications</h3>
 <p><strong>Synonyms:</strong> inosine 5'-monophosphate dehydrogenase, IMP dehydrogenase</p>
 <p><strong>Catalytic activity</strong><br> Inosine Monophosphate Dehydrogenase (IMPDH) converts inosine 5µ-monophosphate (IMP) to xanthosine 5µ-monophosphate (XMP) using NAD+ as a cofactor.</p>
