@@ -32,6 +32,8 @@ class Nav
               <li><a class="dropdown-item" href="/convenient-assay-kits/itp-ase-deficiency-assay-kit">ITP-ase Deficiency Assay Kit</a></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/adk-phosphorylation-assay-kit">ADK Phosphorylation Assay Kit</a></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/dck-phosphorylation-assay-kit">dCK Phosphorylation Assay Kit</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/human-recombinant-impdh">Human IMPDH type II</a></li>
               </ul>
             </li>
               <li class="nav-item dropdown">
