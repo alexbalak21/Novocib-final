@@ -49,6 +49,15 @@ switch ($req_uri) {
         require_once "app/views/convenient-assay-kits/adk-phosphorylation-assay-kit.php";
         break;
 
+    case '/convenient-assay-kits/dck-phosphorylation-assay-kit':
+        require_once "app/views/convenient-assay-kits/dck-phosphorylation-assay-kit.php";
+        break;
+
+
+
+
+
+
 
 
     case '/hplc-analysis-of-bases-nucleosides':

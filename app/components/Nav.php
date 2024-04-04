@@ -31,6 +31,7 @@ class Nav
               <li><a class="dropdown-item" href="/convenient-assay-kits/ampda-assay-kit">AMPDA Assay Kit</a></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/itp-ase-deficiency-assay-kit">ITP-ase Deficiency Assay Kit</a></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/adk-phosphorylation-assay-kit">ADK Phosphorylation Assay Kit</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/dck-phosphorylation-assay-kit">dCK Phosphorylation Assay Kit</a></li>
               </ul>
             </li>
               <li class="nav-item dropdown">
