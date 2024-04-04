@@ -16,9 +16,6 @@ class Nav
               <li class="nav-item">
                 <a class="nav-link active" href="/">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/products">Products</a>
-              </li>
               <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Convenient Assay Kits
@@ -34,6 +31,15 @@ class Nav
               <li><a class="dropdown-item" href="/convenient-assay-kits/dck-phosphorylation-assay-kit">dCK Phosphorylation Assay Kit</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/human-recombinant-impdh">Human IMPDH type II</a></li>
+              </ul>
+            </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/active-purified-enzymes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Active Purified Enzymes
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/active-purified-enzymes">Active Purified Enzymes</a></li>
+              <li><hr class="dropdown-divider"></li>
               </ul>
             </li>
               <li class="nav-item dropdown">
