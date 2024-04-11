@@ -48,6 +48,7 @@ class Nav
               <li><a class="dropdown-item" href="/active-purified-enzymes/human-recombinant-hgprt">Human Recombinant HGPRT</a></li>
               <li><a class="dropdown-item" href="/active-purified-enzymes/recombinant-adenosine-kinase">Recombinant Adenosine Kinase</a></li>
               <li><a class="dropdown-item" href="/active-purified-enzymes/recombinant-deoxycytidine-kinase">Recombinant Deoxycytidine Kinase</a></li>
+              <li><a class="dropdown-item" href="/active-purified-enzymes/human-ump-cmp-kinase">Human UMP-CMP Kinase</a></li>
               </ul>
             </li>
 
