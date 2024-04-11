@@ -17,6 +17,7 @@ $content_title
 <li>to characterize a monophosphorylated nucleotide analogue as a potential substrate of CMK</li>
 <li>to quantify UMP, CMP, dUMP or dCMP in a sample</li>
 <li>to synthesize enzymatically the di-phosphate form of nucleotide analogue from its monophosphate form (e.g. dFdC-DP)</li>
+</ul>
 <div class=" d-flex justify-content-center mt-4">
 <div class="col-lg-10 col-12">
 <table class="table product mb-2">
@@ -56,7 +57,10 @@ $content_title
 </p>
 </div>
 </div>
-</ul>
+
+<p class="mt-4 text-end">Download this document <a target="_blank" href="/app/documents/NovoCIB E-Nov4.pdf"> <strong>"NovoCIB's UMP-CMP kinase" <i class="fa-regular fa-file-pdf"></i></strong></a><br></p>
+<p class="text-end mb-5">To know more about our <a target="_blank" href="href="/app/documents/NovoCIB Nucleoside kinases.pdf">Nucleoside Kinases <i class="fa-solid fa-book-open-reader"></i></a> catalogue.</p>
+
 </div>
 <div class="bg-light py-3">
 <div class="container">
