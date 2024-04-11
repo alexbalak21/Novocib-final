@@ -223,6 +223,7 @@ strong {
     a {
         font-size: 1rem !important;
         color: var(--novo-grey);
+        font-weight: 400 !important;
     }
     a:hover {
         color: var(--novo-blue);

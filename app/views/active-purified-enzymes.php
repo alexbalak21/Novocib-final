@@ -20,12 +20,12 @@ $content_title
 <h2>Purine Metabolism Enzymes</h2>
 <table class="purine w-100">
 <tr>
-<td class="col-2"><h5><a href="">IMPDH</a></h5></td>
+<td class="col-2"><h5><a href="/active-purified-enzymes/impdh-recombinant-enzyme">IMPDH</a></h5></td>
 <td class="col-5">Inosine Monophosphate Dehydrogenase (EC 1.1.1.205)</td>
 <td class="col-5">Human Type II, recombinant, expressed in E.coli Bacterial (Staphylococcus aureus) recombinant, expressed in E.coli</td>
 </tr>
 <tr>
-<td class="col-2"><h5><a href="">PNP</a></h5></td>
+<td class="col-2"><h5><a href="/convenient-assay-kits/human-recombinant-pnp">PNP</a></h5></td>
 <td>Purine Nucleoside Phosphorylase (EC 2.4.2.1)</td>
 <td>Human recombinant, expressed in E.coli</td>
 </tr>

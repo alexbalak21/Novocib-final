@@ -33,6 +33,10 @@ switch ($req_uri) {
         require_once "app/views/active-purified-enzymes/IMPDH-Recombinant-Enzyme.php";
         break;
 
+    case '/active-purified-enzymes/human-recombinant-hgprt':
+        require_once "app/views/active-purified-enzymes/Human-Recombinant-HGPRT.php";
+        break;
+
 
 
 

@@ -1,4 +1,5 @@
 <?php
+
 class Nav
 {
   static function bar()
@@ -34,6 +35,8 @@ class Nav
               <li><a class="dropdown-item" href="/convenient-assay-kits/human-recombinant-pnp">Human Recombinant PNP</a></li>
               </ul>
             </li>
+
+            
               <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="/active-purified-enzymes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Active Purified Enzymes
@@ -42,6 +45,7 @@ class Nav
               <li><a class="dropdown-item" href="/active-purified-enzymes">Active Purified Enzymes</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/active-purified-enzymes/impdh-recombinant-enzyme">IMPDH Recombinant Enzyme</a></li>
+              <li><a class="dropdown-item" href="/active-purified-enzymes/human-recombinant-hgprt">Human Recombinant HGPRT</a></li>
               </ul>
             </li>
               <li class="nav-item dropdown">
