@@ -41,6 +41,7 @@ class Nav
               <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/active-purified-enzymes">Active Purified Enzymes</a></li>
               <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/active-purified-enzymes/impdh-recombinant-enzyme">IMPDH Recombinant Enzyme</a></li>
               </ul>
             </li>
               <li class="nav-item dropdown">

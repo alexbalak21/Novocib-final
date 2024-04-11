@@ -21,9 +21,22 @@ switch ($req_uri) {
         require_once "app/views/services.php";
         break;
 
+
+
+        // Active-Purified-Enzymes
+
     case '/active-purified-enzymes':
         require_once "app/views/active-purified-enzymes.php";
         break;
+
+    case '/active-purified-enzymes/impdh-recombinant-enzyme':
+        require_once "app/views/active-purified-enzymes/IMPDH-Recombinant-Enzyme.php";
+        break;
+
+
+
+
+
 
     case '/convenient-assay-kits':
         require_once "app/views/convenient-assay-kits.php";
