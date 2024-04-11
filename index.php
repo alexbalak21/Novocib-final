@@ -41,6 +41,10 @@ switch ($req_uri) {
         require_once "app/views/active-purified-enzymes/recombinant-adenosine-kinase.php";
         break;
 
+    case '/active-purified-enzymes/recombinant-deoxycytidine-kinase':
+        require_once "app/views/active-purified-enzymes/recombinant-deoxycytidine-kinase.php";
+        break;
+
 
 
 
