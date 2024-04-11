@@ -143,29 +143,3 @@ CONTENT;
 
 addContent($page_content);
 render();
-
-?>
-
-<style>
-    .kits {
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        border-radius: 8px;
-    }
-
-    .kit {
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        padding: 0.5rem;
-        margin: 0.8rem 0;
-        border-radius: 4px;
-        background-color: white;
-    }
-
-    .kit:hover,
-    .therapeutic .kit:hover {
-        background-color: #F8F8F8;
-    }
-
-    .therapeutic .kit {
-        background-color: white;
-    }
-</style>
