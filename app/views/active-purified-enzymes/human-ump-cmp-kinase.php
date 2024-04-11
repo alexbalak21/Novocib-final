@@ -90,6 +90,23 @@ Crystal structure of open form of human UMP-CMP kinase has been solved recently(
 </div>
 </div>
 </div>
+
+<div class="container">
+<div class="referances my-4 row justify-content-center">
+<h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
+<div class="col-2">
+<img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo">
+</div>
+<div class="col-8">
+<ol>
+<li><a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/11912132/">J. Y. Liou et al. (2002): Characterization of Human UMP/CMP Kinase and Its Phosphorylation of D- and L-Form Deoxycytidine Analogue Monophosphates Cancer Res. 62(6), 1624-1631</a></li>
+<li><a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/10462544/">A. R. Van Rompay et al. (1999): Phosphorylation of deoxycytidine analog monophosphates by UMP-CMP kinase: molecular characterization of the human enzyme Mol. Pharmacol. 56(3), 562-569</a></li>
+<li><a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/12694191/">C. Pasti et al. (2003): Reaction of human UMP-CMP kinase with natural and analog substrates Eur. J. Biochem. 270(8), 1784-1790</a></li>
+<li><a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/15163660/">D. Segura-Peña et al. (2004): Substrate-induced conformational changes in human UMP/CMP kinase J. Biol. Chem. 279(32), 33882-9</a></li>
+</ol>
+</div>
+</div>
+</div>
 CONTENT;
 
 addContent($page_content);
