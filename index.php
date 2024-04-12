@@ -24,7 +24,6 @@ switch ($req_uri) {
 
 
         // Active-Purified-Enzymes
-
     case '/active-purified-enzymes':
         require_once "app/views/active-purified-enzymes.php";
         break;
@@ -50,7 +49,10 @@ switch ($req_uri) {
         break;
 
 
-
+        // FRESHNESS
+    case '/freshness-assay-kits':
+        require_once "app/views/freshness-assay-kits/index.php";
+        break;
 
 
 

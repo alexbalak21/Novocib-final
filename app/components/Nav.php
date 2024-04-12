@@ -36,6 +36,20 @@ class Nav
               </ul>
             </li>
 
+
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/freshness-assay-kits" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Convenient Assay Kits
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/freshness-assay-kits">Freshness Assay Kits</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/freshness-assay-kits/">Freshness Assay Kits</a></li>
+              </ul>
+            </li>
+
+            
+
             
               <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="/active-purified-enzymes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
