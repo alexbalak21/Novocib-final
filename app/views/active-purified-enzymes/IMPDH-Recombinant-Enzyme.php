@@ -22,7 +22,7 @@ $content_title
 <p class="mb-5">Mammalian and bacterial IMPDHs are known to have significantly different kinetic properties and inhibitor sensitivities(1, 2). <strong class="novo-blue">NOVOCIB</strong> provides two recombinant IMPDH enzymes: Human IMPDH, Type II, and Staphylococcus aureus IMPDH. These two enzymes are useful tools for the selection of species-specific IMPDH inhibitors.</p>
 <h5 class="text-center mb-3">Know More  <i class="fa-solid fa-arrow-down"></i></h5>
 <div class="kit text-center"><a href="/convenient-assay-kits/human-recombinant-impdh"><h4>Human IMPDH II - Inosine Monophosphate Dehydrogenase, Type II</h4></a></div>
-<div class="kit text-center mb-5"><a href=""><h4>Bacterial IMPDH, Staphylococcus aureus</h4></a></div>
+<div class="kit text-center mb-5"><a href="/convenient-assay-kits/bacterial-recombinant-impdh"><h4>Bacterial IMPDH, Staphylococcus aureus</h4></a></div>
 <p class="text-end"><i class="fa-solid fa-download"></i> ... or download our brochure <a target="_blank" href="/app/documents/NovoCIB IMPDH Services.pdf">"NovoCIB's IMPDH Products & Services" <i class="fa-regular fa-file-pdf"></i></a></p>
 <div class="referances my-5 row justify-content-center">
 <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
