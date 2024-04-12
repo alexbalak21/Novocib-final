@@ -50,6 +50,7 @@ class Nav
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/human-recombinant-impdh">Human IMPDH type II</a></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/human-recombinant-pnp">Human Recombinant PNP</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/bacterial-recombinant-impdh">Bacterial IMPDH</a></li>
               </ul>
             </li>
 

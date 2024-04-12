@@ -96,6 +96,10 @@ switch ($req_uri) {
         require_once "app/views/convenient-assay-kits/human-recombinant-impdh.php";
         break;
 
+    case '/convenient-assay-kits/bacterial-recombinant-impdh':
+        require_once "app/views/convenient-assay-kits/bacterial-recombinant-impdh.php";
+        break;
+
     case '/convenient-assay-kits/human-recombinant-pnp':
         require_once "app/views/convenient-assay-kits/human-recombinant-pnp.php";
         break;
