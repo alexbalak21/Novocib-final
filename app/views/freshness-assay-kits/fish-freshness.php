@@ -18,17 +18,17 @@ $content_title
 <p>While sensory analysis allows rapid evaluation of the quality of whole wet fish, the assessment of the quality of frozen fish, of frozen blocks of fillets, or crumbed seafood products remains more difficult.</p>
 <p><strong>Nucleotide</strong> contents (IMP, Ino and Hx) or K-values were measured using <strong>PRECICE® Freshness Assay kit</strong> to determine the quality of different types of fish and seafoods.</p>
 
-<div class="row text-center">
-<div class="col-lg-6 my-3">
+<div class="row text-center inner-links">
+<div class="col-lg-6 my-4">
 <a href="#smoked_salmon"><strong>Effect of a preservative in smoked salmon <i class="fa-solid fa-file-arrow-down"></i></strong></a>
 </div>
-<div class="col-lg-6 my-3">
+<div class="col-lg-6 my-4">
 <a href="#cod"><strong>Freshness of cod <i class="fa-solid fa-file-arrow-down"></i></strong></a>
 </div>
-<div class="col-lg-6 my-3">
+<div class="col-lg-6 my-4">
 <a href="#atlantic_salmon"><strong>Freshness of salmon <i class="fa-solid fa-file-arrow-down"></i></strong></a>
 </div>
-<div class="col-lg-6 my-3">
+<div class="col-lg-6 my-4">
 <a href="#Frozen_Gambas"><strong>Freshness of shrimps/gambas <i class="fa-solid fa-file-arrow-down"></i></strong></a>
 </div>
 <h5 class="text-center mt-4">Go to <a href="/freshness-assay-kits/freshness-principle">PRECICE® Freshness Assay Kit <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h5>
@@ -268,6 +268,13 @@ render();
 
 ?>
 <style>
+    .inner-links {
+        div a {
+            font-size: larger;
+
+        }
+    }
+
     table.outline {
         border: 1px solid silver;
         width: 98%;

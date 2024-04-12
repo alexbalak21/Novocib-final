@@ -25,7 +25,7 @@ $content_title
 </div>
 </div>
 <div class="row mt-5">
-<div class="col-lg-6 text-center">
+<div class="col-lg-6 text-center my-3">
 <img src="/app/static/img/freshness_kit _pectrophotometer.jpg" alt="" class="col-lg-8">
 </div>
 <div class="col-lg-6 text-center">
