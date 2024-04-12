@@ -108,6 +108,10 @@ switch ($req_uri) {
         require_once "app/views/convenient-assay-kits/adk-assay-kit.php";
         break;
 
+    case '/convenient-assay-kits/phosphatase-assay-kit':
+        require_once "app/views/convenient-assay-kits/phosphatase-assay-kit.php";
+        break;
+
 
 
 

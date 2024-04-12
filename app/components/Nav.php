@@ -52,6 +52,7 @@ class Nav
               <li><a class="dropdown-item" href="/convenient-assay-kits/human-recombinant-pnp">Human Recombinant PNP</a></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/bacterial-recombinant-impdh">Bacterial IMPDH</a></li>
               <li><a class="dropdown-item" href="/convenient-assay-kits/adk-assay-kit">ADK Assay Kit</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/phosphatase-assay-kit">Phosphatase Assay Kit</a></li>
               </ul>
             </li>
 
