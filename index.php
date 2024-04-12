@@ -63,7 +63,7 @@ switch ($req_uri) {
         break;
 
 
-        // ASSAY KITS 
+        // CONVENIENT ASSAY KITS
     case '/convenient-assay-kits':
         require_once "app/views/convenient-assay-kits.php";
         break;
@@ -103,6 +103,15 @@ switch ($req_uri) {
     case '/convenient-assay-kits/human-recombinant-pnp':
         require_once "app/views/convenient-assay-kits/human-recombinant-pnp.php";
         break;
+
+    case '/convenient-assay-kits/adk-assay-kit':
+        require_once "app/views/convenient-assay-kits/adk-assay-kit.php";
+        break;
+
+
+
+
+
 
 
     case '/hplc-analysis-of-bases-nucleosides':
