@@ -86,6 +86,10 @@ $content_title
 <li>Frozen, fresh, stored under modified atmosphere, smoked, sterilized and canned products</li>
 </ul>
 </section>
+<div class="text-end">
+<p>Download <a target="_blank" href="/app/documents/PRECICE Nucleotides Assay Kit K0700-004.pdf">"PRECICE® Nucleotides Assay Kit"</a> <strong>User Manual</strong> for cuvette spectrophotometer.</p>
+<p>Download <a target="_blank" href="/app/documents/PRECICE Nucleotides Assay Kit K0700-003.pdf">"PRECICE® Nucleotides Assay Kit"</a> <strong>User Manual</strong> for plate reader.</p>
+</div>
 
 </main>
 CONTENT;
