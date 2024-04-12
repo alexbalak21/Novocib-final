@@ -121,12 +121,34 @@ $content_title
 </ul>
 </div>
 <p class="my-5 text-center">For rapid analysis of in vitro phosphorylation of novel nucleoside analogs for human adenosine kinase see our <a href="/convenient-assay-kits/adk-phosphorylation-assay-kit">PRECICE® ADK Phosphorylation Assay Kit. <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-
 </div>
-
 </div>
-
 </section>
+
+<section class="bg-light py-3">
+<div class="container">
+<div class="mb-5">
+<h5>ADK role in human body</h5>
+<p >Adenosine kinase is a ubiquitous enzyme regulating intra- and extracellular concentrations of adenosine (AR), an important modulator of central nervous system functions and a signal molecule involved in hypoxia, inflammation and nociception. Together with adenosine demainase, adenosine kinase regulates intra- and extracellular cellular adenosine concentration. Inhibition of adenosine kinase results in selective increase of local adenosine concentrations and reduced seizure susceptibility and nociception in vivo(3). ADK dysfunction is involved in several pathologies, including diabetes(13), epilepsy(6), and cancer. Consequently, ADK emerges as a rational therapeutic target, and adenosine-regulating drugs have been extensively tested (1) as new analgesic and anti-inflammatory agents(4) to treat schizophrenia(7) or to limit brain injury after an ischemic stroke(8).</p>
+</div>
+<div>
+<h5>Validation</h5>
+<p>The use of <strong>PRECICE® ADK Screening Assay Kit</strong> for the screening of ADK inhibitors and IC50 measurements was validated with compound A-134974, a known ADK inhibitor (Sigma-Aldrich, under license from Abbott Laboratories). Z'-Factor was calculated from 44 negative (no ADK inhibition) and positive (inhibition of ADK with 500nM A-134974) and measured as 0.68, which is an excellent level of performance for a screening assay</p>
+<div class="d-flex justify-content-center">
+<figure class="col-lg-7">
+<img src="/app/static/img/ADK_Inhibition_Curve.png" alt="ADK Inhibition Curve Graph" class="w-100">
+<figcaption class="text-center"><strong>ADK Inhibition curve with compound A-134974 at 12 different concentrations.</strong> <br>
+All data points represent the mean (+/-SD) of 8 wells (2 wells - duplicate - on 4 independent plates). IC50 was determined by fitting a 4-parameter non-linear curve to the data with least-square method. IMPDH activity assays were run to confirm that IMPDH is not inhibited by compound A-134974 (data not shown</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
 CONTENT;
 
 addContent($page_content);
