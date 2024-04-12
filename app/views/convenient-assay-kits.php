@@ -51,10 +51,10 @@ $content_title
                 <h2 class="col-12 text-center">Nucleoside Kinase Assay Kits</h2>
                     <div class="col-6 my-3">
                         <div class="kit">
-                            <h5 class="text-center"><a href="">ADK Phosphorylation Assay Kit</a></h5>
+                            <h5 class="text-center"><a href="/convenient-assay-kits/adk-phosphorylation-assay-kit">ADK Phosphorylation Assay Kit</a></h5>
                         </div>
                         <div class="kit">
-                            <h5 class="text-center"><a href="">dCK Phosphorylation Assay Kit</a></h5>
+                            <h5 class="text-center"><a href="/convenient-assay-kits/dck-phosphorylation-assay-kit">dCK Phosphorylation Assay Kit</a></h5>
                         </div>
                     </div>
                     <div class="col-6 d-flex align-items-center">
@@ -87,7 +87,7 @@ $content_title
     </div>
     <div class="kit row align-items-center">
         <div class="col-3 me-3 text-center">
-            <h5><a href="">Human PNP</a></h5>
+            <h5><a href="/convenient-assay-kits/human-recombinant-pnp">Human PNP</a></h5>
         </div>
         <div class="col-8">
             <p>

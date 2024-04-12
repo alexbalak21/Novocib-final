@@ -120,7 +120,38 @@ $content_title
 <p>PNP deficiency leads to T-lymphocytopenia, usually with no apparent effects on B-lymphocyte function. These symptoms suggest possible chemotherapeutic applications of potent inhibitors of PNP, as selective immunosuppressive agents, to treat T-cell leukemias or T-cell-mediated autoimmune diseases, such as lupus erythematosus and rheumatoid arthritis1(1,2). The decrease in plasma and urine levels of urate is an additional symptom of PNP deficiency. PNP inhibitors may contribute to treat hyperuricemic states, such as secondary or xanthine gout. <br>
 Some PNP inhibitors have undergone clinical trials for the treatment of cutaneous T-cell lymphoma, acute lymphoblastic leukemia (ALL), HIV infections, and psoriasis.
 </p>
+<div class="row align-items-center my-5">
+<p class="col-10">
+Peldesine (BCX-34) was granted orphan drug status for the treatment of T-cell lymphoma and reached phase III as an immunomodulator for inflammatory autoimmune diseases. It has recently entered clinical trial for HIV infections(3).
+</p>
+<figure class="col-2">
+<img class="col-lg-10" src="/app/static/img/BCX-34.png" alt="" >
+<figcaption class="text-center"><strong>BCX-34 (Peldesine)</strong></figcaption>
+</figure>
 </div>
+<div class="row align-items-center">
+<p class="col-10">
+Forodesine (BCX-1777) has US orphan drug status for the treatment of T-cell non-Hodgkin's lymphoma, including cutaneous T-cell lymphoma (CTCL), chronic lymphocytic leukaemia (CLL) and related leukaemias, including T-cell prolymphocytic leukaemia (PLL), adult T-cell leukaemia and hairy cell leukaemia, and for the treatment of acute lymphocytic leukaemia (ALL). Forodesine was also designed Orphan drug in Europe for ALL in December 2006, and for CTCL in February 2007(4).
+</p>
+<figure class="col-2">
+<img class="col-lg-10" src="/app/static/img/BCX-1777.png" alt="" >
+<figcaption class="text-center"><strong>BCX-1777 (Forodesine)</strong></figcaption>
+</figure>
+</div>
+<p>PNP inhibitors are also investigated to prevent the cleavage, and the resulting deactivation of Nucleoside Analogues by PNP.</p>
+<p><i>Note: Protozoan parasites are auxotrophic for purine and have their own PNPs which have specific activities and properties that differ from the human PNP. Protozoan parasites PNPs are considered to be reasonable target against infection (e.g. Plasmodium falciparum)(5).</i> </p>
+<p><strong>PNP, a threat for therapeutic efficacy of Nucleoside Analogues </strong><br>
+<i>In vivo</i>, phosphorolysis is highly favoured over purine nucleoside synthesis and is coupled with two additional enzymatic reactions: oxidation of the liberated purine base by xanthine oxidase (XO) and its phosphoribosylation by hypoxanthine-guanine phosphoribosyltransferase (HGPRT)(6). Thus, PNP plays a key role in the salvage pathway of the purine metabolism, enabling the cell to utilize purine bases recovered from metabolized purine ribo- and deoxyribonucleosides to synthesize purine nucleotides.
+This phosphorolysis reaction of purine nucleosides by PNP has a direct impact on the therapeutic efficacy of Nucleoside Analogues. Antitumour or antiviral nucleoside analogues are likely to be cleaved by PNP before being phosphorylated by the cell nucleoside kinases and converted to the active nucleotide form. For instance, 2',3'-dideoxyguanosine (ddG)(7), 9-β-D-arabinofuranosyl guanine (AraG)(8) as well as one of its prodrug, Nelarabine (Arranon®, GSK)(9), which is intracellularly converted to AraG by Adenosine deaminase (ADA), are PNP resistant nucleoside analogues, whereas 2',3'-dideoxyinosine (ddI)(10) is easily cleaved in vivo by PNP. <br>
+Since acyclonucleoside analogues are particularly resistant to cleavage by PNP though phosphorylated by viral thymidine kinases (TK), they are generally considered as excellent candidates as antiviral agents (e.g. aciclovir, ganciclovir)(11).
+</p>
+<p>Note that Ganciclovir is not only PNP resistant, but is also a PNP inhibitor.</p>
+<p class="mb-5">
+<strong>PNP, a tool for enzymatic synthesis of Nucleoside Analogues</strong> <br>
+The reversible reaction catalyzed by PNP can be favorably exploited to synthesize nucleoside analogues, especially when chemical synthesis is difficult to prepare and/or gives low yields.
+</p>
+</div>
+
 </section>
 CONTENT;
 
