@@ -36,7 +36,7 @@ class Nav
               </ul>
             </li>
 
-
+            <!-- FRESHNESS -->
               <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="/freshness-assay-kits" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Freshness Assay Kits
@@ -45,6 +45,7 @@ class Nav
               <li><a class="dropdown-item" href="/freshness-assay-kits">Freshness Assay Kits</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/freshness-assay-kits/freshness-principle">Freshness Principle</a></li>
+              <li><a class="dropdown-item" href="/freshness-assay-kits/fish-freshness">Fish Freshness</a></li>
               </ul>
             </li>
 

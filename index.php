@@ -58,8 +58,12 @@ switch ($req_uri) {
         require_once "app/views/freshness-assay-kits/freshness-principle.php";
         break;
 
+    case '/freshness-assay-kits/fish-freshness':
+        require_once "app/views/freshness-assay-kits/fish-freshness.php";
+        break;
 
 
+        // ASSAY KITS 
     case '/convenient-assay-kits':
         require_once "app/views/convenient-assay-kits.php";
         break;
