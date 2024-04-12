@@ -29,11 +29,11 @@ switch ($req_uri) {
         break;
 
     case '/active-purified-enzymes/impdh-recombinant-enzyme':
-        require_once "app/views/active-purified-enzymes/IMPDH-Recombinant-Enzyme.php";
+        require_once "app/views/active-purified-enzymes/impdh-recombinant-enzyme.php";
         break;
 
     case '/active-purified-enzymes/human-recombinant-hgprt':
-        require_once "app/views/active-purified-enzymes/Human-Recombinant-HGPRT.php";
+        require_once "app/views/active-purified-enzymes/human-recombinant-hgprt.php";
         break;
 
     case '/active-purified-enzymes/recombinant-adenosine-kinase':
@@ -99,12 +99,6 @@ switch ($req_uri) {
     case '/convenient-assay-kits/human-recombinant-pnp':
         require_once "app/views/convenient-assay-kits/human-recombinant-pnp.php";
         break;
-
-
-
-
-
-
 
 
     case '/hplc-analysis-of-bases-nucleosides':
