@@ -31,7 +31,7 @@ $content_title
 </tr>
 
 <tr>
-<td class="col-2"><h5><a href="">HGPRT</a></h5></td>
+<td class="col-2"><h5><a href="/active-purified-enzymes/human-recombinant-hgprt">HGPRT</a></h5></td>
 <td>Hypoxanthine-guanine phosphoribosyltransferase (EC 2.4.2.8)</td>
 <td>Human recombinant, expressed in E.coli</td>
 </tr>
@@ -45,17 +45,17 @@ $content_title
 <h2>Nucleoside Kinases</h2>
 <table class="purine w-100">
 <tr>
-<td class="col-2"><h5><a href="">ADK</a></h5></td>
+<td class="col-2"><h5><a href="/active-purified-enzymes/recombinant-adenosine-kinase">ADK</a></h5></td>
 <td class="col-5">	Adenosine Kinase (EC 2.7.1.20)</td>
 <td class="col-5">Human, recombinant, expressed in E.coli</td>
 </tr>
 <tr>
-<td class="col-2"><h5><a href="">dCK</a></h5></td>
+<td class="col-2"><h5><a href="/active-purified-enzymes/recombinant-deoxycytidine-kinase">dCK</a></h5></td>
 <td>Deoxycytidine Kinase (EC 2.7.1.74)</td>
 <td>Human recombinant, expressed in E.coli</td>
 </tr>
 <tr>
-<td class="col-2"><h5><a href="">CMK</a></h5></td>
+<td class="col-2"><h5><a href="/active-purified-enzymes/human-ump-cmp-kinase">CMK</a></h5></td>
 <td>UMP-CMP Kinase (EC 2.7.4.14)</td>
 <td>Human recombinant, expressed in E.coli</td>
 </tr>
