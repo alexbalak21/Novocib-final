@@ -25,7 +25,7 @@ $page_content = <<<Services
 </div>
 <div class="col-8">
 <p>Nucleotides can be quantified by HPLC or with enzymes, eg. Fresh Tester strips for visual quantification of ATP breakdown products.</p>
-<p class="mt-3"><a href="">PRECICE® Nucleotides Assay Kit</a> is a first spectrophotometric assay that allows accurate measurement of concentrations of IMP, inosine and hypoxanthine in fresh, frozen, cooked or dried seafood products. These data can be used to calculate Ki value (suggested by Karube et al, 1984) , H-value (Huong et al, 1992) and Fr value (Gill et al. 1987). The enzymes provided with the kit allow specific conversion of three major ATP catabolites - IMP, inosine (Ino) and hypoxanthine (Hx) to NADH2. The quantification of nucleotides is done by measuring sample absorbance at 340nm with cuvette spectrophotometer  or microplate reader.</p>
+<p class="mt-3"><a href="/freshness-assay-kits/freshness-principle">PRECICE® Nucleotides Assay Kit</a> is a first spectrophotometric assay that allows accurate measurement of concentrations of IMP, inosine and hypoxanthine in fresh, frozen, cooked or dried seafood products. These data can be used to calculate Ki value (suggested by Karube et al, 1984) , H-value (Huong et al, 1992) and Fr value (Gill et al. 1987). The enzymes provided with the kit allow specific conversion of three major ATP catabolites - IMP, inosine (Ino) and hypoxanthine (Hx) to NADH2. The quantification of nucleotides is done by measuring sample absorbance at 340nm with cuvette spectrophotometer  or microplate reader.</p>
 <span>The enzymes provided with the kit :</span>
 <ul>
 <li>are stable and transported at room temperature;</li>
