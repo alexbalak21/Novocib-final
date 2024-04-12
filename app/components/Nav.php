@@ -17,8 +17,25 @@ class Nav
               <li class="nav-item">
                 <a class="nav-link active" href="/">Home</a>
               </li>
+
+
+      <!-- FRESHNESS -->
               <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="/freshness-assay-kits" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Freshness Assay Kits
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/freshness-assay-kits">Freshness Assay Kits</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/freshness-assay-kits/freshness-principle">Freshness Principle</a></li>
+              <li><a class="dropdown-item" href="/freshness-assay-kits/fish-freshness">Fish Freshness</a></li>
+              </ul>
+            </li>
+
+
+      <!-- CONVENIENT ASSAY KITS -->
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/convenient-assay-kits" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Convenient Assay Kits
               </a>
               <ul class="dropdown-menu">
@@ -36,22 +53,8 @@ class Nav
               </ul>
             </li>
 
-            <!-- FRESHNESS -->
-              <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/freshness-assay-kits" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Freshness Assay Kits
-              </a>
-              <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/freshness-assay-kits">Freshness Assay Kits</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="/freshness-assay-kits/freshness-principle">Freshness Principle</a></li>
-              <li><a class="dropdown-item" href="/freshness-assay-kits/fish-freshness">Fish Freshness</a></li>
-              </ul>
-            </li>
 
-            
-
-            
+      <!-- ACTIVE PURIFIED ENZYMES -->
               <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="/active-purified-enzymes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Active Purified Enzymes
@@ -68,22 +71,23 @@ class Nav
             </li>
 
 
-
+            
+      <!-- SERVICES -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services
                 </a>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/services">Services</a></li>
                 <li><a class="dropdown-item" href="/analytical-services">Analytical Services</a></li>
                 <li><a class="dropdown-item" href="/analytical-services/yeast-extract-nucleotide-analysis">Yeast Extract Nucleotide Analysis</a></li>
-                <li><a class="dropdown-item" href="/nucleotides">Nucleotides</a></li>
-                <li><a class="dropdown-item" href="/cellular-nucleotides-analysis">Cellular Nucleotides Analysis</a></li>
-                <li><a class="dropdown-item" href="/active-purified-enzymes">Active Purified Enzymes</a></li>
+                
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="/inquiry">Inquiry</a></li>
                 <li><a class="dropdown-item" href="/hplc-analysis-of-bases-nucleosides">HPLC analysis of bases nucleosides</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/nucleotides">Nucleotides</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/about-us">About Us</a>
