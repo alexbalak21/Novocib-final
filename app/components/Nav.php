@@ -1,194 +1,131 @@
 <?php
+
 class Nav
 {
-    static function bar()
-    {
-        return <<<NAVBAR
-    <div class="navigation">
-    <a class="logo" href="/"><img src="app/static/img/logo.png" alt="Novocib logo" /></a>
-    <input type="checkbox" id="nav-toggle" />
-    <label class="navbars" for="nav-toggle"><i id="nav-bars" class="fa-solid fa-bars"></i></label>
-    <nav>
-        <ul>
-            <li><a href="">LINK</a></li>
-            <li>
-                <a>
-                    LINK
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul>
-                    <li class="">
-                        <a>
-                            DOWN
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                        <ul>
-                            <li><a href="">LINK 1</a></li>
-                            <li><a href="">LINK2</a></li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <a>
-                            DWON
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                        <ul>
-                            <li><a href="">LINK 1</a></li>
-                            <li><a href="">LINK2</a></li>
-                        </ul>
-                    </li>
-                </ul>
+  static function bar()
+  {
+    return <<<NAVBAR
+
+        <nav class="navbar-default navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"> <img src="/app/static/img/logo.png" alt="Novocib logo" height="40"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+              </li>
+
+
+      <!-- FRESHNESS -->
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/freshness-assay-kits" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Freshness Assay Kits
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/freshness-assay-kits">Freshness Assay Kits</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/freshness-assay-kits/freshness-principle">Freshness Principle</a></li>
+              <li><a class="dropdown-item" href="/freshness-assay-kits/fish-freshness">Fish Freshness</a></li>
+              </ul>
             </li>
-            <li>
-                <a>
-                    LINK
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul>
-                    <li><a href="">LINK</a></li>
-                </ul>
+
+
+      <!-- CONVENIENT ASSAY KITS -->
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/convenient-assay-kits" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Convenient Assay Kits
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/convenient-assay-kits">Convenient Assay Kits</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/hprt-assay-kit">HPRT Assay Kit</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/prpp-s-assay-kit">PRPP-S Assay Kit</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/ampda-assay-kit">AMPDA Assay Kit</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/itp-ase-deficiency-assay-kit">ITP-ase Deficiency Assay Kit</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/adk-phosphorylation-assay-kit">ADK Phosphorylation Assay Kit</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/dck-phosphorylation-assay-kit">dCK Phosphorylation Assay Kit</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/human-recombinant-impdh">Human IMPDH type II</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/human-recombinant-pnp">Human Recombinant PNP</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/bacterial-recombinant-impdh">Bacterial IMPDH</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/adk-assay-kit">ADK Assay Kit</a></li>
+              <li><a class="dropdown-item" href="/convenient-assay-kits/phosphatase-assay-kit">Phosphatase Assay Kit</a></li>
+              </ul>
             </li>
-            <li><a href="">LINK</a></li>
-        </ul>
-    </nav>
-</div>
+
+
+      <!-- ACTIVE PURIFIED ENZYMES -->
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/active-purified-enzymes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Active Purified Enzymes
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/active-purified-enzymes">Active Purified Enzymes</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/active-purified-enzymes/impdh-recombinant-enzyme">IMPDH Recombinant Enzyme</a></li>
+              <li><a class="dropdown-item" href="/active-purified-enzymes/human-recombinant-hgprt">Human Recombinant HGPRT</a></li>
+              <li><a class="dropdown-item" href="/active-purified-enzymes/recombinant-adenosine-kinase">Recombinant Adenosine Kinase</a></li>
+              <li><a class="dropdown-item" href="/active-purified-enzymes/recombinant-deoxycytidine-kinase">Recombinant Deoxycytidine Kinase</a></li>
+              <li><a class="dropdown-item" href="/active-purified-enzymes/human-ump-cmp-kinase">Human UMP-CMP Kinase</a></li>
+              </ul>
+            </li>
+
+
+            
+      <!-- SERVICES -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/analytical-services">Analytical Services</a></li>
+                <li><a class="dropdown-item" href="/analytical-services/yeast-extract-nucleotide-analysis">Yeast Extract Nucleotide Analysis</a></li>
+                
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/inquiry">Inquiry</a></li>
+                <li><a class="dropdown-item" href="/hplc-analysis-of-bases-nucleosides">HPLC analysis of bases nucleosides</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/nucleotides">Nucleotides</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about-us">About Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>    
+
 NAVBAR;
-    }
+  }
 }
+
 ?>
-<script src="./app/components/navbar.js" defer></script>
 
 <style>
-    .navigation {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(200, 200, 200, 0.9);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 99;
-    }
+  nav {
+    margin-bottom: 0px;
+  }
 
-    .navigation .logo img {
-        height: 56px;
-    }
+  nav ul li a {
+    font-size: 18px !important;
+    margin: 0 20px;
+    font-weight: 500 !important;
+  }
 
-    nav ul {
-        list-style: none;
-    }
+  .dropdown-item:hover {
+    background-color: initial !important;
+  }
 
-    nav ul li {
-        position: relative;
-        float: left;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-        padding: 20px;
-        width: 160px;
-        text-align: center;
-        text-decoration: none;
-        display: block;
-        color: black;
-    }
-
-    nav ul li a:hover {
-        background: grey;
-        color: white;
-    }
-
-    nav ul li ul {
-        position: absolute;
-        left: 0;
-        margin-top: -1px;
-        background: white;
-        display: none;
-    }
-
-    nav ul li ul li {
-        width: 100%;
-        border-top: 1px solid grey;
-    }
-
-    nav ul li ul li ul {
-        left: 160px;
-        top: 0;
-    }
-
-    nav ul li:hover.open>ul {
-        display: initial;
-    }
-
-    nav ul li.subopen>ul {
-        display: initial;
-    }
-
-    #nav-toggle {
-        display: none;
-    }
-
-    .navigation .navbars {
-        font-size: 18px;
-        color: dimgray;
-        cursor: pointer;
-        display: none;
-        font-size: 32px;
-        padding: 2px 10px;
-        margin: 10px;
-        border: 1px solid LightGray;
-        border-radius: 6px;
-    }
-
-    @media (max-width: 1200px) {
-        .navigation .navbars {
-            display: block;
-        }
-
-        nav {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background-color: white;
-            border: 1px solid grey;
-            display: none;
-        }
-
-        nav ul li {
-            width: 100%;
-        }
-
-        nav ul li a {
-            width: 100%;
-        }
-
-        nav ul li ul {
-            position: relative;
-            width: 100%;
-        }
-
-        nav ul li ul li {
-            background-color: lightgray;
-        }
-
-        nav ul li ul li i {
-            transform: rotate(90deg);
-        }
-
-        nav ul li ul li ul {
-            width: 100%;
-            left: 0;
-        }
-
-        nav ul li ul li ul li {
-            background-color: darkgrey;
-        }
-
-        #nav-toggle:checked~nav {
-            display: initial;
-        }
-    }
+  nav ul li a:hover {
+    color: var(--novo-blue) !important;
+  }
 </style>

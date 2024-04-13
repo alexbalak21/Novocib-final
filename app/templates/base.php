@@ -6,7 +6,6 @@ if (!isset($title)) {
 if (!isset($lang)) {
     $lang = "en";
 }
-$img = "app/static/img";
 ?>
 
 
@@ -16,21 +15,38 @@ $img = "app/static/img";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app/css/main.css">
-    <script src="https://kit.fontawesome.com/6502c70df0.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="app/static/img/icon.png" />
+    <!-- FONTAWASOME -->
+    <!-- <script src="https://kit.fontawesome.com/6502c70df0.js" crossorigin="anonymous"></script> -->
+    <!-- LOCAL -->
+    <!-- <link href="/app/FA6/css/all.min.css" rel="stylesheet" /> -->
+    <!-- CDN -->
+    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP  -->
+    <link rel="stylesheet" href="/app/css/bootstrap.min.css">
+    <script src="/app/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/app/static/img/icon.png" />
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="/app/css/main.css">
+    <script src="/app/js/app.js" defer></script>
+
     <title><?= $title ?></title>
 </head>
 
 <body>
     <?= Nav::bar() ?>
     <?php
-    function render($content = "")
+    global $content;
+    $content = "";
+    function addContent($passedContent = "")
     {
-        if ($content == "") {
-            $content = "<h3>Base Template \nUse '\$content to output the content of the page.</h3>";
-        }
+        global $content;
+        $content .= $passedContent;
+    }
+    function render()
+    {
+        global $content;
         echo $content;
+        echo Footer::gen();
     }
 
     ?>

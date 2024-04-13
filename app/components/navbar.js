@@ -1,12 +1,5 @@
 const nav_items = document.querySelectorAll("nav ul li")
 const sub_nav_items = document.querySelectorAll("nav ul li ul li")
-const body = document.querySelector("body")
-const nav = document.querySelector(".navigation")
-const nav_color = nav.style.backgroundColor
-body.onscroll = () => {
-    if (window.scrollY > 0) nav.style.backgroundColor = "white"
-    else nav.style.backgroundColor = nav_color
-}
 
 nav_items.forEach((item) => {
     item.addEventListener("click", () => {

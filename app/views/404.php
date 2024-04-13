@@ -1,15 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$title = "404 Page not found";
+require_once "app/templates/base.php";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page not found</title>
-</head>
+$novoblue = "#4167b1";
 
-<body>
-    <h1>404 Page not found</h1>
+global $path_way;
+$path_way = ["Home", "404 Page not found"];
 
-</body>
+addContent(Banner::gen("/app/static/img/network.jpg"));
+$content_title = UnderlinedTitle::get("404 Page not found", "novoblue", "center");
 
-</html>
+$page_content = <<<Services
+<div class="container mt-5" style="height: 500px; padding-top:90px;">
+<div class="mb-5">$content_title</div>
+
+<p class="text-center">The page you are asking for was not found.</p>
+<div class="text-center mt-5">
+<a href="/" class="btn btn-primary"><span style="font-size:20px">Go to Homepage</span></a>
+</div>
+
+</div>
+Services;
+
+addContent($page_content);
+render();
