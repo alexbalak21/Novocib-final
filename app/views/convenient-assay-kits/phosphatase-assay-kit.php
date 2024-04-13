@@ -16,7 +16,7 @@ $content_title
 <div class="row">
     <div class="col-lg-6">
         <p>
-        <strong>PRECICE® ADK Assay Kit</strong> provides a convenient, high throughput compatible and non-radioactive assay for in vitro measurement of ADK activity and for Drug Discovery of novel ADK inhibitors. Novel tool for Drug Discovery, this kit allows HTS search of novel ADK inhibitors.
+        PRECICE® Phosphatase Assay Kit developed by NovoCIB is a continuous spectrophotometric enzyme assay to monitor activity of any enzymes liberating inorganic phosphate (Pi) during enzymatic reactions. The kit can be used for
         </p>
         <h4 class="novo-blue">Principle:</h4>
         <p>
