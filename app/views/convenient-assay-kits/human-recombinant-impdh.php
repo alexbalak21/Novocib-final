@@ -131,8 +131,79 @@ Download this Document: <a href="/app/documents/NovoCIB IMPDH Services.pdf">"NOV
 The IMPDH II atomic structure has been resolved and it provides a valuable background for further leads optimization(9). Besides nucleosides analogues, NCEs have been identified as IMPDH inhibitors(10, 11, 12, 13, 14) and enter development trials (e.g. AVN-944: Phase I in advanced hematologic malignancies, Phase II in pancreatic and other solid tumors).
 All this demonstrates how promising new IMPDH inhibitors could be and why the inhibiting activity of compounds is worth being evaluated on such a highly pertinent target.</p>
 </div>
+<div class="container">
+<div class="row justify-content-evenly">
+<figure class="col-lg-4 col-6 inhibitors">
+<figcaption class="text-center">
+AVN-944
+</figcaption>
+<img class="w-100" src="/app/static/img/AVN-944.png" alt="">
+</figure>
+<figure class="col-lg-4 col-6 inhibitors">
+<figcaption class="text-center">
+VX-148
+</figcaption>
+<img class="w-100" src="/app/static/img/VX-148.png" alt="">
+</figure>
+<figure class="col-lg-4 col-6 inhibitors">
+<figcaption class="text-center">
+VX-497
+</figcaption>
+<img class="w-100" src="/app/static/img/VX-497.png" alt="">
+</figure>
+<figure class="col-lg-4 col-6 inhibitors">
+<figcaption class="text-center">
+MPA (mycophenolic acid)
+</figcaption>
+<img class="w-100" src="/app/static/img/MPA.png" alt="">
+</figure>
+<figure class="col-lg-4 col-6  inhibitors">
+<figcaption class="text-center">
+CellCept®
+</figcaption>
+<img class="w-100" src="/app/static/img/MMF.png" alt="">
+</figure>
+<figure class="col-lg-4 col-6 inhibitors">
+<figcaption class="text-center">
+BMS-337197
+</figcaption>
+<img class="w-100" src="/app/static/img/BMS-337197.png" alt="">
+</figure>
+<figure class="col-lg-4 col-6 inhibitors">
+<figcaption class="text-center">
+Tiazofurin
+</figcaption>
+<img class="w-100" src="/app/static/img/tiazofurin.png" alt="">
+</figure>
+<figure class="col-lg-4 col-6 inhibitors">
+<figcaption class="text-center">
+CellCept®
+</figcaption>
+<img class="w-100" src="/app/static/img/ribavirine.png" alt="">
+</figure>
+<figure class="col-lg-4 col-6 inhibitors">
+<figcaption class="text-center">
+Mizoribine
+</figcaption>
+<img class="w-100" src="/app/static/img/mizoribine.png" alt="">
+</figure>
+</div>
+</div>
 </section>
 CONTENT;
 
 addContent($page_content);
 render();
+
+?>
+
+<style>
+    .inhibitors {
+        border: 1px solid silver;
+
+        img {
+            padding: 6px;
+            aspect-ratio: 2;
+        }
+    }
+</style>
