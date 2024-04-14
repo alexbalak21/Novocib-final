@@ -5,13 +5,28 @@ $req_uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 //REQUETS PARAMETERS
 // $_REQUEST
+define('__ROOT__', dirname(dirname(__FILE__)) . "/www");
+echo "<h1>WORK IN PROGRESS</h1>";
+print_r(__ROOT__);
+echo "<br>";
+echo "<br>";
+$dirs = scandir(__ROOT__);
+print_r($dirs);
+
+
+
 
 
 switch ($req_uri) {
     case '/':
     case '/home':
     case "/Home":
-        require_once "app/views/home.php";
+        echo "<h1>Home</h1>";
+        try {
+            include("");
+        } catch (Exception $e) {
+            echo 'Message: ' . $e->getMessage();
+        }
         break;
 
         // SEND MAIL LOGIC
@@ -113,10 +128,6 @@ switch ($req_uri) {
     case '/convenient-assay-kits/phosphatase-assay-kit':
         require_once "app/views/convenient-assay-kits/phosphatase-assay-kit.html";
         break;
-
-
-
-
 
 
 

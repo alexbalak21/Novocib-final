@@ -3,6 +3,7 @@
 print_r($_POST);
 // PROD MAIL
 $to = "awfont@alwaysdata.net";
+$to = "contact@novocib.com";
 
 
 //RECIVES DATA FORM THE CLIENT CHECKS THE DATA AND RESPONDS 202: MAIL SENT /400: DATA IS MISSING/ 403: BAD METHOD / 503: SERVER ERROR 
@@ -37,7 +38,8 @@ function serve()
         return true;
     } else {
         http_response_code(503);
-        echo "Error sending a message.";
+        echo "<h2 style='text-align: center; padding-top:40px;'>Error sending a message please contact us by mail. <br> Thank you !</h2>";
+        echo "<a style='text-align: center' href='/'><h2>Return to Homepage</h2></a>";
         return false;
     }
 }
