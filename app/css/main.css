@@ -106,10 +106,18 @@ nav ul li {
     float: left;
 }
 
+.dropdown-item:hover {
+    background-color: initial !important;
+}
+
+nav ul li a:hover {
+    color: var(--novo-blue) !important;
+}
+
 nav ul li a {
-    font-size: 18px;
+    font-size: 20px !important;
+    font-weight: 500 !important;
     padding: 20px;
-    width: 160px;
     text-align: center;
     text-decoration: none;
     display: block;

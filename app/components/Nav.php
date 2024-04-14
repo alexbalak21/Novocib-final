@@ -13,29 +13,16 @@ class Nav
     /></label>
     <nav>
         <ul>
-            <li><a href="">LINK</a></li>
             <li>
-                <a href=""
-                    >LINK <i class="fa-solid fa-caret-down"></i
+                <a href="/freshness-assay-kits"
+                    >Freshness Assay Kits <i class="fa-solid fa-caret-down"></i
                 ></a>
                 <ul>
                     <li>
-                        <a href=""
-                            >DOWN <i class="fa-solid fa-caret-right"></i
-                        ></a>
-                        <ul>
-                            <li><a href="">LINK 1</a></li>
-                            <li><a href="">LINK2 </a></li>
-                        </ul>
+                        <a href="/freshness-assay-kits/freshness-principle">Freshness Principle</a>
                     </li>
                     <li>
-                        <a href=""
-                            >DWON <i class="fa-solid fa-caret-right"></i
-                        ></a>
-                        <ul>
-                            <li><a href="">LINK 1</a></li>
-                            <li><a href="">LINK2 </a></li>
-                        </ul>
+                        <a href="/freshness-assay-kits/fish-freshness">Fish Freshness</a>
                     </li>
                 </ul>
             </li>
@@ -55,24 +42,3 @@ class Nav
 NAVBAR;
   }
 }
-
-?>
-
-<style>
-  nav {
-    margin-bottom: 0px;
-  }
-
-  nav ul li a {
-    font-size: 18px !important;
-    font-weight: 500 !important;
-  }
-
-  .dropdown-item:hover {
-    background-color: initial !important;
-  }
-
-  nav ul li a:hover {
-    color: var(--novo-blue) !important;
-  }
-</style>
