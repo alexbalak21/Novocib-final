@@ -1,0 +1,1 @@
+<h1>PAGE in folder</h1>

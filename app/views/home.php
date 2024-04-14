@@ -13,42 +13,28 @@ require_once "app/templates/base.php";
 <?php
 
 $novoblue = "#4167b1";
+$carousel = <<<CAROUSEL
+<div id="crouselItem" class="carousel slide" data-bs-ride="carousel">
+      
+        <div class="carousel-inner">
+                
 
-$first_slide = true;
-$slide = new Slide(
-    img_url: "app/static/img/brand-table.jpg",
-    duration: 10000,
-    title: "Reliable solutions for nucleotides assessment",
-    content: "Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide <br> to quantify nucleotides in their biological samples.",
-    button_text: "Read More",
-    button_link: "/nucleotides"
-);
-$slide1 = $slide->gen();
-$slide = new Slide(
-    img_url: "app/static/img/helix.jpg",
-    duration: 8000,
-    title: "Placeholder Title",
-    content: "Some placeholder Connet.",
-    button_text: "Read More",
-    button_link: ""
-);
-$slide2 = $slide->gen();
-$slide = new Slide(
-    img_url: "app/static/img/brand-table.jpg",
-    duration: 8000,
-    title: "Placeholder Title",
-    content: "Some placeholder Connet.",
-    button_text: "Read More",
-    button_link: ""
-);
-$slide3 = $slide->gen();
+        <div class="carousel-item active" data-bs-interval="10000">
+    <img src="app/static/img/backgound-nameless.jpg" class="d-block w-100" alt="app/static/img/brand-table.jpg">
+    <div class="carousel-caption">
+        <div>
+            <h2 class="display-2 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
+            <p class="lead">Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide <br> to quantify nucleotides in their biological samples.</p>
+            <div class="text-center"><a href="/nucleotides" class="btn btn-primary">Read More</a></div>
+        </div>
+    </div>
+</div>
 
-$carousel_content = $slide1;
-$carousel = Carousel::gen($carousel_content);
+
+        </div>
+    </div>
+CAROUSEL;
 addContent($carousel);
-
-
-
 
 $preface_title = UnderlinedTitle::get(content: "Reliable solutions for nucleotides assessment", underColor: "novoblue center");
 $preface = <<<XYZ
@@ -57,6 +43,7 @@ $preface = <<<XYZ
     <p>Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide to quantify nucleotides in their biological samples.</p>
     </div>
     XYZ;
+
 $searchbar = Searchbar::get();
 $search_container = <<<SEARCH
     <div class="container mt-4">
@@ -66,6 +53,7 @@ $search_container = <<<SEARCH
     </div>
 SEARCH;
 addContent($search_container);
+
 $card1_content = <<<CARD
 <ul>
     <li>Whole nucleotides spectra (heterocyclic bases, nucleosides and nucleotides, nucleic acids RNA and DNA);</li>
@@ -110,8 +98,8 @@ addContent($card_container);
 
 addContent(Aboutus::get());
 
-$paralax_title = UnderlinedTitle::get("CIR (Research Tax Credit)", "white", position: "right");
 
+$paralax_title = UnderlinedTitle::get("CIR (Research Tax Credit)", "white", position: "right");
 $parallax_content = <<<PARALAX
 <div class="container py-5">
 <div class="text-center d-flex justify-content-center align-items-center">$paralax_title <img class="ms-5 mb-3" src="/app/static/img/marianne.png" height="60" alt="french marianne"></div>
@@ -122,10 +110,13 @@ $parallax_content = <<<PARALAX
     France to benefit from a significant tax credit upon R&D expenditures outsourced to NOVOCIB.
 </p>
 </div>
-
 PARALAX;
+
 addContent(Parallax::get($img = "app/static/img/header1.jpg", $ParallaxContent = $parallax_content, $color = "white"));
+
 $awards_title = UnderlinedTitle::get(content: "Awards", underColor: "novoblue", position: "center");
 addContent(Awards::gen($awards_title, awards_introduction: "NOVOCIB SAS is french biotechnology company founded in 2005, a double Laureate of Concours National pour la Création d'Entreprises de Technologie Innovante (I-LAB) in 2003 and 2005 and “Tremplin Entreprises” organized by French Senate (2004). <br> Since its creation in 2005, the company has developed multiple innovative solutions helping scientists and engineers worldwide to quantify nucleotides in their biological samples."));
 addContent(OwlCarousel::gen());
 render();
+
+?>
