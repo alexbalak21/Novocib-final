@@ -27,6 +27,7 @@ class Nav
                     </li>
                 </ul>
             </li>
+
             <!-- CONVENIENT ASSAY KITS -->
             <li>
                 <a href="/convenient-assay-kits"> Convenient Assay Kits <i class="fa-solid fa-caret-down"></i></a>
@@ -44,12 +45,18 @@ class Nav
                 <li><a href="/convenient-assay-kits/phosphatase-assay-kit">Phosphatase Assay Kit</a></li>
                 </ul>
             </li>
-        </ul>
-            <!-- CONVENIENT ASSAY KITS -->
+
+            <!-- ACTIVE PURIFIED ENZYMES -->
             <li>
-                <a href="/convenient-assay-kits"> Convenient Assay Kits <i class="fa-solid fa-caret-down"></i></a>
+                <a href="/active-purified-enzymes">Active Purified Enzymes <i class="fa-solid fa-caret-down"></i></a>
                 <ul>
-                <li><a href="/convenient-assay-kits/hprt-assay-kit">HPRT Assay Kit</a></li>
+                <li><a href="/active-purified-enzymes">Active Purified Enzymes</a></li>
+                <li><a href="/active-purified-enzymes/impdh-recombinant-enzyme">IMPDH Recombinant Enzyme</a></li>
+                <li><a href="/active-purified-enzymes/human-recombinant-hgprt">Human Recombinant HGPRT</a></li>
+                <li><a href="/active-purified-enzymes/recombinant-adenosine-kinase">Recombinant Adenosine Kinase</a></li>
+                <li><a href="/active-purified-enzymes/recombinant-deoxycytidine-kinase">Recombinant Deoxycytidine Kinase</a></li>
+                <li><a href="/active-purified-enzymes/human-ump-cmp-kinase">Human UMP-CMP Kinase</a></li>
+                </ul>
             </li>
         </ul>
     </nav>
