@@ -171,157 +171,85 @@ addContent($awards);
 
 $owlCarousel = <<<OWLCAROUSEL
 <section class="partners py-2" id="partners">
-<div class="container text-center mb-3">
-    <h2 class="underlinedTitle center"><span class="underlined novoblue center">Our Partners</span></h2>
-    
-</div>
+    <div class="container text-center mb-3">$carousel_title</div>
 
-<div class="owl-carousel owl-theme mt-5 mx-auto owl-loaded owl-drag">
-
-
-
-
-
-
-
-<div class="owl-stage-outer"><div class="owl-stage" style="transition: all 0.25s ease 0s; width: 3996px; transform: translate3d(-1893px, 0px, 0px);"><div class="owl-item cloned" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.agglo-boulonnais.fr/">
-                <img src="http://127.0.0.1:3000/app/static/img/cab.jpg" alt="boulogne comune association logo" style="opacity: 1;">
-            </a>
+    <div class="owl-carousel owl-theme mt-5 mx-auto">
+        <div class="owl-item">
+            <div class="card">
+                <div class="card-img">
+                    <a href="https://www.business-angels.info/">
+                        <img src="/app/static/img/xmp.png" alt="xmp investers logo" />
+                    </a>
+                </div>
+                <h5 class="card-title name text-center">XMP</h5>
+            </div>
         </div>
-        <h5 class="card-title name text-center">C A B</h5>
-    </div>
-</div></div><div class="owl-item cloned" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.pfinouvellesvagues.com/">
-                <img src="http://127.0.0.1:3000/app/static/img/nouvelle-vagues.png" alt="" style="opacity: 1;">
-            </a>
+        <div class="owl-item">
+            <div class="card">
+                <div class="card-img">
+                    <a href="https://samba-investisseurs.fr/">
+                        <img src="/app/static/img/samba.jpg" alt="samba logo" />
+                    </a>
+                </div>
+                <h5 class="card-title name text-center">SAMBA</h5>
+            </div>
         </div>
-        <h5 class="card-title name text-center">Nouvelles<br>vagues</h5>
-    </div>
-</div></div><div class="owl-item cloned" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.inextenso.fr/en/">
-                <img src="http://127.0.0.1:3000/app/static/img/InExtenso.jpg" alt="" style="opacity: 1;">
-            </a>
+        <div class="owl-item">
+            <div class="card">
+                <div class="card-img">
+                    <a href="https://www.poleaquimer.com/en/">
+                        <img src="/app/static/img/aquimer.png" alt="aquimer logo" />
+                    </a>
+                </div>
+                <h5 class="card-title name text-center">Aquimer</h5>
+            </div>
         </div>
-        <h5 class="card-title name text-center">In Extenso</h5>
-    </div>
-</div></div><div class="owl-item cloned" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.e.leclerc/ ">
-                <img src="http://127.0.0.1:3000/app/static/img/Leclerc.jpg" alt="" style="opacity: 1;">
-            </a>
+        <div class="owl-item">
+            <div class="card">
+                <div class="card-img">
+                    <a href="https://www.agglo-boulonnais.fr/">
+                        <img src="/app/static/img/cab.jpg" alt="boulogne comune association logo" />
+                    </a>
+                </div>
+                <h5 class="card-title name text-center">C A B</h5>
+            </div>
         </div>
-        <h5 class="card-title name text-center">E Leclerc</h5>
-    </div>
-</div></div><div class="owl-item" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.business-angels.info/">
-                <img src="http://127.0.0.1:3000/app/static/img/xmp.png" alt="xmp investers logo" style="opacity: 1;">
-            </a>
+        <div class="owl-item">
+            <div class="card">
+                <div class="card-img">
+                    <a href="https://www.pfinouvellesvagues.com/">
+                        <img src="/app/static/img/nouvelle-vagues.png" alt="" />
+                    </a>
+                </div>
+                <h5 class="card-title name text-center">
+                    Nouvelles
+                    <br />
+                    vagues
+                </h5>
+            </div>
         </div>
-        <h5 class="card-title name text-center">XMP</h5>
-    </div>
-</div></div><div class="owl-item" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://samba-investisseurs.fr/">
-                <img src="http://127.0.0.1:3000/app/static/img/samba.jpg" alt="samba logo" style="opacity: 1;">
-            </a>
+        <div class="owl-item">
+            <div class="card">
+                <div class="card-img">
+                    <a href="https://www.inextenso.fr/en/">
+                        <img src="/app/static/img/InExtenso.jpg" alt="" />
+                    </a>
+                </div>
+                <h5 class="card-title name text-center">In Extenso</h5>
+            </div>
         </div>
-        <h5 class="card-title name text-center">SAMBA</h5>
-    </div>
-</div></div><div class="owl-item" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.poleaquimer.com/en/">
-                <img src="http://127.0.0.1:3000/app/static/img/aquimer.png" alt="aquimer logo" style="opacity: 1;">
-            </a>
+        <div class="owl-item">
+            <div class="card">
+                <div class="card-img">
+                    <a href="https://www.e.leclerc/ ">
+                        <img src="/app/static/img/Leclerc.jpg" alt="" />
+                    </a>
+                </div>
+                <h5 class="card-title name text-center">E Leclerc</h5>
+            </div>
         </div>
-        <h5 class="card-title name text-center">Aquimer</h5>
     </div>
-</div></div><div class="owl-item" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.agglo-boulonnais.fr/">
-                <img src="http://127.0.0.1:3000/app/static/img/cab.jpg" alt="boulogne comune association logo" style="opacity: 1;">
-            </a>
-        </div>
-        <h5 class="card-title name text-center">C A B</h5>
-    </div>
-</div></div><div class="owl-item active" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.pfinouvellesvagues.com/">
-                <img src="http://127.0.0.1:3000/app/static/img/nouvelle-vagues.png" alt="" style="opacity: 1;">
-            </a>
-        </div>
-        <h5 class="card-title name text-center">Nouvelles<br>vagues</h5>
-    </div>
-</div></div><div class="owl-item active" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.inextenso.fr/en/">
-                <img src="http://127.0.0.1:3000/app/static/img/InExtenso.jpg" alt="" style="opacity: 1;">
-            </a>
-        </div>
-        <h5 class="card-title name text-center">In Extenso</h5>
-    </div>
-</div></div><div class="owl-item active center" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.e.leclerc/ ">
-                <img src="http://127.0.0.1:3000/app/static/img/Leclerc.jpg" alt="" style="opacity: 1;">
-            </a>
-        </div>
-        <h5 class="card-title name text-center">E Leclerc</h5>
-    </div>
-</div></div><div class="owl-item cloned active" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.business-angels.info/">
-                <img src="http://127.0.0.1:3000/app/static/img/xmp.png" alt="xmp investers logo" style="opacity: 1;">
-            </a>
-        </div>
-        <h5 class="card-title name text-center">XMP</h5>
-    </div>
-</div></div><div class="owl-item cloned active" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://samba-investisseurs.fr/">
-                <img src="http://127.0.0.1:3000/app/static/img/samba.jpg" alt="samba logo" style="opacity: 1;">
-            </a>
-        </div>
-        <h5 class="card-title name text-center">SAMBA</h5>
-    </div>
-</div></div><div class="owl-item cloned active" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.poleaquimer.com/en/">
-                <img src="http://127.0.0.1:3000/app/static/img/aquimer.png" alt="aquimer logo" style="opacity: 1;">
-            </a>
-        </div>
-        <h5 class="card-title name text-center">Aquimer</h5>
-    </div>
-</div></div><div class="owl-item cloned active" style="width: auto; margin-right: 50px;"><div class="owl-item">
-    <div class="card">
-        <div class="card-img">
-            <a href="https://www.agglo-boulonnais.fr/">
-                <img src="http://127.0.0.1:3000/app/static/img/cab.jpg" alt="boulogne comune association logo" style="opacity: 1;">
-            </a>
-        </div>
-        <h5 class="card-title name text-center">C A B</h5>
-    </div>
-</div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div>
 </section>
-
 OWLCAROUSEL;
 
 addContent($owlCarousel);
