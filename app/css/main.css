@@ -123,6 +123,12 @@ nav ul li a {
     display: block;
     color: var(--foreground);
 }
+nav ul li a.large {
+    width: 280px;
+}
+nav ul li a.larger {
+    width: 360px;
+}
 
 nav ul li a:hover {
     background: var(--nav-hover);
@@ -200,7 +206,7 @@ nav ul li:hover > ul {
         width: 100%;
     }
     nav ul li a {
-        width: 100%;
+        width: 100% !important;
     }
 
     nav ul li ul {

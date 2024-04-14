@@ -1,25 +1,3 @@
-<?php
-$title = "Inquiry";
-require_once "app/templates/base.php";
-
-$novoblue = "#4167b1";
-
-global $path_way;
-$path_way = ["home", "Inquiry"];
-
-addContent(Banner::gen("/app/static/img/order.jpg"));
-$content_title = UnderlinedTitle::get("Inquiry", "novoblue");
-
-
-$product = isset($_GET['product']) ? $_GET['product'] : "";
-
-
-$page_content = <<<Services
-<div class="container mt-5 text-center">
-$content_title
-<p>You can place your oerder by sending us an <strong>Inquiry</strong>. We will confirm your order by sending you a mail.</p>
-<p class="mb-5">You can also order directly by e-mail. Just write the inquiry at this adress : <a href="mailto:contact@novocib.com">contact@novocib.com</a> <a class="copy" onclick="navigator.clipboard.writeText('contact@novocib.com')"><i class="fa-regular fa-copy"></i><span class="text-muted">&nbsp; Copy</span></a></p>
-
 <form id="contact-page-form" action="/send" method="POST" name="contact-page-form">
     <div class="row g-3">
         <div class="col-md-6">
@@ -75,12 +53,6 @@ $content_title
             </div>
         </div>
     </div>
-    <div class="my-5"><button type="submit" class="btn btn-primary">Submit</button></div>
-
+    <div class="my-5"><a href="" class="btn btn-primary">Send inquiry</a></div>
+    <input type="submit" value="SEND" />
 </form>
-</div>
-
-Services;
-
-addContent($page_content);
-render();

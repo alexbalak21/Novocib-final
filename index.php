@@ -17,8 +17,15 @@ switch ($req_uri) {
         require_once "app/views/products.php";
         break;
 
-    case '/services':
-        require_once "app/views/services.php";
+
+
+        // SEND MAIL LOGIC
+    case '/send':
+        require_once "app/logic/send.php";
+        break;
+
+    case '/message-sent-successfully':
+        require_once "app/views/message_sent.php";
         break;
 
 
