@@ -39,15 +39,67 @@
 <body>
 
 
-  <?php
-  include 'logic/visit.php';
-  logVisit();
-  ?>
-
-
 
 
   <div id="page">
+    <div class="new_site">
+      <a href="/" class="button-5">
+        <h3>Visit our new website</h3>
+      </a>
+    </div>
+    <style>
+      .new_site {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      /* CSS */
+      .button-5 {
+        align-items: center;
+        background-clip: padding-box;
+        background-color: #3771c8;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        justify-content: center;
+        line-height: 1.25;
+        margin: 0;
+        min-height: 2rem;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition: all 250ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: baseline;
+        width: auto;
+      }
+
+      .button-5:hover,
+      .button-5:focus {
+        background-color: #3a61af;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      }
+
+      .button-5:hover {
+        transform: translateY(-1px);
+      }
+
+      .button-5:active {
+        background-color: #c85000;
+        box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+        transform: translateY(0);
+      }
+    </style>
 
 
 

@@ -2,9 +2,9 @@
 
 class Nav
 {
-  static function bar()
-  {
-    return <<<NAVBAR
+    static function bar()
+    {
+        return <<<NAVBAR
     
     <header>
     <a class="logo" href="/home"><img src="/app/static/img/logo.png" /></a>
@@ -89,7 +89,7 @@ class Nav
                             Yeast Extract Nucleotide Analysis
                         </a>
                     </li>
-                    <li><a href="/hplc-analysis-of-bases-nucleosides">HPLC analysis of bases nucleosides</a></li>
+                    <li><a href="/cellular-nucleotides-analysis">HPLC analysis of bases nucleosides</a></li>
                 </ul>
             </li>
             <li><a href="/inquiry">Contact Us</a></li>
@@ -98,5 +98,5 @@ class Nav
 </header>
 
 NAVBAR;
-  }
+    }
 }

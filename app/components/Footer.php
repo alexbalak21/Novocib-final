@@ -13,11 +13,11 @@ class Footer
                         <ul class="contact">
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                <a href="">contact@novocib.com</a>
+                                <a href="mailto:contact@novocib.com">contact@novocib.com</a>
                             </li>
                             <li>
                                 <i class="fa-solid fa-phone"></i>
-                                <a href="">+33 6 58 37 06 05</a>
+                                <a href="tel:+33631446805">+33 6 31 44 68 05</a>
                             </li>
                             <li class="adress">
                                 <div><i class="fa-solid fa-location-dot"></i></div>
@@ -37,7 +37,7 @@ class Footer
                         <ul>
                             <li>
                                 <i class="fa-brands fa-linkedin"></i>
-                                <a href="">Linked-In</a>
+                                <a href="https://www.linkedin.com/company/novocib/">Linked-In</a>
                             </li>
                         </ul>
                     </div>

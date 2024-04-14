@@ -6,18 +6,13 @@ $req_uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 //REQUETS PARAMETERS
 // $_REQUEST
 
+
 switch ($req_uri) {
     case '/':
     case '/home':
     case "/Home":
         require_once "app/views/home.php";
         break;
-
-    case '/products':
-        require_once "app/views/products.php";
-        break;
-
-
 
         // SEND MAIL LOGIC
     case '/send':
