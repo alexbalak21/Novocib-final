@@ -13,6 +13,7 @@ class Nav
     /></label>
     <nav>
         <ul>
+            <!-- FRESHNESS -->       
             <li>
                 <a href="/freshness-assay-kits"
                     >Freshness Assay Kits <i class="fa-solid fa-caret-down"></i
@@ -26,15 +27,30 @@ class Nav
                     </li>
                 </ul>
             </li>
+            <!-- CONVENIENT ASSAY KITS -->
             <li>
-                <a href=""
-                    >LINK <i class="fa-solid fa-caret-down"></i
-                ></a>
+                <a href="/convenient-assay-kits"> Convenient Assay Kits <i class="fa-solid fa-caret-down"></i></a>
                 <ul>
-                    <li><a href="">LINK</a></li>
+                <li><a href="/convenient-assay-kits/hprt-assay-kit">HPRT Assay Kit</a></li>
+                <li><a href="/convenient-assay-kits/prpp-s-assay-kit">PRPP-S Assay Kit</a></li>
+                <li><a href="/convenient-assay-kits/ampda-assay-kit">AMPDA Assay Kit</a></li>
+                <li><a href="/convenient-assay-kits/itp-ase-deficiency-assay-kit">ITP-ase Deficiency Assay Kit</a></li>
+                <li><a href="/convenient-assay-kits/adk-phosphorylation-assay-kit">ADK Phosphorylation Assay Kit</a></li>
+                <li><a href="/convenient-assay-kits/dck-phosphorylation-assay-kit">dCK Phosphorylation Assay Kit</a></li>
+                <li><a href="/convenient-assay-kits/human-recombinant-impdh">Human IMPDH type II</a></li>
+                <li><a href="/convenient-assay-kits/human-recombinant-pnp">Human Recombinant PNP</a></li>
+                <li><a href="/convenient-assay-kits/bacterial-recombinant-impdh">Bacterial IMPDH</a></li>
+                <li><a href="/convenient-assay-kits/adk-assay-kit">ADK Assay Kit</a></li>
+                <li><a href="/convenient-assay-kits/phosphatase-assay-kit">Phosphatase Assay Kit</a></li>
                 </ul>
             </li>
-            <li><a href="">LINK</a></li>
+        </ul>
+            <!-- CONVENIENT ASSAY KITS -->
+            <li>
+                <a href="/convenient-assay-kits"> Convenient Assay Kits <i class="fa-solid fa-caret-down"></i></a>
+                <ul>
+                <li><a href="/convenient-assay-kits/hprt-assay-kit">HPRT Assay Kit</a></li>
+            </li>
         </ul>
     </nav>
 </header>
