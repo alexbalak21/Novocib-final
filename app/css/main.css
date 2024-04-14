@@ -448,3 +448,7 @@ strong {
         color: var(--novo-blue);
     }
 }
+
+#copied {
+    font-weight: 600;
+}

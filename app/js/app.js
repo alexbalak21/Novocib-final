@@ -16,3 +16,12 @@ function enlargeImg(img) {
         img.style.cursor = "zoom-in"
     }
 }
+
+function copy_to_cipboard(text = "vale") {
+    navigator.clipboard.writeText("contact@novocib.com")
+    const copied = document.getElementById("copied")
+    copied.innerText = "Copyed !"
+    setTimeout(() => {
+        copied.innerText = ""
+    }, 800)
+}
