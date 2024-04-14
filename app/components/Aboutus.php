@@ -31,7 +31,6 @@ class Aboutus
                     Assistance in the development of new products and ingredients enriched in nucleotides.
                     </li>
                     </ul>
-                    <div class="text-center my-5"><a cl href="#" class="btn btn-primary">Read More</a></div>
                 </div>
             </div>
         </div>
