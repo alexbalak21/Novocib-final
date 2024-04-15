@@ -66,7 +66,7 @@ switch ($req_uri) {
         break;
 
     case "/Fish_Freshness_K_Value_Assay.html":
-        header('/freshness-assay-kits/freshness-assay-kit');
+        header('Location: /freshness-assay-kits/freshness-assay-kit');
         break;
 
 
@@ -158,6 +158,12 @@ switch ($req_uri) {
     case '/Bacterial_Luciferase.html':
         header('Location: /bacterial-luciferase');
         break;
+
+
+    case '/news':
+        require_once "app/views/news.html";
+        break;
+
 
     default:
         require_once "app/views/404.php";
