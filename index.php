@@ -62,9 +62,13 @@ switch ($req_uri) {
         break;
 
     case '/freshness-assay-kits/freshness-assay-kit':
-    case "/Fish_Freshness_K_Value_Assay.html":
         require_once "app/views/freshness-assay-kits/freshness-assay-kit.html";
         break;
+
+    case "/Fish_Freshness_K_Value_Assay.html":
+        header('/freshness-assay-kits/freshness-assay-kit');
+        break;
+
 
 
         // CONVENIENT ASSAY KITS
@@ -149,6 +153,10 @@ switch ($req_uri) {
 
     case '/bacterial-luciferase':
         require_once "app/views/bacterial-luciferase.html";
+        break;
+
+    case '/Bacterial_Luciferase.html':
+        header('Location: /bacterial-luciferase');
         break;
 
     default:
