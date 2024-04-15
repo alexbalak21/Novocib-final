@@ -62,7 +62,8 @@ switch ($req_uri) {
         break;
 
     case '/freshness-assay-kits/freshness-assay-kit':
-        require_once "app/views/freshness/freshness-assay-kit.html";
+    case "/Fish_Freshness_K_Value_Assay.html":
+        require_once "app/views/freshness-assay-kits/freshness-assay-kit.html";
         break;
 
 
@@ -122,6 +123,7 @@ switch ($req_uri) {
         break;
 
     case '/cellular-nucleotides-analysis':
+    case '/Cellular_Nucleotides_Analysis.html':
         require_once "app/views/cellular-nucleotides-analysis.php";
         break;
 
