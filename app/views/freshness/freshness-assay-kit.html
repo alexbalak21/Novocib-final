@@ -7,15 +7,14 @@ $novoblue = "#4167b1";
 global $path_way;
 $path_way = ["home", "Freshness Assay Kits", "Fish Freshness Assay Kit"];
 
-addContent(Banner::gen());
-$content_title = UnderlinedTitle::get("Measure nucleotides to assess seafood quality", "novoblue", "right");
+addContent(Banner::gen("/app/static/img/fish-water.jpg"));
 
 $page_content = <<<CONTENT
 <section class="container mt-5">
     <h2 class="underlinedTitle right">
         <span class="underlined novoblue right">Measure nucleotides to assess seafood quality</span>
     </h2>
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-lg-6">
             <p>
                 Since seafood and fish are highly perishable products, the quality of raw material is of primary concern for seafood processing industry. Testing raw material is first main stage of currently used procedure of Quality Control.
@@ -23,11 +22,17 @@ $page_content = <<<CONTENT
             <p>
                 While sensory analysis allows rapid evaluation of the quality of whole wet fish, the assessment of the quality of frozen fish, or that of frozen blocks of fillets or crumbed seafood products remains more difficult.
             </p>
+            <p>
+                PRECICE® Freshness Assay Kit is a first microplate assay for routine physico-chemical assessment of quality of seafood freshness. The enzymes provided with kit allow specific conversion of three major ATP catabolites - IMP, inosine (Ino) and hypoxanthine (Hx) to NADH2. The quantification of nucleotides is done by measuring sample absorbance at 340nm. Used enzymatic reactions are: highly specific and selective toward each particular nucleotides; fast and irreversible; brings three nucleotides to one common denominator (NADH2).
+            </p>
         </div>
         <div class="col-lg-6 text-center">
-            <img class="w-100" src="/app/static/img/ADK_Assay_Kit_Principle.png" alt="ADK Assay Kit reaction schema" />
-            <h4 class="novo-blue">PRECICE® ADK Assay Kit</h4>
-            <h5>Ref. #K0507-01</h5>
+            <img class="w-85" src="/app/static/img/Freshness_Assay_Kit_Principle.png" alt="Fish Freshness Assay Kit photo" />
+            <h4 class="novo-blue">PRECICE® Freshness Assay Kits</h4>
+            <h5>Ref. #K0700-01-03</h5>
+        </div>
+        <div class="col-lg-6 col-10 my-5 text-center">
+            <img class="w-100" src="/app/static//img/Freshness_Assay_Protocol.png" alt="Fish Freshness Assay Kit porsses">
         </div>
         <div class="d-flex justify-content-center mt-4">
             <div class="col-lg-10 col-12">
@@ -35,6 +40,7 @@ $page_content = <<<CONTENT
                     <thead>
                         <tr>
                             <th>#REF</th>
+                            <th class="text-center">Kit Version</th>
                             <th class="text-center">SIZE</th>
                             <th class="text-center">PRICE</th>
                             <th class="pe-5"></th>
@@ -42,48 +48,72 @@ $page_content = <<<CONTENT
                     </thead>
                     <tbody>
                         <tr>
-                            <td>#K0507-01.01</td>
-                            <td class="text-center"><strong>1 plate (96 assays)</strong></td>
-                            <td class="price text-center">€ 420.00</td>
+                            <td>#K0700-001-15</td>
+                            <td class="text-center"><strong>PRECICE® K(IMP)</strong></td>
+                            <td class="text-center"><strong>15 Kits</strong></td>
+                            <td class="price text-center">€ 250.00</td>
                             <td class="text-end pe-3">
                                 <a
                                     class="btn btn-primary"
-                                    href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                                    href="/inquiry?ref=K0709-01-2&product=PRCE® Freshness Assay Kit - K(IMP) - K0700-001-15">
                                     Inquiry
                                 </a>
                             </td>
                         </tr>
                         <tr>
-                            <td>#K0507-01.05</td>
-                            <td class="text-center"><strong>5 plates (5 x 96 assays)</strong></td>
-                            <td class="price text-center">€ 1,680.00</td>
+                            <td>#K0700-001-31</td>
+                            <td class="text-center"><strong>PRECICE® K(IMP)</strong></td>
+                            <td class="text-center"><strong>31 Kits</strong></td>
+                            <td class="price text-center">€ 370.00</td>
                             <td class="text-end pe-3">
                                 <a
                                     class="btn btn-primary"
-                                    href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                                    href="/inquiry?ref=K0709-01-2&product=PRCE® Freshness Assay Kit - K(IMP) - K0700-001-31">
                                     Inquiry
                                 </a>
                             </td>
                         </tr>
+                        <tr>
+                            <td>#K0700-001-31</td>
+                            <td class="text-center"><strong>PRECICE® (IMP, Ino & Hx)</strong></td>
+                            <td class="text-center"><strong>22 Kits</strong></td>
+                            <td class="price text-center">€ 370.00</td>
+                            <td class="text-end pe-3">
+                                <a
+                                    class="btn btn-primary"
+                                    href="/inquiry?ref=K0709-01-2&product=PRCE® Freshness Assay Kit - (IMP, Ino & Hx) - K0700-001-22">
+                                    Inquiry
+                                </a>
+                            </td>
+                        </tr>
+                       
                     </tbody>
                 </table>
-                <p class="text-muted text-center">
-                    <em>Pricing updated December 25th, 2013.</em>
-                    <br />
-                </p>
+
                 <p class="text-center">
                     <strong>
                         Kit is provided in stable lyophilized form and
                         <span class="text-danger">shipped without dry ice</span>
                     </strong>
                 </p>
-                <p class="mt-4 mb-5 text-end">
+                <p class="my-4 text-center">
+                    <strong>You can ask us for a quotation <a href="mailto:contact@novocib.com">here</a> or write at <a href="mailto:contact@novocib.com">contact@novocib.com</a></strong>
+                </p>
+                <p class="mt-4 text-end">
                     Download
-                    <a target="_blank" href="/app/documents/NovoCIB K0507-01-User Manual 121217 - one plate.pdf">
-                        <strong>In vitro ADK asssay protocol</strong>
+                    <a target="_blank" href="/app/documents/PRECICE Ultra-Freshness Assay Manual K0700-01 131124E.pdf">
+                        <strong>PRECICE® K (IMP) Assay Kit</strong>
                         <i class="fa-regular fa-file-pdf"></i>
                     </a>
-                    (User manual)
+                    (User manual) <i class="fa-solid fa-book"></i>
+                </p>
+                <p class="text-end mb-5">
+                    Download
+                    <a target="_blank" href="/app/documents/PRECICE Freshness Assay Manual K0700-003 140709.pdf">
+                        <strong>PRECICE® Freshness (IMP, Ino, Hx) Assay Kit</strong>
+                        <i class="fa-regular fa-file-pdf"></i>
+                    </a>
+                    (User manual) <i class="fa-solid fa-book"></i>
                 </p>
             </div>
         </div>

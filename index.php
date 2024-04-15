@@ -61,6 +61,10 @@ switch ($req_uri) {
         require_once "app/views/freshness-assay-kits/fish-freshness.php";
         break;
 
+    case '/freshness-assay-kits/freshness-assay-kit':
+        require_once "app/views/freshness/freshness-assay-kit.html";
+        break;
+
 
         // CONVENIENT ASSAY KITS
     case '/convenient-assay-kits':

@@ -24,6 +24,9 @@ class Nav
                     <li>
                         <a href="/freshness-assay-kits/fish-freshness">Fish Freshness</a>
                     </li>
+                    <li>
+                        <a href="/freshness-assay-kits/freshness-assay-kit">Freshness Assay Kits</a>
+                    </li>
                 </ul>
             </li>
 
