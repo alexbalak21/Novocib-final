@@ -5,16 +5,14 @@ require_once "app/templates/base.php";
 $novoblue = "#4167b1";
 
 global $path_way;
-$path_way = ["home", "Analytical Services"];
+$path_way = ["home", "analytical services"];
+$banner = Banner::gen("app/static/img/hplc9.jpg");
 
-addContent(Banner::gen(img_url: "app/static/img/hplc9.jpg"));
+addContent($banner);
 
-$article_title = $content_title = UnderlinedTitle::get("Nucleotides: 'conditionally essential' nutrients", "novoblue", "center");
-$content_title = UnderlinedTitle::get("Full nucleotides spectra by HPLC", "novoblue", "center");
-$nuclotide_supplemetantion = UnderlinedTitle::get("Nucleotide supplementation: 'conditionally essential' nutrients", "novoblue", "center");
 $page_content = <<<Services
 <div class="container mt-5">
-$content_title
+<h2 class="underlinedTitle center"><span class="underlined novoblue center">Full nucleotides spectra by HPLC</span></h2>
 
 <article class="row">
 
@@ -107,17 +105,3 @@ Services;
 
 addContent($page_content);
 render();
-
-?>
-<style>
-    .list-1 {
-        li {
-            margin: 16px 0;
-        }
-    }
-
-    .product tr td {
-
-        vertical-align: middle !important;
-    }
-</style>

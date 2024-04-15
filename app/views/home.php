@@ -171,7 +171,10 @@ addContent($awards);
 
 $owlCarousel = <<<OWLCAROUSEL
 <section class="partners py-2" id="partners">
-    <div class="container text-center mb-3">$carousel_title</div>
+<div class="container text-center mb-3">
+<h2 class="underlinedTitle center"><span class="underlined novoblue center">Our Partners</span></h2>
+
+</div>
 
     <div class="owl-carousel owl-theme mt-5 mx-auto">
         <div class="owl-item">

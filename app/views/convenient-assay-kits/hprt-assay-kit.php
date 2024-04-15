@@ -52,7 +52,7 @@ $content_title
             <td>#K0709-01-2</td>
             <td class="text-center"> <strong>24 analyses (8 samples in triplicate) with HPRT enzyme**</strong></td>
             <td class="price text-center">€ 330.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=12 analyses (4 samples in triplicate)">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE® HPRT Assay Kit - 24 analyses - € 330.00">Inquiry</a></td>
         </tr>
     </tbody>
 </table>

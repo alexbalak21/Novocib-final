@@ -68,7 +68,7 @@ switch ($req_uri) {
         break;
 
     case '/convenient-assay-kits/hprt-assay-kit':
-        require_once "app/views/hprt-assay-kit.php";
+        require_once "app/views/convenient-assay-kits/hprt-assay-kit.php";
         break;
 
     case '/convenient-assay-kits/prpp-s-assay-kit':
