@@ -1,0 +1,40 @@
+<?php
+$title = "Freshness Assay How it Works?";
+require_once "app/templates/base.php";
+
+$novoblue = "#4167b1";
+
+global $path_way;
+$path_way = ["home", "freshness assay kits", "freshness how it works"];
+
+addContent(Banner::gen("/app/static/img/fish-freshness.jpg"));
+$content_title = UnderlinedTitle::get("How does Freshness Assay Kit work?", "novoblue", "center");
+
+$page_content = <<<CONTENT
+<div class="container mt-5">
+$content_title
+<div class="row justify-content-center">
+    <div class="col-lg-5 col-6 m-2">
+        <img class="w-100" src="/app/static/img/freshness_1.jpg">
+    </div>
+    <div class="col-lg-5 col-6 m-2">
+        <img class="w-100" src="/app/static/img/freshness_2.jpg">
+    </div>
+    <div class="col-lg-5 col-6 m-2">
+        <img class="w-100" src="/app/static/img/freshness_3.jpg">
+    </div>
+    <div class="col-lg-5 col-6 m-2">
+        <img class="w-100" src="/app/static/img/freshness_4.jpg">
+    </div>
+    <div class="col-lg-5 col-6 m-2">
+        <img class="w-100" src="/app/static/img/freshness_5.jpg">
+    </div>
+    <div class="col-lg-5 col-6 m-2">
+        <img class="w-100" src="/app/static/img/freshness_6.jpg">
+    </div>
+</div>
+</div>
+CONTENT;
+
+addContent($page_content);
+render();
