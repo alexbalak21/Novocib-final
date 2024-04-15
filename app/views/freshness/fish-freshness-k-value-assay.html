@@ -1,23 +1,27 @@
+<?php
+$title = "Seafood Quality Control - Seafood Freshness Assay Kit - Fish Freshness Assay Kit - K value";
+require_once "app/templates/base.php";
+
+$novoblue = "#4167b1";
+
+global $path_way;
+$path_way = ["home", "Freshness Assay Kits", "Fish Freshness Assay Kit"];
+
+addContent(Banner::gen());
+$content_title = UnderlinedTitle::get("Measure nucleotides to assess seafood quality", "novoblue", "right");
+
+$page_content = <<<CONTENT
 <section class="container mt-5">
     <h2 class="underlinedTitle right">
-        <span class="underlined novoblue right">Case Studies of Fish Quality assessments</span>
+        <span class="underlined novoblue right">Measure nucleotides to assess seafood quality</span>
     </h2>
     <div class="row">
         <div class="col-lg-6">
             <p>
-                <strong>PRECICE® ADK Assay Kit</strong>
-                provides a convenient, high throughput compatible and non-radioactive assay for in vitro measurement of
-                ADK activity and for Drug Discovery of novel ADK inhibitors. Novel tool for Drug Discovery, this kit
-                allows HTS search of novel ADK inhibitors.
+                Since seafood and fish are highly perishable products, the quality of raw material is of primary concern for seafood processing industry. Testing raw material is first main stage of currently used procedure of Quality Control.
             </p>
-            <h4 class="novo-blue">Principle:</h4>
             <p>
-                Adenosine kinase uses ATP as the phosphate donor. It transfers the terminal phosphate group of ATP to a
-                substrate, producing ADP as a by-product. The assay is based on the use of inosine as a surrogate ADK
-                substrate and a coupled reaction involving a highly active IMPDH (Inosine Monophosphate Dehydrogenase)
-                for a direct measurement of the inosine monophosphate (IMP) formed by ADK. In the presence of inosine
-                and ATP, ADK catalyses the phosphorylation of inosine to form IMP and ADP. IMP is then immediately
-                oxidized to XMP by a highly active IMPDH in the presence of NAD, leading to NADH2 formation.
+                While sensory analysis allows rapid evaluation of the quality of whole wet fish, the assessment of the quality of frozen fish, or that of frozen blocks of fillets or crumbed seafood products remains more difficult.
             </p>
         </div>
         <div class="col-lg-6 text-center">
@@ -184,3 +188,32 @@
         </div>
     </div>
 </section>
+
+
+CONTENT;
+
+addContent($page_content);
+render();
+
+
+?>
+
+<style>
+    .nucleoside-analogues {
+        border: 1px solid silver;
+
+        tr {
+            border: 1px solid silver;
+        }
+
+        th {
+            padding: 12px 0;
+        }
+
+        th,
+        td {
+            text-align: center;
+
+        }
+    }
+</style>
