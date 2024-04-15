@@ -90,7 +90,6 @@ class Nav
                         </a>
                     </li>
                     <li><a href="/cellular-nucleotides-analysis">HPLC analysis of bases nucleosides</a></li>
-                    <li><a href="/yeast-extract-nucleotide-analysis">Yeast Nucleotide Analysis</a></li>
                 </ul>
             </li>
             <li><a href="/inquiry">Contact Us</a></li>
