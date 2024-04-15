@@ -48,19 +48,19 @@ For rapid evaluation of substrates properties of novel nucleoside analogs for hu
             <td>#E-Nov5-100</td>
             <td class="text-center"> <strong>100 mUnits</strong></td>
             <td class="price text-center">€ 355.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=12 analyses (4 samples in triplicate)">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 100 mUnits">Inquiry</a></td>
         </tr>
         <tr>
             <td>#E-Nov5-200</td>
             <td class="text-center"><strong>200 mUnits</strong></td>
             <td class="price text-center">€ 565.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=12 analyses (4 samples in triplicate)">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 200 mUnits">Inquiry</a></td>
         </tr>
         <tr>
             <td>#E-Nov5-500</td>
             <td class="text-center"><strong>500 mUnits</strong></td>
             <td class="price text-center">€ 1420.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=12 analyses (4 samples in triplicate)">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 500 mUnits">Inquiry</a></td>
         </tr>
     </tbody>
 </table>

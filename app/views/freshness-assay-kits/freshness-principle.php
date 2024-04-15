@@ -54,13 +54,13 @@ $content_title
             <td>#K0700-004-10</td>
             <td class="text-center"> <strong>Spectrophotometer for 10 samples analyzed for IMP, inosine and hypoxanthine <br> <a target="_blank" href="/app/documents/PRECICE Freshness Assay Manual for Spectrophotometer K0700-004.pdf">See Documentation <i class="fa-solid fa-file-pdf"></i></a></strong></td>
             <td class="price text-center">€ 350.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=12 analyses (4 samples in triplicate)">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Freshness Assay Kit - 10 samples">Inquiry</a></td>
         </tr>
         <tr>
             <td>#K0700-003-22</td>
             <td class="text-center"><strong>Plate reader for simultaneous analysis of IMP, Ino & Hx in 22 samples <br> <a target="_blank" href="/app/documents/PRECICE Freshness Assay Manual K0700-003 140709.pdff">See Documentation <i class="fa-solid fa-file-pdf"></i></a></strong></td>
             <td class="price text-center">€ 480.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=12 analyses (4 samples in triplicate)">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Freshness Assay Kit - 22 samples">Inquiry</a></td>
         </tr>
     </tbody>
 </table>

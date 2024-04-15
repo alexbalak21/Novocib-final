@@ -38,15 +38,15 @@ $content_title
     <tbody>
         <tr>
             <td>#E-Nov4-1</td>
-            <td class="text-center"> <strong>1 Units</strong></td>
+            <td class="text-center"> <strong>1 Unit</strong></td>
             <td class="price text-center">€ 350.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=12 analyses (4 samples in triplicate)">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=Human UMP-CMP Kinase - 1 Unit">Inquiry</a></td>
         </tr>
         <tr>
             <td>#E-Nov4-5</td>
             <td class="text-center"><strong>5 Units</strong></td>
             <td class="price text-center">€ 1400.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=12 analyses (4 samples in triplicate)">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=Human UMP-CMP Kinase - 5 Unit">Inquiry</a></td>
         </tr>
     </tbody>
 </table>
