@@ -52,7 +52,7 @@ $content_title
                         <td class="text-center"><strong>50 mU</strong></td>
                         <td class="price text-center">€ 305.00</td>
                         <td class="text-end pe-3">
-                            <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                            <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=Human IMPDH Ty2 - 5mU">
                                 Inquiry
                             </a>
                         </td>
@@ -62,7 +62,7 @@ $content_title
                         <td class="text-center"><strong>100 mU</strong></td>
                         <td class="price text-center">€ 495.00</td>
                         <td class="text-end pe-3">
-                            <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                            <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=Human IMPDH Ty2 - 100mU">
                                 Inquiry
                             </a>
                         </td>
@@ -72,7 +72,7 @@ $content_title
                         <td class="text-center"><strong>250 mU</strong></td>
                         <td class="price text-center">€ 1220.00</td>
                         <td class="text-end pe-3">
-                            <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                            <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=Human IMPDH Ty2 - 250mU">
                                 Inquiry
                             </a>
                         </td>
