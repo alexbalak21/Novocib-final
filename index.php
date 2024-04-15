@@ -180,6 +180,10 @@ switch ($req_uri) {
         header('Location: /news');
         break;
 
+    case '/Team.html':
+        header('Location: /');
+        break;
+
     case '/news':
         require_once "app/views/news.html";
         break;

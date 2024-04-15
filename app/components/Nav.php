@@ -7,7 +7,7 @@ class Nav
         return <<<NAVBAR
     
     <header>
-    <a class="logo" href="/home"><img src="/app/static/img/logo.png" /></a>
+    <a class="logo" href="/"><img src="/app/static/img/logo.png" /></a>
     <label class="hamburger-menu"><input type="checkbox" id="nav-toggle" /></label>
     <nav>
         <ul>
