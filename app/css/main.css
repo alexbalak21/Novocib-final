@@ -420,6 +420,14 @@ span.novocib {
     }
 }
 
+strong.novo-blue {
+    font-weight: 500 !important;
+}
+
+strong {
+    font-weight: 500;
+}
+
 .novo-blue {
     color: var(--novo-blue);
 }
@@ -454,10 +462,6 @@ figure {
 
 a {
     text-decoration: none;
-}
-
-strong {
-    font-weight: 500;
 }
 
 .kits {

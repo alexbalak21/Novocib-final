@@ -147,6 +147,10 @@ switch ($req_uri) {
         require_once "app/views/yeast-extract-nucleotide-analysis.php";
         break;
 
+    case '/bacterial-luciferase':
+        require_once "app/views/bacterial-luciferase.html";
+        break;
+
     default:
         require_once "app/views/404.php";
         break;
