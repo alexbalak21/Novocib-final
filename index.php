@@ -69,6 +69,11 @@ switch ($req_uri) {
         require_once "app/views/freshness-assay-kits/how-it-works.html";
         break;
 
+    case "/Freshness_Protocol.html":
+        header('Location: /freshness-assay-kits/how-it-works');
+        break;
+
+
     case "/Fish_Freshness_K_Value_Assay.html":
         header('Location: /freshness-assay-kits/freshness-assay-kit');
         break;
@@ -171,6 +176,9 @@ switch ($req_uri) {
         header('Location: /news');
         break;
 
+    case '/News.html':
+        header('Location: /news');
+        break;
 
     case '/news':
         require_once "app/views/news.html";
