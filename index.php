@@ -139,6 +139,10 @@ switch ($req_uri) {
         require_once "app/views/inquiry.php";
         break;
 
+    case '/contact-us':
+        require_once "app/views/contact-us.html";
+        break;
+
     case '/yeast-extract-nucleotide-analysis':
         require_once "app/views/yeast-extract-nucleotide-analysis.php";
         break;
@@ -157,6 +161,10 @@ switch ($req_uri) {
 
     case '/Bacterial_Luciferase.html':
         header('Location: /bacterial-luciferase');
+        break;
+
+    case '/Company.html':
+        header('Location: /news');
         break;
 
 

@@ -96,7 +96,7 @@ class Nav
                     <li><a href="/bacterial-luciferase">Bacterial Luciferase</a></li>
                 </ul>
             </li>
-            <li><a href="/inquiry">Contact Us</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
         </ul>
     </nav>
 </header>
