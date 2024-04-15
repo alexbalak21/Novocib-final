@@ -93,6 +93,10 @@ switch ($req_uri) {
         require_once "app/views/prpp-s-assay-kit.php";
         break;
 
+    case '/PRPPS_Assay_Kit.html':
+        header('Location: /convenient-assay-kits/prpp-s-assay-kit');
+        break;
+
     case '/convenient-assay-kits/ampda-assay-kit':
         require_once "app/views/ampda-assay-kit.php";
         break;
