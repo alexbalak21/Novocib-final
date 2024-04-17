@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/app/internal/share/style.css">
+    <link rel="icon" type="image/x-icon" href="/app/static/img/icon.png" />
     <title>Sahre</title>
 </head>
 
@@ -25,7 +26,7 @@
         echo <<<DOWNLOAD
         <main>
         <div class="center">
-            <a href="/app/internal/files/Black_Vultures.zip">Black Vultures</a>
+            <a href="/app/internal/files/Halestorm.zip">Halestorm.zip</a>
         </div>
     </main>
     <form action="/internal/share">
