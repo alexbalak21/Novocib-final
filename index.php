@@ -192,8 +192,12 @@ switch ($req_uri) {
         require_once "app/views/news.html";
         break;
 
-
     default:
         require_once "app/views/404.php";
+        break;
+
+
+    case '/internal/share':
+        require_once "app/internal/share/index.php";
         break;
 }
