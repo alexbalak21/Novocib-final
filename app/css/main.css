@@ -201,7 +201,7 @@ nav ul li:hover > ul {
     display: initial;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1666px) {
     .hamburger-menu::before,
     .hamburger-menu::after,
     .hamburger-menu input {
