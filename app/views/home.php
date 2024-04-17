@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "NOVOCIB - Reliable solutions for nucleotides assessment";
 require_once "app/templates/base.php";
 
 ?>
