@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "Convenient Assay Kits", "AMPDA Assay Kit"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Non radioactive AMP Deaminase Assay", "novoblue", "right");

@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "services"];
+
+
 
 addContent(Banner::gen());
 addContent("<div class='container'><h2 class='text-muted my-4'>(Exemple)</h2></div>");

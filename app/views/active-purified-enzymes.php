@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "Active Purified Enzymes"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Active Purified Enzymes", "novoblue", "right");

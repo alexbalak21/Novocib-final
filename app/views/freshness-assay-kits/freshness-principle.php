@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "Freshness", "Freshness Assay Kit Principle"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("PRECICE® Nucleotides Assay Kits", "novoblue", "center");

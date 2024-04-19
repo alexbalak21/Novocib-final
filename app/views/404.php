@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["Home", "404 Page not found"];
+
+
 
 addContent(Banner::gen("/app/static/img/network.jpg"));
 $content_title = UnderlinedTitle::get("404 Page not found", "novoblue", "center");

@@ -5,8 +5,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "Convenient Assay Kits"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Biochemical Assay Kits for Life Science", "novoblue", "right");

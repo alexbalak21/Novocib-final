@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "convenient assay kits", "Human Recombinant PNP"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Human PNP (EC 2.4.2.1)", "novoblue", "right");

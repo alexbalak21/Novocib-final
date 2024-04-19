@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "nucleotides"];
+
+
 
 addContent(Banner::gen("/app/static/img/adn3d.jpg"));
 $table_nucleotides = Table::gen();

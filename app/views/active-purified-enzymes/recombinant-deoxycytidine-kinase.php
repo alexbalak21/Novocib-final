@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "active purified enzymes", "Human Deoxycytidine Kinase"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Human Deoxycytidine Kinase (dCK, EC 2.7.1.74)", "novoblue", "right");

@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "convenient assay kits", "Human IMPDH, Type 2"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Human IMPDH, Type II", "novoblue", "right");

@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "convenient assay kits", "Bacterial active IMPDH"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Bacterial IMPDH (Staphylococcus aureus) (EC 1.1.1.205)", "novoblue", "right");

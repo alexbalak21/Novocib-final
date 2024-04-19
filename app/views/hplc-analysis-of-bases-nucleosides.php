@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "analytical Services", "HPLC analysis of bases nucleosides"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("HPLC analysis of bases, nucleosides, NMP and nucleic acids in feed ingredients or products");

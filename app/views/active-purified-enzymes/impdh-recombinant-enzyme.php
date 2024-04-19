@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "active purified enzymes", "IMPDH Recombinant Enzyme"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("IMPDH Enzymes", "novoblue", "right");

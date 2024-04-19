@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "convenient assay kits", "PRPP-S assay kit"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Non radioactive PRPP-S assay", "novoblue", "right");

@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "active purified enzymes", "Human UMP-CMP Kinase"];
+
+
 $content_title = UnderlinedTitle::get("Human UMP-CMP Kinase (CMK) (E.C.2.7.4.14)", "novoblue", "center");
 addContent(Banner::gen());
 

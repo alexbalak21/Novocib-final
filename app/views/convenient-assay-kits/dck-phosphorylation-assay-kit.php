@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "convenient assay kits", "dCK Phosphorylation Assay Kit"];
+
+
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Anticancer nucleosides phosphorylation", "novoblue", "right");

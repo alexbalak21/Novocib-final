@@ -4,8 +4,8 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-global $path_way;
-$path_way = ["home", "Inquiry"];
+
+
 
 addContent(Banner::gen("/app/static/img/order.jpg"));
 $content_title = UnderlinedTitle::get("Inquiry", "novoblue");
