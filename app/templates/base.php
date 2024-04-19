@@ -27,6 +27,7 @@ if (!isset($lang)) {
     <link rel="icon" type="image/x-icon" href="/app/static/img/icon.png" />
     <!-- CUSTOM -->
     <link rel="stylesheet" href="/app/css/main.css">
+    <link rel="stylesheet" href="/app/css/nav.css">
     <script src="/app/js/app.js" defer></script>
 
     <title><?= $title ?></title>
