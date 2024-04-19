@@ -3,13 +3,25 @@ class Banner
 {
     static function gen($img_url = "/app/static/img/helix.jpg")
     {
+        $url = parse_url($_SERVER['REQUEST_URI'])['path'];
+        $paths = (explode("/", $url));
         global $title;
-        global $path_way;
+        $paths =  explode("/", $url);
         $path_links = "";
-        foreach ($path_way as $page) {
-            $pageName = ucfirst($page);
-            $path_links .= "<a href='/$page'>$pageName</a>";
-            if (end($path_way) != $page) {
+        foreach ($paths as $index => $path) {
+            if ($index == 0) {
+                $name = "Home";
+                $path = "";
+            } else {
+                $name = str_replace("-", " ", $path);
+                $capitalised_name = "";
+                foreach (explode(" ", $name) as $word) {
+                    $capitalised_name  .= (ucfirst($word) . " ");
+                }
+                $name = $capitalised_name;
+            }
+            $path_links .= "<a href='/$path'>$name</a>";
+            if (end($paths) != $path) {
                 $path_links .= "<span> > </span>";
             }
         }

@@ -27,8 +27,8 @@ $carousel = <<<CAROUSEL
     <img src="app/static/img/backgound-nameless.jpg" class="d-block w-100" alt="app/static/img/brand-table.jpg">
     <div class="carousel-caption">
         <div>
-            <h2 class="display-2 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
-            <p class="lead">Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide <br> to quantify nucleotides in their biological samples.</p>
+            <h2 class="display-3 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
+            <p class="lead px-1">Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide <br> to quantify nucleotides in their biological samples.</p>
             <div class="text-center"><a href="/nucleotides" class="btn btn-primary">Read More</a></div>
         </div>
     </div>

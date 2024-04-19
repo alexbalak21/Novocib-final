@@ -1,1 +1,14 @@
-<h1>Require woring reading the file.</h1>
+<?php
+$url = "/freshness-assay-kits/freshness-assay-kit";
+
+
+?>
+
+
+
+
+<style>
+    h3 {
+        color: blue;
+    }
+</style>
