@@ -8,10 +8,11 @@ class Banner
         global $title;
         $paths =  explode("/", $url);
         $path_links = "";
+        $global_path = "";
         foreach ($paths as $index => $path) {
             if ($index == 0) {
                 $name = "Home";
-                $path = "";
+                $path = "/";
             } else {
                 $name = str_replace("-", " ", $path);
                 $capitalised_name = "";
@@ -19,11 +20,14 @@ class Banner
                     $capitalised_name  .= (ucfirst($word) . " ");
                 }
                 $name = $capitalised_name;
-            }
-            $path_links .= "<a href='/$path'>$name</a>";
-            if (end($paths) != $path) {
+                if ($index != 1) {
+                    $global_path .= '/';
+                }
                 $path_links .= "<span> > </span>";
             }
+
+            $global_path .= $path;
+            $path_links .= "<a href='$global_path'>$name</a>";
         }
         return <<<Banner
         <div class="banner" style="background-image: url($img_url); height: 500px">

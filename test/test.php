@@ -1,14 +1,4 @@
 <?php
-$url = "/freshness-assay-kits/freshness-assay-kit";
+$home = "/";
 
-
-?>
-
-
-
-
-<style>
-    h3 {
-        color: blue;
-    }
-</style>
+print_r(str_ends_with($home, '/'));
