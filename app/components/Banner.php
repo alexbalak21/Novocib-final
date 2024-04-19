@@ -34,55 +34,12 @@ class Banner
     <div class="overlay">
         <div class="caption">
             <h1 class="title display-4">$title</h1>
-            <h4 class="path display-6">
+            <p class="path lead">
                 $path_links
-            </h4>
+            </p>
         </div>
     </div>
 </div>
 Banner;
     }
 }
-
-?>
-
-<style>
-    .banner {
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .banner .overlay {
-        color: white;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: end;
-        padding-bottom: 50px;
-        padding-left: 80px;
-    }
-
-    .banner .title {
-        font-weight: 400;
-        margin-bottom: 16px;
-    }
-
-    .banner .path {
-        margin-left: 50px;
-    }
-
-    .banner .path a {
-        color: white;
-        text-decoration: none;
-        font-size: 2.5rem;
-    }
-
-    .banner .path a:hover {
-        color: silver;
-    }
-
-    .banner .path a.active {
-        color: silver;
-    }
-</style>

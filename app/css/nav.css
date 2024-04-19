@@ -178,6 +178,7 @@ nav ul li.open > ul {
     header .logo img {
         max-width: 60vw;
         height: auto;
+        max-height: 66px;
     }
 
     nav {
@@ -237,5 +238,27 @@ nav ul li.open > ul {
 
     .hamburger-menu:has(input:checked) ~ nav {
         display: initial;
+    }
+
+    .banner .overlay {
+        padding-bottom: 0 !important;
+        padding-left: 0 !important;
+        display: inline-block;
+        .caption .title {
+            text-align: center;
+            margin-top: 46px;
+            margin-bottom: 80px;
+        }
+        .path {
+            margin-left: 0;
+            margin: 1rem 1rem;
+        }
+        .banner .path a,
+        .banner .path span {
+            font-size: 1.3rem;
+        }
+        .banner .path a {
+            width: max-content;
+        }
     }
 }
