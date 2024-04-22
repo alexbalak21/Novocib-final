@@ -49,41 +49,47 @@ $search_container = <<<SEARCH
     </div>
 SEARCH;
 addContent($search_container);
-
-$card_container = <<<CARD_CONTAINER
-<div class="container mt-5">
-<div class="row">
-<div class="col-lg-4 d-flex justify-content-center">    <div class="box text-center">
-        <img src="/app/static/img/analisis-gloves.jpg">
-        <a href=""><h5>Analytical Services</h5></a>
-        <p></p><ul>
+$card1_content = <<<CARD1_CONTENT
+<ul>
     <li>Whole nucleotides spectra (heterocyclic bases, nucleosides and nucleotides, nucleic acids RNA and DNA);</li>
     <li>Total Potentially Available Nucleotides analysis (TPAN);</li>
     <li>Purine analysis.</li>
-</ul><p></p>
-        <div class="text-center my-4"><a href="/analytical-services" class="btn btn-primary">Go to Page</a></div>
-    </div></div>
-<div class="col-lg-4 d-flex justify-content-center">    <div class="box text-center">
-        <img src="/app/static/img/viles.jpg">
-        <a href=""><h5>PRECICE® One-step Kits</h5></a>
-        <p></p><ul>
-    <li>Include precise amounts of enzymes, buffers, cofactors and substrates at optimal concentrations;</li>
-    <li>96-well microplate form;</li>
-    <li>Convenient, saves time and preempts possible errors.</li>
-</ul><p></p>
-        <div class="text-center my-4"><a href="/freshness-assay-kits/freshness-principle" class="btn btn-primary">Go to Page</a></div>
-    </div></div>
-<div class="col-lg-4 d-flex justify-content-center">    <div class="box text-center">
-        <img src="/app/static/img/structure.jpg">
-        <a href=""><h5>Active purified enzymes</h5></a>
-        <p></p><ul>
-    <li>Nucleoside kinases;</li>
-    <li>Purine metabolism enzyme;</li>
-    <li>Small and bulk amounts;</li>
-    <li>Shipped worldwide in stable lyophilized form without dry ice or cold blocks.</li>
-</ul><p></p>
-        <div class="text-center my-4"><a href="/active-purified-enzymes" class="btn btn-primary">Go to Page</a></div>
-    </div></div>
+</ul>
+CARD1_CONTENT;
+$card1 = Card::get("/app/static/img/analisis-gloves.jpg", "Analytical Services", $card1_content, "/analytical-services");
+
+$card2_content = <<<CARD1_CONTENT
+<ul>
+<li>Include precise amounts of enzymes, buffers, cofactors and substrates at optimal concentrations;</li>
+<li>96-well microplate form;</li>
+<li>Convenient, saves time and preempts possible errors.</li>
+</ul>
+CARD1_CONTENT;
+$card2 = Card::get("/app/static/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/freshness-assay-kits/freshness-principle");
+
+$card3_content = <<<CARD1_CONTENT
+<ul>
+<li>Nucleoside kinases;</li>
+<li>Purine metabolism enzyme;</li>
+<li>Small and bulk amounts;</li>
+<li>Shipped worldwide in stable lyophilized form without dry ice or cold blocks.</li>
+</ul>
+CARD1_CONTENT;
+$card3 = Card::get("/app/static/img/structure.jpg", "Active purified enzymes", $card3_content, "/active-purified-enzymes");
+
+$card_container = <<<CARD_CONTAINER
+<div class="container mt-5">
+<div class="row justify-content-center">
+<div class="col-lg-4 d-flex justify-content-center">
+$card1
+</div>
+<div class="col-lg-4 d-flex justify-content-center">
+$card2
+</div>
+<div class="col-lg-4 d-flex justify-content-center">
+$card3
+</div>
+
 </div>  
 </div>
 CARD_CONTAINER;
