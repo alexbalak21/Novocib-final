@@ -7,8 +7,6 @@ if (!isset($lang)) {
     $lang = "en";
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="<?= $lang ?>">
 

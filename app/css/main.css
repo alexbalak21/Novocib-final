@@ -384,7 +384,7 @@ a {
         color: var(--novo-blue);
     }
     a:not(.btn):hover {
-        color: var(--dark-blue);
+        color: var(--novo-light);
     }
     ul li:not(:first-child) {
         margin-top: 0.7rem;
