@@ -34,6 +34,8 @@ class Banner
     <div class="overlay">
         <div class="caption">
             <h1 class="title display-4">$title</h1>
+        </div>
+        <div class="links">
             <p class="path lead">
                 $path_links
             </p>

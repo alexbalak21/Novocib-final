@@ -322,9 +322,12 @@ a {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: end;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    flex-direction: column;
+}
+
+.banner .caption {
+    flex: 1;
+    margin-top: 160px;
 }
 
 .banner .title {
@@ -335,6 +338,8 @@ a {
 
 .banner .path {
     margin-left: 50px;
+    padding-left: 80px;
+    margin-bottom: 40px;
 }
 
 .banner .path a,
@@ -458,24 +463,28 @@ a {
 
 @media (max-width: 1391px) {
     .banner .overlay {
+        align-items: baseline;
+        flex-direction: column;
         padding-bottom: 0 !important;
         padding-left: 0 !important;
-        display: inline-block;
-        .caption .title {
+
+        .caption {
+            margin-top: 160px;
+        }
+
+        .title {
             text-align: center;
-            margin-top: 46px;
-            margin-bottom: 80px;
+            margin-bottom: 4rem;
+            margin-bottom: 0;
         }
         .path {
             margin-left: 0;
-            margin: 1rem 1rem;
+            margin: 1.8rem 1.8rem;
+            padding-left: 0;
         }
-        .banner .path a,
-        .banner .path span {
-            font-size: 1.3rem;
-        }
-        .banner .path a {
-            width: max-content;
+        .links .path a,
+        .links .path span {
+            font-size: 26px !important;
         }
     }
 }
