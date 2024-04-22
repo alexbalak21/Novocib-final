@@ -327,13 +327,15 @@ a {
 
 .banner .caption {
     flex: 1;
-    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .banner .title {
     font-weight: 400;
-    margin-bottom: 2.5rem;
     text-align: center;
+    width: 100vw;
 }
 
 .banner .path {
@@ -431,7 +433,7 @@ a {
     left: 50% !important;
     transform: translateX(-50%);
     height: 4px;
-    width: 75%;
+    width: 80%;
     background-color: black;
 }
 
@@ -468,13 +470,9 @@ a {
         padding-bottom: 0 !important;
         padding-left: 0 !important;
 
-        .caption {
-            margin-top: 160px;
-        }
-
         .title {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: min(3rem);
             margin-bottom: 0;
         }
         .path {
@@ -485,6 +483,13 @@ a {
         .links .path a,
         .links .path span {
             font-size: 26px !important;
+        }
+    }
+    .underlinedTitle {
+        text-align: center !important;
+        font-size: 1.8rem;
+        .underlined:after {
+            display: none;
         }
     }
 }
