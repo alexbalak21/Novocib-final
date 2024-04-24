@@ -27,6 +27,13 @@ if (!isset($lang)) {
     <link rel="stylesheet" href="/app/css/main.css">
     <link rel="stylesheet" href="/app/css/nav.css">
     <script src="/app/js/app.js" defer></script>
+    <?php
+    if (!isset($additional_head)) {
+        $additional_head = "";
+    }
+    echo $additional_head;
+
+    ?>
 
     <title><?= $title ?></title>
 </head>
@@ -46,10 +53,9 @@ if (!isset($lang)) {
         global $content;
         echo $content;
         echo Footer::gen();
+        echo "</body>
+        </html>";
     }
 
+
     ?>
-
-</body>
-
-</html>

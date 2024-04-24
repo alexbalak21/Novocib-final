@@ -41,26 +41,3 @@ class Aboutus
 ABOUTUS;
     }
 }
-?>
-
-<style>
-    .contactus {
-        background-color: WhiteSmoke;
-    }
-
-    .contactus h2 {
-        margin-bottom: 10px;
-        position: relative;
-    }
-
-    .contactus h2:after {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 4px;
-        width: 80px;
-        background-color: #4167b1;
-    }
-</style>

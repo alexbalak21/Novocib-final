@@ -15,22 +15,3 @@ class Parallax
     Parallax;
     }
 }
-?>
-
-<style>
-    .parallax {
-        background-attachment: fixed;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        p {
-            text-align: center;
-        }
-    }
-
-    .overlay {
-        background-color: rgba(39, 79, 140, 0.9);
-
-    }
-</style>

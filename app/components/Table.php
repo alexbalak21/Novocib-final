@@ -122,8 +122,3 @@ class TABLE
 TABLE;
     }
 }
-
-?>
-<style>
-
-</style>

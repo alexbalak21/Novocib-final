@@ -63,26 +63,3 @@ $awards_title
 Awards;
     }
 }
-
-?>
-
-<style>
-    .award {
-        box-shadow: 1px 0 1.04rem rgba(21, 21, 21, 0.1);
-        border-radius: 8px;
-        margin: 16px 20px;
-
-        img {
-            height: 140px;
-        }
-
-        p {}
-    }
-
-    .award .btn.btn-outline-primary {
-        --bs-btn-color: var(--novo-blue);
-        --bs-btn-border-color: var(--novo-blue);
-        --bs-btn-hover-bg: var(--novo-blue);
-        --bs-btn-hover-border-color: var(--novo-blue);
-    }
-</style>

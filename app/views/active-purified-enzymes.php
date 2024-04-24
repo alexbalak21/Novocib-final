@@ -92,19 +92,3 @@ Services;
 
 addContent($page_content);
 render();
-
-?>
-
-<style>
-    .purine {
-        border: 1px solid silver;
-
-        tr:nth-child(odd) {
-            background-color: #E0E0E0;
-        }
-
-        td {
-            padding: 1rem;
-        }
-    }
-</style>

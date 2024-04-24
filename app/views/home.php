@@ -1,17 +1,19 @@
 <?php
 $title = "NOVOCIB - Reliable solutions for nucleotides assessment";
-require_once "app/templates/base.php";
-
-?>
-<!-- OWL CAROUSEL -->
+$additional_head = <<<HEAD
 <link href="/app/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="/app/lib/owlcarousel/assets/owl.theme.default.min.css" />
 <script src="/app/lib/owlcarousel/owl.carousel.min.js" defer></script>
 <script src="/app/lib/jquery/jquery-3.7.1.min.js"></script>
-<!-- CUSTOM PARAMETERS FOR OWLCAROUSEL -->
+
 <link rel="stylesheet" href="/app/css/owlcarousel.css" />
 <script src="/app/js/owlcarousel.js" defer></script>
-<?php
+HEAD;
+
+require_once "app/templates/base.php";
+
+
+
 
 $novoblue = "#4167b1";
 
@@ -56,7 +58,7 @@ $card1_content = <<<CARD1_CONTENT
     <li>Purine analysis.</li>
 </ul>
 CARD1_CONTENT;
-$card1 = Card::get("/app/static/img/analisis-gloves.jpg", "Analytical Services", $card1_content, "/analytical-services");
+$card1 = Card::get("/app/static/img/analisis-gloves.jpg", "Analytical Services", $card1_content, "/analytical-services", "photo of gloves holiding a vile");
 
 $card2_content = <<<CARD1_CONTENT
 <ul>
@@ -65,7 +67,7 @@ $card2_content = <<<CARD1_CONTENT
 <li>Convenient, saves time and preempts possible errors.</li>
 </ul>
 CARD1_CONTENT;
-$card2 = Card::get("/app/static/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/freshness-assay-kits/freshness-principle");
+$card2 = Card::get("/app/static/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/freshness-assay-kits/freshness-principle", "Photo of kit analysis");
 
 $card3_content = <<<CARD1_CONTENT
 <ul>
@@ -75,7 +77,7 @@ $card3_content = <<<CARD1_CONTENT
 <li>Shipped worldwide in stable lyophilized form without dry ice or cold blocks.</li>
 </ul>
 CARD1_CONTENT;
-$card3 = Card::get("/app/static/img/structure.jpg", "Active purified enzymes", $card3_content, "/active-purified-enzymes");
+$card3 = Card::get("/app/static/img/structure.jpg", "Active purified enzymes", $card3_content, "/active-purified-enzymes", "molecular picture of enzyme");
 
 $card_container = <<<CARD_CONTAINER
 <div class="container mt-5">
@@ -260,6 +262,8 @@ $owlCarousel = <<<OWLCAROUSEL
     </div>
 </section>
 OWLCAROUSEL;
+
+$owlCarousel = OwlCarousel::gen();
 
 addContent($owlCarousel);
 

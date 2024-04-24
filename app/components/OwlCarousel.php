@@ -4,7 +4,7 @@ class OwlCarousel
     static function gen()
     {
 
-        $carousel_title = UnderlinedTitle::get(content: "Our Partners", underColor: "novoblue", position: "center");
+        $carousel_title = UnderlinedTitle::get("Our Partners", "novoblue", "center");
         return <<<OwlCarousel
 <section class="partners py-2" id="partners">
 <div class="container text-center mb-3">
@@ -87,10 +87,3 @@ $carousel_title
 OwlCarousel;
     }
 }
-?>
-
-<style>
-    #partners {
-        background-color: #f8f8f8;
-    }
-</style>
