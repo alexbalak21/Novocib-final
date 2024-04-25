@@ -20,6 +20,7 @@ $novoblue = "#4167b1";
 
 
 $carousel = <<<CAROUSEL
+
 <div id="crouselItem" class="carousel slide" data-bs-ride="carousel">
       
         <div class="carousel-inner">
@@ -31,7 +32,7 @@ $carousel = <<<CAROUSEL
         <div>
             <h2 class="display-3 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
             <p class="lead px-1">Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide <br> to quantify nucleotides in their biological samples.</p>
-            <div class="text-center"><a href="/nucleotides" class="btn btn-primary">Read More</a></div>
+            <div class="text-center"><a href="/nucleotides" class="btn btn-primary">View Nucleosides page</a></div>
         </div>
     </div>
 </div>
@@ -80,7 +81,8 @@ CARD1_CONTENT;
 $card3 = Card::get("/app/static/img/structure.jpg", "Active purified enzymes", $card3_content, "/active-purified-enzymes", "molecular picture of enzyme");
 
 $card_container = <<<CARD_CONTAINER
-<div class="container mt-5">
+<section class="container mt-5" content="section containing the presentation of novocib services">
+<meta name="main services of novocib" content="services provided by novocib are: Active purified enzymes kits, One-step analysis Kits, wide range of Analytical Services">
 <div class="row justify-content-center">
 <div class="col-lg-4 d-flex justify-content-center">
 $card1
@@ -93,14 +95,14 @@ $card3
 </div>
 
 </div>  
-</div>
+</section>
 CARD_CONTAINER;
 addContent($card_container);
 
 
 $about_us = <<<ABOUTUS
 
-<div class="contactus container-fluild pt-3">
+<section content="description of the company and services" class="contactus container-fluild pt-3">
 <div class="container">
 <h2 class="underlinedTitle center"><span class="underlined novoblue center">About Us</span></h2>
 <div class="row">
@@ -130,7 +132,7 @@ $about_us = <<<ABOUTUS
     </div>
 </div>
 </div>
-</div>
+</section>
 ABOUTUS;
 
 addContent($about_us);

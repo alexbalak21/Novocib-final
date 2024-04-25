@@ -13,6 +13,8 @@ if (!isset($lang)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Novocib is a biotechnology company focused on nucleotides metabolism. Company has developed a range of innovative products and services for nucleotide analysis in cells, food, feed ingredients.">
+    <title><?= $title ?></title>
     <!-- FONTAWASOME -->
     <!-- <script src="https://kit.fontawesome.com/6502c70df0.js" crossorigin="anonymous"></script> -->
     <!-- LOCAL -->
@@ -34,8 +36,6 @@ if (!isset($lang)) {
     echo $additional_head;
 
     ?>
-
-    <title><?= $title ?></title>
 </head>
 
 <body>
