@@ -97,12 +97,12 @@ $card3
 CARD_CONTAINER;
 addContent($card_container);
 
-$aboutus_title = UnderlinedTitle::get("About Us", "novoblue", "center");
+
 $about_us = <<<ABOUTUS
 
 <div class="contactus container-fluild pt-3">
 <div class="container">
-$aboutus_title
+<h2 class="underlinedTitle center"><span class="underlined novoblue center">About Us</span></h2>
 <div class="row">
     <div class="col-lg-5 d-flex align-items-center">
         <img class="mb-5 w-100" src="/app/static/img/analysis4.jpg" alt="analysis" />

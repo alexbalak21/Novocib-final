@@ -30,11 +30,6 @@
             <a href="/app/internal/files/Halestorm.zip">Halestorm.zip <i class="fa-solid fa-music"></i> <i class="fa-solid fa-cloud-arrow-down"></i></a>
             <br>
             <br>
-            <a href="/app/internal/files/07.720p.AMZN.mkv">REACHER - Ep07 <i class="fa-solid fa-film"></i> <i class="fa-solid fa-cloud-arrow-down"></i></a>
-            <br>
-            <br>
-            <a href="/app/internal/files/08.720p.AMZN.mkv">REACHER - Ep08 <i class="fa-solid fa-film"></i> <i class="fa-solid fa-cloud-arrow-down"></i></a>
-        </div>
     </main>
     <form action="/internal/share">
     <div class="center"><button>DISOCONNECT</button></div>

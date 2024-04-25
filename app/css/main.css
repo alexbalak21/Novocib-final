@@ -545,21 +545,6 @@ a {
     text-decoration: none;
 }
 
-.contactus {
-    background-color: WhiteSmoke;
-}
-
-.contactus h2:after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 80px;
-    background-color: #4167b1;
-}
-
 .award {
     box-shadow: 1px 0 1.04rem rgba(21, 21, 21, 0.1);
     border-radius: 8px;
