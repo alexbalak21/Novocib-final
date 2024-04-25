@@ -1,13 +1,15 @@
 <?php
 class Aboutus
 {
-    static function get()
+
+    static function gen()
     {
+        $aboutus_title = UnderlinedTitle::get("Our Partners", "novoblue", "center");
         return <<<ABOUTUS
 
         <div class="contactus container-fluild pt-3">
         <div class="container">
-        <h2 class="text-center mb-5">About us</h2>
+        $aboutus_title
         <div class="row">
             <div class="col-lg-5 d-flex align-items-center">
                 <img class="mb-5 w-100" src="/app/static/img/analysis4.jpg" alt="analysis" />
