@@ -1,15 +1,12 @@
 <?php
 $title = "NOVOCIB - Reliable solutions for nucleotides assessment";
-$metas = <<<META
-<meta name="description" content="Novocib is a biotechnology company focused on nucleotides metabolism. Company has developed a range of innovative products and services for nucleotide analysis in cells, food, feed ingredients.">
-<meta name="keywords" content="Freshness Assay Kits, Active Purified Enzymes, Analytical Services">
-META;
 $additional_head = <<<HEAD
-<link href="/app/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-<link rel="stylesheet" href="/app/lib/owlcarousel/assets/owl.theme.default.min.css">
+<link href="/app/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/app/lib/owlcarousel/assets/owl.theme.default.min.css" />
 <script src="/app/lib/owlcarousel/owl.carousel.min.js" defer></script>
 <script src="/app/lib/jquery/jquery-3.7.1.min.js"></script>
-<link rel="stylesheet" href="/app/css/owlcarousel.css">
+
+<link rel="stylesheet" href="/app/css/owlcarousel.css" />
 <script src="/app/js/owlcarousel.js" defer></script>
 HEAD;
 
@@ -25,14 +22,17 @@ $novoblue = "#4167b1";
 $carousel = <<<CAROUSEL
 
 <div id="crouselItem" class="carousel slide" data-bs-ride="carousel">
+      
         <div class="carousel-inner">
+                
+
         <div class="carousel-item active" data-bs-interval="10000">
-    <img src="app/static/img/brand-table.jpg" class="d-block w-100" alt="company photo / logo">
+    <img src="app/static/img/backgound-nameless.jpg" class="d-block w-100" alt="app/static/img/brand-table.jpg">
     <div class="carousel-caption">
         <div>
             <h2 class="display-3 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
             <p class="lead px-1">Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide <br> to quantify nucleotides in their biological samples.</p>
-            <div class="text-center"><a href="/nucleotides" class="btn btn-primary">Read More</a></div>
+            <div class="text-center"><a href="/nucleotides" class="btn btn-primary">View Nucleosides page</a></div>
         </div>
     </div>
 </div>

@@ -89,7 +89,7 @@ $card_container = <<<CARD_CONTAINER
 CARD_CONTAINER;
 addContent($card_container);
 
-addContent(Aboutus::get());
+addContent(Aboutus::gen());
 
 $paralax = <<<PARALAX
 <div class="parallax" style="background-image: url(app/static/img/header1.jpg); color: white;">

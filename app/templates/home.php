@@ -1,7 +1,7 @@
 <?php
 require_once "app/components/autoloader.php";
 if (!isset($title)) {
-    $title = "Base Template";
+    $title = "Novocib";
 }
 if (!isset($lang)) {
     $lang = "en";

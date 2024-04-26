@@ -24,6 +24,10 @@ switch ($req_uri) {
         require_once "app/views/active-purified-enzymes.php";
         break;
 
+    case '/Purified_Active_Enzymes.html':
+        header('Location: /active-purified-enzymes');
+        break;
+
     case '/active-purified-enzymes/impdh-recombinant-enzyme':
         require_once "app/views/active-purified-enzymes/impdh-recombinant-enzyme.php";
         break;
@@ -92,6 +96,10 @@ switch ($req_uri) {
 
     case '/PRPPS_Assay_Kit.html':
         header('Location: /convenient-assay-kits/prpp-s-assay-kit');
+        break;
+
+    case '/AMPDA_Assay_Kit.html':
+        header('Location: /convenient-assay-kits/ampda-assay-kit');
         break;
 
     case '/convenient-assay-kits/ampda-assay-kit':
