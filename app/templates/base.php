@@ -1,13 +1,16 @@
 <?php
 require_once "app/components/autoloader.php";
 if (!isset($title)) {
-    $title = "Base Template";
+    $title = "Novocib";
 }
+
 if (!isset($lang)) {
     $lang = "en";
 }
-if (!isset($matas)) {
-    $page_description = "";
+
+if (!isset($metas)) {
+    $metas = "";
+    echo "";
 }
 
 ?>
@@ -22,9 +25,9 @@ if (!isset($matas)) {
     <!-- FONTAWASOME -->
     <!-- <script src="https://kit.fontawesome.com/6502c70df0.js" crossorigin="anonymous"></script> -->
     <!-- LOCAL -->
-    <!-- <link href="/app/FA6/css/all.min.css" rel="stylesheet" /> -->
+    <link href="/app/FA6/css/all.min.css" rel="stylesheet" />
     <!-- CDN -->
-    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet"> -->
     <!-- BOOTSTRAP  -->
     <link rel="stylesheet" href="/app/css/bootstrap.min.css">
     <script src="/app/js/bootstrap.bundle.min.js" defer></script>

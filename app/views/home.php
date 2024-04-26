@@ -1,9 +1,12 @@
 <?php
 $title = "NOVOCIB - Reliable solutions for nucleotides assessment";
+
 $metas = <<<META
 <meta name="description" content="Novocib is a biotechnology company focused on nucleotides metabolism. Company has developed a range of innovative products and services for nucleotide analysis in cells, food, feed ingredients.">
+<meta name="main services of novocib" content="services provided by novocib are: Active purified enzymes kits, One-step analysis Kits, wide range of Analytical Services">
 <meta name="keywords" content="Freshness Assay Kits, Active Purified Enzymes, Analytical Services">
 META;
+
 $additional_head = <<<HEAD
 <link href="/app/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/app/lib/owlcarousel/assets/owl.theme.default.min.css">
@@ -32,7 +35,7 @@ $carousel = <<<CAROUSEL
         <div>
             <h2 class="display-3 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
             <p class="lead px-1">Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide <br> to quantify nucleotides in their biological samples.</p>
-            <div class="text-center"><a href="/nucleotides" class="btn btn-primary">Read More</a></div>
+            <div class="text-center"><a href="/nucleotides" class="btn btn-primary">Go to Nucleotides Page</a></div>
         </div>
     </div>
 </div>
@@ -82,7 +85,7 @@ $card3 = Card::get("/app/static/img/structure.jpg", "Active purified enzymes", $
 
 $card_container = <<<CARD_CONTAINER
 <section class="container mt-5" content="section containing the presentation of novocib services">
-<meta name="main services of novocib" content="services provided by novocib are: Active purified enzymes kits, One-step analysis Kits, wide range of Analytical Services">
+
 <div class="row justify-content-center">
 <div class="col-lg-4 d-flex justify-content-center">
 $card1
