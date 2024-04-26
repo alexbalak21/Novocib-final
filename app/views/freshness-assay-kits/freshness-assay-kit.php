@@ -1,14 +1,17 @@
 <?php
 $title = "Seafood Quality Control - Seafood Freshness Assay Kit - Fish Freshness Assay Kit - K value";
-require_once "app/templates/base.php";
-
-$novoblue = "#4167b1";
 
 $metas = <<<META
 <meta name="description" content="Novocib's freshness assay kit is the first enzymatic kit for measurement of fish freshness using measurement of three major ATP degradation products.">
 <meta name="service" content="kit to precisly mesure the freshness of fish">
 <meta name="keywords" content="ATP degradation, fish freshness measurement, food quality">
 META;
+
+
+require_once "app/templates/base.php";
+
+$novoblue = "#4167b1";
+
 
 
 
