@@ -30,6 +30,11 @@
             <a href="/app/internal/files/Halestorm.zip">Halestorm.zip <i class="fa-solid fa-music"></i> <i class="fa-solid fa-cloud-arrow-down"></i></a>
             <br>
             <br>
+            <a href="/app/internal/files/ACDC - BEST OF.zip">ACDC - BEST OF <i class="fa-solid fa-music"></i> <i class="fa-solid fa-cloud-arrow-down"></i></a>
+            <br>
+            <br>
+            <a href="/app/internal/files/Dune1.mp4" download>Dune 1 <i class="fa-solid fa-film"></i> <i class="fa-solid fa-cloud-arrow-down"></i></a>
+       
     </main>
     <form action="/internal/share">
     <div class="center"><button>DISOCONNECT</button></div>
