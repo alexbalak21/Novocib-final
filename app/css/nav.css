@@ -86,6 +86,10 @@ nav ul li a {
     color: var(--foreground);
 }
 
+nav ul li a.large {
+    width: 150px;
+}
+
 .logo {
     padding: 0;
 }
@@ -109,6 +113,7 @@ nav ul li ul {
 nav ul li ul li {
     width: 100%;
     border-top: 1px solid silver;
+    padding: 0 12px;
 }
 
 nav ul li ul li:last-child {
