@@ -61,7 +61,7 @@ $card_container = <<<CARD_CONTAINER
     <li>Total Potentially Available Nucleotides analysis (TPAN);</li>
     <li>Purine analysis.</li>
 </ul><p></p>
-        <div class="text-center my-4"><a href="/analytical-services" class="btn btn-primary">Go to Page</a></div>
+        <div class="text-center my-4"><a href="/nucleotide-analysis-service" class="btn btn-primary">Go to Page</a></div>
     </div></div>
 <div class="col-lg-4 d-flex justify-content-center">    <div class="box text-center">
         <img src="/app/static/img/viles.jpg">
