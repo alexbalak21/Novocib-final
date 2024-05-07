@@ -19,7 +19,7 @@ function check_fontAwasome_local()
     global $fontAwasome_source;
     $local_fa6 = "app/FA6/css/all.min.css";
     if (file_exists($local_fa6)) {
-        $fontAwasome_source = $local_fa6;
+        $fontAwasome_source = '/' . $local_fa6;
     }
 }
 check_fontAwasome_local();
@@ -38,13 +38,13 @@ check_fontAwasome_local();
     <!-- LOCAL -->
     <link href="<?= $fontAwasome_source ?>" rel="stylesheet" />
     <!-- BOOTSTRAP  -->
-    <link rel="stylesheet" href="app/css/bootstrap.min.css">
-    <script src="app/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="/app/css/bootstrap.min.css">
+    <script src="/app/js/bootstrap.bundle.min.js" defer></script>
     <link rel="icon" type="image/x-icon" href="app/favicon.ico">
     <!-- CUSTOM -->
-    <link rel="stylesheet" href="app/css/main.css">
-    <link rel="stylesheet" href="app/css/nav.css">
-    <script src="app/js/app.js" defer></script>
+    <link rel="stylesheet" href="/app/css/main.css">
+    <link rel="stylesheet" href="/app/css/nav.css">
+    <script src="/app/js/app.js" defer></script>
     <?php
     if (!isset($additional_head)) {
         $additional_head = "";
