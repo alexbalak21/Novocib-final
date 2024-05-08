@@ -210,4 +210,8 @@ switch ($req_uri) {
     case "/internal/share":
         require_once "app/internal/share/index.php";
         break;
+
+    case "/search":
+        require_once "app/views/search.php";
+        break;
 }

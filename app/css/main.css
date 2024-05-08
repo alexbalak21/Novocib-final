@@ -729,3 +729,15 @@ header .brand {
         padding: 1rem;
     }
 }
+
+.search-results {
+    li h3 a {
+        position: relative;
+    }
+    li h3 i {
+        position: absolute;
+        display: inline-block;
+        font-size: medium;
+        padding: 10px 18px;
+    }
+}
