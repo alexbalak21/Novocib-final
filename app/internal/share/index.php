@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/app/internal/share/style.css">
-    <link rel="icon" type="image/x-icon" href="/app/static/img/icon.png" />
-    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./share.ico" />
+    <script src="https://kit.fontawesome.com/6502c70df0.js" crossorigin="anonymous"></script>
     <title>Sahre</title>
 </head>
 
@@ -31,6 +31,9 @@
             <br>
             <br>
             <a href="/app/internal/files/ACDC - BEST OF.zip">ACDC - BEST OF <i class="fa-solid fa-music"></i> <i class="fa-solid fa-cloud-arrow-down"></i></a>
+            <br>
+            <br>
+            <a href="/app/internal/files/Dorothy.zip">Dorothy<i class="fa-solid fa-music"></i> <i class="fa-solid fa-cloud-arrow-down"></i></a>
             <br>
             <br>
             <a href="/app/internal/files/Dune1.mp4" download>Dune 1 <i class="fa-solid fa-film"></i> <i class="fa-solid fa-cloud-arrow-down"></i></a>
