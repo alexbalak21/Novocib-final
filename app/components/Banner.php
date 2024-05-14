@@ -10,24 +10,28 @@ class Banner
         $path_links = "";
         $global_path = "";
         foreach ($paths as $index => $path) {
-            if ($index == 0) {
+            if ($index === 0) {
                 $name = "Home";
                 $path = "/";
             } else {
                 $name = str_replace("-", " ", $path);
-                $capitalised_name = "";
+                $capitalized_name = "";
                 foreach (explode(" ", $name) as $word) {
-                    $capitalised_name  .= (ucfirst($word) . " ");
+                    $capitalized_name  .= (ucfirst($word) . " ");
                 }
-                $name = $capitalised_name;
+                $name = $capitalized_name;
                 if ($index != 1) {
                     $global_path .= '/';
                 }
                 $path_links .= "<span> > </span>";
             }
-
-            $global_path .= $path;
-            $path_links .= "<a href='$global_path'>$name</a>";
+            if ($index === (count($paths) - 1)) {
+                $global_path .= $path;
+                $path_links .= "<span class='actual' >$name</span>";
+            } else {
+                $global_path .= $path;
+                $path_links .= "<a href='$global_path'>$name</a>";
+            }
         }
         return <<<Banner
         <div class="banner" style="background-image: url($img_url); height: 500px">

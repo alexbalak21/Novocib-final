@@ -88,7 +88,7 @@ class Nav
                 <li>
                     <a class="large">Services</a>
                     <ul>
-                        <li><a href="/nucleotide-analysis-service">Analytical Services</a></li>
+                        <li><a href="/nucleotide-analysis-service">Nucleotide Analysis</a></li>
                         <li>
                             <a href="/analytical-services/yeast-extract-nucleotide-analysis">
                                 Yeast Extract Nucleotide Analysis
