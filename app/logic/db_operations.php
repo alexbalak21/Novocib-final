@@ -17,7 +17,7 @@ function create_table()
 }
 
 
-function create_entry($url = "",  $title = "", $content = [], $keywords = [])
+function create_entry($url = "",  $title = "", $content = "", $keywords = [])
 {
 
     $url = trim($url);
@@ -26,7 +26,6 @@ function create_entry($url = "",  $title = "", $content = [], $keywords = [])
     if ($conn === null) {
         return;
     }
-    $content = join(" ", $content);
     foreach ($keywords as $key => $value) {
         $keywords[$key] = "'$value'";
     }
@@ -39,4 +38,14 @@ function create_entry($url = "",  $title = "", $content = [], $keywords = [])
         echo 'Error: ' . $e->getMessage();
         return false;
     }
+}
+
+
+function read_all()
+{
+    $conn = connect_db();
+    $select_all = "SELECT * FROM articles";
+    $stmt = $conn->query($select_all);
+    $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $res;
 }

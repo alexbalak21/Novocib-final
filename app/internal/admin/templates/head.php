@@ -15,6 +15,7 @@ global $user;
     <link rel="stylesheet" href="/app/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/script.js" defer></script>
     <title>Admin</title>
 </head>
 
