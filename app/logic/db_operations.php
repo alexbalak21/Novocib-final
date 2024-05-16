@@ -31,6 +31,12 @@ function create_entry($url = "",  $title = "", $content = [], $keywords = [])
         $keywords[$key] = "'$value'";
     }
     $keywords = join(", ", $keywords);
-    $sql = "INSERT INTO articles (page_url, title, content, keywords) VALUES ('$url', '$title', JSON_ARRAY($keywords))";
-    $conn->exec($sql);
+    $sql = "INSERT INTO articles (page_url, title, content, keywords) VALUES ('$url', '$title', '$content', JSON_ARRAY($keywords))";
+    try {
+        $conn->exec($sql);
+        return true;
+    } catch (Exception $e) {
+        echo 'Error: ' . $e->getMessage();
+        return false;
+    }
 }

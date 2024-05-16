@@ -1,5 +1,5 @@
 <?php
-require_once "templates/head.php";
+require_once __DIR__ . "/templates/head.php";
 ?>
 
 <?= Nav::gen() ?>
@@ -8,5 +8,5 @@ require_once "templates/head.php";
 </main>
 
 <?php
-require_once "templates/foot.php";
+require_once __DIR__ . "/templates/foot.php";
 ?>

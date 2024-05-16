@@ -1,7 +1,8 @@
 <?php
+
 // IF PAGE IS login.php don't request check_session
-if (!str_ends_with(parse_url($_SERVER["REQUEST_URI"])["path"], 'login.php')) require_once "session/check_session.php";
-require_once "components/autoLoader.php";
+if (!str_ends_with(parse_url($_SERVER["REQUEST_URI"])["path"], 'login.php')) require_once __DIR__ . "/../session/check_session.php";
+require_once __DIR__ . "/../components/autoLoader.php";
 global $user;
 ?>
 
@@ -16,6 +17,5 @@ global $user;
     <script src="js/bootstrap.bundle.min.js" defer></script>
     <title>Admin</title>
 </head>
-
 
 <body>

@@ -1,7 +1,8 @@
 <?php
-spl_autoload_register('MyAutoloader');
-function MyAutoloader($className)
+spl_autoload_register('MyAutoLoader');
+function MyAutoLoader($className)
 {
-    $path = "./components/";
+
+    $path = __DIR__ . "/../components/";
     include_once $path . $className . ".php";
 }

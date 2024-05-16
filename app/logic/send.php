@@ -2,17 +2,16 @@
 
 print_r($_POST);
 // PROD MAIL
-$to = "awfont@alwaysdata.net";
 $to = "contact@novocib.com";
 
 
-//RECIVES DATA FORM THE CLIENT CHECKS THE DATA AND RESPONDS 202: MAIL SENT /400: DATA IS MISSING/ 403: BAD METHOD / 503: SERVER ERROR 
+//RECEIVE DATA FORM THE CLIENT CHECKS THE DATA AND RESPONDS 202: MAIL SENT /400: DATA IS MISSING/ 403: BAD METHOD / 503: SERVER ERROR 
 function serve()
 {
     $method = $_SERVER['REQUEST_METHOD'];
     if ($method != 'POST') {
         http_response_code(403);
-        echo "Forbiden";
+        echo "Forbidden";
         return "";
     } else {
         if (!(isset($_POST['name']) && isset($_POST['mail']) && isset($_POST['need']) && isset($_POST['message']))) {
@@ -44,7 +43,7 @@ function serve()
     }
 }
 
-//COMPOSES THE MAIL AND SENDS IT, RETURN TRUE IF MAIL SENT, FALCE OTHERWHISE
+//COMPOSES THE MAIL AND SENDS IT, RETURN TRUE IF MAIL SENT, FALSE OTHERWISE
 function send_mail($to, $name, $visitor_email, $need, $message): bool
 {
     $email_from = $visitor_email;

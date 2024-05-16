@@ -207,11 +207,15 @@ switch ($req_uri) {
         break;
 
 
+    case "/search":
+        require_once "app/views/search.php";
+        break;
+
     case "/internal/share":
         require_once "app/internal/share/index.php";
         break;
 
-    case "/search":
-        require_once "app/views/search.php";
+    case "/internal/admin":
+        require_once "app/internal/admin/index.php";
         break;
 }
