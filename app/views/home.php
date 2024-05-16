@@ -62,7 +62,7 @@ $card1_content = <<<CARD1_CONTENT
     <li>Purine analysis.</li>
 </ul>
 CARD1_CONTENT;
-$card1 = Card::get("app/static/img/analisis-gloves.jpg", "Nucleotide Analysis Service", $card1_content, "/nucleotide-analysis-service", "photo of gloves holiding a vile");
+$card1 = Card::get("app/static/img/analisis-gloves.jpg", "Nucleotide Analysis Service", $card1_content, "/nucleotide-analysis-service", "Nucleotide Analysis Services page");
 
 $card2_content = <<<CARD1_CONTENT
 <ul>
@@ -71,7 +71,7 @@ $card2_content = <<<CARD1_CONTENT
 <li>Convenient, saves time and preempts possible errors.</li>
 </ul>
 CARD1_CONTENT;
-$card2 = Card::get("app/static/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/freshness-assay-kits/freshness-principle", "Photo of kit analysis");
+$card2 = Card::get("app/static/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/freshness-assay-kits/freshness-principle", "Freshness Assay Kits page");
 
 $card3_content = <<<CARD1_CONTENT
 <ul>
@@ -81,7 +81,7 @@ $card3_content = <<<CARD1_CONTENT
 <li>Shipped worldwide in stable lyophilized form without dry ice or cold blocks.</li>
 </ul>
 CARD1_CONTENT;
-$card3 = Card::get("app/static/img/structure.jpg", "Active purified enzymes", $card3_content, "/active-purified-enzymes", "molecular picture of enzyme");
+$card3 = Card::get("app/static/img/structure.jpg", "Active purified enzymes", $card3_content, "/active-purified-enzymes", "Active purified enzymes page");
 
 $card_container = <<<CARD_CONTAINER
 <section class="container mt-5" content="section containing the presentation of novocib services">

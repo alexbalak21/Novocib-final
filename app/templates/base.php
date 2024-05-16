@@ -33,8 +33,7 @@ check_fontAwasome_local();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?></title>
     <?= $metas ?>
-    <!-- FONTAWASOME -->
-    <!-- <script src="https://kit.fontawesome.com/6502c70df0.js" crossorigin="anonymous"></script> -->
+
     <!-- LOCAL -->
     <link href="<?= $fontAwasome_source ?>" rel="stylesheet" />
     <!-- BOOTSTRAP  -->
@@ -45,16 +44,36 @@ check_fontAwasome_local();
     <link rel="stylesheet" href="/app/css/main.css">
     <link rel="stylesheet" href="/app/css/nav.css">
     <script src="/app/js/app.js" defer></script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-57SQCQK2');
+    </script>
+    <!-- End Google Tag Manager -->
     <?php
     if (!isset($additional_head)) {
         $additional_head = "";
     }
     echo $additional_head;
-
     ?>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57SQCQK2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <?= Nav::bar() ?>
     <?php
     global $content;

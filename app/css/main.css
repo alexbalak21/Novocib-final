@@ -375,7 +375,10 @@ a {
   .card-content {
     flex: 1;
   }
-  img {
+  a {
+    margin-top: 0 !important;
+  }
+  a img {
     object-fit: cover;
     height: 10rem !important;
     width: 100%;

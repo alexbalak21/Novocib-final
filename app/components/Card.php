@@ -3,13 +3,13 @@ class Card
 {
   static function get($img_src = "app/static/img/catalogue/analysis.jpg", $card_title = "", $card_content = "", $btn_link = "", $alt = "")
   {
-    return <<<CARD
-    <div class="box" >
-        <img src="$img_src" alt="$alt"/>
-        <div class="text-center"><a href="$btn_link">$card_title</a></div>
-        <div class="card-content">$card_content</div>
-        <div class="text-center my-4"><a href="$btn_link" class="btn btn-primary" >Go to Page</a></div>
+    ob_start(); ?>
+    <div class="box">
+      <a href="<?= $btn_link ?>"><img src="<?= $img_src ?>" <?= $alt ?>="<?= $alt ?>" title="Go to <?= $alt ?>" /></a>
+      <div class="text-center"><a href="<?= $btn_link ?>"><?= $card_title ?></a></div>
+      <div class="card-content"><?= $card_content ?></div>
+      <div class="text-center my-4" title="Go to <?= $alt ?>"><a href="<?= $btn_link ?>" class="btn btn-primary">Go to Page</a></div>
     </div>
-CARD;
+<?php return ob_get_clean();
   }
 }

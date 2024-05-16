@@ -125,11 +125,11 @@ ob_start(); ?>
                             <h6>Dietary Nucleotides Analysis:</h6>
                             <p>
                                 HPLC-UV analysis for full spectra of soluble dietary nucleotides
-                                (bases, nucleosides and NMP, unhydrolyzed nucleic acid) present
+                                (bases, nucleosides and NMP, unhydrolyzed DNA and RNA nucleic acids) present
                                 in feed or ingredients
                             </p>
                         </td>
-                        <td class="price">€ 350.00 / sample</td>
+                        <td class="price">€ 420.00 / sample</td>
                         <td>
                             <a class="btn btn-primary" href="/inquiry?product=Dietary Nucleotides Analysis&ref=S1200-03">Inquiry</a>
                         </td>
