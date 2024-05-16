@@ -353,7 +353,7 @@ a {
 
 .banner .path .actual {
   font-style: italic;
-  text-decoration: underline;
+  color: LightGray;
 }
 
 .banner .path a:hover {
@@ -362,6 +362,10 @@ a {
 
 .banner .path a.active {
   color: silver;
+}
+
+.banner .search_query {
+  color: Silver;
 }
 
 .box {

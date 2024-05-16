@@ -1,60 +1,61 @@
 <?php
 $title = "Search";
 require_once "app/templates/base.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
 
 $novoblue = "#4167b1";
 
+$search = isset($_GET['sq']) ? $_GET['sq'] : "";
 
-ob_start(); ?>
-<div class="bg-light">
-    <div class="not-found container d-flex justify-content-center flex-wrap">
-        <h2 class="novo-blue text-center w-100 pt-3 mb-4">No Result found</h2>
-        <div class="col-lg-9">
-            <ol class="list-group pb-4">
-                <li class="list-group-item mb-2 px-5">
-                    Try searching for other keywords, using simple search terms.
-                </li>
-                <li class="list-group-item mb-2 px-5">
-                    Use specific terms or keyword related to the the service you are
-                    searching for.
-                </li>
-                <li class="list-group-item mb-2 px-5">
-                    Check your search for errors or typos.
-                </li>
-                <li class="list-group-item mb-2 px-5">
-                    Live us a message to let us know your specific need.
-                </li>
-            </ol>
-        </div>
-    </div>
-</div>
-<?php $noSearchResults = ob_get_clean();
+$searchResults = [];
+if ($search !== "") $searchResults = search_db($search);
 
 
-
-ob_start(); ?>
-<li class="list-group-item">
-    <h3><a href="">Analytical Services <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis blanditiis exercitationem quas tempore repellat? </p>
-</li>
-<?php $searchItem = ob_get_clean();
-
-
-
-
-
-
-
-function gen_searchList(array $array): string
-{
+if ($searchResults) {
     ob_start(); ?>
-    <ul class="list-group">
-        <?php foreach ($array as $item) : ?>
-            <li class="list-group-item"><?= $item ?></li>
+    <ul class="list-group search-results">
+        <?php foreach ($searchResults as $item) : ?>
+            <li class="list-group-item">
+                <h3><a href="<?= $item['page_url'] ?>"><?= $item['title'] ?><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
+                <p><?= substr($item['content'], 0, 270) . "..." ?></p>
+            </li>
         <?php endforeach ?>
     </ul>
-<?php return ob_get_clean();
+<?php $searchItems = ob_get_clean();
+} else {
+    ob_start(); ?>
+    <div class="bg-light">
+        <div class="not-found container d-flex justify-content-center flex-wrap">
+            <h2 class="novo-blue text-center w-100 pt-3 mb-4">No Result found</h2>
+            <div class="col-lg-9">
+                <ol class="list-group pb-4">
+                    <li class="list-group-item mb-2 px-5">
+                        Try searching for other keywords, using simple search terms.
+                    </li>
+                    <li class="list-group-item mb-2 px-5">
+                        Use specific terms or keyword related to the the service you are
+                        searching for.
+                    </li>
+                    <li class="list-group-item mb-2 px-5">
+                        Check your search for errors or typos.
+                    </li>
+                    <li class="list-group-item mb-2 px-5">
+                        Live us a message to let us know your specific need.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+<?php $searchItems = ob_get_clean();
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -67,16 +68,10 @@ $page_content = <<<CONTENT
 <div class="container my-5 d-flex justify-content-center">
 $searchbar
 </div>
+<h2 class="col-12 novo-blue mt-3 text-center">Search Results for : <span class="text-dark">$search</span></h2>
 <main class="d-flex justify-content-center">
-
-<div class="col-lg-8">
-    <ul class="list-group search-results">
-
-        <li class="list-group-item">
-        <h3><a href="">Analytical Services <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis blanditiis exercitationem quas tempore repellat? </p>
-        </li>
-    </ul>
+<div class="col-lg-8 mt-3 mb-5">
+$searchItems
 </div>
 </main>
 CONTENT;

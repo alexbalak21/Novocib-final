@@ -27,6 +27,12 @@ class Banner
             }
             if ($index === (count($paths) - 1)) {
                 $global_path .= $path;
+
+                if ($path === "search") {
+                    $search = $_GET['sq'];
+                    $search = "<span class='search_query'> : $search</span>";
+                    $name .= $search;
+                };
                 $path_links .= "<span class='actual' >$name</span>";
             } else {
                 $global_path .= $path;

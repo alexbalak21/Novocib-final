@@ -37,3 +37,7 @@ addBtn.addEventListener("click", (event) => {
   keyWords.value += `"${word}"`
   keyWordInput.value = ""
 })
+
+function search_functionality() {
+  console.log("Load Search")
+}

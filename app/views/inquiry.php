@@ -17,7 +17,7 @@ $product = isset($_GET['product']) ? $_GET['product'] : "";
 $page_content = <<<Services
 <div class="container mt-5 text-center">
 $content_title
-<p>You can place your oerder by sending us an <strong>Inquiry</strong>. We will confirm your order by sending you a mail.</p>
+<p>You can place your order by sending us an <strong>Inquiry</strong>. We will confirm your order by sending you a mail.</p>
 <p class="mb-5">You can also order directly by e-mail. Just write the inquiry at this adress : <a href="mailto:contact@novocib.com">contact@novocib.com</a> <a class="copy" onclick="copy_to_cipboard('contact@novocib.com')"><i class="fa-regular fa-copy"></i></a><span id="copied" class="text-success ms-2"></span> </p>
 
 <form id="contact-page-form" action="/send" method="POST" name="contact-page-form">
