@@ -1,5 +1,6 @@
 <?php
 require_once "app/components/autoloader.php";
+// require_once "app/logic/logVisit.php";
 if (!isset($title)) {
     $title = "Novocib";
 }

@@ -24,6 +24,22 @@ function check_id()
 }
 
 
+function logVisitToDB($time, $ip)
+{
+  $conn = connect_db();
+  try {
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = "INSERT INTO vlog (`datetime`, ip) VALUES ('$time', '$ip')";
+    $conn->exec($sql);
+  } catch (PDOException $e) {
+    echo $sql . "<br>" . $e->getMessage();
+  }
+  $conn = null;
+}
+
+
+
 
 function execute_query($sql)
 {
