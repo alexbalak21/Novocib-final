@@ -47,7 +47,7 @@ check_fontAwesome_local();
     <script src="/app/js/app.js" defer></script>
 
     <?php
-    if (!str_starts_with($_SERVER["HTTP_HOST"], "localhost"))
+    if (!str_starts_with($_SERVER["HTTP_HOST"], "localhost") || !str_starts_with($_SERVER["HTTP_HOST"], ".alwaysdata.net"))
         echo <<<GA
      <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDV10RFLYD"></script>

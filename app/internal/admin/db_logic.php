@@ -1,5 +1,7 @@
 <?php
-define("__LOGIC__", $_SERVER['DOCUMENT_ROOT'] . "\app\logic\\");
+$logic_root = str_ends_with($_SERVER['DOCUMENT_ROOT'], '/') || str_ends_with($_SERVER['DOCUMENT_ROOT'], '\\') ? $_SERVER['DOCUMENT_ROOT']  . "app/logic/" : $_SERVER['DOCUMENT_ROOT'] . "/app/logic/";
+
+define("__LOGIC__", $logic_root);
 require_once __LOGIC__ . "connect_db.php";
 require_once __LOGIC__ . "db_operations.php";
 

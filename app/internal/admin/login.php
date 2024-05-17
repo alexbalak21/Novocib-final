@@ -5,7 +5,7 @@ session_start();
 session_destroy();
 
 
-if (isset($_POST['password']) &&  $_POST['password'] === 'root') {
+if (isset($_POST['password']) &&  $_POST['password'] === '@3zRD#riFR596PfBN^Z7nle') {
     create_session('admin');
     header("Location: index.php");
 }

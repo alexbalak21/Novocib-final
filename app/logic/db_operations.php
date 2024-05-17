@@ -23,28 +23,19 @@ function check_id()
   return true;
 }
 
-function create_table()
-{
-  $conn = connect_db();
-  $sql = "CREATE TABLE articles (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        page_url TEXT,
-        title VARCHAR(255),
-        content TEXT,
-        keywords JSON
-      );";
-  $conn->exec($sql);
-  echo "<div><h1>TABLE CREATED</h1></div>";
-  $conn = null;
-}
 
-function truncate_table()
+
+function execute_query($sql)
 {
+  if (!check_id()) return false;
   $conn = connect_db();
-  $sql = "TRUNCATE TABLE articles";
-  $conn->exec($sql);
-  echo "TABLE EMPTIED";
-  $conn = null;
+  try {
+    $conn->exec($sql);
+    return true;
+  } catch (Exception $e) {
+    echo 'Error: ' . $e->getMessage();
+    return false;
+  }
 }
 
 
@@ -111,6 +102,31 @@ function search_db($search_term = "")
     // Fetch all results that match the search term
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
+}
+
+
+function create_table()
+{
+  $conn = connect_db();
+  $sql = "CREATE TABLE articles (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        page_url TEXT,
+        title VARCHAR(255),
+        content TEXT,
+        keywords JSON
+      );";
+  $conn->exec($sql);
+  echo "<div><h1>TABLE CREATED</h1></div>";
+  $conn = null;
+}
+
+function truncate_table()
+{
+  $conn = connect_db();
+  $sql = "TRUNCATE TABLE articles";
+  $conn->exec($sql);
+  echo "TABLE EMPTIED";
+  $conn = null;
 }
 
 
