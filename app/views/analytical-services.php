@@ -124,7 +124,7 @@ ob_start(); ?>
                         <td class="text-center">
                             <h6>Dietary Nucleotides Analysis:</h6>
                             <p>
-                                HPLC-UV analysis for full spectra of soluble dietary nucleotides
+                                HPLC-UV analysis for full spectra of dietary nucleotides
                                 (bases, nucleosides and NMP, unhydrolyzed DNA and RNA nucleic acids) present
                                 in feed or ingredients
                             </p>

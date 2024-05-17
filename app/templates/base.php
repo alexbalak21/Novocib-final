@@ -12,17 +12,18 @@ if (!isset($metas)) {
     $metas = "";
     echo "";
 }
-$fontAwasome_source = "https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css";
+$fontAwesome_source = "https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css";
 
-function check_fontAwasome_local()
+function check_fontAwesome_local()
 {
-    global $fontAwasome_source;
+    global $fontAwesome_source;
     $local_fa6 = "app/FA6/css/all.min.css";
     if (file_exists($local_fa6)) {
-        $fontAwasome_source = '/' . $local_fa6;
+        $fontAwesome_source = '/' . $local_fa6;
     }
 }
-check_fontAwasome_local();
+check_fontAwesome_local();
+
 
 ?>
 <!DOCTYPE html>
@@ -35,7 +36,7 @@ check_fontAwasome_local();
     <?= $metas ?>
 
     <!-- LOCAL -->
-    <link href="<?= $fontAwasome_source ?>" rel="stylesheet" />
+    <link href="<?= $fontAwesome_source ?>" rel="stylesheet" />
     <!-- BOOTSTRAP  -->
     <link rel="stylesheet" href="/app/css/bootstrap.min.css">
     <script src="/app/js/bootstrap.bundle.min.js" defer></script>
@@ -44,25 +45,23 @@ check_fontAwasome_local();
     <link rel="stylesheet" href="/app/css/main.css">
     <link rel="stylesheet" href="/app/css/nav.css">
     <script src="/app/js/app.js" defer></script>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-57SQCQK2');
-    </script>
-    <!-- End Google Tag Manager -->
+
     <?php
+    if (!str_starts_with($_SERVER["HTTP_HOST"], "localhost"))
+        echo <<<GA
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDV10RFLYD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DDV10RFLYD');
+    </script>
+    GA;
     if (!isset($additional_head)) {
         $additional_head = "";
     }
@@ -71,9 +70,6 @@ check_fontAwasome_local();
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57SQCQK2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <?= Nav::bar() ?>
     <?php
     global $content;

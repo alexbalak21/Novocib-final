@@ -36,7 +36,86 @@ function create_table()
   $conn = null;
 }
 
+function truncate_table()
+{
+  $conn = connect_db();
+  $sql = "TRUNCATE TABLE articles";
+  $conn->exec($sql);
+  echo "TABLE EMPTIED";
+  $conn = null;
+}
 
+
+
+
+function create_entry($url = "",  $title = "", $content = "", $keywords = "")
+{
+  if (!check_id()) return false;
+
+  $url = trim($url);
+  $title = trim($title);
+  $conn = connect_db();
+  if ($conn === null) {
+    return;
+  }
+  $sql = "INSERT INTO articles (page_url, title, content, keywords) VALUES ('$url', '$title', '$content', JSON_ARRAY($keywords))";
+  try {
+    $conn->exec($sql);
+    return true;
+  } catch (Exception $e) {
+    echo 'Error: ' . $e->getMessage();
+    return false;
+  }
+}
+
+function read_all()
+{
+  $conn = connect_db();
+  $select_all = "SELECT * FROM articles";
+  $stmt = $conn->query($select_all);
+  $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  return $res;
+}
+
+
+function search_db($search_term = "")
+{
+  if ($search_term === "") return [];
+
+  $sql = "
+    SELECT * FROM articles WHERE title LIKE :search_term OR content LIKE :search_term OR JSON_CONTAINS(keywords, :json_search_term);
+    ";
+  $pdo = connect_db();
+  if ($search_term !== '') {
+    // Prepare a SQL query with a LIKE clause
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+      ':search_term' =>  "%$search_term%",
+      ':json_search_term' => json_encode($search_term)
+    ]);
+
+    // Fetch all results that match the search term
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+}
+
+
+
+
+
+
+function create_fake_entry($url = "",  $title = "", $content = "", $keywords = "")
+{
+  echo "<br>";
+  echo "title :  $title";
+  echo "<br>";
+  echo "url :  $url";
+  echo "<br>";
+  echo "content :  $content";
+  echo "<br>";
+  echo "keywords :  $keywords";
+  echo "<br>";
+}
 
 
 function create_data()
@@ -108,83 +187,4 @@ VALUES
     ";
   $conn->exec($sql);
   echo "DATA CREATED";
-}
-
-function truncate_table()
-{
-  $conn = connect_db();
-  $sql = "TRUNCATE TABLE articles";
-  $conn->exec($sql);
-  echo "TABLE EMPTIED";
-  $conn = null;
-}
-
-
-
-
-function create_entry($url = "",  $title = "", $content = "", $keywords = "")
-{
-  if (!check_id()) return false;
-
-  $url = trim($url);
-  $title = trim($title);
-  $conn = connect_db();
-  if ($conn === null) {
-    return;
-  }
-  $sql = "INSERT INTO articles (page_url, title, content, keywords) VALUES ('$url', '$title', '$content', JSON_ARRAY($keywords))";
-  try {
-    $conn->exec($sql);
-    return true;
-  } catch (Exception $e) {
-    echo 'Error: ' . $e->getMessage();
-    return false;
-  }
-}
-
-function read_all()
-{
-  $conn = connect_db();
-  $select_all = "SELECT * FROM articles";
-  $stmt = $conn->query($select_all);
-  $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
-  return $res;
-}
-
-
-function search_db($search_term = "")
-{
-  if ($search_term === "") return [];
-
-  $sql = "
-    SELECT * FROM articles WHERE title LIKE '%:search_term%' OR content LIKE '%:search_term%' OR JSON_CONTAINS(keywords, 'json_search_term');
-    ";
-  $pdo = connect_db();
-  $results = [];
-  if ($search_term !== '') {
-    // Prepare a SQL query with a LIKE clause
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([
-      ':search_term' =>  $search_term,
-      ':json_search_term' => json_encode($search_term)
-    ]);
-
-    // Fetch all results that match the search term
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
-  }
-}
-
-
-
-function create_fake_entry($url = "",  $title = "", $content = "", $keywords = "")
-{
-  echo "<br>";
-  echo "title :  $title";
-  echo "<br>";
-  echo "url :  $url";
-  echo "<br>";
-  echo "content :  $content";
-  echo "<br>";
-  echo "keywords :  $keywords";
-  echo "<br>";
 }

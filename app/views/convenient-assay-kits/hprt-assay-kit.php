@@ -8,12 +8,17 @@ $novoblue = "#4167b1";
 
 
 addContent(Banner::gen());
-$content_title = UnderlinedTitle::get("Non radioactive HPRT assay", "novoblue", "center");
+
 
 $page_content = <<<CONTENT
 <main class="mt-5">
 <div class="container">
-$content_title
+
+<h2 class="underlinedTitle center" style="margin-bottom: 0">
+  <span class="underlined novoblue center">Non radioactive HPRT assay</span>
+</h2>
+<h4 class="text-center my-3">Including active human HPRT enzyme</h4>
+
 <div class="row">
 <div class="col-lg-6">
 <p><strong>PRECICE® HPRT Assay kit</strong> provides the first non radioactive protocol for measurement of HPRT activity in a convenient 96-well plate format.</p>

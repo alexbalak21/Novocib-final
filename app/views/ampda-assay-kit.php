@@ -8,11 +8,15 @@ $novoblue = "#4167b1";
 
 
 addContent(Banner::gen());
-$content_title = UnderlinedTitle::get("Non radioactive AMP Deaminase Assay", "novoblue", "right");
+
 
 $page_content = <<<CONTENT
 <main class="container mt-5">
-$content_title
+<h2 class="underlinedTitle center" style="margin-bottom: 0">
+  <span class="underlined novoblue center">Non radioactive AMP Deaminase Assay</span>
+</h2>
+<h4 class="text-center mt-3 mb-4">Including active AMP-DA</h4>
+
 <div class="row">
 <div class="col-lg-6">
 <p><strong>PRECICE® AMP Deaminase Assay kit</strong> provides the first <strong>non radioactive</strong> and one-step protocol for measurement of <strong>AMP Deaminase activity</strong> in cellular lysates in a convenient 96-well plate format.</p>
