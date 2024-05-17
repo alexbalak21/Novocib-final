@@ -216,6 +216,6 @@ switch ($req_uri) {
         break;
 
     case "/internal/admin":
-        require_once "app/internal/admin/index.php";
+        header("Location: /app/internal/admin/");
         break;
 }

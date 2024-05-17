@@ -3,12 +3,14 @@ require_once "connect_db.php";
 
 function check_id()
 {
-  session_start();
-  if (!isset($_SESSION['user'])) {
+  if (!isset($_SESSION)) session_start();
+  if (!isset($_SESSION['username'])) {
+    echo "<h1>username not found</h1>";
     session_destroy();
     return false;
   }
-  if ($_SESSION['user'] === "admin") {
+  if ($_SESSION['username'] !== "admin") {
+    echo "<h1>NOT admin</h1>";
     session_destroy();
     return false;
   }
@@ -51,16 +53,28 @@ function truncate_table()
 function create_entry($url = "",  $title = "", $content = "", $keywords = "")
 {
   if (!check_id()) return false;
-
   $url = trim($url);
   $title = trim($title);
   $conn = connect_db();
-  if ($conn === null) {
-    return;
-  }
+  if ($conn === null) return;
   $sql = "INSERT INTO articles (page_url, title, content, keywords) VALUES ('$url', '$title', '$content', JSON_ARRAY($keywords))";
   try {
     $conn->exec($sql);
+    return true;
+  } catch (Exception $e) {
+    echo 'Error: ' . $e->getMessage();
+    return false;
+  }
+}
+
+function delete_item($id)
+{
+  if (!check_id()) return false;
+  $conn = connect_db();
+  if ($conn === null) return;
+  $slqDelete = "DELETE FROM articles WHERE id=$id";
+  try {
+    $conn->exec($slqDelete);
     return true;
   } catch (Exception $e) {
     echo 'Error: ' . $e->getMessage();

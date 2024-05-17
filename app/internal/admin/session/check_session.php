@@ -1,4 +1,6 @@
 <?php
+
+define("__ROOT__", $_SERVER['DOCUMENT_ROOT'] . "\app");
 function check_session()
 {
     global $user;

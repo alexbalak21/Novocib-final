@@ -2,31 +2,43 @@
 require_once "templates/head.php";
 $page = "search";
 
-define("__ROOT__", $_SERVER['DOCUMENT_ROOT'] . "\app");
-define("__LOGIC__", $_SERVER['DOCUMENT_ROOT'] . "\app\logic\\");
-
-require_once __LOGIC__ . "connect_db.php";
-require_once __LOGIC__ . "db_operations.php";
-
-if ($_SERVER['REQUEST_METHOD'] === "POST") {
-    extract($_POST);
-    $texts = [];
-    foreach ($_POST as $key => $value)
-        if (str_starts_with($key, "txt_")) array_push($texts, $value);
-    $content = join(" | ", $texts);
-    create_entry($url, $title, $content, $keywords);
-}
 
 ?>
 
 <?= Nav::gen() ?>
+
+<div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <main class="" style="height: 93vh;">
+
+
+
+
+    <?php require_once "db_logic.php"; ?>
     <div class="container d-flex justify-content-center flex-wrap">
         <div class="text-center mt-4 w-100">
             <h3>Database <?= connect_db() !== NULL  ? "<span class='badge text-bg-success'>Online</span>" : "<span class='badge text-bg-danger'>Offline</span>" ?></h3>
         </div>
+
         <div class="col-lg-9 col-12">
-            <form action="search.php" method="post" id="addSearchItem" onload="">
+            <form action="search.php" method="post" id="addSearchItem">
+                <input type="hidden" name="_method" value="POST">
                 <label class="form-label" for="title">Title</label>
                 <input class="form-control" type="text" name="title" required min="10" max="255">
                 <label class="form-label mt-3">Page Url</label>
@@ -53,12 +65,56 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
             </form>
         </div>
     </div>
-    <?php
-    $data = read_all();
-    print_r($data);
-    ?>
-</main>
+    <?php $search_data = read_all(); ?>
+    <div class="mt-5 col-10 mx-auto">
+        <h2 class="text-center mb-2">Search Items</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Url</th>
+                    <th>Contents</th>
+                    <th>Keywords</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($search_data as $search_item) : ?>
+                    <tr>
+                        <td>
+                            <?= $search_item['title'] ?>
+                        </td>
+                        <td>
+                            <a href="<?= $search_item['page_url'] ?>"><?= $search_item['title'] ?></a>
+                        </td>
+                        <td>
+                            <?= substr($search_item['content'], 0, 20) . "..." ?>
+                        </td>
+                        <td>
+                            <?= $search_item['keywords'] ?>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Delete
+                                </button>
+                                <div class="dropdown-menu text-center">
+                                    <h6>Confirm</h6>
+                                    <form action="search.php" method="POST">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <input type="hidden" name="id" value="<?= $search_item['id'] ?>">
+                                        <button class="btn btn-danger">Yes</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                <?php endforeach ?>
+            </tbody>
 
+        </table>
+    </div>
+</main>
 
 <?php
 require_once "templates/foot.php";

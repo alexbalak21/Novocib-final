@@ -26,7 +26,8 @@ let i = 0
 addBtn.addEventListener("click", (event) => {
   event.preventDefault()
   i++
-  const word = keyWordInput.value.toLocaleLowerCase()
+  const word = keyWordInput.value.toLocaleLowerCase().trim()
+
   if (words.has(word)) return
   const badge = document.createElement("span")
   badge.setAttribute("class", "badge text-bg-secondary me-1")
