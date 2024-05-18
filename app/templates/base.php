@@ -1,9 +1,16 @@
 <?php
 require_once "app/components/autoloader.php";
-// require_once "app/logic/logVisit.php";
+require_once "app/logic/logVisit.php";
 if (!isset($title)) {
     $title = "Novocib";
 }
+
+define("DS", DIRECTORY_SEPARATOR);
+define("__ROOT__", $_SERVER['DOCUMENT_ROOT']);
+define("__APP__", __ROOT__ . DIRECTORY_SEPARATOR . "app");
+
+
+
 
 if (!isset($lang)) {
     $lang = "en";
@@ -11,17 +18,14 @@ if (!isset($lang)) {
 
 if (!isset($metas)) {
     $metas = "";
-    echo "";
 }
 $fontAwesome_source = "https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css";
 
 function check_fontAwesome_local()
 {
     global $fontAwesome_source;
-    $local_fa6 = "app/FA6/css/all.min.css";
-    if (file_exists($local_fa6)) {
-        $fontAwesome_source = '/' . $local_fa6;
-    }
+    $local_fa6 = __APP__ . DS . "FA6" . DS . "css" . DS . "all.min.css";
+    if (file_exists($local_fa6)) $fontAwesome_source = $local_fa6;
 }
 check_fontAwesome_local();
 
@@ -35,13 +39,12 @@ check_fontAwesome_local();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?></title>
     <?= $metas ?>
-
     <!-- LOCAL -->
     <link href="<?= $fontAwesome_source ?>" rel="stylesheet" />
     <!-- BOOTSTRAP  -->
     <link rel="stylesheet" href="/app/css/bootstrap.min.css">
     <script src="/app/js/bootstrap.bundle.min.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="app/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="<?= __APP__ . DS . "favicon.ico"  ?>">
     <!-- CUSTOM -->
     <link rel="stylesheet" href="/app/css/main.css">
     <link rel="stylesheet" href="/app/css/nav.css">
@@ -50,7 +53,7 @@ check_fontAwesome_local();
     <?php
     if (!str_starts_with($_SERVER["HTTP_HOST"], "localhost") || !str_starts_with($_SERVER["HTTP_HOST"], ".alwaysdata.net"))
         echo <<<GA
-     <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDV10RFLYD"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
