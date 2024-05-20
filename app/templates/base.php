@@ -44,7 +44,7 @@ check_fontAwesome_local();
     <!-- BOOTSTRAP  -->
     <link rel="stylesheet" href="/app/css/bootstrap.min.css">
     <script src="/app/js/bootstrap.bundle.min.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="<?= __APP__ . DS . "favicon.ico"  ?>">
+    <link rel="icon" type="image/x-icon" href="/app/favicon.ico">
     <!-- CUSTOM -->
     <link rel="stylesheet" href="/app/css/main.css">
     <link rel="stylesheet" href="/app/css/nav.css">
