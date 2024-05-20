@@ -28,8 +28,6 @@ function logVisitToDB($time, $ip)
 {
   $conn = connect_db();
   try {
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "INSERT INTO vlog (`datetime`, ip) VALUES ('$time', '$ip')";
     $conn->exec($sql);
   } catch (PDOException $e) {
@@ -37,6 +35,69 @@ function logVisitToDB($time, $ip)
   }
   $conn = null;
 }
+
+
+function log404toDB($time, $ip, $query)
+{
+  $conn = connect_db();
+  // Check if the connection was successful
+  if ($conn === null) {
+    echo "Failed to connect to the database.";
+    return;
+  }
+
+  try {
+    // Prepare the SQL statement with placeholders
+    $sql = "INSERT INTO `request404` (`url`, `time`, `ip`) VALUES (:query, :time, :ip)";
+
+    // Prepare the statement
+    $stmt = $conn->prepare($sql);
+
+    // Bind the parameters to the placeholders
+    $stmt->bindParam(':query', $query, PDO::PARAM_STR);
+    $stmt->bindParam(':time', $time, PDO::PARAM_STR);
+    $stmt->bindParam(':ip', $ip, PDO::PARAM_STR);
+
+    // Execute the prepared statement
+    $stmt->execute();
+
+    // Optionally log success or perform other actions here
+  } catch (PDOException $e) {
+    // Log the error message
+    error_log("Error logging 404 to database: " . $e->getMessage());
+    echo "Error logging 404 to database: " . $e->getMessage();
+  } finally {
+    // Close the database connection
+    $conn = null;
+  }
+}
+
+function logSearch($search)
+{
+  try {
+    // Establish a database connection
+    $conn = connect_db();
+
+    // Prepare the SQL statement with placeholders
+    $sql = "INSERT INTO searches (search_query) VALUES (:search_query)";
+
+    // Prepare the statement
+    $stmt = $conn->prepare($sql);
+
+    // Bind the search parameter to the placeholder
+    $stmt->bindParam(':search_query', $search);
+
+    // Execute the statement
+    $stmt->execute();
+
+    // Close the connection
+    $conn = null;
+  } catch (PDOException $e) {
+    // Log the error message instead of displaying it
+    error_log("Error logging search query: " . $e->getMessage());
+  }
+}
+
 
 
 
@@ -102,7 +163,8 @@ function read_all()
 function search_db($search_term = "")
 {
   if ($search_term === "") return [];
-
+  $search_term = trim($search_term);
+  $search_term = strtolower($search_term);
   $sql = "
     SELECT * FROM articles WHERE title LIKE :search_term OR content LIKE :search_term OR JSON_CONTAINS(keywords, :json_search_term);
     ";
@@ -118,6 +180,7 @@ function search_db($search_term = "")
     // Fetch all results that match the search term
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
+  logSearch($search_term);
 }
 
 

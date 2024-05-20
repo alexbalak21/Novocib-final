@@ -87,6 +87,7 @@ switch ($req_uri) {
 
 
         // CONVENIENT ASSAY KITS
+    case "/Convenient_Assay_Kits.html":
     case "/convenient-assay-kits":
         require_once "app/views/convenient-assay-kits.php";
         break;
@@ -135,6 +136,7 @@ switch ($req_uri) {
         require_once "app/views/convenient-assay-kits/human-recombinant-pnp.php";
         break;
 
+    case "/ADK_Assay_Kit.html":
     case "/convenient-assay-kits/adk-assay-kit":
         require_once "app/views/convenient-assay-kits/adk-assay-kit.html";
         break;
@@ -171,7 +173,7 @@ switch ($req_uri) {
         break;
 
     case "/nucleotide-analysis-service":
-        require_once "app/views/analytical-services.php";
+        require_once "app/views/nucleotide-analysis-service.php";
         break;
 
     case "/analytical-services/yeast-extract-nucleotide-analysis":

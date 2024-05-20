@@ -39,6 +39,10 @@ class Footer
                                 <i class="fa-brands fa-linkedin"></i>
                                 <a href="https://www.linkedin.com/company/novocib/">Linked-In</a>
                             </li>
+                            <li class="mt-auto">
+                                    <i class="fa-solid fa-hand-holding"></i>
+                                    <a href="https://www.novocib.com/old/">Old website</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

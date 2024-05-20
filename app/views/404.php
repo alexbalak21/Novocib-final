@@ -1,6 +1,7 @@
 <?php
 $title = "404 Page not found";
 require_once "app/templates/base.php";
+require_once "app/logic/log404.php";
 
 $novoblue = "#4167b1";
 

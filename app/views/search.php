@@ -1,11 +1,13 @@
 <?php
 $title = "Search";
 require_once "app/templates/base.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
+require_once "/app/logic/db_operations.php";
 
 $novoblue = "#4167b1";
 
 $search = isset($_GET['sq']) ? $_GET['sq'] : "";
+
+$search = trim($search);
 
 $searchResults = [];
 if ($search !== "") $searchResults = search_db($search);
@@ -48,18 +50,6 @@ if ($searchResults) {
     </div>
 <?php $searchItems = ob_get_clean();
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Search", "novoblue", "center");

@@ -1,9 +1,9 @@
 <?php
 function connect_db(): PDO
 {
-    $serverName = "db68325-novo.sql-pro.online.net";
+    $serverName = "localhost";
     $username = "db122969";
-    $password = "5gZi&$1Mn!zw%8MlJXdrswK^#SCXJ%HnM6ezY#kIuTz9pVJ";
+    $password = "40@Jsu47?zcI%1V0wJ9@@Rmd%YNSDLC";
     $dbname = "db68325_novo";
 
     try {
@@ -14,8 +14,5 @@ function connect_db(): PDO
     } catch (PDOException $e) {
         echo '$sql' . "<br>" . $e->getMessage();
     }
-
     return null;
 }
-
-connect_db();

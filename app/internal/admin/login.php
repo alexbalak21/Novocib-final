@@ -1,14 +1,13 @@
 <?php
-require_once "session/session.php";
-require_once "templates/head.php";
-session_start();
+require_once "session/start_session.php";
+if (!isset($_SESSION)) session_start();
 session_destroy();
-
 
 if (isset($_POST['password']) &&  $_POST['password'] === '@3zRD#riFR596PfBN^Z7nle') {
     create_session('admin');
     header("Location: index.php");
 }
+require_once "templates/head.php";
 ?>
 <main class="d-flex justify-content-center align-items-center" style="height: 99vh;">
     <form action="login.php" method="POST">
