@@ -63,7 +63,6 @@ class Nav
                 <li>
                     <a class="larger" href="/active-purified-enzymes">Active Purified Enzymes</a>
                     <ul>
-                        <li><a href="/active-purified-enzymes">Active Purified Enzymes</a></li>
                         <li>
                             <a href="/active-purified-enzymes/impdh-recombinant-enzyme">IMPDH Recombinant Enzyme</a>
                         </li>
@@ -81,6 +80,7 @@ class Nav
                             </a>
                         </li>
                         <li><a href="/active-purified-enzymes/human-ump-cmp-kinase">Human UMP-CMP Kinase</a></li>
+                        <li><a href="/bacterial-luciferase">Bacterial Luciferase</a></li>
                     </ul>
                 </li>
 

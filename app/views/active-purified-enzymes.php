@@ -72,7 +72,7 @@ $content_title
 <h2>Bacterial Bioluminescence Enzymes</h2>
 <table class="purine w-100">
 <tr>
-<td class="col-3"><h5><a href="">Bacterial Luciferase</a></h5></td>
+<td class="col-3"><h5><a href="/bacterial-luciferase">Bacterial Luciferase</a></h5></td>
 <td class="col-3">(EC 1.14.14.3)</td>
 <td class="col-6">Bacterial, produced from a selected strain of Photobacterium phosphoreum</td>
 </tr>

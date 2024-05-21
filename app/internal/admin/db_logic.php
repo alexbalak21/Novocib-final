@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && $_POST['_method'] === "POST") {
     foreach ($_POST as $key => $value)
         if (str_starts_with($key, "txt_")) array_push($texts, clean($value));
     $content = join(" | ", $texts);
-    $res = create_entry(clean($url), clean($title), $content, $keywords);
+    $res = create_entry($url, clean($title), $content, $keywords);
     if ($res) alert("Search Item created.");
 }
 

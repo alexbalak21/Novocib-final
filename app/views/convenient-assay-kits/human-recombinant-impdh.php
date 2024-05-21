@@ -185,7 +185,7 @@ CellCept®
 <figcaption class="text-center">
 Mizoribine
 </figcaption>
-<img class="w-100" src="/app/static/img/mizoribine.png" alt="">
+<img class="w-100" src="/app/static/img/    " alt="">
 </figure>
 </div>
 </div>
