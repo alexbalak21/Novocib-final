@@ -11,7 +11,6 @@ define("__APP__", __ROOT__ . DIRECTORY_SEPARATOR . "app");
 
 
 
-
 if (!isset($lang)) {
     $lang = "en";
 }
@@ -25,6 +24,7 @@ function check_fontAwesome_local()
 {
     global $fontAwesome_source;
     $local_fa6 = __APP__ . DS . "FA6" . DS . "css" . DS . "all.min.css";
+    $local_fa6 = "app/FA6/css/all.min.css";
     if (file_exists($local_fa6)) $fontAwesome_source = $local_fa6;
 }
 check_fontAwesome_local();

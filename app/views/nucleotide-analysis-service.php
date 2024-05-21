@@ -100,7 +100,7 @@ ob_start(); ?>
                         😀 This technique overcomes environment and cost challenges of acidic hydrolysis; <br>
                         😒 requires careful selection of conditions to achieve complete nucleic acid digestion.
                     </li>
-                    <p class="mt-4"><b>To quantify nucleic acids <span class="novo-blue">NOVOCIB</span> uses enzymatic/HPLC-UV approach where nucleic acid is converted enzymatically to 5'NMP and analyzed before and after nuclease treatment. Nucleic acid concentration is calculated as a difference in 5'NMP concentration before and after nuclease. </b></p>
+                    <p class="mt-4"><b>To quantify nucleic acids <span class="novo-blue">NOVOCIB</span> uses enzymatic/HPLC-UV approach where nucleic acids are converted enzymatically to 5'NMP and analyzed before and after nuclease treatment. Nucleic acid concentration is calculated as a difference in 5'NMP concentration before and after nuclease.</b></p>
                 </ol>
             </div>
         </div>
@@ -108,7 +108,7 @@ ob_start(); ?>
             <figure class="">
                 <img class="w-100" style="border: 1px solid silver" src="/app/static/img/nucleotide_spectra.jpg" alt="Nucleotide spectra of yeast extract" title="Nucleotide spectra" />
                 <figcaption class="text-muted text-center">
-                    <small><b>Fig. 2:</b>Nucleotide spectra of yeast extract before (blue) and after nuclease treatment obtained using ion-paired reverse-phase HPLC with UV detector.</small>
+                    <small><b>Fig. 2:</b>Nucleotide spectra of yeast extract before (blue) and (red) after nuclease treatment obtained using ion-paired reverse-phase HPLC with UV detector.</small>
                 </figcaption>
             </figure>
         </div>
@@ -118,21 +118,9 @@ ob_start(); ?>
             </figure>
         </div>
         <div class="my-5 col-lg-6">
-            <h4 class="novo-blue mb-3 text-center">Our analytical system</h4>
+            <h4 class="novo-blue mb-3">Our analytical system</h4>
             <p>
-                Agilent 1120 series HPLC liquid chromatograph fitted with binary pump,
-                vacuum degasser, well-plate autosampler, thermostatic column
-                compartment and multiple wavelength and diode array detector. Run and
-                data acquisision are controlled by Agilent Chem Station software.
-                Zorbax Extend-C18 4.6x150mm, 3.5μm particle size and guard column
-                (Agilent). Calibrations are performed with standards prepared in
-                mobile phase and with standards mixed with cell extracts, which are
-                run immediately before and after every series of samples. Peak
-                assignment of different bases, ribonucleosides and ribonucleoside
-                monophosphatesis is done by comparing both retention times and
-                characteristics of UV absorption spectra (254/280 ratio) with those of
-                standards. The area of individual peaks was measured using ChemStation
-                software (Agilent).
+                Agilent 1120 series HPLC liquid chromatograph fitted with binary pump, vacuum degasser, well-plate autosampler, thermostatic column compartment and multiple wavelength and diode array detector. Run and data acquisision are controlled by Agilent Chem Station software. Calibrations are performed with standards prepared in mobile phase and with standards mixed with cell extracts, which are run immediately before and after every series of samples. Peak assignment of different bases, ribonucleosides and ribonucleoside monophosphatesis is done by comparing both retention times and characteristics of UV absorption spectra (254/280 ratio) with those of standards. The area of individual peaks was measured using ChemStation software (Agilent).
             </p>
         </div>
     </article>
@@ -169,7 +157,7 @@ ob_start(); ?>
                     <tr>
                         <td>#S1200-04</td>
                         <td class="text-center">
-                            <h6>Celullar Nucleotides Analysis:</h6>
+                            <h6>Cellular Nucleotides Analysis:</h6>
                             <p>
                                 HPLC-UV analysis for full spectra of cellular nucleotides
                                 (bases, nucleosides, NMP, NDP and NTP) in cell extracts.
@@ -177,7 +165,7 @@ ob_start(); ?>
                         </td>
                         <td class="price">€ 350.00 / sample</td>
                         <td>
-                            <a class="btn btn-primary" href="/inquiry?product=Celullar Nucleotides Analysis&ref=S1200-04">Inquiry</a>
+                            <a class="btn btn-primary" href="/inquiry?product=Cellular Nucleotides Analysis&ref=S1200-04">Inquiry</a>
                         </td>
                     </tr>
                     <tr>

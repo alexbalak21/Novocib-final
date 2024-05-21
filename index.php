@@ -124,12 +124,20 @@ switch ($req_uri) {
         require_once "app/views/convenient-assay-kits/dck-phosphorylation-assay-kit.php";
         break;
 
+    case "/Human_Recombinant_IMPDH.html":
+        header("Location: /convenient-assay-kits/human-recombinant-impdh");
+        break;
+
     case "/convenient-assay-kits/human-recombinant-impdh":
         require_once "app/views/convenient-assay-kits/human-recombinant-impdh.php";
         break;
 
     case "/convenient-assay-kits/bacterial-recombinant-impdh":
         require_once "app/views/convenient-assay-kits/bacterial-recombinant-impdh.php";
+        break;
+
+    case "/Human_Recombinant_PNP.html":
+        header("Location: /convenient-assay-kits/human-recombinant-pnp");
         break;
 
     case "/convenient-assay-kits/human-recombinant-pnp":
