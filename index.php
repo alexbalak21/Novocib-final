@@ -89,7 +89,7 @@ switch ($req_uri) {
         // CONVENIENT ASSAY KITS
     case "/Convenient_Assay_Kits.html":
     case "/convenient-assay-kits":
-        require_once "app/views/convenient-assay-kits.php";
+        require_once "app/views/convenient-assay-kits/index.php";
         break;
 
     case "/convenient-assay-kits/hprt-assay-kit":

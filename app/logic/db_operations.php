@@ -72,34 +72,6 @@ function log404toDB($time, $ip, $query)
   }
 }
 
-function logSearch($search)
-{
-  try {
-    // Establish a database connection
-    $conn = connect_db();
-
-    // Prepare the SQL statement with placeholders
-    $sql = "INSERT INTO searches (search_query) VALUES (:search_query)";
-
-    // Prepare the statement
-    $stmt = $conn->prepare($sql);
-
-    // Bind the search parameter to the placeholder
-    $stmt->bindParam(':search_query', $search);
-
-    // Execute the statement
-    $stmt->execute();
-
-    // Close the connection
-    $conn = null;
-  } catch (PDOException $e) {
-    // Log the error message instead of displaying it
-    error_log("Error logging search query: " . $e->getMessage());
-  }
-}
-
-
-
 
 
 function execute_query($sql)
@@ -160,6 +132,33 @@ function read_all()
 }
 
 
+
+function logSearch($search)
+{
+  try {
+    // Establish a database connection
+    $conn = connect_db();
+
+    // Prepare the SQL statement with placeholders
+    $sql = "INSERT INTO searches (search_query) VALUES (:search_query)";
+
+    // Prepare the statement
+    $stmt = $conn->prepare($sql);
+
+    // Bind the search parameter to the placeholder
+    $stmt->bindParam(':search_query', $search);
+
+    // Execute the statement
+    $stmt->execute();
+
+    // Close the connection
+    $conn = null;
+  } catch (PDOException $e) {
+    // Log the error message instead of displaying it
+    error_log("Error logging search query: " . $e->getMessage());
+  }
+}
+
 function search_db($search_term = "")
 {
   if ($search_term === "") return [];
@@ -176,11 +175,11 @@ function search_db($search_term = "")
       ':search_term' =>  "%$search_term%",
       ':json_search_term' => json_encode($search_term)
     ]);
+    logSearch($search_term);
 
     // Fetch all results that match the search term
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
-  logSearch($search_term);
 }
 
 

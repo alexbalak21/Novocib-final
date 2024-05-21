@@ -113,7 +113,7 @@ $content_title
     </div>
     <div class="kit row align-items-center">
         <div class="col-3 me-3 text-center">
-            <h5><a href="">ADK Assay Kit</a></h5>
+            <h5><a href="/convenient-assay-kits/adk-assay-kit">ADK Assay Kit</a></h5>
         </div>
         <div class="col-8">
             <p>
@@ -125,7 +125,7 @@ $content_title
     </div>
     <div class="kit row align-items-center">
         <div class="col-3 me-3 text-center">
-            <h5><a href="">Phosphatase Assay Kit</a></h5>
+            <h5><a href="/convenient-assay-kits/phosphatase-assay-kit">Phosphatase Assay Kit</a></h5>
         </div>
         <div class="col-8">
             <p>

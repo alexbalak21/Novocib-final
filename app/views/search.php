@@ -1,7 +1,7 @@
 <?php
 $title = "Search";
 require_once "app/templates/base.php";
-require_once "/app/logic/db_operations.php";
+require_once "app/logic/db_operations.php";
 
 $novoblue = "#4167b1";
 
