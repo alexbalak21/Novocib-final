@@ -4,7 +4,7 @@ require_once "app/logic/db_operations.php";
 
 function log404request()
 {
-  $unwantedExtensions = ["jpg", "png", "pdf", "css", "js", "ico", "mp4"];
+  $unwantedExtensions = ["jpg", "png", "pdf", "css", "js", "ico", "mp4", "map"];
   $time = date('Y-m-d H:i:s');
   $ip = $_SERVER['REMOTE_ADDR'];
   $query = parse_url($_SERVER['REQUEST_URI'])['path'];

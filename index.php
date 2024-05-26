@@ -36,6 +36,11 @@ switch ($req_uri) {
         require_once "app/views/active-purified-enzymes/human-recombinant-hgprt.php";
         break;
 
+
+    case "/Recombinant_Adenosine_Kinase.html":
+        header("Location: /active-purified-enzymes/recombinant-adenosine-kinase");
+        break;
+
     case "/active-purified-enzymes/recombinant-adenosine-kinase":
         require_once "app/views/active-purified-enzymes/recombinant-adenosine-kinase.php";
         break;
@@ -174,6 +179,10 @@ switch ($req_uri) {
 
     case "/contact-us":
         require_once "app/views/contact-us.html";
+        break;
+
+    case "/Yeast_Extract_Nucleotide_Analysis.html":
+        header("Location: /yeast-extract-nucleotide-analysis");
         break;
 
     case "/yeast-extract-nucleotide-analysis":

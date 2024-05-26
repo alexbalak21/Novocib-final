@@ -70,6 +70,7 @@ ob_start(); ?>
                         😒 but requires careful selection of ion-pairing reagents and has limited column lifetime.
                     </li>
                 </ol>
+                <p class="mt-3">Using ion-paired chromatography with diode array detection (HPLC-UV), NOVOCIB provides analytical service for complete nucleotides spectra characterization (bases, nucleosides, nucleotides mono-, di- and triphosphates).</p>
             </div>
         </div>
         <div class="col-lg-6 mt-5">

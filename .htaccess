@@ -1,4 +1,12 @@
 RewriteEngine on
+
+# Block access to the admin and logic folders
+RewriteRule ^admin/ - [F,L]
+RewriteRule ^logic/ - [F,L]
+
+# Check if the requested filename is not a file
 RewriteCond %{REQUEST_FILENAME} !-f
+# Check if the requested filename is not a directory
 RewriteCond %{REQUEST_FILENAME} !-d
+# Route all other requests to index.php
 RewriteRule ^.*$ /index.php [L,QSA]

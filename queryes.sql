@@ -1,2 +1,6 @@
-DELETE FROM `request404` WHERE url REGEXP '\.(jpg|png|pdf|css|js|ico|mp4)$';
+DELETE FROM `request404` WHERE url REGEXP '\.(jpg|png|pdf|css|js|ico|mp4|map)$';
 
+
+CREATE USER 'db122969'@'%' IDENTIFIED BY '40@Jsu47?zcI%1V0wJ9@@Rmd%YNSDLC';
+GRANT ALL PRIVILEGES ON *.* TO 'db122969'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
