@@ -164,6 +164,10 @@ switch ($req_uri) {
         require_once "app/views/hplc-analysis-of-bases-nucleosides.php";
         break;
 
+    case "/Nucleotide_Analysis_Services.html":
+        header("Location: /cellular-nucleotides-analysis");
+        break;
+
     case "/cellular-nucleotides-analysis":
     case "/Cellular_Nucleotides_Analysis.html":
         require_once "app/views/cellular-nucleotides-analysis.php";
