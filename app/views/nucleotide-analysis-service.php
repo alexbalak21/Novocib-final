@@ -50,6 +50,10 @@ ob_start(); ?>
                         ribo- and deoxynucleotides monophosphates, respectively.
                     </li>
                 </ul>
+                <div class="text-center d-flex justify-content-center mt-4">
+                    <h4 class="mt-1 me-3">Contact Us</h4>
+                    <a class="btn btn-primary" href="/inquiry"><span class="lead">Inquiry</span></a>
+                </div>
             </div>
         </div>
 
@@ -69,8 +73,8 @@ ob_start(); ?>
                         😀 This technique overcomes challenges faced by other ion chromatography methods; <br>
                         😒 but requires careful selection of ion-pairing reagents and has limited column lifetime.
                     </li>
+                    <p class="mt-3"><b>Using ion-paired chromatography with diode array detection (HPLC-UV), <span class="novo-blue">NOVOCIB</span> provides analytical service for complete nucleotides spectra characterization (bases, nucleosides, nucleotides mono-, di- and triphosphates).</b></p>
                 </ol>
-                <p class="mt-3">Using ion-paired chromatography with diode array detection (HPLC-UV), NOVOCIB provides analytical service for complete nucleotides spectra characterization (bases, nucleosides, nucleotides mono-, di- and triphosphates).</p>
             </div>
         </div>
         <div class="col-lg-6 mt-5">
@@ -103,6 +107,10 @@ ob_start(); ?>
                     </li>
                     <p class="mt-4"><b>To quantify nucleic acids <span class="novo-blue">NOVOCIB</span> uses enzymatic/HPLC-UV approach where nucleic acids are converted enzymatically to 5'NMP and analyzed before and after nuclease treatment. Nucleic acid concentration is calculated as a difference in 5'NMP concentration before and after nuclease.</b></p>
                 </ol>
+                <div class="text-center d-flex justify-content-center mt-4">
+                    <h4 class="mt-1 me-3">Contact Us</h4>
+                    <a class="btn btn-primary" href="/inquiry"><span class="lead">Inquiry</span></a>
+                </div>
             </div>
         </div>
         <div class="col-lg-6 mt-5">
