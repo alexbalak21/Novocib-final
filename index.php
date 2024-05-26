@@ -165,7 +165,7 @@ switch ($req_uri) {
         break;
 
     case "/Nucleotide_Analysis_Services.html":
-        header("Location: /cellular-nucleotides-analysis");
+        header("Location: /nucleotide-analysis-service");
         break;
 
     case "/cellular-nucleotides-analysis":
