@@ -58,8 +58,8 @@ $content_title
                 <tbody>
                     <tr>
                         <td>#K0709-01-2</td>
-                        <td class="text-center"><strong>12 analyses (4 samples in triplicate)</strong></td>
-                        <td class="price text-center">€ 250.00</td>
+                        <td class="text-center"><strong>For 10 mL of reaction mixture (half 96-well plate)</strong></td>
+                        <td class="price text-center">€ 420.00</td>
                         <td class="text-end pe-3">
                             <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
                                 Inquiry
@@ -69,7 +69,7 @@ $content_title
                 </tbody>
             </table>
             <p class="text-muted text-center">
-                <em>Pricing updated July 16th, 2014.</em>
+                <em>Pricing updated on May the 30th, 2024.</em>
                 <br />
             </p>
             <p class="text-center">
@@ -80,8 +80,8 @@ $content_title
             </p>
             <p class="mt-4 mb-5 text-end">
                 Download
-                <a target="_blank" href="/app/documents/NovoCIB K0709-04-2 User Manual 140716.pdf">
-                    <strong>Download PRPP-S assay Protocol</strong>
+                <a target="_blank" href="/app/documents/NovoCIB K0709-04-02 User Manual.pdf">
+                    <strong>Download PRPP-S User Manual</strong>
                     <i class="fa-regular fa-file-pdf"></i>
                 </a>
                 (User manual)
