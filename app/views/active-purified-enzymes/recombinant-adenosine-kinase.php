@@ -4,9 +4,6 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-
-
-
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Human Adenosine Kinase (ADK, EC 2.7.1.20)", "novoblue", "right");
 
