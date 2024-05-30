@@ -151,7 +151,7 @@ switch ($req_uri) {
 
     case "/ADK_Assay_Kit.html":
     case "/convenient-assay-kits/adk-assay-kit":
-        require_once "app/views/convenient-assay-kits/adk-assay-kit.html";
+        require_once "app/views/convenient-assay-kits/adk-assay-kit.php";
         break;
 
     case "/convenient-assay-kits/phosphatase-assay-kit":
