@@ -39,10 +39,9 @@ ob_start(); ?>
                 Drug Discovery, and adenosine-regulating drugs have been extensively
                 tested (1) as new analgesic and anti-inflammatory agents(4) to treat
                 schizophrenia(7) or to limit brain injury after an ischemic stroke(8).
-                <br />
                 The X-ray crystallographic structure of human ADK has been described(9)
                 and provides structural basis for rational design and optimisation of new
-                ADK inhibitors. In addition, this enzyme is responsible for the
+                ADK inhibitors. <br> In addition, ADK enzyme is responsible for the
                 phosphorylation and consequent clinical activity of several
                 therapeutically useful nucleosides, including the antiviral drug
                 ribavirin(10), immunosuppressive drug mizoribine(11), and anticancer
@@ -53,13 +52,9 @@ ob_start(); ?>
                 analogs for human adenosine kinase see our
                 <a href="">PRECICE® ADK Phosphorylation Assay Kit.</a>
             </p>
-
-
             <p>
-                ADK is also a validated target for Drug Discovery: adenosine-regulating
-                drugs have been extensively tested(1) as new analgesic and
-                anti-inflammatory agents(4) to treat schizophrenia(7) or to limit brain
-                injury after an ischemic stroke(8).
+                For rapid HTS search of novel ADK inhibitors of human adenosine kinase see our
+                <a href="/convenient-assay-kits/adk-assay-kit">PRECICE® ADK Assay Kit.</a>
             </p>
         </div>
         <div class="col-lg-6 my-5">
@@ -165,42 +160,36 @@ ob_start(); ?>
 </div>
 
 <div class="container">
-    <div class="referances my-5 row justify-content-center">
-        <h6 class="ps-5">
-            <i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i>
-        </h6>
-        <div class="col-2">
-            <img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo" />
-        </div>
-        <div class="col-8">
-            <ol>
-                <li>
-                    <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/34204594/">M. Orlicka-Płocka, A. Fedoruk-Wyszomirska, D. Gurda-Wozna, P. Pawelczak , P. Krawczyk, M. Giel-Pietraszuk, G. Framski, T. Ostrowski, E. Wyszko Implications of Oxidative Stress in Glioblastoma Multiforme Following Treatment with Purine Derivatives. Antioxidants 2021, 10, 950.</a>
-                </li>
-                <li>
-                    <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/10200156">L.M. Johnson, O.J. Smith, D.A. Hahn, C.F. Baer. Short-term heritable variation overwhelms 200 generations of mutational variance for metabolic traits in Caenorhabditis elegans. Evolution. 2020 Nov;74(11):2451-2464.</a>
-                </li>
-                <li>
-                    <a href="https://www.sfn.org/-/media/SfN/Documents/Annual-Meeting/FinalProgram/NS2017/Full-Abstract-PDFs-2017/SFN17_Abstract-PDFs---Posters_4_Tue_AM.pdf">K. DANIELYAN, R. D. VARDANYAN, A. SIMONYAN, A. S. SAGYAN The sole role of PRPS-1 in the regenerative processes after experimental stroke Poster#: 459.07/A7 2017 Neuroscience Meeting Planner.
-                        <br> Washington, DC: Society for Neuroscience, 2017.
-                    </a>
-                </li>
-                <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/28504647/">U. Nayar, J. Sadek, J. Reichel, D. Hernandez-Hopkins, G. Akar, P.J. Barelli, M.A. Sahai, H. Zhou, J. Totonchy, D. Jayabalan, R. Niesvizky, I. Guasparri, D. Hassane, Y. Liu, S. Sei, R.H. Shoemaker, J. D. Warren, O. Elemento, K.M. Kaye, E. Cesarman. Identification of a nucleoside analog active against adenosine kinase-expressing plasma cell malignancies. J Clin Invest. 2017 Jun 1;127(6):2066-2080.</a>
-                </li>
-                <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/27410258/">K.S. Toti, D. Osborne, A. Ciancetta, D. Boison, K.A. Jacobson. South (S)- and North (N)-Methanocarba-7-Deazaadenosine Analogues as Inhibitors of Human Adenosine Kinase Kiran J. Med. Chem. 2016, 59, 14, 6860-6877.</a>
-                </li>
-                <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/21963049/">M.K. Bjursell, H.J. Blom, J.A. Cayuela, M.L. Engvall, N. Lesko, S. Balasubramaniam, G. Brandberg, M. Halldin, M. Falkenberg, C. Jakobs, D. Smith, E. Struys, U. von Döbeln, C. M. Gustafsson, J. Lundeberg, A. Wedell. Adenosine Kinase Deficiency Disrupts the Methionine Cycle and Causes Hypermethioninemia, Encephalopathy, and Abnormal Liver Function. Am J Hum Genet. 2011 Oct 7; 89(4): 507-515.</a>
-                </li>
-                <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/21427729/">E. CESARMAN, U. NAYAR, J.D. WARREN, J. SADEK US20190225643A1 Novel nucleoside analogs and use thereof in therapeutic treatment. Patent application filed by Cornell University</a>
-                </li>
-            </ol>
-        </div>
+    <div class="referances my-5">
+        <h5 class="text-center">Scientific Works citing NOVOCIB Adenosine Kinase and PRECICE® ADK Assay kits:</h5>
+        <ol>
+            <li>
+                <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/34204594/">M. Orlicka-Płocka, A. Fedoruk-Wyszomirska, D. Gurda-Wozna, P. Pawelczak , P. Krawczyk, M. Giel-Pietraszuk, G. Framski, T. Ostrowski, E. Wyszko Implications of Oxidative Stress in Glioblastoma Multiforme Following Treatment with Purine Derivatives. Antioxidants 2021, 10, 950.</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/10200156">L.M. Johnson, O.J. Smith, D.A. Hahn, C.F. Baer. Short-term heritable variation overwhelms 200 generations of mutational variance for metabolic traits in Caenorhabditis elegans. Evolution. 2020 Nov;74(11):2451-2464.</a>
+            </li>
+            <li>
+                <a href="https://www.sfn.org/-/media/SfN/Documents/Annual-Meeting/FinalProgram/NS2017/Full-Abstract-PDFs-2017/SFN17_Abstract-PDFs---Posters_4_Tue_AM.pdf">K. DANIELYAN, R. D. VARDANYAN, A. SIMONYAN, A. S. SAGYAN The sole role of PRPS-1 in the regenerative processes after experimental stroke Poster#: 459.07/A7 2017 Neuroscience Meeting Planner.
+                    <br> Washington, DC: Society for Neuroscience, 2017.
+                </a>
+            </li>
+            <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/28504647/">U. Nayar, J. Sadek, J. Reichel, D. Hernandez-Hopkins, G. Akar, P.J. Barelli, M.A. Sahai, H. Zhou, J. Totonchy, D. Jayabalan, R. Niesvizky, I. Guasparri, D. Hassane, Y. Liu, S. Sei, R.H. Shoemaker, J. D. Warren, O. Elemento, K.M. Kaye, E. Cesarman. Identification of a nucleoside analog active against adenosine kinase-expressing plasma cell malignancies. J Clin Invest. 2017 Jun 1;127(6):2066-2080.</a>
+            </li>
+            <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/27410258/">K.S. Toti, D. Osborne, A. Ciancetta, D. Boison, K.A. Jacobson. South (S)- and North (N)-Methanocarba-7-Deazaadenosine Analogues as Inhibitors of Human Adenosine Kinase Kiran J. Med. Chem. 2016, 59, 14, 6860-6877.</a>
+            </li>
+            <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/21963049/">M.K. Bjursell, H.J. Blom, J.A. Cayuela, M.L. Engvall, N. Lesko, S. Balasubramaniam, G. Brandberg, M. Halldin, M. Falkenberg, C. Jakobs, D. Smith, E. Struys, U. von Döbeln, C. M. Gustafsson, J. Lundeberg, A. Wedell. Adenosine Kinase Deficiency Disrupts the Methionine Cycle and Causes Hypermethioninemia, Encephalopathy, and Abnormal Liver Function. Am J Hum Genet. 2011 Oct 7; 89(4): 507-515.</a>
+            </li>
+            <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/21427729/">E. CESARMAN, U. NAYAR, J.D. WARREN, J. SADEK US20190225643A1 Novel nucleoside analogs and use thereof in therapeutic treatment. Patent application filed by Cornell University</a>
+            </li>
+        </ol>
     </div>
 </div>
+
 <?php $page_content = ob_get_clean();
 
 
