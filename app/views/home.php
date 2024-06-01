@@ -71,7 +71,7 @@ $card2_content = <<<CARD1_CONTENT
 <li>Convenient, saves time and preempts possible errors.</li>
 </ul>
 CARD1_CONTENT;
-$card2 = Card::get("app/static/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/freshness-assay-kits/freshness-principle", "Freshness Assay Kits page");
+$card2 = Card::get("app/static/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/convenient-assay-kits", "Freshness Assay Kits page");
 
 $card3_content = <<<CARD1_CONTENT
 <ul>
