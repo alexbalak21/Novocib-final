@@ -181,6 +181,10 @@ switch ($req_uri) {
         require_once "app/views/inquiry.php";
         break;
 
+    case "/contact":
+        header("Location: /contact-us");
+        break;
+
     case "/contact-us":
         require_once "app/views/contact-us.html";
         break;

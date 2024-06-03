@@ -145,6 +145,8 @@ ob_start(); ?>
         </div>
     </div>
 </section>
+<?= References::gen() ?>
+
 <?php $page_content = ob_get_clean();
 
 
