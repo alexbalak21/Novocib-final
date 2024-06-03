@@ -47,7 +47,7 @@ ob_start(); ?>
             <p>
                 For rapid evaluation of substrates properties of novel nucleoside
                 analogs for human adenosine kinase see our
-                <a href="">PRECICE® ADK Phosphorylation Assay Kit.</a>
+                <a href="/convenient-assay-kits/adk-phosphorylation-assay-kit">PRECICE® ADK Phosphorylation Assay Kit.</a>
             </p>
             <p>
                 For rapid HTS search of novel ADK inhibitors of human adenosine kinase see our
