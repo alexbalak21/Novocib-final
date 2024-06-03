@@ -69,7 +69,7 @@ ob_start(); ?>
                         😀 This technique overcomes challenges faced by other ion chromatography methods; <br>
                         😒 but requires careful selection of ion-pairing reagents and has limited column lifetime.
                     </li>
-                    <p class="mt-3"><b>Using ion-paired chromatography with diode array detection (HPLC-UV), <span class="novo-blue">NOVOCIB</span> provides analytical service for complete nucleotides spectra characterization (bases, nucleosides, nucleotides mono-, di- and triphosphates).</b></p>
+                    <p class="mt-3"><b>Using ion-paired chromatography with diode array detection (HPLC-UV), <span class="novo-blue">NOVOCIB</span> provides analytical service for complete dietary nucleotides spectra characterization (bases, nucleosides, nucleotides mono-, di- and triphosphates).</b></p>
                 </ol>
                 <div class="text-center d-flex justify-content-center mt-4">
                     <h4 class="mt-1 me-3">To know more</h4>
@@ -84,54 +84,53 @@ ob_start(); ?>
                     <small><b>Fig. 1:</b> Representative chromatogram of a mixture of nucleotides mono-, di- and triphosphates, nucleosides and heterocyclic bases separated using ion-paired reverse-phase HPLC coupled to a UV detector set at 254nm.</small>
                 </figcaption>
             </figure>
-        </div>
-        <div class="col-lg-6 mt-5 d-flex align-items-center">
-            <div>
-                <h4 class="novo-blue text-center mb-3">Nucleic acids DNA and RNA quantification:</h4>
-                <ol>
-                    <li class="mb-3">
-                        <b>UV spectroscopy</b>
-                        Nucleic acids can be quantified by measuring the absorbance at 260 nm and 280 nm with 1A 260 corresponding to 50µg/ml of dsDNA, to ~40µg/ml RNA and to 33µg/ml ssDNA. <br>
-                        😒 This method can be applied only to purified DNA or RNA.
-                    </li>
-                    <li class="mb-3">
-                        <b>Acid hydrolysis/ chromatography</b>
-                        Acidic hydrolysis of nucleic acids in perchloric or formic acid leads to the formation of purine and pyrimidine bases that are analyzed by LC-MS/MS or HPLC-UV chromatography. <br>
-                        😒 Using environmental pollutant perchlorate or toxic formic acid together with high cost are major limitations of this powerful analytical method.
-                    </li>
-                    <li>
-                        <b>Enzymatic/HPLC-UV</b>
-                        Nuclease digestion of DNA and RNA into constituent nucleotides NMP and dNMP prior to HPLC-UV analysis. <br>
-                        😀 This technique overcomes environment and cost challenges of acidic hydrolysis; <br>
-                        😒 requires careful selection of conditions to achieve complete nucleic acid digestion.
-                    </li>
-                    <p class="mt-4"><b>To quantify nucleic acids <span class="novo-blue">NOVOCIB</span> uses enzymatic/HPLC-UV approach where nucleic acids are converted enzymatically to 5'NMP and analyzed before and after nuclease treatment. Nucleic acid concentration is calculated as a difference in 5'NMP concentration before and after nuclease.</b></p>
-                </ol>
-                <div class="text-center d-flex justify-content-center mt-4">
-                    <h4 class="mt-1 me-3">To know more</h4>
-                    <a class="btn btn-primary" href="/contact-us"><span class="lead">Contact Us</span></a>
+            <div class="col-lg-6 mt-5 d-flex align-items-center">
+                <div>
+                    <h4 class="novo-blue text-center mb-3">Dietary Nucleic acids DNA and RNA quantification:</h4>
+                    <ol>
+                        <li class="mb-3">
+                            <b>UV spectroscopy</b>
+                            Nucleic acids can be quantified by measuring the absorbance at 260 nm and 280 nm with 1A 260 corresponding to 50µg/ml of dsDNA, to ~40µg/ml RNA and to 33µg/ml ssDNA. <br>
+                            😒 This method can be applied only to purified DNA or RNA.
+                        </li>
+                        <li class="mb-3">
+                            <b>Acid hydrolysis/ chromatography</b>
+                            Acidic hydrolysis of nucleic acids in perchloric or formic acid leads to the formation of purine and pyrimidine bases that are analyzed by LC-MS/MS or HPLC-UV chromatography. <br>
+                            😒 Using environmental pollutant perchlorate or toxic formic acid together with high cost are major limitations of this powerful analytical method.
+                        </li>
+                        <li>
+                            <b>Enzymatic/HPLC-UV</b>
+                            Nuclease digestion of DNA and RNA into constituent nucleotides NMP and dNMP prior to HPLC-UV analysis. <br>
+                            😀 This technique overcomes environment and cost challenges of acidic hydrolysis; <br>
+                            😒 requires careful selection of conditions to achieve complete nucleic acid digestion.
+                        </li>
+                        <p class="mt-4"><b>To quantify dietary nucleic acids <span class="novo-blue">NOVOCIB</span> uses enzymatic/HPLC-UV approach where nucleic acids are converted enzymatically to 5'NMP and analyzed before and after nuclease treatment. Nucleic acid concentration is calculated as a difference in 5'NMP concentration before and after nuclease.</b></p>
+                    </ol>
+                    <div class="text-center d-flex justify-content-center mt-4">
+                        <h4 class="mt-1 me-3">To know more</h4>
+                        <a class="btn btn-primary" href="/contact-us"><span class="lead">Contact Us</span></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-6 mt-5">
-            <figure class="">
-                <img class="w-100" style="border: 1px solid silver" src="/app/static/img/nucleotide_spectra.jpg" alt="Nucleotide spectra of yeast extract" title="Nucleotide spectra" />
-                <figcaption class="text-muted text-center">
-                    <small><b>Fig. 2:</b>Nucleotide spectra of yeast extract before (blue) and (red) after nuclease treatment obtained using ion-paired reverse-phase HPLC with UV detector.</small>
-                </figcaption>
-            </figure>
-        </div>
-        <div class="col-lg-6 my-5">
-            <figure class="col-10 mx-auto">
-                <img class="w-100" src="/app/static/img/hplc-photo.jpg" alt="Photo HPLC Analysis and spectra" title="Photo HPLC Analysis" />
-            </figure>
-        </div>
-        <div class="my-5 col-lg-6">
-            <h4 class="novo-blue mb-3">Our analytical system</h4>
-            <p>
-                Agilent 1120 series HPLC liquid chromatograph fitted with binary pump, vacuum degasser, well-plate autosampler, thermostatic column compartment and multiple wavelength and diode array detector. Run and data acquisision are controlled by Agilent Chem Station software. Calibrations are performed with standards prepared in mobile phase and with standards mixed with cell extracts, which are run immediately before and after every series of samples. Peak assignment of different bases, ribonucleosides and ribonucleoside monophosphatesis is done by comparing both retention times and characteristics of UV absorption spectra (254/280 ratio) with those of standards. The area of individual peaks was measured using ChemStation software (Agilent).
-            </p>
-        </div>
+            <div class="col-lg-6 mt-5">
+                <figure class="">
+                    <img class="w-100" style="border: 1px solid silver" src="/app/static/img/nucleotide_spectra.jpg" alt="Nucleotide spectra of yeast extract" title="Nucleotide spectra" />
+                    <figcaption class="text-muted text-center">
+                        <small><b>Fig. 2:</b>Nucleotide spectra of yeast extract before (blue) and (red) after nuclease treatment obtained using ion-paired reverse-phase HPLC with UV detector.</small>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-6 my-5">
+                <figure class="col-10 mx-auto">
+                    <img class="w-100" src="/app/static/img/hplc-photo.jpg" alt="Photo HPLC Analysis and spectra" title="Photo HPLC Analysis" />
+                </figure>
+            </div>
+            <div class="my-5 col-lg-6">
+                <h4 class="novo-blue mb-3">Our analytical system</h4>
+                <p>
+                    Agilent 1120 series HPLC liquid chromatograph fitted with binary pump, vacuum degasser, well-plate autosampler, thermostatic column compartment and multiple wavelength and diode array detector. Run and data acquisision are controlled by Agilent Chem Station software. Calibrations are performed with standards prepared in mobile phase and with standards mixed with cell extracts, which are run immediately before and after every series of samples. Peak assignment of different bases, ribonucleosides and ribonucleoside monophosphatesis is done by comparing both retention times and characteristics of UV absorption spectra (254/280 ratio) with those of standards. The area of individual peaks was measured using ChemStation software (Agilent).
+                </p>
+            </div>
     </article>
 
     <article class="my-5">
