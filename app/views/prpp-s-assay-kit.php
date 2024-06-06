@@ -57,7 +57,7 @@ $content_title
                 </thead>
                 <tbody>
                     <tr>
-                        <td>#K0709-01-2</td>
+                        <td>#K0709-04-2</td>
                         <td class="text-center"><strong>For 10 mL of reaction mixture (half 96-well plate)</strong></td>
                         <td class="price text-center">€ 420.00</td>
                         <td class="text-end pe-3">
