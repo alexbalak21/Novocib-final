@@ -61,7 +61,7 @@ $content_title
                         <td class="text-center"><strong>For 10 mL of reaction mixture (half 96-well plate)</strong></td>
                         <td class="price text-center">€ 420.00</td>
                         <td class="text-end pe-3">
-                            <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                            <a class="btn btn-primary" href="/inquiry?ref=K0709-04-2&product=PRECICE PRPP-S Assay Kit">
                                 Inquiry
                             </a>
                         </td>
