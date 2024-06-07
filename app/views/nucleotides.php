@@ -1,5 +1,5 @@
 <?php
-$title = "Nucleotides";
+$title = "Dietary Nucleotides";
 require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";

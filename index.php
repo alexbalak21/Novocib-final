@@ -174,6 +174,10 @@ switch ($req_uri) {
         break;
 
     case "/nucleotides":
+        header("Location: /dietary-nucleotides");
+        break;
+
+    case "/dietary-nucleotides":
         require_once "app/views/nucleotides.php";
         break;
 

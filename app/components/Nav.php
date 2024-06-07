@@ -95,6 +95,7 @@ class Nav
                             </a>
                         </li>
                         <li><a href="/cellular-nucleotides-analysis">HPLC analysis of bases nucleosides</a></li>
+                        <li><a href="/dietary-nucleotides">Dietary Nucleosides</a></li>
                     </ul>
                 </li>
                 <li><a href="/contact-us">Contact Us</a></li>

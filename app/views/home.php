@@ -35,7 +35,7 @@ $carousel = <<<CAROUSEL
         <div>
             <h2 class="display-3 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
             <p class="lead px-1">Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide <br> to quantify nucleotides in their biological samples.</p>
-            <div class="text-center"><a href="/nucleotides" class="btn btn-primary">Go to Nucleotides Page</a></div>
+            <div class="text-center"><a href="/nucleotides" class="btn btn-primary">Go to Dietary Nucleotides</a></div>
         </div>
     </div>
 </div>
@@ -59,10 +59,10 @@ $card1_content = <<<CARD1_CONTENT
 <ul>
     <li>Whole nucleotides spectra (heterocyclic bases, nucleosides and nucleotides, nucleic acids RNA and DNA);</li>
     <li>Total Potentially Available Nucleotides analysis (TPAN);</li>
-    <li>Purine analysis.</li>
+    <li>Purine & Pyrimidines analysis.</li>
 </ul>
 CARD1_CONTENT;
-$card1 = Card::get("app/static/img/analisis-gloves.jpg", "Nucleotide Analysis Service", $card1_content, "/nucleotide-analysis-service", "Nucleotide Analysis Services page");
+$card1 = Card::get("app/static/img/analisis-gloves.jpg", "Dietary Nucleotide Analysis", $card1_content, "/nucleotide-analysis-service", "Nucleotide Analysis Services page");
 
 $card2_content = <<<CARD1_CONTENT
 <ul>
