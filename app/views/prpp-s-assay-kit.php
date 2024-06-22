@@ -143,22 +143,14 @@ $content_title
     <div class="col-lg-9 text-center bg-light">
         <p>Simultaneous analysis of up to 6 samples in duplicate in 1h.</p>
     </div>
-</div>
-    <div class="col-lg-3 text-center pt-3">
-        <h4 class="novo-blue">Principle</h4>
+        <div class="col-lg-3 text-center pt-3">
+        <h4 class="novo-blue pt-1">Principle</h4>
     </div>
     <div class="col-lg-9">
-       <ul>
-       <li>Non radioactive</li>
-       <li>Continuous</li>
-       <li>No sample preparation required. Cell lysates are directly used for continuous monitoring of PRPP-Synthetase activity</li>
-       </ul>
+       <p>PRS activity is measured as a rate of production of PRPP with concomitant formation of NADH2 after two enzymatic reactions using highly active HPRT and IMPDH. The formation of NADH2 is continuously monitored spectrophotometrically at 340nm.</p>
     </div>
 
-<p class="my-5"><strong>Principle</strong><br>
-PRS activity is measured as a rate of production of PRPP with concomitant formation of NADH2 after two enzymatic reactions using highly active HPRT and IMPDH. The formation of NADH2 is continuously monitored spectrophotometrically at 340nm.
-</p>
-
+</div>
 
         <div class="container">
             <div class="referances my-5">
