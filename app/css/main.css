@@ -281,6 +281,9 @@ a {
 }
 
 .referances {
+  ol li {
+    margin-bottom: 12px;
+  }
   background-color: #f8f8f8;
   a {
     font-size: 1rem !important;

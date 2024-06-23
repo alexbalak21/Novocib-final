@@ -151,7 +151,6 @@ $content_title
     </div>
 
 </div>
-
         <div class="container">
             <div class="referances my-5">
                 <h5 class="ms-5 pt-4 pb-3 novo-blue">Scientific Works citing <span class="text-secondary">NOVOCIB</span> PRPP-S Assay Kit:</h5>
@@ -170,13 +169,11 @@ $content_title
                         <a href="https://www.pulsus.com/scholarly-articles/prps1-is-a-regulative-for-neuroprotection-and-cells-regenerative-proliferation-4897.html">PRPS-1 is a regulative for neuroprotection and cells regenerative proliferation (2018), Danielyan KE, Vardanyan R, Paronyan ZK , Barkhudaryants IM , Chailyan SG, Bisharyan MS. J Biomol Biochem Vol.2 No.2 6-10</a>
                     </li>
                     <li>
-                        <a href="https://pubmed.ncbi.nlm.nih.gov/28432611/">Comparison of human erythrocyte purine nucleotide metabolism and blood purine and pyrimidine degradation product concentrations before and after acute exercise in trained and sedentary subjects (2018) W. Dudzinska, M Suska, A Lubkowska, K Jakubowska, M Olszewska, K Safranow, D Chlubek <br> J Physiol Sci 68(3):293-305.
-                </a>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/28432611/">Comparison of human erythrocyte purine nucleotide metabolism and blood purine and pyrimidine degradation product concentrations before and after acute exercise in trained and sedentary subjects (2018) W. Dudzinska, M Suska, A Lubkowska, K Jakubowska, M Olszewska, K Safranow, D Chlubek <br> J Physiol Sci 68(3):293-305.</a>
                     </li>
                     <li>
                         <a href="https://pubmed.ncbi.nlm.nih.gov/23734909/">Cell cycle regulation of purine synthesis by phosphoribosyl pyrophosphate and inorganic phosphate  (2013) Fridman; A. Saha; A. Chan; D.E. Casteel; R.B. Pilz; G.R. Boss Biochem J 454 (1): 91-99 A.</a>
                     </li>
-                    
                 </ol>
             </div>
         </div>

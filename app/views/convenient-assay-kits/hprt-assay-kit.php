@@ -115,6 +115,31 @@ The rate of the increase in absorbance at 340nm per hour as a function of the co
 </div>
 </div>
 </div>
+  <div class="container">
+            <div class="referances my-5">
+                <h5 class="ms-5 pt-4 pb-3 novo-blue">Scientific Articles citing PRECICE® HPRT Assay kit from <span class="text-secondary">NOVOCIB</span>:</h5>
+                <ol>
+                    <li>
+                        <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/38799559/">Ablation of Atp5if1 impairs metabolic reprogramming and proliferation of T lymphocytes and compromises mouse survival <br> I. Romero-Carraminana, S. Dominguez-Zorita, P.B. Esparza-Molto, J. M. Cuezva (2024) iScience 27, 109863</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/37214913/">Electron transport chain inhibition increases cellular dependence on purine transport and salvage <br> Z. Wu, D. Bezwada, F. Cai, J. Garcia-Bermudez, M. Ni, R.J. DeBerardinis,   Cell Metab. 2024 Jun 7:S1550-4131(24)00190-6</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/36910714/">Therapeutic gene correction for Lesch-Nyhan syndrome using CRISPR-mediated base and prime editing (2023) <br> G. Jang , H. Rim Shin, H.-S. Do , J. Kweon , S. Hwang  , S. Kim, S.  Hee Heo, Y. Kim, B. Lee Molecular Therapy - Nucleic Acids ; 31: 586-595.</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="">Rescuing compounds for Lesch-Nyhan disease identified using stem cell-based phenotypic screening (2020) <br>V. Ruillier, J. Tournois, C. Boissart, M. Lasbareilles, G. Mahé, L. Chatrousse, M. Cailleret, M. Peschanski, A. Benchoua JCI Insight 5(4): e132094.</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/26283971/">Hypoxanthine-guanine phosphoribosyltransferase and inosine 5'-monophosphate dehydrogenase activities in three mammalian species: aquatic (Mirounga angustirostris), semi-aquatic (Lontra longicaudis annectens) and terrestrial (2015) <br> M. Barjau Pérez-Milicua, T. Zenteno-Savín, D.E. Crocker, J.P. Gallo-Reynoso Front Physiol.; 6: 212.</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/22496280/">Prolonged fasting increases purine recycling in post-weaned northern elephant seals <br> José Guadalupe Soñanez-Organis, José Pablo Vázquez-Medina, Tania Zenteno-Savín, Andres Aguilar, Daniel E. Crocker, Rudy M. Ortiz J Exp Biol (2012) 215 (9): 1448-1455.</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
 </main>
 CONTENT;
 
