@@ -54,7 +54,7 @@ class Nav
 
                             <li><a href="/convenient-assay-kits/bacterial-recombinant-impdh">Bacterial IMPDH</a></li>
                             <li><a href="/convenient-assay-kits/adk-assay-kit">ADK Assay Kit</a></li>
-                            <li><a href="/convenient-assay-kits/phosphatase-assay-kit">Phosphatase Assay Kit</a></li>
+                            <!-- <li><a href="/convenient-assay-kits/phosphatase-assay-kit">Phosphatase Assay Kit</a></li> -->
                         </ul>
                     </li>
 
