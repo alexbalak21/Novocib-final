@@ -1,10 +1,13 @@
 <?php
 $title = "Nucleotide Analysis Service";
-$metas = <<<META
+
+ob_start(); ?>
 <meta name="description" content="NOVOCIB provides accurate analysis of Total Potentially Available Nucleotides (TPAN, including  nucleosides, nucleotides and nucleic acids RNA and DNA) in feed and food products and ingredients by ion-paired HPLC-UV">
 <meta name="full spectra dietary nucleotides analysis">
 <meta name="keywords" content="Dietary nucleotides analysis, HPLC, TPAN, Total Potentially Available Nucleotides">
-META;
+
+<?php $metas = ob_get_clean();
+
 
 require_once "app/templates/base.php";
 
