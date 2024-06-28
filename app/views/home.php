@@ -167,8 +167,9 @@ $awards = <<<AWARDS
     
 <p class="mb-5">NOVOCIB SAS is french biotechnology company founded in 2005, a double Laureate of Concours National pour la Création d'Entreprises de Technologie Innovante (I-LAB) in 2003 and 2005 and “Tremplin Entreprises” organized by French Senate (2004). <br> Since its creation in 2005, the company has developed multiple innovative solutions helping scientists and engineers worldwide to quantify nucleotides in their biological samples.</p>
     <div class="row justify-content-center">
-        <div class="award col-lg-3">
-            <img class="w-100 mt-2" src="app/static/img/i-lab-1.jpg" alt="i-lab logo">
+
+        <div class="award col-lg-3 col-10">
+            <img class="w-100 h-auto mt-2" src="app/static/img/i-lab-1.jpg" alt="i-lab logo">
             <h4 class="text-center mt-3 novo-blue">I-LAB</h4>
             <h5 class="text-center mb-3">2003 &amp; 2005</h5>
             <p>
@@ -183,8 +184,8 @@ $awards = <<<AWARDS
             </div>
         </div>
 
-        <div class="award col-lg-3">
-            <img class="w-100 mt-2" src="app/static/img/tremplin.png" alt="femmes en or brand">
+        <div class="award col-lg-3 col-10">
+            <img class="w-100 h-auto mt-2" src="app/static/img/tremplin.jpg" alt="femmes en or brand">
             <h4 class="text-center mt-3 novo-blue">Tremplin des Entreprises</h4>
             <h5 class="text-center mb-3">2005</h5>
             <p>
@@ -199,8 +200,8 @@ $awards = <<<AWARDS
             </div>
         </div>
 
-        <div class="award col-lg-3">
-            <img class="w-100 mt-2" src="app/static/img/femme-en-or.webp" alt="femmes en or brand">
+        <div class="award col-lg-3 col-10">
+            <img class="w-100 h-auto mt-2" src="app/static/img/femme-en-or.jpg" alt="femmes en or brand">
             <h4 class="text-center mt-3 novo-blue">Femmes en Or</h4>
             <h5 class="text-center mb-3">2011</h5>
             <p>
