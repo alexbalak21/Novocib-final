@@ -1,5 +1,6 @@
-User-agent *
-Disallow: /internal/share
+# start of file
+
+user-agent: *
 Disallow: /search/
 
 Sitemap: https://www.novocib.com/sitemap.xml
