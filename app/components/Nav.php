@@ -84,7 +84,7 @@ class Nav
 
                     <!-- SERVICES -->
                     <li>
-                        <a class="large">Services</a>
+                        <a class="large" href="/services">Services</a>
                         <ul>
                             <li><a href="/nucleotide-analysis-service">Nucleotide Analysis</a></li>
                             <li>
