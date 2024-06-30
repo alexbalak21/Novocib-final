@@ -219,20 +219,21 @@ $awards = <<<AWARDS
 AWARDS;
 addContent($awards);
 
-
 ob_start(); ?>
 <section class="partners py-2" id="partners">
     <div class="container text-center mb-3">
-        <h2 class="underlinedTitle center"><span class="underlined novoblue center">Our Partners</span></h2>
-
+        <h2 class="underlinedTitle center">
+            <span class="underlined novoblue center">Our Partners</span>
+        </h2>
     </div>
 
     <div class="owl-carousel owl-theme mt-5 mx-auto">
         <div class="owl-item">
             <div class="card">
                 <div class="card-img">
-                    <a name="xmp business angels" href="https://www.business-angels.info/">
-                        <img src="app/static/img/xmp.png" alt="xmp investers logo" />
+                    <a href="https://www.business-angels.info/">
+                        <img src="app/static/img/xmp.png" alt="xmp investors logo" />
+                        <span>Xmp Investors Business Angels </span>
                     </a>
                 </div>
                 <h5 class="card-title name text-center">XMP</h5>
@@ -241,8 +242,9 @@ ob_start(); ?>
         <div class="owl-item">
             <div class="card">
                 <div class="card-img">
-                    <a name="samba investors" href="https://samba-investisseurs.fr/">
+                    <a href="https://samba-investisseurs.fr/">
                         <img src="app/static/img/samba.jpg" alt="samba logo" />
+                        <span>samba investors</span>
                     </a>
                 </div>
                 <h5 class="card-title name text-center">SAMBA</h5>
@@ -251,8 +253,9 @@ ob_start(); ?>
         <div class="owl-item">
             <div class="card">
                 <div class="card-img">
-                    <a name="aquimer Website" href="https://www.poleaquimer.com/en/">
+                    <a href="https://www.poleaquimer.com/en/">
                         <img src="app/static/img/aquimer.png" alt="aquimer logo" />
+                        <span>Aquimer Website</span>
                     </a>
                 </div>
                 <h5 class="card-title name text-center">Aquimer</h5>
@@ -261,8 +264,9 @@ ob_start(); ?>
         <div class="owl-item">
             <div class="card">
                 <div class="card-img">
-                    <a name="boulogne sur mer Website" href="https://www.agglo-boulonnais.fr/">
+                    <a href="https://www.agglo-boulonnais.fr/">
                         <img src="app/static/img/cab.jpg" alt="boulogne comune association logo" />
+                        <span>boulogne sur mer Website</span>
                     </a>
                 </div>
                 <h5 class="card-title name text-center">C A B</h5>
@@ -271,8 +275,9 @@ ob_start(); ?>
         <div class="owl-item">
             <div class="card">
                 <div class="card-img">
-                    <a name="nouvelle-vagues Website" href=" https://www.pfinouvellesvagues.com/">
+                    <a href=" https://www.pfinouvellesvagues.com/">
                         <img src="app/static/img/nouvelle-vagues.png" alt="" />
+                        <span>nouvelle-vagues Website</span>
                     </a>
                 </div>
                 <h5 class="card-title name text-center">
@@ -285,8 +290,9 @@ ob_start(); ?>
         <div class="owl-item">
             <div class="card">
                 <div class="card-img">
-                    <a name="InExtenso Website" href=" https://www.inextenso.fr/en/">
+                    <a href=" https://www.inextenso.fr/en/">
                         <img src="app/static/img/InExtenso.jpg" alt="" />
+                        <span>InExtenso Website</span>
                     </a>
                 </div>
                 <h5 class="card-title name text-center">In Extenso</h5>
@@ -295,8 +301,9 @@ ob_start(); ?>
         <div class="owl-item">
             <div class="card">
                 <div class="card-img">
-                    <a name="Leclerc Website" href=" https://www.e.leclerc/ ">
+                    <a href=" https://www.e.leclerc/ ">
                         <img src=" app/static/img/Leclerc.jpg" alt="" />
+                        <span>Leclerc Website</span>
                     </a>
                 </div>
                 <h5 class="card-title name text-center">E Leclerc</h5>

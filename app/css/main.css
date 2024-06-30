@@ -431,6 +431,10 @@ a {
   background-color: #f8f8f8;
 }
 
+#partners .card a span {
+  display: none;
+}
+
 .underlinedTitle {
   margin-bottom: 35px;
 }
