@@ -1,8 +1,15 @@
 <?php
 $title = "News";
-require_once "app/templates/base.php";
-
 $novoblue = "#4167b1";
+
+ob_start(); ?>
+<meta name="description" content="NOVOCIB latest news, learn more about the company.">
+<meta name="News">
+<meta name="keywords" content="news, updates, blog">
+
+<?php $metas = ob_get_clean();
+
+require_once "app/templates/base.php";
 
 
 

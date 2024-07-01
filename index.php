@@ -236,7 +236,7 @@ switch ($req_uri) {
         break;
 
     case "/news":
-        require_once "app/views/news.html";
+        require_once "app/views/news.php";
         break;
 
     default:
