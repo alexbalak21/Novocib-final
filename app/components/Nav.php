@@ -50,9 +50,7 @@ class Nav
                                     dCK Phosphorylation Assay Kit
                                 </a>
                             </li>
-                            <li><a href="/convenient-assay-kits/human-recombinant-impdh">Human IMPDH type II</a></li>
 
-                            <li><a href="/convenient-assay-kits/bacterial-recombinant-impdh">Bacterial IMPDH</a></li>
                             <li><a href="/convenient-assay-kits/adk-assay-kit">ADK Assay Kit</a></li>
                             <!-- <li><a href="/convenient-assay-kits/phosphatase-assay-kit">Phosphatase Assay Kit</a></li> -->
                         </ul>
@@ -62,6 +60,8 @@ class Nav
                     <li>
                         <a class="larger" href="/active-purified-enzymes">Active Purified Enzymes</a>
                         <ul>
+                            <li><a href="/convenient-assay-kits/human-recombinant-impdh">Human IMPDH type II</a></li>
+                            <li><a href="/convenient-assay-kits/bacterial-recombinant-impdh">Bacterial IMPDH</a></li>
                             <li>
                                 <a href="/active-purified-enzymes/impdh-recombinant-enzyme">IMPDH Recombinant Enzyme</a>
                             </li>
