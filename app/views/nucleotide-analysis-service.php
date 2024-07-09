@@ -2,10 +2,9 @@
 $title = "Nucleotide Analysis Service";
 
 ob_start(); ?>
-<meta name="description" content="NOVOCIB provides accurate analysis of Total Potentially Available Nucleotides (TPAN, including  nucleosides, nucleotides and nucleic acids RNA and DNA) in feed and food products and ingredients by ion-paired HPLC-UV">
-<meta name="full spectra dietary nucleotides analysis">
-<meta name="keywords" content="Dietary nucleotides analysis, HPLC, TPAN, Total Potentially Available Nucleotides">
-
+Nucleotide Analysis Service
+<meta name="description" content="company provides accurate analysis of dietary nucleosides, nucleotides and nucleic acids in feed and food ingredients">
+<meta name="keywords" content="Dietary nucleotides, 5'-nucleotides,  5'AMP, 5'GMP,5'IMP,5'CMP,5'UMP, nucleic acids, hplc nucleotides analysis">
 <?php $metas = ob_get_clean();
 
 
