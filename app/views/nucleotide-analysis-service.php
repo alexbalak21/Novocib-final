@@ -213,7 +213,7 @@ ob_start(); ?>
                     <tr>
                         <td>#S1200-03</td>
                         <td class="text-center">
-                            <h6>Dietary Nucleotides Analysis:</h6>
+                            <h6>Yeast Extract Nucleotides Analysis:</h6>
                             <p>
                                 HPLC-UV analysis for full spectra of dietary nucleotides (bases,
                                 nucleosides and NMP, unhydrolyzed DNA and RNA nucleic acids)
