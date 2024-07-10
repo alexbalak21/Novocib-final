@@ -2,7 +2,6 @@
 $title = "Nucleotide Analysis Service";
 
 ob_start(); ?>
-Nucleotide Analysis Service
 <meta name="description" content="NOVOCIB Provides Accurate and Customized HPLC analysis of Nucleosides, Nucleotides and Nucleic Acids in feed and food ingredients">
 <meta name="keywords" content="Dietary nucleotides, 5'-nucleotides,  5'AMP, 5'GMP,5'IMP,5'CMP,5'UMP, nucleic acids, hplc nucleotides analysis">
 <?php $metas = ob_get_clean();
