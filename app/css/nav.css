@@ -146,7 +146,7 @@ nav ul li.open > ul {
   }
 }
 
-@media (max-width: 1391px) {
+@media (max-width: 1471px) {
   .hamburger-menu::before,
   .hamburger-menu::after,
   .hamburger-menu input {

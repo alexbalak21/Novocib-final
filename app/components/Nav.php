@@ -82,7 +82,7 @@ class Nav
 
                     <!-- SERVICES -->
                     <li>
-                        <a class="large" href="/services">Services</a>
+                        <a class="large" href="/services">Analytical Services</a>
                         <ul>
                             <li><a href="/nucleotide-analysis-service">Nucleotide Analysis</a></li>
                             <li>
@@ -91,7 +91,7 @@ class Nav
                                 </a>
                             </li>
                             <li><a href="/cellular-nucleotides-analysis">HPLC analysis of bases nucleosides</a></li>
-                            <li><a href="/dietary-nucleotides">Dietary Nucleosides</a></li>
+                            <li><a href="/dietary-nucleotides">Dietary Nucleotides</a></li>
                         </ul>
                     </li>
                     <li><a href="/contact-us">Contact Us</a></li>
