@@ -1,10 +1,10 @@
 <?php
-$title = "Services";
+$title = "Analytical Services";
 require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-addContent(Banner::gen());
+addContent(Banner::gen("/app/static/img/analytical-services.jpg"));
 
 
 ob_start(); ?>
@@ -27,7 +27,7 @@ ob_start(); ?>
         </div>
         <div class="col-8">
             <p>
-                Quality Control of Yeast Extract Nucleotides: NOVOCIB offers a range of analytical services from characterisation of free 5' nucleotides to full spectrum of nucleotides in yeast extracts by ion-pair high-performance liquid chromatography with diode array detection. This service allows to control the content of flavor nucleotides yeast extract samples.
+                Quality Control of Yeast Extract Nucleotides: NOVOCIB offers a range of analytical services from characterization of free 5' nucleotides to full spectrum of nucleotides in yeast extracts by ion-pair high-performance liquid chromatography with diode array detection. This service allows to control the content of flavor nucleotides yeast extract samples.
             </p>
         </div>
     </div>
@@ -37,7 +37,7 @@ ob_start(); ?>
         </div>
         <div class="col-8">
             <p>
-                Cellular Nucleotide Profiling Service is an analytical service for mesuring nucleotide level in antimetabolite-treated cells. More than 31 cellular (deoxy-) ribonucleotides (mono-, di-, and triphosphate) are extracted by SPE procedure, separated by ion-paired HPLC system in one-run and quantified.
+                Cellular Nucleotide Profiling Service is an analytical service for measuring nucleotide level in antimetabolite-treated cells. More than 31 cellular (deoxy-) ribonucleotides (mono-, di-, and triphosphate) are extracted by SPE procedure, separated by ion-paired HPLC system in one-run and quantified.
             </p>
         </div>
     </div>

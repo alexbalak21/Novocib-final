@@ -204,7 +204,8 @@ switch ($req_uri) {
         // SERVICES
 
     case "/services":
-        require_once "app/views/services.php";
+    case "/analytical-services":
+        require_once "app/views/analytical-services/index.php";
         break;
 
     case "/nucleotide-analysis-service":
@@ -212,7 +213,7 @@ switch ($req_uri) {
         break;
 
     case "/analytical-services/yeast-extract-nucleotide-analysis":
-        require_once "app/views/yeast-extract-nucleotide-analysis.php";
+        require_once "app/views/analytical-services/yeast-extract-nucleotide-analysis.php";
         break;
 
     case "/bacterial-luciferase":

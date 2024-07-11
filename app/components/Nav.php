@@ -62,7 +62,7 @@ class Nav
                         <ul>
                             <li><a href="/convenient-assay-kits/human-recombinant-impdh">Human IMPDH type II</a></li>
                             <li><a href="/convenient-assay-kits/bacterial-recombinant-impdh">Bacterial IMPDH</a></li>
-                            <!-- <li><a href="/active-purified-enzymes/impdh-recombinant-enzyme">IMPDH Recombinant Enzyme</a></li> -->f
+                            <!-- <li><a href="/active-purified-enzymes/impdh-recombinant-enzyme">IMPDH Recombinant Enzyme</a></li> -->
                             <li>
                                 <a href="/active-purified-enzymes/human-recombinant-hgprt">Human Recombinant HGPRT</a>
                             </li>
@@ -82,7 +82,7 @@ class Nav
 
                     <!-- SERVICES -->
                     <li>
-                        <a class="large" href="/services">Analytical Services</a>
+                        <a class="large" href="/analytical-services">Analytical Services</a>
                         <ul>
                             <li><a href="/nucleotide-analysis-service">Nucleotide Analysis</a></li>
                             <li>
