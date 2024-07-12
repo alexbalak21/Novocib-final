@@ -212,7 +212,9 @@ ob_start(); ?>
                     <tr>
                         <td>#S1200-03</td>
                         <td class="text-center">
-                            <h6>Yeast Extract Nucleotides Analysis:</h6>
+                            <a href="">
+                                <h6>Yeast Extract Nucleotides Analysis:</h6>
+                            </a>
                             <p>
                                 HPLC-UV analysis for full spectra of dietary nucleotides (bases,
                                 nucleosides and NMP, unhydrolyzed DNA and RNA nucleic acids)
@@ -227,7 +229,9 @@ ob_start(); ?>
                     <tr>
                         <td>#S1200-04</td>
                         <td class="text-center">
-                            <h6>Cellular Nucleotides Analysis:</h6>
+                            <a href="">
+                                <h6>Cellular Nucleotides Analysis:</h6>
+                            </a>
                             <p>
                                 HPLC-UV analysis for full spectra of cellular nucleotides
                                 (bases, nucleosides, NMP, NDP and NTP) in cell extracts.
