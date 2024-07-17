@@ -1,5 +1,12 @@
 <?php
 $title = "Yeast Extracts Nucleotides and Nucleic Acids";
+
+ob_start(); ?>
+<meta name="description" content="NOVOCIB provides HPLC analysis of yeast nucleosides, nucleotides and nucleic acids in yeast extracts">
+<meta name="keywords" content="Yeast extract nucleotides, nucleotides analysis, HPLC nucleotide analysis, 5'nucleotides, inosinate, guanosinate, 5'GMP,5'IMP, nucleic acids">
+<?php $metas = ob_get_clean();
+
+
 require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
