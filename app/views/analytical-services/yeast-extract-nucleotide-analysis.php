@@ -48,9 +48,9 @@ ob_start(); ?>
     </div>
     <div class="mb-4">
         <h5><b>RNA co-purified with yeast protein:</b></h5>
-        <p class="mb-3">Yeast proteins contain all essential amino acids, are environmentally friendly and offer high bioavailability, making them a promising alternative to animal protein for food applications. However, yeast proteins can be co-purified with significant amounts of polymeric RNA especially when purified using microfiltration. Since excessive RNA intake can lead to the production of uric acid, it is recommended that adults do not exceed a daily RNA ingestion of 2 grams.</p>
-        <span class="lead">NOVOCIB provides complete analytical HPLC service to characterize full spectra of nucleotides and nucleic acids present in yeast extracts and yeast proteins - from heterocyclic bases, nucleosides, nucleotides to nucleic acids (RNA and DNA).</span>
-        <div class="big my-3 text-center"><span class="lead">To know more : </span> <a class="lead" href="/nucleotide-analysis-service">Nucleotide Analysis Service</a></div>
+        <p class="mb-4">Yeast proteins contain all essential amino acids, are environmentally friendly and offer high bioavailability, making them a promising alternative to animal protein for food applications. However, yeast proteins can be co-purified with significant amounts of polymeric RNA especially when purified using microfiltration. Since excessive RNA intake can lead to the production of uric acid, it is recommended that adults do not exceed a daily RNA ingestion of 2 grams.</p>
+        <span class="big-bold lead text-center"><span class="novo-blue">NOVOCIB</span> provides complete analytical HPLC service to characterize full spectra of nucleotides and nucleic acids present in yeast extracts and yeast proteins - from heterocyclic bases, nucleosides, nucleotides to nucleic acids (RNA and DNA).</span>
+        <div class="big my-4 text-center"><span class="lead">To know more : </span> <a class="lead" href="/nucleotide-analysis-service">Nucleotide Analysis Service</a></div>
     </div>
     <div class="text-center my-4">
         <h4 class="mt-1 me-3">If you have any further questions or need additional information</h4>

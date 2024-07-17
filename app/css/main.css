@@ -765,3 +765,7 @@ header .brand {
 .big span {
   font-size: 24px !important;
 }
+
+.big-bold {
+  font-weight: 550;
+}
