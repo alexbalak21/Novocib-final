@@ -1,6 +1,4 @@
 <?php
-
-print_r($_POST);
 // PROD MAIL
 $to = "contact@novocib.com";
 
@@ -30,7 +28,6 @@ function serve()
     $need = $_POST['need'];
     $message = $_POST['message'];
     $sent = send_mail($to, $name, $visitor_email, $need, $message);
-
     if ($sent) {
         http_response_code(202);
         header("Location: /message-sent-successfully");
@@ -53,6 +50,12 @@ function send_mail($to, $name, $visitor_email, $need, $message): bool
     $headers .= "Reply-To: $visitor_email \r\n";
     // mail returns true or false
     $sent = @mail($to, $email_subject, $email_body, $headers);
+    if ($sent) {
+        header("Location: /message-sent-successfully");
+    } else {
+        echo "<h2 style='text-align: center; padding-top:40px;'>Error sending a message please contact us by mail. <br> At contact@novocib.com <br> Thank you !</h2>";
+        echo "<a style='text-align: center' href='/'><h2>Return to Homepage</h2></a>";
+    }
     return $sent;
 }
 
