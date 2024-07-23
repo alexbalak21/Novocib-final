@@ -59,7 +59,7 @@ ob_start(); ?>
                         </tr>
                     </tbody>
                 </table>
-                <p class="text-muted text-center"> <em>* Pricing updated July 23, 2024.</em><br></p>
+                <p class="text-muted text-center"> <em>* Pricing updated July 22, 2024.</em><br></p>
                 <p class="text-center"><strong>Kit provided in stable lyophilized form and <span class="text-danger">shipped without dry ice</span> </strong></p>
                 <p class="mt-4 mb-5 text-end">Download <a target="_blank" href="/app/documents/NovoCIB K0709-05-01 User Manual 300823.pdf"> <strong>AMPD assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
             </div>
