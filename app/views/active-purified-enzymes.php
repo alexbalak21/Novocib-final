@@ -60,7 +60,7 @@ $content_title
 <td>Human recombinant, expressed in E.coli</td>
 </tr>
 <tr>
-<td class="col-2"><h5><a href="">cN-II</a></h5></td>
+<td class="col-2"><h5><a href="/active-purified-enzymes/cnII">cN-II</a></h5></td>
 <td>Cytosolic 5'-nucleotidase II (EC 3.1.3.5)</td>
 <td>Human recombinant, expressed in E.coli</td>
 </tr>
