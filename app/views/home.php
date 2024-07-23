@@ -58,8 +58,8 @@ addContent($search_container);
 $card1_content = <<<CARD1_CONTENT
 <ul>
     <li>Whole nucleotides spectra (heterocyclic bases, nucleosides and nucleotides, nucleic acids RNA and DNA);</li>
-    <li>Total Potentially Available Nucleotides analysis (TPAN);</li>
-    <li>Purine & Pyrimidines analysis.</li>
+    <li>Yeast extracts nucleosides, 5'-nucleotides and nucleic acids</li>
+    <li>Purine & pyrimidines analysis of food or feed ingredients</li>
 </ul>
 CARD1_CONTENT;
 $card1 = Card::get("app/static/img/analisis-gloves.jpg", "Dietary Nucleotide Analysis", $card1_content, "/nucleotide-analysis-service", "Nucleotide Analysis Services page");
