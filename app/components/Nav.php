@@ -99,9 +99,6 @@ class Nav
                 </ul>
             </nav>
         </header>
-
-
-
 <?php return ob_get_clean();
     }
 } ?>
