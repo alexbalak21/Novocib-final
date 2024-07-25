@@ -229,7 +229,7 @@ ob_start(); ?>
                     <tr>
                         <td>#S1200-04</td>
                         <td class="text-center">
-                            <a href="">
+                            <a href="/analytical-services/yeast-extract-nucleotide-analysis">
                                 <h6>Cellular Nucleotides Analysis:</h6>
                             </a>
                             <p>
