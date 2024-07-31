@@ -1,7 +1,7 @@
 <?php
 $req_uri = parse_url($_SERVER["REQUEST_URI"])["path"];
 
-//REQUETS PARAMETERS
+// _REQUEST PARAMETERS
 // $_REQUEST
 switch ($req_uri) {
     case "/":
