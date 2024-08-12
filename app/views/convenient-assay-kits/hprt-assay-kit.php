@@ -70,7 +70,9 @@ ob_start(); ?>
                     </table>
                     <p class="text-muted text-center"> <em>* Pricing updated August 28th, 2015. ** As positive control.</em><br></p>
                     <p class="text-center"><strong>Kit is provided in stable lyophilized form and <span class="text-danger">shipped without dry ice</span> </strong></p>
-                    <p class="mt-4 mb-5 text-end">Download <a target="_blank" href="/app/documents/NovoCIB K0709-01-2 24 samples User Manual 140225.pdf"> <strong>HPRT assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
+                    <p class="mt-4 mb-4 text-end">Download <a target="_blank" href="/app/documents/NovoCIB K0709-01-2 24 samples User Manual 140225.pdf"> <strong>HPRT assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
+                    <p class="mt-4 mb-5 text-center">Download <a target="_blank" href="/app/documents/Novocib-HPRT-MSDS.pdf"> <strong>Material Safety Data Sheet <i class="fa-solid fa-passport"></i></a> </strong>(MSDS)</p>
+
                 </div>
             </div>
             <div class="col-lg-3 text-center bg-light pt-3">
