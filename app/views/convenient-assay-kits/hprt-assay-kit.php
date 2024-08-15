@@ -79,7 +79,7 @@ ob_start(); ?>
                 <h4 class="novo-blue">Wide linearity range</h4>
             </div>
             <div class="col-lg-9 text-center bg-light">
-                <p>The detection of as low as 6.75 nmol/hour/ml up to 340 nmol/hour/ml of HPRT activity enables the characterization of complete and partial deficiencies</p>
+                <p>The detection of as low as 6.75 nmol/hour/ml up to 340 nmol/hour/ml of HPRT activity enables the characterization of complete and partial d eficiencies</p>
             </div>
             <div class="col-lg-3 text-center pt-3">
                 <h4 class="novo-blue">Accurate</h4>

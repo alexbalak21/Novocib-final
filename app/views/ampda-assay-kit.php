@@ -55,7 +55,7 @@ ob_start(); ?>
                             <td>#K0709-05-2</td>
                             <td class="text-center"> <strong>24 analyses (10 ml reaction buffer)</strong></td>
                             <td class="price text-center">€ 410.00</td>
-                            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=24 analyses (10 ml reaction buffer)">Inquiry</a></td>
+                            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=AMPDA Assay kit - 24 analyses (10 ml reaction buffer)">Inquiry</a></td>
                         </tr>
                     </tbody>
                 </table>
