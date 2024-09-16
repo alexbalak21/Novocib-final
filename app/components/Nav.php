@@ -36,8 +36,8 @@ class Nav
                             <li><a href="/convenient-assay-kits/prpp-s-assay-kit">PRPP-S Assay Kit</a></li>
                             <li><a href="/convenient-assay-kits/ampda-assay-kit">AMPDA Assay Kit</a></li>
                             <li>
-                                <a href="/convenient-assay-kits/itp-ase-deficiency-assay-kit">
-                                    ITP-ase Deficiency Assay Kit
+                                <a href="/convenient-assay-kits/itp-ase-assay-kit">
+                                    ITP-ase Assay Kit
                                 </a>
                             </li>
                             <li>

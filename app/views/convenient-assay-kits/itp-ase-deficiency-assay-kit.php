@@ -1,5 +1,5 @@
 <?php
-$title = "ITP-ase Deficiency Assay Kit";
+$title = "ITP-ase Assay Kit";
 require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
@@ -45,13 +45,13 @@ This enzyme is encoded by the ITPA gene in mammals. Certain ITPA variants causin
     <tbody>
         <tr>
             <td>#K0709-05-2</td>
-            <td class="text-center"> <strong>24 analyses (8 samples in triplicate)</strong></td>
-            <td class="price text-center">€ 310.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=12 analyses (4 samples in triplicate)">Inquiry</a></td>
+            <td class="text-center"> <strong>For 10 mL of reaction mixture (half 96-well plate)</strong></td>
+            <td class="price text-center">€ 350.00</td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-06-2&product=ITPase Assay Kit - 10 mL of reaction mixture">Inquiry</a></td>
         </tr>
     </tbody>
 </table>
-<p class="text-muted text-center" > <em>* Pricing updated April 28th, 2014.</em><br></p>
+<p class="text-muted text-center" > <em>* Pricing updated September 16th, 2024.</em><br></p>
 <p class="text-center"><strong>Kit provided in stable lyophilized form and <span class="text-danger">shipped without dry ice</span> </strong></p>
 <p class="mt-4 mb-5 text-end">Download <a target="_blank" href="/app/documents/NovoCIB_K0709-06-2_User_Manual_140428.pdf"> <strong>ITPase assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
 </div>
@@ -91,7 +91,6 @@ This enzyme is encoded by the ITPA gene in mammals. Certain ITPA variants causin
        <li>Non radioactive</li>
        <li>Continuous</li>
        <li>No sample preparation required. Cell lysates are directly used for continuous monitoring of ITPA activity</li>
-
        </ul>
     </div>
     <div class="col-lg-3 text-center bg-light pt-3">
@@ -100,9 +99,12 @@ This enzyme is encoded by the ITPA gene in mammals. Certain ITPA variants causin
     <div class="col-lg-9 text-center bg-light">
         <p class="pt-3"> Simultaneous analysis of up to 12 samples in duplicate in 1h.</p>
     </div>
-
-<p class="my-5"><strong>Principle</strong><br>
-Inosine triphosphatase activity is measured as a rate of production of IMP with concomitant formation of NADH2 after one enzymatic reaction using highly active IMPDH. The formation of NADH2 is continuously monitored spectrophotometrically at 340nm.</p>
+     <div class="col-lg-3 text-center pt-4">
+        <h4 class="novo-blue">Principle</h4>
+    </div>
+    <div class="col-lg-9">
+      <p class="pt-3 pb-5">Inosine triphosphatase activity is measured as a rate of production of IMP with concomitant formation of NADH2 after one enzymatic reaction using highly active IMPDH. The formation of NADH2 is continuously monitored spectrophotometrically at 340nm.</p>
+    </div>
 
 <p class="text-center"><strong>Please, <a href="/inquiry">Contact us</a> for any questions.</strong></p>
 <p class="text-center mb-5"><strong>Or ask us by email: <a href="mailto:contact@novocib.com">contact@novocib.com</a></strong></p>
