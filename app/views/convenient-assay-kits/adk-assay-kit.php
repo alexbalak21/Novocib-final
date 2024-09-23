@@ -46,7 +46,7 @@ ob_start(); ?>
                             <td class="text-center"><strong>1 plate (96 assays)</strong></td>
                             <td class="price text-center">€ 420.00</td>
                             <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=Adk Assay Kit - 1 plate (96 assays)">
                                     Inquiry
                                 </a>
                             </td>
@@ -56,7 +56,7 @@ ob_start(); ?>
                             <td class="text-center"><strong>5 plates (5 x 96 assays)</strong></td>
                             <td class="price text-center">€ 1,680.00</td>
                             <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=Adk Assay Kit - 5 plates (5 x 96 assays)">
                                     Inquiry
                                 </a>
                             </td>
@@ -64,7 +64,7 @@ ob_start(); ?>
                     </tbody>
                 </table>
                 <p class="text-muted text-center">
-                    <em>Pricing updated December 25th, 2013.</em>
+                    <em>Pricing updated September 23th, 2024.</em>
                     <br />
                 </p>
                 <p class="text-center">
