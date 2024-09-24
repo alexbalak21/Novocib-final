@@ -54,6 +54,10 @@ This enzyme is encoded by the ITPA gene in mammals. Certain ITPA variants causin
 <p class="text-muted text-center" > <em>* Pricing updated September 16th, 2024.</em><br></p>
 <p class="text-center"><strong>Kit provided in stable lyophilized form and <span class="text-danger">shipped without dry ice</span> </strong></p>
 <p class="mt-4 mb-5 text-end">Download <a target="_blank" href="/app/documents/NovoCIB_K0709-06-2_User_Manual_140428.pdf"> <strong>ITPase assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
+
+<p class="text-center"><strong>Please, <a href="/inquiry">Contact us</a> for any questions.</strong></p>
+<p class="text-center mb-5"><strong>Or ask us by email: <a href="mailto:contact@novocib.com">contact@novocib.com</a></strong></p>
+
 </div>
 </div>
 
@@ -105,10 +109,17 @@ This enzyme is encoded by the ITPA gene in mammals. Certain ITPA variants causin
     <div class="col-lg-9">
       <p class="pt-3 pb-5">Inosine triphosphatase activity is measured as a rate of production of IMP with concomitant formation of NADH2 after one enzymatic reaction using highly active IMPDH. The formation of NADH2 is continuously monitored spectrophotometrically at 340nm.</p>
     </div>
-
-<p class="text-center"><strong>Please, <a href="/inquiry">Contact us</a> for any questions.</strong></p>
-<p class="text-center mb-5"><strong>Or ask us by email: <a href="mailto:contact@novocib.com">contact@novocib.com</a></strong></p>
 </div>
+<div class="container">
+        <div class="referances my-5">
+            <h5 class="ms-5 pt-4 pb-3 novo-blue">Scientific Articles citing PRECICE® HPRT Assay kit from <span class="text-secondary">NOVOCIB</span>:</h5>
+            <ol>
+                <li>
+                    <a target="_blank" href="https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1010332">Maf/ham1-like pyrophosphatases of non-canonical nucleotides are host-specific partners of viral RNA-dependent RNA polymerases</a>
+                </li>
+            </ol>
+        </div>
+    </div>
 </main>
 CONTENT;
 
