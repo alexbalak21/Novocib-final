@@ -1,7 +1,5 @@
-[30-Sep-2024 15:57:21 UTC] PHP Warning: require_once(config/db_config): Failed to open stream: No such file or directory in /home/cp68325/public_html/app/logic/connect_db.php on line 2
-[30-Sep-2024 15:57:21 UTC] PHP Fatal error: Uncaught Error: Failed opening required 'config/db_config' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/cp68325/public_html/app/logic/connect_db.php:2
+[30-Sep-2024 17:25:44 UTC] PHP Fatal error:  Uncaught Error: Cannot modify readonly property Role::$value in /home/cp68325/public_html/app/logic/db_operations.php:228
 Stack trace:
-#0 /home/cp68325/public_html/app/internal/admin/db_logic.php(5): require_once()
-#1 /home/cp68325/public_html/app/internal/admin/index.php(2): require_once('/home/cp68325/p...')
-#2 {main}
-thrown in /home/cp68325/public_html/app/logic/connect_db.php on line 2
+#0 /home/cp68325/public_html/app/internal/admin/test.php(6): create_user('admin', 'lbalakireva@nov...', 'Azerty123+', Object(Role))
+#1 {main}
+  thrown in /home/cp68325/public_html/app/logic/db_operations.php on line 228

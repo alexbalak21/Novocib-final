@@ -93,8 +93,6 @@ switch ($req_uri) {
         header("Location: /freshness-assay-kits/freshness-assay-kit");
         break;
 
-
-
         // CONVENIENT ASSAY KITS
     case "/Convenient_Assay_Kits.html":
     case "/convenient-assay-kits":
@@ -207,7 +205,6 @@ switch ($req_uri) {
         break;
 
         // SERVICES
-
     case "/services":
     case "/analytical-services":
         require_once "app/views/analytical-services/index.php";
@@ -261,4 +258,7 @@ switch ($req_uri) {
     case "/internal/admin":
         header("Location: /app/internal/admin/");
         break;
+
+    case "user/password_reset":
+        require_once $_SERVER['DOCUMENT_ROOT'] . "/app/views/password_reset.php";
 }

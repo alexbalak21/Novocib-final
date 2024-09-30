@@ -1,5 +1,5 @@
 <?php
-$config = require_once($_SERVER['DOCUMENT_ROOT'] . "/config/db_config");
+$config = require_once $_SERVER['DOCUMENT_ROOT'] . "/config/db_config";
 
 function connect_db(): PDO
 {
@@ -8,7 +8,6 @@ function connect_db(): PDO
     $username = $config['username'];
     $password = $config['password'];
     $database = $config['database'];
-
     try {
         $conn = new PDO("mysql:host=$host;dbname=$database", $username, $password);
         // set the PDO error mode to exception
