@@ -23,3 +23,8 @@ AddOutputFilterByType DEFLATE application/rss+xml
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
+
+<Files "db_config">
+    Order Allow,Deny
+    Deny from all
+</Files>
