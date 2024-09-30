@@ -23,10 +23,6 @@ $error_message = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
     $error_message = log_in();
 
-
-
-
-
 require_once "templates/head.php";
 ?>
 <main class="d-flex justify-content-center align-items-center" style="height: 99vh;">
