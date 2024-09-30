@@ -1,5 +1,5 @@
 <?php
-function create_session(string $username): void
+function create_session(string $username, string $role): void
 {
     if (isset($_SESSION)) session_destroy();
     ini_set("session.use_only_cookies", 1);
@@ -10,4 +10,5 @@ function create_session(string $username): void
     session_start();
     $_SESSION['last_regeneration'] = time();
     $_SESSION['username'] = $username;
+    $_SESSION['role'] = $role;
 }

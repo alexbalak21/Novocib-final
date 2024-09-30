@@ -22,7 +22,7 @@ class Nav
                             <a class="nav-link" href="search.php">Search</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="test.php">Test</a>
                         </li>
                     </ul>
                     <a href="login.php" class="btn btn-sm btn-outline-danger me-3">Disconnect</a>

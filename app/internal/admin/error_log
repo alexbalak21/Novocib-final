@@ -1,5 +1,0 @@
-[30-Sep-2024 17:25:44 UTC] PHP Fatal error:  Uncaught Error: Cannot modify readonly property Role::$value in /home/cp68325/public_html/app/logic/db_operations.php:228
-Stack trace:
-#0 /home/cp68325/public_html/app/internal/admin/test.php(6): create_user('admin', 'lbalakireva@nov...', 'Azerty123+', Object(Role))
-#1 {main}
-  thrown in /home/cp68325/public_html/app/logic/db_operations.php on line 228

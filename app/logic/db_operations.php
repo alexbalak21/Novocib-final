@@ -240,3 +240,37 @@ function create_user(string $username, string $email, string $password, string $
     $conn = null;
   }
 }
+
+function find_user(string $username): array
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn == null) return [];
+
+  // SQL query to search for the user by username
+  $query = "SELECT * FROM users WHERE username = :username LIMIT 1";
+
+  // Prepare the query
+  $stmt = $conn->prepare($query);
+
+  // Bind the username parameter
+  $stmt->bindParam(':username', $username);
+
+  try {
+    // Execute the query
+    $stmt->execute();
+
+    // Fetch the user data
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Return the user data if found, otherwise return an empty array
+    return $user ? $user : [];
+  } catch (PDOException $e) {
+    // Log or display error (for debugging, you can log it instead of echoing)
+    echo 'Error: ' . $e->getMessage();
+    return [];
+  } finally {
+    // Close the connection
+    $conn = null;
+  }
+}
