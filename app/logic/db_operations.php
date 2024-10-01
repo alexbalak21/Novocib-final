@@ -274,3 +274,54 @@ function find_user(string $username): array
     $conn = null;
   }
 }
+
+
+function modify_user_password(string $username, string $old_password, string $new_password): string
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn == null) return false;
+
+  // Step 1: Fetch the current hashed password from the database
+  $query = "SELECT password_hash FROM users WHERE username = :username";
+  $stmt = $conn->prepare($query);
+  $stmt->bindParam(':username', $username);
+
+  try {
+    // Execute the query
+    $stmt->execute();
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Check if user exists and fetch the password hash
+    if (!$user || !isset($user['password_hash'])) {
+      return "User not found.";
+    }
+
+    $stored_pass_hash = $user['password_hash'];
+
+    // Step 2: Verify the old password
+    if (!password_verify($old_password, $stored_pass_hash)) {
+      return "Old password is incorrect.";
+    }
+
+    // Step 3: Hash the new password
+    $new_pass_hash = password_hash($new_password, PASSWORD_DEFAULT);
+
+    // Step 4: Update the password in the database
+    $update_query = "UPDATE users SET password_hash = :new_pass_hash WHERE username = :username";
+    $update_stmt = $conn->prepare($update_query);
+    $update_stmt->bindParam(':new_pass_hash', $new_pass_hash);
+    $update_stmt->bindParam(':username', $username);
+
+    // Execute the update
+    $update_stmt->execute();
+
+    // Check if the password was updated
+    return $update_stmt->rowCount() > 0 ? "Password updated" : "Error updating the password";
+  } catch (PDOException $e) {
+    return 'Error: ' . $e->getMessage();
+  } finally {
+    // Close the connection
+    $conn = null;
+  }
+}

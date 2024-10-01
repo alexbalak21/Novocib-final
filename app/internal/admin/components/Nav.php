@@ -24,6 +24,9 @@ class Nav
                         <li class="nav-item">
                             <a class="nav-link" href="test.php">Test</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="user.php">User</a>
+                        </li>
                     </ul>
                     <a href="login.php" class="btn btn-sm btn-outline-danger me-3">Disconnect</a>
                 </div>

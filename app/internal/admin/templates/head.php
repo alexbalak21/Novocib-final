@@ -2,6 +2,7 @@
 // IF PAGE IS login.php don't request check_session
 if (!str_ends_with(parse_url($_SERVER["REQUEST_URI"])["path"], 'login.php')) require_once __DIR__ . "/../session/check_session.php";
 require_once __DIR__ . "/../components/autoLoader.php";
+if (isset($title)) $title = "Admin";
 global $user;
 ?>
 <!DOCTYPE html>
@@ -15,7 +16,7 @@ global $user;
     <script src="js/bootstrap.bundle.min.js" defer></script>
     <script src="js/script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="/app/favicon.ico">
-    <title>Admin</title>
+    <title><?= $title ?></title>
 </head>
 
 <body>

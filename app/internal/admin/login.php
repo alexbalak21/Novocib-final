@@ -12,7 +12,7 @@ function log_in(): string
     if (empty($user)) return "User not found";
     //CHECK PASSWORD
     if (password_verify($_POST['password'], $user['password_hash'])) {
-        create_session('admin', "admin");
+        create_session($user["username"], $user["email"], $user['role']);
         header("Location: index.php");
         return "loggedIn";
     } else return "Wrong password";
