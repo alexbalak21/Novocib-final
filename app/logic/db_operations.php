@@ -276,7 +276,7 @@ function find_user(string $username): array
 }
 
 
-function modify_user_password(string $username, string $old_password, string $new_password): string
+function update_user_password(string $username, string $old_password, string $new_password): string
 {
   // Connect to the database
   $conn = connect_db();
@@ -319,6 +319,68 @@ function modify_user_password(string $username, string $old_password, string $ne
     // Check if the password was updated
     return $update_stmt->rowCount() > 0 ? "Password updated" : "Error updating the password";
   } catch (PDOException $e) {
+    return 'Error: ' . $e->getMessage();
+  } finally {
+    // Close the connection
+    $conn = null;
+  }
+}
+
+function update_username(string $old_username, string $new_username): string
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn == null) return "DB error updating username";
+
+  // SQL query to update the username of the user
+  $query = "UPDATE users SET username = :new_username WHERE username = :old_username";
+
+  // Prepare the query
+  $stmt = $conn->prepare($query);
+
+  // Bind the parameters
+  $stmt->bindParam(':new_username', $new_username);
+  $stmt->bindParam(':old_username', $old_username);
+
+  try {
+    // Execute the query
+    $stmt->execute();
+
+    // Return true if the update was successful
+    return $stmt->rowCount() > 0 ? "username updated." : "failed to update username.";
+  } catch (PDOException $e) {
+    // Log or display error
+    return 'Error: ' . $e->getMessage();
+  } finally {
+    // Close the connection
+    $conn = null;
+  }
+}
+
+function update_email(string $username, string $new_email): string
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn == null) return "DB error updating email";
+
+  // SQL query to update the email of the user
+  $query = "UPDATE users SET email = :new_email WHERE username = :username";
+
+  // Prepare the query
+  $stmt = $conn->prepare($query);
+
+  // Bind the parameters
+  $stmt->bindParam(':new_email', $new_email);
+  $stmt->bindParam(':username', $username);
+
+  try {
+    // Execute the query
+    $stmt->execute();
+
+    // Return true if the update was successful
+    return $stmt->rowCount() > 0 ? "email updated" : "failed to update email";
+  } catch (PDOException $e) {
+    // Log or display error
     return 'Error: ' . $e->getMessage();
   } finally {
     // Close the connection

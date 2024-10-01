@@ -1,4 +1,4 @@
 <?php
+$arr = array("alex", "max", "lara");
 
-for ($i = 0; $i < 10; $i++)
-    echo bin2hex(random_bytes(32)) . "\n";
+echo join(",", $arr);
