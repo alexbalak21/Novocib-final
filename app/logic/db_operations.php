@@ -326,11 +326,11 @@ function update_user_password(string $username, string $old_password, string $ne
   }
 }
 
-function update_username(string $old_username, string $new_username): string
+function update_username(string $old_username, string $new_username): array
 {
   // Connect to the database
   $conn = connect_db();
-  if ($conn == null) return "DB error updating username";
+  if ($conn == null) return [false, "DB error updating username"];
 
   // SQL query to update the username of the user
   $query = "UPDATE users SET username = :new_username WHERE username = :old_username";
@@ -347,21 +347,21 @@ function update_username(string $old_username, string $new_username): string
     $stmt->execute();
 
     // Return true if the update was successful
-    return $stmt->rowCount() > 0 ? "username updated." : "failed to update username.";
+    return $stmt->rowCount() > 0 ? [true, "username updated."] : [false, "failed to update username."];
   } catch (PDOException $e) {
     // Log or display error
-    return 'Error: ' . $e->getMessage();
+    return [false, 'Error: ' . $e->getMessage()];
   } finally {
     // Close the connection
     $conn = null;
   }
 }
 
-function update_email(string $username, string $new_email): string
+function update_email(string $username, string $new_email): array
 {
   // Connect to the database
   $conn = connect_db();
-  if ($conn == null) return "DB error updating email";
+  if ($conn == null) return [false, "DB error updating email"];
 
   // SQL query to update the email of the user
   $query = "UPDATE users SET email = :new_email WHERE username = :username";
@@ -378,10 +378,10 @@ function update_email(string $username, string $new_email): string
     $stmt->execute();
 
     // Return true if the update was successful
-    return $stmt->rowCount() > 0 ? "email updated" : "failed to update email";
+    return $stmt->rowCount() > 0 ? [true, "email updated"] : [false, "failed to update email"];
   } catch (PDOException $e) {
     // Log or display error
-    return 'Error: ' . $e->getMessage();
+    return [false, 'Error: ' . $e->getMessage()];
   } finally {
     // Close the connection
     $conn = null;

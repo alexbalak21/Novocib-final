@@ -14,7 +14,7 @@
 
 <body>
   <main class="d-flex justify-content-center align-items-center" style="height: 93vh;">
-    <div class="text-center mt-4 col-lg-3 col-sm-8">
+    <div class="text-center mt-4">
       <h3 class="my-4">Modify User Profile</h3>
       <form class>
         <div class="mb-1">

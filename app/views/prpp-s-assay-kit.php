@@ -80,7 +80,7 @@ $content_title
             </p>
             <p class="mt-4 mb-5 text-end">
                 Download
-                <a target="_blank" href="/app/documents/NovoCIB K0709-04-02 User Manual.pdf">
+                <a target="_blank" href="/app/documents/NovoCIB K0709-04-02 User Manual 29092024.pdf">
                     <strong>Download PRPP-S User Manual</strong>
                     <i class="fa-regular fa-file-pdf"></i>
                 </a>

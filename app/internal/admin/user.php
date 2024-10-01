@@ -6,7 +6,7 @@ global $user;
 
 <?= Nav::gen() ?>
 <main class="d-flex justify-content-center align-items-center" style="height: 93vh;">
-    <div class="text-center mt-4 col-lg-4 col-sm-8">
+    <div class="text-center mt-4">
         <h3 class="my-4">Modify User Profile</h3>
         <form action="updateUser.php" method="POST">
             <div class="mb-1">
