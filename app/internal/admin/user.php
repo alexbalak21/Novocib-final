@@ -1,5 +1,5 @@
 <?php
-$title = "Modify User";
+$title = "Update User";
 require_once __DIR__ . "/templates/head.php";
 global $user;
 ?>

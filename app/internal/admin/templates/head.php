@@ -2,7 +2,7 @@
 // IF PAGE IS login.php don't request check_session
 if (!str_ends_with(parse_url($_SERVER["REQUEST_URI"])["path"], 'login.php')) require_once __DIR__ . "/../session/check_session.php";
 require_once __DIR__ . "/../components/autoLoader.php";
-if (isset($title)) $title = "Admin";
+if (!isset($title)) $title = "Admin";
 global $user;
 ?>
 <!DOCTYPE html>
