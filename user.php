@@ -35,7 +35,8 @@
         <div class="mb-3">
           <input placeholder="Confirm new password" type="password" class="form-control" id="new_password2">
         </div>
-        <button type="submit" class="btn btn-outline-success">Update</button>
+        <button disabled class="btn btn-outline-success">Update</button>
+        <button>Update</button>
       </form>
     </div>
   </main>

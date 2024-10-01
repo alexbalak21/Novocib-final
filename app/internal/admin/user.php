@@ -27,7 +27,7 @@ global $user;
             <div class="mb-3">
                 <input name="new_password2" placeholder="Confirm new password" type="password" class="form-control" id="new_password2">
             </div>
-            <button class="btn btn-success">Update</button>
+            <button class="btn btn-success" <?php if (!empty($_GET)) { ?> disabled <?php } ?>>Update</button>
         </form>
     </div>
 </main>

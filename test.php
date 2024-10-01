@@ -1,4 +1,5 @@
 <?php
-$arr = array("alex", "max", "lara");
+$updated = false;
+?>
 
-echo join(",", $arr);
+<button <?php if ($updated) { ?> disabled <?php } ?>>Update</button>

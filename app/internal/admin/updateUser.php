@@ -6,18 +6,21 @@ function updateUser(): void
 {
     global $user;
     extract($_POST);
-    $messages = array();
+    $messages = ["password" => "", "username" => "", "email" => ""];
     if (!empty($old_password) && !empty($new_password1) && $new_password1 === $new_password2)
-        array_push($messages, update_user_password($user['username'], $old_password, $new_password1));
-    if (!empty($username))
-        array_push($messages,  update_username($user['username'], $username));
-    if (!empty($email))
-        array_push($messages, update_email($user['username'], $email));
-    $message = join(",", $messages);
-    header("Location: user.php?message=$message");
+        $messages['password'] = update_user_password($_SESSION['username'], $old_password, $new_password1);
+    if (!empty($username) && $username !== $_SESSION['username']) {
+        [$usernameUpdated, $messages['username']] = update_username($user['username'], $username);
+        if ($usernameUpdated) $_SESSION['username'] = $username;
+    }
+    if (!empty($email) && $email !== $_SESSION['email'])
+        [$emailUpdated, $messages["email"]] = update_email($user['username'], $email);
+    if ($emailUpdated) $_SESSION['email'] = $email;
+
+    $getRequest = "" . $messages['username'] ? "username=" . $messages['username'] . '&' : "";
+    $getRequest .= $messages['email'] ? "email=" . $messages['email'] . '&' : "";
+    $getRequest .= $messages['password'] ? "password=" . $messages['password'] : "";
+    header("Location: user.php?$getRequest");
 }
-
-
-
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') updateUser();
