@@ -46,7 +46,6 @@ ob_start(); ?>
                 <!-- FETCHING PRODUCT FROM THE DATABASE -->
                 <?= Product::gen("PRPP-S Assay Kit") ?>
 
-
                 <p class="text-center">
                     <strong>
                         Kit is provided in stable lyophilized form and

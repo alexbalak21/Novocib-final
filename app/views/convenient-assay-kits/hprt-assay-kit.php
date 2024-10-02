@@ -44,31 +44,10 @@ ob_start(); ?>
             </div>
             <div class=" d-flex justify-content-center mt-4">
                 <div class="col-lg-10 col-12">
-                    <table class="table product mb-2">
-                        <thead>
-                            <tr>
-                                <th>
-                                    #REF
-                                </th>
-                                <th class="text-center">
-                                    SIZE
-                                </th>
-                                <th class="text-center">
-                                    PRICE
-                                </th>
-                                <th class="pe-5"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#K0709-01-2</td>
-                                <td class="text-center"> <strong>24 analyses (8 samples in triplicate) with HPRT enzyme**</strong></td>
-                                <td class="price text-center">€ 330.00</td>
-                                <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE® HPRT Assay Kit - 24 analyses - € 330.00">Inquiry</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class="text-muted text-center"> <em>* Pricing updated August 28th, 2015. ** As positive control.</em><br></p>
+
+                    <!-- FETCHING PRODUCT FROM THE DATABASE -->
+                    <?= Product::gen("HPRT Assay Kit") ?>
+
                     <p class="text-center"><strong>Kit is provided in stable lyophilized form and <span class="text-danger">shipped without dry ice</span> </strong></p>
                     <p class="mt-4 mb-4 text-end">Download <a target="_blank" href="/app/documents/NovoCIB K0709-01-2 24 samples User Manual 140225.pdf"> <strong>HPRT assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
                     <p class="mt-4 mb-5 text-center">Download <a target="_blank" href="/app/documents/Novocib-HPRT-MSDS.pdf"> <strong>Material Safety Data Sheet <i class="fa-solid fa-passport"></i></a> </strong>(MSDS)</p>
