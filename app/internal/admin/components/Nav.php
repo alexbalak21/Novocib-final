@@ -22,13 +22,19 @@ class Nav
                             <a class="nav-link" href="search.php">Search</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="user.php">User</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="products.php">Products</a>
                         </li>
                     </ul>
-                    <a href="login.php" class="btn btn-sm btn-outline-danger me-3">Disconnect</a>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin Menu
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="user.php">Modify User</a></li>
+                            <li><a class="dropdown-item" href="createProduct.php">Create Product</a></li>
+                            <li><a class="dropdown-item" href="login.php">Disconnect</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>

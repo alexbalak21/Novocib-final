@@ -465,3 +465,99 @@ function read_all_products(): array
     $conn = null;
   }
 }
+
+
+/**
+ * Fetches a product by its ID from the database.
+ *
+ * This function retrieves a single product from the `products` table by its `ID`.
+ *
+ * @param int $id The ID of the product to retrieve.
+ * @return array|null Returns an associative array with product details if found, or `null` if the product doesn't exist.
+ */
+function get_product_by_id(int $id): ?array
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn == null) {
+    return null;
+  }
+
+  // SQL query to fetch the product by ID
+  $query = "SELECT * FROM products WHERE ID = :id LIMIT 1";
+
+  // Prepare the query
+  $stmt = $conn->prepare($query);
+
+  // Bind the ID parameter
+  $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+
+  try {
+    // Execute the query
+    $stmt->execute();
+
+    // Fetch the product as an associative array
+    $product = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Return the product if found, or null if not found
+    return $product ? $product : null;
+  } catch (PDOException $e) {
+    // Log or display error
+    echo 'Error: ' . $e->getMessage();
+    return null;
+  } finally {
+    // Close the database connection
+    $conn = null;
+  }
+}
+
+
+
+/**
+ * Updates a product in the database.
+ *
+ * @param int $id Product ID to update.
+ * @param string $reference New reference of the product.
+ * @param string $title New title of the product.
+ * @param string|null $size New size of the product (optional).
+ * @param int|null $price New price of the product (optional).
+ * @param string|null $page_url New page URL of the product (optional).
+ *
+ * @return bool True on success, false on failure.
+ */
+function update_product(int $id, string $reference, string $title, ?string $size = null, ?int $price = null, ?string $page_url = null): bool
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn == null) {
+    return false;
+  }
+
+  // Build the SQL query to update the product
+  $query = "UPDATE products 
+              SET reference = :reference, title = :title, size = :size, price = :price, page_url = :page_url 
+              WHERE ID = :id";
+
+  // Prepare the query
+  $stmt = $conn->prepare($query);
+
+  // Bind parameters to the query
+  $stmt->bindParam(':id', $id);
+  $stmt->bindParam(':reference', $reference);
+  $stmt->bindParam(':title', $title);
+  $stmt->bindParam(':size', $size);
+  $stmt->bindParam(':price', $price);
+  $stmt->bindParam(':page_url', $page_url);
+
+  try {
+    // Execute the update query
+    $stmt->execute();
+    return $stmt->rowCount() > 0; // Return true if at least one row was updated
+  } catch (PDOException $e) {
+    echo 'Error: ' . $e->getMessage();
+    return false;
+  } finally {
+    // Close the connection
+    $conn = null;
+  }
+}
