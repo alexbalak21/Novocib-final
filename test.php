@@ -1,31 +1,6 @@
 <?php
-function lol()
-{
-    $params = func_get_args();
-    foreach ($params as $value) echo $value . "<br>";
-}
+$ref = "#K0709-04-2";
 
+$ref = substr($ref, 1);
 
-
-
-/**
- * Checks if any of the provided arguments are empty.
- *
- * This function takes a variable number of arguments and checks if any of them
- * are considered empty. The `empty()` function in PHP considers the following as empty:
- * - `null`
- * - `false`
- * - `0`, `0.0`, `"0"`
- * - Empty string `""`
- * - Empty array `[]`
- *
- * @return bool Returns `false` if any argument is empty, and `true` if all are non-empty.
- */
-function check_if_empty(): bool
-{
-    $params = func_get_args();
-    foreach ($params as $value)
-        if (empty($value)) return false;
-
-    return true;
-}
+echo $ref;

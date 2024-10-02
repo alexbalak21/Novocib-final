@@ -424,3 +424,44 @@ function add_product(string $reference, string $title, string $size = null, int 
     $conn = null;
   }
 }
+
+
+
+/**
+ * Fetches all products from the database.
+ *
+ * This function retrieves all records from the `products` table.
+ *
+ * @return array An array of products, where each product is an associative array containing
+ *               the fields `ID`, `reference`, `title`, `size`, `price`, `page_url`, and `updated_on`.
+ *               If no products are found, it returns an empty array.
+ */
+function read_all_products(): array
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn == null) {
+    return [];
+  }
+
+  // SQL query to fetch all products
+  $query = "SELECT * FROM products";
+
+  try {
+    // Prepare and execute the query
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+
+    // Fetch all products as an associative array
+    $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    return $products ? $products : [];
+  } catch (PDOException $e) {
+    // Log or display error
+    echo 'Error: ' . $e->getMessage();
+    return [];
+  } finally {
+    // Close the database connection
+    $conn = null;
+  }
+}

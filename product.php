@@ -13,9 +13,14 @@
 </head>
 
 <body>
-  <main class="container mt-5">
+  <main class="container mt-3">
     <h1 class="text-center">Add new Product</h1>
-    <form>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <p class="text-center">Product Added successfully</p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <form action="addProduct.php" method="POST">
       <div class="row mt-5 d-flex justify-content-center">
         <div class="mb-3 col-12">
           <div class="col-8 mx-auto">
@@ -25,23 +30,24 @@
         </div>
         <div class="mb-3 col-6 col-lg-2">
           <label for="ref" class="form-label">Ref</label>
-          <input type="text" class="form-control" id="ref">
+          <input name="ref" type="text" class="form-control" id="ref">
         </div>
         <div class="mb-3 col-8 col-lg-5">
           <label for="size" class="form-label">Size</label>
-          <input type="text" class="form-control" id="size">
+          <input name="size" type="text" class="form-control" id="size">
         </div>
         <div class="mb-3 col-lg-2 col-6">
           <label for="price" class="form-label">Price</label>
-          <input type="number" class="form-control" id="price">
+          <input name="price" type="number" class="form-control" id="price">
         </div>
         <div class="col-12 mb-3">
           <div class="col-8 mx-auto">
             <label for="url" class="form-label">Page Url</label>
-            <input type="text" class="form-control" id="url">
+            <input name="url" type="text" class="form-control" id="url">
           </div>
         </div>
-        <div class="text-center"><button type="submit" class="btn btn-primary">Submit</button></div>
+        <div class="text-center"><button class="btn btn-success" <?php if (isset($GET['product']) && $_GET['product'] === "added") { ?> disabled <?php } ?>>Add</button></div>
+
       </div>
     </form>
   </main>

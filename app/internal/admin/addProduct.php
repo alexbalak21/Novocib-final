@@ -28,8 +28,12 @@ function addProduct(): void
 {
     extract($_POST);
     if (!check_if_empty($title, $ref, $size, $price, $url)) return;
+    if (str_starts_with($ref, "#")) $ref = substr($ref, 1);
+    $url = str_replace("https://www.novocib.com/", "", $url);
+    if (str_starts_with($url, "/")) $url = substr($url, 1);
     $done = add_product($ref, $title, $size, $price, $url);
-    if ($done) header("Location: products.php?product=added");
+    if ($done) header("Location: createProduct.php?product=added");
+    else header("Location: createProduct.php?error=failed to add product");
 }
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") addProduct();

@@ -1,4 +1,5 @@
 <?php
+$tile = "Search Items";
 require_once "templates/head.php";
 $page = "search";
 
@@ -89,7 +90,6 @@ $page = "search";
                     </tr>
                 <?php endforeach ?>
             </tbody>
-
         </table>
     </div>
 </main>
