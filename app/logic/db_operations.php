@@ -387,3 +387,40 @@ function update_email(string $username, string $new_email): array
     $conn = null;
   }
 }
+
+
+function add_product(string $reference, string $title, string $size = null, int $price = null, string $page_url = null): bool
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn == null) return false;
+
+  // SQL query to insert a product into the products table
+  $query = "INSERT INTO products (reference, title, size, price, page_url) 
+            VALUES (:reference, :title, :size, :price, :page_url)";
+
+  // Prepare the query
+  $stmt = $conn->prepare($query);
+
+  // Bind the parameters
+  $stmt->bindParam(':reference', $reference);
+  $stmt->bindParam(':title', $title);
+  $stmt->bindParam(':size', $size);
+  $stmt->bindParam(':price', $price);
+  $stmt->bindParam(':page_url', $page_url);
+
+  try {
+    // Execute the query
+    $stmt->execute();
+
+    // Return true if the product was added successfully
+    return true;
+  } catch (PDOException $e) {
+    // Log or display error
+    echo 'Error: ' . $e->getMessage();
+    return false;
+  } finally {
+    // Close the connection
+    $conn = null;
+  }
+}

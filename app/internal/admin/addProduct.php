@@ -1,12 +1,6 @@
 <?php
-function lol()
-{
-    $params = func_get_args();
-    foreach ($params as $value) echo $value . "<br>";
-}
-
-
-
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/internal/admin/session/check_session.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
 
 /**
  * Checks if any of the provided arguments are empty.
@@ -29,3 +23,13 @@ function check_if_empty(): bool
 
     return true;
 }
+
+function addProduct(): void
+{
+    extract($_POST);
+    if (!check_if_empty($title, $ref, $size, $price, $url)) return;
+    $done = add_product($ref, $title, $size, $price, $url);
+    if ($done) header("Location: products.php?product=added");
+}
+
+if ($_SERVER['REQUEST_METHOD'] === "POST") addProduct();
