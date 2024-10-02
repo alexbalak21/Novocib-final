@@ -16,7 +16,7 @@ function get_update_form(): void
                 <input name="id" type="number" value="<?= $id ?>">
             </div>
             <div class="row mt-5 d-flex justify-content-center">
-                <div id="title_form" class="mb-3 col-12">
+                <div id="title_form" class="mb-3 col-12 d-none">
                     <div class="col-8 mx-auto">
                         <label for="title" class="form-label">Title</label>
                         <input name="title" value="<?= $product['title'] ?>" type="text" class="form-control" id="title">

@@ -104,7 +104,7 @@ switch ($req_uri) {
         break;
 
     case "/convenient-assay-kits/prpp-s-assay-kit":
-        require_once "app/views/prpp-s-assay-kit.php";
+        require_once "app/views/convenient-assay-kits/prpp-s-assay-kit.php";
         break;
 
     case "/PRPPS_Assay_Kit.html":
@@ -193,7 +193,7 @@ switch ($req_uri) {
         break;
 
     case "/contact-us":
-        require_once "app/views/contact-us.html";
+        require_once "app/views/contact-us.php";
         break;
 
     case "/Yeast_Extract_Nucleotide_Analysis.html":

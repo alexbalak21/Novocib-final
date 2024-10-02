@@ -561,3 +561,37 @@ function update_product(int $id, string $reference, string $title, ?string $size
     $conn = null;
   }
 }
+
+function get_product_by_title(string $title): array
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn == null) {
+    return [];
+  }
+
+  // Prepare the SQL query to find a product by its title
+  $query = "SELECT * FROM products WHERE title = :title LIMIT 1";
+  $stmt = $conn->prepare($query);
+
+  // Bind the title parameter
+  $stmt->bindParam(':title', $title);
+
+  try {
+    // Execute the query
+    $stmt->execute();
+
+    // Fetch the product data
+    $product = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Return the product data if found, otherwise return an empty array
+    return $product ? $product : [];
+  } catch (PDOException $e) {
+    // Log or display the error for debugging
+    echo 'Error: ' . $e->getMessage();
+    return [];
+  } finally {
+    // Close the connection
+    $conn = null;
+  }
+}

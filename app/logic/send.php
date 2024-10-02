@@ -25,7 +25,7 @@ function serve()
     global $to;
     $name = $_POST['name'];
     $visitor_email = $_POST['mail'];
-    $need = $_POST['need'];
+    $need = $_POST['need'] . isset($_POST['volume']) && !empty($_POST['volume']) ? " - volume : " . $_POST['volume'] : "";
     $message = $_POST['message'];
     $sent = send_mail($to, $name, $visitor_email, $need, $message);
     if ($sent) {
