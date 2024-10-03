@@ -569,7 +569,6 @@ function get_product_by_title(string $title): array
   if ($conn == null) {
     return [];
   }
-
   // Prepare the SQL query to find a product by its title
   $query = "SELECT * FROM products WHERE title = :title LIMIT 1";
   $stmt = $conn->prepare($query);
@@ -586,6 +585,40 @@ function get_product_by_title(string $title): array
 
     // Return the product data if found, otherwise return an empty array
     return $product ? $product : [];
+  } catch (PDOException $e) {
+    // Log or display the error for debugging
+    echo 'Error: ' . $e->getMessage();
+    return [];
+  } finally {
+    // Close the connection
+    $conn = null;
+  }
+}
+
+function find_all_products_by_title(string $title): array
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn == null) {
+    return [];
+  }
+
+  // Prepare the SQL query to find all products by their title (case-insensitive)
+  $query = "SELECT * FROM products WHERE LOWER(title) = LOWER(:title)";
+  $stmt = $conn->prepare($query);
+
+  // Bind the title parameter
+  $stmt->bindParam(':title', $title);
+
+  try {
+    // Execute the query
+    $stmt->execute();
+
+    // Fetch all matching products
+    $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    // Return the list of products, or an empty array if none are found
+    return $products ? $products : [];
   } catch (PDOException $e) {
     // Log or display the error for debugging
     echo 'Error: ' . $e->getMessage();

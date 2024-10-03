@@ -1,1 +1,0 @@
-<input readonly type="text" value="example">
