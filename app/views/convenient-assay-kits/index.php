@@ -1,28 +1,23 @@
 <?php
 $title = "Convenient Assay Kits";
 require_once "app/templates/base.php";
-
-
 $novoblue = "#4167b1";
-
-
-
 
 addContent(Banner::gen());
 $content_title = UnderlinedTitle::get("Biochemical Assay Kits for Life Science", "novoblue", "right");
 
-$page_content = <<<CONTENT
+ob_start(); ?>
 <section class="container mt-5">
-$content_title
-<p><strong class="novo-blue">NOVOCIB</strong> develops original biochemical assay kits based on active nucleotide metabolism enzymes. This portfolio of assays represents a unique range of powerful tools for Drug Discovery and research in the field of nucleoside and nucleotide metabolism.</p>
+    <?= $content_title ?>
+    <p><strong class="novo-blue">NOVOCIB</strong> develops original biochemical assay kits based on active nucleotide metabolism enzymes. This portfolio of assays represents a unique range of powerful tools for Drug Discovery and research in the field of nucleoside and nucleotide metabolism.</p>
 </section>
 <section class="bg-light my-4">
     <div class="container">
         <div class="row justify-content-center py-2">
             <div class="col-lg-5 me-4">
-                
+
                 <div class="kits row bg-body mt-1 mb-4">
-                <h2 class="col-12 text-center">Purine Metabolism Disorders Kits</h2>
+                    <h2 class="col-12 text-center">Purine Metabolism Disorders Kits</h2>
                     <div class="col-6">
                         <div class="kit">
                             <h5 class="text-center"><a href="/convenient-assay-kits/hprt-assay-kit">HPRT Assay Kit</a></h5>
@@ -48,7 +43,7 @@ $content_title
             </div>
             <div class="col-lg-5">
                 <div class="kits row bg-body mt-1 mb-5">
-                <h2 class="col-12 text-center">Nucleoside Kinase Assay Kits</h2>
+                    <h2 class="col-12 text-center">Nucleoside Kinase Assay Kits</h2>
                     <div class="col-6 my-3">
                         <div class="kit">
                             <h5 class="text-center"><a href="/convenient-assay-kits/adk-phosphorylation-assay-kit">ADK Phosphorylation Assay Kit</a></h5>
@@ -136,10 +131,8 @@ $content_title
         </div>
     </div>
 </section>
+<?php $page_content = ob_get_clean();
 
-
-
-CONTENT;
 
 addContent($page_content);
 render();
