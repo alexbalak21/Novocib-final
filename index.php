@@ -116,7 +116,7 @@ switch ($req_uri) {
         break;
 
     case "/convenient-assay-kits/ampda-assay-kit":
-        require_once "app/views/ampda-assay-kit.php";
+        require_once "app/views/convenient-assay-kits/ampda-assay-kit.php";
         break;
 
     case "/convenient-assay-kits/itp-ase-deficiency-assay-kit.php":

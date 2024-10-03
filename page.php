@@ -1,19 +1,5 @@
-<?php
-$title = "Deoxycytidine Kinase Phosphorylation Assay Kit";
-require_once "app/templates/base.php";
-
-$novoblue = "#4167b1";
-
-
-
-
-addContent(Banner::gen());
-$content_title = UnderlinedTitle::get("Anticancer nucleosides phosphorylation", "novoblue", "right");
-
-
-ob_start(); ?>
 <section class="container mt-5">
-    <?= $content_title ?>
+    $content_title
     <div class="row">
         <div class="col-lg-6">
             <p>
@@ -37,9 +23,32 @@ ob_start(); ?>
         </div>
         <div class="d-flex justify-content-center mt-4">
             <div class="col-lg-10 col-12">
-
-                <?= Product::gen("dCK Phosphorylation Assay Kit") ?>
-
+                <table class="table product mb-2">
+                    <thead>
+                        <tr>
+                            <th>#REF</th>
+                            <th class="text-center">SIZE</th>
+                            <th class="text-center">PRICE</th>
+                            <th class="pe-5"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#K0307-01</td>
+                            <td class="text-center"><strong>1 plate (96 assays)</strong></td>
+                            <td class="price text-center">€ 420.00</td>
+                            <td class="text-end pe-3">
+                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                                    Inquiry
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-muted text-center">
+                    <em>Pricing updated December 25th, 2013.</em>
+                    <br />
+                </p>
                 <p class="text-center">
                     <strong>
                         Kit is provided in stable lyophilized form and
@@ -59,6 +68,7 @@ ob_start(); ?>
                 </p>
             </div>
         </div>
+
         <div class="col-12">
             <h4 class="novo-blue">Validated with anticancer nucleoside analogues</h4>
             <p class="ms-5"><i class="novo-blue fa-solid fa-arrow-right"></i> Such as gemcitabine, cladribine, aracytidine, efficiently phosphorylated by tumor cells and natural pyrimidine and purine nucleosides.</p>
@@ -90,9 +100,12 @@ ob_start(); ?>
                                 <td>1,2mM</td>
                             </tr>
                         </tbody>
+
                     </table>
                 </div>
             </div>
+
+
         </div>
 
     </div>
@@ -124,32 +137,5 @@ ob_start(); ?>
             </ol>
         </div>
     </div>
+
 </section>
-<?php $page_content = ob_get_clean();
-
-
-addContent($page_content);
-render();
-
-
-?>
-
-<style>
-    .nucleoside-analogues {
-        border: 1px solid silver;
-
-        tr {
-            border: 1px solid silver;
-        }
-
-        th {
-            padding: 12px 0;
-        }
-
-        th,
-        td {
-            text-align: center;
-
-        }
-    }
-</style>

@@ -39,19 +39,20 @@ class Banner
                 $path_links .= "<a href='$global_path'>$name</a>";
             }
         }
-        return <<<Banner
-        <div class="banner" style="background-image: url($img_url); height: 500px">
-    <div class="overlay">
-        <div class="caption">
-            <h1 class="title display-4">$title</h1>
+
+        ob_start(); ?>
+        <div class="banner" style="background-image: url(<?= $img_url ?>); height: 500px">
+            <div class="overlay">
+                <div class="caption w-100">
+                    <h1 class="title display-4"><?= $title ?></h1>
+                </div>
+                <div class="links">
+                    <p class="path lead">
+                        <?= $path_links ?>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="links">
-            <p class="path lead">
-                $path_links
-            </p>
-        </div>
-    </div>
-</div>
-Banner;
+<?php return ob_get_clean();
     }
 }

@@ -29,37 +29,9 @@ ob_start(); ?>
         </div>
         <div class=" d-flex justify-content-center mt-3">
             <div class="col-lg-10 col-12">
-                <table class="table product mb-2">
-                    <thead>
-                        <tr>
-                            <th>
-                                #REF
-                            </th>
-                            <th class="text-center">
-                                SIZE
-                            </th>
-                            <th class="text-center">
-                                PRICE
-                            </th>
-                            <th class="pe-5"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#K0709-05-1</td>
-                            <td class="text-center"> <strong>12 analyses (5 ml reaction buffer)</strong></td>
-                            <td class="price text-center">€ 210.00</td>
-                            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-1&product=AMPDA Assay kit - 12 analyses (5 ml reaction buffer)">Inquiry</a></td>
-                        </tr>
-                        <tr>
-                            <td>#K0709-05-2</td>
-                            <td class="text-center"> <strong>24 analyses (10 ml reaction buffer)</strong></td>
-                            <td class="price text-center">€ 410.00</td>
-                            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=AMPDA Assay kit - 24 analyses (10 ml reaction buffer)">Inquiry</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="text-muted text-center"> <em>* Pricing updated July 22, 2024.</em><br></p>
+
+                <?= Products::gen("AMP Deaminase Assay Kit") ?>
+
                 <p class="text-center"><strong>Kit provided in stable lyophilized form and <span class="text-danger">shipped without dry ice</span> </strong></p>
                 <p class="mt-4 mb-5 text-end">Download <a target="_blank" href="/app/documents/NovoCIB K0709-05-01 User Manual 300823.pdf"> <strong>AMPD assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
             </div>

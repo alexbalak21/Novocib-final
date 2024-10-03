@@ -31,42 +31,9 @@ ob_start(); ?>
         </div>
         <div class="d-flex justify-content-center mt-4">
             <div class="col-lg-10 col-12">
-                <table class="table product mb-2">
-                    <thead>
-                        <tr>
-                            <th>#REF</th>
-                            <th class="text-center">SIZE</th>
-                            <th class="text-center">PRICE</th>
-                            <th class="pe-5"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#K0507-01.01</td>
-                            <td class="text-center"><strong>1 plate (96 assays)</strong></td>
-                            <td class="price text-center">€ 420.00</td>
-                            <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=Adk Assay Kit - 1 plate (96 assays)">
-                                    Inquiry
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#K0507-01.05</td>
-                            <td class="text-center"><strong>5 plates (5 x 96 assays)</strong></td>
-                            <td class="price text-center">€ 1,680.00</td>
-                            <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=Adk Assay Kit - 5 plates (5 x 96 assays)">
-                                    Inquiry
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="text-muted text-center">
-                    <em>Pricing updated September 23th, 2024.</em>
-                    <br />
-                </p>
+
+                <?= Products::gen("Adk Assay Kit") ?>
+
                 <p class="text-center">
                     <strong>
                         Kit is provided in stable lyophilized form and

@@ -41,7 +41,7 @@ ob_start(); ?>
                     <input name="url" type="text" class="form-control" id="url">
                 </div>
             </div>
-            <div class="text-center"><button class="btn btn-success me-3" <?php if (isset($_GET['product']) && $_GET['product'] == "added") { ?> disabled <?php } ?>>Add</button> <a class="btn btn-outline-primary" href="createProduct.php">Reset</a></div>
+            <div class="text-center"><button class="btn btn-success me-3">Add</button> <a class="btn btn-outline-primary" href="createProduct.php">Reset</a></div>
         </div>
     </form>
 </section>

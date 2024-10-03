@@ -29,32 +29,9 @@ ob_start(); ?>
         </div>
         <div class="d-flex justify-content-center mt-4">
             <div class="col-lg-10 col-12">
-                <table class="table product mb-2">
-                    <thead>
-                        <tr>
-                            <th>#REF</th>
-                            <th class="text-center">SIZE</th>
-                            <th class="text-center">PRICE</th>
-                            <th class="pe-5"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#K0507-02</td>
-                            <td class="text-center"><strong>1 plate (96 assays)</strong></td>
-                            <td class="price text-center">€ 420.00</td>
-                            <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
-                                    Inquiry
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="text-muted text-center">
-                    <em>Pricing updated December 25th, 2013.</em>
-                    <br />
-                </p>
+
+                <?= Product::gen("ADK Phosphorylation Assay Kit") ?>
+
                 <p class="text-center">
                     <strong>
                         Kit is provided in stable lyophilized form and

@@ -31,7 +31,6 @@ class Product
             <em>Updated on <?= date('d F Y', strtotime($product['updated_on'])) ?>.</em>
             <br />
         </p>
-
 <?php return ob_get_clean();
     }
 } ?>
