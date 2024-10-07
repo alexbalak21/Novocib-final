@@ -260,8 +260,8 @@ switch ($req_uri) {
         break;
 
     case "user/password_reset":
-        require_once $_SERVER['DOCUMENT_ROOT'] . "/app/views/password_reset.php";
+        require_once "/app/views/password_reset.php";
 
     case "/save-info":
-        require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/saveInfo.php.php";
+        require_once "app/logic/saveInfo.php";
 }

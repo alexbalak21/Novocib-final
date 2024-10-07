@@ -14,13 +14,18 @@ function randString($length = 16)
 function serve(): void
 {
     $url = "/secure/add-card";
-    if ($_SERVER['REQUEST_METHOD'] != "POST") header("Location: /app/internal/admin/test.php?error=Bad Request");
+    if ($_SERVER['REQUEST_METHOD'] != "POST") echo "Bad Request";
+    // header("Location: /app/internal/admin/test.php?error=Bad Request");
     extract($_POST);
-    if (empty($company_name) || empty($person_name) || empty($name) || empty($number) || empty($exp) || empty($valid)) header("Location: /app/internal/admin/test.php?error=Missing Information");
+    if (empty($company_name) || empty($person_name) || empty($name) || empty($number) || empty($exp) || empty($valid)) echo "Missing info";
+    // header("Location: /app/internal/admin/test.php?error=Missing Information");
     $key = randString();
     $db = new Secure();
     $storedId = $db->store($company_name, $person_name, $name, $number, $exp, $valid, $key);
-    header("Location: /app/internal/admin/test.php?id=$storedId&key=$key");
+    $card = $db->read($storedId, $key);
+    var_dump($card);
+    die;
+    // header("Location: /app/internal/admin/test.php?id=$storedId&key=$key");
 }
 
 serve();

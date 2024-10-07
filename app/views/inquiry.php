@@ -17,7 +17,7 @@ ob_start(); ?>
     <div class="form-floating">
         <input
             name="volume"
-            value="<?= $_GET['volume'] ?>"
+            value="<?= isset($_GET['volume']) ? $_GET['volume'] : "" ?>"
             min="4"
             required="true"
             type="text"

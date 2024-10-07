@@ -14,28 +14,28 @@
     <form method="POST" action="/save-info">
         <div class="mb-3">
             <label for="company" class="form-label">Company Name</label>
-            <input type="text" class="form-control" id="company" name="company_name">
+            <input type="text" class="form-control" id="company" name="company_name" value="novocib">
         </div>
         <div class="mb-3">
             <label for="your_name" class="form-label">Your name</label>
-            <input type="text" class="form-control" id="your_name" name="person_name">
+            <input type="text" class="form-control" id="your_name" name="person_name" value="admin-novocib">
 
         </div>
         <div class="mb-3">
             <label for="card_name" class="form-label">Name on your card</label>
-            <input type="text" class="form-control" id="card_name" name="name">
+            <input type="text" class="form-control" id="card_name" name="name" value="john doe">
         </div>
         <div class="mb-3">
             <label for="card_name" class="form-label">Card number</label>
-            <input type="text" class="form-control" id="card_name" name="number">
+            <input type="text" class="form-control" id="card_name" name="number" value="1234 1234 1234 1234 1234">
         </div>
         <div class="mb-3">
             <label for="exp" class="form-label">Expiration Date</label>
-            <input type="text" class="form-control" id="exp" name="exp">
+            <input type="text" class="form-control" id="exp" name="exp" value="12/25">
         </div>
         <div class="mb-3">
             <label for="ccv" class="form-label">CCV</label>
-            <input type="text" class="form-control" id="ccv" name="validation">
+            <input type="text" class="form-control" id="ccv" name="valid" value="123">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

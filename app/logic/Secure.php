@@ -62,7 +62,7 @@ class Secure
             return;
         }
         // Prepare the SQL query to select the data by ID
-        $stmt = $pdo->prepare("SELECT salt, v2r3ep32, zb5410x8, me9n2rvs, lbdafa6f FROM u_info WHERE id = :id");
+        $stmt = $pdo->prepare("SELECT company_name, person_name, salt,  v2r3ep32, zb5410x8, me9n2rvs, lbdafa6f FROM u_info WHERE id = :id");
         $stmt->execute([':id' => $id]);
 
         // Fetch the data from the query
@@ -74,13 +74,20 @@ class Secure
 
         // Extract the salt and encrypted data from the row
         $salt = $row['salt'];
-        $encrypted_data1 = hex2bin($row['v2r3ep32']);
-        $encrypted_data2 = hex2bin($row['zb5410x8']);
-        $encrypted_data3 = hex2bin($row['me9n2rvs']);
-        $encrypted_data4 = hex2bin($row['lbdafa6f']);
+        $encrypted_data1 = $row['v2r3ep32']; // Already in binary
+        $encrypted_data2 = $row['zb5410x8']; // Already in binary
+        $encrypted_data3 = $row['me9n2rvs']; // Already in binary
+        $encrypted_data4 = $row['lbdafa6f']; // Already in binary
 
         // Derive the 32-byte key using PBKDF2 with the same salt and passphrase
-        $key = hash_pbkdf2('sha256', $passphrase, $salt, 10000, 32, true); // Derived key in binary
+        $key = hash_pbkdf2(
+            'sha256',
+            $passphrase,
+            $salt,
+            10000,
+            32,
+            true
+        ); // Derived key in binary
 
         // Separate the IV and encrypted data (IV is the first 16 bytes)
         $iv1 = substr($encrypted_data1, 0, 16);
@@ -100,6 +107,8 @@ class Secure
         $decrypted_data2 = openssl_decrypt($encrypted_data2, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv2);
         $decrypted_data3 = openssl_decrypt($encrypted_data3, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv3);
         $decrypted_data4 = openssl_decrypt($encrypted_data4, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv4);
+
+
         $pdo = null;
         return ["company_name" => $row["company_name"], "person_name" => $row["person_name"], "c_name" => $decrypted_data1, "c_number" => $decrypted_data2, "c_ex" => $decrypted_data3, "c_cv" => $decrypted_data4];
     }
