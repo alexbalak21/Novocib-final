@@ -30,4 +30,26 @@ WHERE
 
 
 
-CREATE TABLE c_info
+CREATE TABLE u_info (
+    id VARCHAR(20),
+    company_name VARCHAR(255),
+    person_name VARCHAR(255),
+    salt VARBINARY(16),
+    v2r3ep32 BLOB,
+    me9n2rvs BLOB,
+    lbdafa6f BLOB,
+    zb5410x8 BLOB
+    
+);
+
+
+
+
+
+
+
+
+
+
+
+
