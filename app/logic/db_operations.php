@@ -88,8 +88,6 @@ function execute_query($sql)
 }
 
 
-
-
 function create_entry($url = "",  $title = "", $content = "", $keywords = "")
 {
   if (!check_id()) return false;
@@ -627,4 +625,14 @@ function find_all_products_by_title(string $title): array
     // Close the connection
     $conn = null;
   }
+}
+
+
+function read_encrypted()
+{
+  $conn = connect_db();
+  $select_all = "SELECT id, AES_DECRYPT(encrypted_data, UNHEX(SHA2('My secret passphrase', 512))) AS decrypted_text FROM t WHERE id = 1";
+  $stmt = $conn->query($select_all);
+  $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  return $res;
 }
