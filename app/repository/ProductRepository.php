@@ -107,6 +107,8 @@ class ProductRepository
     }
 }
 
+//TESTING REPO 
+
 $newProduct = new Product(null, '#R123X', "Test Product", "10mL", 10.00, "example.url", null);
 
 $productRepository = new ProductRepository();
