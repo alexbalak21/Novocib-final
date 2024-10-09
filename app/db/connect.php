@@ -1,0 +1,22 @@
+<?php
+
+
+function connect_db(): PDO
+{
+    $config = require_once $_SERVER['DOCUMENT_ROOT'] . "/config/db_config";
+    $host = $config['host'];
+    $username = $config['username'];
+    $password = $config['password'];
+    $database = $config['database'];
+    try {
+        $conn = new PDO("mysql:host=$host;dbname=$database", $username, $password);
+        // set the PDO error mode to exception
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $conn;
+    } catch (PDOException $e) {
+        echo '$sql' . "<br>" . $e->getMessage();
+    }
+    return null;
+}
+
+return connect_db();

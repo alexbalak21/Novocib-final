@@ -1,15 +1,10 @@
 <?php
 class Customer
 {
-    public int $id;
-    private string $first_name;
-    private string $last_name;
-    private string $email;
-    //COMPANY
-    private string $company;
-    private string $address;
-    private string $country;
-    private string $state;
-    private string $zip;
-    private string $uuid;
+    public function __construct(
+        public readonly int $customer_id,
+        public readonly string $first_name,
+        public readonly string $last_name,
+        public readonly string $email,
+    ) {}
 }
