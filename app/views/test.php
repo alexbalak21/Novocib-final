@@ -186,10 +186,13 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
                 <hr class="my-4">
                 <i style="font-size: 2rem;" class="fa-regular fa-credit-card ms-2"></i>
 
+
             </div>
             <div class="my-5"><button type="submit" class="btn btn-primary">Send message <i class="fa-regular fa-paper-plane"></i></button></div>
         </form>
     </div>
+
+
 
 
 </main>
