@@ -100,7 +100,7 @@ class ProductRepository
             $data['reference'],
             $data['title'],
             $data['size'],
-            (float)$data['price'],
+            (int)$data['price'],
             $data['page_url'],
             $data['updated_on']
         );
@@ -109,14 +109,16 @@ class ProductRepository
 
 //TESTING REPO 
 
-$newProduct = new Product(null, '#R123X', "Test Product", "10mL", 10.00, "example.url", null);
+$newProduct = new Product(null, '#R123X', "Test Product", "10mL", 10, "example.url", null);
 
 $productRepository = new ProductRepository();
 
+$productRepository->addProduct($newProduct);
 
-$res = $productRepository->getAllProducts();
+
+$products = $productRepository->getAllProducts();
 
 echo "<pre>";
-var_dump($res);
+var_dump($products);
 echo "</pre>";
 die;
