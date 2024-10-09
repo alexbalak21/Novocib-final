@@ -1,11 +1,16 @@
-<?php
-$title = "Credit Card Info";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
-?>
+<!DOCTYPE html>
+<html lang="en">
 
-<?= Banner::gen("/app/static/img/payment.jpg")  ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-<main class="container">
+<body>
+
+
+
     <div class="card mb-4">
         <div class="card-header py-3">
             <h5 class="mb-0">Biling details</h5>
@@ -14,8 +19,28 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
             <form>
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row mb-4">
-
-
+                    <div class="col">
+                        <div data-mdb-input-init="" class="form-outline" data-mdb-input-initialized="true">
+                            <input type="text" id="form6Example1" class="form-control">
+                            <label class="form-label" for="form6Example1" style="margin-left: 0px;">First name</label>
+                            <div class="form-notch">
+                                <div class="form-notch-leading" style="width: 9px;"></div>
+                                <div class="form-notch-middle" style="width: 68.8px;"></div>
+                                <div class="form-notch-trailing"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-mdb-input-init="" class="form-outline" data-mdb-input-initialized="true">
+                            <input type="text" id="form6Example2" class="form-control">
+                            <label class="form-label" for="form6Example2" style="margin-left: 0px;">Last name</label>
+                            <div class="form-notch">
+                                <div class="form-notch-leading" style="width: 9px;"></div>
+                                <div class="form-notch-middle" style="width: 68px;"></div>
+                                <div class="form-notch-trailing"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Text input -->
@@ -160,48 +185,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
         </div>
     </div>
 
-    <hr class="my-5">
-
-
-    <div class="mt-5 card w-100 px-4">
-        <h2 class="underlinedTitl pt-4 text-center"><span class="underlined novoblue">Payment Information</span></h2>
-
-        <form id="contact-page-form" action="/send" method="POST" name="contact-page-form">
-            <div class="row g-3 mt-4">
-                <i style="font-size: 2rem;" class="fa-regular fa-user ms-2"></i>
-
-                <?= InputArea::gen(name: "first name", required: true) ?>
-
-                <?= InputArea::gen(name: "last name", required: true) ?>
-
-                <?= InputArea::gen(name: "e-mail", class: "col-12", required: true) ?>
-
-                <i style="font-size: 2rem;" class="fa-regular fa-building ms-2 mt-4"></i>
-                <?= InputArea::gen(name: "company", class: "col-12") ?>
-                <?= InputArea::gen(name: "address", class: "col-12") ?>
-                <?= InputArea::gen(name: "country", class: "col-lg-4") ?>
-                <?= InputArea::gen(name: "state", class: "col-lg-4 col-md-6") ?>
-                <?= InputArea::gen(name: "zip code", class: "col-lg-4 col-md-6") ?>
-
-                <hr class="my-4">
-                <i style="font-size: 2rem;" class="fa-regular fa-credit-card ms-2"></i>
-
-            </div>
-            <div class="my-5"><button type="submit" class="btn btn-primary">Send message <i class="fa-regular fa-paper-plane"></i></button></div>
-        </form>
-    </div>
-
-
-</main>
 
 
 
 
+</body>
 
-
-
-
-
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/foot.php";
-?>
+</html>

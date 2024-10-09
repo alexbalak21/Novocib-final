@@ -242,11 +242,6 @@ switch ($req_uri) {
         require_once "app/views/news.php";
         break;
 
-    default:
-        require_once "app/views/404.php";
-        break;
-
-
     case "/search":
         require_once "app/views/search.php";
         break;
@@ -259,9 +254,15 @@ switch ($req_uri) {
         header("Location: /app/internal/admin/");
         break;
 
-    case "user/password_reset":
-        require_once "/app/views/password_reset.php";
-
     case "/save-info":
         require_once "app/logic/saveInfo.php";
+        break;
+
+    case "/test":
+        require_once  "app/views/test.php";
+        break;
+
+    default:
+        require_once "app/views/404.php";
+        break;
 }

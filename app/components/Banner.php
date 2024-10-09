@@ -44,7 +44,7 @@ class Banner
         <div class="banner" style="background-image: url(<?= $img_url ?>); height: 500px">
             <div class="overlay">
                 <div class="caption w-100">
-                    <h1 class="title display-4"><?= $title ?></h1>
+                    <h1 class="title display-4"><?= $title ?? "Novocib" ?></h1>
                 </div>
                 <div class="links">
                     <p class="path lead">
