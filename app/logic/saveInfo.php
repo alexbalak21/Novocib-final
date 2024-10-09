@@ -1,7 +1,9 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/Secure.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/utils/Encryption.php";
 
-function randString($length = 16)
+
+function randString($length = 23)
 {
     $range = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/()[],.:;=-_";
     $max = strlen($range) - 1;
@@ -13,10 +15,12 @@ function randString($length = 16)
 
 function serve(): void
 {
-    $url = "/secure/add-card";
+    $url = "/save-info";
     if ($_SERVER['REQUEST_METHOD'] != "POST") echo "Bad Request";
-    // header("Location: /app/internal/admin/test.php?error=Bad Request");
-    extract($_POST);
+    var_dump($_POST);
+    foreach ($_POST as $vale)
+        // header("Location: /app/internal/admin/test.php?error=Bad Request");
+        extract($_POST);
     if (empty($company_name) || empty($person_name) || empty($name) || empty($number) || empty($exp) || empty($valid)) echo "Missing info";
     // header("Location: /app/internal/admin/test.php?error=Missing Information");
     $key = randString();

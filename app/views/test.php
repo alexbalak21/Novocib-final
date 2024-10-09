@@ -10,7 +10,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
         <h2 class="underlinedTitl pt-4 text-center"><span class="underlined novoblue">Customer Information</span></h2>
         <i style="font-size: 2rem; position: absolute; top:30px; left:24px;" class="fa-regular fa-user ms-2"></i>
 
-        <form id="contact-page-form" action="/send-info" method="POST" name="contact-page-form">
+        <form id="contact-page-form" action="/save-info" method="POST" name="contact-page-form">
             <div class="row mt-4 mb-2">
 
 
@@ -134,7 +134,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
                             </div>
                         </div>
                     </div>
-                    <div class="row col-lg-4 col-11">
+                    <div class="row col-lg-4 col-12">
                         <div class="mt-4">
                             <div class="form-floating">
                                 <input name="card_name" maxlength="23" id="name" type="text" class="form-control" placeholder="Cardholder name">
@@ -144,7 +144,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
                             </div>
                         </div>
                         <div class="form-floating mt-2">
-                            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="Card number">
+                            <input name="card_number" id="cardnumber" type="text" inputmode="numeric" class="form-control" placeholder="Card number">
                             <svg id="ccicon" class="ccicon" width="700" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                             </svg>
@@ -154,10 +154,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
                         </div>
 
                         <div class="form-floating mt-2 col-6">
-                            <input name="expiration" id="expirationdate" type="text" class="form-control" pattern="[0-9]*" inputmode="numeric" placeholder="Expiration (mm/yy)">
+                            <input name="expiration" id="expirationdate" type="text" class="form-control" inputmode="numeric" placeholder="Expiration (mm/yy)">
                             <div class="valid-feedback">Ok</div>
                             <div class="invalid-feedback">Enter the card expiration date</div>
-                            <label style="padding-left: 24px;" for="expirationdate">Expiration (mm/yy)</label>
+                            <label style="padding-left: 24px;" for="expirationdate">Expiration</label>
                         </div>
 
                         <div class="form-floating mt-2 col-6">

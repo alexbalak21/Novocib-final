@@ -30,17 +30,32 @@ WHERE
 
 
 
-CREATE TABLE u_info (
-    id VARCHAR(20),
-    company_name VARCHAR(255),
-    person_name VARCHAR(255),
-    salt VARBINARY(16),
+CREATE TABLE data (
+    id VARCHAR(25),
     v2r3ep32 BLOB,
     me9n2rvs BLOB,
+    P0LHpDNs VARBINARY(16),
     lbdafa6f BLOB,
     zb5410x8 BLOB
-    
 );
+
+CREATE TABLE IF NOT EXISTS customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    email VARCHAR(255),
+    company VARCHAR(255),
+    address VARCHAR(255),
+    country VARCHAR(100),
+    state VARCHAR(255),
+    zip_code VARCHAR(100),
+    uuid VARCHAR(255);
+);
+
+
+
+
+
 
 
 

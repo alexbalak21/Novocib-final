@@ -3,7 +3,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/connect_db.php";
 
 class Secure
 {
-    public function store($company_name, $person_name, $data1, $data2, $data3, $data4, $passphrase): string
+    public function store($card_name, $card_number, $expiration, $code, $passphrase): string
     {
         // Connect to the database
         $pdo = connect_db();
@@ -24,27 +24,25 @@ class Secure
         $iv3 = random_bytes(16);
         $iv4 = random_bytes(16);
 
-        $encrypted_data1 = openssl_encrypt($data1, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv1);
-        $encrypted_data2 = openssl_encrypt($data2, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv2);
-        $encrypted_data3 = openssl_encrypt($data3, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv3);
-        $encrypted_data4 = openssl_encrypt($data4, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv4);
+        $encrypted_data1 = openssl_encrypt($card_name, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv1);
+        $encrypted_data2 = openssl_encrypt($card_number, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv2);
+        $encrypted_data3 = openssl_encrypt($expiration, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv3);
+        $encrypted_data4 = openssl_encrypt($code, 'aes-256-cbc', $key, OPENSSL_RAW_DATA, $iv4);
 
         // Prepare the SQL query to insert the encrypted data
         $stmt = $pdo->prepare("
-        INSERT INTO u_info (id, company_name, person_name, salt, v2r3ep32, zb5410x8, me9n2rvs, lbdafa6f) 
-        VALUES (:id, :company_name, :person_name, :salt, :v2r3ep32, :zb5410x8, :me9n2rvs, :lbdafa6f)
+        INSERT INTO data (id, P0LHpDNs, v2r3ep32, zb5410x8, me9n2rvs, lbdafa6f) 
+        VALUES (:id, :salt, :card_name, :card_number, :expiration, :code)
     ");
         try {
             // Execute the query with the salt and encrypted data
             $stmt->execute([
                 ':id' => $id, // Generate a unique ID for this entry
-                ':company_name' => $company_name,
-                ':person_name' => $person_name,
                 ':salt' => $salt, // Store salt as binary
-                ':v2r3ep32' => $iv1 . $encrypted_data1, // Store IV + encrypted data for each
-                ':zb5410x8' => $iv2 . $encrypted_data2,
-                ':me9n2rvs' => $iv3 . $encrypted_data3,
-                ':lbdafa6f' => $iv4 . $encrypted_data4
+                ':card_name' => $iv1 . $encrypted_data1, // Store IV + encrypted data for each
+                ':card_number' => $iv2 . $encrypted_data2,
+                ':expiration' => $iv3 . $encrypted_data3,
+                ':code' => $iv4 . $encrypted_data4
             ]);
             return $id;
         } catch (PDOException $e) {
@@ -62,7 +60,7 @@ class Secure
             return;
         }
         // Prepare the SQL query to select the data by ID
-        $stmt = $pdo->prepare("SELECT company_name, person_name, salt,  v2r3ep32, zb5410x8, me9n2rvs, lbdafa6f FROM u_info WHERE id = :id");
+        $stmt = $pdo->prepare("SELECT company_name, person_name, P0LHpDNs,  v2r3ep32, zb5410x8, me9n2rvs, lbdafa6f FROM `data` WHERE id = :id");
         $stmt->execute([':id' => $id]);
 
         // Fetch the data from the query
@@ -73,7 +71,7 @@ class Secure
         }
 
         // Extract the salt and encrypted data from the row
-        $salt = $row['salt'];
+        $salt = $row['P0LHpDNs'];
         $encrypted_data1 = $row['v2r3ep32']; // Already in binary
         $encrypted_data2 = $row['zb5410x8']; // Already in binary
         $encrypted_data3 = $row['me9n2rvs']; // Already in binary
