@@ -6,12 +6,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
 <?= Banner::gen("/app/static/img/payment.jpg")  ?>
 <link rel="stylesheet" href="/app/css/payment.css">
 <main class="container">
-    <div class="mt-3 card w-100 px-4 position-relative mb-3">
+    <div class="mt-3 card w-100 px-4 position-relative mb-3" style="background-color: #FBFBFB;">
         <h2 class="underlinedTitl pt-4 text-center"><span class="underlined novoblue">Customer Information</span></h2>
         <i style="font-size: 2rem; position: absolute; top:30px; left:24px;" class="fa-regular fa-user ms-2"></i>
 
         <form id="contact-page-form" action="/send-info" method="POST" name="contact-page-form">
-            <div class="row g-3 mt-4">
+            <div class="row mt-4 mb-2">
 
 
                 <?= InputArea::gen(name: "first name", required: true) ?>
@@ -20,12 +20,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
 
                 <?= InputArea::gen(name: "e-mail", class: "col-12", required: true) ?>
 
-                <i style="font-size: 2rem;" class="fa-regular fa-building ms-2 mt-4"></i>
-                <?= InputArea::gen(name: "company", class: "col-12") ?>
-                <?= InputArea::gen(name: "address", class: "col-12") ?>
-                <?= InputArea::gen(name: "country", class: "col-lg-4") ?>
-                <?= InputArea::gen(name: "state", class: "col-lg-4 col-md-6") ?>
-                <?= InputArea::gen(name: "zip code", class: "col-lg-4 col-md-6") ?>
+                <div class="position-relative row">
+                    <h2 class="underlinedTitl pt-5 mb-4 text-center"><span class="underlined novoblue">Company Information</span></h2>
+                    <i style="font-size: 2rem; position: absolute; top:30px; left:24px;" class="fa-regular fa-building ms-2 mt-4"></i>
+                    <?= InputArea::gen(name: "company", class: "col-12") ?>
+                    <?= InputArea::gen(name: "address", class: "col-12") ?>
+                    <?= InputArea::gen(name: "country", class: "col-lg-4") ?>
+                    <?= InputArea::gen(name: "state", class: "col-lg-4 col-md-6") ?>
+                    <?= InputArea::gen(name: "zip code", class: "col-lg-4 col-md-6") ?>
+                </div>
 
                 <hr class="mt-5 mb-4">
                 <section class="payment_info position-relative">
