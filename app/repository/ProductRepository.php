@@ -66,7 +66,7 @@ class ProductRepository
 
         $stmt = $this->conn->prepare($query);
 
-        // Bind parameters
+        // Bind values
         $stmt->bindValue(':reference', $product->reference);
         $stmt->bindValue(':title', $product->title);
         $stmt->bindValue(':size', $product->size);
@@ -77,7 +77,7 @@ class ProductRepository
         return $stmt->execute();
     }
 
-    public function deleteProduct(int $id): bool
+    public function delete(int $id): bool
     {
         $query = "DELETE FROM products WHERE ID = :id";
         $stmt = $this->conn->prepare($query);
@@ -85,7 +85,7 @@ class ProductRepository
         return $stmt->execute();
     }
 
-    public function getAllProducts(): array
+    public function findAll(): array
     {
         $query = "SELECT ID AS product_id, reference, title, size, price, page_url, updated_on FROM products";
         $stmt = $this->conn->query($query);
@@ -119,6 +119,6 @@ $productRepository->updateProduct($updatedProduct);
 
 
 echo "<pre>";
-var_dump($productRepository->findById(11));
+var_dump($productRepository->findAll());
 echo "</pre>";
 die;
