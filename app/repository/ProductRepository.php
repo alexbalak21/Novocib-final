@@ -67,12 +67,12 @@ class ProductRepository
         $stmt = $this->conn->prepare($query);
 
         // Bind parameters
-        $stmt->bindParam(':reference', $product->reference);
-        $stmt->bindParam(':title', $product->title);
-        $stmt->bindParam(':size', $product->size);
-        $stmt->bindParam(':price', $product->price);
-        $stmt->bindParam(':page_url', $product->page_url);
-        $stmt->bindParam(':id', $product->product_id);
+        $stmt->bindValue(':reference', $product->reference);
+        $stmt->bindValue(':title', $product->title);
+        $stmt->bindValue(':size', $product->size);
+        $stmt->bindValue(':price', $product->price);
+        $stmt->bindValue(':page_url', $product->page_url);
+        $stmt->bindValue(':id', $product->product_id);
 
         return $stmt->execute();
     }
@@ -113,12 +113,12 @@ $newProduct = new Product(null, '#R123X', "Test Product", "10mL", 10, "example.u
 
 $productRepository = new ProductRepository();
 
-$productRepository->addProduct($newProduct);
+$updatedProduct = new Product(11, "#U123X", "Updated product", "15mL", 15, "updated.url", null);
 
+$productRepository->updateProduct($updatedProduct);
 
-$products = $productRepository->getAllProducts();
 
 echo "<pre>";
-var_dump($products);
+var_dump($productRepository->findById(11));
 echo "</pre>";
 die;
