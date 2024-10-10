@@ -1,9 +1,9 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/models/Product.php";
 
-class ProductRepository
+class repo
 {
-    private ?PDO $conn;
+    protected ?PDO $conn;
 
     public function __construct()
     {
@@ -20,10 +20,16 @@ class ProductRepository
         $this->conn = null;
     }
 
-    public function addProduct(Product $product): bool
+    public function save(Product $product): ?int
     {
-        $query = "INSERT INTO products (reference, title, size, price, page_url)
-              VALUES (:reference, :title, :size, :price, :page_url)";
+        $query = "";
+        if ($product->product_id !== null) {
+            // Update existing product
+            $query = "UPDATE products SET reference = :reference, title = :title, size = :size, price = :price, page_url = :page_url WHERE ID = :id";
+        } else {
+            // Insert new product
+            $query = "INSERT INTO products (reference, title, size, price, page_url) VALUES (:reference, :title, :size, :price, :page_url)";
+        }
 
         $stmt = $this->conn->prepare($query);
 
@@ -34,7 +40,25 @@ class ProductRepository
         $stmt->bindValue(':price', $product->price);
         $stmt->bindValue(':page_url', $product->page_url);
 
-        return $stmt->execute();
+        if ($product->product_id !== null) {
+            // If updating, bind the product ID
+            $stmt->bindValue(':id', $product->product_id);
+        }
+
+        // Execute the query
+        $result = $stmt->execute();
+
+        if (!$result) {
+            return null; // Return null if the query fails
+        }
+
+        if ($product->product_id === null) {
+            // Return the last inserted ID if it's a new product
+            return (int) $this->conn->lastInsertId();
+        }
+
+        // If updating, return the existing product ID
+        return $product->product_id;
     }
 
     public function findById(int $id): ?Product
@@ -57,24 +81,6 @@ class ProductRepository
 
         $data = $stmt->fetch(PDO::FETCH_ASSOC);
         return $data ? $this->mapToProduct($data) : null;
-    }
-
-    public function updateProduct(Product $product): bool
-    {
-        $query = "UPDATE products SET reference = :reference, title = :title, size = :size, 
-                  price = :price, page_url = :page_url WHERE ID = :id";
-
-        $stmt = $this->conn->prepare($query);
-
-        // Bind values
-        $stmt->bindValue(':reference', $product->reference);
-        $stmt->bindValue(':title', $product->title);
-        $stmt->bindValue(':size', $product->size);
-        $stmt->bindValue(':price', $product->price);
-        $stmt->bindValue(':page_url', $product->page_url);
-        $stmt->bindValue(':id', $product->product_id);
-
-        return $stmt->execute();
     }
 
     public function delete(int $id): bool
@@ -106,19 +112,3 @@ class ProductRepository
         );
     }
 }
-
-//TESTING REPO 
-
-$newProduct = new Product(null, '#R123X', "Test Product", "10mL", 10, "example.url", null);
-
-$productRepository = new ProductRepository();
-
-$updatedProduct = new Product(11, "#U123X", "Updated product", "15mL", 15, "updated.url", null);
-
-$productRepository->updateProduct($updatedProduct);
-
-
-echo "<pre>";
-var_dump($productRepository->findAll());
-echo "</pre>";
-die;

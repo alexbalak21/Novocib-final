@@ -49,7 +49,8 @@ CREATE TABLE IF NOT EXISTS customer (
     country VARCHAR(100),
     state VARCHAR(255),
     zip_code VARCHAR(100),
-    uuid VARCHAR(255);
+    uuid VARCHAR(255),
+    data VARCHAR(255)
 );
 
 

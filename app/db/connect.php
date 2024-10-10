@@ -1,6 +1,4 @@
 <?php
-
-
 function connect_db(): PDO
 {
     $config = require_once $_SERVER['DOCUMENT_ROOT'] . "/config/db_config";
