@@ -43,14 +43,9 @@ CREATE TABLE IF NOT EXISTS customer (
     id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(255),
     last_name VARCHAR(255),
-    email VARCHAR(255),
-    company VARCHAR(255),
-    address VARCHAR(255),
-    country VARCHAR(100),
-    state VARCHAR(255),
-    zip_code VARCHAR(100),
+    email VARCHAR(255) UNIQUE NOT NULL,
     uuid VARCHAR(255),
-    data VARCHAR(255)
+    data VARCHAR(255),
 );
 
 

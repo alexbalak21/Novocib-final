@@ -1,4 +1,7 @@
 <?php
+//require Constants
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/constants/dirs.php";
+
 $req_uri = parse_url($_SERVER["REQUEST_URI"])["path"];
 
 // _REQUEST PARAMETERS
