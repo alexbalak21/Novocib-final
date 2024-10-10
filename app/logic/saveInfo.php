@@ -13,23 +13,4 @@ function randString($length = 23)
     return $output;
 }
 
-function serve(): void
-{
-    $url = "/save-info";
-    if ($_SERVER['REQUEST_METHOD'] != "POST") echo "Bad Request";
-    var_dump($_POST);
-    foreach ($_POST as $vale)
-        // header("Location: /app/internal/admin/test.php?error=Bad Request");
-        extract($_POST);
-    if (empty($company_name) || empty($person_name) || empty($name) || empty($number) || empty($exp) || empty($valid)) echo "Missing info";
-    // header("Location: /app/internal/admin/test.php?error=Missing Information");
-    $key = randString();
-    $db = new Secure();
-    $storedId = $db->store($company_name, $person_name, $name, $number, $exp, $valid, $key);
-    $card = $db->read($storedId, $key);
-    var_dump($card);
-    die;
-    // header("Location: /app/internal/admin/test.php?id=$storedId&key=$key");
-}
-
 serve();

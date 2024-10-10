@@ -3,9 +3,9 @@ CREATE TABLE IF NOT EXISTS customer (
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
-    company_id INT,
-    uuid VARCHAR(255) NOT NULL UNIQUE,
+    uuid VARCHAR(255),
     data TEXT,
+    company_id INT, 
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );

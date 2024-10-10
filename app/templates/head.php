@@ -2,11 +2,6 @@
 require_once "app/components/autoloader.php";
 require_once "app/logic/logVisit.php";
 
-define("DS", DIRECTORY_SEPARATOR);
-define("__ROOT__", $_SERVER['DOCUMENT_ROOT']);
-define("__APP__", __ROOT__ . DIRECTORY_SEPARATOR . "app");
-
-
 //SETTING FONT AWESOME SOURCE
 $fontAwesome_cdn = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css";
 $fontAwesome_local_server = "/app/FA6/css/all.min.css";

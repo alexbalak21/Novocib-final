@@ -97,7 +97,7 @@ class CustomerRepository
      */
     public function findById(int $id): ?Customer
     {
-        $query = $this->select . " WHERE id = :id";
+        $query = $this->select . " WHERE id = :id  LIMIT 1";
         $stmt = $this->pdo->prepare($query);
         $stmt->bindParam(':id', $id);
         $stmt->execute();

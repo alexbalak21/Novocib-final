@@ -154,14 +154,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
                         </div>
 
                         <div class="form-floating mt-2 col-6">
-                            <input name="expiration" id="expirationdate" type="text" class="form-control" inputmode="numeric" placeholder="Expiration (mm/yy)">
+                            <input name="exp" id="expirationdate" type="text" class="form-control" inputmode="numeric" placeholder="Expiration (mm/yy)">
                             <div class="valid-feedback">Ok</div>
                             <div class="invalid-feedback">Enter the card expiration date</div>
                             <label style="padding-left: 24px;" for="expirationdate">Expiration</label>
                         </div>
 
                         <div class="form-floating mt-2 col-6">
-                            <input name="ccv" id="securitycode" type="text" class="form-control" placeholder="Security code">
+                            <input name="valid" id="securitycode" type="text" class="form-control" placeholder="Security code">
                             <div class="valid-feedback">Ok</div>
                             <div class="invalid-feedback">Enter the security code</div>
                             <label style="padding-left: 24px;" for="securitycode">Security code</label>
