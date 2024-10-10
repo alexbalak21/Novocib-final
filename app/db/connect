@@ -16,5 +16,3 @@ function connect_db(): PDO
     }
     return null;
 }
-
-return connect_db();

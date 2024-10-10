@@ -258,7 +258,7 @@ switch ($req_uri) {
         break;
 
     case "/save-info":
-        require_once __APP__ . "controllers/save_info.php";
+        require_once "app/controllers/secure_store_info.php";
         break;
 
     case "/test":

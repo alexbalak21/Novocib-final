@@ -1,6 +1,9 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/models/Product.php";
 
+//DB CONNECTION
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect";
+
 class ProductRepository
 {
     protected ?PDO $conn;
@@ -8,7 +11,7 @@ class ProductRepository
     public function __construct()
     {
         try {
-            $this->conn = require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect";
+            $this->conn = connect_db();
         } catch (Error $e) {
             echo 'Database Connection Error' . "<br>" . $e->getMessage();
             exit;

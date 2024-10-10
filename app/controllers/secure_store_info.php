@@ -4,16 +4,21 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/models/Card.php";
 //CARD REPO
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/repository/CardRepository.php";
 
-function serve(): void
+
+
+function process_card_info(): void
 {
     $url = "/save-info";
-    if ($_SERVER['REQUEST_METHOD'] != "POST") echo "Bad Request";
-    extract($_POST);
-    if (empty($company_name) || empty($person_name) || empty($name) || empty($number) || empty($exp) || empty($valid)) echo "Missing info";
+
     // header("Location: /app/internal/admin/test.php?error=Missing Information");
     $key = substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'), 0, 23);
-    $card = new Card(null, $card_name, $card_number, $exp, $valid);
+    $card = new Card(id: null, name: $_POST['card_name'], number: $_POST['card_number'], exp: $_POST['exp'], ccv: $_POST['valid']);
     $cardRepo = new CardRepository();
+    $cardId = $cardRepo->save($card);
+    $savedCard = $cardRepo->findById($cardId);
+    var_dump($savedCard);
+    exit;
 }
 
-serve();
+
+if ($_SERVER['REQUEST_METHOD'] === "POST") process_card_info();

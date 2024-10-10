@@ -5,6 +5,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/models/Customer.php";
 //ENCRYPTION CLASS
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/security/Encryption.php";
 
+//DB CONNECTION
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect";
+
 class CustomerRepository
 {
     protected ?PDO $pdo;
@@ -13,7 +16,7 @@ class CustomerRepository
     public function __construct()
     {
         try {
-            $this->pdo = require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect";
+            $this->pdo = connect_db();
             $this->enc = new Encryption();
         } catch (Error $e) {
             echo 'Error' . "<br>" . $e->getMessage();

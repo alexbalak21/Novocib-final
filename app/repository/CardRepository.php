@@ -5,6 +5,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/models/Card.php";
 //ENCRYPTION CLASS
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/security/SecureEncrypt.php";
 
+//DB CONNECTION
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect";
 
 
 class CardRepository
@@ -16,7 +18,7 @@ class CardRepository
     public function __construct()
     {
         try {
-            $this->pdo = require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect";
+            $this->pdo = connect_db();
             $this->enc = new SecEnc();
         } catch (Error $e) {
             echo 'Error' . "<br>" . $e->getMessage();
@@ -63,8 +65,8 @@ class CardRepository
             id: $id,
             name: $this->enc->read($cardData['v2r3ep32'], $key ?? null),
             number: $this->enc->read($cardData['zb5410x8'], $key ?? null),
-            exp: $this->enc->read($cardData['v2r3ep32'], $key ?? null),
-            ccv: $this->enc->read($cardData['v2r3ep32'], $key ?? null)
+            exp: $this->enc->read($cardData['me9n2rvs'], $key ?? null),
+            ccv: $this->enc->read($cardData['lbdafa6f'], $key ?? null)
         );
     }
 
@@ -77,13 +79,3 @@ class CardRepository
         return $stmt->execute();
     }
 }
-
-$repo = new CardRepository();
-$card = new Card(null, "John Doe", "1234 1234 1234 1234", "12/25", "125");
-
-$id = $repo->save($card);
-var_dump($repo->findById($id));
-echo "<br>";
-var_dump($repo->delete($id));
-echo "<br>";
-echo "<br>";
