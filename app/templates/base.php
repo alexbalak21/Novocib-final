@@ -5,11 +5,6 @@ if (!isset($title)) {
     $title = "Novocib";
 }
 
-define("DS", DIRECTORY_SEPARATOR);
-define("__ROOT__", $_SERVER['DOCUMENT_ROOT']);
-define("__APP__", __ROOT__ . DIRECTORY_SEPARATOR . "app");
-
-
 
 if (!isset($lang)) {
     $lang = "en";

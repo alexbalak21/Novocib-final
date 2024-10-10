@@ -1,14 +1,14 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/models/Product.php";
 
-class repo
+class ProductRepository
 {
     protected ?PDO $conn;
 
     public function __construct()
     {
         try {
-            $this->conn = require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect.php";
+            $this->conn = require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect";
         } catch (Error $e) {
             echo 'Database Connection Error' . "<br>" . $e->getMessage();
             exit;
@@ -46,19 +46,9 @@ class repo
         }
 
         // Execute the query
-        $result = $stmt->execute();
+        $stmt->execute();
 
-        if (!$result) {
-            return null; // Return null if the query fails
-        }
-
-        if ($product->product_id === null) {
-            // Return the last inserted ID if it's a new product
-            return (int) $this->conn->lastInsertId();
-        }
-
-        // If updating, return the existing product ID
-        return $product->product_id;
+        return $product->product_id ?? $this->conn->lastInsertId();
     }
 
     public function findById(int $id): ?Product
