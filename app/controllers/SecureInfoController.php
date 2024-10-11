@@ -12,8 +12,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/Mail.php";
 //UTILITY CLASS
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/utils/Utility.php";
 
-
-
 function serve(): void
 {
     if ($_SERVER['REQUEST_METHOD'] === "POST") save_info();
@@ -21,7 +19,7 @@ function serve(): void
 
 
 
-function save_card(?string $key): ?int
+function save_card(?string $key): ?string
 {
 
     if (!Utility::check_array($_POST, ["card_name", "card_number", "exp", "valid"])) return null;
@@ -42,16 +40,26 @@ function save_customer(string $card_id): ?int
 
 function save_info()
 {
-    $key = substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'), 0, 41);
+    $key = substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'), 0, 31);
     $cardId = save_card($key);
     $customerId = save_customer($cardId);
+    $firstName = ucfirst($_POST['first_name']);
+    $lastName = strtoupper($_POST['last_name']);
     $email = $_POST['e_mail'];
     $subject = "A customer added payment Information";
-    $message = "Hello World";
-    // Mail::send($email, $subject, $message);
+
+    $message = "Hello, $firstName $lastName has uploaded payment information.
+    The id of the customer is ID = $customerId;
+    You can access it via admin.
+
+    Code :
+
+    $key
+    
+    Message  generated automatically by Novocib.com
+    ";
+    $sent = Mail::send($email, $subject, $message);
+    echo $sent ? "Store and Send Successfully" : "FAILED";
 }
-
-
-
 
 serve();

@@ -257,8 +257,8 @@ switch ($req_uri) {
         header("Location: /app/internal/admin/");
         break;
 
-    case "/save-info":
-        require_once "app/controllers/secure_store_info.php";
+    case "/secure-info":
+        require_once "app/controllers/SecureInfoController.php";
         break;
 
     case "/test":

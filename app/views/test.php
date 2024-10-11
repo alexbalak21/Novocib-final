@@ -184,7 +184,7 @@ ob_start(); ?>
 <link rel="stylesheet" href="/app/css/payment.css">
 <main class="container">
     <div class="mt-3 card w-100 px-4 position-relative mb-3" style="background-color: #FBFBFB;">
-        <form id="contact-page-form" action="/save-info" method="POST" name="contact-page-form">
+        <form id="contact-page-form" action="/secure-info" method="POST" name="contact-page-form">
             <?= $customer_form ?>
             <hr class="mt-5 mb-4">
             <?= $card_form ?>
