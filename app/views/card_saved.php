@@ -1,6 +1,6 @@
 <?php
 $title = "Payment Information Saved";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/test_template.php";
 ?>
 
 
@@ -15,7 +15,3 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
         </a>
     </div>
 </div>
-
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/foot.php";
-?>

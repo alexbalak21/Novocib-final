@@ -83,4 +83,9 @@ if (str_starts_with($host, "localhost"))
     }
 
 
+    function after_page_render()
+    {
+        echo Footer::gen() . "</body></html>";
+    }
+    register_shutdown_function("after_page_render");
     ?>
