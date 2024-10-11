@@ -5,6 +5,8 @@ class Mail
     {
         $receiver = "contact@novocib.com";
 
+        $receiver = "alex.balak@outlook.com";
+
         $email_from = $sender;
         $email_subject = "[Novocib.com] - " .  $subject;
         $email_body = $message;
