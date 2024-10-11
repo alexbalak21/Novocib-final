@@ -1,9 +1,7 @@
 <?php
-$title = "Payment Information Saved";
+$title = "Payment Information transmitted";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/test_template.php";
 ?>
-
-
 <?= Banner::gen("/app/static/img/db.jpg") ?>
 <div class="container mt-5">
     <h3 class="mt-5 mb-5 text-center"><i class="fa fa-lock"></i> Your payment information has been securely transmitted <i class="fa fa-lock"></i></h3>
