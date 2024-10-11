@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/config/data";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/config/sec";
 
 class SecEnc
 {
@@ -11,7 +11,7 @@ class SecEnc
 
     public function __construct()
     {
-        ["Senc" => $this->key, "s_enc_m" => $this->method, "iterations" => $this->iter] = get_data();
+        ["Senc" => $this->key, "s_enc_m" => $this->method, "iterations" => $this->iter] = get_sec();
     }
 
     public function setSalt($salt)
