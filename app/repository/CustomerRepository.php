@@ -88,7 +88,7 @@ class CustomerRepository
                 email: $this->enc->read($customer['email']),
                 uuid: $this->enc->read($customer['uuid']),
                 data: $this->enc->read($customer['data']),
-                company_id: $customer['company'] // Assuming this is encrypted as well
+                company_id: $customer['company_id'] // Assuming this is encrypted as well
             );
         }
 

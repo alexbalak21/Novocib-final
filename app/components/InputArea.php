@@ -3,7 +3,7 @@ class InputArea
 {
     static function gen($name = "first name", $class = "col-md-6", $required = false, $type = "text")
     {
-        $formattedName = join('_', explode(' ', $name));
+        $formattedName = str_replace('-', '_', join('_', explode(' ', $name)));
         ob_start(); ?>
         <div class="<?= $class ?>  mb-2">
             <div class="form-floating">

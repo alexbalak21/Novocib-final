@@ -1,4 +1,4 @@
 <?php
+$message = require_once "test-fn.php";
 
-$var ?? null;
-var_dump($var);
+echo $message;

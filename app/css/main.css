@@ -467,6 +467,10 @@ a {
   background-color: #4167b1;
 }
 
+.underlined.green:after {
+  background-color: #198754;
+}
+
 .underlined.right:after {
   left: 0;
 }

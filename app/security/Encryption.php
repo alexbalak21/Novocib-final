@@ -1,4 +1,6 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/config/data";
+
 class Encryption
 {
     protected string $key;
@@ -8,7 +10,7 @@ class Encryption
     public function __construct()
     {
         try {
-            ["ENC_METHOD" => $this->enc, "S_KEY" => $this->key, "S_IV" => $this->iv] = require_once $_SERVER['DOCUMENT_ROOT'] . "/config/data";
+            ["ENC_METHOD" => $this->enc, "S_KEY" => $this->key, "S_IV" => $this->iv] = get_data();
         } catch (Error $e) {
             echo $e;
             exit;

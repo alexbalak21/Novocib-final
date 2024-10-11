@@ -1,4 +1,6 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/config/data";
+
 class SecEnc
 {
     protected string $key;
@@ -9,7 +11,7 @@ class SecEnc
 
     public function __construct()
     {
-        ["Senc" => $this->key, "s_enc_m" => $this->method, "iterations" => $this->iter] = require_once $_SERVER['DOCUMENT_ROOT'] . "/config/data";
+        ["Senc" => $this->key, "s_enc_m" => $this->method, "iterations" => $this->iter] = get_data();
     }
 
     public function setSalt($salt)
@@ -18,7 +20,7 @@ class SecEnc
     }
 
 
-    public function store(string $data, string $key = null)
+    public function store(string $data, ?string $key = null)
     {
         if ($data === null) return null;
         if (!isset($this->salt)) {
@@ -33,7 +35,7 @@ class SecEnc
         return $iv . $encrypted_data;
     }
 
-    public function read($data, string $key = null)
+    public function read($data, ?string $key = null)
     {
         if ($data === null) return null;
         if (!isset($this->salt)) {

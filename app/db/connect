@@ -1,7 +1,8 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/config/db_config";
 function connect_db(): PDO
 {
-    $config = require_once $_SERVER['DOCUMENT_ROOT'] . "/config/db_config";
+    $config = config();
     $host = $config['host'];
     $username = $config['username'];
     $password = $config['password'];
