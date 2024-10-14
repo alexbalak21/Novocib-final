@@ -82,7 +82,7 @@ class CustomerRepository
 
         foreach ($customers as $customer) {
             $customer_objects[] = new Customer(
-                customer_id: $customer['id'],
+                customer_id: $customer['customer_id'],
                 first_name: $this->enc->read($customer['first_name']),
                 last_name: $this->enc->read($customer['last_name']),
                 email: $this->enc->read($customer['email']),
