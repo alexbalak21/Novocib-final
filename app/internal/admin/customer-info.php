@@ -47,7 +47,7 @@ ob_start(); ?>
                             <?= $customer->email ?>
                         </td>
                         <td>
-                            <a class="btn btn-outline-primary" href="products.php?id_update=<?= $product['ID'] ?>" role="button">See Payment Info</a>
+                            <a class="btn btn-outline-danger" href="products.php?id_update=<?= $product['ID'] ?>" role="button">See Payment Info</a>
                         </td>
                     </tr>
                 <?php endforeach ?>
