@@ -1,12 +1,9 @@
 <?php
-$tile = "Search Items";
-require_once "templates/head.php";
-$page = "search";
+$title = "Search";
+require_once __DIR__ . "/templates/base.php";
 
 
 ?>
-
-<?= Nav::gen() ?>
 
 <main class="" style="height: 93vh;">
     <?php require_once "db_logic.php"; ?>
@@ -93,7 +90,3 @@ $page = "search";
         </table>
     </div>
 </main>
-
-<?php
-require_once "templates/foot.php";
-?>

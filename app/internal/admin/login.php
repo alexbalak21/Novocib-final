@@ -1,8 +1,7 @@
 <?php
-require_once "session/start_session.php";
-if (!isset($_SESSION)) session_start();
-session_destroy();
-
+$title = "Login";
+require_once __DIR__ . "/templates/base.php";
+require_once __DIR__ . "/session/start_session.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
 
 function log_in(): string
@@ -23,9 +22,14 @@ $error_message = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
     $error_message = log_in();
 
-require_once "templates/head.php";
 ?>
-<main class="d-flex justify-content-center align-items-center" style="height: 99vh;">
+<style>
+    *:focus {
+        box-shadow: none !important;
+        border-color: #198754 !important;
+    }
+</style>
+<main class="d-flex justify-content-center align-items-center" style="height: 94vh;">
     <form action="login.php" method="POST">
         <div class="mb-3">
             <h4 class="text-danger text-center"><?= $error_message ?></h4>
@@ -39,7 +43,3 @@ require_once "templates/head.php";
         </div>
     </form>
 </main>
-
-<?php
-require_once "templates/foot.php";
-?>

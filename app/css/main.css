@@ -773,3 +773,15 @@ header .brand {
 .big-bold {
   font-weight: 550;
 }
+
+
+.form-outline .form-control {
+    min-height: auto;
+    padding-top: .32rem;
+    padding-bottom: .32rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    border: 0;
+    background: rgba(0,0,0,0);
+    transition: all .2s linear
+}

@@ -1,6 +1,6 @@
 <?php
-$title = "Products";
-require_once __DIR__ . "/templates/head.php";
+$title = "Payment Info";
+require_once __DIR__ . "/templates/base.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
 // global $user;
 
@@ -11,7 +11,6 @@ ob_start(); ?>
 </div>
 <?php $successAlert = ob_get_clean(); ?>
 
-<?= Nav::gen() ?>
 <section class="container mt-3">
     <h1 class="text-center">Add new Product</h1>
     <?php if (isset($_GET['product']) && $_GET['product'] == "added") echo $successAlert; ?>
@@ -99,7 +98,3 @@ ob_start(); ?>
         </table>
     </div>
 </section>
-
-<?php
-require_once __DIR__ . "/templates/foot.php";
-?>

@@ -17,7 +17,8 @@ function check_session()
         }
     } else {
         session_destroy();
-        header("Location: login.php");
+        if (!str_ends_with($_SERVER['REQUEST_URI'], "login.php"))
+            header("Location: login.php");
     }
 }
 check_session();

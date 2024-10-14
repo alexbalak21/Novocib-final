@@ -1,15 +1,15 @@
 <?php
 class Nav
 {
-    static function gen()
+    static function bar($title = null)
     {
         global $user;
         global $page;
-        ob_start(); ?>
 
+        ob_start(); ?>
         <nav class="navbar bg-light navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <h6 class="navbar-brand"><?= ucfirst($page ?? "Admin") ?></h6>
+                <h6 class="navbar-brand"><?= $title ?></h6>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
