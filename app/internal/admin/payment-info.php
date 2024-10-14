@@ -1,5 +1,5 @@
 <?php
-$title = "Payment Info";
+$title = "Customer Info";
 require_once __DIR__ . "/templates/base.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/repository/CustomerRepository.php";
 // global $user;
@@ -23,14 +23,13 @@ ob_start(); ?>
         }
     </style>
     <div class="mt-5 col-11 mx-auto">
-        <h2 class="text-center mb-2">Products</h2>
-        <?php if (isset($_GET['product']) && $_GET['product'] == "updated") echo $updatedSuccess; ?>
+        <h2 class="text-center mb-2">Customers</h2>
         <table class="table table-bordered mt-2">
             <thead>
                 <tr>
-                    <th class="col-1">First Name</th>
-                    <th class="col-2">Last Name</th>
-                    <th class="col-4">E-mail</th>
+                    <th class="col-3">First Name</th>
+                    <th class="col-3">Last Name</th>
+                    <th class="">E-mail</th>
 
                     <th>Actions</th>
                 </tr>
