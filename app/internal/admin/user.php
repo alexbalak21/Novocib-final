@@ -1,10 +1,9 @@
 <?php
 $title = "Update User";
-require_once __DIR__ . "/templates/head.php";
-global $user;
+require_once __DIR__ . "/templates/base.php";
 ?>
 
-<?= Nav::gen() ?>
+
 <main class="d-flex justify-content-center align-items-center" style="height: 93vh;">
     <div class="text-center mt-4">
         <h3 class="my-4">Modify User Profile</h3>
@@ -31,7 +30,3 @@ global $user;
         </form>
     </div>
 </main>
-
-<?php
-require_once __DIR__ . "/templates/foot.php";
-?>
