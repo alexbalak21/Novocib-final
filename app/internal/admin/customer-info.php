@@ -47,7 +47,7 @@ ob_start(); ?>
                             <?= $customer->email ?>
                         </td>
                         <td>
-                            <a class="btn btn-outline-danger" role="button">Payment Info <i class="fa-solid fa-lock"></i></a>
+                            <a class="btn btn-danger" role="button">Payment Info <i class="fa-solid fa-lock"></i></a>
                         </td>
                     </tr>
                 <?php endforeach ?>
