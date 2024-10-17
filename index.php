@@ -265,6 +265,10 @@ switch ($req_uri) {
         require_once  "app/views/test.php";
         break;
 
+    case "/secure/transfer":
+        require_once "app/views/secure/transfer.php";
+        break;
+
     default:
         require_once "app/views/404.php";
         break;
