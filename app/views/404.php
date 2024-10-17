@@ -5,9 +5,6 @@ require_once "app/logic/log404.php";
 
 $novoblue = "#4167b1";
 
-
-
-
 addContent(Banner::gen("/app/static/img/network.jpg"));
 $content_title = UnderlinedTitle::get("404 Page not found", "novoblue", "center");
 

@@ -3,6 +3,8 @@ CREATE TABLE IF NOT EXISTS customer (
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
+    private_id VARCHAR(50),
+    password VARCHAR(255),
     uuid VARCHAR(255),
     data TEXT,
     company_id INT, 

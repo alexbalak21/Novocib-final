@@ -1,9 +1,10 @@
 <?php
-$title = "Credit Card Info";
+$title = "Secure Transfer";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
 
+if (isset($_GET["customuid"]))
 
-ob_start(); ?>
+    ob_start(); ?>
 <div class="row mt-4 mb-2">
     <div class="d-flex">
         <i class="fa-regular fa-user fs-2 mt-4 ms-2"></i>

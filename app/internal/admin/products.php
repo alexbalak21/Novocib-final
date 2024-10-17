@@ -2,7 +2,6 @@
 $title = "Products";
 require_once __DIR__ . "/templates/base.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
-// global $user;
 
 ob_start(); ?>
 <div class="alert alert-success alert-dismissible fade show" role="alert">
