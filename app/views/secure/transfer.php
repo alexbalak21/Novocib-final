@@ -182,7 +182,7 @@ ob_start(); ?>
 
 <?php $card_form = ob_get_clean();
 
-if (!isset($_SESSION['pid'])) header("Location: ");
+if (!isset($_SESSION['pid'])) header("Location: /");
 $repo = new CustomerRepository();
 $customer = $repo->findByPrivateId($_SESSION['pid']);
 
