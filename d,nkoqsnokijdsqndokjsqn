@@ -1,0 +1,279 @@
+[33mcommit f23dbde30a6a1b295d2a148a153a577b93b1b524[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Sun Oct 20 19:56:00 2024 +0200
+
+    not working
+
+[33mcommit 7ae169b3f566e535e57d40f9588676763ed65979[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Sun Oct 20 18:09:12 2024 +0200
+
+    update
+
+[33mcommit 9402a02b60c157b98e7e95eb795b407f4380cc74[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Sun Oct 20 15:37:52 2024 +0200
+
+    controller updated
+
+[33mcommit d65bd028a7d93ec229bcd1923d5158ea7c6e4a0b[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Sun Oct 20 15:35:22 2024 +0200
+
+    Customer Set function done
+
+[33mcommit 56447124b72b3b5bad39ce4234e68803468cee3d[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Fri Oct 18 15:02:55 2024 +0200
+
+    Update customer-info.php
+
+[33mcommit 364447d98f673e3ff53c6ee853d6d12b3bc523c6[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Thu Oct 17 23:18:16 2024 +0200
+
+    work in progress
+
+[33mcommit a2059956b294fe15a1512020ff61317b9c91b07f[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Thu Oct 17 22:47:15 2024 +0200
+
+    making secure payment available for customers
+
+[33mcommit bc1f17f623e3b58a1200a965d9010343945910d8[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Tue Oct 15 23:47:12 2024 +0200
+
+    modified update user page
+
+[33mcommit b20a277be3c3a47462467f9257c705d02217bb93[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Tue Oct 15 23:44:41 2024 +0200
+
+    update button in payment info
+
+[33mcommit 3b373c3050a4702cbf9d13f69498d036aa9965ce[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Tue Oct 15 23:42:31 2024 +0200
+
+    added fa to admin
+
+[33mcommit 8238dbc245491afdfb3b1ba2983fe328d2509905[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Tue Oct 15 23:36:43 2024 +0200
+
+    added fa
+
+[33mcommit be9eebbeb59fde03fc6bd6f807ceb4a5e6a92fd3[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Tue Oct 15 23:35:18 2024 +0200
+
+    updated customer info page
+
+[33mcommit 7249342282a6ca2bcaabc2795e17078d85f40800[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Mon Oct 14 23:09:29 2024 +0200
+
+    Changed the color of button on customer info
+
+[33mcommit 4af576d862c5f0e0883a05b35e71bb80f1edab7b[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Mon Oct 14 23:08:38 2024 +0200
+
+    update
+
+[33mcommit 2b57ceda389b960839219eb97997a797d32ac060[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Mon Oct 14 23:06:47 2024 +0200
+
+    Customer Ifo page done.
+
+[33mcommit 47abaeecaef18e0e6d7d64feb75a777589f9e0d5[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Mon Oct 14 23:04:07 2024 +0200
+
+    Page template done
+
+[33mcommit e4fff224734a352d8988cc8b239079af9414eafb[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Mon Oct 14 22:57:43 2024 +0200
+
+    Making customer list page for admin
+
+[33mcommit e58b92f8b0024dc209031b8bbf31749673bb8cb6[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Mon Oct 14 22:54:53 2024 +0200
+
+    update
+
+[33mcommit 5a5c6459ea730cbc1f2e707d64ddb615c5b0c3ea[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Mon Oct 14 22:54:12 2024 +0200
+
+    used base for template on admin
+
+[33mcommit c971ccc68ebb0db6427a779bce14a4675edace24[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Sat Oct 12 01:06:28 2024 +0200
+
+    card saved page update
+
+[33mcommit 9dacb6e2cec202b22a9fc29d8aeb3ad4a37ed219[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Sat Oct 12 01:00:43 2024 +0200
+
+    improved template
+
+[33mcommit 04b06cb6bef15d0923a381cc6881b5bdb54be1dc[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Sat Oct 12 00:45:17 2024 +0200
+
+    done the page save card
+
+[33mcommit 93558c200436b4cc35052ee2ab67339de08b6f5e[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Fri Oct 11 22:14:26 2024 +0200
+
+    clean up
+
+[33mcommit 14155ba832b7e9add95355c4ee130c1f520805ed[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Fri Oct 11 17:18:21 2024 +0200
+
+    mail function implemented
+
+[33mcommit 98c18d1b43502e483cc0d0d37c9ee4a71153d2db[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Fri Oct 11 16:22:03 2024 +0200
+
+    Testing mail function
+
+[33mcommit 1f650909580a0de6b87063e901c2cbed0e1d8ce5[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Fri Oct 11 14:49:39 2024 +0200
+
+    customer card controller update. Almost done
+
+[33mcommit 8db757eba9259616085daa2fe91abd74201dcc6a[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Fri Oct 11 14:09:41 2024 +0200
+
+    created Message class to send emails.
+
+[33mcommit c44191ddb3b1b9438bf1baea2b8b1a23bf89ec07[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Fri Oct 11 11:35:46 2024 +0200
+
+    saving and reading customer info and card info done
+
+[33mcommit 38c14c85c52133ce3138f7260fe78db5a4d82fc0[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Thu Oct 10 21:07:06 2024 +0200
+
+    POST WORKING ON CARD CONTROLLER
+
+[33mcommit 63bd0a7c543f8607663c22eb61bf6b3774728f59[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Thu Oct 10 19:09:08 2024 +0200
+
+    CardRepo done and tested
+
+[33mcommit d0cde3802912f43f9cc966633901af80b87b3868[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Thu Oct 10 15:35:32 2024 +0200
+
+    CustomerRepository done and tested
+
+[33mcommit c5a0fad11410a0a511d3de530dabb92b2705bb26[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Thu Oct 10 14:26:01 2024 +0200
+
+    crated CustomerRepository
+
+[33mcommit 7936b05c72ad96b4b06d488e954f9de095dd347a[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Thu Oct 10 11:54:22 2024 +0200
+
+    ProductRepo Update
+
+[33mcommit e6a67c7728ed4d6ad13383b74332aa253f529f40[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Thu Oct 10 00:24:04 2024 +0200
+
+    CRUD working on ProductRepository.
+
+[33mcommit 62186672b64e026e37de6c45ce2c40b5e3c84fe7[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Thu Oct 10 00:19:55 2024 +0200
+
+    updateProduct working on the repo.
+
+[33mcommit 9b48694c2f89345bc91a7b56366cb9e9021a27e1[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Thu Oct 10 00:09:23 2024 +0200
+
+    ProductRepo Create and Read works as expected.
+
+[33mcommit 61f0c3a573795bad5095eab8219264f238e64d8f[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Wed Oct 9 23:52:56 2024 +0200
+
+    tested create & read on ProductRepo, work.
+    A problem with id
+
+[33mcommit 026c78317792235ced402a5ffe22fe02e19db29f[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Wed Oct 9 23:49:47 2024 +0200
+
+    created model classes for Customer, Product and Card.
+
+[33mcommit a463729189dddab8409f19d639e2c43a3433edc2[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Wed Oct 9 18:47:42 2024 +0200
+
+    created model for data
+
+[33mcommit 0e6c24821cdd10fe66294436c1be870fc16f4815[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Wed Oct 9 15:17:25 2024 +0200
+
+    updated
+
+[33mcommit 3ae0e8578084f0b11e81036d2271b82d2ed9bb56[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Wed Oct 9 15:03:25 2024 +0200
+
+    finished card form
+
+[33mcommit 411e21d4736a18b6b7e84290a12df61e6b4373cf[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Wed Oct 9 11:48:58 2024 +0200
+
+    update
+
+[33mcommit 67a768dbd644d70fe764658143f9d3b1047b6052[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Wed Oct 9 11:41:44 2024 +0200
+
+    payment info page progress update
+
+[33mcommit b08df83622aa70936f890e0216c9337b97898529[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Mon Oct 7 18:15:53 2024 +0200
+
+    added working encryption decryption object "Secure"
+
+[33mcommit d1ccaedb1ec3322c79b27f7b3d5edef20123912b[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Mon Oct 7 16:42:57 2024 +0200
+
+    testing card registration
+
+[33mcommit 91ed137d0e4d27c1f336e72deefba53057f16d4e[m
+Author: Alex Balak <alex.balak@outlook.com>
+Date:   Mon Oct 7 14:09:25 2024 +0200
+
+    added encryption and  decryption methods to store and fetch data on the website.
+
+[33mcommit fba6c27c945593684708bf18490851a99a4aea59[m
+Author: Alex Balak <alex.balak@outlook.com

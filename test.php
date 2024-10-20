@@ -1,14 +1,5 @@
 <?php
-$array = [
-    'name' => 'John',
-    'age' => 30,
-    'city' => 'New York'
-];
-
-$key = ['age'];
-
-if (array_key_exists($key, $array)) {
-    echo "Key '$key' exists in the array.";
-} else {
-    echo "Key '$key' does not exist in the array.";
-}
+session_start();
+$_SESSION['username'] = 'JohnDoe';
+var_dump($_SESSION);
+header("Location: test2.php");
