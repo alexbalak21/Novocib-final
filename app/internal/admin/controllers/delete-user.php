@@ -7,6 +7,6 @@ if ($_SERVER['REQUEST_METHOD'] !== "POST") header("Location: /app/internal/admin
 
 $customer_id = $_POST['DELETE_CUST_ID'];
 
-$repo = new CardRepository();
+$repo = new CustomerRepository();
 
 if ($repo->delete($customer_id)) header("Location: /app/internal/admin/customer-info.php");

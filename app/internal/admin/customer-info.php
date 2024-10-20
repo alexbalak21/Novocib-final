@@ -31,7 +31,6 @@ function modal(string $pid, string $password)
                 <div class="modal-body text-center">
                     <span class="text-muted"><?= $link ?></span>
                     <button onclick="navigator.clipboard.writeText('<?= $link ?>')" class="btn btn-success btn-sm mt-2">Copy</button>
-
                     <div class="mt-4">
                         <label class="form-label">Password</label> <br>
                         <input type="password" value="<?= $password ?>" class="form-control text-center w-50 mx-auto mb-0"> <br>
@@ -96,7 +95,16 @@ function modal(string $pid, string $password)
                         <td>
                             <a class="btn btn-danger btn-sm" href="payment/unlock-card.php?cid=<?= $customer->uuid ?>" role="button">Payment <i class="fa-solid fa-credit-card"></i></a>
                             <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#myModal" role="button">Link <i class="fa-solid fa-paper-plane"></i></a>
-                            <form action=""></form>
+                            <button class="btn btn-danger btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Delete
+                            </button>
+                            <div class="dropdown-menu text-center">
+                                <h6>Confirm</h6>
+                                <form action="controllers/delete-user.php" method="POST">
+                                    <input type="hidden" name="DELETE_CUST_ID" value="<?= $customer->customer_id ?>">
+                                    <button class="btn btn-danger">Yes</button>
+                                </form>
+                            </div>
                         </td>
                     </tr>
                 <?php endforeach ?>

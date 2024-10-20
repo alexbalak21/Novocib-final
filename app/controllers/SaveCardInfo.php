@@ -45,6 +45,8 @@ function save_info()
     $card_id = save_card($key);
 
     $customerRepo->updateCardId($pid, $card_id);
+    echo $key;
+    die;
     $subject = "A customer added payment Information";
 
     $message = "Hello, $f_name $l_name has uploaded payment information.
