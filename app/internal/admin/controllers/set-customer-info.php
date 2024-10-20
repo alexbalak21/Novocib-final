@@ -22,11 +22,13 @@ function serve(): void
     if (!Utility::check_array($_POST, ["first_name", "last_name", "e_mail"])) return;
     $password = substr(str_shuffle('0123456789_.#$ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'), 0, 20);
     $uid = substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'), 0, 16);
-    $customer = new Customer(null, $_POST["first_name"], $_POST["last_name"], $_POST["e_mail"], null, null, null);
+    $customer = new Customer(null, $_POST["first_name"], $_POST["last_name"], $_POST["e_mail"], $uid, $password, null, null, null);
     $customerRepo = new CustomerRepository();
     $id = $customerRepo->save($customer);
     $link = "https://novocib.com/seccure-store?id=$id";
-    echo output($link);
+    $storedCustomer = $customerRepo->findById($id);
+    var_dump($storedCustomer);
+    die;
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== "POST") header("Location: index.php");

@@ -8,13 +8,6 @@ $customerRepo = new CustomerRepository();
 $customers = $customerRepo->findAll();
 
 ob_start(); ?>
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-    <p class="text-center">Product Added successfully</p>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-<?php $successAlert = ob_get_clean(); ?>
-
-ob_start(); ?>
 <div class="row mt-4 mb-2">
     <div class="d-flex">
         <i class="fa-regular fa-user fs-2 mt-4 ms-2"></i>
@@ -30,9 +23,9 @@ ob_start(); ?>
 
 <main class="container">
     <div class="col-lg-8 mx-auto">
-        <form action="controllers/customer-link-generator.php" method="POST">
+        <form action="controllers/set-customer-info.php" method="POST">
             <?= $customer_form ?>
-            <div class="my-5 text-center"><button type="submit" class="btn btn-primary btn-lg">Send Information <i class="fa-solid fa-lock ms-2"></i></button></div>
+            <div class="my-5 text-center"><button type="submit" class="btn btn-success btn-lg">Set Information <i class="fa-solid fa-lock ms-2"></i></button></div>
         </form>
     </div>
 </main>
@@ -69,11 +62,31 @@ ob_start(); ?>
                             <?= $customer->email ?>
                         </td>
                         <td>
-                            <a class="btn btn-danger" role="button">Payment Info <i class="fa-solid fa-lock"></i></a>
+                            <a class="btn btn-danger btn-sm" role="button">Payment <i class="fa-solid fa-credit-card"></i></a>
+                            <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#myModal" role="button">Link <i class="fa-solid fa-paper-plane"></i></a>
                         </td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
         </table>
     </div>
+    <section>
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Your content here.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </section>

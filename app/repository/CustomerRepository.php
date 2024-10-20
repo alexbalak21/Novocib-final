@@ -29,9 +29,9 @@ class CustomerRepository
         $this->pdo = null;
     }
 
-    public $select = "SELECT id AS customer_id, first_name, last_name, email, uuid, data, company_id FROM customer";
-    public $insert = "INSERT INTO customer (first_name, last_name, email, company_id, uuid, data) VALUES (:first_name, :last_name, :email, :company_id, :uuid, :data)";
-    public $update = "UPDATE customer SET first_name = :first_name, last_name = :last_name, email = :email, company_id = :company_id, uuid = :uuid, data = :data  WHERE id = :id";
+    public $select = "SELECT id AS customer_id, first_name, last_name, email, private_id, password, uuid, data, company_id FROM customers";
+    public $insert = "INSERT INTO customers (first_name, last_name, email, private_id, password, company_id, uuid, data) VALUES (:first_name, :last_name, :email, :private_id, :password, :company_id, :uuid, :data)";
+    public $update = "UPDATE customers SET first_name = :first_name, last_name = :last_name, email = :email, company_id = :company_id, uuid = :uuid, data = :data  WHERE id = :id";
 
     /**
      * Saves or updates a Customer record.
@@ -53,8 +53,9 @@ class CustomerRepository
         $stmt->bindValue(':email', $this->enc->store($customer->email));
         $stmt->bindValue(':company_id', $customer->company_id);
         $stmt->bindValue(':uuid', $this->enc->store($customer->uuid));
+        $stmt->bindValue(':private_id', $customer->private_id);
+        $stmt->bindValue(':password', $this->enc->store($customer->password));
         $stmt->bindValue(':data', $this->enc->store($customer->data));
-
         if ($customer->customer_id !== null) {
             $stmt->bindValue(':id', $customer->customer_id);
         } else {
@@ -86,6 +87,7 @@ class CustomerRepository
                 first_name: $this->enc->read($customer['first_name']),
                 last_name: $this->enc->read($customer['last_name']),
                 email: $this->enc->read($customer['email']),
+                password: $this->enc->read($customer['password']),
                 uuid: $this->enc->read($customer['uuid']),
                 data: $this->enc->read($customer['data']),
                 company_id: $customer['company_id'] // Assuming this is encrypted as well
@@ -113,6 +115,34 @@ class CustomerRepository
                 first_name: $this->enc->read($customer['first_name']),
                 last_name: $this->enc->read($customer['last_name']),
                 email: $this->enc->read($customer['email']),
+                private_id: $customer['private_id'],
+                password: $this->enc->read($customer['password']),
+                uuid: $this->enc->read($customer['uuid']),
+                data: $this->enc->read($customer['data']),
+                company_id: $customer['company_id']
+            );
+        } else {
+            return null;
+        }
+    }
+
+    public function findByPrivateId(string $private_id): ?Customer
+    {
+        $query = $this->select . " WHERE private_id = :private_id  LIMIT 1";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(':id', $private_id);
+        $stmt->execute();
+
+        $customer = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($customer) {
+            return new Customer(
+                customer_id: $customer['customer_id'],
+                first_name: $this->enc->read($customer['first_name']),
+                last_name: $this->enc->read($customer['last_name']),
+                email: $this->enc->read($customer['email']),
+                private_id: $customer['private_id'],
+                password: $this->enc->read($customer['password']),
                 uuid: $this->enc->read($customer['uuid']),
                 data: $this->enc->read($customer['data']),
                 company_id: $customer['company_id']
