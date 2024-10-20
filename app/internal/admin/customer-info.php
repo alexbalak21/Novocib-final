@@ -18,7 +18,35 @@ ob_start(); ?>
     <?= InputArea::gen(name: "e-mail", class: "col-12", required: true) ?>
 </div>
 <?php $customer_form = ob_get_clean();
+
+function modal(string $pid, string $password)
+{
+    $link = "https://novocib.com/secure/transfer?pid=$pid";
+    ob_start(); ?>
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="text-end"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+
+                <div class="modal-body text-center">
+                    <span class="text-muted"><?= $link ?></span>
+                    <button onclick="navigator.clipboard.writeText('<?= $link ?>')" class="btn btn-success btn-sm mt-2">Copy</button>
+
+                    <div class="mt-4">
+                        <label class="form-label">Password</label> <br>
+                        <input type="password" value="<?= $password ?>" class="form-control text-center w-50 mx-auto mb-0"> <br>
+                        <button onclick="navigator.clipboard.writeText('<?= $password ?>')" class="btn btn-success btn-sm">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php return ob_get_clean();
+}
+
 ?>
+
+
 
 
 <main class="container">
@@ -51,6 +79,7 @@ ob_start(); ?>
             </thead>
             <tbody>
                 <?php foreach ($customers as $customer) : ?>
+                    <?= modal($customer->private_id, $customer->password) ?>
                     <tr>
                         <td>
                             <?= $customer->first_name ?>
@@ -70,23 +99,4 @@ ob_start(); ?>
             </tbody>
         </table>
     </div>
-    <section>
-        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="myModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Your content here.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </section>

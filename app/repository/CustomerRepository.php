@@ -88,6 +88,7 @@ class CustomerRepository
                 last_name: $this->enc->read($customer['last_name']),
                 email: $this->enc->read($customer['email']),
                 password: $this->enc->read($customer['password']),
+                private_id: $customer['private_id'],
                 uuid: $this->enc->read($customer['uuid']),
                 data: $this->enc->read($customer['data']),
                 company_id: $customer['company_id'] // Assuming this is encrypted as well
@@ -130,7 +131,7 @@ class CustomerRepository
     {
         $query = $this->select . " WHERE private_id = :private_id  LIMIT 1";
         $stmt = $this->pdo->prepare($query);
-        $stmt->bindParam(':id', $private_id);
+        $stmt->bindParam(':private_id', $private_id);
         $stmt->execute();
 
         $customer = $stmt->fetch(PDO::FETCH_ASSOC);

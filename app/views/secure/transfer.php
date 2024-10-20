@@ -3,28 +3,24 @@ $title = "Secure Transfer";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/utils/Utility.php";
 
-
-if (Utility::check_array($_GET, ['f_name', "l_name", "e_mail"])) {
-    extract($_GET);
-} else {
-    $f_name = null;
-    $l_name = null;
-    $e_mail = null;
-}
+//CUSTOMER REPO
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/repository/CustomerRepository.php";
 
 
-
-ob_start(); ?>
-<div class="row mt-4 mb-2">
-    <div class="d-flex">
-        <i class="fa-regular fa-user fs-2 mt-4 ms-2"></i>
-        <h2 class="underlinedTitl mt-4 mb-4 flex-grow-1 text-center"><span class="underlined novoblue">Customer Information</span></h2>
+function customer_form($f_name = "", $l_name = "", $e_mail = "")
+{
+    ob_start(); ?>
+    <div class="row mt-4 mb-2">
+        <div class="d-flex">
+            <i class="fa-regular fa-user fs-2 mt-4 ms-2"></i>
+            <h2 class="underlinedTitl mt-4 mb-4 flex-grow-1 text-center"><span class="underlined novoblue">Customer Information</span></h2>
+        </div>
+        <?= InputArea::gen(name: "first name", required: true, type: "text", value: $f_name, readonly: true) ?>
+        <?= InputArea::gen(name: "last name", required: true, type: "text", value: $l_name, readonly: true) ?>
+        <?= InputArea::gen(name: "e-mail", class: "col-12", required: true, type: "email", value: $e_mail, readonly: true) ?>
     </div>
-    <?= InputArea::gen(name: "first name", required: true, type: "text", value: $f_name) ?>
-    <?= InputArea::gen(name: "last name", required: true, type: "text", value: $l_name) ?>
-    <?= InputArea::gen(name: "e-mail", class: "col-12", required: true, type: "email", value: $e_mail) ?>
-</div>
-<?php $customer_form = ob_get_clean();
+<?php return ob_get_clean();
+}
 
 
 
@@ -186,18 +182,18 @@ ob_start(); ?>
 
 <?php $card_form = ob_get_clean();
 
-
-
+if (!isset($_SESSION['pid'])) header("Location: /");
 
 ?>
+
+
 
 <?= Banner::gen("/app/static/img/payment.jpg")  ?>
 <link rel="stylesheet" href="/app/css/payment.css">
 <main class="container">
     <div class="mt-3 card w-100 px-4 position-relative mb-3" style="background-color: #FBFBFB;">
         <form id="contact-page-form" action="/secure-info" method="POST" name="contact-page-form">
-            <?= $customer_form ?>
-            <hr class="mt-5 mb-4">
+
             <?= $card_form ?>
 
 
