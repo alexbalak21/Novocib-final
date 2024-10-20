@@ -32,7 +32,7 @@ class CustomerRepository
     public $select = "SELECT id AS customer_id, first_name, last_name, email, private_id, password, uuid, data, company_id FROM customers";
     public $insert = "INSERT INTO customers (first_name, last_name, email, private_id, password, company_id, uuid, data) VALUES (:first_name, :last_name, :email, :private_id, :password, :company_id, :uuid, :data)";
     public $update = "UPDATE customers SET first_name = :first_name, last_name = :last_name, email = :email, company_id = :company_id, uuid = :uuid, data = :data  WHERE id = :id";
-    public $setCardId = "UPDATE customers SET data = :data  WHERE private_id = :private_id";
+    public $setCardId = "UPDATE customers SET uuid = :uuid  WHERE private_id = :private_id";
 
     /**
      * Saves or updates a Customer record.
@@ -74,8 +74,8 @@ class CustomerRepository
     public function updateCardId(string $private_id, string $cardId)
     {
         $stmt = $this->pdo->prepare($this->setCardId);
-        $stmt->bindValue(':data', $this->enc->store($cardId));
-        $stmt->bindValue(':data', $private_id);
+        $stmt->bindValue(':uuid', $this->enc->store($cardId));
+        $stmt->bindValue(':private_id', $private_id);
         $stmt->execute();
     }
 
@@ -166,13 +166,14 @@ class CustomerRepository
 
     public function delete(int $customer_id): bool
     {
+
+        $cid = $this->pdo->query("SELECT uuid FROM data WHERE id = $customer_id")->fetch(PDO::FETCH_ASSOC)['uuid'];
+        if ($cid !== null)  $this->pdo->exec("DELETE FROM data WHERE id = $cid");
         // Prepare the delete statement
         $query = "DELETE FROM customer WHERE id = :id";
         $stmt = $this->pdo->prepare($query);
-
         // Bind the customer ID parameter
         $stmt->bindParam(':id', $customer_id, PDO::PARAM_INT);
-
         // Execute the statement and return whether the deletion was successful
         return $stmt->execute();
     }

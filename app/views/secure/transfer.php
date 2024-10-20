@@ -190,12 +190,11 @@ ob_start(); ?>
 <link rel="stylesheet" href="/app/css/payment.css">
 <main class="container">
     <div class="mt-3 card w-100 px-4 position-relative mb-3" style="background-color: #FBFBFB;">
-        <form id="contact-page-form" action="/secure-info" method="POST" name="contact-page-form">
+        <form id="contact-page-form" action="/secure/store" method="POST" name="contact-page-form">
+            <input type="password" class="d-none" readonly name="pid" value="<?= $_SESSION['pid'] ?>">
             <?= customer_form($_SESSION['first_name'], $_SESSION['last_name'], $_SESSION['email']) ?>
 
             <hr class="my-5">
-
-
             <?= $card_form ?>
             <div class="my-5 text-center"><button type="submit" class="btn btn-success btn-lg">Send Information <i class="fa-solid fa-lock ms-2"></i></button></div>
         </form>

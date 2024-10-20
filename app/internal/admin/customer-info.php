@@ -21,7 +21,7 @@ ob_start(); ?>
 
 function modal(string $pid, string $password)
 {
-    $link = "https://novocib.com/secure/transfer?pid=$pid";
+    $link = "https://novocib.com/secure/login?pid=$pid";
     ob_start(); ?>
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -79,6 +79,9 @@ function modal(string $pid, string $password)
             </thead>
             <tbody>
                 <?php foreach ($customers as $customer) : ?>
+                    <pre>
+                    <?php var_dump($customer); ?>
+                    </pre>
                     <?= modal($customer->private_id, $customer->password) ?>
                     <tr>
                         <td>
@@ -91,8 +94,9 @@ function modal(string $pid, string $password)
                             <?= $customer->email ?>
                         </td>
                         <td>
-                            <a class="btn btn-danger btn-sm" role="button">Payment <i class="fa-solid fa-credit-card"></i></a>
+                            <a class="btn btn-danger btn-sm" href="payment/unlock-card.php?cid=<?= $customer->uuid ?>" role="button">Payment <i class="fa-solid fa-credit-card"></i></a>
                             <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#myModal" role="button">Link <i class="fa-solid fa-paper-plane"></i></a>
+                            <form action=""></form>
                         </td>
                     </tr>
                 <?php endforeach ?>

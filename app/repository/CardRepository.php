@@ -72,7 +72,6 @@ class CardRepository
 
     public function delete(string $id): bool
     {
-
         $query = "DELETE FROM data WHERE id = :id";
         $stmt = $this->pdo->prepare($query);
         $stmt->bindParam(':id', $id, PDO::PARAM_STR);

@@ -12,10 +12,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/Mail.php";
 //UTILITY CLASS
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/utils/Utility.php";
 
-function serve(): void
-{
-    if ($_SERVER['REQUEST_METHOD'] === "POST") save_info();
-}
+
+if ($_SERVER['REQUEST_METHOD'] === "POST") save_info();
+else header("Location: /");
+
 
 
 
@@ -58,7 +58,7 @@ function save_info()
     Message  generated automatically by Novocib.com
     ";
     $sent = Mail::send($email, $subject, $message);
-    echo $sent ? "Store and Send Successfully" : "FAILED";
+    // echo $sent ? "Store and Send Successfully" : "FAILED";
+    echo $key;
+    die;
 }
-
-serve();

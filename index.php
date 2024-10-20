@@ -277,6 +277,12 @@ switch ($req_uri) {
         require_once "app/views/secure/transfer.php";
         break;
 
+    case "/secure/store":
+        require_once "app/controllers/SaveCardInfo.php";
+        break;
+
+
+
     default:
         require_once "app/views/404.php";
         break;

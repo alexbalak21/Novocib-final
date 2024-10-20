@@ -25,10 +25,7 @@ function serve(): void
     $customer = new Customer(null, ucfirst($_POST["first_name"]), strtoupper($_POST["last_name"]), strtolower($_POST["e_mail"]), $uid, $password, null, null, null);
     $customerRepo = new CustomerRepository();
     $id = $customerRepo->save($customer);
-    $link = "https://novocib.com/seccure-store?id=$id";
-    $storedCustomer = $customerRepo->findById($id);
-    var_dump($storedCustomer);
-    die;
+    header("Location: /app/internal/admin/customer-info.php");
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== "POST") header("Location: index.php");
