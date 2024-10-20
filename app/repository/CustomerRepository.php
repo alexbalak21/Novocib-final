@@ -32,6 +32,7 @@ class CustomerRepository
     public $select = "SELECT id AS customer_id, first_name, last_name, email, private_id, password, uuid, data, company_id FROM customers";
     public $insert = "INSERT INTO customers (first_name, last_name, email, private_id, password, company_id, uuid, data) VALUES (:first_name, :last_name, :email, :private_id, :password, :company_id, :uuid, :data)";
     public $update = "UPDATE customers SET first_name = :first_name, last_name = :last_name, email = :email, company_id = :company_id, uuid = :uuid, data = :data  WHERE id = :id";
+    public $setCardId = "UPDATE customers SET data = :data  WHERE private_id = :private_id";
 
     /**
      * Saves or updates a Customer record.
@@ -68,6 +69,16 @@ class CustomerRepository
         // Return the last inserted id or the updated customer id
         return $customer->customer_id ?? $this->pdo->lastInsertId();
     }
+
+
+    public function updateCardId(string $private_id, string $cardId)
+    {
+        $stmt = $this->pdo->prepare($this->setCardId);
+        $stmt->bindValue(':data', $this->enc->store($cardId));
+        $stmt->bindValue(':data', $private_id);
+        $stmt->execute();
+    }
+
 
     /**
      * Fetches all customers and returns an array of Customer objects.
