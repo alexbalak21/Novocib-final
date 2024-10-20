@@ -21,5 +21,8 @@ function check_customer()
     if ($password !== $customer->password) header("Location: /");
     session_start();
     $_SESSION['pid'] = $pid;
+    $_SESSION['first_name'] = $customer->first_name;
+    $_SESSION['last_name'] = $customer->last_name;
+    $_SESSION['email'] = $customer->email;
     header("Location: /secure/transfer");
 }

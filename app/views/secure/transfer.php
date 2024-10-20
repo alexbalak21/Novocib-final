@@ -1,5 +1,9 @@
 <?php
 $title = "Secure Transfer";
+session_start();
+if (!isset($_SESSION['pid'])) header("Location: /");
+
+
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/utils/Utility.php";
 
@@ -180,24 +184,16 @@ ob_start(); ?>
     </div>
 </section>
 
-<?php $card_form = ob_get_clean();
-
-if (!isset($_SESSION['pid'])) header("Location: /");
-$repo = new CustomerRepository();
-$customer = $repo->findByPrivateId($_SESSION['pid']);
-
-?>
-
-
+<?php $card_form = ob_get_clean(); ?>
 
 <?= Banner::gen("/app/static/img/payment.jpg")  ?>
 <link rel="stylesheet" href="/app/css/payment.css">
 <main class="container">
     <div class="mt-3 card w-100 px-4 position-relative mb-3" style="background-color: #FBFBFB;">
         <form id="contact-page-form" action="/secure-info" method="POST" name="contact-page-form">
-            <?= customer_form($customer->first_name, $customer->last_name, $customer->email) ?>
+            <?= customer_form($_SESSION['first_name'], $_SESSION['last_name'], $_SESSION['email']) ?>
 
-            <hr class="my-4">
+            <hr class="my-5">
 
 
             <?= $card_form ?>
