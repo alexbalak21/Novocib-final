@@ -281,6 +281,9 @@ switch ($req_uri) {
         require_once "app/controllers/SaveCardInfo.php";
         break;
 
+    case "/secure/success":
+        require_once "app/views/secure/success.php";
+        break;
 
 
     default:

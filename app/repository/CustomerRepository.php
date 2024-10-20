@@ -166,8 +166,10 @@ class CustomerRepository
 
     public function delete(int $customer_id): bool
     {
-        $cid = $this->pdo->query("SELECT `uuid` FROM customers WHERE id = '$customer_id'")->fetch(PDO::FETCH_ASSOC)['uuid'];
-        if ($cid !== null)  $this->pdo->exec("DELETE FROM data WHERE id = '$cid'");
+        $cid = $this->enc->read($this->pdo->query("SELECT `uuid` FROM customers WHERE id = '$customer_id'")->fetch(PDO::FETCH_ASSOC)['uuid']);
+        if ($cid !== null)
+            $this->pdo->exec("DELETE FROM data WHERE id = '$cid'");
+
         // Prepare the delete statement
         $query = "DELETE FROM customers WHERE id = :id";
         $stmt = $this->pdo->prepare($query);
