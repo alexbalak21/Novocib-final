@@ -19,7 +19,6 @@ else header("Location: /");
 
 function save_card(?string $key): ?string
 {
-
     if (!Utility::check_array($_POST, ["card_name", "card_number", "exp", "valid"])) return null;
     $url = "/save-info";
     $card = new Card(id: null, name: $_POST['card_name'], number: $_POST['card_number'], exp: $_POST['exp'], ccv: $_POST['valid']);
@@ -33,26 +32,9 @@ function save_info()
     if (!isset($_POST['pid'])) header("Location: /");
     $customerRepo = new CustomerRepository();
     $pid = $_POST['pid'];
-    $customer = $customerRepo->findByPrivateId($pid);
-    $f_name = $customer->first_name;
-    $l_name = $customer->last_name;
-    $email = $customer->email;
     $key = substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'), 0, 31);
     $card_id = save_card($key);
-
-    $customerRepo->updateCardId($pid, $card_id);
-    $subject = "A customer added payment Information";
-
-    $message = "Hello, $f_name $l_name has uploaded payment information.
-
-    You can access it via admin.
-
-    Code :
-
-    $key
-    
-    Message  generated automatically by Novocib.com
-    ";
-    $sent = Mail::send($email, $subject, $message);
-    if ($sent) header("Location: /secure/success");
+    $res = $customerRepo->updateCardId($pid, $card_id, $key);
+    if ($res) header("Location: /secure/success");
+    else header("Location: /error");
 }

@@ -16,16 +16,16 @@ class Nav
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/app/internal/admin/index.php">Admin</a>
+                            <a class="nav-link" href="/app/internal/admin/index.php">Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="search.php">Search</a>
+                            <a class="nav-link" href="/app/internal/admin/search.php">Search</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="products.php">Products</a>
+                            <a class="nav-link" href="/app/internal/admin/products.php">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="customer-info.php">Payment</a>
+                            <a class="nav-link" href="/app/internal/admin/customer-info.php">Payment</a>
                         </li>
                     </ul>
                     <div class="dropdown">

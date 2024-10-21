@@ -285,6 +285,10 @@ switch ($req_uri) {
         require_once "app/views/secure/success.php";
         break;
 
+    case "/error":
+        require_once "app/views/error.php";
+        break;
+
 
     default:
         require_once "app/views/404.php";

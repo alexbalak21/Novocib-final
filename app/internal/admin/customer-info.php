@@ -23,7 +23,7 @@ function modal(string $pid, string $password)
 {
     $link = "https://novocib.com/secure/login?pid=$pid";
     ob_start(); ?>
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal_<?= $pid ?>" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="text-end"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -89,10 +89,14 @@ function modal(string $pid, string $password)
                         <td>
                             <?= $customer->email ?>
                         </td>
-                        <td>
-                            <a class="btn btn-danger btn-sm" href="payment/unlock-card.php?cid=<?= $customer->uuid ?>" role="button">Payment <i class="fa-solid fa-credit-card"></i></a>
-                            <a class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#myModal" role="button">Link <i class="fa-solid fa-paper-plane"></i></a>
-                            <button class="btn btn-danger btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <td class="d-flex justify-content-center">
+                            <form action="controllers/card-reader.php" method="POST">
+                                <input type="hidden" name="c_key" value="<?= $customer->data ?>">
+                                <input type="hidden" name="card_id" value="<?= $customer->uuid ?>">
+                                <button class="btn btn-danger btn-sm mx-1">Payment <i class="fa-solid fa-credit-card"></i></button>
+                            </form>
+                            <a class="btn btn-primary btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modal_<?= $customer->private_id ?>" role="button">Link <i class="fa-solid fa-paper-plane"></i></a>
+                            <button class="btn btn-danger btn-sm mx-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Delete
                             </button>
                             <div class="dropdown-menu text-center">

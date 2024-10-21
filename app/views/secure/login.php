@@ -23,7 +23,7 @@ function check_customer(string $pid)
 
     ob_start(); ?>
     <main class="container" style="height: 55vh; display: flex; align-items: center; justify-content: center;">
-        <div class="col-lg-4 mx-auto">
+        <div class="col-lg-4 col-8 mx-auto">
             <form action="/secure/login-c" method="POST">
                 <input type="hidden" class="d-none" name="pid" value="<?= $pid ?>">
                 <div class="form-group mb-4 text-center">
@@ -37,7 +37,6 @@ function check_customer(string $pid)
                 <div class="text-center"><button type="submit" class="btn btn-primary">Submit</button></div>
             </form>
         </div>
-
     </main>
 <?php echo ob_get_clean();
 }
