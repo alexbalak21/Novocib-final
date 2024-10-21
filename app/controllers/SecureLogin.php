@@ -19,7 +19,7 @@ function check_customer()
     $customer = $customerRepo->findByPrivateId($pid);
     if ($customer == null) header("Location: /");
     if (strcmp($password, $customer->password)) {
-        header("Location: /home");
+        header("Location: /error?message=Incorrect Password");
     } else {
         session_start();
         $_SESSION['pid'] = $pid;
