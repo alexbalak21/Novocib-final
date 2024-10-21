@@ -24,6 +24,9 @@ class Nav
                         <li class="nav-item">
                             <a class="nav-link" href="products.php">Products</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customer-info.php">Payment</a>
+                        </li>
                     </ul>
                     <div class="dropdown">
                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">

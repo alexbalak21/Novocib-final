@@ -17,14 +17,11 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") save_info();
 else header("Location: /");
 
 
-
-
 function save_card(?string $key): ?string
 {
 
     if (!Utility::check_array($_POST, ["card_name", "card_number", "exp", "valid"])) return null;
     $url = "/save-info";
-    // header("Location: /app/internal/admin/test.php?error=Missing Information");
     $card = new Card(id: null, name: $_POST['card_name'], number: $_POST['card_number'], exp: $_POST['exp'], ccv: $_POST['valid']);
     $cardRepo = new CardRepository();
     return $cardRepo->save($card, $key ?? null);
@@ -33,7 +30,7 @@ function save_card(?string $key): ?string
 
 function save_info()
 {
-    if (isset($_POST['pid']) || empty($_POST['pid'])) header("Location: /");
+    if (!isset($_POST['pid'])) header("Location: /");
     $customerRepo = new CustomerRepository();
     $pid = $_POST['pid'];
     $customer = $customerRepo->findByPrivateId($pid);
@@ -44,8 +41,6 @@ function save_info()
     $card_id = save_card($key);
 
     $customerRepo->updateCardId($pid, $card_id);
-    echo $key;
-    die;
     $subject = "A customer added payment Information";
 
     $message = "Hello, $f_name $l_name has uploaded payment information.
@@ -59,5 +54,5 @@ function save_info()
     Message  generated automatically by Novocib.com
     ";
     $sent = Mail::send($email, $subject, $message);
-    if ($sent) header("Location: secure/success");
+    if ($sent) header("Location: /secure/success");
 }

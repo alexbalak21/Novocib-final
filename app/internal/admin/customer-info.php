@@ -78,9 +78,6 @@ function modal(string $pid, string $password)
             </thead>
             <tbody>
                 <?php foreach ($customers as $customer) : ?>
-                    <pre>
-                    <?php var_dump($customer); ?>
-                    </pre>
                     <?= modal($customer->private_id, $customer->password) ?>
                     <tr>
                         <td>

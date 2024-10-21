@@ -18,11 +18,14 @@ function check_customer()
     $customerRepo = new CustomerRepository();
     $customer = $customerRepo->findByPrivateId($pid);
     if ($customer == null) header("Location: /");
-    if ($password !== $customer->password) header("Location: /");
-    session_start();
-    $_SESSION['pid'] = $pid;
-    $_SESSION['first_name'] = $customer->first_name;
-    $_SESSION['last_name'] = $customer->last_name;
-    $_SESSION['email'] = $customer->email;
-    header("Location: /secure/transfer");
+    if (strcmp($password, $customer->password)) {
+        header("Location: /home");
+    } else {
+        session_start();
+        $_SESSION['pid'] = $pid;
+        $_SESSION['first_name'] = $customer->first_name;
+        $_SESSION['last_name'] = $customer->last_name;
+        $_SESSION['email'] = $customer->email;
+        header("Location: /secure/transfer");
+    }
 }

@@ -31,8 +31,8 @@ function check_customer(string $pid)
                     <input type="email" name="e_mail" readonly="true" value="<?= $customer->email ?>" class="form-control text-center" id="email">
                 </div>
                 <div class="form-group mb-4 text-center">
-                    <label class="fw-bold" for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" autofocus class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label class="fw-bold">Password</label>
+                    <input type="password" name="password" autofocus class="form-control" placeholder="Password">
                 </div>
                 <div class="text-center"><button type="submit" class="btn btn-primary">Submit</button></div>
             </form>
