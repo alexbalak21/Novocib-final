@@ -12,19 +12,19 @@ ob_start(); ?>
 if (isset($_GET['id_update'])) {
     $id = intval($_GET['id_update']);
     $product = get_product_by_id($id);
+    var_dump($product);
 }
 ?>
 
-
 <section class="container mt-3">
-    <h1 class="text-center">Add new Product</h1>
+    <h1 class="text-center"><?= isset($_GET['id_update']) ? "Update Product" : "Add Product" ?></h1>
     <?php if (isset($_GET['product']) && $_GET['product'] == "added") echo $successAlert; ?>
     <form action="addProduct.php" method="POST">
         <div class="row mt-5 d-flex justify-content-center">
             <div class="mb-3 col-12">
                 <div class="col-8 mx-auto">
                     <label for="title" class="form-label">Title</label>
-                    <input name="title" value="<?= $product['name'] ?? "" ?> type=" text" class="form-control" id="title">
+                    <input name="title" value="<?= $product['title'] ?? "" ?>" type="text" class="form-control" id="title">
                 </div>
             </div>
             <div class="mb-3 col-6 col-lg-2">
@@ -49,6 +49,12 @@ if (isset($_GET['id_update'])) {
         </div>
     </form>
 </section>
+
+
+
+
+
+
 
 <section class="mt-5">
     <style>
