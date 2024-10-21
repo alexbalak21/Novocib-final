@@ -28,7 +28,7 @@ class Product
             </tbody>
         </table>
         <p class="text-muted text-center">
-            <em>Updated on <?= date('d F Y', strtotime($product['updated_on'])) ?>.</em>
+            <em>Updated on <?= date('F jS, Y', strtotime($product['updated_on'])) ?>.</em>
             <br />
         </p>
 <?php return ob_get_clean();
