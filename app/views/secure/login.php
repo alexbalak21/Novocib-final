@@ -1,5 +1,5 @@
 <?php
-
+$title = "Secure Login";
 
 //CUSTOMER REPO
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/repository/CustomerRepository.php";
@@ -16,7 +16,7 @@ function check_customer(string $pid)
     $customer = $customRepo->findByPrivateId($pid);
     if ($customer == null) return header("Location: /");
 
-    $title = "Secure Login";
+
     require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
     echo Banner::gen("/app/static/img/secure-login.jpg");
 

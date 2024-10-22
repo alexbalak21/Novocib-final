@@ -7,6 +7,20 @@ $customerRepo = new CustomerRepository();
 
 $customers = $customerRepo->findAll();
 
+
+function payment_access(string $data, string $uuid)
+{
+    ob_start(); ?>
+    <form action="controllers/card-reader.php" method="POST">
+        <input type="hidden" name="c_key" value="<?= $data ?>">
+        <input type="hidden" name="card_id" value="<?= $uuid ?>">
+        <button class="btn btn-danger btn-sm mx-1">Payment <i class="fa-solid fa-credit-card"></i></button>
+    </form>
+<?php return ob_get_clean();
+}
+
+
+
 ob_start(); ?>
 <div class="row mt-4 mb-2">
     <div class="d-flex">
@@ -43,7 +57,10 @@ function modal(string $pid, string $password)
 <?php return ob_get_clean();
 }
 
+
+
 ?>
+
 
 
 
@@ -90,11 +107,8 @@ function modal(string $pid, string $password)
                             <?= $customer->email ?>
                         </td>
                         <td class="d-flex justify-content-center">
-                            <form action="controllers/card-reader.php" method="POST">
-                                <input type="hidden" name="c_key" value="<?= $customer->data ?>">
-                                <input type="hidden" name="card_id" value="<?= $customer->uuid ?>">
-                                <button class="btn btn-danger btn-sm mx-1">Payment <i class="fa-solid fa-credit-card"></i></button>
-                            </form>
+
+                            <?php if ($customer->uuid !== null) echo payment_access($customer->data, $customer->uuid) ?>
                             <a class="btn btn-primary btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modal_<?= $customer->private_id ?>" role="button">Link <i class="fa-solid fa-paper-plane"></i></a>
                             <button class="btn btn-danger btn-sm mx-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Delete
