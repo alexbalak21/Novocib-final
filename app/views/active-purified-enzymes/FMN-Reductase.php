@@ -48,6 +48,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/test_template.php";
                 NAD(P)H:FMN oxidoreductase, riboflavin mononucleotide reductase, <br>
                 flavin mononucleotide reductase
             </p>
+            <p class="text-end">E.C. 1.5.1.29</p>
         </div>
     </div>
     <div class="row mt-4 mb-5">
