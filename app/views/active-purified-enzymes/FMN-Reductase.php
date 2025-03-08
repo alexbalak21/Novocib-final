@@ -55,7 +55,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/test_template.php";
         <div class="col-xl-6  row">
             <div class="col-4">
                 <b class="ms-3">FRE Gel</b>
-                <img class="border" src="/app/static/img/FRE_Gel.png" alt="FRE Gel">
+                <img class="border w-100" src="/app/static/img/FRE_Gel.png" alt="FRE Gel">
             </div>
             <div class="col-8 mt-5">
                 <p>
@@ -86,7 +86,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/test_template.php";
                 luciferase (50µg/ml, NovoCIB, # E-Nov 10) in the presence (red) or absence (blue) of
                 exogenous Fre (10mU/ml).
             </p>
-            <div class="d-flex justify-content-center"><img class="border" src="/app/static/img/FRE_Calibration.png" alt="FRE Calibration Graph"></div>
+            <div class="d-flex justify-content-center"><img class="w-100 border" src="/app/static/img/FRE_Calibration.png" alt="FRE Calibration Graph"></div>
             <p><b>Assay conditions</b>: Luminescence signal (5 seconds) was measured immediately after
                 NADH addition (5µL) to 200µL-well containing 0.1M KH2PO4 pH=6.9, 0.02% decanal,
                 50µM FMN, 2mg/ml BSA. Reaction was followed in a FluoroSkan Ascent FL
