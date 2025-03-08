@@ -57,7 +57,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/test_template.php";
                 <b class="ms-3">FRE Gel</b>
                 <img class="border w-100" src="/app/static/img/FRE_Gel.png" alt="FRE Gel">
             </div>
-            <div class="col-8 mt-5">
+            <div class="col-8 mt-xl-5">
                 <p>
                     <b>Unit Definition</b>: One unit of
                     FMN-reductase converts 1.0
