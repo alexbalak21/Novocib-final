@@ -23,7 +23,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/test_template.php";
         <div class="col-lg-10 col-12">
 
             <!-- FETCHING PRODUCT FROM THE DATABASE -->
-            <?= Product::gen("FMN-Reductase") ?>
+            <?= Products::gen("FMN-Reductase") ?>
 
             <p class="text-center">
                 <strong>

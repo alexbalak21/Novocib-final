@@ -77,7 +77,7 @@ $content_title
 <td class="col-6">Bacterial, produced from a selected strain of Photobacterium phosphoreum</td>
 </tr>
 <tr>
-<td><h5><a href="">FMN Reductase</a></h5></td>
+<td><h5><a href="/active-purified-enzymes/fmn-reductase">FMN Reductase</a></h5></td>
 <td>(EC 1.5.1.29)</td>
 <td>Bacterial recombinant, E.coli</td>
 </tr>
