@@ -13,7 +13,7 @@ switch ($req_uri) {
         require "app/views/home.php";
         break;
 
-        // SEND MAIL LOGIC
+    // SEND MAIL LOGIC
     case "/send":
         require_once "app/logic/send.php";
         break;
@@ -22,7 +22,7 @@ switch ($req_uri) {
         require_once "app/views/message_sent.php";
         break;
 
-        // Active-Purified-Enzymes
+    // Active-Purified-Enzymes
     case "/active-purified-enzymes":
         require_once "app/views/active-purified-enzymes.php";
         break;
@@ -60,8 +60,16 @@ switch ($req_uri) {
         require_once "app/views/active-purified-enzymes/human-ump-cmp-kinase.php";
         break;
 
+    case "/active-purified-enzymes/fmn-reductase":
+        require_once "app/views/active-purified-enzymes/FMN-Reductase.php";
+        break;
 
-        // FRESHNESS
+
+
+
+
+
+    // FRESHNESS
     case "/freshness-assay-kits":
         require_once "app/views/freshness-assay-kits/index.php";
         break;
@@ -96,7 +104,7 @@ switch ($req_uri) {
         header("Location: /freshness-assay-kits/freshness-assay-kit");
         break;
 
-        // CONVENIENT ASSAY KITS
+    // CONVENIENT ASSAY KITS
     case "/Convenient_Assay_Kits.html":
     case "/convenient-assay-kits":
         require_once "app/views/convenient-assay-kits/index.php";
@@ -207,7 +215,7 @@ switch ($req_uri) {
         require_once "app/views/analytical-services/yeast-extract-nucleotide-analysis.php";
         break;
 
-        // SERVICES
+    // SERVICES
     case "/services":
     case "/analytical-services":
         require_once "app/views/analytical-services/index.php";

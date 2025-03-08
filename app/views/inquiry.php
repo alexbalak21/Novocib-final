@@ -23,10 +23,11 @@ ob_start(); ?>
             type="text"
             class="form-control"
             id="volume"
+            readonly
             placeholder="volume" />
         <div class="valid-feedback">Looks good</div>
         <div class="invalid-feedback">Enter your desired volume of product</div>
-        <label for="your-need">Volume</label>
+        <label for="volume">Volume</label>
     </div>
 </div>
 <?php $volume_form = ob_get_clean();
@@ -72,10 +73,11 @@ ob_start(); ?>
                         type="text"
                         class="form-control"
                         id="your-need"
+                        <?= $product ? 'readonly="readonly"' : '' ?>
                         placeholder="your-need" />
                     <div class="valid-feedback">Good</div>
                     <div class="invalid-feedback">Enter your the product or service you need (min: 10 letters)</div>
-                    <label for="your-need">Your need</label>
+                    <label for="your-need"><?= $product ? "Product" : "Your need" ?></label>
                 </div>
             </div>
 

@@ -77,7 +77,8 @@ class Nav
                             <li><a href="/active-purified-enzymes/human-ump-cmp-kinase">Human UMP-CMP Kinase</a></li>
                             <li><a href="/convenient-assay-kits/human-recombinant-pnp">Human Recombinant PNP</a></li>
                             <li><a href="/active-purified-enzymes/cnII">Cytosolic 5'-nucleotidase II</a></li>
-                            <!-- <li><a href="/bacterial-luciferase">Bacterial Luciferase</a></li> -->
+                            <li><a href="/active-purified-enzymes/fmn-reductase">Purified Active FMN Reductase</a></li>
+
                         </ul>
                     </li>
 
