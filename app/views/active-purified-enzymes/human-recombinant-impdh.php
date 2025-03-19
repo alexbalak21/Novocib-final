@@ -105,7 +105,7 @@ echo Banner::gen();
                     </tbody>
                 </table>
                 <p class="text-muted text-center">
-                    <em>Pricing updated March 19th, 2025.</em>
+                    <em>Pricing updated December 25th, 2013.</em>
                     <br />
                 </p>
                 <p class="text-center">
