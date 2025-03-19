@@ -32,7 +32,7 @@ $page_content = <<<Services
 <li>highly specific and selective toward each particular nucleotides;</li>
 <li>rapidly convert three nucleotides to one common denominator (NADH2);</li>
 <li>R²=0.89 (IMP, HPLC); R²=0.91 (inosine, HPLC); R²=0.91 (hypoxanthine, HPLC);</li>
-<li>R²=0.88 found between H-value measured with <a href="">PRECICE® Nucleotides Assay Kit</a><br>and TMA/ABVT in whiting fillets (11 samples)</li>
+<li>R²=0.88 found between H-value measured with <a href="/freshness-assay-kits/freshness-principle">PRECICE® Nucleotides Assay Kit</a><br>and TMA/ABVT in whiting fillets (11 samples)</li>
 </ul>
 
 </div>
