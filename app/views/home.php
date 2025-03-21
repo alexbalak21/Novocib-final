@@ -302,7 +302,7 @@ ob_start(); ?>
             <div class="card">
                 <div class="card-img">
                     <a href=" https://www.e.leclerc/ ">
-                        <img src=" app/static/img/Leclerc.jpg" alt="" />
+                        <img src="app/static/img/Leclerc.jpg" alt="" />
                         <span>Leclerc Website</span>
                     </a>
                 </div>
