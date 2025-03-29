@@ -137,10 +137,10 @@ echo Banner::gen();
         </p>
         <div class="row justify-content-center">
             <div class="col-lg-2 col-4 my-4">
-                <img height="400" src="/app/static/img/IMPDH-Gel.png" alt="" />
+                <img height="400" src="/app/static/img/IMPDH-Gel.png" alt="PCR IMPDH Gel" />
             </div>
             <div class="col-lg-8 my-4">
-                <img height="400" src="/app/static/img/IMPDH-IC50.png" alt="" />
+                <img height="400" src="/app/static/img/IMPDH-IC50.png" alt="IMPDH 2 inhibition by MPA" />
             </div>
         </div>
         <p class="text-end mt-4">
@@ -177,7 +177,7 @@ echo Banner::gen();
             xanthosine 5µ-monophosphate (XMP) using NAD+ as a cofactor.
         </p>
         <div class="d-flex justify-content-center">
-            <img class="col-lg-7" src="/app/static/img/IMPDH-reaction.png" alt="" />
+            <img class="col-lg-7" src="/app/static/img/IMPDH-reaction.png" alt="IMPDH Reaction Structure" />
         </div>
         <p>
             The oxidation of IMP to XMP is considered as the pivotal step in the biosynthesis of guanine

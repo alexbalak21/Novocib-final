@@ -6,7 +6,7 @@ ob_start(); ?>
 <meta name="description" content="Purified HPRT Assay Kit from. HPRT Assay Kit can be used for research.">
 <?php $metas = ob_get_clean();
 
-require_once "app/templates/base.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/base.php";
 
 $novoblue = "#4167b1";
 
@@ -84,7 +84,7 @@ ob_start(); ?>
                 <p>Specific activities of HPRT in lysates of erythrocytes, PBMC and cultured cells measured by PRECICE® HPRT Assay kit are comparable to those obtained previously by radiochemical procedure.</p>
             </div>
             <div class="text-center mt-3">
-                <img class="col-lg-8 col-12" src="/app/static/img/hprt-activity.png" alt="">
+                <img class="col-lg-8 col-12" src="/app/static/img/hprt-activity.png" alt="hprt activity table">
             </div>
             <div class="text-center my-2">
                 <p class="my-2"><a target="_blank" href="https://www.nature.com/nmeth/articles?type=application-note"><i class="fa-solid fa-arrow-up-right-from-square"></i> Find more <strong style="font-size:19px" class="text-dark">nature methods Application Notes</strong></a></p>
