@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect.php"; // Added .php extension for clarity
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect"; // Added .php extension for clarity
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
 
 function log404request()
