@@ -1,25 +1,41 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect.php"; // Added .php extension for clarity
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
 
 function log404request()
 {
+  // Define the array of unwanted extensions
   $unwantedExtensions = ["jpg", "png", "pdf", "css", "js", "ico", "mp4", "map"];
-  $time = date('Y-m-d H:i:s');
-  $ip = $_SERVER['REMOTE_ADDR'];
-  $query = parse_url($_SERVER['REQUEST_URI'])['path'];
-  if (query_ends_with($query, $unwantedExtensions)) return
+  $time = date('Y-m-d H:i:s'); // Get the current timestamp
+  $ip = $_SERVER['REMOTE_ADDR']; // Fetch the client's IP address
+
+  // Parse the requested URL
+  $parsed_url = parse_url($_SERVER['REQUEST_URI']);
+
+  // Safely retrieve the 'path' from the parsed URL
+  $query = ($parsed_url && isset($parsed_url['path'])) ? $parsed_url['path'] : null;
+
+  // Ensure query is valid and log to the database if it does not end with unwanted extensions
+  if ($query && query_ends_with($query, $unwantedExtensions)) {
     log404toDB($time, $ip, $query);
+  }
 }
-
-log404request();
-
 
 function query_ends_with($query, $arr)
 {
-
-  foreach ($arr as $ext) {
-    if (str_ends_with($query, ".$ext")) return false;
+  // Check if the query is a valid string before processing
+  if (!is_string($query)) {
+    return true; // Skip logging if the query is invalid
   }
-  return true;
+
+  // Loop through each unwanted extension and check the string ending
+  foreach ($arr as $ext) {
+    if (substr($query, -strlen(".$ext")) === ".$ext") {
+      return false; // Match found, no need to log
+    }
+  }
+  return true; // No matches, ready to log
 }
+
+// Call the function to log 404 requests
+log404request();
