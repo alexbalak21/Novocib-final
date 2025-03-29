@@ -4,7 +4,6 @@ $title = "HPRT Assay Kit";
 ob_start(); ?>
 <meta name="keywords" content="HPRT protein, HPRT Assay Kit, hypoxanthine guanine phosphoribosyl transferase protein">
 <meta name="description" content="Purified HPRT Assay Kit from. HPRT Assay Kit can be used for research.">
-
 <?php $metas = ob_get_clean();
 
 require_once "app/templates/base.php";
