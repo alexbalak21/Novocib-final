@@ -1,17 +1,19 @@
 <?php
 $title = "Adenosine Kinase Phosphorylation Assay Kit";
-require_once "app/templates/base.php";
-
-$novoblue = "#4167b1";
-
-
-
-
-addContent(Banner::gen());
 
 ob_start(); ?>
+<meta name="keywords" content="Adenosine Kinase Assay Kit, Nucleoside Analog Screening, ADK Competitive Inhibition, Phosphorylation of Nucleosides, Adenosine Kinase Drug Discovery, High-Throughput Screening (HTS) Tools, Antiviral Nucleoside Activation, Cancer Drug Development Assay, IMPDH Monitoring System, NADH2 Assay Detection">
+<meta name="description" content="Unlock rapid drug discovery with PRECICE® ADK Phosphorylation Assay Kit. Conduct continuous, homogenous assays for screening ADK inhibitors and evaluating nucleoside analogs phosphorylation in antiviral and anticancer research. Designed for high-throughput efficiency.">
+<?php $metas = ob_get_clean();
+
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+
+echo Banner::gen()
+?>
+
+
 <section class="container mt-5">
-    <?= UnderlinedTitle::get("Antiviral and immunosuppressive nucleosides phosphorylation", "novoblue", "right");    ?>
+    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Antiviral and immunosuppressive nucleosides phosphorylation</span></h2>
     <div class="row">
         <div class="col-lg-6">
             <p>
@@ -89,32 +91,3 @@ ob_start(); ?>
     <p class="ms-5"><i class="novo-blue fa-solid fa-arrow-right"></i> The assay allows the test of 12 analogues at 7 different concentrations at the same time (or 6 analogues in duplicata)</p>
     <p class="ms-5 mb-5"><i class="novo-blue fa-solid fa-arrow-right"></i> Readout is peformed with plate reader fitted with 340nm filter</p>
 </section>
-<?= References::gen() ?>
-<?php $page_content = ob_get_clean();
-
-
-addContent($page_content);
-render();
-
-
-?>
-
-<style>
-    .nucleoside-analogues {
-        border: 1px solid silver;
-
-        tr {
-            border: 1px solid silver;
-        }
-
-        th {
-            padding: 12px 0;
-        }
-
-        th,
-        td {
-            text-align: center;
-
-        }
-    }
-</style>
