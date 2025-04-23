@@ -2,8 +2,8 @@
 $title = "Adenosine Kinase Assay Kit - ADK Assay Kit";
 
 ob_start(); ?>
-<meta name="keywords" content="non radioactive kinase assay, in vitro phosphorylation ADK assay, in vitro phosphorylation ADK assay protocol, adenosine kinase assay, drug discovery, high throughput assay, HTS, homogenous assay, adenosine inflammation, adenosine kinase inhibitors">
-<meta name="description" content="PRECICE ADK Assay Kit is first homogenous non radioactive Adenosine Kinase Assay Kit compatible with High Throughput Screening">
+<meta name="keywords" content="adenosine kinase assay, ADK assay kit, non-radioactive kinase assay, drug discovery tool, high-throughput screening, adenosine inflammation research, ADK inhibitors, in vitro phosphorylation protocol, homogenous assay, IMPDH coupled assay">
+<meta name="description" content="Discover the PRECICE® ADK Assay Kit: the first homogenous, non-radioactive adenosine kinase assay designed for in vitro phosphorylation, drug discovery, and high-throughput screening.">
 <?php $metas = ob_get_clean();
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
@@ -112,8 +112,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
     </div>
 </section>
 
+<div class="text-center mt-3">
+    <a class="btn btn-primary btn-lg" href="/inquiry?ref=K0507-01.01&amp;product=Adk Assay Kit&amp;volume=1 plate (96 assays)">
+        Order <i class="fa-solid fa-cart-arrow-down"></i>
+    </a>
+</div>
+
 <div class="container">
-    <div class="referances my-5">
+    <div class="referances mt-4">
         <h5 class="ms-5 pt-4 pb-3 novo-blue">Scientific Works citing <span class="text-secondary">NOVOCIB</span> Adenosine Kinase and PRECICE® ADK Assay kits:</h5>
         <ol>
             <li>
