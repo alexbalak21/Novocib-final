@@ -8,9 +8,9 @@ ob_start(); ?>
 
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
-?>
 
-<?= Banner::gen() ?>
+echo Banner::gen();
+?>
 
 <main class="mt-5">
     <div class="container">
