@@ -2,12 +2,9 @@
 $title = "Deoxycytidine Kinase Phosphorylation Assay Kit";
 
 ob_start(); ?>
-
 <meta name="keywords" content="buy recombinant 5'-nucleotidase enzyme, cytosolic 5'-nucleotidase E.C.3.1.3.5, High Km 5'-nucleotidase, hkm-NT, purine 5'-NT enzyme, ribavirin phosphorylation assay, GMP and IMP dephosphorylation, cloned human nucleotidase, antiviral nucleoside analog phosphorylation">
 <meta name="description" content="Explore NovoCIB's active human cytosolic 5'-nucleotidase II: a recombinant enzyme characterized for its ability to dephosphorylate GMP/IMP and phosphorylate natural nucleosides and antiviral analogs such as ribavirin.">
-
 <?php $metas = ob_get_clean();
-
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 echo Banner::gen();
