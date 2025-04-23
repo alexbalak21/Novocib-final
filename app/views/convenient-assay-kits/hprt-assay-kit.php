@@ -46,7 +46,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
                     <p class="text-center"><strong>Kit is provided in stable lyophilized form and <span class="text-danger">shipped without dry ice</span> </strong></p>
                     <p class="mt-4 mb-4 text-end">Download <a target="_blank" href="/app/documents/NovoCIB K0709-01-2 24 samples User Manual 140225.pdf"> <strong>HPRT assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
-                    <p class="mt-4 mb-5 text-center">Download <a target="_blank" href="/app/documents/Novocib-HPRT-MSDS.pdf"> <strong>Material Safety Data Sheet <i class="fa-solid fa-passport"></i></a> </strong>(MSDS)</p>
+                    <p class="mt-4 mb-5 text-end">Download <a target="_blank" href="/app/documents/Novocib-HPRT-MSDS.pdf"> <strong>Material Safety Data Sheet <i class="fa-solid fa-passport"></i></a> </strong>(MSDS)</p>
 
                 </div>
             </div>
@@ -131,22 +131,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                     </tbody>
                 </table>
             </div>
-
-            <div class="text-center my-2">
-                <p class="mt-4 text-end">
-                    Download the <a target="_blank" href="/app/documents/NovoCIB K0709-01-2 24 samples User Manual 140225.pdf">
-                        <strong>HPRT Assay Protocol <i class="fa-regular fa-file-pdf"></i></strong>
-                    </a> (User manual)
-                </p>
-                <p class="mt-4 text-end">
-                    Download the <a target="_blank" href="/app/documents/Novocib-HPRT-MSDS.pdf">
-                        <strong>Material Safety Data Sheet <i class="fa-solid fa-passport"></i></strong>
-                    </a> (MSDS)
-                </p>
-            </div>
         </div>
     </div>
-    <div class="bg-light">
+    <div class="bg-light mt-3">
         <div class="container">
             <div class="text-center py-4">
                 <img class="col-lg-6 col-12" src="/app/static/img/HPRT-Assay-Kit-Calibration.png" alt="HPRT Assay Kit Calibration Graph" title="HPRT Assay Kit Calibration Graph">
