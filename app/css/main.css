@@ -813,3 +813,23 @@ header .brand {
 .custom-cell{
   background-color: red;
 }
+
+
+/* DCK */
+    .nucleoside-analogues {
+        border: 1px solid silver;
+
+        tr {
+            border: 1px solid silver;
+        }
+
+        th {
+            padding: 12px 0;
+        }
+
+        th,
+        td {
+            text-align: center;
+
+        }
+    }

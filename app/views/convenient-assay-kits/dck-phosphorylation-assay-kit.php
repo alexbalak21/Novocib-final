@@ -1,19 +1,21 @@
 <?php
 $title = "Deoxycytidine Kinase Phosphorylation Assay Kit";
-require_once "app/templates/base.php";
-
-$novoblue = "#4167b1";
-
-
-
-
-addContent(Banner::gen());
-$content_title = UnderlinedTitle::get("Anticancer nucleosides phosphorylation", "novoblue", "right");
-
 
 ob_start(); ?>
+
+<meta name="keywords" content="buy recombinant 5'-nucleotidase enzyme, cytosolic 5'-nucleotidase E.C.3.1.3.5, High Km 5'-nucleotidase, hkm-NT, purine 5'-NT enzyme, ribavirin phosphorylation assay, GMP and IMP dephosphorylation, cloned human nucleotidase, antiviral nucleoside analog phosphorylation">
+<meta name="description" content="Explore NovoCIB's active human cytosolic 5'-nucleotidase II: a recombinant enzyme characterized for its ability to dephosphorylate GMP/IMP and phosphorylate natural nucleosides and antiviral analogs such as ribavirin.">
+
+<?php $metas = ob_get_clean();
+
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+
+echo Banner::gen();
+?>
+
+
 <section class="container mt-5">
-    <?= $content_title ?>
+    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Anticancer nucleosides phosphorylation</span></h2>
     <div class="row">
         <div class="col-lg-6">
             <p>
@@ -125,31 +127,3 @@ ob_start(); ?>
         </div>
     </div>
 </section>
-<?php $page_content = ob_get_clean();
-
-
-addContent($page_content);
-render();
-
-
-?>
-
-<style>
-    .nucleoside-analogues {
-        border: 1px solid silver;
-
-        tr {
-            border: 1px solid silver;
-        }
-
-        th {
-            padding: 12px 0;
-        }
-
-        th,
-        td {
-            text-align: center;
-
-        }
-    }
-</style>

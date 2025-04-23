@@ -7,9 +7,10 @@ ob_start(); ?>
 <?php $metas = ob_get_clean();
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+
+echo Banner::gen()
 ?>
 
-<?= Banner::gen() ?>
 
 <section class="container mt-5">
     <h2 class="underlinedTitle right"><span class="underlined novoblue right">High Throughput Assay for Human Adenosine Kinase</span></h2>
