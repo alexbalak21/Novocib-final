@@ -1,11 +1,19 @@
 <?php
 $title = "Purified Active FMN Reductase";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/test_template.php";
+
+ob_start(); ?>
+<meta name="keywords" content="Recombinant FMN reductase, High-purity FMN reductase, NAD(P)H oxidoreductase enzyme, Bacterial luciferase coupling, NADH quantification assays, Flavin reductase for bioluminescence, Precise NAD(P)H-dependent enzyme detection, E. coli FMN reductase, Biochemical assay enzymes, Ultrapure FMN reductase protein">
+<meta name="description" content="NOVOCIB's recombinant FMN reductase (Fre) from Escherichia coli is a high-purity enzyme ideal for precise and ultrasensitive NADH quantification. This NAD(P)H:flavin oxidoreductase catalyzes the reduction of riboflavin, FMN, and FAD, supporting applications in bioluminescence studies and enzymatic assays. Highly purified for increased sensitivity and optimized signal control, it is an essential tool for researchers working with NAD(P)H-dependent enzyme substrates and advanced biochemical detection systems.">
+<?php $metas = ob_get_clean();
+
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+
+echo Banner::gen()
 ?>
-<?= Banner::gen(); ?>
 
 
 <div class="container mt-5">
+    <title>Ultrasensitive Recombinant FMN Reductase: Ideal for NADH Quantification</title>
     <h2 class="underlinedTitle center">
         <span class="underlined novoblue">Bacterial Recombinant FMN Reductase (FRE) (E.C.1.5.1.29)</span>
     </h2>
