@@ -809,3 +809,7 @@ header .brand {
 
         }
     }
+
+.custom-cell{
+  background-color: red;
+}

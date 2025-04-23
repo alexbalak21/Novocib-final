@@ -2,35 +2,31 @@
 $title = "HPRT Assay Kit";
 
 ob_start(); ?>
-<meta name="keywords" content="HPRT protein, HPRT Assay Kit, hypoxanthine guanine phosphoribosyl transferase protein">
-<meta name="description" content="Purified HPRT Assay Kit from. HPRT Assay Kit can be used for research.">
+<meta name="keywords" content="HPRT Assay Kit, HPRT enzyme, hypoxanthine-guanine phosphoribosyltransferase, HPRT protein research, HPRT assay for research, recombinant HPRT enzyme">
+<meta name="description" content="High-quality HPRT Assay Kit for research purposes. Designed to study hypoxanthine-guanine phosphoribosyltransferase (HPRT) enzyme activity with reliable and accurate results.">
 <?php $metas = ob_get_clean();
 
-$root = $_SERVER['DOCUMENT_ROOT'];
-require_once $root . "/app/templates/base.php";
 
-$novoblue = "#4167b1";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+?>
 
+<?= Banner::gen() ?>
 
-
-
-addContent(Banner::gen());
-
-
-ob_start(); ?>
 <main class="mt-5">
     <div class="container">
 
-        <h2 class="underlinedTitle center" style="margin-bottom: 0">
-            <span class="underlined novoblue center">Non radioactive HPRT assay</span>
+        <h2 class="underlinedTitle center">
+            <span class="underlined novoblue center">Non-radioactive HPRT Assay</span>
         </h2>
-        <h4 class="text-center my-3">Including active human HPRT enzyme</h4>
+        <h4 class="text-center mt-3 mb-4">Including active human HPRT enzyme</h4>
 
         <div class="row">
             <div class="col-lg-6">
                 <p><strong>PRECICE® HPRT Assay kit</strong> provides the first non radioactive protocol for measurement of HPRT activity in a convenient 96-well plate format.</p>
                 <p>Hypoxanthine-guanine phosphoribosyltransferase (HPRT, EC 2.4.2.8), a key enzyme of the purine salvage pathway, is encoded by highly variable HPRT1 gene. More than 300 mutations in HPRT1 gene associated with genetic disorders in humans have been described leading to partial or complete deficiency of HPRT enzyme. Complete HPRT deficiency is a rare human genetic disorder, also known as Lesch-Nyhan syndrom. In some cases, gout, more frequent purine disorder, can also be secondary to HPRT deficiency (Ceballos-Picot I. et al 2010). High variability of HPRT1 gene complicates genetic testing. Currently, HPRT enzyme functions are tested in red blood cell lysates in a chromatographic assay using radiolabeled 14C-hypoxanthine (Cartier P. et al, 1968).</p>
-                <p><strong>Principle</strong><br>HPRT activity is measured as a rate of production of IMP, which is oxidized by recombinant IMP dehydrogenase with concomitant formation of NADH2. The formation of NADH2 is continuously monitored spectrophotometrically at 340nm.</p>
+                <p><strong>Principle:</strong><br>
+                    HPRT activity is measured by tracking the production of IMP, which is oxidized by recombinant IMP dehydrogenase. This process leads to the formation of NADH2, continuously monitored spectrophotometrically at 340 nm for real-time measurements.
+                </p>
             </div>
             <div class="col-lg-6">
                 <figure>
@@ -55,16 +51,16 @@ ob_start(); ?>
                 </div>
             </div>
             <div class="col-lg-3 text-center bg-light pt-3">
-                <h4 class="novo-blue">Wide linearity range</h4>
+                <h4 class="novo-blue">Wide Detection Range</h4>
             </div>
             <div class="col-lg-9 text-center bg-light">
-                <p>The detection of as low as 6.75 nmol/hour/ml up to 340 nmol/hour/ml of HPRT activity enables the characterization of complete and partial d eficiencies</p>
+                <p>Detect HPRT activity from 6.75 nmol/hour/ml to 340 nmol/hour/ml, enabling the characterization of complete and partial deficiencies.</p>
             </div>
             <div class="col-lg-3 text-center pt-3">
                 <h4 class="novo-blue">Accurate</h4>
             </div>
             <div class="col-lg-9 text-center">
-                <p> Within-run, between-day and total measurement imprecisions of assay run in are 1.5%, 5% and 6.5%.</p>
+                <p>Measurement imprecisions: 1.5% (within-run), 5% (between-day), and 6.5% (total).</p>
             </div>
             <div class="col-lg-3 text-center bg-light pt-3">
                 <h4 class="novo-blue">Fast</h4>
@@ -84,12 +80,69 @@ ob_start(); ?>
             <div class="col-lg-9 text-center bg-light">
                 <p>Specific activities of HPRT in lysates of erythrocytes, PBMC and cultured cells measured by PRECICE® HPRT Assay kit are comparable to those obtained previously by radiochemical procedure.</p>
             </div>
-            <div class="text-center mt-3">
-                <img class="col-lg-8 col-12" src="/app/static/img/HPRT-activity.png" alt="hprt activity table">
+
+            <div class="table-responsive mt-5">
+                <h4 class="text-center">HPRT Activity</h4>
+                <table class="table table-striped table-bordered text-center">
+                    <thead class="table-primary">
+                        <tr>
+                            <th scope="col">Cells</th>
+                            <th scope="col">PRECICE® HPRT Assay Kit</th>
+                            <th scope="col">Published Data</th>
+                            <th scope="col">References</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RBC specimen 1 (n=4)</td>
+                            <td>76.94±2.5 nmol/h/mg of Hgb</td>
+                            <td rowspan="3" class="align-middle" style="background-color: white; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);">80–120 nmol/h/mg of hemoglobin</td>
+                            <td rowspan="3" class="align-middle">4</td>
+                        </tr>
+                        <tr>
+                            <td>RBC specimen 2 (n=12)</td>
+                            <td>78.03±5.52 nmol/h/mg of Hgb</td>
+                        </tr>
+                        <tr>
+                            <td>RBC specimen 3 (n=4)</td>
+                            <td>88.7±3.41 nmol/h/mg of Hgb</td>
+                        </tr>
+                        <tr style="border-top: 3px solid darkgray;">
+                            <td>PBMC specimen 1 (n=4)</td>
+                            <td>159.91±3.60 nmol/h/mg of protein<br>19.7±0.6 nmol/h/10<sup>6</sup> PBMC</td>
+                            <td rowspan="2" class="align-middle">343±18 nmol/h/mg of protein<br>10.2–18.0 nmol/h/10<sup>6</sup> PBMC</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>PBMC specimen 2 (n=4)</td>
+                            <td>152.30±4.94 nmol/h/mg of protein<br>21.3±0.42 nmol/h/10<sup>6</sup> PBMC</td>
+                            <td>5</td>
+                        </tr>
+                        <tr style="border-top: 3px solid darkgray;">
+                            <td>Human Dermal Fibroblasts (Invitrogen)</td>
+                            <td>70.91±2.67 nmol/h/mg of protein</td>
+                            <td rowspan="2" class="align-middle">81–127 nmol/h/mg of protein</td>
+                            <td rowspan="2" class="align-middle">6</td>
+                        </tr>
+                        <tr>
+                            <td>W20-17 cells (ATCC)</td>
+                            <td>91.95±4.49 nmol/h/mg of protein</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
             <div class="text-center my-2">
-                <p class="my-2"><a target="_blank" href="https://www.nature.com/nmeth/articles?type=application-note"><i class="fa-solid fa-arrow-up-right-from-square"></i> Find more <strong style="font-size:19px" class="text-dark">nature methods Application Notes</strong></a></p>
-                <p>Download our <a target="_blank" href="/app/documents/ANK0709-001v1-110609.pdf">Application Notes <i class="fa-regular fa-file-pdf"></i></a></p>
+                <p class="mt-4 text-end">
+                    Download the <a target="_blank" href="/app/documents/NovoCIB K0709-01-2 24 samples User Manual 140225.pdf">
+                        <strong>HPRT Assay Protocol <i class="fa-regular fa-file-pdf"></i></strong>
+                    </a> (User manual)
+                </p>
+                <p class="mt-4 text-end">
+                    Download the <a target="_blank" href="/app/documents/Novocib-HPRT-MSDS.pdf">
+                        <strong>Material Safety Data Sheet <i class="fa-solid fa-passport"></i></strong>
+                    </a> (MSDS)
+                </p>
             </div>
         </div>
     </div>
@@ -129,8 +182,3 @@ ob_start(); ?>
         </div>
     </div>
 </main>
-<?php $page_content = ob_get_clean();
-
-
-addContent($page_content);
-render();
