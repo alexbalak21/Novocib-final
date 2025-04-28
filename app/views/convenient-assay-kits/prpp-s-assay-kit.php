@@ -2,8 +2,8 @@
 $title = "PRPP-S Assay Kit";
 
 ob_start(); ?>
-<meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="keywords" content="PRPP-S Assay Kit, Non-radioactive assay, Phosphoribosylpyrophosphate synthetase, PRPP measurement, Enzymatic assay, Purine salvage pathway, Genetic disorders, Continuous monitoring, 96-well plate format, NADH formation, HGPRT enzyme, IMPDH enzyme, PRPP-S activity, Cell lysates, Convenient assay kit">
+<meta name="description" content="Discover the PRECICE® PRPP-S Assay Kit, the first non-radioactive solution for precise measurement of PRPP-S activity in cellular lysates. Designed for convenience, this enzymatic assay utilizes highly active HGPRT and IMPDH enzymes to continuously monitor PRPP synthesis via NADH formation. Ideal for research on purine salvage pathways and genetic disorders, the kit offers a fast, reliable, and user-friendly protocol in a 96-well plate format. Enhance your studies with this innovative tool for accurate PRPP quantification.">
 <?php $metas = ob_get_clean();
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
