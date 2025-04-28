@@ -1,14 +1,18 @@
 <?php
 $title = "PRPP-S Assay Kit";
-require_once "app/templates/base.php";
 
-$novoblue = "#4167b1";
-
-addContent(Banner::gen());
-$content_title = UnderlinedTitle::get("Non radioactive PRPP-S assay", "novoblue", "right");
 ob_start(); ?>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<?php $metas = ob_get_clean();
+
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+
+echo Banner::gen()
+?>
+
 <section class="container mt-5">
-    <?= $content_title ?>
+    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Non radioactive PRPP-S assay</span></h2>
     <div class="row">
         <div class="col-lg-6">
             <p>
@@ -54,7 +58,7 @@ ob_start(); ?>
                 </p>
                 <p class="mt-4 mb-5 text-end">
                     Download
-                    <a target="_blank" href="/app/documents/NovoCIB K0709-04-02 User Manual 29092024.pdf">
+                    <a target="_blank" href="/app/documents/NovoCIB K0709-02-2 User Manual.pdf">
                         <strong>Download PRPP-S User Manual</strong>
                         <i class="fa-regular fa-file-pdf"></i>
                     </a>
@@ -154,7 +158,3 @@ ob_start(); ?>
         </div>
     </div>
 </section>
-<?php $page_content = ob_get_clean();
-
-addContent($page_content);
-render();
