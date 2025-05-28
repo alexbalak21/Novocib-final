@@ -215,10 +215,14 @@ switch ($req_uri) {
         break;
 
 
+
+
     // Dietary Nucleotides Assay Kits
     case "/dietary-nucleotides-assay-kits":
-        require_once "app/views/dietary nucleotides assay Kits/index.php";
+        require_once $root . "/app/views/dietary nucleotides assay Kits/index.php";
         break;
+
+
 
 
 
