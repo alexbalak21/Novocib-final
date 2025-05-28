@@ -4,8 +4,8 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 $title = "Dietary Nucleotides Assay Kits";
 
 ob_start(); ?>
-<meta name="description" content="">
-<meta name="keywords" content="">
+<meta name="description" content="NovoCIB Dietary Nucleotides Assay Kits">
+<meta name="keywords" content="Nucleotides Assay Kits, Dietary Assay Kits">
 <?php $metas = ob_get_clean();
 
 require_once $root . "/app/templates/test_template.php";
