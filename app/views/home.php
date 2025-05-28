@@ -176,7 +176,7 @@ require_once $root . "/app/templates/test_template.php";
     <div class="row justify-content-center">
 
         <div class="award col-lg-3 col-10">
-            <img class="w-100 h-auto mt-2" src="/app/static/img/i-lab-1.jpg" alt="i-lab logo">
+            <a target="_blank" href="https://www.enseignementsup-recherche.gouv.fr/fr/le-concours-i-lab-49808"><img class="w-100 h-auto mt-2" src="/app/static/img/i-lab-1.jpg" alt="i-lab logo" title="i-lab awards"></a>
             <h4 class="text-center mt-3 novo-blue">I-LAB</h4>
             <h5 class="text-center mb-3">2003 &amp; 2005</h5>
             <p>
@@ -192,7 +192,7 @@ require_once $root . "/app/templates/test_template.php";
         </div>
 
         <div class="award col-lg-3 col-10">
-            <img class="w-100 h-auto mt-2" src="/app/static/img/tremplin.jpg" alt="femmes en or brand">
+            <img class="w-100 h-auto mt-2" src="/app/static/img/tremplin.jpg" alt="Business Springboard awards logo" title="16th Business Springboard awards">
             <h4 class="text-center mt-3 novo-blue">Tremplin des Entreprises</h4>
             <h5 class="text-center mb-3">2005</h5>
             <p>
@@ -208,7 +208,7 @@ require_once $root . "/app/templates/test_template.php";
         </div>
 
         <div class="award col-lg-3 col-10">
-            <img class="w-100 h-auto mt-2" src="/app/static/img/femme-en-or.jpg" alt="femmes en or brand">
+            <img class="w-100 h-auto mt-2" src="/app/static/img/femme-en-or.jpg" alt="femmes en or brand" title="women of gold awards">
             <h4 class="text-center mt-3 novo-blue">Femmes en Or</h4>
             <h5 class="text-center mb-3">2011</h5>
             <p>
