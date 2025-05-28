@@ -238,12 +238,24 @@ require_once $root . "/app/templates/test_template.php";
                 <div class="card-img">
                     <a href="https://www.business-angels.info/">
                         <img src="/app/static/img/xmp.png" alt="xmp investors logo" />
-                        <span>Xmp Investors Business Angels </span>
+                        <span>Xmp Investors Business Angels</span>
                     </a>
                 </div>
                 <h5 class="card-title name text-center">XMP</h5>
             </div>
         </div>
+        <div class="owl-item">
+            <div class="card">
+                <div class="card-img">
+                    <a href="https://libios.fr/en/">
+                        <img src="/app/static/img/libios.jpg" alt="Libios logo" title="Libios Laboratories" />
+                        <span>Libios Laboratories</span>
+                    </a>
+                </div>
+                <h5 class="card-title name text-center">LIBIOS</h5>
+            </div>
+        </div>
+
         <div class="owl-item">
             <div class="card">
                 <div class="card-img">
