@@ -237,7 +237,7 @@ require_once $root . "/app/templates/test_template.php";
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.business-angels.info/">
-                        <img src="/app/static/img/xmp.png" alt="xmp investors logo" />
+                        <img src="/app/static/img/xmp.png" alt="xmp investors logo" title="Xmp Investors Business Angels" />
                         <span>Xmp Investors Business Angels</span>
                     </a>
                 </div>
@@ -260,8 +260,8 @@ require_once $root . "/app/templates/test_template.php";
             <div class="card">
                 <div class="card-img">
                     <a href="https://samba-investisseurs.fr/">
-                        <img src="/app/static/img/samba.jpg" alt="samba logo" />
-                        <span>samba investors</span>
+                        <img src="/app/static/img/samba.jpg" alt="samba logo" title="SAMBA Investors" />
+                        <span>SAMBA Investors</span>
                     </a>
                 </div>
                 <h5 class="card-title name text-center">SAMBA</h5>
@@ -271,7 +271,7 @@ require_once $root . "/app/templates/test_template.php";
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.poleaquimer.com/en/">
-                        <img src="/app/static/img/aquimer.png" alt="aquimer logo" />
+                        <img src="/app/static/img/aquimer.png" alt="aquimer logo" title="Partner for innovation" />
                         <span>Aquimer Website</span>
                     </a>
                 </div>
@@ -282,8 +282,8 @@ require_once $root . "/app/templates/test_template.php";
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.agglo-boulonnais.fr/">
-                        <img src="/app/static/img/cab.jpg" alt="boulogne comune association logo" />
-                        <span>boulogne sur mer Website</span>
+                        <img src="/app/static/img/cab.jpg" alt="boulogne comune association logo" title="Boulogne-sur-Mer City " />
+                        <span>Boulogne-sur-Mer Website</span>
                     </a>
                 </div>
                 <h5 class="card-title name text-center">C A B</h5>
@@ -293,7 +293,7 @@ require_once $root . "/app/templates/test_template.php";
             <div class="card">
                 <div class="card-img">
                     <a href=" https://www.pfinouvellesvagues.com/">
-                        <img src="/app/static/img/nouvelle-vagues.png" alt="" />
+                        <img src="/app/static/img/nouvelle-vagues.png" alt="nouvelle-vagues logo" title="Innovation platform for seafood" />
                         <span>nouvelle-vagues Website</span>
                     </a>
                 </div>
@@ -308,7 +308,7 @@ require_once $root . "/app/templates/test_template.php";
             <div class="card">
                 <div class="card-img">
                     <a href=" https://www.inextenso.fr/en/">
-                        <img src="/app/static/img/InExtenso.jpg" alt="" />
+                        <img src="/app/static/img/InExtenso.jpg" alt="InExtenso logo" title="InExtenso Accounting" />
                         <span>InExtenso Website</span>
                     </a>
                 </div>
@@ -319,7 +319,7 @@ require_once $root . "/app/templates/test_template.php";
             <div class="card">
                 <div class="card-img">
                     <a href=" https://www.e.leclerc/ ">
-                        <img src="/app/static/img/Leclerc.jpg" alt="" />
+                        <img src="/app/static/img/Leclerc.jpg" alt="Leclerc logo" title="Leclerc supermarket" />
                         <span>Leclerc Website</span>
                     </a>
                 </div>
