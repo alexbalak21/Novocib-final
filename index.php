@@ -2,6 +2,7 @@
 //require Constants
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/constants/dirs.php";
 
+$root = $_SERVER['DOCUMENT_ROOT'];
 $parsed_url = parse_url($_SERVER["REQUEST_URI"]);
 $req_uri = isset($parsed_url["path"]) ? $parsed_url["path"] : null;
 
@@ -64,9 +65,6 @@ switch ($req_uri) {
     case "/active-purified-enzymes/fmn-reductase":
         require_once "app/views/active-purified-enzymes/FMN-Reductase.php";
         break;
-
-
-
 
 
 
@@ -215,6 +213,14 @@ switch ($req_uri) {
     case "/yeast-extract-nucleotide-analysis":
         require_once "app/views/analytical-services/yeast-extract-nucleotide-analysis.php";
         break;
+
+
+    // Dietary Nucleotides Assay Kits
+    case "/dietary-nucleotides-assay-kits":
+        require_once "app/views/dietary nucleotides assay Kits/index.php";
+        break;
+
+
 
     // SERVICES
     case "/services":
