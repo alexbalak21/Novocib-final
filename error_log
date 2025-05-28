@@ -1,0 +1,3 @@
+[02-May-2025 04:45:59 Europe/Paris] PHP Warning:  Trying to access array offset on false in /home/cp68325/public_html/app/components/Banner.php on line 6
+[02-May-2025 04:45:59 Europe/Paris] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/cp68325/public_html/app/components/Banner.php on line 7
+[02-May-2025 04:45:59 Europe/Paris] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/cp68325/public_html/app/components/Banner.php on line 9

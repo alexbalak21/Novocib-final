@@ -6,7 +6,6 @@ class Banner
         $url = parse_url($_SERVER['REQUEST_URI'])['path'];
         $paths = (explode("/", $url));
         global $title;
-        $paths =  explode("/", $url);
         $path_links = "";
         $global_path = "";
         foreach ($paths as $index => $path) {

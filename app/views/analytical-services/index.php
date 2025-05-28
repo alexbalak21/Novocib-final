@@ -51,7 +51,6 @@ ob_start(); ?>
             </p>
         </div>
     </div>
-
 </section>
 
 <?php $page_content = ob_get_clean();
