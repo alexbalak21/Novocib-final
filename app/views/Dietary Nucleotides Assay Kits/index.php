@@ -24,6 +24,9 @@ require_once $root . "/app/templates/test_template.php";
         <div class="col-8">
             <p>
                 Fish muscle is very rich in ATP, a nucleotide that provides the energy for muscle contraction. Once a fish is caught and removed from the water, its muscle is deprived of oxygen, leading to rapid ATP degradation. This process results in the sequential formation of three nucleotides-IMP, inosine, and hypoxanthine-which influence both the flavor and nutritional value of seafood.
+                <br><br>
+                NOVOCIB'S <a href="/freshness-assay-kits/freshness-assay-kit">PRECICE® IMP, Inosine and Hypoxanthine Assay Kit</a> is a colorimetric enzymatic assay designed for the quantitative analysis of three nucleotides formed from ATP degradation: IMP, inosine, and hypoxanthine, in in a single fish extract. Absolute concentrations of three nucleotides expressed as mmol/kg can be used to calculate relative molar concentration of IMP (molar %), an indicator of high fish freshness, or relative molar concentration of hypoxanthine (molar %), an indicator of spoilage or Ki value. The kit is suitable for use with fresh, frozen, and cooked fish and seafood products, including canned items.
+
             </p>
         </div>
     </div>
@@ -35,6 +38,8 @@ require_once $root . "/app/templates/test_template.php";
             <p>
                 Fishmeal, produced through the drying and grinding of fish tissues, remains one of the most nutritionally valuable feed ingredients due to its high-quality protein and nucleotide content. The nucleotides in fish meal, derived from muscle ATP and RNA, support growth, immune function, and metabolism in aquatic species and livestock.
                 IMP, direct product of ATP degradation, is a key nucleotide found in fish meal playing a significant role in flavor enhancement and nutritional benefits, serves as a precursor of nucleotides biosynthesis. In aquaculture and livestock feed, fish meal rich in IMP enhances palatability and digestibility. However, the level of IMP in fish meal can vary depending on drying and storage conditions, affecting its quality.
+                <br><br>
+                NOVOCIB'S <a href="/freshness-assay-kits/freshness-assay-kit">PRECICE® IMP Assay Kit</a> is a colorimetric assay for enzymatic determination of IMP in fishmeal samples.
             </p>
         </div>
     </div>
@@ -45,6 +50,8 @@ require_once $root . "/app/templates/test_template.php";
         <div class="col-8">
             <p>
                 Yeasts are particularly rich in RNA and are widely used in industry as a source of nucleotides. Yeast-based nucleotides naturally enhance food flavor, reducing the need for excessive salt or artificial additives. GMP and IMP are powerful taste enhancers, especially in the food industry, contributing to the umami flavor—the savory taste of foods.
+                <br><br>
+                <a href="/active-purified-enzymes/cnII">PRECICE® 5'AMP and 5'IMP Assay Kit</a> colorimetric assay for enzymatic determination of 5'IMP and 5'AMP in yeast samples.
             </p>
         </div>
     </div>
