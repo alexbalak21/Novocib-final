@@ -49,7 +49,7 @@ require_once $root . "/app/templates/test_template.php";
         </div>
         <div class="col-8">
             <p>
-                Yeasts are particularly rich in RNA and are widely used in industry as a source of nucleotides. Yeast-based nucleotides naturally enhance food flavor, reducing the need for excessive salt or artificial additives. GMP and IMP are powerful taste enhancers, especially in the food industry, contributing to the umami flavor—the savory taste of foods.
+                Yeasts are particularly rich in RNA and are widely used in industry as a source of 5'-nucleotides that naturally enhance food flavor, reducing the need for excessive salt or artificial additives. 5'-GMP and 5'-IMP are powerful taste enhancers, especially in the food industry, contributing to the umami flavor—the savory taste of foods.
                 <br><br>
                 <a href="/active-purified-enzymes/cnII">PRECICE® 5'AMP and 5'IMP Assay Kit</a> colorimetric assay for enzymatic determination of 5'IMP and 5'AMP in yeast samples.
             </p>
