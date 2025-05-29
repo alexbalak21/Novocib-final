@@ -19,7 +19,7 @@ require_once $root . "/app/templates/test_template.php";
     </div>
     <div class="kit row align-items-center">
         <div class="col-3 me-3 text-center">
-            <h5><a href="">Fish and seafood</a></h5>
+            <h5><a href="">Fish and seafood <i class="fa-solid fa-up-right-from-square"></i></a></h5>
         </div>
         <div class="col-8">
             <p>
@@ -32,7 +32,7 @@ require_once $root . "/app/templates/test_template.php";
     </div>
     <div class="kit row align-items-center">
         <div class="col-3 me-3 text-center">
-            <h5><a href="">Fish meal</a></h5>
+            <h5><a href="">Fish meal <i class="fa-solid fa-up-right-from-square"></i></a></h5>
         </div>
         <div class="col-8">
             <p>
@@ -45,7 +45,7 @@ require_once $root . "/app/templates/test_template.php";
     </div>
     <div class="kit row align-items-center">
         <div class="col-3 me-3 text-center">
-            <h5><a href="">Yeasts</a></h5>
+            <h5><a href="">Yeasts <i class="fa-solid fa-up-right-from-square"></i></a></h5>
         </div>
         <div class="col-8">
             <p>
