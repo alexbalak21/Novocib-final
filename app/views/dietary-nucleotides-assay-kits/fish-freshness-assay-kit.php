@@ -23,7 +23,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 Post-Mortem ATP Degradation Pathway in Fish Muscle.
             </p>
             <p class="fs-5 fw-bold">
-                ATP <i class="fa-solid fa-arrow-right"></i> ADP <i class="fa-solid fa-arrow-right"></i> AMP <i class="fa-solid fa-arrow-right"></i>&nbsp;<span class="text-primary">IMP<i class="fa-solid fa-arrow-down"></i></span>&nbsp;<i class="fa-solid fa-arrow-right"></i> Inosine <i class="fa-solid fa-arrow-right"></i> <span class="text-danger">Hypoxanthine<i class="fa-solid fa-arrow-up"></i></span>
+                ATP ➜ ADP ➜ AMP ➜&nbsp;<span class="text-primary">IMP<i class="fa-solid fa-arrow-down"></i></span>&nbsp;➜ Inosine ➜ <span class="text-danger">Hypoxanthine<i class="fa-solid fa-arrow-up"></i></span>
             </p>
 
             <p>
@@ -31,28 +31,28 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             </p>
         </div>
         <div class="col-lg-6">
-            <h4 class="text-center">Principle</h4>
-            <span class="fw-bold">The PRECICE® IMP, Inosine, and Hypoxanthine Assay Kit</span> is a colorimetric enzymatic assay allowing the conversion of measurement of concentration of three nucleotides, formed from ATP: IMP, inosine, and hypoxanthine, in a single sample.
-            <div class="container text-center">
+        </div>
+        <div>
+            <h4 class="mt-4">Principle</h4>
+            <p>
+                <span class="fw-bold">The PRECICE® IMP, Inosine, and Hypoxanthine Assay Kit</span> is a colorimetric enzymatic assay allowing the conversion of measurement of concentration of three nucleotides, formed from ATP: IMP, inosine, and hypoxanthine, in a single sample.
+            </p>
+            <div class="d-flex justify-content-center text-center">
                 <div class="row">
-                    <div class="col-12">
-                        <span class="substance text-primary">IMP</span> ➜
-                        <span class="substance text-dark">Inosine</span> ➜
-                        <span class="substance text-danger">Hypoxanthine</span>
+                    <div class="col-3" style="width: 150px;">
+                        <span>IMP</span><br>
+                        <span>↓</span><br>
+                        <span>NADH2</span>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="conversion-box">Enzymatic Conversion</div>
+                    <div class="col-3" style="width: 150px;">
+                        <span>Inosine</span><br>
+                        <span>↓</span><br>
+                        <span>NADH2</span>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <span class="arrow">↓</span>
-                        <br>
-                        <span class="substance text-success">NADH₂</span>
+                    <div class="col-3" style="width: 150px;">
+                        <span>Hypoxanthine</span><br>
+                        <span>↓ </span><br>
+                        <span>NADH2</span>
                     </div>
                 </div>
             </div>
