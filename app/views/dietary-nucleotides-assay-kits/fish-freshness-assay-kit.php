@@ -41,17 +41,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 <div class="row">
                     <div class="col-3" style="width: 150px;">
                         <span>IMP</span><br>
-                        <span>↓</span><br>
+                        <span class="arrow">↓</span><br>
                         <span>NADH2</span>
                     </div>
                     <div class="col-3" style="width: 150px;">
                         <span>Inosine</span><br>
-                        <span>↓</span><br>
+                        <span class="arrow">↓</span><br>
                         <span>NADH2</span>
                     </div>
                     <div class="col-3" style="width: 150px;">
                         <span>Hypoxanthine</span><br>
-                        <span>↓ </span><br>
+                        <span class="arrow">↓ </span><br>
                         <span>NADH2</span>
                     </div>
                 </div>
@@ -295,3 +295,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         </div>
     </div>
 </section>
+<style>
+    .arrow {
+        height: 100px;
+    }
+</style>
