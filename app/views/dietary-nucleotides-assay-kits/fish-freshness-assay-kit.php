@@ -1,5 +1,5 @@
 <?php
-$title = "Title";
+$title = "Fish freshness assay kit";
 
 // META TAGS 
 ob_start(); ?>
@@ -17,42 +17,45 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
     <div class="row">
         <div class="col-lg-6">
             <p>
-                <strong>Synonyms:</strong>
-                inosine 5'-monophosphate dehydrogenase, type 2, IMP dehydrogenase, type II, IMPDH2.
+                Fish muscle is particularly rich in ATP, which is a most abundant muscle metabolite after amino acids. Post-mortem transformation of ATP in fish muscle is a well-documented process that has significant implications for food quality and shelf life.
             </p>
-            <p>
-                Inosine 5'-monophosphate dehydrogenase type 2 (IMPDH 2, E.C.1.1.1.205) is the predominant
-                isoform of IMPDH and a validated target to treat a wide range of cancers and infectious
-                diseases and to prevent lymphocytes proliferation.
+            <p style="font-weight: 600;">
+                Post-Mortem ATP Degradation Pathway in Fish Muscle.
             </p>
-            <p>
-                <strong class="novo-blue">NOVOCIB's</strong>
-                IMPDH 2 has been cloned by RT-PCR amplification of mRNA extracted from human hepatoma cells
-                (NP_000875.2, 100% identity) and expressed in E.coli.
+            <p class="fs-5 fw-bold">
+                ATP <i class="fa-solid fa-arrow-right"></i> ADP <i class="fa-solid fa-arrow-right"></i> AMP <i class="fa-solid fa-arrow-right"></i>&nbsp;<span class="text-primary">IMP<i class="fa-solid fa-arrow-down"></i></span>&nbsp;<i class="fa-solid fa-arrow-right"></i> Inosine <i class="fa-solid fa-arrow-right"></i> <span class="text-danger">Hypoxanthine<i class="fa-solid fa-arrow-up"></i></span>
             </p>
+
             <p>
-                <strong class="novo-blue">NOVOCIB's</strong>
-                purified IMPDH 2 is an active enzyme characterized for its affinity for inosine
-                5'-monophosphate and NAD substrates, and its sensitivity to enzyme inhibitors such as
-                mycophenolic acid and ribavirine-monophosphate.
-            </p>
-            <p>
-                <strong>Unit Definition:</strong>
-                One unit of IMPDH Type II catalyzes the oxydation of 1 µmole of IMP to XMP per minute at pH
-                8.8 at 37 µC.
-            </p>
-            <p>
-                <strong>Specific Activity:</strong>
-                ≥ 0.050 unit/mg protein.
+                The degree to which ATP breaks down into IMP, inosine, and hypoxanthine is a key indicator of fish freshness (Saito et al 1959). Kit is suitable for use with fresh, frozen, and cooked fish and seafood products, including canned fish.
             </p>
         </div>
-        <div class="col-lg-6 text-center">
-            <img
-                class="w-100"
-                src="/app/static/img/IMPDH-reaction.png"
-                alt="Human IMPDH Type 2 reaction schema" />
-            <h4 class="novo-blue">Human IMPDH Type 2</h4>
-            <h5>Ref. #E-Nov1</h5>
+        <div class="col-lg-6">
+            <h4 class="text-center">Principle</h4>
+            <span class="fw-bold">The PRECICE® IMP, Inosine, and Hypoxanthine Assay Kit</span> is a colorimetric enzymatic assay allowing the conversion of measurement of concentration of three nucleotides, formed from ATP: IMP, inosine, and hypoxanthine, in a single sample.
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <span class="substance text-primary">IMP</span> ➜
+                        <span class="substance text-dark">Inosine</span> ➜
+                        <span class="substance text-danger">Hypoxanthine</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="conversion-box">Enzymatic Conversion</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <span class="arrow">↓</span>
+                        <br>
+                        <span class="substance text-success">NADH₂</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="d-flex justify-content-center mt-4">
             <div class="col-lg-10 col-12">
