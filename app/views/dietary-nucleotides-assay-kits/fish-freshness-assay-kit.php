@@ -297,6 +297,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 </section>
 <style>
     .arrow {
-        height: 100px;
+        display: block;
+        height: 240px;
+        /* border: 1px solid blue; */
+        ;
     }
 </style>
