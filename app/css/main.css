@@ -184,13 +184,17 @@ span.novocib {
 }
 
 .copy {
+  position: relative;
   margin-left: 16px;
   font-size: 24px;
   color: var(--novo-blue);
   text-decoration: none;
   cursor: pointer;
   span {
-    font-size: 12px;
+    position: absolute;
+    top: 4px; 
+    font-size: 14px;
+    margin-left: 4px;
     display: none;
   }
 }
