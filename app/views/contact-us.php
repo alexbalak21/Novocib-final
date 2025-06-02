@@ -33,7 +33,7 @@ ob_start(); ?>
     <?= $content_title ?>
     <p>You can contact us by e-mail or on this form and we will come back to you shortly.</p>
     <a class="fs-4" id="mailto" href="mailto:contact@novocib.com"><i class="fa-solid fa-envelope"></i> contact@novocib.com</a>
-    <span id="copy" class="text-secondary copy" title="Copy"><i class="fa-solid fa-clipboard"></i><span>Copied</span></span>
+    <span id="copy" class="text-secondary copy" title="Copy"><i class="fa-solid fa-clipboard"></i><span></span></span>
 
     <form class="mt-5" id="contact-page-form" action="/send" method="POST" name="contact-page-form">
         <div class="row g-3">
