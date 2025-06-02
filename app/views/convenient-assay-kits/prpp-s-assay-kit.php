@@ -57,12 +57,12 @@ echo Banner::gen()
                     </strong>
                 </p>
                 <p class="mt-4 mb-5 text-end">
-                    Download
+                    <i class="fa-solid fa-download"></i>&nbsp; Download
                     <a target="_blank" href="/app/documents/NovoCIB K0709-02-2 User Manual.pdf">
-                        <strong>Download PRPP-S User Manual</strong>
+                        <strong>PRPP-S</strong>
                         <i class="fa-regular fa-file-pdf"></i>
                     </a>
-                    (User manual)
+                    (User manual) <i class="fa-solid fa-book"></i>
                 </p>
             </div>
         </div>

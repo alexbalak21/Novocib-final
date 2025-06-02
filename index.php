@@ -222,7 +222,9 @@ switch ($req_uri) {
         require_once $root . "/app/views/dietary-nucleotides-assay-kits/index.php";
         break;
 
-
+    case "/dietary-nucleotides-assay-kits/fish-freshness-assay-kit":
+        require_once $root . "/app/views/dietary-nucleotides-assay-kits/fish-freshness-assay-kit.php";
+        break;
 
 
 

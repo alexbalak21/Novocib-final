@@ -19,7 +19,7 @@ require_once $root . "/app/templates/test_template.php";
     </div>
     <div class="kit row align-items-center">
         <div class="col-3 me-3 text-center">
-            <h5><a href="">Fish and seafood <i class="fa-solid fa-up-right-from-square"></i></a></h5>
+            <h5><a href="/dietary-nucleotides-assay-kits/fish-freshness-assay-kit">Fish and seafood <i class="fa-solid fa-up-right-from-square"></i></a></h5>
         </div>
         <div class="col-8">
             <p>
