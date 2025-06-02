@@ -36,7 +36,7 @@ ob_start(); ?>
     <div class="container mt-5 text-center">
         <?= $content_title ?>
         <p>You can contact us by e-mail or on this form and we will come back to you shortly.</p>
-        <a class="btn btn-outline-primary" href="mailto:contact@novocib.com"><i class="fa-solid fa-envelope-open-text"></i> contact@novocib.com</a>
+        <a class="fs-4" id="mailto" href="mailto:contact@novocib.com"><i class="fa-solid fa-envelope"></i> contact@novocib.com</a>
         <p class="mb-5 mt-3"><a href="" onclick="copy_to_cipboard('contact@novocib.com')">Copy E-mail <i class="fa-regular fa-clone"></i></a> </p>
         <form id="contact-page-form" action="/send" method="POST" name="contact-page-form">
             <div class="row g-3">

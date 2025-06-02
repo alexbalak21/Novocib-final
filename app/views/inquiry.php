@@ -1,17 +1,23 @@
 <?php
 $title = "Inquiry";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/base.php";
-
-$novoblue = "#4167b1";
-
-
-
-
-addContent(Banner::gen("/app/static/img/order.jpg"));
-$content_title = UnderlinedTitle::get("Inquiry", "novoblue");
 
 $product = isset($_GET['product']) ? $_GET['product'] : "";
 
+// META TAGS 
+ob_start(); ?>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<?php $metas = ob_get_clean();
+
+
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+?>
+
+<?= Banner::gen("/app/static/img/order.jpg") ?>
+
+
+
+<?php
 ob_start(); ?>
 <div class="col-12">
     <div class="form-floating">
@@ -31,13 +37,13 @@ ob_start(); ?>
     </div>
 </div>
 <?php $volume_form = ob_get_clean();
+?>
 
-ob_start(); ?>
 <div class="container mt-5 text-center">
-    <?= $content_title ?>
+    <h2 class="underlinedTitle center mt-4"><span class="underlined novoblue">Inquiry</span></h2>
     <p>You can contact us by e-mail or on this form and we will come back to you shortly.</p>
-    <a class="fs-4" href="mailto:contact@novocib.com"><i class="fa-solid fa-envelope"></i> contact@novocib.com</a>
-    <span id="copy" class="text-secondary fs-4 copy" onclick="copy_to_cipboard('contact@novocib.com')" title="copy"><i class="fa-regular fa-clipboard"></i></span>
+    <a class="fs-4" id="mailto" href="mailto:contact@novocib.com"><i class="fa-solid fa-envelope"></i> contact@novocib.com</a>
+    <span id="copy" class="text-secondary copy" title="Copy"><i class="fa-solid fa-clipboard"></i><span>Copied</span></span>
 
     <form class="mt-5" id="contact-page-form" action="/send" method="POST" name="contact-page-form">
         <div class="row g-3">
@@ -101,10 +107,4 @@ ob_start(); ?>
         <div class="my-5"><button type="submit" class="btn btn-primary">Send message <i class="fa-regular fa-paper-plane"></i></button></div>
     </form>
 </div>
-<script>
-
-</script>
-<?php $output = ob_get_clean();
-
-
-addContent($output);
+<script src="/app/js/contact-inquiry.js"></script>
