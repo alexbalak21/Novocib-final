@@ -12,6 +12,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
 
 <?= Banner::gen() ?>
+<script src="/app/js/fish-freshness-page.js" defer></script>
 <main class="container mt-5">
     <h2 class="underlinedTitle center"><span class="underlined novoblue">IMP, Inosine and Hypoxanthine Assay Kit</span></h2>
     <div class="row">
@@ -85,16 +86,23 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <li>4. Read absorbance at 340 nm using a microplate reader.</li>
             <li>Calculate absolute concentrations of each nucleotide or relative molar concentrations directly from absorbance values using formulas:</li>
         </ol>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
             <div class="col-lg-9 col-12">
-                <div class="mt-1 text-center">
-                    <img class="w-100" src="/app/static/img/Fish-freshness/HxMolar.jpg" alt="mathematical expression" title="Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
+                <div class="mt-3 text-center border">
+                    <img id="formula-img-1" class="w-100" src="/app/static/img/Fish-freshness/HxMolar.jpg" alt="mathematical expression" title="Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="mt-1" id="formula-1">Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
                 </div>
-                <div class="mt-1 text-center">
-                    <img class="w-100" src="/app/static/img/Fish-freshness/ImpMolar.jpg" alt="mathematical expression" title="IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))">
+
+                <div class="mt-3 text-center border">
+                    <img id="formula-img-2" class="w-100" src="/app/static/img/Fish-freshness/ImpMolar.jpg" alt="mathematical expression" title="IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="mt-1" id="formula-2">IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
                 </div>
-                <div class="mt-1 text-center">
-                    <img class="w-100" src="/app/static/img/Fish-freshness/KiMolar.jpg" alt="mathematical expression" title="Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
+                <div class="mt-3 text-center border">
+                    <img id="formula-img-3" class="w-100" src="/app/static/img/Fish-freshness/KiMolar.jpg" alt="mathematical expression" title="Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="mt-1" id="formula-3">Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
                 </div>
             </div>
         </div>
@@ -136,5 +144,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
     .kit-composition {
         font-size: 17px;
+    }
+
+    #formula-1,
+    #formula-2,
+    #formula-3 {
+        display: none;
     }
 </style>
