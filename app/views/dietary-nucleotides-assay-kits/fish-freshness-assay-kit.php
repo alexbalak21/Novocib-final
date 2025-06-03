@@ -31,10 +31,11 @@
                 </p>
             </div>
             <div class="col-lg-6 text-center">
-
+                <img class="w-100" src="/app/static/img/ATP_degradation.jpg" alt="atp degradation schema">
+                <h4 class="novo-blue">ATP degradation in FIsh</h4>
             </div>
         </div>
-        <h3 class="novo-blue text-center mt-4">Buy the Kit <i class="fa-solid fa-cart-shopping"></i></h3>
+        <h3 class="novo-blue text-center mt-5">Buy the Kit <i class="fa-solid fa-cart-shopping"></i></h3>
         <div class="d-flex justify-content-center">
 
             <div class="col-lg-10 col-12">
@@ -75,7 +76,7 @@
                 <p class="mt-4 mb-5 text-end">
                     <i class="fa-solid fa-download"></i>&nbsp;Download
                     <a target="_blank" href="/app/documents/NovoCIB K0709-02-2 User Manual.pdf">
-                        <strong>Fish freshness assay Kit</strong>
+                        <strong>Fish Freshness Assay Kit</strong>
                         <i class="fa-regular fa-file-pdf"></i>
                     </a>
                     (User manual)
@@ -148,11 +149,28 @@
                         <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
                     </div>
-                    <div class="mt-2 mb-5 text-center border">
+                    <div class="mt-2 text-center border">
                         <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/KiMolar.jpg" alt="mathematical expression" title="Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
                         <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
                     </div>
+
+                    <div class="mt-2 text-center border">
+                        <img class="formula-img" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p class="mt-1 formula">H(%) = (Hx / (IMP + Ino + Hx)) * 100</p>
+                    </div>
+                    <div class="mt-2 text-center border">
+                        <img class="formula-img" src="/app/static/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p class="mt-1 formula">Fr(%) = (IMP / (IMP + Ino + Hx)) * 100</p>
+                    </div>
+                    <div class="mt-2 mb-5 text-center border">
+                        <img class="formula-img" src="/app/static/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p class="mt-1 formula">Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100</p>
+                    </div>
+
                 </div>
             </div>
 
