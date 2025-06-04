@@ -114,7 +114,7 @@
         <hr>
 
         <div class="mt-5 ms-3 mb-5 row">
-            <h3 class="">Kit composition:</h3>
+            <h3 class="novo-blue">Kit composition:</h3>
             <div class="col-lg-6 d-flex align-items-center ps-5">
                 <ol class="kit-composition">
                     <li>"Reaction Buffer"</li>
@@ -127,67 +127,86 @@
             </div>
         </div>
         <div class="mt-5">
-            <h4 class="">Simple:</h4>
-            <ol class="ms-4">
-                <li>Cook fish in the water, homogenize and clarify by filtration or centrifugation</li>
-                <li>Add 200µL to four wells of the same column</li>
-                <li>Incubate 30min at 30°C to convert enzymatically IMP, inosine, and hypoxanthine to NADH<sub>2</sub></li>
-                <li>4. Read absorbance at 340 nm using a microplate reader.</li>
-                <li>Calculate absolute concentrations of each nucleotide or relative molar concentrations directly from absorbance values using formulas:</li>
-            </ol>
-            <div class="row justify-content-center">
-                <p class="text-secondary text-center my-0">Click to display the formula <i class="fa-regular fa-hand-pointer"></i></p>
-                <div class="col-lg-9 col-12">
-                    <div class="text-center border">
-                        <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/HxMolar.jpg" alt="mathematical expression" title="Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
-                        <i class="fa-solid fa-angle-down"></i>
-                        <p class="mt-1 formula">Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
-                    </div>
+            <h3 class="novo-blue">Simple:</h4>
+                <ol class="ms-4">
+                    <li>Cook fish in the water, homogenize and clarify by filtration or centrifugation</li>
+                    <li>Add 200µL to four wells of the same column</li>
+                    <li>Incubate 30min at 30°C to convert enzymatically IMP, inosine, and hypoxanthine to NADH<sub>2</sub></li>
+                    <li>4. Read absorbance at 340 nm using a microplate reader.</li>
+                    <li>Calculate absolute concentrations of each nucleotide or relative molar concentrations directly from absorbance values using formulas:</li>
+                </ol>
+                <div class="row justify-content-center">
+                    <p class="text-secondary text-center my-0">Click to display the formula <i class="fa-regular fa-hand-pointer"></i></p>
+                    <div class="col-lg-9 col-12">
+                        <div class="text-center border">
+                            <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/HxMolar.jpg" alt="mathematical expression" title="Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
+                        </div>
 
-                    <div class="mt-2 text-center border">
-                        <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/ImpMolar.jpg" alt="mathematical expression" title="IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))">
-                        <i class="fa-solid fa-angle-down"></i>
-                        <p class="mt-1 formula">IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
-                    </div>
-                    <div class="mt-2 text-center border">
-                        <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/KiMolar.jpg" alt="mathematical expression" title="Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
-                        <i class="fa-solid fa-angle-down"></i>
-                        <p class="mt-1 formula">Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
-                    </div>
+                        <div class="mt-2 text-center border">
+                            <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/ImpMolar.jpg" alt="mathematical expression" title="IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))">
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
+                        </div>
+                        <div class="mt-2 text-center border">
+                            <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/KiMolar.jpg" alt="mathematical expression" title="Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
+                        </div>
 
-                    <div class="mt-2 text-center border">
-                        <img class="formula-img" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
-                        <i class="fa-solid fa-angle-down"></i>
-                        <p class="mt-1 formula">H(%) = (Hx / (IMP + Ino + Hx)) * 100</p>
-                    </div>
-                    <div class="mt-2 text-center border">
-                        <img class="formula-img" src="/app/static/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
-                        <i class="fa-solid fa-angle-down"></i>
-                        <p class="mt-1 formula">Fr(%) = (IMP / (IMP + Ino + Hx)) * 100</p>
-                    </div>
-                    <div class="mt-2 mb-5 text-center border">
-                        <img class="formula-img" src="/app/static/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
-                        <i class="fa-solid fa-angle-down"></i>
-                        <p class="mt-1 formula">Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100</p>
+                        <div class="mt-2 text-center border">
+                            <img class="formula-img" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">H(%) = (Hx / (IMP + Ino + Hx)) * 100</p>
+                        </div>
+                        <div class="mt-2 text-center border">
+                            <img class="formula-img" src="/app/static/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">Fr(%) = (IMP / (IMP + Ino + Hx)) * 100</p>
+                        </div>
+                        <div class="mt-2 mb-5 text-center border">
+                            <img class="formula-img" src="/app/static/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-8 mx-auto mb-5">
-                <p>
-                    Relative molar concentrations of nucleotides (Ki value (Karube et al, 1984) , H-value (Huong et al, 1992) and Fr value (Gill et al. 1987)) are better indicators of fish freshness since they are not influenced by extraction efficiency or variations in muscle ATP between different species (Luong et al, 1992).
-                </p>
-            </div>
-            <hr>
-            <div>
-                <h3 class="novo-blue">Specificity</h3>
-                <p>No interference with other nucleotides 5'NMP (AMP, GMP, CMP or UMP), nucleosides (adenosine, guanosine, cytidine or uridine) or heterocyclic bases (adenine, guanine, cytosine or uracyl).</p>
-            </div>
+                <div class="col-lg-8 mx-auto">
+                    <p class="mb-5">
+                        Relative molar concentrations of nucleotides (Ki value (Karube et al, 1984) , H-value (Huong et al, 1992) and Fr value (Gill et al. 1987)) are better indicators of fish freshness since they are not influenced by extraction efficiency or variations in muscle ATP between different species (Luong et al, 1992).
+                    </p>
+                    <hr>
+                </div>
+
+                <div class="mt-5 mb-5">
+                    <h3 class="novo-blue">Specificity</h3>
+                    <p>No interference with other nucleotides 5NMP (AMP, GMP, CMP or UMP), nucleosides (adenosine, guanosine, cytidine or uridine) or heterocyclic bases (adenine, guanine, cytosine or uracyl).</p>
+                </div>
+
+                <div>
+                    <h3 class="novo-blue">
+                        Linearity range:
+                    </h3>
+                    <p>
+                        For each nucleotide (IMP or hypoxanthine or inosine) the assay is linear between 0.1AU-1.6AU, corresponding to 0.2mmols/Kg to 6mmols/Kg of nucleotide after 20-fold dilution.
+                    </p>
+                    <div class="row mb-5">
+                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineB.png" alt="" class="w-100"></div>
+                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineC.png" alt="" class="w-100"></div>
+                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineD.png" alt="" class="w-100"></div>
+                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineD.png" alt="" class="w-100"></div>
+                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineD.png" alt="" class="w-100"></div>
+                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineD.png" alt="" class="w-100"></div>
+
+                    </div>
+                </div>
 
 
         </div>
     </main>
 
-    <section class="container">
+    <section class="container mt-5">
         <div class="referances my-5 row justify-content-center">
             <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
             <div class="col-2">
