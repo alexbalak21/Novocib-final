@@ -177,6 +177,11 @@
                     Relative molar concentrations of nucleotides (Ki value (Karube et al, 1984) , H-value (Huong et al, 1992) and Fr value (Gill et al. 1987)) are better indicators of fish freshness since they are not influenced by extraction efficiency or variations in muscle ATP between different species (Luong et al, 1992).
                 </p>
             </div>
+            <hr>
+            <div>
+                <h3 class="novo-blue">Specificity</h3>
+                <p>No interference with other nucleotides 5'NMP (AMP, GMP, CMP or UMP), nucleosides (adenosine, guanosine, cytidine or uridine) or heterocyclic bases (adenine, guanine, cytosine or uracyl).</p>
+            </div>
 
 
         </div>
