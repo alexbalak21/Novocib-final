@@ -14,17 +14,14 @@
     <?= Banner::gen() ?>
     <script src="/app/js/fish-freshness-page.js" defer></script>
     <main class="container mt-5">
-        <h2 class="underlinedTitle center"><span class="underlined novoblue">IMP, Inosine and Hypoxanthine Assay Kit</span></h2>
+        <h2 class="underlinedTitle center"><span class="underlined novoblue">PRECICE® IMP, Inosine and Hypoxanthine Assay Kit</span></h2>
         <div class="row">
             <div class="col-lg-6">
                 <p>
                     Fish muscle is particularly rich in ATP, which is a most abundant muscle metabolite after amino acids. Post-mortem transformation of ATP in fish muscle is a well-documented process that has significant implications for food quality and shelf life.
                 </p>
-                <p style="font-weight: 600;">
-                    Post-Mortem ATP Degradation Pathway in Fish Muscle.
-                </p>
-                <p class="fs-5 fw-bold border text-center">
-                    ATP ➜ ADP ➜ AMP ➜&nbsp;<span class="text-primary">IMP<i class="fa-solid fa-arrow-down"></i></span>&nbsp;➜ Inosine ➜ <span class="text-danger">Hypoxanthine<i class="fa-solid fa-arrow-up"></i></span>
+                <p class="fs-5 border text-center">
+                    <span class="fw-bold">ATP</span> ➜ <span class="fs-6">ADP</span> ➜ <span class="fs-6">AMP</span> ➜&nbsp;<span class="text-primary fw-bold">IMP<i class="fa-solid fa-arrow-down"></i></span>&nbsp;➜ inosine ➜ <span class="text-danger fw-bold">hypoxanthine<i class="fa-solid fa-arrow-up"></i></span>
                 </p>
                 <p>
                     The degree to which ATP breaks down into IMP, inosine, and hypoxanthine is a key indicator of fish freshness (Saito et al 1959). Kit is suitable for use with fresh, frozen, and cooked fish and seafood products, including canned fish.
@@ -32,7 +29,7 @@
             </div>
             <div class="col-lg-6 text-center">
                 <img class="w-100" src="/app/static/img/ATP_degradation.jpg" alt="atp degradation schema">
-                <h4 class="novo-blue">ATP degradation in FIsh</h4>
+                <h4 class="novo-blue">Post-Mortem ATP Degradation Pathway in Fish Muscle</h4>
             </div>
         </div>
         <h3 class="novo-blue text-center mt-5">Buy the Kit <i class="fa-solid fa-cart-shopping"></i></h3>
@@ -52,7 +49,10 @@
                     <tbody>
                         <tr>
                             <td>#K0700-003-12</td>
-                            <td class="text-center"><strong>For 12 samples (microplate reader)</strong></td>
+                            <td class="text-center">
+                                <b>PRECICE® IMP, Inosine and Hypoxanthine Assay Kit </b><br>
+                                For 12 samples (microplate reader)
+                            </td>
                             <td class="price text-center">420.00 €</td>
                             <td class="text-end pe-3">
                                 <a title="Order" class="btn btn-primary" href="/inquiry?ref=K0700-003-12&amp;product=PRECICE® IMP, Inosine and Hypoxanthine Assay Kit&amp;volume=12 samples (microplate)">
