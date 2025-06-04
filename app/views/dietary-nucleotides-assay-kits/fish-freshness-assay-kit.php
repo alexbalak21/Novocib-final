@@ -15,6 +15,7 @@
     <script src="/app/js/fish-freshness-page.js" defer></script>
     <main class="container mt-5">
         <h2 class="underlinedTitle center"><span class="underlined novoblue">PRECICE® IMP, Inosine and Hypoxanthine Assay Kit</span></h2>
+        <h3 class="text-center">Freshness Test</h3>
         <div class="row">
             <div class="col-lg-6">
                 <p>
@@ -32,9 +33,36 @@
                 <h4 class="novo-blue">Post-Mortem ATP Degradation Pathway in Fish Muscle</h4>
             </div>
         </div>
+        <div class="mb-4 mt-5">
+            <h4 class="novo-blue">Principle</h4>
+            <p>
+                <span class="fw-bold">The PRECICE® IMP, Inosine, and Hypoxanthine Assay Kit</span> is a colorimetric enzymatic assay allowing the conversion of measurement of concentration of three nucleotides, formed from ATP: IMP, inosine, and hypoxanthine, in a single sample.
+            </p>
+            <div class="d-flex justify-content-center text-center">
+                <div class="row justify-content-center enzymatic-conversion">
+                    <div class="col-4" style="width: 150px;">
+                        <span>IMP</span><br>
+                        <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
+                        <span>NADH<sub>2</sub></span>
+                    </div>
+                    <div class="col-4" style="width: 150px;">
+                        <span>Inosine</span><br>
+                        <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
+                        <span>NADH<sub>2</sub></span>
+                    </div>
+                    <div class="col-4" style="width: 150px;">
+                        <span>Hypoxanthine</span><br>
+                        <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
+                        <span>NADH<sub>2</sub></span>
+                    </div>
+                    <div class="text-center conversion">
+                        <div><span class="middle">Enzymatic conversion</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h3 class="novo-blue text-center mt-5">Buy the Kit <i class="fa-solid fa-cart-shopping"></i></h3>
         <div class="d-flex justify-content-center">
-
             <div class="col-lg-10 col-12">
                 <!-- FETCHING PRODUCT FROM THE DATABASE -->
                 <table class="table product mb-2">
@@ -83,35 +111,6 @@
                 </p>
             </div>
         </div>
-        <div class="my-4">
-            <h4 class="">Principle</h4>
-            <p>
-                <span class="fw-bold">The PRECICE® IMP, Inosine, and Hypoxanthine Assay Kit</span> is a colorimetric enzymatic assay allowing the conversion of measurement of concentration of three nucleotides, formed from ATP: IMP, inosine, and hypoxanthine, in a single sample.
-            </p>
-            <div class="d-flex justify-content-center text-center">
-                <div class="row justify-content-center enzymatic-conversion">
-                    <div class="col-4" style="width: 150px;">
-                        <span>IMP</span><br>
-                        <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
-                        <span>NADH<sub>2</sub></span>
-                    </div>
-                    <div class="col-4" style="width: 150px;">
-                        <span>Inosine</span><br>
-                        <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
-                        <span>NADH<sub>2</sub></span>
-                    </div>
-                    <div class="col-4" style="width: 150px;">
-                        <span>Hypoxanthine</span><br>
-                        <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
-                        <span>NADH<sub>2</sub></span>
-                    </div>
-                    <div class="text-center conversion">
-                        <div><span class="middle">Enzymatic conversion</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
 
         <div class="mt-5 ms-3 mb-5 row">
             <h3 class="novo-blue">Kit composition:</h3>
