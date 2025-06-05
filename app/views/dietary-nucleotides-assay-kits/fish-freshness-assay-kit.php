@@ -34,10 +34,14 @@
             </div>
         </div>
         <div class="mb-4 mt-5">
-            <h4 class="novo-blue">Principle</h4>
-            <p>
-                <b>PRECICE® IMP, Inosine, and Hypoxanthine Assay Kit</b> has been specifically designed in a 96-well plate format to facilitate the measurement of three major ATP catabolites in the same fish sample. The microplate is supplied prefilled with specific enzymes that irreversibly convert three nucleotides - IMP, inosine and hypoxanthine to one common substance - NADH2. After addition of boiled fish extract to microplate well and 30 min incubation, NADH is quantitatively measured at a wavelength of 340nm using microplate reader. These absorbance data can be used to calculate K-value, H-value or other values:
-            </p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="novo-blue">Principle</h4>
+                    <p>
+                        <b>PRECICE® IMP, Inosine, and Hypoxanthine Assay Kit</b> has been specifically designed in a 96-well plate format to facilitate the measurement of three major ATP catabolites in the same fish sample. The microplate is supplied prefilled with specific enzymes that irreversibly convert three nucleotides - IMP, inosine and hypoxanthine to one common substance - NADH2. After addition of boiled fish extract to microplate well and 30 min incubation, NADH is quantitatively measured at a wavelength of 340nm using microplate reader. These absorbance data can be used to calculate K-value, H-value or other values:
+                    </p>
+                </div>
+            </div>
             <div class="d-flex justify-content-center text-center">
                 <div class="row justify-content-center enzymatic-conversion">
                     <div class="col-4" style="width: 150px;">
