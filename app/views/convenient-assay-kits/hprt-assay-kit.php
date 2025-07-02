@@ -16,9 +16,9 @@ echo Banner::gen();
     <div class="container">
 
         <h2 class="underlinedTitle center">
-            <span class="underlined novoblue center">Spectrophotometric microplate HPRT Assay</span>
+            <span class="underlined novoblue center">PRECICE® HPRT Assay Kit <br>Spectrophotometric, microplate format</span>
         </h2>
-        <h4 class="text-center mt-3 mb-4">Including active human HPRT enzyme</h4>
+        <h4 class="text-center mt-4 mb-4">Including active human HPRT enzyme</h4>
 
         <div class="row">
             <div class="col-lg-6">
@@ -33,150 +33,183 @@ echo Banner::gen();
                 </p>
             </div>
             <div class="col-lg-6">
+                <figure class="col-7 mx-auto">
+                    <img class="img-fluid" src="/app/static/img/HPRT-Assay-kit.jpg" alt="HPRT Assay Kit Composition" title="HPRT Assay Kit Composition">
+                </figure>
                 <figure>
                     <img class="w-100" src="/app/static/img/HPRT-Assay-Kit-Principle.png" alt="HPRT enzyme Molecular Structure" title="HPRT enzyme Molecular Structure">
+
                     <figcaption class="text-center">
                         <h4 class="novo-blue">PRECICE® HPRT Assay Kit</h4>
                         <h5>#K0709-01-2</h5>
                     </figcaption>
                 </figure>
-
             </div>
-            <div class=" d-flex justify-content-center mt-5">
-                <div class="col-lg-10 col-12">
+        </div>
 
-                    <!-- FETCHING PRODUCT FROM THE DATABASE -->
-                    <?= Product::gen("HPRT Assay Kit") ?>
+        <div class=" d-flex justify-content-center mt-5">
+            <div class="col-lg-10 col-12">
 
-                    <p class="text-center"><strong>Kit is provided in stable lyophilized form and <span class="text-danger">shipped without dry ice</span> </strong></p>
-
-
-                    <p class="mt-4 mb-4 text-end"><i class="fa-solid fa-download"></i> Download <a target="_blank" href="/app/documents/NovoCIB K0709-01-2 24 samples User Manual 010725.pdf"> <strong>HPRT assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
-                    <p class="mt-4 mb-4 text-end"><i class="fa-solid fa-download"></i> Download <a target="_blank" href="/app/documents/PRECICE HPRT Assay kit AN K0709-01 110609.pdf"> <strong>Application Notes <i class="fa-solid fa-note-sticky"></i></a> </strong></p>
-                    <p class="mt-4 mb-5 text-end"><i class="fa-solid fa-download"></i> Download <a target="_blank" href="/app/documents/Novocib-HPRT-MSDS.pdf"> <strong>Material Safety Data Sheet <i class="fa-solid fa-passport"></i></a> </strong>(MSDS)</p>
-
-                </div>
-            </div>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
-
-                <div class="col d-flex">
-                    <div class="card w-100 bg-light border-0 rounded shadow-sm">
-                        <div class="card-body">
-                            <h4 class="novo-blue">🔎 Wide Detection Range</h4>
-                            <p class="mt-3 mb-0">Detect HPRT activity from <strong>6.75</strong> to <strong>340 nmol/hour/ml</strong>, capturing both complete and partial deficiencies.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col d-flex">
-                    <div class="card w-100 bg-light border-0 rounded shadow-sm">
-                        <div class="card-body">
-                            <h4 class="novo-blue">🎯 Accurate</h4>
-                            <p class="mt-3 mb-0">Low variability: <strong>1.5%</strong> (within-run), <strong>5%</strong> (between-day), and <strong>6.5%</strong> (total imprecision).</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col d-flex">
-                    <div class="card w-100 bg-light border-0 rounded shadow-sm">
-                        <div class="card-body">
-                            <h4 class="novo-blue">⚡ Fast</h4>
-                            <p class="mt-3 mb-0">Analyze up to <strong>15 samples</strong> in triplicate in just <strong>2 hours</strong>.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col d-flex">
-                    <div class="card w-100 bg-light border-0 rounded shadow-sm">
-                        <div class="card-body">
-                            <h4 class="novo-blue">🧪 Convenient</h4>
-                            <p class="mt-3 mb-0">Skip sample prep: use <strong>untreated cell lysates</strong> without inactivating 5'-nucleotidase.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col d-flex">
-                    <div class="card w-100 bg-light border-0 rounded shadow-sm">
-                        <div class="card-body">
-                            <h4 class="novo-blue">✅ Validated</h4>
-                            <p class="mt-3 mb-0">Results consistent with <strong>radiochemical protocols</strong> across erythrocytes, PBMCs, and cultured cells.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col d-flex">
-                    <div class="card w-100 bg-light border-0 rounded shadow-sm">
-                        <div class="card-body">
-                            <h4 class="novo-blue">📦 Ready-to-Use</h4>
-                            <p class="mt-3 mb-0">Supplied in a stable <strong>lyophilized form</strong> and shipped <strong>without dry ice</strong>—easy to store and prepare on demand.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="table-responsive mt-5">
-                <h4 class="text-center">HPRT Activity</h4>
-                <table class="table table-striped table-bordered text-center">
-                    <thead class="table-primary">
+                <!-- FETCHING PRODUCT FROM THE DATABASE -->
+                <table class="table product mb-2">
+                    <thead>
                         <tr>
-                            <th scope="col">Cell Type</th>
-                            <th scope="col">PRECICE® HPRT Assay Kit<br><small>(nmol/h/mg or per 10⁶ cells)</small></th>
-                            <th scope="col">Published Data<br><small>(nmol/h/mg or per 10⁶ cells)</small></th>
-                            <th scope="col">Ref<sup>*</sup></th>
+                            <th>#REF</th>
+                            <th class="text-center">SIZE</th>
+                            <th class="text-center">PRICE</th>
+                            <th class="pe-5"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>RBC specimen 1 (n=4)</td>
-                            <td>76.94 ± 2.5</td>
-                            <td rowspan="3" class="align-middle">80-120 (per mg Hgb)</td>
-                            <td rowspan="3" class="align-middle">4</td>
-                        </tr>
-                        <tr>
-                            <td>RBC specimen 2 (n=12)</td>
-                            <td>78.03 ± 5.52</td>
-                        </tr>
-                        <tr>
-                            <td>RBC specimen 3 (n=4)</td>
-                            <td>88.7 ± 3.41</td>
-                        </tr>
-                        <tr style="border-top: 3px solid darkgray;">
-                            <td>PBMC specimen 1 (n=4)</td>
-                            <td>
-                                159.91 ± 3.60 (per mg protein)<br>
-                                19.7 ± 0.6 (per 10⁶ PBMC)
+                            <td>#K0709-01-2</td>
+                            <td class="text-center"><strong>
+                                    <span class="novo-blue">PRECICE® HPRT Assay Kit </span><br>
+                                    10 ml, 24 analyses (8 samples in triplicate)
+                                </strong></td>
+                            <td class="price text-center">330.00 €</td>
+                            <td class="text-end pe-3">
+                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=HPRT Assay Kit&amp;volume=24 analyses (8 samples in triplicate) with HPRT enzyme">
+                                    Inquiry
+                                </a>
                             </td>
-                            <td rowspan="2" class="align-middle">
-                                343 ± 18 (per mg protein)<br>
-                                10.2-18.0 (per 10⁶ PBMC)
-                            </td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>PBMC specimen 2 (n=4)</td>
-                            <td>
-                                152.30 ± 4.94 (per mg protein)<br>
-                                21.3 ± 0.42 (per 10⁶ PBMC)
-                            </td>
-                            <td>5</td>
-                        </tr>
-                        <tr style="border-top: 3px solid darkgray;">
-                            <td>Human Dermal Fibroblasts (Invitrogen)</td>
-                            <td>70.91 ± 2.67</td>
-                            <td rowspan="2" class="align-middle">81-127 (per mg protein)</td>
-                            <td rowspan="2" class="align-middle">6</td>
-                        </tr>
-                        <tr>
-                            <td>W20-17 cells (ATCC)</td>
-                            <td>91.95 ± 4.49</td>
                         </tr>
                     </tbody>
                 </table>
+                <p class="text-muted text-center">
+                    <em>Updated on July 2nd, 2025.</em>
+                    <br>
+                </p>
+
+                <p class="text-center"><strong>Kit is provided in stable lyophilized form and <span class="text-danger">shipped without dry ice</span> </strong></p>
+
+
+                <p class="mt-4 mb-4 text-end"><i class="fa-solid fa-download"></i> Download <a target="_blank" href="/app/documents/NovoCIB K0709-01-2 24 samples User Manual 010725.pdf"> <strong>HPRT assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
+                <p class="mt-4 mb-4 text-end"><i class="fa-solid fa-download"></i> Download <a target="_blank" href="/app/documents/PRECICE HPRT Assay kit AN K0709-01 110609.pdf"> <strong>Application Notes <i class="fa-solid fa-note-sticky"></i></a> </strong></p>
+                <p class="mt-4 mb-5 text-end"><i class="fa-solid fa-download"></i> Download <a target="_blank" href="/app/documents/Novocib-HPRT-MSDS.pdf"> <strong>Material Safety Data Sheet <i class="fa-solid fa-passport"></i></a> </strong>(MSDS)</p>
+
             </div>
         </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+
+            <div class="col d-flex">
+                <div class="card w-100 bg-light border-0 rounded shadow-sm">
+                    <div class="card-body">
+                        <h4 class="novo-blue">🔎 Wide Detection Range</h4>
+                        <p class="mt-3 mb-0">Detect HPRT activity from <strong>6.75</strong> to <strong>340 nmol/hour/ml</strong>, capturing both complete and partial deficiencies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card w-100 bg-light border-0 rounded shadow-sm">
+                    <div class="card-body">
+                        <h4 class="novo-blue">🎯 Accurate</h4>
+                        <p class="mt-3 mb-0">Low variability: <strong>1.5%</strong> (within-run), <strong>5%</strong> (between-day), and <strong>6.5%</strong> (total imprecision).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card w-100 bg-light border-0 rounded shadow-sm">
+                    <div class="card-body">
+                        <h4 class="novo-blue">⚡ Fast</h4>
+                        <p class="mt-3 mb-0">Analyze up to <strong>15 samples</strong> in triplicate in just <strong>2 hours</strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card w-100 bg-light border-0 rounded shadow-sm">
+                    <div class="card-body">
+                        <h4 class="novo-blue">🧪 Convenient</h4>
+                        <p class="mt-3 mb-0">Skip sample prep: use <strong>untreated cell lysates</strong> without inactivating 5'-nucleotidase.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card w-100 bg-light border-0 rounded shadow-sm">
+                    <div class="card-body">
+                        <h4 class="novo-blue">✅ Validated</h4>
+                        <p class="mt-3 mb-0">Results consistent with <strong>radiochemical protocols</strong> across erythrocytes, PBMCs, and cultured cells.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card w-100 bg-light border-0 rounded shadow-sm">
+                    <div class="card-body">
+                        <h4 class="novo-blue">📦 Ready-to-Use</h4>
+                        <p class="mt-3 mb-0">Supplied in a stable <strong>lyophilized form</strong> and shipped <strong>without dry ice</strong>—easy to store and prepare on demand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="table-responsive mt-5">
+            <h4 class="text-center">HPRT Activity</h4>
+            <table class="table table-striped table-bordered text-center">
+                <thead class="table-primary">
+                    <tr>
+                        <th scope="col">Cell Type</th>
+                        <th scope="col">PRECICE® HPRT Assay Kit<br><small>(nmol/h/mg or per 10⁶ cells)</small></th>
+                        <th scope="col">Published Data<br><small>(nmol/h/mg or per 10⁶ cells)</small></th>
+                        <th scope="col">Ref<sup>*</sup></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RBC specimen 1 (n=4)</td>
+                        <td>76.94 ± 2.5</td>
+                        <td rowspan="3" class="align-middle">80-120 (per mg Hgb)</td>
+                        <td rowspan="3" class="align-middle">4</td>
+                    </tr>
+                    <tr>
+                        <td>RBC specimen 2 (n=12)</td>
+                        <td>78.03 ± 5.52</td>
+                    </tr>
+                    <tr>
+                        <td>RBC specimen 3 (n=4)</td>
+                        <td>88.7 ± 3.41</td>
+                    </tr>
+                    <tr style="border-top: 3px solid darkgray;">
+                        <td>PBMC specimen 1 (n=4)</td>
+                        <td>
+                            159.91 ± 3.60 (per mg protein)<br>
+                            19.7 ± 0.6 (per 10⁶ PBMC)
+                        </td>
+                        <td rowspan="2" class="align-middle">
+                            343 ± 18 (per mg protein)<br>
+                            10.2-18.0 (per 10⁶ PBMC)
+                        </td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>PBMC specimen 2 (n=4)</td>
+                        <td>
+                            152.30 ± 4.94 (per mg protein)<br>
+                            21.3 ± 0.42 (per 10⁶ PBMC)
+                        </td>
+                        <td>5</td>
+                    </tr>
+                    <tr style="border-top: 3px solid darkgray;">
+                        <td>Human Dermal Fibroblasts (Invitrogen)</td>
+                        <td>70.91 ± 2.67</td>
+                        <td rowspan="2" class="align-middle">81-127 (per mg protein)</td>
+                        <td rowspan="2" class="align-middle">6</td>
+                    </tr>
+                    <tr>
+                        <td>W20-17 cells (ATCC)</td>
+                        <td>91.95 ± 4.49</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     </div>
 
 
