@@ -292,6 +292,9 @@ echo Banner::gen();
                     <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1873506123001307">CRISPR/Cas9-mediated generation of human embryonic stem cell sub-lines with HPRT1 gene knockout to model Lesch Nyhan disease</a>
                 </li>
                 <li>
+                    <a target="_blank" href="https://link.springer.com/protocol/10.1007/978-1-4939-1068-7_11">The Applicable Use of the HPRT Gene Mutation Assay as a Practical Tool in Mutagenesis and DNA Repair Studies</a>
+                </li>
+                <li>
                     <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/38799559/">Ablation of Atp5if1 impairs metabolic reprogramming and proliferation of T lymphocytes and compromises mouse survival <br> I. Romero-Carraminana, S. Dominguez-Zorita, P.B. Esparza-Molto, J. M. Cuezva (2024) iScience 27, 109863</a>
                 </li>
                 <li>
