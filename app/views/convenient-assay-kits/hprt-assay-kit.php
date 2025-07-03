@@ -289,6 +289,9 @@ echo Banner::gen();
             <h5 class="ms-5 pt-4 pb-3 novo-blue">Scientific Articles citing PRECICE® HPRT Assay kit from <span class="text-secondary">NOVOCIB</span>:</h5>
             <ol>
                 <li>
+                    <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1873506123001307">CRISPR/Cas9-mediated generation of human embryonic stem cell sub-lines with HPRT1 gene knockout to model Lesch Nyhan disease</a>
+                </li>
+                <li>
                     <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/38799559/">Ablation of Atp5if1 impairs metabolic reprogramming and proliferation of T lymphocytes and compromises mouse survival <br> I. Romero-Carraminana, S. Dominguez-Zorita, P.B. Esparza-Molto, J. M. Cuezva (2024) iScience 27, 109863</a>
                 </li>
                 <li>
