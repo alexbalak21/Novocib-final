@@ -170,9 +170,60 @@
                     <li>4. Read absorbance at 340 nm using a microplate reader.</li>
                     <li>Calculate absolute concentrations of each nucleotide or relative molar concentrations directly from absorbance values using formulas:</li>
                 </ol>
+                <div class="mt-5">
+                    <p>Due to significant variations in the absolute concentration of muscular ATP, even among specimens of the same species, the absolute concentration of a single nucleotide (IMP or hypoxanthine) can be hardly used to assess freshness. Several formulas have been proposed to assess the freshness of fish: the Ki value (Karube et al., 1984), the H-value (Huong et al., 1992), and the Fr value (Gill et al., 1987).</p>
+                </div>
                 <div class="row justify-content-center">
-                    <p class="text-secondary text-center my-0">Click to display the formula <i class="fa-regular fa-hand-pointer"></i></p>
+                    <p class="text-secondary text-center mb-3">Click to display the formula &nbsp; <i class="fa-solid fa-arrow-pointer"></i></p>
+
                     <div class="col-lg-9 col-12">
+                        <p class="mb-0 text-center">The H-value represents <b>the relative concentration of hypoxanthine</b> compared to the total amount of ATP degradation products-namely, IMP, inosine, and hypoxanthine.</p>
+                        <div class="text-center border mb-4">
+                            <img class="formula-img" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">H(%) = (Hx / (IMP + Ino + Hx)) * 100</p>
+                        </div>
+
+                        <p class="mb-0 text-center">The Fr value, on the other hand, reflects <b>the relative concentration of IMP</b> in relation to the sum of these same nucleotides.</p>
+                        <div class="text-center border mb-4">
+                            <img class="formula-img" src="/app/static/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">Fr(%) = (IMP / (IMP + Ino + Hx)) * 100</p>
+                        </div>
+
+                        <p class="mb-0 text-center">The Ki value is <b>the inverse of relative IMP concentration</b> (explanations are shown below).</p>
+                        <div class="mb-2 text-center border">
+                            <img class="formula-img" src="/app/static/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">K<sub>i</sub>(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100</p>
+                        </div>
+                        <div class="text-center border">
+                            <img class="w-75 formula-img" src="/app/static/img/Fish-freshness/Ino_hx.jpg" alt="mathematical expression" title="[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%">
+                            <br> <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%</p>
+                        </div>
+                        <div class="mt-2 text-center border mb-4">
+                            <img class="w-75 formula-img" src="/app/static/img/Fish-freshness/ki100.jpg" alt="mathematical expression" title="Ki (%) = 100% - [IMP / (IMP + Ino + Hx)] × 100">
+                            <br><i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">K<sub>i</sub>(%) = 100% - [IMP / (IMP + Ino + Hx)] × 100</p>
+                        </div>
+
+                        <p class="mb-0 text-center">K<sub>i</sub> value cannot be applied for the fish species with fast autolytic IMP hydrolysis such as cod (Gadus morhua), whiting (Merlangus merlangus) and pollock (Pollachius virens) since in the absence of IMP, K<sub>i</sub> is 100%.</p>
+                        <div class="mt-2 mb-5 text-center border">
+                            <img class="formula-img" src="/app/static/img/Fish-freshness/ki-imp.jpg" alt="mathematical expression of Ki" title="Ki (%) = [(Ino + Hx) / (Ino + Hx)] × 100 = 100%"><br>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">Ki (%) = [(Ino + Hx) / ( <strike>IMP</strike> + Ino + Hx)] × 100 = 100%</p>
+                        </div>
+
+
+                        <div class="text-center border">
+                            <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/HxMolar.jpg" alt="mathematical expression" title="Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
+                            <i class="fa-solid fa-angle-down"></i>
+                            <p class="mt-1 formula">Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
+                        </div>
+
+
+
                         <div class="text-center border">
                             <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/HxMolar.jpg" alt="mathematical expression" title="Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
                             <i class="fa-solid fa-angle-down"></i>
@@ -184,27 +235,9 @@
                             <i class="fa-solid fa-angle-down"></i>
                             <p class="mt-1 formula">IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
                         </div>
-                        <div class="mt-2 text-center border">
-                            <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/KiMolar.jpg" alt="mathematical expression" title="Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">Ki, molar % =((Abs D1-Abs B1))/((Abs D1-Abs A1))=(([inosine]+[hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
-                        </div>
 
-                        <div class="mt-2 text-center border">
-                            <img class="formula-img" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">H(%) = (Hx / (IMP + Ino + Hx)) * 100</p>
-                        </div>
-                        <div class="mt-2 text-center border">
-                            <img class="formula-img" src="/app/static/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">Fr(%) = (IMP / (IMP + Ino + Hx)) * 100</p>
-                        </div>
-                        <div class="mt-2 mb-5 text-center border">
-                            <img class="formula-img" src="/app/static/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100</p>
-                        </div>
+
+
                     </div>
                 </div>
                 <div class="col-lg-8 mx-auto">
