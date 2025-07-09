@@ -174,94 +174,146 @@
                 <img class="border" style="width: 280px;" src="/app/static/img/freshness-kit.jpg" alt="fish freshness kit composition">
             </div>
         </div>
+
+        <div class="mt-5 mb-5">
+            <h4 class="mt-5 novo-blue text-center">🧬 Advantages of the HPRT Assay Kit</h4>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+
+                <div class="col">
+                    <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
+                        <h6 class="mb-2">📏 Accurate</h6>
+                        <ul class="mb-0 ps-3">
+                            <li>Wide linearity range</li>
+                            <li>Recovery 85–100%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
+                        <h6 class="mb-2">⚡ Fast</h6>
+                        <ul class="mb-0 ps-3">
+                            <li>Prep time: 5 min (fresh fish) / 20 min (frozen fish)</li>
+                            <li>Enzymatic reaction: 30 min</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
+                        <h6 class="mb-2">🌍 Wide Application Range</h6>
+                        <ul class="mb-0 ps-3">
+                            <li>ATP catabolites are universal indicators</li>
+                            <li>Thermostable & non-volatile—unlike TVA</li>
+                            <li>Detects early spoilage, unlike TVA</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
+                        <h6 class="mb-2">🧪 One-Step (Add-and-Measure)</h6>
+                        <ul class="mb-0 ps-3">
+                            <li>Boil (frozen) or microwave cook (fresh fish)</li>
+                            <li>Add clarified extracts to prefilled microwells</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <div class="mt-5">
-            <h3 class="novo-blue">Simple:</h4>
+            <div class="container mt-4">
+                <h3 class="novo-blue text-start mb-3">🚀 Simple Workflow</h3>
                 <ol class="ms-4">
-                    <li>Cook fish in the water, homogenize and clarify by filtration or centrifugation</li>
-                    <li>Add 200µL to four wells of the same column</li>
-                    <li>Incubate 30min at 30°C to convert enzymatically IMP, inosine, and hypoxanthine to NADH<sub>2</sub></li>
-                    <li>4. Read absorbance at 340 nm using a microplate reader.</li>
-                    <li>Calculate absolute concentrations of each nucleotide or relative molar concentrations directly from absorbance values using formulas:</li>
+                    <li><strong>Cook & Clarify:</strong> Boil the fish, then homogenize and clarify by filtration or centrifugation.</li>
+                    <li><strong>Sample Loading:</strong> Add <span style="white-space: nowrap;">200&nbsp;µL</span> to four wells in the same column.</li>
+                    <li><strong>Incubation:</strong> Incubate for 30 min at 30°C to enzymatically convert IMP, inosine, and hypoxanthine into NADH<sub>2</sub>.</li>
+                    <li><strong>Measurement:</strong> Read absorbance at <span style="white-space: nowrap;">340 nm</span> using a microplate reader.</li>
+                    <li><strong>Data Analysis:</strong> Calculate absolute or relative molar concentrations from absorbance values using dedicated formulas.</li>
                 </ol>
-                <div class="mt-5">
-                    <p>Due to significant variations in the absolute concentration of muscular ATP, even among specimens of the same species, the absolute concentration of a single nucleotide (IMP or hypoxanthine) can be hardly used to assess freshness. Several formulas have been proposed to assess the freshness of fish: the Ki value (Karube et al., 1984), the H-value (Huong et al., 1992), and the Fr value (Gill et al., 1987).</p>
-                </div>
-                <div class="row justify-content-center">
-                    <p class="text-secondary text-center mb-3">Click to display the formula &nbsp; <i class="fa-solid fa-arrow-pointer"></i></p>
+            </div>
 
-                    <div class="col-lg-9 col-12">
-                        <p class="mb-0 text-center">The H-value represents <b>the relative concentration of hypoxanthine</b> compared to the total amount of ATP degradation products-namely, IMP, inosine, and hypoxanthine.</p>
-                        <div class="text-center border mb-4">
-                            <img class="formula-img" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">H(%) = (Hx / (IMP + Ino + Hx)) * 100</p>
-                        </div>
+            <div class="mt-5">
+                <p>Due to significant variations in the absolute concentration of muscular ATP, even among specimens of the same species, the absolute concentration of a single nucleotide (IMP or hypoxanthine) can be hardly used to assess freshness. Several formulas have been proposed to assess the freshness of fish: the Ki value (Karube et al., 1984), the H-value (Huong et al., 1992), and the Fr value (Gill et al., 1987).</p>
+            </div>
+            <div class="row justify-content-center">
+                <p class="text-secondary text-center mb-3">Click to display the formula &nbsp; <i class="fa-solid fa-arrow-pointer"></i></p>
 
-                        <p class="mb-0 text-center">The Fr value, on the other hand, reflects <b>the relative concentration of IMP</b> in relation to the sum of these same nucleotides.</p>
-                        <div class="text-center border mb-4">
-                            <img class="formula-img" src="/app/static/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">Fr(%) = (IMP / (IMP + Ino + Hx)) * 100</p>
-                        </div>
+                <div class="col-lg-9 col-12">
+                    <p class="mb-0 text-center">The H-value represents <b>the relative concentration of hypoxanthine</b> compared to the total amount of ATP degradation products-namely, IMP, inosine, and hypoxanthine.</p>
+                    <div class="text-center border mb-4">
+                        <img class="formula-img" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p class="mt-1 formula">H(%) = (Hx / (IMP + Ino + Hx)) * 100</p>
+                    </div>
 
-                        <p class="mb-0 text-center">The Ki value is <b>the inverse of relative IMP concentration</b> (explanations are shown below).</p>
-                        <div class="mb-2 text-center border">
-                            <img class="formula-img" src="/app/static/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">K<sub>i</sub>(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100</p>
-                        </div>
-                        <div class="text-center border">
-                            <img class="w-75 formula-img" src="/app/static/img/Fish-freshness/Ino_hx.jpg" alt="mathematical expression" title="[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%">
-                            <br> <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%</p>
-                        </div>
-                        <div class="mt-2 text-center border mb-4">
-                            <img class="w-75 formula-img" src="/app/static/img/Fish-freshness/ki100.jpg" alt="mathematical expression" title="Ki (%) = 100% - [IMP / (IMP + Ino + Hx)] × 100">
-                            <br><i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">K<sub>i</sub>(%) = 100% - [IMP / (IMP + Ino + Hx)] × 100</p>
-                        </div>
+                    <p class="mb-0 text-center">The Fr value, on the other hand, reflects <b>the relative concentration of IMP</b> in relation to the sum of these same nucleotides.</p>
+                    <div class="text-center border mb-4">
+                        <img class="formula-img" src="/app/static/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p class="mt-1 formula">Fr(%) = (IMP / (IMP + Ino + Hx)) * 100</p>
+                    </div>
 
-                        <p class="mb-0 text-center">K<sub>i</sub> value cannot be applied for the fish species with fast autolytic IMP hydrolysis such as cod (Gadus morhua), whiting (Merlangus merlangus) and pollock (Pollachius virens) since in the absence of IMP, K<sub>i</sub> is 100%.</p>
-                        <div class="mt-2 mb-5 text-center border">
-                            <img class="formula-img" src="/app/static/img/Fish-freshness/ki-imp.jpg" alt="mathematical expression of Ki" title="Ki (%) = [(Ino + Hx) / (Ino + Hx)] × 100 = 100%"><br>
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">K<sub>i</sub>(%) = [(Ino + Hx) / ( <strike>IMP</strike> + Ino + Hx)] × 100 = 100%</p>
-                        </div>
+                    <p class="mb-0 text-center">The Ki value is <b>the inverse of relative IMP concentration</b> (explanations are shown below).</p>
+                    <div class="mb-2 text-center border">
+                        <img class="formula-img" src="/app/static/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p class="mt-1 formula">K<sub>i</sub>(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100</p>
+                    </div>
+                    <div class="text-center border">
+                        <img class="w-75 formula-img" src="/app/static/img/Fish-freshness/Ino_hx.jpg" alt="mathematical expression" title="[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%">
+                        <br> <i class="fa-solid fa-angle-down"></i>
+                        <p class="mt-1 formula">[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%</p>
+                    </div>
+                    <div class="mt-2 text-center border mb-4">
+                        <img class="w-75 formula-img" src="/app/static/img/Fish-freshness/ki100.jpg" alt="mathematical expression" title="Ki (%) = 100% - [IMP / (IMP + Ino + Hx)] × 100">
+                        <br><i class="fa-solid fa-angle-down"></i>
+                        <p class="mt-1 formula">K<sub>i</sub>(%) = 100% - [IMP / (IMP + Ino + Hx)] × 100</p>
+                    </div>
+
+                    <p class="mb-0 text-center">K<sub>i</sub> value cannot be applied for the fish species with fast autolytic IMP hydrolysis such as cod (Gadus morhua), whiting (Merlangus merlangus) and pollock (Pollachius virens) since in the absence of IMP, K<sub>i</sub> is 100%.</p>
+                    <div class="mt-2 mb-5 text-center border">
+                        <img class="formula-img" src="/app/static/img/Fish-freshness/ki-imp.jpg" alt="mathematical expression of Ki" title="Ki (%) = [(Ino + Hx) / (Ino + Hx)] × 100 = 100%"><br>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <p class="mt-1 formula">K<sub>i</sub>(%) = [(Ino + Hx) / ( <strike>IMP</strike> + Ino + Hx)] × 100 = 100%</p>
                     </div>
                 </div>
-                <div class="col-lg-8 mx-auto">
-                    <p class="mb-5">
-                        Relative molar concentrations of nucleotides (Ki value (Karube et al, 1984) , H-value (Huong et al, 1992) and Fr value (Gill et al. 1987)) are better indicators of fish freshness since they are not influenced by extraction efficiency or variations in muscle ATP between different species (Luong et al, 1992).
-                    </p>
-                    <hr>
-                </div>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <p class="mb-5">
+                    Relative molar concentrations of nucleotides (Ki value (Karube et al, 1984) , H-value (Huong et al, 1992) and Fr value (Gill et al. 1987)) are better indicators of fish freshness since they are not influenced by extraction efficiency or variations in muscle ATP between different species (Luong et al, 1992).
+                </p>
+                <hr>
+            </div>
 
-                <div class="mt-5 mb-5">
-                    <h3 class="novo-blue">Specificity</h3>
-                    <p>No interference with other nucleotides 5NMP (AMP, GMP, CMP or UMP), nucleosides (adenosine, guanosine, cytidine or uridine) or heterocyclic bases (adenine, guanine, cytosine or uracyl).</p>
-                </div>
+            <div class="mt-5 mb-5">
+                <h3 class="novo-blue">Specificity</h3>
+                <p>No interference with other nucleotides 5NMP (AMP, GMP, CMP or UMP), nucleosides (adenosine, guanosine, cytidine or uridine) or heterocyclic bases (adenine, guanine, cytosine or uracyl).</p>
+            </div>
 
-                <div>
-                    <h3 class="novo-blue">
-                        Linearity range:
-                    </h3>
-                    <p>
-                        For each nucleotide (IMP or hypoxanthine or inosine) the assay is linear between 0.1AU-1.6AU, corresponding to 0.2mmols/Kg to 6mmols/Kg of nucleotide after 20-fold dilution.
-                    </p>
-                    <div class="row mb-2">
-                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineB.png" alt="" class="w-100"></div>
-                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineC.png" alt="" class="w-100"></div>
-                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineD.png" alt="" class="w-100"></div>
-                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/IMPmmolsPerKg.png" alt="IMP mmols per Kg graph" class="w-100" title="IMP mmols per kg"></div>
-                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Hypoxanthine.png" alt="Hypoxanthine mmols per Kg graph" class="w-100" title="Hypoxanthine mmols per kg"></div>
-                        <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Inosine.png" alt="Inosine, mmols per Kg" class="w-100" title="Inosine, mmols per kg"></div>
-                    </div>
-                    <p class="text-center">
-                        <b>The reactions were followed at 30°C using PRECICE® microplate (30°C, 200µL per well) and Labsystems iEMS Reader (Thermo).</b>
-                        <br>
-                        The reactions were followed at 30°C using PRECICE® microplate (30°C, 200µL per well) and Labsystems iEMS Reader (Thermo).
-                    </p>
+            <div>
+                <h3 class="novo-blue">
+                    Linearity range:
+                </h3>
+                <p>
+                    For each nucleotide (IMP or hypoxanthine or inosine) the assay is linear between 0.1AU-1.6AU, corresponding to 0.2mmols/Kg to 6mmols/Kg of nucleotide after 20-fold dilution.
+                </p>
+                <div class="row mb-2">
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineB.png" alt="" class="w-100"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineC.png" alt="" class="w-100"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineD.png" alt="" class="w-100"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/IMPmmolsPerKg.png" alt="IMP mmols per Kg graph" class="w-100" title="IMP mmols per kg"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Hypoxanthine.png" alt="Hypoxanthine mmols per Kg graph" class="w-100" title="Hypoxanthine mmols per kg"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Inosine.png" alt="Inosine, mmols per Kg" class="w-100" title="Inosine, mmols per kg"></div>
                 </div>
+                <p class="text-center">
+                    <b>The reactions were followed at 30°C using PRECICE® microplate (30°C, 200µL per well) and Labsystems iEMS Reader (Thermo).</b>
+                    <br>
+                    The reactions were followed at 30°C using PRECICE® microplate (30°C, 200µL per well) and Labsystems iEMS Reader (Thermo).
+                </p>
+            </div>
 
 
         </div>
