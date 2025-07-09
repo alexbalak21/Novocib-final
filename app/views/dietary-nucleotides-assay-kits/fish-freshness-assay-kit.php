@@ -124,6 +124,19 @@
                                 </a>
                             </td>
                         </tr>
+                        <tr>
+                            <td>#K0700-003-06</td>
+                            <td class="text-center">
+                                <b>PRECICE® IMP, Inosine and Hypoxanthine Assay Kit </b><br>
+                                For 6 samples (microplate reader)
+                            </td>
+                            <td class="price text-center">220.00 €</td>
+                            <td class="text-end pe-3">
+                                <a title="Order" class="btn btn-primary" href="/inquiry?ref=K0700-003-06&amp;product=PRECICE® IMP, Inosine and Hypoxanthine Assay Kit&amp;volume=6 samples (microplate)">
+                                    Inquiry
+                                </a>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
                 <p class="text-muted text-center">
@@ -212,32 +225,8 @@
                         <div class="mt-2 mb-5 text-center border">
                             <img class="formula-img" src="/app/static/img/Fish-freshness/ki-imp.jpg" alt="mathematical expression of Ki" title="Ki (%) = [(Ino + Hx) / (Ino + Hx)] × 100 = 100%"><br>
                             <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">Ki (%) = [(Ino + Hx) / ( <strike>IMP</strike> + Ino + Hx)] × 100 = 100%</p>
+                            <p class="mt-1 formula">K<sub>i</sub>(%) = [(Ino + Hx) / ( <strike>IMP</strike> + Ino + Hx)] × 100 = 100%</p>
                         </div>
-
-
-                        <div class="text-center border">
-                            <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/HxMolar.jpg" alt="mathematical expression" title="Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
-                        </div>
-
-
-
-                        <div class="text-center border">
-                            <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/HxMolar.jpg" alt="mathematical expression" title="Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))">
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">Hx, molar % =((Abs C1-Abs B1))/((Abs D1-Abs A1))=(([Hypoxanthine]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
-                        </div>
-
-                        <div class="mt-2 text-center border">
-                            <img class="w-100 formula-img" src="/app/static/img/Fish-freshness/ImpMolar.jpg" alt="mathematical expression" title="IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))">
-                            <i class="fa-solid fa-angle-down"></i>
-                            <p class="mt-1 formula">IMP, molar % =((Abs B1-Abs A1))/((Abs D1-Abs A1))=(([IMP]))/(([IMP]+[inosine]+[hypoxanthine]))</p>
-                        </div>
-
-
-
                     </div>
                 </div>
                 <div class="col-lg-8 mx-auto">
