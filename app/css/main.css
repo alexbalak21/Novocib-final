@@ -445,10 +445,11 @@ a {
 
 .underlined {
   position: relative;
-  width: fit-content;
+  display: inline-block; 
+  margin: 0 auto;
 }
 
-.underlinedTitle.center {
+.underlinedTitle {
   text-align: center;
 }
 

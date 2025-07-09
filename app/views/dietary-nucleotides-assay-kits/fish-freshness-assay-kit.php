@@ -14,8 +14,10 @@
     <?= Banner::gen() ?>
     <script src="/app/js/fish-freshness-page.js" defer></script>
     <main class="container mt-5">
-        <h2 class="underlinedTitle center"><span class="underlined novoblue">PRECICE® IMP, Inosine and Hypoxanthine Assay Kit</span></h2>
-        <h3 class="text-center">Freshness Test</h3>
+        <h2 class="underlinedTitle center">
+            <span class="underlined novoblue center">PRECICE® IMP, Inosine and Hypoxanthine Assay Kit <br>Spectrophotometric, microplate format</span>
+        </h2>
+        <h3 class="text-center mt-0">Freshness Test</h3>
         <div class="row">
             <div class="col-lg-6">
                 <p>
@@ -27,6 +29,28 @@
                 <p>
                     The degree to which ATP breaks down into IMP, inosine, and hypoxanthine is a key indicator of fish freshness (Saito et al 1959). Kit is suitable for use with fresh, frozen, and cooked fish and seafood products, including canned fish.
                 </p>
+                <div class="d-flex justify-content-center text-center mt-4">
+                    <div class="row justify-content-center enzymatic-conversion">
+                        <div class="col-4" style="width: 150px;">
+                            <span>IMP</span><br>
+                            <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
+                            <span>NADH<sub>2</sub></span>
+                        </div>
+                        <div class="col-4" style="width: 150px;">
+                            <span>Inosine</span><br>
+                            <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
+                            <span>NADH<sub>2</sub></span>
+                        </div>
+                        <div class="col-4" style="width: 150px;">
+                            <span>Hypoxanthine</span><br>
+                            <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
+                            <span>NADH<sub>2</sub></span>
+                        </div>
+                        <div class="text-center conversion">
+                            <div><span class="middle">Enzymatic conversion</span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-6 text-center">
                 <img class="w-100" src="/app/static/img/ATP_degradation.jpg" alt="atp degradation schema">
@@ -74,28 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center text-center">
-                <div class="row justify-content-center enzymatic-conversion">
-                    <div class="col-4" style="width: 150px;">
-                        <span>IMP</span><br>
-                        <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
-                        <span>NADH<sub>2</sub></span>
-                    </div>
-                    <div class="col-4" style="width: 150px;">
-                        <span>Inosine</span><br>
-                        <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
-                        <span>NADH<sub>2</sub></span>
-                    </div>
-                    <div class="col-4" style="width: 150px;">
-                        <span>Hypoxanthine</span><br>
-                        <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
-                        <span>NADH<sub>2</sub></span>
-                    </div>
-                    <div class="text-center conversion">
-                        <div><span class="middle">Enzymatic conversion</span></div>
-                    </div>
-                </div>
-            </div>
+
         </div>
         <h3 class="novo-blue text-center mt-5">Buy the Kit <i class="fa-solid fa-cart-shopping"></i></h3>
         <div class="d-flex justify-content-center">
@@ -292,6 +295,11 @@
                 <h3 class="novo-blue">Specificity</h3>
                 <p>No interference with other nucleotides 5NMP (AMP, GMP, CMP or UMP), nucleosides (adenosine, guanosine, cytidine or uridine) or heterocyclic bases (adenine, guanine, cytosine or uracyl).</p>
             </div>
+            <div class="row">
+                <div class="col-lg-4">
+
+                </div>
+            </div>
 
             <div>
                 <h3 class="novo-blue">
@@ -301,9 +309,9 @@
                     For each nucleotide (IMP or hypoxanthine or inosine) the assay is linear between 0.1AU-1.6AU, corresponding to 0.2mmols/Kg to 6mmols/Kg of nucleotide after 20-fold dilution.
                 </p>
                 <div class="row mb-2">
-                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineB.png" alt="" class="w-100"></div>
-                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineC.png" alt="" class="w-100"></div>
-                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineD.png" alt="" class="w-100"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineB.png" alt="Spectrophotometric graph showing absorbance at 340nm for various concentrations of IMP (inosine monophosphate), ranging from 0 to 6 mmol/kg." class="w-100"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineC.png" alt="Spectrophotometric graph displaying absorbance at 340nm for hypoxanthine at multiple concentrations, from 0 to 6 mmol/kg." class="w-100"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineD.png" alt="Spectrophotometric graph illustrating absorbance at 340nm for inosine, comparing concentrations from 0 to 6 mmol/kg." class="w-100"></div>
                     <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/IMPmmolsPerKg.png" alt="IMP mmols per Kg graph" class="w-100" title="IMP mmols per kg"></div>
                     <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Hypoxanthine.png" alt="Hypoxanthine mmols per Kg graph" class="w-100" title="Hypoxanthine mmols per kg"></div>
                     <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Inosine.png" alt="Inosine, mmols per Kg" class="w-100" title="Inosine, mmols per kg"></div>
@@ -313,13 +321,126 @@
                     <br>
                     The reactions were followed at 30°C using PRECICE® microplate (30°C, 200µL per well) and Labsystems iEMS Reader (Thermo).
                 </p>
+                <p class="text-center"><b>Calibration curves for IMP, inosine and hypoxanthine obtained using PRECICE® Nucleotides Assay kit.</b></p>
             </div>
+            <div class="mt-5 mb-5">
+                <h4 class="text-center">IMP, inosine and hypoxanthine recovery obtained with PRECICE® Nucleotides Assay kit</h4>
+                <p class="text-center">Nucleotides-free cod extracts were prepared by the treatment with activated charcoal, supplemented with nucleotides and used for assay.</p>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                    <!-- IMP Table -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-primary text-center">IMP</h5>
+                        <table class="table table-bordered table-sm text-center">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Added (µmol/g)</th>
+                                    <th>Recovered (mmol/kg)</th>
+                                    <th>Recovery (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.025 ± 0.019</td>
+                                    <td>103</td>
+                                </tr>
+                                <tr>
+                                    <td>2.0</td>
+                                    <td>1.982 ± 0.059</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>3.0</td>
+                                    <td>2.933 ± 0.042</td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>3.5</td>
+                                    <td>3.369 ± 0.088</td>
+                                    <td>96</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Inosine Table -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-success text-center">Inosine</h5>
+                        <table class="table table-bordered table-sm text-center">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Added (µmol/g)</th>
+                                    <th>Recovered (mmol/kg)</th>
+                                    <th>Recovery (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.022 ± 0.043</td>
+                                    <td>88</td>
+                                </tr>
+                                <tr>
+                                    <td>2.0</td>
+                                    <td>1.960 ± 0.064</td>
+                                    <td>85</td>
+                                </tr>
+                                <tr>
+                                    <td>3.0</td>
+                                    <td>2.837 ± 0.144</td>
+                                    <td>84</td>
+                                </tr>
+                                <tr>
+                                    <td>3.5</td>
+                                    <td>2.871 ± 0.114</td>
+                                    <td>82</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Hypoxanthine Table -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-danger text-center">Hypoxanthine</h5>
+                        <table class="table table-bordered table-sm text-center">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Added (µmol/g)</th>
+                                    <th>Recovered (mmol/kg)</th>
+                                    <th>Recovery (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.022 ± 0.043</td>
+                                    <td>102</td>
+                                </tr>
+                                <tr>
+                                    <td>2.0</td>
+                                    <td>1.960 ± 0.064</td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>3.0</td>
+                                    <td>2.837 ± 0.144</td>
+                                    <td>95</td>
+                                </tr>
+                                <tr>
+                                    <td>3.5</td>
+                                    <td>3.336 ± 0.114</td>
+                                    <td>95</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
 
-        </div>
+            </div>
     </main>
 
-    <section class="container mt-5">
+    <section class=" container mt-5">
         <div class="referances my-5 row justify-content-center">
             <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
             <div class="col-2">
