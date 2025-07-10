@@ -8,13 +8,14 @@
     <meta name="keywords" content="fish freshness assay, seafood quality control, IMP measurement, inosine, hypoxanthine, NADH absorbance, microplate reader, nucleotide assay, ATP degradation, seafood processing, K-value, fish freshness test" />
     <?php $metas = ob_get_clean();
 
-
     require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
     ?>
+    <link rel="stylesheet" href="/app/css/fish-freshness-assay-kit.css">
 
     <?= Banner::gen() ?>
     <script src="/app/js/fish-freshness-page.js" defer></script>
     <main class="container mt-5">
+
         <h2 class="underlinedTitle center">
             <span class="underlined novoblue center">PRECICE® IMP, Inosine and Hypoxanthine Assay Kit <br>Spectrophotometric, microplate format</span>
         </h2>
@@ -453,12 +454,3 @@
             </div>
         </div>
     </section>
-    <link rel="stylesheet" href="/app/css/fish-freshness.css">
-    <?php
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/get_page_content.php";
-    $full_server_path = realpath(__FILE__);
-
-
-
-    get_page_content($full_server_path);
-    ?>
