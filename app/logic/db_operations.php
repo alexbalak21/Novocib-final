@@ -139,6 +139,15 @@ function visitors_searches_read_all()
   return $res;
 }
 
+function request404_read_all()
+{
+  $conn = connect_db();
+  $select_all = "SELECT * FROM request404 ORDER BY id DESC";
+  $stmt = $conn->query($select_all);
+  $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  return $res;
+}
+
 function visitors_search_delete($id)
 {
   $conn = connect_db();

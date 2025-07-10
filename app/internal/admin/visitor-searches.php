@@ -3,10 +3,10 @@ $title = "Visitor Searches";
 require_once __DIR__ . "/templates/base.php";
 require_once "db_logic.php";
 ?>
-<main class="" style="height: 93vh;">
+<main class="container" style="height: 93vh;">
 
     <?php $search_data = visitors_searches_read_all(); ?>
-    <div class="mt-5 col-10 mx-auto">
+    <div class=" mt-5 mx-auto">
         <table class="table table-bordered">
             <thead class="bg-light">
                 <tr>
