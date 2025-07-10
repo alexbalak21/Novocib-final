@@ -134,6 +134,7 @@ switch ($req_uri) {
         require_once "app/views/convenient-assay-kits/itp-ase-deficiency-assay-kit.php";
         break;
 
+    case "/ADK_Phosphorylation_Assay_Kit.html":
     case "/convenient-assay-kits/adk-phosphorylation-assay-kit":
         require_once "app/views/convenient-assay-kits/adk-phosphorylation-assay-kit.php";
         break;
