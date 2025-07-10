@@ -52,7 +52,7 @@ if (str_starts_with($host, "localhost"))
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-
+ 
         gtag('config', 'G-DDV10RFLYD');
     </script>
     GA;
