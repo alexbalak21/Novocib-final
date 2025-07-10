@@ -27,7 +27,7 @@
                     <span class="fw-bold">ATP</span> ➜ <span class="fs-6">ADP</span> ➜ <span class="fs-6">AMP</span> ➜&nbsp;<span class="text-primary fw-bold">IMP<i class="fa-solid fa-arrow-down"></i></span>&nbsp;➜ inosine ➜ <span class="text-danger fw-bold">hypoxanthine<i class="fa-solid fa-arrow-up"></i></span>
                 </p>
                 <p>
-                    The degree to which ATP breaks down into IMP, inosine, and hypoxanthine is a key indicator of fish freshness (Saito et al 1959). Kit is suitable for use with fresh, frozen, and cooked fish and seafood products, including canned fish.
+                    Following slaughter, ATP continues to be hydrolyzed by contracting muscles; however, its resynthesis by mitochondria becomes impossible in the absence of oxygen. Within just a few hours, ATP, ADP, and AMP are enzymatically converted into IMP, which becomes the predominant nucleotide in fresh fish (Wang et al., 1998). During the first few days of storage, IMP levels gradually decline, primarily due to the activity of autolytic enzymes that hydrolyze IMP into inosine. Inosine is subsequently hydrolyzed into hypoxanthine by both autolytic and bacterial enzymes. Since fish muscle lacks xanthine oxidase—an enzyme that converts hypoxanthine into uric acid—these processes lead to the progressive accumulation of hypoxanthine, the final product of ATP degradation in fish. This accumulation has been shown to correlate with spoilage and coincides with the formation of volatile amines in cod (Dalgaard et al., 1993). Although the post-mortem ATP degradation pathway is universal, the rate of IMP degradation and hypoxanthine formation varies considerably among fish species and depends on handling and storage conditions (Surette et al., 1988).
                 </p>
                 <div class="d-flex justify-content-center text-center mt-4">
                     <div class="row justify-content-center enzymatic-conversion">
@@ -263,11 +263,11 @@
                     <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Inosine.png" alt="Inosine, mmols per Kg" class="w-100" title="Inosine, mmols per kg"></div>
                     <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Hypoxanthine.png" alt="Hypoxanthine mmols per Kg graph" class="w-100" title="Hypoxanthine mmols per kg"></div>
                 </div>
-                <p class="text-center"><b>Calibration curves for IMP, inosine and hypoxanthine obtained using PRECICE® Nucleotides Assay kit.</b></p>
+                <p class="text-center"><b>Calibration curves for IMP, inosine and hypoxanthine obtained using PRECICE® IMP, inosine, and hypoxanthine Assay kit.</b></p>
             </div>
             <div class="mt-5 pt-3 mb-5">
                 <h3 class="novo-blue mb-3">Recovery:</h3>
-                <h5 class="">IMP, inosine and hypoxanthine recovery obtained with PRECICE® Nucleotides Assay kit</h5>
+                <h5 class="">IMP, inosine and hypoxanthine recovery obtained with PRECICE® IMP, inosine, and hypoxanthine Assay kit</h5>
 
                 <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
                     <!-- IMP Table -->
@@ -381,7 +381,7 @@
                 <p class="text-center">Nucleotides-free cod extracts were prepared by the treatment with activated charcoal, supplemented with nucleotides and used for assay.</p>
             </div>
             <div class="mt-5">
-                <h4 class="novo-blue">Data Implementation:</h4>
+                <h4 class="novo-blue">Data Interpretation:</h4>
                 <p>Due to significant variations in the absolute concentration of muscular ATP, even among specimens of the same species, the absolute concentration of a single nucleotide (IMP or hypoxanthine) can be hardly used to assess freshness. Several formulas have been proposed to assess the freshness of fish: the Ki value (Karube et al., 1984), the H-value (Huong et al., 1992), and the Fr value (Gill et al., 1987).</p>
             </div>
             <div class=" row justify-content-center">
@@ -436,7 +436,7 @@
     </main>
 
     <section class=" container mt-5">
-        <div class="referances my-5 row justify-content-center">
+        <div class="referances mt-5 pt-2 row justify-content-center">
             <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
             <div class="col-2">
                 <img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo">
