@@ -1,5 +1,5 @@
 <?php
-$title = "404 Requests";
+$title = "401 Requests";
 require_once __DIR__ . "/templates/base.php";
 require_once "db_logic.php";
 $page = $_GET['page'] ?? 1;
@@ -9,7 +9,6 @@ $total = count_404_requests();
 
 <main class="container" style="height: 93vh;">
     <div class="mt-5 mx-auto">
-        <h2 class="text-center mb-4">404 Requests</h2>
         <table class="table table-bordered">
             <thead class="bg-light">
                 <tr>
