@@ -8,7 +8,7 @@ require_once "db_logic.php";
     <?php $search_data = visitors_searches_read_all(); ?>
     <div class="mt-5 col-10 mx-auto">
         <table class="table table-bordered">
-            <thead>
+            <thead class="bg-light">
                 <tr>
                     <th width="60%"> Search Query</th>
                     <th width="20%">Time</th>
@@ -18,8 +18,8 @@ require_once "db_logic.php";
             <tbody>
                 <?php foreach ($search_data as $search): ?>
                     <tr>
-                        <td class="text-center pt-1"><?php echo htmlspecialchars($search['search_query']); ?></td>
-                        <td class="text-center pt-1"><?php echo htmlspecialchars($search['created_at']); ?></td>
+                        <td class="text-center pt-3"><?php echo htmlspecialchars($search['search_query']); ?></td>
+                        <td class="text-center pt-3"><?php echo htmlspecialchars($search['created_at']); ?></td>
                         <td class="d-flex justify-content-center gap-1">
                             <a href="/search?sq=<?= urlencode($search['search_query']); ?>" class="btn btn-primary">Execute <i class="fa fa-search"></i></a>
                             <div class="dropdown">
