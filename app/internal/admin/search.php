@@ -2,10 +2,12 @@
 $title = "Search";
 require_once __DIR__ . "/templates/base.php";
 
-
 ?>
 
+
+
 <main class="" style="height: 93vh;">
+
     <?php require_once "db_logic.php"; ?>
     <div class="container d-flex justify-content-center flex-wrap">
         <div class="text-center mt-4 w-100">
@@ -89,4 +91,5 @@ require_once __DIR__ . "/templates/base.php";
             </tbody>
         </table>
     </div>
+    <script src="/app/internal/admin/js/search.js"></script>
 </main>

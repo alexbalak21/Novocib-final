@@ -453,51 +453,12 @@
             </div>
         </div>
     </section>
+    <link rel="stylesheet" href="/app/css/fish-freshness.css">
     <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/get_page_content.php";
     $full_server_path = realpath(__FILE__);
-    echo $full_server_path;
+
+
 
     get_page_content($full_server_path);
     ?>
-
-    <style>
-        .arrow {
-            display: block;
-        }
-
-        .enzymatic-conversion {
-            position: relative;
-        }
-
-        .conversion {
-            display: inline-block;
-            background-color: #007bff;
-            /* Adjust the color */
-            color: white;
-            border: 2px solid #004a99;
-            /* Dark border */
-            border-radius: 10px;
-            /* Rounded corners */
-            padding: 10px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-            position: absolute;
-            top: 46px;
-            width: 84%;
-            ;
-        }
-
-        .enzymatic-conversion span:not(.arrow):not(.middle) {
-            font-size: large;
-        }
-
-        .kit-composition {
-            font-size: 17px;
-        }
-
-        .formula {
-            display: none;
-        }
-    </style>

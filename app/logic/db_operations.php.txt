@@ -9,8 +9,7 @@ function check_id()
     session_destroy();
     return false;
   }
-
-  if ($_SESSION['username'] !== "admin-novo") {
+  if ($_SESSION['username'] !== "admin") {
     echo "<h1>NOT admin</h1>";
     session_destroy();
     return false;

@@ -5,6 +5,8 @@ const keyWords = document.querySelector("#keyWords")
 const addText = document.querySelector("#addText")
 const textAreaDiv = document.querySelector("#textAreaDiv")
 
+
+
 let t = 1
 addText.addEventListener("click", (e) => {
   e.preventDefault()
@@ -21,23 +23,31 @@ keyWordInput.addEventListener("keypress", (e) => {
   }
 })
 
-const words = new Set()
-let i = 0
-addBtn.addEventListener("click", (event) => {
-  event.preventDefault()
-  i++
-  const word = keyWordInput.value.toLocaleLowerCase().trim()
+const words = new Set();
+let i = 0;
 
-  if (words.has(word)) return
-  const badge = document.createElement("span")
-  badge.setAttribute("class", "badge text-bg-secondary me-1")
-  badge.innerText = word
-  keyWordsDiv.appendChild(badge)
-  words.add(word)
-  keyWords.value += i > 1 ? ", " : ""
-  keyWords.value += `"${word}"`
-  keyWordInput.value = ""
-})
+addBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const input = keyWordInput.value.toLowerCase().trim();
+  const entries = input.split(",").map(e => e.trim()).filter(e => e !== "");
+
+  for (const word of entries) {
+    if (words.has(word)) continue;
+
+    const badge = document.createElement("span");
+    badge.setAttribute("class", "badge text-bg-secondary me-1");
+    badge.innerText = word;
+    keyWordsDiv.appendChild(badge);
+    words.add(word);
+
+    keyWords.value += i > 0 ? ", " : "";
+    keyWords.value += `"${word}"`;
+    i++;
+  }
+
+  keyWordInput.value = "";
+});
 
 function search_functionality() {
   console.log("Load Search")
