@@ -52,3 +52,5 @@ addBtn.addEventListener("click", (event) => {
 function search_functionality() {
   console.log("Load Search")
 }
+
+

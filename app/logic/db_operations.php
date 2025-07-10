@@ -124,7 +124,7 @@ function delete_search_item($id)
 function search_items_read_all()
 {
   $conn = connect_db();
-  $select_all = "SELECT * FROM articles";
+  $select_all = "SELECT * FROM articles ORDER BY id DESC";
   $stmt = $conn->query($select_all);
   $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
   return $res;
