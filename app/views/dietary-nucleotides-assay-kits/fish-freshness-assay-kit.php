@@ -155,7 +155,7 @@
                 </p>
                 <p class="mt-4 mb-5 text-end">
                     <i class="fa-solid fa-download"></i>&nbsp;Download
-                    <a target="_blank" href="/app/documents/NovoCIB K0709-02-2 User Manual.pdf">
+                    <a target="_blank" href="/app/documents/PRECICE Nucleotides Assay Kit K0700-003.pdf">
                         <strong>Fish Freshness Assay Kit</strong>
                         <i class="fa-regular fa-file-pdf"></i>
                     </a>
