@@ -20,7 +20,7 @@ function alert($message = "", $type = "success")
                     const bsAlert = bootstrap.Alert.getOrCreateInstance(alert);
                     bsAlert.close();
                 }
-            }, 5000);
+            }, 3000);
         </script>
     </div>
 <?php echo ob_get_clean();

@@ -33,10 +33,12 @@ switch ($req_uri) {
         header("Location: /active-purified-enzymes");
         break;
 
+    case "/IMPDH_Recombinant_Enzyme.html":
     case "/active-purified-enzymes/impdh-recombinant-enzyme":
         require_once "app/views/active-purified-enzymes/impdh-recombinant-enzyme.php";
         break;
 
+    case "/Human_Recombinant_HGPRT.html":
     case "/active-purified-enzymes/human-recombinant-hgprt":
         require_once "app/views/active-purified-enzymes/human-recombinant-hgprt.php";
         break;
@@ -62,6 +64,7 @@ switch ($req_uri) {
         require_once "app/views/active-purified-enzymes/human-ump-cmp-kinase.php";
         break;
 
+    case "/Bacterial_FMN_Reductase.html":
     case "/active-purified-enzymes/fmn-reductase":
         require_once "app/views/active-purified-enzymes/FMN-Reductase.php";
         break;
@@ -135,10 +138,16 @@ switch ($req_uri) {
         break;
 
     case "/ADK_Phosphorylation_Assay_Kit.html":
+        header("Location: /convenient-assay-kits/adk-phosphorylation-assay-kit");
+        break;
+
     case "/convenient-assay-kits/adk-phosphorylation-assay-kit":
         require_once "app/views/convenient-assay-kits/adk-phosphorylation-assay-kit.php";
         break;
 
+
+
+    case "/dCK_Phosphorylation_In_Vitro_Assay_Service":
     case "/convenient-assay-kits/dck-phosphorylation-assay-kit":
         require_once "app/views/convenient-assay-kits/dck-phosphorylation-assay-kit.php";
         break;
