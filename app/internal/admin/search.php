@@ -1,7 +1,6 @@
 <?php
 $title = "Search";
 require_once __DIR__ . "/templates/base.php";
-
 ?>
 
 
@@ -43,7 +42,7 @@ require_once __DIR__ . "/templates/base.php";
             </form>
         </div>
     </div>
-    <?php $search_data = read_all(); ?>
+    <?php $search_data = search_items_read_all(); ?>
     <div class="mt-5 col-10 mx-auto">
         <h2 class="text-center mb-2">Search Items</h2>
         <table class="table table-bordered">
@@ -80,7 +79,7 @@ require_once __DIR__ . "/templates/base.php";
                                     <h6>Confirm</h6>
                                     <form action="search.php" method="POST">
                                         <input type="hidden" name="_method" value="DELETE">
-                                        <input type="hidden" name="id" value="<?= $search_item['id'] ?>">
+                                        <input type="hidden" name="search_item" value="<?= $search_item['id'] ?>">
                                         <button class="btn btn-danger">Yes</button>
                                     </form>
                                 </div>

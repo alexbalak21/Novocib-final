@@ -106,7 +106,7 @@ function create_entry($url = "",  $title = "", $content = "", $keywords = "")
   }
 }
 
-function delete_item($id)
+function delete_search_item($id)
 {
   if (!check_id()) return false;
   $conn = connect_db();
@@ -121,13 +121,40 @@ function delete_item($id)
   }
 }
 
-function read_all()
+function search_items_read_all()
 {
   $conn = connect_db();
   $select_all = "SELECT * FROM articles";
   $stmt = $conn->query($select_all);
   $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
   return $res;
+}
+
+function visitors_searches_read_all()
+{
+  $conn = connect_db();
+  $select_all = "SELECT * FROM searches";
+  $stmt = $conn->query($select_all);
+  $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  return $res;
+}
+
+function visitors_search_delete($id)
+{
+  $conn = connect_db();
+  if ($conn === null) return false;
+  $sql = "DELETE FROM searches WHERE id = :id";
+  $stmt = $conn->prepare($sql);
+  $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+  try {
+    $stmt->execute();
+    return true;
+  } catch (PDOException $e) {
+    echo 'Error: ' . $e->getMessage();
+    return false;
+  } finally {
+    $conn = null;
+  }
 }
 
 

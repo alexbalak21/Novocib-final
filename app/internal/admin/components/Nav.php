@@ -29,6 +29,9 @@ class Nav
                         <li class="nav-item">
                             <a class="nav-link" href="/app/internal/admin/customer-info.php">Payment</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/app/internal/admin/visitor-searches.php">Visitor Searches</a>
+                        </li>
                     </ul>
                     <?php if (isset($_SESSION['username'])): ?>
                         <span class="ms-3 text-dark small">

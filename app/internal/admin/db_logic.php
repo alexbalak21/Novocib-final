@@ -40,7 +40,18 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && $_POST['_method'] === "POST") {
 
 //DELETE
 if ($_SERVER['REQUEST_METHOD'] === "POST" && $_POST['_method'] === "DELETE") {
-    extract($_POST);
-    $res = delete_item($id);
-    if ($res) alert("Item deleted.", "danger");
+    if (isset($_POST['visitor_search'])) {
+        $id = $_POST['visitor_search'];
+        $res = visitors_search_delete($id);
+        if ($res) alert("Visitor search deleted.", "danger");
+        return;
+    } else if (isset($_POST['search_item'])) {
+        $id = $_POST['search_item'];
+        $res = delete_search_item($id);
+        if ($res) alert("Item deleted.", "danger");
+        return;
+    } else {
+        alert("Invalid request.", "danger");
+        return;
+    }
 }
