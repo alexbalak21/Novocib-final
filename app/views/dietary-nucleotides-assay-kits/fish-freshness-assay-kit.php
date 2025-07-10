@@ -266,11 +266,12 @@
                 <p class="text-center"><b>Calibration curves for IMP, inosine and hypoxanthine obtained using PRECICE® Nucleotides Assay kit.</b></p>
             </div>
             <div class="mt-5 pt-3 mb-5">
-                <h4 class="text-center novo-blue">IMP, inosine and hypoxanthine recovery obtained with PRECICE® Nucleotides Assay kit</h4>
-                <p class="text-center">Nucleotides-free cod extracts were prepared by the treatment with activated charcoal, supplemented with nucleotides and used for assay.</p>
-                <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                <h3 class="novo-blue mb-3">Recovery:</h3>
+                <h5 class="">IMP, inosine and hypoxanthine recovery obtained with PRECICE® Nucleotides Assay kit</h5>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
                     <!-- IMP Table -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-2">
                         <h5 class="text-primary text-center">IMP</h5>
                         <table class="table table-bordered table-sm text-center">
                             <thead class="table-light">
@@ -306,7 +307,7 @@
                     </div>
 
                     <!-- Inosine Table -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-2">
                         <h5 class="text-success text-center">Inosine</h5>
                         <table class="table table-bordered table-sm text-center">
                             <thead class="table-light">
@@ -342,7 +343,7 @@
                     </div>
 
                     <!-- Hypoxanthine Table -->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-2">
                         <h5 class="text-danger text-center">Hypoxanthine</h5>
                         <table class="table table-bordered table-sm text-center">
                             <thead class="table-light">
@@ -377,6 +378,7 @@
                         </table>
                     </div>
                 </div>
+                <p class="text-center">Nucleotides-free cod extracts were prepared by the treatment with activated charcoal, supplemented with nucleotides and used for assay.</p>
             </div>
             <div class="mt-5">
                 <h4 class="novo-blue">Data Implementation:</h4>
