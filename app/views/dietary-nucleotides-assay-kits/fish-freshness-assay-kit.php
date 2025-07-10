@@ -3,8 +3,9 @@
 
     // META TAGS 
     ob_start(); ?>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Ensure accurate seafood quality control with NOVOCIB's PRECICE® Fish Freshness Assay Kit. Quantify IMP, inosine & hypoxanthine to assess fish freshness using enzymatic NADH absorbance assay. Ideal for fresh, frozen & processed seafood." />
+    <meta name="author" content="NOVOCIB" />
+    <meta name="keywords" content="fish freshness assay, seafood quality control, IMP measurement, inosine, hypoxanthine, NADH absorbance, microplate reader, nucleotide assay, ATP degradation, seafood processing, K-value, fish freshness test" />
     <?php $metas = ob_get_clean();
 
 
