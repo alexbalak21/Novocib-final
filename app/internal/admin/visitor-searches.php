@@ -2,10 +2,11 @@
 $title = "Visitor Searches";
 require_once __DIR__ . "/templates/base.php";
 require_once "db_logic.php";
+$page = $_GET['page'] ?? 1;
 ?>
 <main class="container" style="height: 93vh;">
 
-    <?php $search_data = visitors_searches_read_all(); ?>
+    <?php $search_data = visitors_searches_read_all($page); ?>
     <div class=" mt-5 mx-auto">
         <table class="table table-bordered">
             <thead class="bg-light">
@@ -41,5 +42,14 @@ require_once "db_logic.php";
                 <?php endforeach; ?>
             </tbody>
         </table>
+    </div>
+    <div class="d-flex justify-content-between align-items-center mt-3">
+        <div>
+            <a href="?page=<?= $page - 1 ?>" class="btn btn-secondary <?= $page === 1 ? 'disabled' : '' ?>">Previous</a>
+            <a href="?page=<?= $page + 1 ?>" class="btn btn-secondary">Next</a>
+        </div>
+        <div>
+            <span>Page <?= $page ?></span>
+        </div>
     </div>
 </main>

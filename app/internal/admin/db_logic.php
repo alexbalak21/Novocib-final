@@ -12,6 +12,16 @@ function alert($message = "", $type = "success")
             <div class="text-center col-11 my-0"><strong><?= $message ?></strong></div>
             <button type="button" class="btn-close mt-3" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+        <script>
+            // Auto-dismiss alert after 10 seconds (10,000 milliseconds)
+            setTimeout(() => {
+                const alert = document.querySelector('.alert');
+                if (alert) {
+                    const bsAlert = bootstrap.Alert.getOrCreateInstance(alert);
+                    bsAlert.close();
+                }
+            }, 5000);
+        </script>
     </div>
 <?php echo ob_get_clean();
 }
@@ -38,8 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && $_POST['_method'] === "POST") {
     if ($res) alert("Search Item created.");
 }
 
-//DELETE
-if ($_SERVER['REQUEST_METHOD'] === "POST" && $_POST['_method'] === "DELETE") {
+
+if ($_SERVER['REQUEST_METHOD'] === "POST" && isset($_POST['_method']) && $_POST['_method'] === "DELETE") {
     if (isset($_POST['visitor_search'])) {
         $id = $_POST['visitor_search'];
         $res = visitors_search_delete($id);
@@ -50,8 +60,12 @@ if ($_SERVER['REQUEST_METHOD'] === "POST" && $_POST['_method'] === "DELETE") {
         $res = delete_search_item($id);
         if ($res) alert("Item deleted.", "danger");
         return;
+    } else if (isset($_POST['request_404'])) {
+        $id = $_POST['request_404'];
+        $res = delete_404_request($id);
+        if ($res) alert("404 request deleted.", "danger");
+        return;
     } else {
         alert("Invalid request.", "danger");
-        return;
     }
 }

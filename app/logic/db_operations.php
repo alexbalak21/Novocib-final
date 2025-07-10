@@ -130,22 +130,95 @@ function search_items_read_all()
   return $res;
 }
 
-function visitors_searches_read_all()
+function visitors_searches_read_all(int $page = 1): array
 {
   $conn = connect_db();
-  $select_all = "SELECT * FROM searches";
-  $stmt = $conn->query($select_all);
+  $limit = 100;
+  $offset = ($page - 1) * $limit;
+
+  $select_all = "SELECT * FROM searches ORDER BY id DESC LIMIT :limit OFFSET :offset";
+  $stmt = $conn->prepare($select_all);
+  $stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
+  $stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
+  $stmt->execute();
+  $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+  return $res;
+}
+
+
+function request404_read_all($page = 1)
+{
+  $conn = connect_db();
+  $limit = 100;
+  $offset = ($page - 1) * $limit;
+  $select_all = "SELECT * FROM request404 ORDER BY id DESC LIMIT :limit OFFSET :offset";
+  $stmt = $conn->prepare($select_all);
+  $stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
+  $stmt->bindParam(':offset', $offset, PDO::PARAM_INT);
+  $stmt->execute();
   $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
   return $res;
 }
 
-function request404_read_all()
+function count_404_requests()
 {
   $conn = connect_db();
-  $select_all = "SELECT * FROM request404 ORDER BY id DESC";
-  $stmt = $conn->query($select_all);
-  $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
-  return $res;
+  $count_sql = "SELECT COUNT(*) as total FROM request404";
+  $stmt = $conn->query($count_sql);
+  $result = $stmt->fetch(PDO::FETCH_ASSOC);
+  return $result['total'] ?? 0;
+}
+
+function delete_404_request($id)
+{
+  $conn = connect_db();
+  if ($conn === null) return false;
+  $sql = "DELETE FROM request404 WHERE id = :id";
+  $stmt = $conn->prepare($sql);
+  $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+  try {
+    $stmt->execute();
+    return true;
+  } catch (PDOException $e) {
+    echo 'Error: ' . $e->getMessage();
+    return false;
+  } finally {
+    $conn = null;
+  }
+}
+
+function get_country_from_ip(string $ip): string
+{
+  $conn = connect_db();
+
+  // Safety: Check connection
+  if ($conn === null) return "Unknown";
+
+  // Convert IP to integer
+  $ip_num_query = "SELECT INET_ATON(:ip) AS ip_num";
+  $stmt = $conn->prepare($ip_num_query);
+  $stmt->bindParam(':ip', $ip);
+  $stmt->execute();
+  $ip_num = $stmt->fetchColumn();
+
+  if (!$ip_num) return "Invalid IP";
+
+  // Lookup country from ip2nation
+  $lookup_query = "
+        SELECT c.country
+        FROM ip2nation n
+        JOIN ip2nationCountries c ON n.country = c.iso_code_2
+        WHERE n.ip <= :ip_num
+        ORDER BY n.ip DESC
+        LIMIT 1
+    ";
+  $stmt = $conn->prepare($lookup_query);
+  $stmt->bindParam(':ip_num', $ip_num);
+  $stmt->execute();
+  $country = $stmt->fetchColumn();
+
+  return $country ?: "Unknown";
 }
 
 function visitors_search_delete($id)
