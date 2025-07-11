@@ -39,7 +39,7 @@ class Nav
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="/"><i class="fa-solid fa-house"></i> NOVO.COM</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/search.php">
-                                Search <i class="fa-solid fa-box"></i></a></li>
+                                Search <i class="fa-solid fa-file-lines"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/products.php">Products</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/customer-info.php">Payment</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/visitor-searches.php">User <i class="fa-solid fa-magnifying-glass"></i></a></li>
