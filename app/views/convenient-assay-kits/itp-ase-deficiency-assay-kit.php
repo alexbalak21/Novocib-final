@@ -85,7 +85,7 @@ ob_start(); ?>
             <p class="pt-3 pb-5">Inosine triphosphatase activity is measured as a rate of production of IMP with concomitant formation of NADH2 after one enzymatic reaction using highly active IMPDH. The formation of NADH2 is continuously monitored spectrophotometrically at 340nm.</p>
         </div>
     </div>
-    <div class="container">
+    <div class="bg-light">
         <div class="referances my-5">
             <h5 class="ms-5 pt-4 pb-3 novo-blue">Scientific Articles citing PRECICE® HPRT Assay kit from <span class="text-secondary">NOVOCIB</span>:</h5>
             <ul>

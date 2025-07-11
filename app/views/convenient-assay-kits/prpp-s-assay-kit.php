@@ -131,30 +131,30 @@ echo Banner::gen()
         </div>
 
     </div>
-    <div class="container">
-        <div class="referances my-5">
-            <h5 class="ms-5 pt-4 pb-3 novo-blue">Scientific Works citing <span class="text-secondary">NOVOCIB</span> PRPP-S Assay Kit:</h5>
-            <ol>
-                <li>
-                    <a target="_blank" href="https://www.nature.com/articles/s41589-023-01354-x">Direct stimulation of de novo nucleotide synthesis by O-GlcNAcylation 2024 L. Chen, Q. Zhou, P. Zhang, W. Tan, Y. Li, Z. Xu, J. Ma, G.M. Kupfer , Y. Pei, Q. Song 5, H. Pei Nature Chem Biol; 20(1):19-29</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11126974/">Ablation of Atp5if1 impairs metabolic reprogramming and proliferation of T lymphocytes and compromises mouse survival I. Romero-Carraminana, S. Dominguez-Zorita, P.B. Esparza-Molto, J. M. Cuezva (2024) iScience 27, 109863</a>
-                </li>
-                <li>
-                    <a href="https://www.scielo.org.mx/scielo.php?pid=S1665-14562021000200141&script=sci_arttext&tlng=en">Effect of hypoxia on purine metabolism in human skeletal muscle cells. (2021) Rivera-Pérez et al: Biotecnia / XXIII (2): 141-148
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.pulsus.com/scholarly-articles/prps1-is-a-regulative-for-neuroprotection-and-cells-regenerative-proliferation-4897.html">PRPS-1 is a regulative for neuroprotection and cells regenerative proliferation (2018), Danielyan KE, Vardanyan R, Paronyan ZK , Barkhudaryants IM , Chailyan SG, Bisharyan MS. J Biomol Biochem Vol.2 No.2 6-10</a>
-                </li>
-                <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/28432611/">Comparison of human erythrocyte purine nucleotide metabolism and blood purine and pyrimidine degradation product concentrations before and after acute exercise in trained and sedentary subjects (2018) W. Dudzinska, M Suska, A Lubkowska, K Jakubowska, M Olszewska, K Safranow, D Chlubek <br> J Physiol Sci 68(3):293-305.</a>
-                </li>
-                <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/23734909/">Cell cycle regulation of purine synthesis by phosphoribosyl pyrophosphate and inorganic phosphate (2013) Fridman; A. Saha; A. Chan; D.E. Casteel; R.B. Pilz; G.R. Boss Biochem J 454 (1): 91-99 A.</a>
-                </li>
-            </ol>
-        </div>
-    </div>
 </section>
+<div class="bg-light">
+    <div class="referances mt-5 pb-2 container">
+        <h5 class="ms-5 pt-4 pb-3 novo-blue">Scientific Works citing <span class="text-secondary">NOVOCIB</span> PRPP-S Assay Kit:</h5>
+        <ol>
+            <li>
+                <a target="_blank" href="https://www.nature.com/articles/s41589-023-01354-x">Direct stimulation of de novo nucleotide synthesis by O-GlcNAcylation 2024 L. Chen, Q. Zhou, P. Zhang, W. Tan, Y. Li, Z. Xu, J. Ma, G.M. Kupfer , Y. Pei, Q. Song 5, H. Pei Nature Chem Biol; 20(1):19-29</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11126974/">Ablation of Atp5if1 impairs metabolic reprogramming and proliferation of T lymphocytes and compromises mouse survival I. Romero-Carraminana, S. Dominguez-Zorita, P.B. Esparza-Molto, J. M. Cuezva (2024) iScience 27, 109863</a>
+            </li>
+            <li>
+                <a href="https://www.scielo.org.mx/scielo.php?pid=S1665-14562021000200141&script=sci_arttext&tlng=en">Effect of hypoxia on purine metabolism in human skeletal muscle cells. (2021) Rivera-Pérez et al: Biotecnia / XXIII (2): 141-148
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pulsus.com/scholarly-articles/prps1-is-a-regulative-for-neuroprotection-and-cells-regenerative-proliferation-4897.html">PRPS-1 is a regulative for neuroprotection and cells regenerative proliferation (2018), Danielyan KE, Vardanyan R, Paronyan ZK , Barkhudaryants IM , Chailyan SG, Bisharyan MS. J Biomol Biochem Vol.2 No.2 6-10</a>
+            </li>
+            <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/28432611/">Comparison of human erythrocyte purine nucleotide metabolism and blood purine and pyrimidine degradation product concentrations before and after acute exercise in trained and sedentary subjects (2018) W. Dudzinska, M Suska, A Lubkowska, K Jakubowska, M Olszewska, K Safranow, D Chlubek <br> J Physiol Sci 68(3):293-305.</a>
+            </li>
+            <li>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/23734909/">Cell cycle regulation of purine synthesis by phosphoribosyl pyrophosphate and inorganic phosphate (2013) Fridman; A. Saha; A. Chan; D.E. Casteel; R.B. Pilz; G.R. Boss Biochem J 454 (1): 91-99 A.</a>
+            </li>
+        </ol>
+    </div>
+</div>
