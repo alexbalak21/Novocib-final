@@ -15,7 +15,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
     <h2 class="underlinedTitle center"><span class="underlined novoblue center">Our Latest News</span></h2>
 </div>
 
-<div class="container py-5">
+<div class="container py-4">
     <div class="col-lg-7 mx-auto">
         <h3 class="text-center">New Service</h3>
         <p class="mt-4 mb-5 lead text-center">
@@ -23,11 +23,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             This new kit reflects our continued commitment to advancing quality and innovation in dietary nucleotide analysis.<br />
             <a class="btn btn-primary mt-3 mb-2" href="/contact">Contact Us <i class="fa-solid fa-paper-plane"></i></a><br> We’re happy to help!
         </p>
-        <p class="text-end text-muted my-4">Published on July 11, 2025</p>
+        <p class="text-end text-muted mt-4 mb-0">Published on July 11, 2025</p>
     </div>
 </div>
 <div class="bg-light py-3"></div>
-<div class="container py-5">
+<div class="container py-4">
     <div class="col-lg-7 mx-auto">
         <h3 class="text-center">New website</h3>
         <p class="mt-4 mb-5 lead text-center">
@@ -35,12 +35,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <br />
             We will continue to add new pages in the near future, so don't hezitate to check our site often.
         </p>
-        <p class="text-end text-muted my-4">Published on April 15, 2024</p>
+        <p class="text-end text-muted mt-4 mb-0">Published on April 15, 2024</p>
     </div>
 </div>
 
 
-<div class="bg-light pt-4 pb-2">
+<div class="bg-light pt-4 pb-1">
     <div class="container">
         <div class="row justify-content-center ">
             <h2 class="text-center novo-blue mt-3">Explore:</h2>
@@ -68,9 +68,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
     </div>
 </div>
 <div class="bg-light">
-    <div class="py-2 text-center">
-        <a class="btn btn-primary" href="/">
-            <h4>Go to Hompage</h4>
+    <div class="py-4 text-center">
+        <a class="btn btn-primary btn-lg" href="/">
+            Go to Hompage <i class="fa-solid fa-house"></i>
         </a>
     </div>
 </div>
