@@ -295,10 +295,6 @@ switch ($req_uri) {
         require_once "app/controllers/SecureInfoController.php";
         break;
 
-    case "/test":
-        require_once  "app/views/test.php";
-        break;
-
     case "/secure/login":
         require_once "app/views/secure/login.php";
         break;

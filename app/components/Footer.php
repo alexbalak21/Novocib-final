@@ -48,7 +48,7 @@ class Footer
                     </div>
                 </div>
                 <div class="copyright">
-                    <p class="text-center">Copyright © 2024 Novocib. All Rights Reserved.</p>
+                    <p class="text-center">Copyright © <?= date("Y") ?> Novocib. All Rights Reserved.</p>
                 </div>
             </div>
         </footer>

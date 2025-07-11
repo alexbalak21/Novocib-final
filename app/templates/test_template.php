@@ -13,7 +13,7 @@ if (!isset($lang)) {
 if (!isset($metas)) {
     $metas = "";
 }
-$fontAwesome_source = "/app/FA6/css/all.min.css";
+$fontAwesome_source = "/FA6/css/all.min.css";
 $host = $_SERVER['HTTP_HOST'];
 if (str_starts_with($host, "localhost"))
     $fontAwesome_source = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css";

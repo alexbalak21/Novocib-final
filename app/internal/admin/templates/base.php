@@ -2,7 +2,7 @@
 $root = $_SERVER["DOCUMENT_ROOT"];
 require_once $_SERVER["DOCUMENT_ROOT"] . "/app/internal/admin/components/autoLoader.php";;
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/internal/admin/session/check_session.php";
-$fontAwesome_source = str_starts_with($_SERVER['HTTP_HOST'], "localhost") ? "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" : "/app/FA6/css/all.min.css";
+$fontAwesome_source = str_starts_with($_SERVER['HTTP_HOST'], "localhost") ? "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" : "/FA6/css/all.min.css";
 ?>
 
 <!DOCTYPE html>

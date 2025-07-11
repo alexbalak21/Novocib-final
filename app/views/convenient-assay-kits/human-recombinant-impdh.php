@@ -8,7 +8,7 @@ ob_start(); ?>
 <?php $metas = ob_get_clean();
 
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/test_template.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 echo Banner::gen();
 ?>
 

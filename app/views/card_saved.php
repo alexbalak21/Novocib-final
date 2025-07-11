@@ -1,6 +1,6 @@
 <?php
 $title = "Payment Information transmitted";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/test_template.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
 <?= Banner::gen("/app/static/img/db.jpg") ?>
 <div class="container mt-5">

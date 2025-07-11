@@ -8,7 +8,7 @@ ob_start(); ?>
 <meta name="keywords" content="Nucleotides Assay Kits, Dietary Assay Kits">
 <?php $metas = ob_get_clean();
 
-require_once $root . "/app/templates/test_template.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
 <?= Banner::gen("/app/static/img/nucleotides.webp"); ?>
 <section class="container mt-4 mb-5 therapeutic">
