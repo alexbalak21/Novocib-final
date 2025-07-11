@@ -29,7 +29,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                     <td class="text-center"><strong>50 mUnits</strong></td>
                     <td class="price text-center">€ 305.00</td>
                     <td class="text-end pe-3">
-                        <a class="btn btn-primary" href="/inquiry?ref=Nov6-50&amp;product=cN-II 50mU">Inquiry</a>
+                        <a class="btn btn-primary" href="/inquiry?ref=Nov6-50&amp;product=cN-II 50mU">Inquiry <i class="fa-solid fa-comment"></i></a>
                     </td>
                 </tr>
                 <tr>
@@ -37,7 +37,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                     <td class="text-center"><strong>150 mUnits</strong></td>
                     <td class="price text-center">€ 650.00</td>
                     <td class="text-end pe-3">
-                        <a class="btn btn-primary" href="/inquiry?ref=Nov6-100&amp;product=cN-II 100mU">Inquiry</a>
+                        <a class="btn btn-primary" href="/inquiry?ref=Nov6-100&amp;product=cN-II 100mU">Inquiry <i class="fa-solid fa-comment"></i></a>
                     </td>
                 </tr>
             </tbody>

@@ -48,13 +48,13 @@ $content_title
             <td>#E-Nov3-500mU</td>
             <td class="text-center"> <strong>500 mUnits</strong></td>
             <td class="price text-center">€ 295.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Deoxycytidine Kinase - 500mU">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Deoxycytidine Kinase - 500mU">Inquiry <i class="fa-solid fa-comment"></i></a></td>
         </tr>
         <tr>
             <td>#E-Nov3-2U</td>
             <td class="text-center"><strong>2 Units</strong></td>
             <td class="price text-center">€ 945.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Deoxycytidine Kinase - 2U">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Deoxycytidine Kinase - 2U">Inquiry <i class="fa-solid fa-comment"></i></a></td>
         </tr>
     </tbody>
 </table>

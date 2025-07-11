@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/logVisit.php";
 
 //SETTING FONT AWESOME SOURCE
 $fontAwesome_cdn = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css";
-$fontAwesome_local_server = "/app/FA6/css/all.min.css";
+$fontAwesome_local_server = "/FA6/css/all.min.css";
 $fontAwesome_source = str_starts_with($_SERVER['HTTP_HOST'], "localhost") ? $fontAwesome_cdn : $fontAwesome_local_server;
 
 //GOOGLE ANALYTICS SCRIPT

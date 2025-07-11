@@ -81,6 +81,7 @@ $page_content = <<<CONTENT
                                     class="btn btn-primary"
                                     href="/inquiry?ref=K0709-01-2&product=PRCE® Freshness Assay Kit - K(IMP) - K0700-001-15">
                                     Inquiry
+<i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>
@@ -94,6 +95,7 @@ $page_content = <<<CONTENT
                                     class="btn btn-primary"
                                     href="/inquiry?ref=K0709-01-2&product=PRCE® Freshness Assay Kit - K(IMP) - K0700-001-31">
                                     Inquiry
+<i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>
@@ -107,6 +109,7 @@ $page_content = <<<CONTENT
                                     class="btn btn-primary"
                                     href="/inquiry?ref=K0709-01-2&product=PRCE® Freshness Assay Kit - (IMP, Ino & Hx) - K0700-001-22">
                                     Inquiry
+<i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>

@@ -126,6 +126,7 @@
                             <td class="text-end pe-3">
                                 <a title="Order" class="btn btn-primary" href="/inquiry?ref=K0700-003-06&amp;product=PRECICE® IMP, Inosine and Hypoxanthine Assay Kit&amp;volume=6 samples (microplate)">
                                     Inquiry
+                                    <i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>
@@ -139,6 +140,7 @@
                             <td class="text-end pe-3">
                                 <a title="Order" class="btn btn-primary" href="/inquiry?ref=K0700-003-12&amp;product=PRECICE® IMP, Inosine and Hypoxanthine Assay Kit&amp;volume=12 samples (microplate)">
                                     Inquiry
+                                    <i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>

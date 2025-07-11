@@ -71,6 +71,7 @@ echo Banner::gen();
                             <td class="text-end pe-3">
                                 <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=HPRT Assay Kit&amp;volume=24 analyses (8 samples in triplicate) with HPRT enzyme">
                                     Inquiry
+                                    <i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>

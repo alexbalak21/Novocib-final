@@ -223,7 +223,7 @@ ob_start(); ?>
                         </td>
                         <td class="price">€ 420.00 / sample</td>
                         <td>
-                            <a class="btn btn-primary" href="/inquiry?product=Dietary Nucleotides Analysis&ref=S1200-03">Inquiry</a>
+                            <a class="btn btn-primary" href="/inquiry?product=Dietary Nucleotides Analysis&ref=S1200-03">Inquiry <i class="fa-solid fa-comment"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -239,7 +239,7 @@ ob_start(); ?>
                         </td>
                         <td class="price">€ 350.00 / sample</td>
                         <td>
-                            <a class="btn btn-primary" href="/inquiry?product=Cellular Nucleotides Analysis&ref=S1200-04">Inquiry</a>
+                            <a class="btn btn-primary" href="/inquiry?product=Cellular Nucleotides Analysis&ref=S1200-04">Inquiry <i class="fa-solid fa-comment"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -250,7 +250,7 @@ ob_start(); ?>
                         </td>
                         <td class="price">€ 300.00 / sample</td>
                         <td>
-                            <a class="btn btn-primary" href="/inquiry?product=RNA and DNA quantification HPLC-UV analysis&ref=S1200-05">Inquiry</a>
+                            <a class="btn btn-primary" href="/inquiry?product=RNA and DNA quantification HPLC-UV analysis&ref=S1200-05">Inquiry <i class="fa-solid fa-comment"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -261,7 +261,7 @@ ob_start(); ?>
                         </td>
                         <td class="price">€ 300.00 / sample</td>
                         <td>
-                            <a class="btn btn-primary" href="/inquiry?product=Purines HPLC-UV Analysis&ref=S1200-06">Inquiry</a>
+                            <a class="btn btn-primary" href="/inquiry?product=Purines HPLC-UV Analysis&ref=S1200-06">Inquiry <i class="fa-solid fa-comment"></i></a>
                         </td>
                     </tr>
                 </tbody>

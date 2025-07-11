@@ -46,7 +46,7 @@ $page_content = <<<CONTENT
             <td>#E-Nov9</td>
             <td class="text-center"> <strong>100 mUnits - 4 tubes with 25 <i>mUnits</i>  each <br></strong><i>(Once dissolved, 10 mU/ml correspond to 126 nmol/h/ml)</i></td>
             <td class="price text-center">€ 310.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=Human HGPRT - 100mUnits">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=Human HGPRT - 100mUnits">Inquiry <i class="fa-solid fa-comment"></i></a></td>
         </tr>
     </tbody>
 </table>

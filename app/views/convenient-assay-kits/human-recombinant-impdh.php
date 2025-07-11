@@ -74,7 +74,7 @@ echo Banner::gen();
                                 <a
                                     class="btn btn-primary"
                                     href="/inquiry?ref=K0709-01-2&product=Human IMPDH Ty2 - 5mU">
-                                    Inquiry
+                                    Inquiry <i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>
@@ -86,7 +86,7 @@ echo Banner::gen();
                                 <a
                                     class="btn btn-primary"
                                     href="/inquiry?ref=K0709-01-2&product=Human IMPDH Ty2 - 100mU">
-                                    Inquiry
+                                    Inquiry <i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>
@@ -98,7 +98,7 @@ echo Banner::gen();
                                 <a
                                     class="btn btn-primary"
                                     href="/inquiry?ref=K0709-01-2&product=Human IMPDH Ty2 - 250mU">
-                                    Inquiry
+                                    Inquiry <i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>

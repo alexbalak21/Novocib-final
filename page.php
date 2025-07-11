@@ -40,6 +40,7 @@
                             <td class="text-end pe-3">
                                 <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
                                     Inquiry
+                                    <i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>

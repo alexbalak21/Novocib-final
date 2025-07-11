@@ -78,7 +78,7 @@ ob_start(); ?>
                             <td class="text-center"><strong>100 mUnits</strong></td>
                             <td class="price text-center">€ 355.00</td>
                             <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 100 mUnits">Inquiry</a>
+                                <a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 100 mUnits">Inquiry <i class="fa-solid fa-comment"></i></a>
                             </td>
                         </tr>
                         <tr>
@@ -86,7 +86,7 @@ ob_start(); ?>
                             <td class="text-center"><strong>200 mUnits</strong></td>
                             <td class="price text-center">€ 565.00</td>
                             <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 200 mUnits">Inquiry</a>
+                                <a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 200 mUnits">Inquiry <i class="fa-solid fa-comment"></i></a>
                             </td>
                         </tr>
                         <tr>
@@ -94,7 +94,7 @@ ob_start(); ?>
                             <td class="text-center"><strong>500 mUnits</strong></td>
                             <td class="price text-center">€ 1420.00</td>
                             <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 500 mUnits">Inquiry</a>
+                                <a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 500 mUnits">Inquiry <i class="fa-solid fa-comment"></i></a>
                             </td>
                         </tr>
                     </tbody>

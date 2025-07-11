@@ -85,7 +85,7 @@ class Nav
                 <li><a class="dropdown-item" href="/analytical-services/yeast-extract-nucleotide-analysis">Yeast Extract Nucleotide Analysis</a></li>
                 
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/inquiry">Inquiry</a></li>
+                <li><a class="dropdown-item" href="/inquiry">Inquiry <i class="fa-solid fa-comment"></i></a></li>
                 <li><a class="dropdown-item" href="/hplc-analysis-of-bases-nucleosides">HPLC analysis of bases nucleosides</a></li>
                 </ul>
               </li>

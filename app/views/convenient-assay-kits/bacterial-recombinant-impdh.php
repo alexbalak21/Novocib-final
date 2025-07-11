@@ -50,7 +50,7 @@ Today, antibiotic resistance is one of the world's most important public health 
             <td>#E-Nov7</td>
             <td class="text-center"> <strong>50 mUnits</strong></td>
             <td class="price text-center">€ 195.00</td>
-            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=12 analyses (4 samples in triplicate)">Inquiry</a></td>
+            <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=12 analyses (4 samples in triplicate)">Inquiry <i class="fa-solid fa-comment"></i></a></td>
         </tr>
     </tbody>
 </table>
