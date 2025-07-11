@@ -43,7 +43,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 <div class="bg-light pt-4 pb-2">
     <div class="container">
         <div class="row justify-content-center ">
-            <h2 class="text-center novo-blue">Explore:</h2>
+            <h2 class="text-center novo-blue mt-3">Explore:</h2>
             <div class="col-lg-4 col-8 text-center mx-3 kit">
                 <a href="/freshness-assay-kits/freshness-principle">
                     <h4>Fish Freshness Assay Kits</h4>
