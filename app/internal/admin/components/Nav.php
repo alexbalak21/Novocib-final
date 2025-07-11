@@ -42,9 +42,9 @@ class Nav
                                 <i class="fa-solid fa-magnifying-glass"></i> Items</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/products.php">Products</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/customer-info.php">Payment</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/visitor-searches.php">Visitor Searches</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/visitor-searches.php">Visitor <i class="fa-solid fa-glasses"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/404-requests.php">
-                                <i class="fa-solid fa-xmark"></i> 401 Requests</a></li>
+                                <i class="fa-solid fa-xmark"></i> 404 Req</a></li>
                     </ul>
 
                     <!-- Right-aligned Username + Menu for large screens -->

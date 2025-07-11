@@ -19,7 +19,7 @@ ob_start(); ?>
 <script src="/app/js/owlcarousel.js" defer></script>
 <?php $additional_head = ob_get_clean();
 
-require_once $root . "/app/templates/test_template.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
 
 <div id="crouselItem" class="carousel slide" data-bs-ride="carousel">
@@ -30,7 +30,7 @@ require_once $root . "/app/templates/test_template.php";
                 <div>
                     <h2 class="display-3 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
                     <p class="lead px-1">Since 2005 NOVOCIB is developing novel analytical and enzymatic tools helping scientists worldwide <br> to quantify nucleotides in their biological samples.</p>
-                    <div class="text-center"><a href="/nucleotides" class="btn btn-primary">Go to Dietary Nucleotides</a></div>
+                    <div class="text-center"><a href="/nucleotides" class="btn btn-primary">Go to Dietary Nucleotides <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@ require_once $root . "/app/templates/test_template.php";
                         <li>Purine &amp; pyrimidines analysis of food or feed ingredients</li>
                     </ul>
                 </div>
-                <div class="text-center my-4" title="Nucleotide Analysis Services"><a href="/nucleotide-analysis-service" class="btn btn-primary">Go to Page</a></div>
+                <div class="text-center my-4" title="Nucleotide Analysis Services"><a href="/nucleotide-analysis-service" class="btn btn-primary">Go to Page <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
             </div>
 
         </div>
@@ -93,7 +93,7 @@ require_once $root . "/app/templates/test_template.php";
                         <li>Convenient, saves time and preempts possible errors.</li>
                     </ul>
                 </div>
-                <div class="text-center my-4" title="Freshness Assay Kits"><a href="/convenient-assay-kits" class="btn btn-primary">Go to Page</a></div>
+                <div class="text-center my-4" title="Freshness Assay Kits"><a href="/convenient-assay-kits" class="btn btn-primary">Go to Page <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
             </div>
 
         </div>
@@ -109,7 +109,7 @@ require_once $root . "/app/templates/test_template.php";
                         <li>Shipped worldwide in stable lyophilized form without dry ice or cold blocks.</li>
                     </ul>
                 </div>
-                <div class="text-center my-4" title="Go to Active purified enzymes page"><a href="/active-purified-enzymes" class="btn btn-primary">Go to Page</a></div>
+                <div class="text-center my-4" title="Go to Active purified enzymes page"><a href="/active-purified-enzymes" class="btn btn-primary">Go to Page <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
             </div>
 
         </div>
