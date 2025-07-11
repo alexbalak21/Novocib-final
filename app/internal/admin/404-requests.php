@@ -39,6 +39,7 @@ $total = count_404_requests();
                                         <button class="btn btn-danger">Yes <i class="fa-solid fa-check ms-2"></i></button>
                                     </form>
                                 </div>
+                                <a target="_blank" href="<?= $request['url'] ?>" class="btn btn-primary">Go <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                             </div>
                         </td>
                     </tr>

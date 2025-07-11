@@ -39,12 +39,12 @@ class Nav
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/index.php">Admin</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/search.php">
-                                <i class="fa-solid fa-magnifying-glass"></i> Items</a></li>
+                                Search <i class="fa-solid fa-box"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/products.php">Products</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/customer-info.php">Payment</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/visitor-searches.php">Visitor <i class="fa-solid fa-glasses"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/visitor-searches.php">Visitor <i class="fa-solid fa-magnifying-glass"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/404-requests.php">
-                                <i class="fa-solid fa-xmark"></i> 404 Req</a></li>
+                                404 <i class="fa-solid fa-xmark"></i> </a></li>
                     </ul>
 
                     <!-- Right-aligned Username + Menu for large screens -->
