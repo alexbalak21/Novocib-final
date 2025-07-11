@@ -4,7 +4,7 @@
     <url>
         <url>
             <loc>https://www.novocib.com/</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
+            <lastmod>2025-07-11T12:05:00+02:00</lastmod>
             <priority>1.00</priority>
         </url>
         <url>
@@ -39,12 +39,12 @@
         </url>
         <url>
             <loc>https://www.novocib.com/convenient-assay-kits/hprt-assay-kit</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
+            <lastmod>2025-07-11T12:05:00+02:00</lastmod>
             <priority>0.80</priority>
         </url>
         <url>
             <loc>https://www.novocib.com/convenient-assay-kits/prpp-s-assay-kit</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
+            <lastmod>2025-07-11T12:05:00+02:00</lastmod>
             <priority>0.80</priority>
         </url>
         <url>
@@ -84,7 +84,7 @@
         </url>
         <url>
             <loc>https://www.novocib.com/convenient-assay-kits/adk-assay-kit</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
+            <lastmod>2025-07-11T12:05:00+02:00</lastmod>
             <priority>0.80</priority>
         </url>
         <url>
@@ -157,5 +157,11 @@
             <lastmod>2024-04-25T12:01:28+00:00</lastmod>
             <priority>0.30</priority>
         </url>
+        <url>
+            <loc>https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit</loc>
+            <lastmod>2025-07-11T12:03:00+02:00</lastmod>
+            <priority>1.00</priority>
+        </url>
+        
     </url>
 </urlset>
