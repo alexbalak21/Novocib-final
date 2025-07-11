@@ -64,6 +64,7 @@ switch ($req_uri) {
         require_once "app/views/active-purified-enzymes/human-ump-cmp-kinase.php";
         break;
 
+    case "/Bacterial_FMN_Reductase":
     case "/Bacterial_FMN_Reductase.html":
     case "/active-purified-enzymes/fmn-reductase":
         require_once "app/views/active-purified-enzymes/FMN-Reductase.php";
@@ -112,6 +113,7 @@ switch ($req_uri) {
         require_once "app/views/convenient-assay-kits/index.php";
         break;
 
+    case "//HPRT_Assay_Kit.html":
     case "/convenient-assay-kits/hprt-assay-kit":
         require_once "app/views/convenient-assay-kits/hprt-assay-kit.php";
         break;

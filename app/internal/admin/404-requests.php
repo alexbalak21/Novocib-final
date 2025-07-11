@@ -1,5 +1,5 @@
 <?php
-$title = "401 Requests";
+$title = "404 Requests";
 require_once __DIR__ . "/templates/base.php";
 require_once "db_logic.php";
 $page = $_GET['page'] ?? 1;
