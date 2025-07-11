@@ -58,7 +58,7 @@ $content_title
         </tr>
         <tr>
             <td>#K0700-003-22</td>
-            <td class="text-center"><strong>Plate reader for simultaneous analysis of IMP, Ino & Hx in 22 samples <br> <a target="_blank" href="/app/documents/PRECICE Freshness Assay Manual K0700-003 140709.pdff">See Documentation <i class="fa-solid fa-file-pdf"></i></a></strong></td>
+            <td class="text-center"><strong>Plate reader for simultaneous analysis of IMP, Ino & Hx in 22 samples <br> <a target="_blank" href="/app/documents/PRECICE Freshness Assay Manual K0700-003 140709.pdf">See Documentation <i class="fa-solid fa-file-pdf"></i></a></strong></td>
             <td class="price text-center">€ 480.00</td>
             <td class="text-end pe-3"><a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Freshness Assay Kit - 22 samples">Inquiry</a></td>
         </tr>

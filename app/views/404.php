@@ -29,7 +29,7 @@ $cleaned_request = strtolower($request);
     <h3 class="novo-blue text-center mt-5 mb-4">Search for it on Novocib.com</h3>
     <div class="d-flex justify-content-center">
         <div class="searchbar">
-            <input id="searchInput" class="search_input" type="text" value="<?= $cleaned_request  ?>" name="search" placeholder="Search...">
+            <input id="searchInput" class="search_input" type="text" value="<?= $cleaned_request === "404" ?  "" : $cleaned_request  ?>" name="search" placeholder="Search...">
             <a id="searchBtn" title="search" class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
         <div id="clear-searchbar" class="ms-2 mt-3">

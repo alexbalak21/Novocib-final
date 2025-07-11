@@ -1,5 +1,5 @@
 <?php
-require_once "db_operations.php";
+require_once $_SERVER['DOCUMENT_ROOT'] .  "/app/logic/db_operations.php";
 
 function logVisit()
 {

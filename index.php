@@ -2,6 +2,7 @@
 //require Constants
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/constants/dirs.php";
 
+
 $root = $_SERVER['DOCUMENT_ROOT'];
 $parsed_url = parse_url($_SERVER["REQUEST_URI"]);
 $req_uri = isset($parsed_url["path"]) ? $parsed_url["path"] : null;
@@ -322,8 +323,12 @@ switch ($req_uri) {
         require_once "app/views/error.php";
         break;
 
+    case "/app/logic/log404.php":
+        echo "LOG 404";
+        header("Location: /not-found");
+        break;
 
     default:
-        require_once "app/views/404.php";
+        require_once $_SERVER["DOCUMENT_ROOT"] . "/app/views/404.php";
         break;
 }
