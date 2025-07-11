@@ -37,12 +37,12 @@ class Nav
                 <!-- Collapsible nav -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/index.php">Admin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/"><i class="fa-solid fa-house"></i> NOVO.COM</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/search.php">
                                 Search <i class="fa-solid fa-box"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/products.php">Products</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/customer-info.php">Payment</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/visitor-searches.php">Visitor <i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/visitor-searches.php">User <i class="fa-solid fa-magnifying-glass"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/404-requests.php">
                                 404 <i class="fa-solid fa-xmark"></i> </a></li>
                     </ul>
