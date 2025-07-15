@@ -142,7 +142,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                             Assistance in the development of new products and ingredients enriched in nucleotides.
                         </li>
                     </ul>
-                    <div class="text-center"><a href="/news" class="btn btn-primary"><i class="fa-solid fa-newspaper"></i> &nbsp; News</a></div>
+                    <div class="text-center mb-4"><a href="/news" class="btn btn-primary"><i class="fa-solid fa-newspaper"></i> &nbsp; News</a></div>
                 </div>
 
             </div>
