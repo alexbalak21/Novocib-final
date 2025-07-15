@@ -18,13 +18,20 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 <div class="container py-4">
     <div class="col-lg-7 mx-auto">
         <h3 class="text-center">New Service</h3>
-        <p class="mt-4 lead ">
-            <span class="d-block text-center">
-                We’re excited to introduce our latest innovation: new version of the:
-            </span>
-            <a class="text-center mb-1 d-block" href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit">PRECICE® Fish Freshness Assay Kit</a>
-            This kit has been specifically designed in a 96-well plate format to facilitate the measurement of three major ATP catabolites (IMP, Inosine, and Hypoxanthine) in the same fish sample. In contrast to previous version, requiring two series of pipetting, our latest version includes microplate already prefilled with the enzymes. Just add the fish extract and mesure.
-        </p>
+        <div class="row">
+            <div class="col-lg-8">
+                <p class="mt-4 lead ">
+                    <span class="d-block text-center">
+                        We’re excited to introduce our latest innovation: new version of the:
+                    </span>
+                    <a class="text-center mb-1 d-block" href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit">PRECICE® Fish Freshness Assay Kit</a>
+                    This kit has been specifically designed in a 96-well plate format to facilitate the measurement of three major ATP catabolites (IMP, Inosine, and Hypoxanthine) in the same fish sample. In contrast to previous version, requiring two series of pipetting, our latest version includes microplate already prefilled with the enzymes. Just add the fish extract and mesure.
+                </p>
+            </div>
+            <div class="col-lg-4 col-7 mx-auto mt-lg-5 mt-4">
+                <a title="Go to Fish Freshness Assay Kit page" href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit"><img src="/app/static/img/Fish-freshness/fish.jpg" alt="fish photo" class="w-100 border"></a>
+            </div>
+        </div>
         <p class="text-end text-muted mt-4 mb-1">Published on July 15, 2025</p>
     </div>
 </div>

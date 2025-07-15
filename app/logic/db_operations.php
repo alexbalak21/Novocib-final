@@ -31,17 +31,18 @@ function check_id()
 }
 
 
-function logVisitToDB($time, $ip)
+function logVisitToDB($time, $ip, $request)
 {
   $conn = connect_db();
   try {
-    $sql = "INSERT INTO vlog (`datetime`, ip) VALUES ('$time', '$ip')";
+    $sql = "INSERT INTO vlog (`datetime`, ip, request) VALUES ('$time', '$ip', '$request')";
     $conn->exec($sql);
   } catch (PDOException $e) {
     echo $sql . "<br>" . $e->getMessage();
   }
   $conn = null;
 }
+
 
 
 function log404toDB($time, $ip, $query)
