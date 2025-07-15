@@ -7,12 +7,26 @@ function logVisit()
     $ip = $_SERVER['REMOTE_ADDR'];
     $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-    // 🚫 Check for excluded extensions
-    $excludedExtensions = ['png', 'jpg', 'svg'];
+    // ⛔ IPs to exclude from logging
+    $excluded_ips = [
+        '2001:861:203:6750:a170:9335:eb9:2671',
+        '127.0.0.1',
+        '192.168.1.100',
+        '::1',
+    ];
+
+    // 📁 Extensions to exclude from logging
+    $excluded_extensions = ['png', 'jpg', 'svg'];
+
+    // 🧩 Check conditions before logging
     $ext = strtolower(pathinfo($uri, PATHINFO_EXTENSION));
 
-    // 🚫 Skip if URI contains '/FA6/' or ends with an excluded extension
-    if (strpos($uri, '/FA6/') === false && !in_array($ext, $excludedExtensions)) {
+    if (
+        !in_array($ip, $excluded_ips) &&
+        strpos($uri, '/FA6/') === false &&
+        !in_array($ext, $excluded_extensions)
+    ) {
+
         logVisitToDB($time, $ip, $uri);
     }
 }
