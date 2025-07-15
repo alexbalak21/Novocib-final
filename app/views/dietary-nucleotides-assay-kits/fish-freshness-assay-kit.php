@@ -6,6 +6,7 @@
     <meta name="description" content="Ensure accurate seafood quality control with NOVOCIB's PRECICE® Fish Freshness Assay Kit. Quantify IMP, inosine & hypoxanthine to assess fish freshness using enzymatic NADH absorbance assay. Ideal for fresh, frozen & processed seafood." />
     <meta name="author" content="NOVOCIB" />
     <meta name="keywords" content="fish freshness assay, seafood quality control, IMP measurement, inosine, hypoxanthine, NADH absorbance, microplate reader, nucleotide assay, ATP degradation, seafood processing, K-value, fish freshness test" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <?php $metas = ob_get_clean();
 
     require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
@@ -14,7 +15,7 @@
 
     <?= Banner::gen() ?>
     <script src="/app/js/fish-freshness-page.js" defer></script>
-    <main class="container mt-5">
+    <main class="container w-100 mt-5">
 
         <h2 class="underlinedTitle center">
             <span class="underlined novoblue center">PRECICE® IMP, Inosine and Hypoxanthine Assay Kit <br>Spectrophotometric, microplate format</span>
@@ -105,67 +106,50 @@
         <h3 class="novo-blue text-center mt-5">Buy the Kit <i class="fa-solid fa-cart-shopping"></i></h3>
         <div class="d-flex justify-content-center">
             <div class="col-lg-10 col-12">
-                <!-- FETCHING PRODUCT FROM THE DATABASE -->
-                <table class="table product mb-2">
-                    <thead>
-                        <tr>
-                            <th>#REF</th>
-                            <th class="text-center">SIZE</th>
-                            <th class="text-center">PRICE</th>
-                            <th class="pe-5"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#K0700-003-06</td>
-                            <td class="text-center">
-                                <b>PRECICE® IMP, Inosine and Hypoxanthine Assay Kit </b><br>
-                                For 6 samples (microplate reader)
-                            </td>
-                            <td class="price text-center">220.00 €</td>
-                            <td class="text-end pe-3">
-                                <a title="Order" class="btn btn-primary" href="/inquiry?ref=K0700-003-06&amp;product=PRECICE® IMP, Inosine and Hypoxanthine Assay Kit&amp;volume=6 samples (microplate)">
-                                    Inquiry
-                                    <i class="fa-solid fa-comment"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#K0700-003-12</td>
-                            <td class="text-center">
-                                <b>PRECICE® IMP, Inosine and Hypoxanthine Assay Kit </b><br>
-                                For 12 samples (microplate reader)
-                            </td>
-                            <td class="price text-center">420.00 €</td>
-                            <td class="text-end pe-3">
-                                <a title="Order" class="btn btn-primary" href="/inquiry?ref=K0700-003-12&amp;product=PRECICE® IMP, Inosine and Hypoxanthine Assay Kit&amp;volume=12 samples (microplate)">
-                                    Inquiry
-                                    <i class="fa-solid fa-comment"></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="text-muted text-center">
-                    <em>Updated on July 10th, 2025.</em>
-                    <br>
-                </p>
-
-                <p class="text-center">
-                    <strong>
-                        Kit is provided in stable lyophilized form and
-                        <span class="text-danger">shipped without dry ice</span>
-                    </strong>
-                </p>
-                <p class="mt-4 mb-5 text-end">
-                    <i class="fa-solid fa-download"></i>&nbsp;Download
-                    <a target="_blank" href="/app/documents/PRECICE IMP-Inosine-Hypoxanthine Assay kit for Microplate Reader 6 samples.pdf">
-                        <strong>Fish Freshness Assay Kit</strong>
-                        <i class="fa-regular fa-file-pdf"></i>
-                    </a>
-                    (User manual)
-                </p>
+                <div class="table-responsive">
+                    <table class="table product mb-2">
+                        <thead>
+                            <tr>
+                                <th class="d-none d-md-table-cell">#REF</th>
+                                <th class="text-center">SIZE</th>
+                                <th class="text-center d-none d-md-table-cell">PRICE</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="d-none d-md-table-cell">#K0700-003-06</td>
+                                <td class="text-center">
+                                    <b>PRECICE® IMP, Inosine and Hypoxanthine Assay Kit</b><br>
+                                    For 6 samples (microplate reader)
+                                </td>
+                                <td class="d-none d-md-table-cell text-center">220.00 €</td>
+                                <td class="text-end pe-3">
+                                    <div class="d-block d-md-none text-end mb-1 fw-bold">220.00 €</div>
+                                    <a title="Order" class="btn btn-primary" href="/inquiry?ref=K0700-003-06&amp;product=PRECICE® IMP, Inosine and Hypoxanthine Assay Kit&amp;volume=6 samples (microplate)">
+                                        Inquiry <i class="fa-solid fa-comment"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-none d-md-table-cell">#K0700-003-12</td>
+                                <td class="text-center">
+                                    <b>PRECICE® IMP, Inosine and Hypoxanthine Assay Kit</b><br>
+                                    For 12 samples (microplate reader)
+                                </td>
+                                <td class="d-none d-md-table-cell text-center">420.00 €</td>
+                                <td class="text-end pe-3">
+                                    <div class="d-block d-md-none text-end mb-1 fw-bold">420.00 €</div>
+                                    <a title="Order" class="btn btn-primary" href="/inquiry?ref=K0700-003-12&amp;product=PRECICE® IMP, Inosine and Hypoxanthine Assay Kit&amp;volume=12 samples (microplate)">
+                                        Inquiry <i class="fa-solid fa-comment"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+
         </div>
 
         <div class="mt-5 ms-3 mb-5 row">
@@ -188,7 +172,7 @@
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-">
-                <img class="border" style="width: 400px;" src="/app/static/img/Fish-freshness/kit-photo.jpg" alt="fish freshness kit composition">
+                <img class="border w-100" style="width: 400px;" src="/app/static/img/Fish-freshness/kit-photo.jpg" alt="fish freshness kit composition">
             </div>
         </div>
 
@@ -259,9 +243,9 @@
                     For each nucleotide (IMP or hypoxanthine or inosine) the assay is linear between 0.1AU-1.6AU, corresponding to 0.2mmols/Kg to 6mmols/Kg of nucleotide after 20-fold dilution.
                 </p>
                 <div class="row mb-2">
-                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineB.png" alt="Spectrophotometric graph showing absorbance at 340nm for various concentrations of IMP (inosine monophosphate), ranging from 0 to 6 mmol/kg." class="w-100"></div>
-                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineC.png" alt="Spectrophotometric graph displaying absorbance at 340nm for hypoxanthine at multiple concentrations, from 0 to 6 mmol/kg." class="w-100"></div>
-                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/LineD.png" alt="Spectrophotometric graph illustrating absorbance at 340nm for inosine, comparing concentrations from 0 to 6 mmol/kg." class="w-100"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img class="w-100" src="/app/static/img/Fish-freshness/LineB.png" alt="Spectrophotometric graph showing absorbance at 340nm for various concentrations of IMP (inosine monophosphate), ranging from 0 to 6 mmol/kg."></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img class="w-100" src="/app/static/img/Fish-freshness/LineC.png" alt="Spectrophotometric graph displaying absorbance at 340nm for hypoxanthine at multiple concentrations, from 0 to 6 mmol/kg."></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img class="w-100" src="/app/static/img/Fish-freshness/LineD.png" alt="Spectrophotometric graph illustrating absorbance at 340nm for inosine, comparing concentrations from 0 to 6 mmol/kg."></div>
                     <p class="text-center mb-5"><b>The reactions were followed at 30°C using PRECICE® microplate (30°C, 200µL per well) and Labsystems iEMS Reader (Thermo).</b></p>
                     <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/IMPmmolsPerKg.png" alt="IMP mmols per Kg graph" class="w-100" title="IMP mmols per kg"></div>
                     <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Inosine.png" alt="Inosine, mmols per Kg" class="w-100" title="Inosine, mmols per kg"></div>
@@ -394,38 +378,38 @@
                 <div class="col-lg-9 col-12">
                     <p class="mb-0 text-center">The H-value represents <b>the relative concentration of hypoxanthine</b> compared to the total amount of ATP degradation products-namely, IMP, inosine, and hypoxanthine.</p>
                     <div class="text-center border mb-4">
-                        <img class="formula-img" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
+                        <img class="formula-img w-100" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
                         <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">H(%) = (Hx / (IMP + Ino + Hx)) * 100</p>
                     </div>
 
                     <p class="mb-0 text-center">The Fr value, on the other hand, reflects <b>the relative concentration of IMP</b> in relation to the sum of these same nucleotides.</p>
                     <div class="text-center border mb-4">
-                        <img class="formula-img" src="/app/static/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
+                        <img class="formula-img w-100" src="/app/static/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
                         <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">Fr(%) = (IMP / (IMP + Ino + Hx)) * 100</p>
                     </div>
 
                     <p class="mb-0 text-center">The Ki value is <b>the inverse of relative IMP concentration</b> (explanations are shown below).</p>
                     <div class="mb-2 text-center border">
-                        <img class="formula-img" src="/app/static/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
+                        <img class="formula-img w-100" src="/app/static/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
                         <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">K<sub>i</sub>(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100</p>
                     </div>
                     <div class="text-center border">
-                        <img class="w-75 formula-img" src="/app/static/img/Fish-freshness/Ino_hx.jpg" alt="mathematical expression" title="[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%">
+                        <img class="w-75 formula-img w-100" src="/app/static/img/Fish-freshness/Ino_hx.jpg" alt="mathematical expression" title="[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%">
                         <br> <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%</p>
                     </div>
                     <div class="mt-2 text-center border mb-4">
-                        <img class="w-75 formula-img" src="/app/static/img/Fish-freshness/ki100.jpg" alt="mathematical expression" title="Ki (%) = 100% - [IMP / (IMP + Ino + Hx)] × 100">
+                        <img class="w-75 formula-img w-100" src="/app/static/img/Fish-freshness/ki100.jpg" alt="mathematical expression" title="Ki (%) = 100% - [IMP / (IMP + Ino + Hx)] × 100">
                         <br><i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">K<sub>i</sub>(%) = 100% - [IMP / (IMP + Ino + Hx)] × 100</p>
                     </div>
 
                     <p class="mb-0 text-center mt-4">K<sub>i</sub> value cannot be applied for the fish species with fast autolytic IMP hydrolysis such as cod (Gadus morhua), whiting (Merlangus merlangus) and pollock (Pollachius virens) since in the absence of IMP, K<sub>i</sub> is 100%.</p>
                     <div class="mb-3 text-center border">
-                        <img class="formula-img" src="/app/static/img/Fish-freshness/ki-imp.jpg" alt="mathematical expression of Ki" title="Ki (%) = [(Ino + Hx) / (Ino + Hx)] × 100 = 100%"><br>
+                        <img class="formula-img w-100" src="/app/static/img/Fish-freshness/ki-imp.jpg" alt="mathematical expression of Ki" title="Ki (%) = [(Ino + Hx) / (Ino + Hx)] × 100 = 100%"><br>
                         <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">K<sub>i</sub>(%) = [(Ino + Hx) / ( <strike>IMP</strike> + Ino + Hx)] × 100 = 100%</p>
                     </div>

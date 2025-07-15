@@ -4,6 +4,7 @@ $title = "HPRT Assay Kit";
 ob_start(); ?>
 <meta name="keywords" content="HPRT Assay Kit, HPRT enzyme, hypoxanthine-guanine phosphoribosyltransferase, HPRT protein research, HPRT assay for research, recombinant HPRT enzyme">
 <meta name="description" content="High-quality HPRT Assay Kit for research purposes. Designed to study hypoxanthine-guanine phosphoribosyltransferase (HPRT) enzyme activity with reliable and accurate results.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <?php $metas = ob_get_clean();
 
 
@@ -47,50 +48,74 @@ echo Banner::gen();
             </div>
         </div>
 
-        <div class=" d-flex justify-content-center mt-5">
+        <div class="d-flex justify-content-center mt-5">
             <div class="col-lg-10 col-12">
+                <div class="table-responsive">
+                    <table class="table product mb-2">
+                        <thead>
+                            <tr>
+                                <th class="d-none d-md-table-cell">#REF</th>
+                                <th class="text-center">SIZE</th>
+                                <th class="text-center d-none d-md-table-cell">PRICE</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="d-none d-md-table-cell">#K0709-01-2</td>
+                                <td class="text-center">
+                                    <strong>
+                                        <span class="novo-blue">PRECICE® HPRT Assay Kit</span><br>
+                                        10 ml, 24 analyses (8 samples in triplicate)
+                                    </strong>
+                                </td>
+                                <td class="d-none d-md-table-cell text-center">330.00 €</td>
+                                <td class="text-end pe-3">
+                                    <div class="d-block d-md-none text-end mb-1 fw-bold">330.00 €</div>
+                                    <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=HPRT Assay Kit&amp;volume=24 analyses (8 samples in triplicate) with HPRT enzyme">
+                                        Inquiry <i class="fa-solid fa-comment"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <!-- FETCHING PRODUCT FROM THE DATABASE -->
-                <table class="table product mb-2">
-                    <thead>
-                        <tr>
-                            <th>#REF</th>
-                            <th class="text-center">SIZE</th>
-                            <th class="text-center">PRICE</th>
-                            <th class="pe-5"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#K0709-01-2</td>
-                            <td class="text-center"><strong>
-                                    <span class="novo-blue">PRECICE® HPRT Assay Kit </span><br>
-                                    10 ml, 24 analyses (8 samples in triplicate)
-                                </strong></td>
-                            <td class="price text-center">330.00 €</td>
-                            <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=HPRT Assay Kit&amp;volume=24 analyses (8 samples in triplicate) with HPRT enzyme">
-                                    Inquiry
-                                    <i class="fa-solid fa-comment"></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- Keep the rest of your content unchanged -->
                 <p class="text-muted text-center">
-                    <em>Updated on July 2nd, 2025.</em>
-                    <br>
+                    <em>Updated on July 2nd, 2025.</em><br>
                 </p>
 
-                <p class="text-center"><strong>Kit is provided in stable lyophilized form and <span class="text-danger">shipped without dry ice</span> </strong></p>
+                <p class="text-center">
+                    <strong>
+                        Kit is provided in stable lyophilized form and
+                        <span class="text-danger">shipped without dry ice</span>
+                    </strong>
+                </p>
 
+                <p class="mt-4 mb-4 text-end">
+                    <i class="fa-solid fa-download"></i> Download
+                    <a target="_blank" href="/app/documents/NovoCIB K0709-01-2 24 samples User Manual 010725.pdf">
+                        <strong>HPRT assay Protocol <i class="fa-regular fa-file-pdf"></i></strong>
+                    </a> (User manual)
+                </p>
 
-                <p class="mt-4 mb-4 text-end"><i class="fa-solid fa-download"></i> Download <a target="_blank" href="/app/documents/NovoCIB K0709-01-2 24 samples User Manual 010725.pdf"> <strong>HPRT assay Protocol <i class="fa-regular fa-file-pdf"></i></a> </strong>(User manual)</p>
-                <p class="mt-4 mb-4 text-end"><i class="fa-solid fa-download"></i> Download <a target="_blank" href="/app/documents/PRECICE HPRT Assay kit AN K0709-01 110609.pdf"> <strong>Application Notes <i class="fa-solid fa-note-sticky"></i></a> </strong></p>
-                <p class="mt-4 mb-5 text-end"><i class="fa-solid fa-download"></i> Download <a target="_blank" href="/app/documents/Novocib-HPRT-MSDS.pdf"> <strong>Material Safety Data Sheet <i class="fa-solid fa-passport"></i></a> </strong>(MSDS)</p>
+                <p class="mt-4 mb-4 text-end">
+                    <i class="fa-solid fa-download"></i> Download
+                    <a target="_blank" href="/app/documents/PRECICE HPRT Assay kit AN K0709-01 110609.pdf">
+                        <strong>Application Notes <i class="fa-solid fa-note-sticky"></i></strong>
+                    </a>
+                </p>
 
+                <p class="mt-4 mb-5 text-end">
+                    <i class="fa-solid fa-download"></i> Download
+                    <a target="_blank" href="/app/documents/Novocib-HPRT-MSDS.pdf">
+                        <strong>Material Safety Data Sheet <i class="fa-solid fa-passport"></i></strong>
+                    </a> (MSDS)
+                </p>
             </div>
         </div>
+
 
         <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
 
