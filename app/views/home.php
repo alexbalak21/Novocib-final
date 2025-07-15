@@ -7,6 +7,7 @@ ob_start(); ?>
 <meta name="description" content="Novocib is a biotechnology company focused on nucleotides metabolism. Company has developed a range of innovative products and services for nucleotide analysis in cells, food, feed ingredients.">
 <meta name="main services of novocib" content="services provided by novocib are: Active purified enzymes kits, One-step analysis Kits, wide range of Analytical Services">
 <meta name="keywords" content="Freshness Assay Kits, Active Purified Enzymes, Analytical Services">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <?php $metas = ob_get_clean();
 
 // LINKS CSS & JS
