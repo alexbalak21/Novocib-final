@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
 function log404request()
 {
   // Define the array of unwanted extensions
-  $unwantedExtensions = ["jpg", "png", "pdf", "css", "js", "ico", "mp4", "map", "svg"];
+  $unwantedExtensions = ["jpg", "png", "pdf", "css", "js", "ico", "mp4", "map", "svg", "json", "scss"];
   $time = date('Y-m-d H:i:s'); // Get the current timestamp
   $ip = $_SERVER['REMOTE_ADDR']; // Fetch the client's IP address
 

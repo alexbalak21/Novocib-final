@@ -385,7 +385,7 @@
             <div class=" row justify-content-center">
                 <p class="text-secondary text-center mb-3">Click to display the formula &nbsp; <i class="fa-solid fa-arrow-pointer"></i></p>
 
-                <div class="col-lg-9 col-12">
+                <div class="col-lg-6 col-12">
                     <p class="mb-0 text-center">The H-value represents <b>the relative concentration of hypoxanthine</b> compared to the total amount of ATP degradation products-namely, IMP, inosine, and hypoxanthine.</p>
                     <div class="text-center border mb-4">
                         <img class="formula-img w-100" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
