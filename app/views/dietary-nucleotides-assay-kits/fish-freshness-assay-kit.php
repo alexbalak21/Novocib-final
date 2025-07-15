@@ -3,7 +3,7 @@
 
     // META TAGS 
     ob_start(); ?>
-    <meta name="description" content="Ensure accurate seafood quality control with NOVOCIB's PRECICE® Fish Freshness Assay Kit. Quantify IMP, inosine & hypoxanthine to assess fish freshness using enzymatic NADH absorbance assay. Ideal for fresh, frozen & processed seafood." />
+    <meta name="description" content="Ensure accurate seafood quality control with NOVOCIB's PRECICE Fish Freshness Assay Kit. Quantify IMP, inosine & hypoxanthine to assess fish freshness using enzymatic NADH absorbance assay. Ideal for fresh, frozen & processed seafood." />
     <meta name="author" content="NOVOCIB" />
     <meta name="keywords" content="fish freshness assay, seafood quality control, IMP measurement, inosine, hypoxanthine, NADH absorbance, microplate reader, nucleotide assay, ATP degradation, seafood processing, K-value, fish freshness test" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
                     Fish muscle is particularly rich in ATP, which is a most abundant muscle metabolite after amino acids. Post-mortem degradation of ATP in fish muscle is a well-documented process that has significant implications for food quality and shelf life.
                 </p>
                 <p class="fs-5 border text-center">
-                    <span class="fw-bold">ATP</span> ➜ <span class="fs-6">ADP</span> ➜ <span class="fs-6">AMP</span> ➜&nbsp;<span class="text-primary fw-bold">IMP<i class="fa-solid fa-arrow-down"></i></span>&nbsp;➜ inosine ➜ <span class="text-danger fw-bold">hypoxanthine<i class="fa-solid fa-arrow-up"></i></span>
+                    <span class="fw-bold">ATP</span> ➜ <span class="fs-6">ADP</span> ➜ <span class="fs-6">AMP</span> ➜&nbsp;<span class="text-primary fw-bold">IMP<i class="fa-solid fa-arrow-down"></i></span>&nbsp;➜ inosine ➜ <span class="text-danger fw-bold">hypoxanthine<i class="fa-solid fa-arrow-up"></i></span><img src="/app/static/img/Fish-freshness/crossed_arrow.svg" class="custom-icon" alt="Not going icon" /><span class="me-1">uric acid</span>
                 </p>
                 <p>
                     Following slaughter, ATP continues to be hydrolyzed by contracting muscles; however, its resynthesis by mitochondria becomes impossible in the absence of oxygen. Within just a few hours, ATP, ADP, and AMP are enzymatically converted into IMP, which becomes the predominant nucleotide in fresh fish (Wang et al., 1998). During the first few days of storage, IMP levels gradually decline, primarily due to the activity of autolytic enzymes that hydrolyze IMP into inosine. Inosine is subsequently hydrolyzed into hypoxanthine by both autolytic and bacterial enzymes. Since fish muscle lacks xanthine oxidase—an enzyme that converts hypoxanthine into uric acid—these processes lead to the progressive accumulation of hypoxanthine, the final product of ATP degradation in fish. This accumulation has been shown to correlate with spoilage and coincides with the formation of volatile amines in cod (Dalgaard et al., 1993). Although the post-mortem ATP degradation pathway is universal, the rate of IMP degradation and hypoxanthine formation varies considerably among fish species and depends on handling and storage conditions (Surette et al., 1988).
@@ -179,6 +179,16 @@
         <div class="mt-5 mb-5">
             <h4 class="mt-5 pt-4 novo-blue text-center">🧬 Advantages of the PRECICE® IMP, inosine, hypoxanthine Assay Kit</h4>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+
+                <div class="col">
+                    <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
+                        <h6 class="mb-2">📊 Quantitative</h6>
+                        <ul class="mb-0 ps-3">
+                            <li>Measures IMP, inosine, and hypoxanthine</li>
+                            <li>Calculates freshness indices like H-value and Fr-value</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="col">
                     <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
@@ -442,3 +452,10 @@
             </div>
         </section>
     </div>
+    <style>
+        .custom-icon {
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+        }
+    </style>
