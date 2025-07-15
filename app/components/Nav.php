@@ -14,6 +14,9 @@ class Nav
                         <a href="/freshness-assay-kits">Freshness Assay Kits</a>
                         <ul>
                             <li>
+                                <a href="/dietary-nucleotides-assay-kits/fish-freshness-assay-kit">Fish Freshness Assay Kit</a>
+                            </li>
+                            <li>
                                 <a href="/freshness-assay-kits/freshness-principle">Freshness Principle</a>
                             </li>
                             <li>
@@ -24,9 +27,6 @@ class Nav
                             </li>
                             <li>
                                 <a href="/freshness-assay-kits/how-it-works">How It Works</a>
-                            </li>
-                            <li>
-                                <a href="/dietary-nucleotides-assay-kits/fish-freshness-assay-kit">Fish Freshness Assay Kit</a>
                             </li>
                         </ul>
                     </li>
