@@ -13,7 +13,7 @@
     ?>
     <link rel="stylesheet" href="/app/css/fish-freshness-assay-kit.css">
 
-    <?= Banner::gen() ?>
+    <?= Banner::gen("/app/static/img/Fish-freshness/fish-group.jpg") ?>
     <script src="/app/js/fish-freshness-page.js" defer></script>
     <main class="container w-100 mt-5">
 
