@@ -1,6 +1,6 @@
 <?php
 //require Constants
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/constants/dirs.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . '/app/constants/dirs.php';
 
 
 $root = $_SERVER['DOCUMENT_ROOT'];
