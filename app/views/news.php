@@ -18,12 +18,23 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 <div class="container py-4">
     <div class="col-lg-7 mx-auto">
         <h3 class="text-center">New Service</h3>
-        <p class="mt-4 mb-5 lead text-center">
-            We’re excited to introduce our latest innovation: the <a href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit">Fish Freshness Assay Kit</a>! 🐟<br /><br>
-            This new kit reflects our continued commitment to advancing quality and innovation in dietary nucleotide analysis.<br />
-            <a class="btn btn-primary mt-3 mb-2" href="/contact">Contact Us <i class="fa-solid fa-paper-plane"></i></a><br> We’re happy to help!
+        <p class="mt-4 lead ">
+            <span class="d-block text-center">
+                We’re excited to introduce our latest innovation: new version of the:
+            </span>
+            <a class="text-center mb-1 d-block" href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit">PRECICE® Fish Freshness Assay Kit</a>
+            This kit has been specifically designed in a 96-well plate format to facilitate the measurement of three major ATP catabolites (IMP, Inosine, and Hypoxanthine) in the same fish sample. In contrast to previous version, requiring two series of pipetting, our latest version includes microplate already prefilled with the enzymes. Just add the fish extract and mesure.
         </p>
-        <p class="text-end text-muted mt-4 mb-0">Published on July 11, 2025</p>
+        <ul class="list-unstyled">
+            <li><i class="fas fa-fish me-2 novo-blue"></i>One-step reaction launch: Just add fish extract to four wells—no reagent prep needed.</li>
+            <li><i class="fas fa-stopwatch me-2 novo-blue"></i>Faster workflow: Prep time reduced to minutes, with a 30-minute enzymatic reaction.</li>
+            <li><i class="fas fa-chart-line me-2 novo-blue"></i>Quantitative freshness assessment: Measures IMP, inosine, and hypoxanthine to calculate freshness <span class="ms-4">indices like H-value and Fr-value.</span></li>
+            <li><i class="fas fa-microscope me-2 novo-blue"></i>High specificity: No interference from other nucleotides or bases.</li>
+            <li><i class="fas fa-globe me-2 novo-blue"></i>Broad application: Works on fresh, frozen, and processed seafood.</li>
+        </ul>
+        <div><a href="" class="btn btn-primary"></a></div>
+
+        <p class="text-end text-muted mt-4 mb-1">Published on July 15, 2025</p>
     </div>
 </div>
 <div class="bg-light py-3"></div>
