@@ -1,330 +1,93 @@
 <?php
-//require Constants
 require_once $_SERVER['DOCUMENT_ROOT'] . '/app/constants/dirs.php';
-
+require_once "redirects.php"; // Handles redirects first
 
 $root = $_SERVER['DOCUMENT_ROOT'];
 $parsed_url = parse_url($_SERVER["REQUEST_URI"]);
-$req_uri = isset($parsed_url["path"]) ? $parsed_url["path"] : null;
+$request_path = rtrim(strtolower($parsed_url["path"] ?? "/"), "/");
 
-// _REQUEST PARAMETERS
-// $_REQUEST
-switch ($req_uri) {
-    case "/":
-    case "/home":
-    case "/Home":
-        require "app/views/home.php";
-        break;
+$routes = [
+    // Home
+    "/" => "app/views/home.php",
+    "/home" => "app/views/home.php",
+    "/Home" => "app/views/home.php",
 
-    // SEND MAIL LOGIC
-    case "/send":
-        require_once "app/logic/send.php";
-        break;
-
-    case "/message-sent-successfully":
-        require_once "app/views/message_sent.php";
-        break;
+    // Send Mail
+    "/send" => "app/logic/send.php",
+    "/message-sent-successfully" => "app/views/message_sent.php",
 
     // Active-Purified-Enzymes
-    case "/active-purified-enzymes":
-        require_once "app/views/active-purified-enzymes.php";
-        break;
-
-    case "/Purified_Active_Enzymes.html":
-        header("Location: /active-purified-enzymes");
-        break;
-
-    case "/IMPDH_Recombinant_Enzyme.html":
-    case "/active-purified-enzymes/impdh-recombinant-enzyme":
-        require_once "app/views/active-purified-enzymes/impdh-recombinant-enzyme.php";
-        break;
-
-    case "/Human_Recombinant_HGPRT.html":
-    case "/active-purified-enzymes/human-recombinant-hgprt":
-        require_once "app/views/active-purified-enzymes/human-recombinant-hgprt.php";
-        break;
-
-
-    case "/Recombinant_Adenosine_Kinase.html":
-        header("Location: /active-purified-enzymes/recombinant-adenosine-kinase");
-        break;
-
-    case "/active-purified-enzymes/recombinant-adenosine-kinase":
-        require_once "app/views/active-purified-enzymes/recombinant-adenosine-kinase.php";
-        break;
-
-    case "/active-purified-enzymes/recombinant-deoxycytidine-kinase":
-        require_once "app/views/active-purified-enzymes/recombinant-deoxycytidine-kinase.php";
-        break;
-
-    case "/active-purified-enzymes/cnII":
-        require_once "app/views/active-purified-enzymes/cn-ii.php";
-        break;
-
-    case "/active-purified-enzymes/human-ump-cmp-kinase":
-        require_once "app/views/active-purified-enzymes/human-ump-cmp-kinase.php";
-        break;
-
-    case "/Bacterial_FMN_Reductase":
-    case "/Bacterial_FMN_Reductase.html":
-    case "/active-purified-enzymes/fmn-reductase":
-        require_once "app/views/active-purified-enzymes/FMN-Reductase.php";
-        break;
-
-
-
-    // FRESHNESS
-    case "/freshness-assay-kits":
-        require_once "app/views/freshness-assay-kits/index.php";
-        break;
-
-    case "/Freshness_Assay_Kits.html":
-        header("Location: /freshness-assay-kits");
-        break;
-
-
-    case "/freshness-assay-kits/freshness-principle":
-        require_once "app/views/freshness-assay-kits/freshness-principle.php";
-        break;
-
-    case "/freshness-assay-kits/fish-freshness":
-        require_once "app/views/freshness-assay-kits/fish-freshness.php";
-        break;
-
-    case "/freshness-assay-kits/freshness-assay-kit":
-        require_once "app/views/freshness-assay-kits/freshness-assay-kit.php";
-        break;
-
-    case "/freshness-assay-kits/how-it-works":
-        require_once "app/views/freshness-assay-kits/how-it-works.html";
-        break;
-
-    case "/Freshness_Protocol.html":
-        header("Location: /freshness-assay-kits/how-it-works");
-        break;
-
-
-    case "/Fish_Freshness_K_Value_Assay.html":
-        header("Location: /freshness-assay-kits/freshness-assay-kit");
-        break;
-
-    // CONVENIENT ASSAY KITS
-    case "/Convenient_Assay_Kits.html":
-    case "/convenient-assay-kits":
-        require_once "app/views/convenient-assay-kits/index.php";
-        break;
-
-    case "//HPRT_Assay_Kit.html":
-    case "/convenient-assay-kits/hprt-assay-kit":
-        require_once "app/views/convenient-assay-kits/hprt-assay-kit.php";
-        break;
-
-    case "/convenient-assay-kits/prpp-s-assay-kit":
-        require_once "app/views/convenient-assay-kits/prpp-s-assay-kit.php";
-        break;
-
-    case "/PRPPS_Assay_Kit.html":
-        header("Location: /convenient-assay-kits/prpp-s-assay-kit");
-        break;
-
-    case "/AMPDA_Assay_Kit.html":
-        header("Location: /convenient-assay-kits/ampda-assay-kit");
-        break;
-
-    case "/convenient-assay-kits/ampda-assay-kit":
-        require_once "app/views/convenient-assay-kits/ampda-assay-kit.php";
-        break;
-
-    case "/convenient-assay-kits/itp-ase-deficiency-assay-kit.php":
-    case "/convenient-assay-kits/itp-ase-assay-kit":
-        require_once "app/views/convenient-assay-kits/itp-ase-deficiency-assay-kit.php";
-        break;
-
-    case "/ADK_Phosphorylation_Assay_Kit.html":
-        header("Location: /convenient-assay-kits/adk-phosphorylation-assay-kit");
-        break;
-
-    case "/convenient-assay-kits/adk-phosphorylation-assay-kit":
-        require_once "app/views/convenient-assay-kits/adk-phosphorylation-assay-kit.php";
-        break;
-
-
-
-    case "/dCK_Phosphorylation_In_Vitro_Assay_Service":
-    case "/convenient-assay-kits/dck-phosphorylation-assay-kit":
-        require_once "app/views/convenient-assay-kits/dck-phosphorylation-assay-kit.php";
-        break;
-
-    case "/Human_Recombinant_IMPDH.html":
-        header("Location: /convenient-assay-kits/human-recombinant-impdh");
-        break;
-
-    case "/convenient-assay-kits/human-recombinant-impdh":
-        require_once "app/views/convenient-assay-kits/human-recombinant-impdh.php";
-        break;
-
-    case "/convenient-assay-kits/bacterial-recombinant-impdh":
-        require_once "app/views/convenient-assay-kits/bacterial-recombinant-impdh.php";
-        break;
-
-    case "/Human_Recombinant_PNP.html":
-        header("Location: /convenient-assay-kits/human-recombinant-pnp");
-        break;
-
-    case "/convenient-assay-kits/human-recombinant-pnp":
-        require_once "app/views/convenient-assay-kits/human-recombinant-pnp.php";
-        break;
-
-    case "/ADK_Assay_Kit.html":
-    case "/convenient-assay-kits/adk-assay-kit":
-        require_once "app/views/convenient-assay-kits/adk-assay-kit.php";
-        break;
-
-    case "/convenient-assay-kits/phosphatase-assay-kit":
-        require_once "app/views/convenient-assay-kits/phosphatase-assay-kit.html";
-        break;
-
-
-
-    case "/hplc-analysis-of-bases-nucleosides":
-        require_once "app/views/hplc-analysis-of-bases-nucleosides.php";
-        break;
-
-    case "/Nucleotide_Analysis_Services.html":
-        header("Location: /nucleotide-analysis-service");
-        break;
-
-    case "/cellular-nucleotides-analysis":
-    case "/Cellular_Nucleotides_Analysis.html":
-        require_once "app/views/cellular-nucleotides-analysis.php";
-        break;
-
-    case "/nucleotides":
-        header("Location: /dietary-nucleotides");
-        break;
-
-    case "/dietary-nucleotides":
-        require_once "app/views/nucleotides.php";
-        break;
-
-    case "/inquiry":
-        require_once "app/views/inquiry.php";
-        break;
-
-    case "/contact":
-        header("Location: /contact-us");
-        break;
-
-    case "/contact-us":
-        require_once "app/views/contact-us.php";
-        break;
-
-    case "/Yeast_Extract_Nucleotide_Analysis.html":
-        header("Location: /yeast-extract-nucleotide-analysis");
-        break;
-
-    case "/yeast-extract-nucleotide-analysis":
-        require_once "app/views/analytical-services/yeast-extract-nucleotide-analysis.php";
-        break;
-
-
-
-
-    // Dietary Nucleotides Assay Kits
-    case "/dietary-nucleotides-assay-kits":
-        require_once $root . "/app/views/dietary-nucleotides-assay-kits/index.php";
-        break;
-
-    case "/dietary-nucleotides-assay-kits/fish-freshness-assay-kit":
-        require_once $root . "/app/views/dietary-nucleotides-assay-kits/fish-freshness-assay-kit.php";
-        break;
-
-
-
-    // SERVICES
-    case "/services":
-    case "/analytical-services":
-        require_once "app/views/analytical-services/index.php";
-        break;
-
-    case "/nucleotide-analysis-service":
-        require_once "app/views/nucleotide-analysis-service.php";
-        break;
-
-    case "/analytical-services/yeast-extract-nucleotide-analysis":
-        require_once "app/views/analytical-services/yeast-extract-nucleotide-analysis.php";
-        break;
-
-    case "/bacterial-luciferase":
-        require_once "app/views/bacterial-luciferase.html";
-        break;
-
-    case "/Bacterial_Luciferase.html":
-        header("Location: /bacterial-luciferase");
-        break;
-
-    case "/Company.html":
-        header("Location: /news");
-        break;
-
-    case "/News.html":
-        header("Location: /news");
-        break;
-
-    case "/Team.html":
-        header("Location: /");
-        break;
-
-    case "/news":
-        require_once "app/views/news.php";
-        break;
-
-    case "/search":
-        require_once "app/views/search.php";
-        break;
-
-    case "/internal/share":
-        require_once "app/internal/share/index.php";
-        break;
-
-    case "/internal/admin":
-        header("Location: /app/internal/admin/");
-        break;
-
-    case "/secure-info":
-        require_once "app/controllers/SecureInfoController.php";
-        break;
-
-    case "/secure/login":
-        require_once "app/views/secure/login.php";
-        break;
-
-    case "/secure/login-c":
-        require_once "app/controllers/SecureLogin.php";
-        break;
-
-    case "/secure/transfer":
-        require_once "app/views/secure/transfer.php";
-        break;
-
-    case "/secure/store":
-        require_once "app/controllers/SaveCardInfo.php";
-        break;
-
-    case "/secure/success":
-        require_once "app/views/secure/success.php";
-        break;
-
-    case "/error":
-        require_once "app/views/error.php";
-        break;
-
-    case "/app/logic/log404.php":
-        echo "LOG 404";
-        header("Location: /not-found");
-        break;
-
-    default:
-        require_once $_SERVER["DOCUMENT_ROOT"] . "/app/views/404.php";
-        break;
+    "/active-purified-enzymes" => "app/views/active-purified-enzymes.php",
+    "/active-purified-enzymes/impdh-recombinant-enzyme" => "app/views/active-purified-enzymes/impdh-recombinant-enzyme.php",
+    "/active-purified-enzymes/human-recombinant-hgprt" => "app/views/active-purified-enzymes/human-recombinant-hgprt.php",
+    "/active-purified-enzymes/recombinant-adenosine-kinase" => "app/views/active-purified-enzymes/recombinant-adenosine-kinase.php",
+    "/active-purified-enzymes/recombinant-deoxycytidine-kinase" => "app/views/active-purified-enzymes/recombinant-deoxycytidine-kinase.php",
+    "/active-purified-enzymes/cnii" => "app/views/active-purified-enzymes/cn-ii.php",
+    "/active-purified-enzymes/human-ump-cmp-kinase" => "app/views/active-purified-enzymes/human-ump-cmp-kinase.php",
+    "/active-purified-enzymes/fmn-reductase" => "app/views/active-purified-enzymes/FMN-Reductase.php",
+
+    // Freshness Assay Kits
+    "/freshness-assay-kits" => "app/views/freshness-assay-kits/index.php",
+    "/freshness-assay-kits/freshness-principle" => "app/views/freshness-assay-kits/freshness-principle.php",
+    "/freshness-assay-kits/fish-freshness" => "app/views/freshness-assay-kits/fish-freshness.php",
+    "/freshness-assay-kits/freshness-assay-kit" => "app/views/freshness-assay-kits/freshness-assay-kit.php",
+    "/freshness-assay-kits/how-it-works" => "app/views/freshness-assay-kits/how-it-works.html",
+
+    // Convenient Assay Kits
+    "/convenient-assay-kits" => "app/views/convenient-assay-kits/index.php",
+    "/convenient-assay-kits/hprt-assay-kit" => "app/views/convenient-assay-kits/hprt-assay-kit.php",
+    "/convenient-assay-kits/prpp-s-assay-kit" => "app/views/convenient-assay-kits/prpp-s-assay-kit.php",
+    "/convenient-assay-kits/ampda-assay-kit" => "app/views/convenient-assay-kits/ampda-assay-kit.php",
+    "/convenient-assay-kits/itp-ase-assay-kit" => "app/views/convenient-assay-kits/itp-ase-deficiency-assay-kit.php",
+    "/convenient-assay-kits/itp-ase-deficiency-assay-kit.php" => "app/views/convenient-assay-kits/itp-ase-deficiency-assay-kit.php",
+    "/convenient-assay-kits/adk-phosphorylation-assay-kit" => "app/views/convenient-assay-kits/adk-phosphorylation-assay-kit.php",
+    "/convenient-assay-kits/dck-phosphorylation-assay-kit" => "app/views/convenient-assay-kits/dck-phosphorylation-assay-kit.php",
+    "/convenient-assay-kits/human-recombinant-impdh" => "app/views/convenient-assay-kits/human-recombinant-impdh.php",
+    "/convenient-assay-kits/bacterial-recombinant-impdh" => "app/views/convenient-assay-kits/bacterial-recombinant-impdh.php",
+    "/convenient-assay-kits/human-recombinant-pnp" => "app/views/convenient-assay-kits/human-recombinant-pnp.php",
+    "/convenient-assay-kits/adk-assay-kit" => "app/views/convenient-assay-kits/adk-assay-kit.php",
+    "/convenient-assay-kits/phosphatase-assay-kit" => "app/views/convenient-assay-kits/phosphatase-assay-kit.html",
+
+    // Nucleotides and Analysis
+    "/hplc-analysis-of-bases-nucleosides" => "app/views/hplc-analysis-of-bases-nucleosides.php",
+    "/nucleotide-analysis-service" => "app/views/nucleotide-analysis-service.php",
+    "/cellular-nucleotides-analysis" => "app/views/cellular-nucleotides-analysis.php",
+    "/dietary-nucleotides" => "app/views/nucleotides.php",
+    "/nucleotides" => "app/views/nucleotides.php",
+    "/dietary-nucleotides-assay-kits" => "app/views/dietary-nucleotides-assay-kits/index.php",
+    "/dietary-nucleotides-assay-kits/fish-freshness-assay-kit" => "app/views/dietary-nucleotides-assay-kits/fish-freshness-assay-kit.php",
+
+    // Services
+    "/services" => "app/views/analytical-services/index.php",
+    "/analytical-services" => "app/views/analytical-services/index.php",
+    "/analytical-services/yeast-extract-nucleotide-analysis" => "app/views/analytical-services/yeast-extract-nucleotide-analysis.php",
+    "/yeast-extract-nucleotide-analysis" => "app/views/analytical-services/yeast-extract-nucleotide-analysis.php",
+
+    // Other Pages
+    "/bacterial-luciferase" => "app/views/bacterial-luciferase.html",
+    "/news" => "app/views/news.php",
+    "/search" => "app/views/search.php",
+    "/inquiry" => "app/views/inquiry.php",
+    "/contact" => "app/views/contact-us.php",
+    "/contact-us" => "app/views/contact-us.php",
+
+    // Internal and Secure
+    "/internal/share" => "app/internal/share/index.php",
+    "/internal/admin" => "app/internal/admin/",
+    "/secure-info" => "app/controllers/SecureInfoController.php",
+    "/secure/login" => "app/views/secure/login.php",
+    "/secure/login-c" => "app/controllers/SecureLogin.php",
+    "/secure/transfer" => "app/views/secure/transfer.php",
+    "/secure/store" => "app/controllers/SaveCardInfo.php",
+    "/secure/success" => "app/views/secure/success.php",
+    "/error" => "app/views/error.php"
+];
+
+if (array_key_exists($request_path, $routes)) {
+    require_once $routes[$request_path];
+} elseif ($request_path === "/app/logic/log404.php") {
+    echo "LOG 404";
+    header("Location: /not-found");
+} else {
+    require_once "$root/app/views/404.php";
 }
