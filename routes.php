@@ -27,7 +27,7 @@ return [
     '/active-purified-enzymes/human-recombinant-hgprt' => 'app/views/active-purified-enzymes/human-recombinant-hgprt.php',
     '/active-purified-enzymes/recombinant-adenosine-kinase' => 'app/views/active-purified-enzymes/recombinant-adenosine-kinase.php',
     '/active-purified-enzymes/recombinant-deoxycytidine-kinase' => 'app/views/active-purified-enzymes/recombinant-deoxycytidine-kinase.php',
-    '/active-purified-enzymes/cnII' => 'app/views/active-purified-enzymes/cn-ii.php',
+    '/active-purified-enzymes/cn-ii' => 'app/views/active-purified-enzymes/cn-ii.php',
     '/active-purified-enzymes/human-ump-cmp-kinase' => 'app/views/active-purified-enzymes/human-ump-cmp-kinase.php',
     '/active-purified-enzymes/fmn-reductase' => 'app/views/active-purified-enzymes/FMN-Reductase.php',
 

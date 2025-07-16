@@ -1,0 +1,69 @@
+﻿URL,Status Code,Status Description,Response Time (ms),Content Length (bytes)
+"http://localhost:3000/",200,"OK",227,26403
+"http://localhost:3000/home",200,"OK",232,26403
+"http://localhost:3000/index.php",200,"OK",270,26403
+"http://localhost:3000/index.html",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/contact",200,"OK",222,12807
+"http://localhost:3000/contact-us",200,"OK",188,12807
+"http://localhost:3000/inquiry",200,"OK",228,12912
+"http://localhost:3000/message-sent-successfully",200,"OK",185,9745
+"http://localhost:3000/send",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/products",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/active-purified-enzymes",200,"OK",311,13472
+"http://localhost:3000/convenient-assay-kits",200,"OK",186,16225
+"http://localhost:3000/dietary-nucleotides-assay-kits",200,"OK",180,14476
+"http://localhost:3000/freshness-assay-kits",200,"OK",226,13192
+"http://localhost:3000/active-purified-enzymes/impdh-recombinant-enzyme",200,"OK",244,12448
+"http://localhost:3000/active-purified-enzymes/human-recombinant-hgprt",200,"OK",233,13838
+"http://localhost:3000/active-purified-enzymes/recombinant-adenosine-kinase",200,"OK",331,21206
+"http://localhost:3000/active-purified-enzymes/recombinant-deoxycytidine-kinase",200,"OK",212,14846
+"http://localhost:3000/active-purified-enzymes/cnii",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/active-purified-enzymes/cn-ii",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/active-purified-enzymes/human-ump-cmp-kinase",200,"OK",211,16587
+"http://localhost:3000/active-purified-enzymes/fmn-reductase",200,"OK",267,17271
+"http://localhost:3000/active-purified-enzymes/human-recombinant-pnp",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/active-purified-enzymes/human-recombinant-impdh",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/active-purified-enzymes/bacterial-recombinant-impdh",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/convenient-assay-kits",200,"OK",216,16225
+"http://localhost:3000/convenient-assay-kits/hprt-assay-kit",200,"OK",209,29193
+"http://localhost:3000/convenient-assay-kits/prpp-s-assay-kit",200,"OK",202,20317
+"http://localhost:3000/convenient-assay-kits/ampda-assay-kit",200,"OK",199,15277
+"http://localhost:3000/convenient-assay-kits/itp-ase-assay-kit",200,"OK",213,16615
+"http://localhost:3000/convenient-assay-kits/itp-ase-deficiency-assay-kit",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/convenient-assay-kits/adk-phosphorylation-assay-kit",200,"OK",278,16289
+"http://localhost:3000/convenient-assay-kits/dck-phosphorylation-assay-kit",200,"OK",191,20251
+"http://localhost:3000/convenient-assay-kits/adk-assay-kit",200,"OK",204,22214
+"http://localhost:3000/convenient-assay-kits/phosphatase-assay-kit",200,"OK",183,16982
+"http://localhost:3000/convenient-assay-kits/human-recombinant-impdh",200,"OK",200,28443
+"http://localhost:3000/convenient-assay-kits/bacterial-recombinant-impdh",200,"OK",199,14983
+"http://localhost:3000/convenient-assay-kits/human-recombinant-pnp",200,"OK",230,20953
+"http://localhost:3000/freshness-assay-kits",200,"OK",214,13192
+"http://localhost:3000/freshness-assay-kits/freshness-principle",200,"OK",185,14499
+"http://localhost:3000/freshness-assay-kits/fish-freshness",200,"OK",215,22137
+"http://localhost:3000/freshness-assay-kits/freshness-assay-kit",200,"OK",299,21338
+"http://localhost:3000/freshness-assay-kits/how-it-works",200,"OK",206,11877
+"http://localhost:3000/dietary-nucleotides-assay-kits",200,"OK",221,14476
+"http://localhost:3000/dietary-nucleotides-assay-kits/fish-freshness-assay-kit",200,"OK",245,39791
+"http://localhost:3000/services",200,"OK",217,12241
+"http://localhost:3000/analytical-services",200,"OK",373,12252
+"http://localhost:3000/analytical-services/yeast-extract-nucleotide-analysis",200,"OK",195,14656
+"http://localhost:3000/yeast-extract-nucleotide-analysis",200,"OK",174,14585
+"http://localhost:3000/hplc-analysis-of-bases-nucleosides",200,"OK",187,10147
+"http://localhost:3000/nucleotide-analysis-service",200,"OK",199,23745
+"http://localhost:3000/cellular-nucleotides-analysis",200,"OK",423,27883
+"http://localhost:3000/nucleotides",200,"OK",772,21351
+"http://localhost:3000/dietary-nucleotides",200,"OK",477,21351
+"http://localhost:3000/bacterial-luciferase",200,"OK",210,18716
+"http://localhost:3000/news",200,"OK",192,13128
+"http://localhost:3000/search",200,"OK",180,12037
+"http://localhost:3000/this-page-should-not-exist-12345",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/secure/login",200,"OK",349,26403
+"http://localhost:3000/secure/login-c",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/secure/transfer",200,"OK",407,26403
+"http://localhost:3000/secure/store",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/secure/success",200,"OK",195,9890
+"http://localhost:3000/internal/share",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/internal/admin",200,"OK",84,1439
+"http://localhost:3000/secure-info",404,"The remote server returned an error: (404) Not Found.",0,0
+"http://localhost:3000/error",200,"OK",162,9883
+"http://localhost:3000/404",200,"OK",226,11134

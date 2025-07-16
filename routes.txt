@@ -17,13 +17,25 @@
 /active-purified-enzymes/human-recombinant-hgprt
 /active-purified-enzymes/recombinant-adenosine-kinase
 /active-purified-enzymes/recombinant-deoxycytidine-kinase
-/active-purified-enzymes/cnii
-/active-purified-enzymes/cn-ii
+/active-purified-enzymes/cnII
 /active-purified-enzymes/human-ump-cmp-kinase
 /active-purified-enzymes/fmn-reductase
-/active-purified-enzymes/human-recombinant-pnp
-/active-purified-enzymes/human-recombinant-impdh
-/active-purified-enzymes/bacterial-recombinant-impdh
+
+# ======================
+# CONVENIENT ASSAY KITS
+# ======================
+/convenient-assay-kits
+/convenient-assay-kits/hprt-assay-kit
+/convenient-assay-kits/prpp-s-assay-kit
+/convenient-assay-kits/ampda-assay-kit
+/convenient-assay-kits/itp-ase-assay-kit
+/convenient-assay-kits/adk-phosphorylation-assay-kit
+/convenient-assay-kits/dck-phosphorylation-assay-kit
+/convenient-assay-kits/human-recombinant-impdh
+/convenient-assay-kits/bacterial-recombinant-impdh
+/convenient-assay-kits/human-recombinant-pnp
+/convenient-assay-kits/adk-assay-kit
+/convenient-assay-kits/phosphatase-assay-kit
 
 # ======================
 # FRESHNESS ASSAY KITS
@@ -35,58 +47,31 @@
 /freshness-assay-kits/how-it-works
 
 # ======================
-# CONVENIENT ASSAY KITS
-# ======================
-/convenient-assay-kits
-/convenient-assay-kits/hprt-assay-kit
-/convenient-assay-kits/prpp-s-assay-kit
-/convenient-assay-kits/ampda-assay-kit
-/convenient-assay-kits/itp-ase-assay-kit
-/convenient-assay-kits/itp-ase-deficiency-assay-kit
-/convenient-assay-kits/adk-phosphorylation-assay-kit
-/convenient-assay-kits/dck-phosphorylation-assay-kit
-/convenient-assay-kits/adk-assay-kit
-/convenient-assay-kits/phosphatase-assay-kit
-/convenient-assay-kits/human-recombinant-impdh
-/convenient-assay-kits/bacterial-recombinant-impdh
-/convenient-assay-kits/human-recombinant-pnp
-
-# ======================
 # ANALYTICAL SERVICES
 # ======================
-/services
 /analytical-services
 /analytical-services/yeast-extract-nucleotide-analysis
-/yeast-extract-nucleotide-analysis
 /nucleotide-analysis-service
 /cellular-nucleotides-analysis
 /dietary-nucleotides
-/nucleotides
-
-# ======================
-# DIETARY NUCLEOTIDES ASSAY KITS
-# ======================
-/dietary-nucleotides-assay-kits
 /dietary-nucleotides-assay-kits/fish-freshness-assay-kit
 
 # ======================
-# OTHER PAGES
+# PAGES
 # ======================
+/contact-us
+/inquiry
+/message-sent-successfully
 /bacterial-luciferase
 /news
 /search
-/inquiry
-/contact
-/contact-us
-/products
-/hplc-analysis-of-bases-nucleosides
-/cellular-nucleotides-analysis
+/error
+/404
 
 # ======================
 # FORM HANDLERS & ACTIONS
 # ======================
 /send
-/message-sent-successfully
 
 # ======================
 # SECURE/INTERNAL ROUTES
@@ -107,12 +92,6 @@
 /app/js/*
 /app/static/*
 /app/images/*
-
-# ======================
-# ERROR PAGES
-# ======================
-/404
-/error
 
 # ======================
 # API ENDPOINTS

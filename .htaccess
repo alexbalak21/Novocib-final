@@ -66,24 +66,27 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
     # Example: If your site is in http://localhost/myapp/
     # RewriteBase /myapp/
     
+    # Redirect /index.html to /
+    RewriteRule ^index\.html$ / [R=301,L]
+
     # Redirect www to non-www (or vice versa)
     # RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
     # RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-    
+
     # Force HTTPS (uncomment in production)
     # RewriteCond %{HTTPS} off
     # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-    
+
     # Allow access to existing files and directories
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    
+
     # Route all other requests through index.php
     RewriteRule ^(.*)$ index.php [L,QSA]
-    
+
     # Prevent access to hidden files and directories
     RewriteRule ^app/(?!templates|views/).*$ - [F,L,NC]
-    
+
     # Block access to sensitive files
     RewriteRule ^(composer\.(json|lock|phar)|package\.json|package-lock\.json|\.git.*|\.env.*|\.htaccess)$ - [F,L,NC]
 </IfModule>
@@ -134,10 +137,10 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
 <IfModule mod_expires.c>
     ExpiresActive on
     ExpiresDefault                                      "access plus 1 month"
-    
+
     # CSS
     ExpiresByType text/css                              "access plus 1 year"
-    
+
     # Data interchange
     ExpiresByType application/atom+xml                  "access plus 1 hour"
     ExpiresByType application/rdf+xml                   "access plus 1 hour"
@@ -149,24 +152,24 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
     ExpiresByType application/xml                       "access plus 0 seconds"
     ExpiresByType text/calendar                         "access plus 0 seconds"
     ExpiresByType text/xml                              "access plus 0 seconds"
-    
+
     # Favicon (cannot be renamed!) and cursor images
     ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
     ExpiresByType image/x-icon                          "access plus 1 week"
-    
+
     # HTML
     ExpiresByType text/html                             "access plus 0 seconds"
-    
+
     # JavaScript
     ExpiresByType application/javascript                "access plus 1 year"
     ExpiresByType application/x-javascript              "access plus 1 year"
     ExpiresByType text/javascript                       "access plus 1 year"
-    
+
     # Manifest files
     ExpiresByType application/manifest+json             "access plus 1 week"
     ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
     ExpiresByType text/cache-manifest                   "access plus 0 seconds"
-    
+
     # Media files
     ExpiresByType audio/ogg                             "access plus 1 month"
     ExpiresByType image/bmp                             "access plus 1 month"
@@ -178,7 +181,7 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
     ExpiresByType video/mp4                             "access plus 1 month"
     ExpiresByType video/ogg                             "access plus 1 month"
     ExpiresByType video/webm                            "access plus 1 month"
-    
+
     # Web fonts
     ExpiresByType application/vnd.ms-fontobject         "access plus 1 year"
     ExpiresByType font/eot                              "access plus 1 year"
@@ -188,7 +191,7 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
     ExpiresByType application/x-font-woff               "access plus 1 year"
     ExpiresByType font/woff                             "access plus 1 year"
     ExpiresByType application/font-woff2                "access plus 1 year"
-    
+
     # Other
     ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 </IfModule>
@@ -212,7 +215,7 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
 </FilesMatch>
 
 # Block access to development and version control files
-<FilesMatch "^(README\.md|CHANGELOG\.md|CONTRIBUTING\.md|UPGRADE\.md|composer\.json|composer\.lock|package\.json|package-lock\.json|gulpfile\.js|webpack\.config\.js|phpunit\.xml|\.gitignore|\.gitattributes|bitbucket-pipelines\.yml|docker-compose\.yml|\.editorconfig|\.env\.example|\.env\.local|\.env\.test|\.env\.dev|\.env\.prod|\.env\.staging|\.env\.development|\.env\.production|\.env\..*|\.php_cs\.dist|phpunit\.xml\.dist|phpunit\.xml|behat\.yml|phpspec\.yml|phpstan\.neon|phpcs\.xml|phpmd\.xml|phpstan\.neon|phpunit\.xml\.dist|phpunit\.xml|behat\.yml|phpspec\.yml|phpstan\.neon|phpcs\.xml|phpmd\.xml|phpstan\.neon)$">
+<FilesMatch "^(README\.md|CHANGELOG\.md|CONTRIBUTING\.md|UPGRADE\.md|composer\.json|composer\.lock|package\.json|package-lock\.json|gulpfile\.js|webpack\.config\.js|phpunit\.xml|\.gitignore|\.gitattributes|bitbucket-pipelines\.yml|docker-compose\.yml|\.editorconfig|\.env\.example|\.env\.local|\.env\.test|\.env\.dev|\.env\.prod|\.env\.staging|\.env\.development|\.env\.production|\.env\..*|\.php_cs\.dist|phpunit\.xml\.dist|phpunit\.xml|behat\.yml|phpspec\.yml|phpstan\.neon|phpcs\.xml|phpmd\.xml|phpstan\.neon)$">
     Require all denied
 </FilesMatch>
 

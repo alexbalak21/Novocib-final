@@ -90,7 +90,7 @@ Write-Host "Found $($urls.Count) URLs to test" -ForegroundColor Cyan
 
 # Create a timestamp for the log file
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
-$logFile = "url_test_results_${timestamp}.csv"
+$logFile = "url_test_results.csv"
 
 # Write CSV header
 "URL,Status Code,Status Description,Response Time (ms),Content Length (bytes)" | Out-File -FilePath $logFile -Encoding UTF8

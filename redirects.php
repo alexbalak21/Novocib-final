@@ -21,6 +21,11 @@ $redirects = [
     "/Freshness_Protocol.html" => "/freshness-assay-kits/how-it-works",
     "/Fish_Freshness_K_Value_Assay.html" => "/freshness-assay-kits/freshness-assay-kit",
 
+    //ACTIVE-PURIFIED-ENZYMES
+    "/active-purified-enzymes/cnii" => "/active-purified-enzymes/cn-ii",
+    "/active-purified-enzymes/cnII" => "/active-purified-enzymes/cn-ii",
+
+
     // Convenient Assay Kits
     "/Convenient_Assay_Kits.html" => "/convenient-assay-kits",
     "/PRPPS_Assay_Kit.html" => "/convenient-assay-kits/prpp-s-assay-kit",
