@@ -13,7 +13,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 
 
-<?= Banner::gen() ?>
+<?= Banner::gen("/app/static/img/phosphatase-assay-kit.jpg") ?>
 <main class="container mt-5">
     <h2 class="underlinedTitle center">
         <span class="underlined novoblue center">Continuous Phosphatase Assay</span>
