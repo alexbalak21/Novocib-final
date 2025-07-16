@@ -114,7 +114,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
                 <div class="col">
                     <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
-                        <h6 class="mb-2">🧼 Convenient</h6>
+                        <h6 class="mb-2">☑️ Convenient</h6>
                         <ul class="mb-0 ps-3">
                             <li>Non-radioactive</li>
                             <li>Homogenous</li>
