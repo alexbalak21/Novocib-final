@@ -24,28 +24,16 @@ base_url=http://localhost:3000
 /send
 
 # ======================
-# PRODUCT CATEGORIES
-# ======================
-/products
-/active-purified-enzymes
-/convenient-assay-kits
-/dietary-nucleotides-assay-kits
-/freshness-assay-kits
-
-# ======================
 # ACTIVE PURIFIED ENZYMES
 # ======================
+/active-purified-enzymes
 /active-purified-enzymes/impdh-recombinant-enzyme
 /active-purified-enzymes/human-recombinant-hgprt
 /active-purified-enzymes/recombinant-adenosine-kinase
 /active-purified-enzymes/recombinant-deoxycytidine-kinase
-/active-purified-enzymes/cnii
 /active-purified-enzymes/cn-ii
 /active-purified-enzymes/human-ump-cmp-kinase
 /active-purified-enzymes/fmn-reductase
-/active-purified-enzymes/human-recombinant-pnp
-/active-purified-enzymes/human-recombinant-impdh
-/active-purified-enzymes/bacterial-recombinant-impdh
 
 # ======================
 # CONVENIENT ASSAY KITS
@@ -55,14 +43,13 @@ base_url=http://localhost:3000
 /convenient-assay-kits/prpp-s-assay-kit
 /convenient-assay-kits/ampda-assay-kit
 /convenient-assay-kits/itp-ase-assay-kit
-/convenient-assay-kits/itp-ase-deficiency-assay-kit
 /convenient-assay-kits/adk-phosphorylation-assay-kit
 /convenient-assay-kits/dck-phosphorylation-assay-kit
-/convenient-assay-kits/adk-assay-kit
-/convenient-assay-kits/phosphatase-assay-kit
 /convenient-assay-kits/human-recombinant-impdh
 /convenient-assay-kits/bacterial-recombinant-impdh
 /convenient-assay-kits/human-recombinant-pnp
+/convenient-assay-kits/adk-assay-kit
+/convenient-assay-kits/phosphatase-assay-kit
 
 # ======================
 # FRESHNESS ASSAY KITS
@@ -76,6 +63,8 @@ base_url=http://localhost:3000
 # ======================
 # DIETARY NUCLEOTIDES
 # ======================
+/nucleotides
+/dietary-nucleotides
 /dietary-nucleotides-assay-kits
 /dietary-nucleotides-assay-kits/fish-freshness-assay-kit
 
@@ -91,12 +80,6 @@ base_url=http://localhost:3000
 /cellular-nucleotides-analysis
 
 # ======================
-# NUCLEOTIDES
-# ======================
-/nucleotides
-/dietary-nucleotides
-
-# ======================
 # OTHER PAGES
 # ======================
 /bacterial-luciferase
@@ -104,25 +87,25 @@ base_url=http://localhost:3000
 /search
 
 # ======================
-# TEST PAGES
-# ======================
-# Test 404 Page (should return 404)
-/this-page-should-not-exist-12345
-
-# ======================
 # SECURE/INTERNAL ROUTES
 # ======================
+/internal/share
+/internal/admin
+/secure-info
 /secure/login
 /secure/login-c
 /secure/transfer
 /secure/store
 /secure/success
-/internal/share
-/internal/admin
-/secure-info
 
 # ======================
 # ERROR PAGES
 # ======================
 /error
 /404
+
+# ======================
+# TEST PAGES
+# ======================
+# Test 404 Page (should return 404)
+/this-page-should-not-exist-12345

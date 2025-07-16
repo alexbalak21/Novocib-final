@@ -35,10 +35,10 @@ function logVisitToDB($time, $ip, $request)
 {
   $conn = connect_db();
   try {
-    $sql = "INSERT INTO vlog (`datetime`, ip, request) VALUES ('$time', '$ip', '$request')";
-    $conn->exec($sql);
+    $stmt = $conn->prepare("INSERT INTO vlog (`datetime`, ip, request) VALUES (?, ?, ?)");
+    $stmt->execute([$time, $ip, $request]);
   } catch (PDOException $e) {
-    echo $sql . "<br>" . $e->getMessage();
+    error_log("Database error: " . $e->getMessage()); // Log quietly, don't echo to screen
   }
   $conn = null;
 }
@@ -82,18 +82,20 @@ function log404toDB($time, $ip, $query)
 
 
 
-function execute_query($sql)
+function execute_query($sql, $params = [])
 {
   if (!check_id()) return false;
   $conn = connect_db();
   try {
-    $conn->exec($sql);
+    $stmt = $conn->prepare($sql);
+    $stmt->execute($params);
     return true;
   } catch (Exception $e) {
-    echo 'Error: ' . $e->getMessage();
+    error_log('DB error: ' . $e->getMessage());
     return false;
   }
 }
+
 
 
 function create_entry($url = "",  $title = "", $content = "", $keywords = "")
