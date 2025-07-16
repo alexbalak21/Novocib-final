@@ -58,25 +58,30 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 <table class="table product mb-2">
                     <thead>
                         <tr>
-                            <th>#REF</th>
+                            <th class="d-none d-md-table-cell">#REF</th>
                             <th class="text-center">SIZE</th>
-                            <th class="text-center">PRICE</th>
-                            <th class="pe-5"></th>
+                            <th class="text-center d-none d-md-table-cell">PRICE</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>#K0211-01</td>
-                            <td class="text-center"><strong>1 plate (96 assays)</strong></td>
-                            <td class="price text-center">€ 410.00</td>
+                            <td class="d-none d-md-table-cell">#K0211-01</td>
+                            <td class="text-center">
+                                PRECICE® Phosphatase Assay Kit<br>
+                                1 plate (96 assays)
+                            </td>
+                            <td class="d-none d-md-table-cell text-center">410.00 €</td>
                             <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=K0211-01&product=PRECICE® Phosphatase Assay Kit">
-                                    Inquiry
+                                <div class="d-block d-md-none text-end mb-1 fw-bold">410.00 €</div>
+                                <a title="Order" class="btn btn-primary" href="/inquiry?ref=K0211-01&product=PRECICE® Phosphatase Assay Kit">
+                                    Inquiry <i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+
                 <p class="text-muted text-center">
                     <em>Pricing updated November 25th, 2024.</em>
                     <br />
