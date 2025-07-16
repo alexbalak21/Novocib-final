@@ -36,22 +36,22 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
 <IfModule mod_headers.c>
     # Protect against XSS attacks
     Header set X-XSS-Protection "1; mode=block"
-
+    
     # Prevent MIME-type sniffing
     Header set X-Content-Type-Options "nosniff"
-
+    
     # Prevent clickjacking
     Header always append X-Frame-Options SAMEORIGIN
-
+    
     # Enable XSS protection built into browsers
     Header set X-XSS-Protection "1; mode=block"
-
+    
     # Enable HSTS (uncomment in production with SSL)
     # Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-
+    
     # Referrer Policy
     Header set Referrer-Policy "strict-origin-when-cross-origin"
-
+    
     # Content Security Policy (example - adjust as needed)
     # Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
 </IfModule>
@@ -61,29 +61,29 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
 # ----------------------------------------------------------------------
 <IfModule mod_rewrite.c>
     RewriteEngine On
-
+    
     # If your site is in a subdirectory, uncomment and set the path here
     # Example: If your site is in http://localhost/myapp/
     # RewriteBase /myapp/
-
+    
     # Redirect www to non-www (or vice versa)
     # RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
     # RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-
+    
     # Force HTTPS (uncomment in production)
     # RewriteCond %{HTTPS} off
     # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
+    
     # Allow access to existing files and directories
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-
+    
     # Route all other requests through index.php
     RewriteRule ^(.*)$ index.php [L,QSA]
-
+    
     # Prevent access to hidden files and directories
     RewriteRule ^app/(?!templates|views/).*$ - [F,L,NC]
-
+    
     # Block access to sensitive files
     RewriteRule ^(composer\.(json|lock|phar)|package\.json|package-lock\.json|\.git.*|\.env.*|\.htaccess)$ - [F,L,NC]
 </IfModule>
@@ -134,10 +134,10 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
 <IfModule mod_expires.c>
     ExpiresActive on
     ExpiresDefault                                      "access plus 1 month"
-
+    
     # CSS
     ExpiresByType text/css                              "access plus 1 year"
-
+    
     # Data interchange
     ExpiresByType application/atom+xml                  "access plus 1 hour"
     ExpiresByType application/rdf+xml                   "access plus 1 hour"
@@ -149,24 +149,24 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
     ExpiresByType application/xml                       "access plus 0 seconds"
     ExpiresByType text/calendar                         "access plus 0 seconds"
     ExpiresByType text/xml                              "access plus 0 seconds"
-
+    
     # Favicon (cannot be renamed!) and cursor images
     ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
     ExpiresByType image/x-icon                          "access plus 1 week"
-
+    
     # HTML
     ExpiresByType text/html                             "access plus 0 seconds"
-
+    
     # JavaScript
     ExpiresByType application/javascript                "access plus 1 year"
     ExpiresByType application/x-javascript              "access plus 1 year"
     ExpiresByType text/javascript                       "access plus 1 year"
-
+    
     # Manifest files
     ExpiresByType application/manifest+json             "access plus 1 week"
     ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
     ExpiresByType text/cache-manifest                   "access plus 0 seconds"
-
+    
     # Media files
     ExpiresByType audio/ogg                             "access plus 1 month"
     ExpiresByType image/bmp                             "access plus 1 month"
@@ -178,7 +178,7 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
     ExpiresByType video/mp4                             "access plus 1 month"
     ExpiresByType video/ogg                             "access plus 1 month"
     ExpiresByType video/webm                            "access plus 1 month"
-
+    
     # Web fonts
     ExpiresByType application/vnd.ms-fontobject         "access plus 1 year"
     ExpiresByType font/eot                              "access plus 1 year"
@@ -188,7 +188,7 @@ AddCharset UTF-8 .css .js .json .xml .html .htm .php .txt
     ExpiresByType application/x-font-woff               "access plus 1 year"
     ExpiresByType font/woff                             "access plus 1 year"
     ExpiresByType application/font-woff2                "access plus 1 year"
-
+    
     # Other
     ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 </IfModule>
@@ -236,15 +236,15 @@ ErrorDocument 500 /app/views/500.php
     AddType application/rss+xml                         rss
     AddType application/vnd.geo+json                    geojson
     AddType application/xml                             rdf xml
-
+    
     # JavaScript
     AddType application/javascript                      js
-
+    
     # Manifest files
     AddType application/manifest+json                   webmanifest
     AddType application/x-web-app-manifest+json         webapp
     AddType text/cache-manifest                         appcache
-
+    
     # Media files
     AddType audio/mp4                                   f4a f4b m4a
     AddType audio/ogg                                   oga ogg opus
@@ -255,14 +255,14 @@ ErrorDocument 500 /app/views/500.php
     AddType video/ogg                                   ogv
     AddType video/webm                                  webm
     AddType video/x-flv                                 flv
-
+    
     # Web fonts
     AddType application/font-woff                       woff
     AddType application/font-woff2                      woff2
     AddType application/vnd.ms-fontobject               eot
     AddType application/x-font-ttf                      ttc ttf
     AddType font/opentype                               otf
-
+    
     # Other
     AddType application/octet-stream                    safariextz
     AddType application/x-bb-appworld                   bbaw

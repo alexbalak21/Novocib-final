@@ -1,0 +1,128 @@
+# Novocib Website Test URLs Configuration
+# This file contains configuration and URLs to test the website
+# Lines starting with # are treated as comments
+
+# Base URL for all relative URLs (REQUIRED)
+# Format: base_url=http://your-domain:port
+base_url=http://localhost:3000
+
+# ======================
+# MAIN PAGES
+# ======================
+/
+/home
+/index.php
+/index.html
+
+# ======================
+# CONTACT & FORM PAGES
+# ======================
+/contact
+/contact-us
+/inquiry
+/message-sent-successfully
+/send
+
+# ======================
+# PRODUCT CATEGORIES
+# ======================
+/products
+/active-purified-enzymes
+/convenient-assay-kits
+/dietary-nucleotides-assay-kits
+/freshness-assay-kits
+
+# ======================
+# ACTIVE PURIFIED ENZYMES
+# ======================
+/active-purified-enzymes/impdh-recombinant-enzyme
+/active-purified-enzymes/human-recombinant-hgprt
+/active-purified-enzymes/recombinant-adenosine-kinase
+/active-purified-enzymes/recombinant-deoxycytidine-kinase
+/active-purified-enzymes/cnii
+/active-purified-enzymes/cn-ii
+/active-purified-enzymes/human-ump-cmp-kinase
+/active-purified-enzymes/fmn-reductase
+/active-purified-enzymes/human-recombinant-pnp
+/active-purified-enzymes/human-recombinant-impdh
+/active-purified-enzymes/bacterial-recombinant-impdh
+
+# ======================
+# CONVENIENT ASSAY KITS
+# ======================
+/convenient-assay-kits
+/convenient-assay-kits/hprt-assay-kit
+/convenient-assay-kits/prpp-s-assay-kit
+/convenient-assay-kits/ampda-assay-kit
+/convenient-assay-kits/itp-ase-assay-kit
+/convenient-assay-kits/itp-ase-deficiency-assay-kit
+/convenient-assay-kits/adk-phosphorylation-assay-kit
+/convenient-assay-kits/dck-phosphorylation-assay-kit
+/convenient-assay-kits/adk-assay-kit
+/convenient-assay-kits/phosphatase-assay-kit
+/convenient-assay-kits/human-recombinant-impdh
+/convenient-assay-kits/bacterial-recombinant-impdh
+/convenient-assay-kits/human-recombinant-pnp
+
+# ======================
+# FRESHNESS ASSAY KITS
+# ======================
+/freshness-assay-kits
+/freshness-assay-kits/freshness-principle
+/freshness-assay-kits/fish-freshness
+/freshness-assay-kits/freshness-assay-kit
+/freshness-assay-kits/how-it-works
+
+# ======================
+# DIETARY NUCLEOTIDES
+# ======================
+/dietary-nucleotides-assay-kits
+/dietary-nucleotides-assay-kits/fish-freshness-assay-kit
+
+# ======================
+# ANALYTICAL SERVICES
+# ======================
+/services
+/analytical-services
+/analytical-services/yeast-extract-nucleotide-analysis
+/yeast-extract-nucleotide-analysis
+/hplc-analysis-of-bases-nucleosides
+/nucleotide-analysis-service
+/cellular-nucleotides-analysis
+
+# ======================
+# NUCLEOTIDES
+# ======================
+/nucleotides
+/dietary-nucleotides
+
+# ======================
+# OTHER PAGES
+# ======================
+/bacterial-luciferase
+/news
+/search
+
+# ======================
+# TEST PAGES
+# ======================
+# Test 404 Page (should return 404)
+/this-page-should-not-exist-12345
+
+# ======================
+# SECURE/INTERNAL ROUTES
+# ======================
+/secure/login
+/secure/login-c
+/secure/transfer
+/secure/store
+/secure/success
+/internal/share
+/internal/admin
+/secure-info
+
+# ======================
+# ERROR PAGES
+# ======================
+/error
+/404

@@ -1,0 +1,9 @@
+﻿# Novocib Website Test Configuration
+# Base URL for all relative URLs (REQUIRED)
+base_url=http://localhost:3000
+
+# Test URLs (one per line)
+# Lines starting with # are treated as comments
+/
+/contact
+/products
