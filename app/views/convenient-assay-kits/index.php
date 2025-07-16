@@ -4,7 +4,7 @@ $title = "Convenient Assay Kits";
 require_once "app/templates/base.php";
 $novoblue = "#4167b1";
 
-addContent(Banner::gen());
+addContent(Banner::gen("/app/static/img/assay-kits.jpeg"));
 $content_title = UnderlinedTitle::get("Biochemical Assay Kits for Life Science", "novoblue", "right");
 
 ob_start(); ?>

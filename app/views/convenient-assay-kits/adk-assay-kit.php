@@ -1,6 +1,6 @@
 <?php
 global $title;
-$title = "Adenosine Kinase Assay Kit - ADK Assay Kit";
+$title = "Adenosine Kinase Assay Kit";
 
 ob_start(); ?>
 <meta name="keywords" content="adenosine kinase assay, ADK assay kit, non-radioactive kinase assay, drug discovery tool, high-throughput screening, adenosine inflammation research, ADK inhibitors, in vitro phosphorylation protocol, homogenous assay, IMPDH coupled assay">
@@ -9,7 +9,7 @@ ob_start(); ?>
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
-echo Banner::gen()
+echo Banner::gen("/app/static/img/adk-kit.jpg")
 ?>
 
 
