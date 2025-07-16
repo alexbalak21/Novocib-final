@@ -37,7 +37,7 @@ $content_title
 <td>Human recombinant, expressed in E.coli</td>
 </tr>
 </table>
-<p class="mt-4 text-end"> <strong>Know more about <span class="novo-blue">NOVOCIB'S</span> <a href="">Purine Metabolism Enzymes</a></strong></p>
+<p class="mt-4 text-end d-none"> <strong>Know more about <span class="novo-blue">NOVOCIB'S</span> <a href="">Purine Metabolism Enzymes</a></strong></p>
 </div>
 </section>
 <section class="bg-light mb-5 py-4">
@@ -66,7 +66,7 @@ $content_title
 <td>Human recombinant, expressed in E.coli</td>
 </tr>
 </table>
-<p class="mt-4 text-end"> <strong>Know more about <span class="novo-blue">NOVOCIB'S</span> <a href="">Nucleoside Kinases</a></strong></p>
+<p class="mt-4 text-end d-none"> <strong>Know more about <span class="novo-blue">NOVOCIB'S</span> <a href="">Nucleoside Kinases</a></strong></p>
 </div>
 </section>
 <section class="container">
@@ -85,7 +85,7 @@ $content_title
 </table>
 <p class="mt-4 mb-3">Bacterial bioluminescence consists in a ligh-emitting reaction where a long-chain aliphatic aldehyde is oxidized in the presence of molecular oxygen and reduced flavin mononucleotide (FMNH2). This reaction is catalyzed by bacterial luciferase.</p>
 <p><strong class="novo-blue">NOVOCIB</strong> offers a highly pure bacterial luciferase from Photobacterium phosphoreum and a recombinant FMN-Reductase which, when coupled to bacterial luciferase in vitro, is able to significantly increase the sensitivity and allow a better control of signal intensity and duration.</p>
-<p class="mt-4 text-end"> <strong>Know more about <span class="novo-blue">NOVOCIB'S</span> <a href=""> Bacterial Bioluminescence Enzymes</a></strong></p>
+<p class="mt-4 text-end d-none"> <strong>Know more about <span class="novo-blue">NOVOCIB'S</span> <a href=""> Bacterial Bioluminescence Enzymes</a></strong></p>
 </section>
 
 
