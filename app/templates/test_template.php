@@ -2,6 +2,7 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/components/autoloader.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/logVisit.php";
 if (!isset($title)) {
+    global $title;
     $title = "Novocib";
 }
 

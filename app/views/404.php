@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "404 Page not found";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/log404.php";

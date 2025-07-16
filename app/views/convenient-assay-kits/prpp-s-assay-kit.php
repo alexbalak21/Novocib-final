@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "PRPP-S Assay Kit";
 
 ob_start(); ?>

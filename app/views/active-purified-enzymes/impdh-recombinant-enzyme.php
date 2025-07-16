@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "IMPDH Recombinant Enzyme";
 require_once "app/templates/base.php";
 

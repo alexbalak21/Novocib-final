@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "HPRT Assay Kit";
 
 ob_start(); ?>

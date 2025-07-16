@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Human Recombinant PNP";
 
 ob_start(); ?>

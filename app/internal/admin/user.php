@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Update User";
 require_once __DIR__ . "/templates/base.php";
 ?>

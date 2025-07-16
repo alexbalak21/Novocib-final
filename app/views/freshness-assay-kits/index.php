@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "K value - Freshness Quality Control - Seafood and Meat";
 require_once "app/templates/base.php";
 

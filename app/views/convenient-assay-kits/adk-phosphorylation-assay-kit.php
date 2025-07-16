@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Adenosine Kinase Phosphorylation Assay Kit";
 
 ob_start(); ?>

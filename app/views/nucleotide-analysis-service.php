@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Nucleotide Analysis Service";
 
 ob_start(); ?>
@@ -11,7 +12,7 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-$banner = Banner::gen("app/static/img/hplc9.jpg");
+$banner = Banner::gen("/app/static/img/hplc.jpg");
 addContent($banner);
 
 ob_start(); ?>

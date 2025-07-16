@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Analytical Services";
 require_once "app/templates/base.php";
 

@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Seafood Quality Control - Seafood Freshness Assay Kit - Fish Freshness Assay Kit - K value";
 
 $metas = <<<META

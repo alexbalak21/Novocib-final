@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Cellular Nucleotides Analysis";
 require_once "app/templates/base.php";
 

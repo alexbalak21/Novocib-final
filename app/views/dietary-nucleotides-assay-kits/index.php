@@ -1,6 +1,7 @@
 <?php
 $root = $_SERVER['DOCUMENT_ROOT'];
 
+global $title;
 $title = "Dietary Nucleotides Assay Kits";
 
 ob_start(); ?>

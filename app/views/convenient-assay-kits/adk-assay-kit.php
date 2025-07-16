@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Adenosine Kinase Assay Kit - ADK Assay Kit";
 
 ob_start(); ?>

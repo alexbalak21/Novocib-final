@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Visitor Searches";
 require_once __DIR__ . "/templates/base.php";
 require_once "db_logic.php";

@@ -1,4 +1,5 @@
     <?php
+    global $title;
     $title = "Fish Freshness Assay Kit";
 
     // META TAGS 

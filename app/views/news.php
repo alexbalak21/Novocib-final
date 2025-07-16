@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "News";
 $novoblue = "#4167b1";
 

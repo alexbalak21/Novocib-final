@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Human Recombinant HGPRT";
 require_once "app/templates/base.php";
 

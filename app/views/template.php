@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Title";
 
 // META TAGS 

@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Secure Login";
 
 //CUSTOMER REPO

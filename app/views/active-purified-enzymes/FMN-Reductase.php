@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Purified Active FMN Reductase";
 
 ob_start(); ?>

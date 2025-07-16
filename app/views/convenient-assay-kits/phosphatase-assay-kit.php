@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Continuous Spectrophotometric Phosphatase Assay Kit";
 require_once "app/templates/base.php";
 

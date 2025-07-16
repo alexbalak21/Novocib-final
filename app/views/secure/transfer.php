@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Secure Transfer";
 session_start();
 if (!isset($_SESSION['pid'])) header("Location: /");

@@ -50,7 +50,7 @@ return [
     '/convenient-assay-kits/bacterial-recombinant-impdh' => 'app/views/convenient-assay-kits/bacterial-recombinant-impdh.php',
     '/convenient-assay-kits/human-recombinant-pnp' => 'app/views/convenient-assay-kits/human-recombinant-pnp.php',
     '/convenient-assay-kits/adk-assay-kit' => 'app/views/convenient-assay-kits/adk-assay-kit.php',
-    '/convenient-assay-kits/phosphatase-assay-kit' => 'app/views/convenient-assay-kits/phosphatase-assay-kit.html',
+    '/convenient-assay-kits/phosphatase-assay-kit' => 'app/views/convenient-assay-kits/phosphatase-assay-kit.php',
 
     // Dietary Nucleotides
     '/nucleotides' => '/dietary-nucleotides', // Redirect
@@ -66,7 +66,7 @@ return [
     '/yeast-extract-nucleotide-analysis' => 'app/views/analytical-services/yeast-extract-nucleotide-analysis.php',
 
     // Other Pages
-    '/bacterial-luciferase' => 'app/views/bacterial-luciferase.html',
+    '/bacterial-luciferase' => 'app/views/bacterial-luciferase.php',
     '/news' => 'app/views/news.php',
     '/search' => 'app/views/search.php',
     '/hplc-analysis-of-bases-nucleosides' => 'app/views/hplc-analysis-of-bases-nucleosides.php',

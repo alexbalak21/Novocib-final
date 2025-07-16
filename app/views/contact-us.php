@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Contact Us";
 require_once "app/templates/base.php";
 

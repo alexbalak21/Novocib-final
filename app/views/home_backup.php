@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "NOVOCIB - Reliable solutions for nucleotides assessment";
 
 $metas = <<<META

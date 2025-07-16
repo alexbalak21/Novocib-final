@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Freshness Quality Control Assessments";
 require_once "app/templates/base.php";
 

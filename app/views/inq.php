@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Inquiry";
 
 $product = isset($_GET['product']) ? $_GET['product'] : "";

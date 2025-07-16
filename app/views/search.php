@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Search";
 require_once "app/templates/base.php";
 require_once "app/logic/db_operations.php";

@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Active Purified Enzymes";
 require_once "app/templates/base.php";
 

@@ -1,5 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] !== "POST") header("Location: /");
+global $title;
 $title = "Card Viewer";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/internal/admin/templates/base.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/repository/CardRepository.php";

@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Freshness Assay How it Works?";
 require_once "app/templates/base.php";
 

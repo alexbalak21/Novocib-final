@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Search";
 require_once __DIR__ . "/templates/base.php";
 ?>

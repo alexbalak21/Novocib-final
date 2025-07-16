@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Dietary Nucleotides";
 require_once "app/templates/base.php";
 

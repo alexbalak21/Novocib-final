@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "ITP-ase Assay Kit";
 require_once "app/templates/base.php";
 

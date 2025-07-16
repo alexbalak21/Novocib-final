@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Active Human IMPDH Type 2 Enzyme";
 
 // META TAGS 

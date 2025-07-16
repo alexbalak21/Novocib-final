@@ -7,6 +7,7 @@ function serve()
     $last_name = $_POST['last_name'];
     $e_mail = $_POST['e_mail'];
     $link = "https://novocib.com/seccure/transfer?f_name=$first_name&l_name=$last_name&e_mail=$e_mail";
+    global $title;
     $title = "Customer Link";
     require_once $_SERVER["DOCUMENT_ROOT"] . "/app/internal/admin/templates/base.php";
 ?>

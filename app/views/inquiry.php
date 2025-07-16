@@ -1,4 +1,6 @@
 <?php
+
+global $title;
 $title = "Inquiry";
 
 $product = isset($_GET['product']) ? $_GET['product'] : "";
@@ -13,7 +15,7 @@ ob_start(); ?>
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
 
-<?= Banner::gen("/app/static/img/order.jpg") ?>
+<?= Banner::gen("/app/static/img/order.jpeg") ?>
 
 
 

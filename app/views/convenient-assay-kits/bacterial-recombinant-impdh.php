@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Bacterial active IMPDH";
 require_once "app/templates/base.php";
 

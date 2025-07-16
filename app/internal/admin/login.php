@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Login";
 require_once __DIR__ . "/templates/base.php";
 

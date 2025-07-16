@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "NOVOCIB - Reliable solutions for nucleotides assessment";
 $additional_head = <<<HEAD
 <link href="/app/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />

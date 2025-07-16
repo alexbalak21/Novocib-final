@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Active human UMP-CMP kinase enzyme";
 require_once "app/templates/base.php";
 

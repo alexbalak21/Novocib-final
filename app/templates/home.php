@@ -1,6 +1,7 @@
 <?php
 require_once "app/components/autoloader.php";
 if (!isset($title)) {
+    global $title;
     $title = "Novocib";
 }
 if (!isset($lang)) {

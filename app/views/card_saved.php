@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Payment Information transmitted";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>

@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Human Active Deoxycytidine Kinase Enzyme";
 require_once "app/templates/base.php";
 

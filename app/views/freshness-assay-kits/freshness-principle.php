@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Freshness Assay Kit - Seafood Freshness Quality Control - K value";
 require_once "app/templates/base.php";
 

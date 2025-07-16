@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "HPLC analysis of bases, nucleosides, NMP and nucleic acids in feed ingredients or products";
 require_once "app/templates/base.php";
 

@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "AMP Deaminase Deficiency Assay Kit";
 require_once "app/templates/base.php";
 

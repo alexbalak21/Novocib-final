@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Human Active Adenosine Kinase Enzyme";
 require_once "app/templates/base.php";
 

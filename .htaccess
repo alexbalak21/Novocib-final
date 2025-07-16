@@ -2,6 +2,23 @@
 # PHP ROUTER - .htaccess Configuration
 # ============================================================
 
+# Enable the rewrite engine
+RewriteEngine On
+
+# Set the base directory (adjust if your site is in a subdirectory)
+# RewriteBase /
+
+# Allow direct access to existing files and directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Allow direct access to static assets
+RewriteRule ^app/(css|js|img|static)/ - [L]
+
+# Route all other requests through index.php
+RewriteRule ^ index.php [L]
+
 # ----------------------------------------------------------------------
 # Basic Settings
 # ----------------------------------------------------------------------

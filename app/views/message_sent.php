@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Message sent successfully";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
 ?>

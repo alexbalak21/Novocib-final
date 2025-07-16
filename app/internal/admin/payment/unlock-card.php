@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Unlock Card";
 require_once $_SERVER["DOCUMENT_ROOT"] . "/app/internal/admin/templates/base.php";
 

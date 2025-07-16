@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Yeast Extracts Nucleotides and Nucleic Acids";
 
 ob_start(); ?>

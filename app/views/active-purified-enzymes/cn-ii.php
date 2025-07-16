@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Human cytosolic 5'-nucleotidase II";
 
 ob_start(); ?>

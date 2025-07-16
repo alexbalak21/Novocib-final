@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Products";
 require_once __DIR__ . "/templates/base.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";

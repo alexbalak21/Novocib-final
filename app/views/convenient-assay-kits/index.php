@@ -1,4 +1,5 @@
 <?php
+global $title;
 $title = "Convenient Assay Kits";
 require_once "app/templates/base.php";
 $novoblue = "#4167b1";
