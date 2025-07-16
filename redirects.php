@@ -1,5 +1,13 @@
 <?php
 $redirects = [
+    // Home and Main Pages
+    "/Home.html" => "/",
+    "/Home" => "/",
+    "/index.html" => "/",
+    "/index.php" => "/",
+    "/index" => "/",
+
+
     // Active-Purified-Enzymes
     "/Purified_Active_Enzymes.html" => "/active-purified-enzymes",
     "/Recombinant_Adenosine_Kinase.html" => "/active-purified-enzymes/recombinant-adenosine-kinase",

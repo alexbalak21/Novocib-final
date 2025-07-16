@@ -21,9 +21,6 @@ if ($request_path === '') {
     $request_path = '/';
 }
 
-// Debugging - Uncomment to see path resolution
-// error_log('Base path: ' . $basePath);
-// error_log('Request path: ' . $request_path);
 
 // Define all available routes with their corresponding view files
 $routes = [
@@ -75,7 +72,7 @@ function loadView($viewName) {
     
     // Normalize the path
     $viewPath = __DIR__ . '/app/views/' . ltrim($viewName, '/');
-    
+
     // Debugging - Uncomment to see view loading
     // error_log('Trying to load view: ' . $viewPath);
     
@@ -85,7 +82,7 @@ function loadView($viewName) {
         require_once $viewPath;
         return true;
     }
-    
+
     // Debugging - Uncomment to see if view was not found
     // error_log('View not found: ' . $viewPath);
     return false;
@@ -110,3 +107,5 @@ if (array_key_exists($request_path, $routes)) {
     http_response_code(404);
     loadView('404.php');
 }
+
+//PUT THE DEBUG INFO HERE

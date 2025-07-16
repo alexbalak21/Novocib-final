@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <?php $metas = ob_get_clean();
 
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+    require_once __DIR__ . "/../../templates/new_base.php";
     ?>
     <link rel="stylesheet" href="/app/css/fish-freshness-assay-kit.css">
 

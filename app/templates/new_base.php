@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/components/autoloader.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/logVisit.php";
+require_once __DIR__ . "/../components/autoloader.php";
+require_once __DIR__ . "/../logic/logVisit.php";
 if (!isset($title)) {
     $title = "Novocib";
 }
