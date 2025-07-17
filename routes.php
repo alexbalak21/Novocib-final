@@ -22,7 +22,7 @@ return [
     '/message-sent-successfully' => 'app/views/message_sent.php',
 
     // Active Purified Enzymes
-    '/active-purified-enzymes' => 'app/views/active-purified-enzymes.php',
+    '/active-purified-enzymes' => 'app/views/active-purified-enzymes/index.php',
     '/active-purified-enzymes/impdh-recombinant-enzyme' => 'app/views/active-purified-enzymes/impdh-recombinant-enzyme.php',
     '/active-purified-enzymes/human-recombinant-hgprt' => 'app/views/active-purified-enzymes/human-recombinant-hgprt.php',
     '/active-purified-enzymes/recombinant-adenosine-kinase' => 'app/views/active-purified-enzymes/recombinant-adenosine-kinase.php',

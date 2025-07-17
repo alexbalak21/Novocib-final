@@ -1,15 +1,18 @@
 <?php
 global $title;
 $title = "Convenient Assay Kits";
-require_once "app/templates/base.php";
-$novoblue = "#4167b1";
-
-addContent(Banner::gen("/app/static/img/assay-kits.jpeg"));
-$content_title = UnderlinedTitle::get("Biochemical Assay Kits for Life Science", "novoblue", "right");
-
 ob_start(); ?>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<?php $metas = ob_get_clean();
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+?>
+
+
+
+<?= Banner::gen("/app/static/img/assay-kits.jpg") ?>
 <section class="container mt-5">
-    <?= $content_title ?>
+    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Biochemical Assay Kits for Life Science</span></h2>
     <p><strong class="novo-blue">NOVOCIB</strong> develops original biochemical assay kits based on active nucleotide metabolism enzymes. This portfolio of assays represents a unique range of powerful tools for Drug Discovery and research in the field of nucleoside and nucleotide metabolism.</p>
 </section>
 <section class="bg-light my-4">
@@ -132,8 +135,3 @@ ob_start(); ?>
         </div>
     </div>
 </section>
-<?php $page_content = ob_get_clean();
-
-
-addContent($page_content);
-render();
