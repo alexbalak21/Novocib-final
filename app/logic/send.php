@@ -5,39 +5,45 @@ ini_set('display_errors', 1);
 
 // Set the recipient email directly
 $recipient = 'contact@novocib.com';
-$recipient = 'alex.balaki@gmail.com';
 
-// Simple logging function
-function logMessage($message)
+// Error logging function (only logs errors)
+function logError($message)
 {
     $logFile = __DIR__ . '/../../logs/message.log';
     $dir = dirname($logFile);
+
+    // Create logs directory if it doesn't exist
     if (!is_dir($dir)) {
-        mkdir($dir, 0755, true);
+        if (!@mkdir($dir, 0755, true)) {
+            // If we can't create the log directory, log to PHP error log
+            error_log("Failed to create log directory: $dir");
+            return;
+        }
     }
 
+    // Check if we can write to the log file
+    if (!is_writable($dir)) {
+        error_log("Log directory is not writable: $dir");
+        return;
+    }
+
+    // Format the error message
     $timestamp = date('Y-m-d H:i:s');
-    $logMessage = "[$timestamp] $message" . PHP_EOL;
-    file_put_contents($logFile, $logMessage, FILE_APPEND);
+    $logMessage = "[$timestamp] ERROR: $message" . PHP_EOL;
+
+    // Write to log file
+    @file_put_contents($logFile, $logMessage, FILE_APPEND);
+
+    // Also log to PHP error log
     error_log($message);
 }
 
-// Log the start of the script
-logMessage("Script started. Recipient: $recipient");
-logMessage("Request method: " . ($_SERVER['REQUEST_METHOD'] ?? 'UNKNOWN'));
-logMessage("POST data: " . json_encode($_POST, JSON_PRETTY_PRINT));
-
 // Check if mail function is available
 if (!function_exists('mail')) {
-    logMessage("CRITICAL: mail() function is not available on this server");
+    logError("mail() function is not available on this server");
     http_response_code(500);
     echo "<h2 style='text-align: center; padding-top:40px;'>Email functionality is not available on this server. Please contact the administrator.</h2>";
     exit;
-}
-
-// Test if we can write to the log file
-if (!is_writable(dirname(__DIR__ . '/../../logs/'))) {
-    logMessage("WARNING: Log directory is not writable");
 }
 
 // Check if this is a POST request
@@ -83,21 +89,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $headers = implode("\r\n", $headers);
 
-        // Log the attempt
-        logMessage("Attempting to send email to: $recipient");
-        logMessage("Subject: $email_subject");
-
         // Send the email
-        $sent = mail($recipient, $email_subject, $email_body, $headers);
+        $sent = @mail($recipient, $email_subject, $email_body, $headers);
 
         if ($sent) {
-            logMessage("Email sent successfully to: $recipient");
+            // No logging on success
             http_response_code(202);
             header("Location: /message-sent-successfully");
             exit;
         } else {
             $error = error_get_last();
-            logMessage("Failed to send email. Error: " . ($error['message'] ?? 'Unknown error'));
+            $errorMessage = "Failed to send email to $recipient. " . ($error['message'] ?? 'Unknown error');
+            logError($errorMessage);
+            logError("Email details - Subject: $email_subject, From: $visitor_email");
             http_response_code(503);
             echo "<h2 style='text-align: center; padding-top:40px;'>Error sending message. Please try again later or contact us at contact@novocib.com</h2>";
             echo "<p style='text-align: center;'><a href='/'>Return to Homepage</a></p>";
@@ -106,14 +110,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Missing required fields
         $errorMsg = "Missing required fields: " . implode(', ', $missing);
-        logMessage("Validation error: $errorMsg");
+        logError("Form validation failed: $errorMsg");
         http_response_code(400);
         echo $errorMsg;
         exit;
     }
 } else {
     // Not a POST request
-    logMessage("Invalid request method: " . $_SERVER['REQUEST_METHOD']);
+    logError("Invalid request method: " . ($_SERVER['REQUEST_METHOD'] ?? 'UNKNOWN'));
     http_response_code(405);
     echo "Method not allowed";
     exit;
