@@ -1,34 +1,58 @@
-[17-Jul-2025 13:32:50 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/404.php
-[17-Jul-2025 13:32:50 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/404.php
-[17-Jul-2025 13:33:58 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/home.php
-[17-Jul-2025 13:33:58 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/home.php
-[17-Jul-2025 13:33:59 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/contact-us.php
-[17-Jul-2025 13:33:59 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/contact-us.php
-[17-Jul-2025 13:34:40 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/logic/send.php
-[17-Jul-2025 13:34:40 Europe/Paris] Found and including: /home/cp68325/public_html/app/logic/send.php
-[17-Jul-2025 13:34:40 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/message-error.php
-[17-Jul-2025 13:34:40 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/message-error.php
-[17-Jul-2025 13:34:53 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/home.php
-[17-Jul-2025 13:34:53 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/home.php
-[17-Jul-2025 13:34:55 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/contact-us.php
-[17-Jul-2025 13:34:55 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/contact-us.php
-[17-Jul-2025 13:34:56 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/contact-us.php
-[17-Jul-2025 13:34:56 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/contact-us.php
-[17-Jul-2025 13:34:57 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/contact-us.php
-[17-Jul-2025 13:34:57 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/contact-us.php
-[17-Jul-2025 13:34:57 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/contact-us.php
-[17-Jul-2025 13:34:57 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/contact-us.php
-[17-Jul-2025 13:34:58 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/404.php
-[17-Jul-2025 13:34:58 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/404.php
-[17-Jul-2025 13:34:58 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/convenient-assay-kits/prpp-s-assay-kit.php
-[17-Jul-2025 13:34:58 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/convenient-assay-kits/prpp-s-assay-kit.php
-[17-Jul-2025 13:35:00 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/convenient-assay-kits/prpp-s-assay-kit.php
-[17-Jul-2025 13:35:00 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/convenient-assay-kits/prpp-s-assay-kit.php
-[17-Jul-2025 13:35:25 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/logic/send.php
-[17-Jul-2025 13:35:25 Europe/Paris] Found and including: /home/cp68325/public_html/app/logic/send.php
-[17-Jul-2025 13:35:25 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/message-error.php
-[17-Jul-2025 13:35:25 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/message-error.php
-[17-Jul-2025 13:35:29 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/404.php
-[17-Jul-2025 13:35:29 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/404.php
-[17-Jul-2025 13:35:44 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/404.php
-[17-Jul-2025 13:35:44 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/404.php
+[17-Jul-2025 13:46:11 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 13:46:11 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 13:46:15 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 13:46:15 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 13:46:17 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/contact-us.php
+[17-Jul-2025 13:46:17 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/contact-us.php
+[17-Jul-2025 13:47:01 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/logic/send.php
+[17-Jul-2025 13:47:01 Europe/Paris] Found and including: /home/cp68325/public_html/app/logic/send.php
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] Script started: /home/cp68325/public_html/app/logic/send.php
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] Request method: POST
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] POST data: {
+    "name": "Alex",
+    "mail": "alex@test.com",
+    "need": "Test for need",
+    "message": "Test message"
+}
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] Starting script execution
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] serve() function called
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] Request: POST /send
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] Processing request from: Alex <alex@test.com>
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] Preparing to send email...
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] Sending email with subject: [Message from novocib.com] From: Alex - Need: Test for need
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] Email headers: From: alex@test.com | Reply-To: alex@test.com | X-Mailer: PHP/8.3.21
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [ERROR] Failed to send email. Error: mail(): Passing null to parameter #1 ($to) of type string is deprecated
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [ERROR] Failed to send email to:
+[17-Jul-2025 13:47:01 Europe/Paris] [2025-07-17 13:47:01] [INFO] Script execution completed
+[17-Jul-2025 13:47:01 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/404.php
+[17-Jul-2025 13:47:01 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/404.php
+[17-Jul-2025 13:47:37 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/404.php
+[17-Jul-2025 13:47:37 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/404.php
+[17-Jul-2025 13:50:29 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 13:50:29 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 13:50:33 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 13:50:33 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 13:50:34 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 13:50:34 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 13:50:36 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/contact-us.php
+[17-Jul-2025 13:50:36 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/contact-us.php
+[17-Jul-2025 13:51:07 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/logic/send.php
+[17-Jul-2025 13:51:07 Europe/Paris] Found and including: /home/cp68325/public_html/app/logic/send.php
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [INFO] Script started: /home/cp68325/public_html/app/logic/send.php
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [INFO] Request method: POST
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [INFO] POST data: {
+    "name": "Alex",
+    "mail": "test@tesmail.com",
+    "need": "Test Need",
+    "message": "Test Message"
+}
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [INFO] Starting script execution
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [INFO] serve() function called
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [INFO] Request: POST /send
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [INFO] Processing request from: Alex <test@tesmail.com>
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [INFO] Sending email to: NULL
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [ERROR] No recipient email address specified
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [ERROR] Failed to send email to:
+[17-Jul-2025 13:51:07 Europe/Paris] [2025-07-17 13:51:07] [INFO] Script execution completed
+[17-Jul-2025 13:51:07 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/404.php
+[17-Jul-2025 13:51:07 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/404.php

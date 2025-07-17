@@ -1,0 +1,25 @@
+[17-Jul-2025 14:13:29 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/404.php
+[17-Jul-2025 14:13:29 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/404.php
+[17-Jul-2025 14:13:40 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 14:13:40 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/home.php
+[17-Jul-2025 14:13:41 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/contact-us.php
+[17-Jul-2025 14:13:41 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/contact-us.php
+[17-Jul-2025 14:13:45 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/active-purified-enzymes/index.php
+[17-Jul-2025 14:13:45 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/active-purified-enzymes/index.php
+[17-Jul-2025 14:14:00 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/404.php
+[17-Jul-2025 14:14:00 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/404.php
+[17-Jul-2025 14:14:02 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/logic/send.php
+[17-Jul-2025 14:14:02 Europe/Paris] Found and including: /home/cp68325/public_html/app/logic/send.php
+[17-Jul-2025 14:14:02 Europe/Paris] Script started. Recipient: contact@novocib.com
+[17-Jul-2025 14:14:02 Europe/Paris] Request method: POST
+[17-Jul-2025 14:14:02 Europe/Paris] POST data: {
+    "name": "Alex",
+    "mail": "alex@test.dev",
+    "need": "Test Need",
+    "message": "Test Message"
+}
+[17-Jul-2025 14:14:02 Europe/Paris] Attempting to send email to: contact@novocib.com
+[17-Jul-2025 14:14:02 Europe/Paris] Subject: [Message from novocib.com] From: Alex - Need: Test Need
+[17-Jul-2025 14:14:02 Europe/Paris] Email sent successfully to: contact@novocib.com
+[17-Jul-2025 14:14:02 Europe/Paris] Attempting to load: /home/cp68325/public_html/app/views/message_sent.php
+[17-Jul-2025 14:14:02 Europe/Paris] Found and including: /home/cp68325/public_html/app/views/message_sent.php
