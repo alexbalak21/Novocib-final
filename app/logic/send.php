@@ -53,10 +53,11 @@ function send_mail($to, $name, $visitor_email, $need, $message): bool
     if ($sent) {
         header("Location: /message-sent-successfully");
     } else {
-        echo "<h2 style='text-align: center; padding-top:40px;'>Error sending a message please contact us by mail. <br> At contact@novocib.com <br> Thank you !</h2>";
-        echo "<a style='text-align: center' href='/'><h2>Return to Homepage</h2></a>";
+        header("Location:/message-error");
+        exit;
     }
     return $sent;
 }
+
 
 serve();

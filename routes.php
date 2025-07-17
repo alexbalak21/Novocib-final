@@ -19,6 +19,7 @@ return [
 
     // Mail Handling
     '/send' => 'app/logic/send.php',
+    '/message-error' => 'app/views/message-error.php',
     '/message-sent-successfully' => 'app/views/message_sent.php',
 
     // Active Purified Enzymes

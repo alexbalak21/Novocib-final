@@ -32,29 +32,42 @@ if ($routes === null) {
     $routes = require __DIR__ . '/routes.php';
 }
 
-// Simple view loader function
+// View and logic file loader function
 function loadView(string $viewName): bool {
-    static $basePath = null;
-    if ($basePath === null) {
-        $basePath = __DIR__ . '/app/views/';
+    $basePath = __DIR__ . '/';
+    $viewPath = '';
+    
+    // Handle absolute paths (starting with /)
+    if ($viewName[0] === '/') {
+        $viewPath = $basePath . ltrim($viewName, '/');
+    } 
+    // Handle paths relative to app/views or app/logic
+    else if (str_starts_with($viewName, 'app/')) {
+        $viewPath = $basePath . $viewName;
+    }
+    // Default to app/views for simple paths
+    else {
+        $viewPath = $basePath . 'app/views/' . $viewName;
     }
     
-    // Simple path resolution
-    if ($viewName === '/') {
-        $viewPath = $basePath . 'index.php';
-    } elseif (str_starts_with($viewName, 'app/views/')) {
-        $viewPath = __DIR__ . '/' . $viewName;
-    } elseif ($viewName[0] === '/') {
-        $viewPath = __DIR__ . $viewName;
-    } else {
-        $viewPath = $basePath . $viewName . 
-                  (str_ends_with($viewName, '.php') ? '' : '.php');
-    }
-
-    if (@is_file($viewPath)) {
-        return (bool) include $viewPath;
+    // Ensure .php extension if not present
+    if (!str_ends_with($viewPath, '.php')) {
+        $viewPath .= '.php';
     }
     
+    // Normalize path separators for Windows
+    $viewPath = str_replace('\\', '/', $viewPath);
+    
+    // Debug: Log the path being checked
+    error_log("Attempting to load: $viewPath");
+    
+    if (is_file($viewPath)) {
+        error_log("Found and including: $viewPath");
+        include $viewPath;
+        return true;
+    }
+    
+    error_log("File not found: $viewPath");
     return false;
 }
 
