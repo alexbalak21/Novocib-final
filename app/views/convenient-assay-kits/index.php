@@ -24,7 +24,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                     <h2 class="col-12 text-center">Purine Metabolism Disorders Kits</h2>
                     <div class="col-6">
                         <div class="kit">
-                            <h5 class="text-center"><a href="/convenient-assay-kits/hprt-assay-kit">HPRT Assay Kit</a></h5>
+                            <h5 class="text-center"><a href="/convenient-assay-kits/hprt-assay-kit">HPRT Assay Kit </a></h5>
                         </div>
                         <div class="kit">
                             <h5 class="text-center"><a href="/convenient-assay-kits/prpp-s-assay-kit">PRPP-S Assay Kit</a></h5>

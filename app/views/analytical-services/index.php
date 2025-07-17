@@ -1,16 +1,23 @@
 <?php
 global $title;
 $title = "Analytical Services";
-require_once "app/templates/base.php";
-
-$novoblue = "#4167b1";
-
-addContent(Banner::gen("/app/static/img/analytical-services.jpg"));
 
 
 ob_start(); ?>
+<meta name="keywords" content="active purified enzymes, nucleotide metabolism, nucleoside kinases, purine metabolism, bacterial bioluminescence, recombinant enzymes, IMPDH, HGPRT, ADK, dCK, CMK, cN-II, FMN reductase, luciferase, NOVOCIB">
+<meta name="description" content="Explore NOVOCIB's portfolio of active purified enzymes including nucleoside kinases, purine metabolism enzymes, and bacterial bioluminescence tools—ideal for drug discovery and research in nucleotide metabolism.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<?php $metas = ob_get_clean();
 
-<section class="container my-4 therapeutic">
+
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+
+
+?>
+
+<?= Banner::gen("/app/static/img/analytical-services.jpg") ?>
+
+<section class="container my-5 therapeutic">
     <h2 class="mb-4 text-center">Our Services</h2>
     <div class="kit row align-items-center">
         <div class="col-3 me-3 text-center">
@@ -53,9 +60,3 @@ ob_start(); ?>
         </div>
     </div>
 </section>
-
-<?php $page_content = ob_get_clean();
-
-
-addContent($page_content);
-render();
