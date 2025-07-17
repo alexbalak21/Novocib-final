@@ -1,10 +1,12 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/repository/Message_repository.php";
 // Enable error reporting
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Set the recipient email directly
 $recipient = 'contact@novocib.com';
+// $recipient = 'alex.balaki@gmail.com';
 
 // Error logging function (only logs errors)
 function logError($message)
@@ -71,6 +73,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $need .= " - volume: $volume";
         }
 
+        // 🔐 Save the message to the DB
+        $MessageRepo = new Message_repository();
+        $MessageRepo->save_message($name, $visitor_email, $need, $message);
+
         // Prepare email
         $email_subject = "[Message from novocib.com] From: $name - Need: $need";
         $email_body = "You have received a new message from the website:\n\n" .
@@ -103,8 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             logError($errorMessage);
             logError("Email details - Subject: $email_subject, From: $visitor_email");
             http_response_code(503);
-            echo "<h2 style='text-align: center; padding-top:40px;'>Error sending message. Please try again later or contact us at contact@novocib.com</h2>";
-            echo "<p style='text-align: center;'><a href='/'>Return to Homepage</a></p>";
+            header("Location: /message-error");
             exit;
         }
     } else {

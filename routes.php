@@ -73,6 +73,7 @@ return [
     '/search' => 'app/views/search.php',
     '/hplc-analysis-of-bases-nucleosides' => 'app/views/hplc-analysis-of-bases-nucleosides.php',
     '/cellular-nucleotides-analysis' => 'app/views/cellular-nucleotides-analysis.php',
+    '/favicon.ico' => 'app/favicon.ico',
 
     // Secure/Internal Routes
     '/internal/share' => 'app/internal/share/index.php',
