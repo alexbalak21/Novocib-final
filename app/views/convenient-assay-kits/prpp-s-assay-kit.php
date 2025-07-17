@@ -14,15 +14,10 @@ echo Banner::gen()
 ?>
 
 <section class="container mt-5">
-    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Non radioactive PRPP-S assay</span></h2>
+    <h2 class="underlinedTitle right" style="margin-bottom: 20px;"><span class="underlined novoblue right">PRECICE® PRPP-S Assay Kit</span></h2>
+    <h3 class="text-center mb-4">Spectrophotometric, microplate format</h3>
     <div class="row">
         <div class="col-lg-6">
-            <p>
-                <strong>PRECICE® PRPP-S Assay kit</strong>
-                provides the first non radioactive and one-step protocol for measurement of
-                <strong>PRPP-S activity</strong>
-                in cellular lysates in a convenient 96-well plate format.
-            </p>
             <p>
                 Phosphoribosylpyrophosphate synthetase (PRS; EC 2.7.6.1), an essential enzyme for the purine salvage
                 pathway, is encoded by PRPS1 gene. Several mutations in this gene associated with genetic disorders have
@@ -46,11 +41,21 @@ echo Banner::gen()
             <h4 class="novo-blue">PRECICE® PRPP-S Assay Kit</h4>
             <h5>Ref. #K0709-04-2</h5>
         </div>
+        <div class="mt-3 mb-4">
+            <h4 class="novo-blue">Assay Principal</h4>
+            <p>PRECICE® PRPP-S Assay Kit is designed for continuous monitoring of PRPP synthesis. The assay is based on coupling of two recombinant enzymes: Hypoxanthine-guanine phosphoribosyltransferase (HGPRT) and Inosine Monophosphate Dehydrogenase (IMPDH).</p>
+            <ol>
+                <li>In the presence of ATP and P-ribose, PRPP-Synthetase enzyme catalyzes the formation of PRPP.</li>
+                <li>In the presence of Hypoxanthine (Hx), PRPP is converted to IMP by Hypoxanthine-guanine phosphoribosyltransferase (HGPRT).</li>
+                <li>IMP is immediately oxidized by a highly active IMPDH in the presence of NAD with simultaneous formation of NADH₂, directly monitored spectrophotometrically at 340 nm.</li>
+            </ol>
+
+        </div>
         <div class="d-flex justify-content-center mt-4">
             <div class="col-lg-10 col-12">
 
                 <!-- FETCHING PRODUCT FROM THE DATABASE -->
-                <?= Product::gen("PRPP-S Assay Kit") ?>
+                <?= Product::gen("", "convenient-assay-kits/prpp-s-assay-kit") ?>
 
                 <p class="text-center">
                     <strong>

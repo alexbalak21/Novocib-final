@@ -1,9 +1,11 @@
 <?php
 class Product
 {
-    static function gen(string $product_title)
+    static function gen(string $product_title, $url = "", $id = 0)
     {
         $product = get_product_by_title($product_title);
+        if ($product_title === "" && $url !== "") $product = get_product_by_url($url);
+        if ($product === null && $id !== 0) $product = get_product_by_id((int) $id);
         ob_start(); ?>
         <div class="table-responsive">
             <table class="table product mb-2">
@@ -18,7 +20,7 @@ class Product
                 <tbody>
                     <tr>
                         <td class="d-none d-md-table-cell"><?= "#" . $product['reference'] ?></td>
-                        <td class="text-center"><strong><?= $product['size'] ?></strong></td>
+                        <td class="text-center"><?= $product['title'] ?><br><?= $product['size'] ?></td>
                         <td class="d-none d-md-table-cell text-center"><?= $product['price'] . ".00 €" ?></td>
                         <td class="text-end pe-3">
                             <div class="d-block d-md-none text-end mb-1 fw-bold">

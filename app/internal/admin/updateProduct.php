@@ -20,20 +20,43 @@ function check_if_empty(): bool
     $params = func_get_args();
     foreach ($params as $value)
         if (empty($value)) return false;
-
     return true;
 }
 
 function updateProduct(): void
 {
     extract($_POST);
-    if (!check_if_empty($id, $title, $ref, $size, $price, $url)) return;
-    if (str_starts_with($ref, "#")) $ref = substr($ref, 1);
+
+    // If any required field is empty, redirect with error
+    if (!check_if_empty($id ?? null, $title ?? null, $ref ?? null, $size ?? null, $price ?? null, $url ?? null)) {
+        header("Location: products.php?update=error");
+        exit;
+    }
+
+    // Normalize ref
+    if (str_starts_with($ref, "#")) {
+        $ref = substr($ref, 1);
+    }
+
+    // Normalize url
     $url = str_replace("https://www.novocib.com/", "", $url);
-    if (str_starts_with($url, "/")) $url = substr($url, 1);
+    if (str_starts_with($url, "/")) {
+        $url = substr($url, 1);
+    }
+
+    // Cast price to integer
+    $price = (int)$price;
+
+    // Attempt update
     $done = update_product($id, $ref, $title, $size, $price, $url);
-    if ($done) header("Location: products.php?product=updated");
-    else header("Location: products.php?error=failed to update product");
+    if ($done) {
+        header("Location: products.php?product=updated");
+    } else {
+        header("Location: products.php?update=error");
+    }
+    exit;
 }
 
-if ($_SERVER['REQUEST_METHOD'] === "POST") updateProduct();
+if ($_SERVER['REQUEST_METHOD'] === "POST") {
+    updateProduct();
+}

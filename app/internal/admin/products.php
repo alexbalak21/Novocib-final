@@ -10,16 +10,29 @@ ob_start(); ?>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 <?php $successAlert = ob_get_clean();
-if (isset($_GET['id_update'])) {
-    $id = intval($_GET['id_update']);
-    $product = get_product_by_id($id);
-    var_dump($product);
-}
-?>
+
+ob_start(); ?>
+<div class="alert alert-primary alert-dismissible fade show" role="alert">
+    <p class="text-center">Product Updated successfully</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<?php $updateAlert = ob_get_clean();
+
+ob_start(); ?>
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <p class="text-center">Error Updating the product</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<?php $errorAlert = ob_get_clean(); ?>
+
+<?php if (isset($_GET['product']) && $_GET['product'] == "added") echo $successAlert; ?>
+<?php if (isset($_GET['product']) && $_GET['product'] == "updated") echo $updateAlert  ?>
+<?php if (isset($_GET['update']) && $_GET['update'] == "error") echo $errorAlert  ?>
+
 
 <section class="container mt-3">
-    <h1 class="text-center"><?= isset($_GET['id_update']) ? "Update Product" : "Add Product" ?></h1>
-    <?php if (isset($_GET['product']) && $_GET['product'] == "added") echo $successAlert; ?>
+    <h1 class="text-center">Add Product</h1>
+
     <form action="addProduct.php" method="POST">
         <div class="row mt-5 d-flex justify-content-center">
             <div class="mb-3 col-12">
@@ -67,7 +80,6 @@ if (isset($_GET['id_update'])) {
     <?php $products = read_all_products(); ?>
     <div class="mt-5 col-11 mx-auto">
         <h2 class="text-center mb-2">Products</h2>
-        <?php if (isset($_GET['product']) && $_GET['product'] == "updated") echo $updatedSuccess; ?>
         <table class="table table-bordered mt-2">
             <thead>
                 <tr>
@@ -102,7 +114,7 @@ if (isset($_GET['id_update'])) {
                             <?= $product['updated_on'] ?>
                         </td>
                         <td>
-                            <a class="btn btn-outline-primary" href="products.php?id_update=<?= $product['ID'] ?>" role="button">Edit</a>
+                            <a class="btn btn-outline-primary" href="edit-product.php?product_id=<?= $product['ID'] ?>" role="button">Edit</a>
                         </td>
                     </tr>
                 <?php endforeach ?>

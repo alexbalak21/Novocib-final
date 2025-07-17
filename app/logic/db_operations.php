@@ -654,6 +654,40 @@ function get_product_by_id(int $id): ?array
   }
 }
 
+function get_product_by_url(string $url): ?array
+{
+  // Connect to the database
+  $conn = connect_db();
+  if ($conn === null) {
+    return null;
+  }
+
+  // SQL query to fetch the product by its page URL
+  $query = "SELECT * FROM products WHERE page_url = :url LIMIT 1";
+
+  // Prepare the query
+  $stmt = $conn->prepare($query);
+
+  // Bind the URL parameter
+  $stmt->bindParam(':url', $url, PDO::PARAM_STR);
+
+  try {
+    // Execute the query
+    $stmt->execute();
+
+    // Fetch the product as an associative array
+    $product = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    return $product ?: null;
+  } catch (PDOException $e) {
+    echo 'Error: ' . $e->getMessage();
+    return null;
+  } finally {
+    // Close the connection
+    $conn = null;
+  }
+}
+
 
 
 /**
@@ -668,7 +702,7 @@ function get_product_by_id(int $id): ?array
  *
  * @return bool True on success, false on failure.
  */
-function update_product(int $id, string $reference, string $title, ?string $size = null, ?int $price = null, ?string $page_url = null): bool
+function update_product(int $id, string $reference, string $title, string $size, int $price, string $page_url): bool
 {
   // Connect to the database
   $conn = connect_db();
