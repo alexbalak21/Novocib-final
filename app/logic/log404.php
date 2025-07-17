@@ -7,18 +7,21 @@ function log404request()
 {
   // Define the array of unwanted extensions
   $unwantedExtensions = ["jpg", "png", "pdf", "css", "js", "ico", "mp4", "map", "svg", "json", "scss"];
-  $time = date('Y-m-d H:i:s'); // Get the current timestamp
-  $ip = $_SERVER['REMOTE_ADDR']; // Fetch the client's IP address
+  $time = date('Y-m-d H:i:s');
+  $ip   = $_SERVER['REMOTE_ADDR'];
 
   // Parse the requested URL
   $parsed_url = parse_url($_SERVER['REQUEST_URI']);
+  $path       = isset($parsed_url['path']) ? $parsed_url['path'] : '';
 
-  // Safely retrieve the 'path' from the parsed URL
-  $query = ($parsed_url && isset($parsed_url['path'])) ? $parsed_url['path'] : null;
+  // 1) Skip anything containing "/FA6/"
+  if (strpos($path, '/FA6/') !== false) {
+    return;
+  }
 
-  // Ensure query is valid and log to the database if it does not end with unwanted extensions
-  if ($query && query_ends_with($query, $unwantedExtensions)) {
-    log404toDB($time, $ip, $query);
+  // 2) Only log if it doesn't end with one of the unwanted extensions
+  if ($path && query_ends_with($path, $unwantedExtensions)) {
+    log404toDB($time, $ip, $path);
   }
 }
 
