@@ -18,7 +18,7 @@ class Products
                 <?php foreach ($products as $product): ?>
                     <tr>
                         <td><?= "#" . $product['reference'] ?></td>
-                        <td class="text-center"><strong><?= $product['size'] ?></strong></td>
+                        <td class="text-center"><?= $product['size'] ?></td>
                         <td class="price text-center"><?= $product['price'] . ".00 €" ?></td>
                         <td class="text-end pe-3">
                             <a class="btn btn-primary" href="/inquiry?ref=<?= $product['reference'] ?>&product=<?= $product['title'] ?>&volume=<?= $product['size'] ?>">

@@ -10,7 +10,7 @@ ob_start(); ?>
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
-echo Banner::gen()
+echo Banner::gen("/app/static/img/prps-kit.jpg")
 ?>
 
 <section class="container mt-5">

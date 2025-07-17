@@ -48,47 +48,65 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 </p>
             </div>
         </div>
-        <div class="row">
-            <h2 class="novo-blue mb-3 text-center">Key Features</h2>
-            <div class="col-lg-3 text-center bg-light pt-3">
-                <h4 class="novo-blue">Convenient</h4>
+        <div class="mt-0 mb-4">
+            <h4 class="mt-5 pt-4 novo-blue text-center">🔬 Key Features of the Assay Kit</h4>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+
+                <div class="col">
+                    <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
+                        <h6 class="mb-2">☑️ Convenient</h6>
+                        <ul class="mb-0 ps-3">
+                            <li>Non-radioactive</li>
+                            <li>Homogenous</li>
+                            <li>Continuous absorbance monitoring at 340 nm</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
+                        <h6 class="mb-2">📊 Quantitative</h6>
+                        <ul class="mb-0 ps-3">
+                            <li>IMP transformed into NADH₂ in a quantitative manner</li>
+                            <li>Allows accurate kinetic analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
+                        <h6 class="mb-2">⚙️ High-Throughput Format</h6>
+                        <ul class="mb-0 ps-3">
+                            <li>Performed in standard multi-well microplates</li>
+                            <li>Compatible with plate readers fitted with 340 nm filter</li>
+                            <li>Meets HTS assay standards (Z' factor 0.68)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
+                        <h6 class="mb-2">🔒 Reliable</h6>
+                        <ul class="mb-0 ps-3">
+                            <li>Validated with ADK inhibitor A-134974</li>
+                            <li>Tested with ribavirin, phosphorylated by adenosine kinase</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-lg-9 bg-light d-flex justify-content-center">
-                <ul>
-                    <li>Non-radioactive</li>
-                    <li>Homogenous</li>
-                    <li>Continuous absorbance monitoring at 340nm</li>
-                </ul>
-            </div>
-            <div class="col-lg-3 text-center pt-3">
-                <h4 class="novo-blue">Quantitative</h4>
-            </div>
-            <div class="col-lg-9 d-flex justify-content-center">
-                <ul class="py-3">
-                    <li>The IMP is immediately transformed into NADH2 in a quantitative manner allowing for accurate kinetic analysis</li>
-                </ul>
-            </div>
-            <div class="col-lg-3 text-center bg-light pt-3">
-                <h4 class="novo-blue">High-Throughput Format</h4>
-            </div>
-            <div class="col-lg-9 bg-light d-flex justify-content-center">
-                <ul>
-                    <li>The assay is performed in standard multi-well microplates</li>
-                    <li>Utilizes commun plate reader fitted with 340nm filter</li>
-                    <li>Meets the requirements of a HTS assay (Z' factor 0.68)</li>
-                </ul>
-            </div>
-            <div class="col-lg-3 text-center pt-3">
-                <h4 class="novo-blue">Reliable</h4>
-            </div>
-            <div class="col-lg-9 d-flex justify-content-center">
-                <ul class="py-3">
-                    <li>Validated with known ADK inhibitor A-134974 and nucleoside analog ribavirin known to be phosphorylated by adenosine kinase</li>
-                </ul>
-            </div>
-            <p class="my-5 text-center">For rapid analysis of in vitro phosphorylation of novel nucleoside analogs for human adenosine kinase see our <a href="/convenient-assay-kits/adk-phosphorylation-assay-kit">PRECICE® ADK Phosphorylation Assay Kit. <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+
+            <p class="mt-5 text-center">
+                For rapid analysis of in vitro phosphorylation of novel nucleoside analogs for human adenosine kinase, see our
+                <a href="/convenient-assay-kits/adk-phosphorylation-assay-kit">
+                    PRECICE® ADK Phosphorylation Assay Kit <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </p>
         </div>
+
     </div>
+
+
 </section>
 
 <section class="bg-light py-3">

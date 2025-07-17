@@ -706,19 +706,24 @@ function update_product(int $id, string $reference, string $title, string $size,
 {
   // Connect to the database
   $conn = connect_db();
-  if ($conn == null) {
+  if ($conn === null) {
     return false;
   }
 
-  // Build the SQL query to update the product
+  // SQL query including updated_on
   $query = "UPDATE products 
-              SET reference = :reference, title = :title, size = :size, price = :price, page_url = :page_url 
+              SET reference = :reference,
+                  title = :title,
+                  size = :size,
+                  price = :price,
+                  page_url = :page_url,
+                  updated_on = NOW()
               WHERE ID = :id";
 
   // Prepare the query
   $stmt = $conn->prepare($query);
 
-  // Bind parameters to the query
+  // Bind parameters
   $stmt->bindParam(':id', $id);
   $stmt->bindParam(':reference', $reference);
   $stmt->bindParam(':title', $title);
@@ -727,17 +732,16 @@ function update_product(int $id, string $reference, string $title, string $size,
   $stmt->bindParam(':page_url', $page_url);
 
   try {
-    // Execute the update query
     $stmt->execute();
-    return $stmt->rowCount() > 0; // Return true if at least one row was updated
+    return $stmt->rowCount() > 0;
   } catch (PDOException $e) {
     echo 'Error: ' . $e->getMessage();
     return false;
   } finally {
-    // Close the connection
     $conn = null;
   }
 }
+
 
 function get_product_by_title(string $title): array
 {
