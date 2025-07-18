@@ -20,7 +20,7 @@ $page_content = <<<CONTENT
 <p><strong class="novo-blue">NOVOCIB</strong>'s cloned human HGPRT is a highly active enzyme that catalyzes the reversible transfer of the 5-phosphoribosyl group between α-D-5-phosphoribosyl-1-pyrophosphate (PRPP) and a purine base (hypoxanthine or guanine) to form a purine nucleotide IMP or GMP. The enzyme has been characterized for its affinity for natural substrates and velocity in forward and reverse directions.</p>
 </div>
 <div class="col-lg-6 text-center">
-<img class="w-100" src="/app/static/img/HPRT_reaction.png" alt="HPRT reaction schema">
+<img class="w-100" src="/app/img/HPRT_reaction.png" alt="HPRT reaction schema">
 <h4 class="novo-blue">Human HGPRT</h4>
 <h5>#E-Nov9</h5>
 </div>
@@ -59,7 +59,7 @@ $page_content = <<<CONTENT
 </div>
 </div>
 <div class="col-4 mt-5   text-center">
-<img src="/app/static/img/HGPRT_Gel.png" alt="HGPRT Gel">
+<img src="/app/img/HGPRT_Gel.png" alt="HGPRT Gel">
 </div>
 <div class="col-8">
 <p><strong>Storage:</strong> HPRT enzyme is provided in lyophilized form and should be stored at -20°C.</p>
@@ -71,7 +71,7 @@ $page_content = <<<CONTENT
 <div class="referances my-5 row justify-content-center">
 <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
 <div class="col-2">
-<img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo">
+<img class="w-100 pt-3" src="/app/img/pubmed.png" alt="pubmed logo">
 </div>
 <div class="col-8">
 <p><i>G.K. Balendiran et al. (1999): <a href="https://pubmed.ncbi.nlm.nih.gov/10338013/">Ternary complex structure of human HGPRTase, PRPP, Mg2+, and the inhibitor HPP reveals the involvement of the flexible loop in substrate binding Protein Sci. 8(5), 1023-1031</a></i></p>

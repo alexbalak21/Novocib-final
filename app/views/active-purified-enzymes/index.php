@@ -10,7 +10,7 @@ ob_start(); ?>
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
 
-<?= Banner::gen("/app/static/img/enzymes.jpg") ?>
+<?= Banner::gen("/app/img/enzymes.jpg") ?>
 <div class="container mt-5">
     <h2 class="underlinedTitle right"><span class="underlined novoblue right">Active Purified Enzymes</span></h2>
     <p><strong class="novo-blue">NOVOCIB</strong> produces active nucleoside kinases and other nucleotide metabolism enzymes. This portfolio of enzymes represents a unique range of powerful tools for Drug Discovery and research in the field of nucleoside and nucleotide metabolism.</p>

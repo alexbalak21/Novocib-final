@@ -9,7 +9,7 @@ class TABLE
     <div class="card col-lg-3 col-md-4 col-sm-6">
         <img
             class="card-img-top"
-            src="/app/static/img/dna-card.png"
+            src="/app/img/dna-card.png"
             style="height: 200px; object-fit: contain"
             alt="dna" />
         <div class="card-body">
@@ -23,7 +23,7 @@ class TABLE
     <div class="card col-lg-3 col-md-4 col-sm-6">
         <img
             class="card-img-top"
-            src="/app/static/img/RNA.png"
+            src="/app/img/RNA.png"
             style="height: 200px; object-fit: contain"
             alt="dna" />
         <div class="card-body">
@@ -37,7 +37,7 @@ class TABLE
     <div class="card col-lg-3 col-md-4 col-sm-6">
         <img
             class="card-img-top"
-            src="/app/static/img/energy.png"
+            src="/app/img/energy.png"
             style="height: 200px; object-fit: contain"
             alt="dna" />
         <div class="card-body">
@@ -51,7 +51,7 @@ class TABLE
     <div class="card col-lg-3 col-md-4 col-sm-6">
         <img
             class="card-img-top"
-            src="/app/static/img/coenzyme.png"
+            src="/app/img/coenzyme.png"
             style="height: 200px; object-fit: contain"
             alt="dna" />
         <div class="card-body">
@@ -65,7 +65,7 @@ class TABLE
     <div class="card col-lg-3 col-md-4 col-sm-6">
         <img
             class="card-img-top"
-            src="/app/static/img/glycogen.png"
+            src="/app/img/glycogen.png"
             style="height: 200px; object-fit: contain"
             alt="dna" />
         <div class="card-body">
@@ -78,7 +78,7 @@ class TABLE
     <div class="card col-lg-3 col-md-4 col-sm-6">
         <img
             class="card-img-top"
-            src="/app/static/img/neuron.png"
+            src="/app/img/neuron.png"
             style="height: 200px; object-fit: contain"
             alt="dna" />
         <div class="card-body">
@@ -92,7 +92,7 @@ class TABLE
     <div class="card col-lg-3 col-md-4 col-sm-6">
         <img
             class="card-img-top"
-            src="/app/static/img/salt.jpg"
+            src="/app/img/salt.jpg"
             style="height: 200px; object-fit: contain"
             alt="dna" />
         <div class="card-body">
@@ -106,7 +106,7 @@ class TABLE
     <div class="card col-lg-3 col-md-4 col-sm-6">
         <img
             class="card-img-top"
-            src="/app/static/img/lumi.webp"
+            src="/app/img/lumi.webp"
             style="height: 200px; object-fit: contain"
             alt="dna" />
         <div class="card-body">

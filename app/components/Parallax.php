@@ -1,7 +1,7 @@
 <?php
 class Parallax
 {
-    static function get($img = "app/static/img/header1.jpg", $ParallaxContent = "Conent", $color = "white")
+    static function get($img = "app/img/header1.jpg", $ParallaxContent = "Conent", $color = "white")
     {
 
         return <<<Parallax

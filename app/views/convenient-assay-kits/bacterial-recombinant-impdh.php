@@ -22,7 +22,7 @@ $content_title
 Today, antibiotic resistance is one of the world's most important public health problems. There is an urgent need for new antibiotic compounds acting on new targets. One attractive strategy for developing new antibiotics consists in inhibiting bacterial IMPDH, an enzyme involved in the de novo synthesis of purine nucleotides, and therefore, necessary for bacterial cell growth and division.
 </div>
 <div class="col-lg-6 text-center">
-<img src="/app/static/img/IMPDH_reaction.png" alt="" class="w-100">
+<img src="/app/img/IMPDH_reaction.png" alt="" class="w-100">
 <h4 class="novo-blue">Bacterial IMPDH</h4>
 <h5>Ref. #E-Nov7</h5>
 </div>
@@ -69,7 +69,7 @@ Today, antibiotic resistance is one of the world's most important public health 
 <p>Bacterial recombinant IMPDH and human recombinant IMPDH, Type 2, enzymes are useful tools for the selection of species-specific IMPDH inhibitors. Both enzymes are available at <strong class="novo-blue">NOVOCIB</strong>.</p>
 <div class="row">
 <div class="col-lg-5 col-6">
-<img src="/app/static/img/IMPDH's Kinetics MPA.png" alt="" class="w-100">
+<img src="/app/img/IMPDH's Kinetics MPA.png" alt="" class="w-100">
 </div>
 <div class="col-lg-7 col-6">
 <p><strong>IMPDH inhibition:</strong> Effect of MPA (A) and mizoribine monophosphate (B) on human recombinant IMPDH II (red curve) and bacterial recombinant IMPDH of Staphylococcus aureus (blue curve). Enzymatic assays are performed in duplicate at 37°C in 0.1M KH2PO4 buffer pH 8.0 in the presence of 1mM DTT, 200µM NAD, 200µM IMP, 60nM Human IMPDH, Type 2 or 95nM IMPDH S.aureus. Reaction is followed in an iEMS Reader MF (Labsystems) microtiter plate reader at 340nm.</p>
@@ -83,7 +83,7 @@ Today, antibiotic resistance is one of the world's most important public health 
 <div class="referances my-5 row justify-content-center">
 <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
 <div class="col-2">
-<img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo">
+<img class="w-100 pt-3" src="/app/img/pubmed.png" alt="pubmed logo">
 </div>
 <div class="col-8">
 <ol>

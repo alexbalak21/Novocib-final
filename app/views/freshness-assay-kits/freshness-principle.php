@@ -16,21 +16,21 @@ $page_content = <<<CONTENT
 $content_title
 <div class="row">
 <div class="col-lg-4">
-<img class="w-100" src="/app/static/img/freshness_graph_1.jpg" alt="freshness graph">
+<img class="w-100" src="/app/img/freshness_graph_1.jpg" alt="freshness graph">
 </div>
 <div class="col-lg-4">
-<img class="w-100" src="/app/static/img/freshness_graph_2.jpg" alt="freshness graph">
+<img class="w-100" src="/app/img/freshness_graph_2.jpg" alt="freshness graph">
 </div>
 <div class="col-lg-4">
-<img class="w-100" src="/app/static/img/freshness_graph_3.jpg" alt="freshness graph">
+<img class="w-100" src="/app/img/freshness_graph_3.jpg" alt="freshness graph">
 </div>
 </div>
 <div class="row mt-5">
 <div class="col-lg-6 text-center my-3">
-<img src="/app/static/img/freshness_kit _pectrophotometer.jpg" alt="" class="col-lg-8">
+<img src="/app/img/freshness_kit _pectrophotometer.jpg" alt="" class="col-lg-8">
 </div>
 <div class="col-lg-6 text-center">
-<img src="/app/static/img/Freshness_Assay_Kit_for_Plate_Reader.jpg" alt="" class="col-lg-8">
+<img src="/app/img/Freshness_Assay_Kit_for_Plate_Reader.jpg" alt="" class="col-lg-8">
 </div>
 </div>
 <div class=" d-flex justify-content-center mt-4">

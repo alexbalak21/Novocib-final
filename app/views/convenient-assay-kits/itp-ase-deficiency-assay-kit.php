@@ -19,7 +19,7 @@ ob_start(); ?>
             </p>
         </div>
         <div class="col-lg-6">
-            <img class="w-100" src="/app/static/img/ITPase-assay-reaction.jpg" alt="">
+            <img class="w-100" src="/app/img/ITPase-assay-reaction.jpg" alt="">
             <h4 class="novo-blue text-center">PRECICE® ITPase Assay Kit</h4>
             <h5 class="text-center">Ref. #K0709-06-2</h5>
         </div>
@@ -47,7 +47,7 @@ ob_start(); ?>
         </div>
         <div style="margin:0px" class="row mb-3 py-2 align-items-center bg-light">
             <div class="text-center col-lg-6">
-                <img src="/app/static/img/ITPase_reaction.jpg" alt="ITPase activity Graph" />
+                <img src="/app/img/ITPase_reaction.jpg" alt="ITPase activity Graph" />
             </div>
             <div class="col-lg-6">
                 <table class="w-100">

@@ -8,7 +8,7 @@ $novoblue = "#4167b1";
 
 
 
-addContent(Banner::gen("/app/static/img/adn3d.jpg"));
+addContent(Banner::gen("/app/img/adn3d.jpg"));
 $table_nucleotides = Table::gen();
 
 $page_content = <<<CONTENT
@@ -24,7 +24,7 @@ $page_content = <<<CONTENT
         <div class="nucleotides-schema mt-5 row justify-content-center">
         <div class="row w-75">
             <div class="col-lg-6 col-sm-12">
-                <img class="w-100" src="/app/static/img/nucleotides-p1.png" alt="" />
+                <img class="w-100" src="/app/img/nucleotides-p1.png" alt="" />
             </div>
             <div class="col-lg-6 col-sm-12 d-flex align-items-center">
                 <p class="mt-2">
@@ -36,7 +36,7 @@ $page_content = <<<CONTENT
         <hr />
         <div class="row w-75">
             <div class="col-lg-6 col-sm-12">
-                <img class="w-100" src="/app/static/img/nucleotides-p2.png" alt="" />
+                <img class="w-100" src="/app/img/nucleotides-p2.png" alt="" />
             </div>
             <div class="col-lg-6 col-sm-12 mt-3">
                 <p class="mt-2">
@@ -61,7 +61,7 @@ $page_content = <<<CONTENT
         <div class="card col-lg-4 col-md-4 col-sm-6">
             <img
                 class="card-img-top"
-                src="/app/static/img/baby.jpg"
+                src="/app/img/baby.jpg"
                 style="height: 200px; object-fit: contain"
                 alt="dna" />
             <div class="card-body">
@@ -76,7 +76,7 @@ $page_content = <<<CONTENT
         <div class="card col-lg-4 col-md-4 col-sm-6">
             <img
                 class="card-img-top"
-                src="/app/static/img/aquaculture.jpg"
+                src="/app/img/aquaculture.jpg"
                 style="height: 200px; object-fit: contain"
                 alt="dna" />
             <div class="card-body">
@@ -91,7 +91,7 @@ $page_content = <<<CONTENT
         <div class="card col-lg-4 col-md-4 col-sm-6">
             <img
                 class="card-img-top"
-                src="/app/static/img/dog.jpg"
+                src="/app/img/dog.jpg"
                 style="height: 200px; object-fit: contain"
                 alt="dna" />
             <div class="card-body">
@@ -107,7 +107,7 @@ $page_content = <<<CONTENT
         <div class="card col-lg-4 col-md-4 col-sm-6">
             <img
                 class="card-img-top"
-                src="/app/static/img/yeast.webp"
+                src="/app/img/yeast.webp"
                 style="height: 200px; object-fit: contain"
                 alt="dna" />
             <div class="card-body">
@@ -124,7 +124,7 @@ $page_content = <<<CONTENT
         <div class="card col-lg-4 col-md-4 col-sm-6">
             <img
                 class="card-img-top"
-                src="/app/static/img/fish-meal.jpg"
+                src="/app/img/fish-meal.jpg"
                 style="height: 200px; object-fit: contain"
                 alt="dna" />
             <div class="card-body">
@@ -140,7 +140,7 @@ $page_content = <<<CONTENT
         <div class="card col-lg-4 col-md-4 col-sm-6">
             <img
                 class="card-img-top"
-                src="/app/static/img/cells.jpeg"
+                src="/app/img/cells.jpeg"
                 style="height: 200px; object-fit: contain"
                 alt="dna" />
             <div class="card-body">

@@ -31,7 +31,7 @@ $carousel = <<<CAROUSEL
 <div id="crouselItem" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-    <img src="app/static/img/brand-table.jpg" class="d-block w-100" alt="company photo / logo">
+    <img src="app/img/brand-table.jpg" class="d-block w-100" alt="company photo / logo">
     <div class="carousel-caption">
         <div>
             <h2 class="display-3 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
@@ -63,7 +63,7 @@ $card1_content = <<<CARD1_CONTENT
     <li>Purine & pyrimidines analysis of food or feed ingredients</li>
 </ul>
 CARD1_CONTENT;
-$card1 = Card::get("app/static/img/analisis-gloves.jpg", "Dietary Nucleotide Analysis", $card1_content, "/nucleotide-analysis-service", "Nucleotide Analysis Services page");
+$card1 = Card::get("app/img/analisis-gloves.jpg", "Dietary Nucleotide Analysis", $card1_content, "/nucleotide-analysis-service", "Nucleotide Analysis Services page");
 
 $card2_content = <<<CARD1_CONTENT
 <ul>
@@ -72,7 +72,7 @@ $card2_content = <<<CARD1_CONTENT
 <li>Convenient, saves time and preempts possible errors.</li>
 </ul>
 CARD1_CONTENT;
-$card2 = Card::get("app/static/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/convenient-assay-kits", "Freshness Assay Kits page");
+$card2 = Card::get("app/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/convenient-assay-kits", "Freshness Assay Kits page");
 
 $card3_content = <<<CARD1_CONTENT
 <ul>
@@ -82,7 +82,7 @@ $card3_content = <<<CARD1_CONTENT
 <li>Shipped worldwide in stable lyophilized form without dry ice or cold blocks.</li>
 </ul>
 CARD1_CONTENT;
-$card3 = Card::get("app/static/img/structure.jpg", "Active purified enzymes", $card3_content, "/active-purified-enzymes", "Active purified enzymes page");
+$card3 = Card::get("app/img/structure.jpg", "Active purified enzymes", $card3_content, "/active-purified-enzymes", "Active purified enzymes page");
 
 $card_container = <<<CARD_CONTAINER
 <section class="container mt-5" content="section containing the presentation of novocib services">
@@ -111,7 +111,7 @@ $about_us = <<<ABOUTUS
 <h2 class="underlinedTitle center"><span class="underlined novoblue center">About Us</span></h2>
 <div class="row">
     <div class="col-lg-5 d-flex align-items-center">
-        <img class="mb-5 w-100" src="app/static/img/analysis4.jpg" alt="analysis" />
+        <img class="mb-5 w-100" src="app/img/analysis4.jpg" alt="analysis" />
     </div>
     <div class="text-container col-lg-7 d-flex justify-content-center align-items-center">
         <div>
@@ -142,12 +142,12 @@ ABOUTUS;
 addContent($about_us);
 
 $paralax = <<<PARALAX
-<div class="parallax" style="background-image: url(app/static/img/header1.jpg); color: white;">
+<div class="parallax" style="background-image: url(app/img/header1.jpg); color: white;">
     <div class="overlay">
     
     <div class="container py-5">
 <div class="text-center d-flex justify-content-center align-items-center">    <h2 class="underlinedTitle right"><span class="underlined white right">CIR (Research Tax Credit)</span></h2>
-     <img class="ms-5 mb-3" src="app/static/img/marianne.png" height="60" alt="french marianne"></div>
+     <img class="ms-5 mb-3" src="app/img/marianne.png" height="60" alt="french marianne"></div>
 
 <p>
     NOVOCIB is certified by the French Ministry of Higher Education and Research as a "Research Tax Credit" (Crédit
@@ -170,7 +170,7 @@ $awards = <<<AWARDS
     <div class="row justify-content-center">
 
         <div class="award col-lg-3 col-10">
-            <img class="w-100 h-auto mt-2" src="app/static/img/i-lab-1.jpg" alt="i-lab logo">
+            <img class="w-100 h-auto mt-2" src="app/img/i-lab-1.jpg" alt="i-lab logo">
             <h4 class="text-center mt-3 novo-blue">I-LAB</h4>
             <h5 class="text-center mb-3">2003 &amp; 2005</h5>
             <p>
@@ -186,7 +186,7 @@ $awards = <<<AWARDS
         </div>
 
         <div class="award col-lg-3 col-10">
-            <img class="w-100 h-auto mt-2" src="app/static/img/tremplin.jpg" alt="femmes en or brand">
+            <img class="w-100 h-auto mt-2" src="app/img/tremplin.jpg" alt="femmes en or brand">
             <h4 class="text-center mt-3 novo-blue">Tremplin des Entreprises</h4>
             <h5 class="text-center mb-3">2005</h5>
             <p>
@@ -202,7 +202,7 @@ $awards = <<<AWARDS
         </div>
 
         <div class="award col-lg-3 col-10">
-            <img class="w-100 h-auto mt-2" src="app/static/img/femme-en-or.jpg" alt="femmes en or brand">
+            <img class="w-100 h-auto mt-2" src="app/img/femme-en-or.jpg" alt="femmes en or brand">
             <h4 class="text-center mt-3 novo-blue">Femmes en Or</h4>
             <h5 class="text-center mb-3">2011</h5>
             <p>
@@ -233,7 +233,7 @@ ob_start(); ?>
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.business-angels.info/">
-                        <img src="app/static/img/xmp.png" alt="xmp investors logo" />
+                        <img src="app/img/xmp.png" alt="xmp investors logo" />
                         <span>Xmp Investors Business Angels </span>
                     </a>
                 </div>
@@ -244,7 +244,7 @@ ob_start(); ?>
             <div class="card">
                 <div class="card-img">
                     <a href="https://samba-investisseurs.fr/">
-                        <img src="app/static/img/samba.jpg" alt="samba logo" />
+                        <img src="app/img/samba.jpg" alt="samba logo" />
                         <span>samba investors</span>
                     </a>
                 </div>
@@ -255,7 +255,7 @@ ob_start(); ?>
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.poleaquimer.com/en/">
-                        <img src="app/static/img/aquimer.png" alt="aquimer logo" />
+                        <img src="app/img/aquimer.png" alt="aquimer logo" />
                         <span>Aquimer Website</span>
                     </a>
                 </div>
@@ -266,7 +266,7 @@ ob_start(); ?>
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.agglo-boulonnais.fr/">
-                        <img src="app/static/img/cab.jpg" alt="boulogne comune association logo" />
+                        <img src="app/img/cab.jpg" alt="boulogne comune association logo" />
                         <span>boulogne sur mer Website</span>
                     </a>
                 </div>
@@ -277,7 +277,7 @@ ob_start(); ?>
             <div class="card">
                 <div class="card-img">
                     <a href=" https://www.pfinouvellesvagues.com/">
-                        <img src="app/static/img/nouvelle-vagues.png" alt="" />
+                        <img src="app/img/nouvelle-vagues.png" alt="" />
                         <span>nouvelle-vagues Website</span>
                     </a>
                 </div>
@@ -292,7 +292,7 @@ ob_start(); ?>
             <div class="card">
                 <div class="card-img">
                     <a href=" https://www.inextenso.fr/en/">
-                        <img src="app/static/img/InExtenso.jpg" alt="" />
+                        <img src="app/img/InExtenso.jpg" alt="" />
                         <span>InExtenso Website</span>
                     </a>
                 </div>
@@ -303,7 +303,7 @@ ob_start(); ?>
             <div class="card">
                 <div class="card-img">
                     <a href=" https://www.e.leclerc/ ">
-                        <img src="app/static/img/Leclerc.jpg" alt="" />
+                        <img src="app/img/Leclerc.jpg" alt="" />
                         <span>Leclerc Website</span>
                     </a>
                 </div>

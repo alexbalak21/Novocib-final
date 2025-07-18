@@ -8,7 +8,7 @@ $novoblue = "#4167b1";
 
 
 
-addContent(Banner::gen("/app/static/img/bacterial-luciferase.webp"));
+addContent(Banner::gen("/app/img/bacterial-luciferase.webp"));
 
 $page_content = <<<CONTENT
 <section class="container mt-5">
@@ -121,7 +121,7 @@ $page_content = <<<CONTENT
             <p><strong class="novo-blue">NOVOCIB</strong> 's Highly Pure Bacterial Luciferase can be used for NAD(P)H quantification or in dehydrogenase-coupled assays.</p>
         <div class="col-lg-3  d-flex justify-content-center">
             <figure class="col-lg-12 col-6">
-                <img src="/app/static/img/Lux_Gel.png" alt="Lux gel photo" class="w-100" />
+                <img src="/app/img/Lux_Gel.png" alt="Lux gel photo" class="w-100" />
                 <figcaption class="text-center mt-1">
                     <strong>Activity:</strong> > 500,000 RLU per second
                     per µg of protein in the presence of
@@ -134,7 +134,7 @@ $page_content = <<<CONTENT
         </div>
         <div class="col-lg-9 d-flex justify-content-center mb-5">
             <figure class="col-lg-9">
-                <img src="/app/static/img/Lux_Calibration.png" alt="Lux Calibration Graph" class="w-100" />
+                <img src="/app/img/Lux_Calibration.png" alt="Lux Calibration Graph" class="w-100" />
                 <figcaption class="text-center mt-1">
                     <strong>Fig. 1. Calibration curves (log-log plot) for NADH</strong> obtained using Highly Pure
                     Bacterial Luciferase (50µg/ml, NovoCIB, E-Nov 10).
@@ -148,7 +148,7 @@ $page_content = <<<CONTENT
 
         <div class="d-flex justify-content-center mb-5">
             <figure class="col-lg-7">
-                <img src="/app/static/img/newE.png" alt="ATP degradation Graph" class="w-100" />
+                <img src="/app/img/newE.png" alt="ATP degradation Graph" class="w-100" />
                 <figcaption style="font-weight: 600" class="text-center mt-1">
                     (Scheme 1): Postmortem ATP degradation in muscle
                 </figcaption>
@@ -161,7 +161,7 @@ $page_content = <<<CONTENT
     <div class="referances my-4 row justify-content-center py-3">
     <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="text-muted fa-solid fa-arrow-up-right-from-square"></i></h6>
     <div class="col-2">
-    <img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo">
+    <img class="w-100 pt-3" src="/app/img/pubmed.png" alt="pubmed logo">
     </div>
     <div class="col-8">
     <ol>

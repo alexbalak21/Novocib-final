@@ -16,7 +16,7 @@ $page_content = <<<CONTENT
 $content_title
 <p><strong>Inosine Monophosphate Dehydrogenase (IMPDH)</strong> (EC 1.1.1.205) catalyzes the conversion of inosine 5'-monophosphate (IMP) to xanthosine 5'- monophosphate (XMP), which is a crucial step for guanosine biosynthesis and for the pool of guanine nucleotides.</p>
 <div class="col-12 text-center">
-<img class="col-lg-8" src="/app/static/img/IMPDH_reaction.png" alt="IMPDH reaction schema">
+<img class="col-lg-8" src="/app/img/IMPDH_reaction.png" alt="IMPDH reaction schema">
 </div>
 
 <p class="my-3">In Human, IMPDH is a validated target for several therapeutic applications (cancer, immunological disorders...). Several IMPDH inhibitors, including blockbusters (e.g. CellCept®), have shown their clinical efficacy. Besides nucleoside (or NAD) analogues, new chemical entities (NCEs) have been identified as efficient IMPDH inhibitors and are currently investigated.</p>
@@ -28,7 +28,7 @@ $content_title
 <div class="referances my-5 row justify-content-center">
 <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
 <div class="col-2">
-<img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo">
+<img class="w-100 pt-3" src="/app/img/pubmed.png" alt="pubmed logo">
 </div>
 <div class="col-8">
 <ol>

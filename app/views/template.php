@@ -50,7 +50,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         <div class="col-lg-6 text-center">
             <img
                 class="w-100"
-                src="/app/static/img/IMPDH-reaction.png"
+                src="/app/img/IMPDH-reaction.png"
                 alt="Human IMPDH Type 2 reaction schema" />
             <h4 class="novo-blue">Human IMPDH Type 2</h4>
             <h5>Ref. #E-Nov1</h5>
@@ -141,10 +141,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         </p>
         <div class="row justify-content-center">
             <div class="col-lg-2 col-4 my-4">
-                <img height="400" src="/app/static/img/IMPDH-Gel.png" alt="PCR IMPDH Gel" />
+                <img height="400" src="/app/img/IMPDH-Gel.png" alt="PCR IMPDH Gel" />
             </div>
             <div class="col-lg-8 my-4">
-                <img height="400" src="/app/static/img/IMPDH-IC50.png" alt="IMPDH 2 inhibition by MPA" />
+                <img height="400" src="/app/img/IMPDH-IC50.png" alt="IMPDH 2 inhibition by MPA" />
             </div>
         </div>
         <p class="text-end mt-4">
@@ -181,7 +181,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             xanthosine 5µ-monophosphate (XMP) using NAD+ as a cofactor.
         </p>
         <div class="d-flex justify-content-center">
-            <img class="col-lg-7" src="/app/static/img/IMPDH-reaction.png" alt="IMPDH Reaction Structure" />
+            <img class="col-lg-7" src="/app/img/IMPDH-reaction.png" alt="IMPDH Reaction Structure" />
         </div>
         <p>
             The oxidation of IMP to XMP is considered as the pivotal step in the biosynthesis of guanine
@@ -232,39 +232,39 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         <div class="row justify-content-evenly">
             <figure class="col-lg-4 col-6 border">
                 <figcaption class="text-center">AVN-944</figcaption>
-                <img class="w-100" src="/app/static/img/AVN-944.png" alt="AVN-944 Structure" />
+                <img class="w-100" src="/app/img/AVN-944.png" alt="AVN-944 Structure" />
             </figure>
             <figure class="col-lg-4 col-6 border">
                 <figcaption class="text-center">VX-148</figcaption>
-                <img class="w-100" src="/app/static/img/VX-148.png" alt="AVN-944 Structure" />
+                <img class="w-100" src="/app/img/VX-148.png" alt="AVN-944 Structure" />
             </figure>
             <figure class="col-lg-4 col-6 border">
                 <figcaption class="text-center">VX-497</figcaption>
-                <img class="w-100" src="/app/static/img/VX-497.png" alt="VX-497 Structure" />
+                <img class="w-100" src="/app/img/VX-497.png" alt="VX-497 Structure" />
             </figure>
             <figure class="col-lg-4 col-6 border">
                 <figcaption class="text-center">MPA (mycophenolic acid)</figcaption>
-                <img class="w-100" src="/app/static/img/MPA.png" alt="MPA Structure" />
+                <img class="w-100" src="/app/img/MPA.png" alt="MPA Structure" />
             </figure>
             <figure class="col-lg-4 col-6 border">
                 <figcaption class="text-center">CellCept®</figcaption>
-                <img class="w-100" src="/app/static/img/MMF.png" alt="MMF Structure" />
+                <img class="w-100" src="/app/img/MMF.png" alt="MMF Structure" />
             </figure>
             <figure class="col-lg-4 col-6 border">
                 <figcaption class="text-center">BMS-337197</figcaption>
-                <img class="w-100" src="/app/static/img/BMS-337197.png" alt="BMS-337197 Structure" />
+                <img class="w-100" src="/app/img/BMS-337197.png" alt="BMS-337197 Structure" />
             </figure>
             <figure class="col-lg-4 col-6 border">
                 <figcaption class="text-center">Tiazofurin</figcaption>
-                <img class="w-100" src="/app/static/img/tiazofurin.png" alt="Tiazofurin Structure" />
+                <img class="w-100" src="/app/img/tiazofurin.png" alt="Tiazofurin Structure" />
             </figure>
             <figure class="col-lg-4 col-6 border">
                 <figcaption class="text-center">CellCept®</figcaption>
-                <img class="w-100" src="/app/static/img/ribavirine.png" alt="Ribavirine Structure" />
+                <img class="w-100" src="/app/img/ribavirine.png" alt="Ribavirine Structure" />
             </figure>
             <figure class="col-lg-4 col-6 border">
                 <figcaption class="text-center">Mizoribine</figcaption>
-                <img class="w-100" src="/app/static/img/mizoribine.png" alt="Mizoribine Structure" />
+                <img class="w-100" src="/app/img/mizoribine.png" alt="Mizoribine Structure" />
             </figure>
         </div>
     </div>
@@ -274,7 +274,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
     <div class="referances my-5 row justify-content-center">
         <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
         <div class="col-2">
-            <img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo">
+            <img class="w-100 pt-3" src="/app/img/pubmed.png" alt="pubmed logo">
         </div>
         <div class="col-8">
             <ol>

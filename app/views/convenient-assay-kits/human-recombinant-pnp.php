@@ -30,7 +30,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             </p>
         </div>
         <div class="col-lg-6 text-center">
-            <img class="w-100" src="/app/static/img/PNP-reaction.png" alt="Human PNP reaction schema" />
+            <img class="w-100" src="/app/img/PNP-reaction.png" alt="Human PNP reaction schema" />
             <h4 class="novo-blue">Human PNP</h4>
             <h5>Ref. #E-Nov2</h5>
         </div>
@@ -101,14 +101,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
     <div class="container">
         <div class="row">
             <div class="col-lg-6 row">
-                <img class="col-6" height="400" style="width:auto" class="col-6" src="/app/static/img/PNP-Gel.png" alt="">
+                <img class="col-6" height="400" style="width:auto" class="col-6" src="/app/img/PNP-Gel.png" alt="">
                 <p class="col-6"><b>Unit Definition:</b> One unit catalyzes the cleavage of 1.0 µmole of inosine per minute at pH 8 at 25µC.<br>
                     <b>Purity:</b> controlled by SDS-PAGE.
                 </p>
             </div>
             <div class="col-lg-6">
                 <p><strong>Assay condition:</strong><strong class="novo-blue">NOVOCIB</strong> has developed a coupled xanthine dehydrogenase (XDH) system to directly monitor PNP phosphorolytic reaction on inosine (IR).</p>
-                <img class="w-100" src="/app/static/img/PNP-RBC-lysate.jpg" alt="">
+                <img class="w-100" src="/app/img/PNP-RBC-lysate.jpg" alt="">
             </div>
         </div>
         <p class="mt-5 text-end"><strong>Download this Document: <a href="/app/documents/NovoCIB E-Nov2.pdf">NovoCIB's Human Recombinant PNP <i class="fa-solid fa-file-pdf"></i></a></strong></p>
@@ -121,7 +121,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         <h6>Catalytic activity</h6>
         <p>Purine Nucleoside Phosphorylase (PNP) is involved in salvage pathway of the purine metabolism. PNP catalyzes the cleavage of the glycosidic bond of ribo- or deoxyribonucleosides, in the presence of inorganic phosphate as a second substrate, to generate the purine base and ribose- or deoxyribose-1-phosphate. The reaction is reversible for natural substrates:</p>
         <div class="d-flex justify-content-center">
-            <img class="col-lg-7" src="/app/static/img/PNP-reaction.png" alt="">
+            <img class="col-lg-7" src="/app/img/PNP-reaction.png" alt="">
         </div>
 
         <h6 class="mt-3">Therapeutic potential of PNP inhibitors</h6>
@@ -133,7 +133,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 Peldesine (BCX-34) was granted orphan drug status for the treatment of T-cell lymphoma and reached phase III as an immunomodulator for inflammatory autoimmune diseases. It has recently entered clinical trial for HIV infections(3).
             </p>
             <figure class="col-2">
-                <img class="col-lg-10" src="/app/static/img/BCX-34.png" alt="">
+                <img class="col-lg-10" src="/app/img/BCX-34.png" alt="">
                 <figcaption class="text-center"><strong>BCX-34 (Peldesine)</strong></figcaption>
             </figure>
         </div>
@@ -142,7 +142,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 Forodesine (BCX-1777) has US orphan drug status for the treatment of T-cell non-Hodgkin's lymphoma, including cutaneous T-cell lymphoma (CTCL), chronic lymphocytic leukaemia (CLL) and related leukaemias, including T-cell prolymphocytic leukaemia (PLL), adult T-cell leukaemia and hairy cell leukaemia, and for the treatment of acute lymphocytic leukaemia (ALL). Forodesine was also designed Orphan drug in Europe for ALL in December 2006, and for CTCL in February 2007(4).
             </p>
             <figure class="col-2">
-                <img class="col-lg-10" src="/app/static/img/BCX-1777.png" alt="">
+                <img class="col-lg-10" src="/app/img/BCX-1777.png" alt="">
                 <figcaption class="text-center"><strong>BCX-1777 (Forodesine)</strong></figcaption>
             </figure>
         </div>

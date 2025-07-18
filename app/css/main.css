@@ -604,7 +604,7 @@ footer {
 }
 
 footer {
-  background-image: url(/app/static/img/helix.jpg);
+  background-image: url(/app/img/helix.jpg);
   padding: 0 !important;
 
   .copyright {
@@ -696,7 +696,7 @@ footer {
 header {
   position: relative;
   height: calc(100vw / 2.3);
-  background-image: url("app/static/img/header1-v.jpg");
+  background-image: url("app/img/header1-v.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

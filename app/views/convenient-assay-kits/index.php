@@ -10,7 +10,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 
 
-<?= Banner::gen("/app/static/img/assay-kits.jpg") ?>
+<?= Banner::gen("/app/img/assay-kits.jpg") ?>
 <section class="container mt-5">
     <h2 class="underlinedTitle right"><span class="underlined novoblue right">Biochemical Assay Kits for Life Science</span></h2>
     <p><strong class="novo-blue">NOVOCIB</strong> develops original biochemical assay kits based on active nucleotide metabolism enzymes. This portfolio of assays represents a unique range of powerful tools for Drug Discovery and research in the field of nucleoside and nucleotide metabolism.</p>

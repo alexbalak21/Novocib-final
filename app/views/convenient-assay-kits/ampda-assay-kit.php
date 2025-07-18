@@ -24,7 +24,7 @@ ob_start(); ?>
             <p><strong>PRECICE® AMP Deaminase Assay kit</strong> provides the first <strong>non radioactive</strong> and one-step protocol for measurement of <strong>AMP Deaminase activity</strong> in cellular lysates in a convenient 96-well plate format.</p>
         </div>
         <div class="col-lg-6">
-            <img class="w-100" src="/app/static/img/AMPD-assay-reaction.jpg" alt="">
+            <img class="w-100" src="/app/img/AMPD-assay-reaction.jpg" alt="">
             <h4 class="novo-blue text-center">PRECICE® AMP Deaminase Assay Kit</h4>
             <h5 class="text-center">#K0709-05-2</h5>
         </div>
@@ -48,7 +48,7 @@ ob_start(); ?>
         </div>
         <div style="margin:0px" class="row mb-3 py-2 align-items-center bg-light">
             <div class="text-center col-lg-6">
-                <img src="/app/static/img/AMPD-reaction.jpg" alt="AMPD Reaction Graph" />
+                <img src="/app/img/AMPD-reaction.jpg" alt="AMPD Reaction Graph" />
             </div>
             <div class="col-lg-6">
                 <table class="w-100">

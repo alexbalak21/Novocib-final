@@ -57,7 +57,7 @@ ob_start(); ?>
         </div>
         <div class="col-lg-6 my-5">
             <div class="text-center">
-                <img class="w-100" src="/app/static/img/ADK_Reaction.png" alt="ADK Reaction schema" />
+                <img class="w-100" src="/app/img/ADK_Reaction.png" alt="ADK Reaction schema" />
                 <h4 class="novo-blue mt-4">Adenosine Kinase</h4>
                 <h5 class="mb-5">Ref. #E-Nov5</h5>
             </div>
@@ -124,7 +124,7 @@ ob_start(); ?>
         <div class="row pt-5">
             <div class="col-lg-6 row">
                 <div class="col-3">
-                    <img class="w-100" src="/app/static/img/AK_Gel.png" alt="AK Gel photo" />
+                    <img class="w-100" src="/app/img/AK_Gel.png" alt="AK Gel photo" />
                 </div>
                 <div class="col-8">
                     <p>
@@ -150,7 +150,7 @@ ob_start(); ?>
                     Sigma-Aldrich.
                 </p>
                 <div class="text-center pb-4">
-                    <img class="col-lg-9" src="/app/static/img/AK_Kinetics.png" alt="AK Kinetics Graph" />
+                    <img class="col-lg-9" src="/app/img/AK_Kinetics.png" alt="AK Kinetics Graph" />
                 </div>
             </div>
         </div>

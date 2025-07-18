@@ -23,7 +23,7 @@ $content_title
 <p>Human deoxycytidine kinase plays a key role in the salvage pathway of deoxynucleotides synthesis providing resting cells with deoxynucleotides for DNA repair and mitochondrial DNA synthesis. The enzyme has a broad substrate specificity and provides the phosphorylation of both purine and pyrimidine deoxynucleosides (e.g. deoxyadenosine (dA), deoxyguanosine (dG), deoxycytidine (dC)), and pyrimidine ribonucleoside cytidine (C).</p>
 </div>
 <div class="col-lg-6 text-center">
-<img class="w-100"  src="/app/static/img/dCK_Reaction.png" alt="dCK Reaction schema">
+<img class="w-100"  src="/app/img/dCK_Reaction.png" alt="dCK Reaction schema">
 <h4 class="novo-blue">Deoxycytidine Kinase</h4>
 <h5>Ref. #E-Nov3</h5>
 </div>
@@ -72,7 +72,7 @@ $content_title
 <div class="container py-3">
 <div class="row align-items-center">
 <div class="col-3 text-center">
-<img src="/app/static/img/dCK_Gel.png" alt="dsk gel photo">
+<img src="/app/img/dCK_Gel.png" alt="dsk gel photo">
 </div>
 <div class="col-9">
 <p><strong>Unit Definition:</strong> One unit of deoxycytidine kinase converts 1.0 µmole of deoxyinosine and ATP to dIMP and ADP per minute at pH 8 at 37°C, as measured by a coupled IMPDH enzyme system. (see <a href="/convenient-assay-kits/dck-phosphorylation-assay-kit">dCK Assay Kit</a> for further details).</p>
@@ -87,7 +87,7 @@ $content_title
 <div class="referances my-4 row justify-content-center">
 <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
 <div class="col-2">
-<img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo">
+<img class="w-100 pt-3" src="/app/img/pubmed.png" alt="pubmed logo">
 </div>
 <div class="col-8">
 <ol>

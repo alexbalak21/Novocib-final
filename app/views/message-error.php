@@ -4,7 +4,7 @@ $title = "Error Sending Message";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
 ?>
 
-<?= Banner::gen("/app/static/img/error.jpg") ?>
+<?= Banner::gen("/app/img/error.jpg") ?>
 <div class="container my-5">
     <div class="alert alert-warning text-center" role="alert">
         <h4>We’re sorry, but your message could not be sent at this time.</h4>

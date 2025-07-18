@@ -8,7 +8,7 @@ $novoblue = "#4167b1";
 
 
 
-addContent(Banner::gen("/app/static/img/cells-blue.jpg"));
+addContent(Banner::gen("/app/img/cells-blue.jpg"));
 $section1_title = UnderlinedTitle::get("Analytical Service for Validation of Inhibitors of Nucleotide Synthesis", "novoblue", "right");
 $section2_title = UnderlinedTitle::get("Cellular Nucleotides Profiling - Analytical Service", "novoblue", "right");
 $section3_title = UnderlinedTitle::get("Cellular Assay for IMPDH inhibitors", "novoblue", "right");
@@ -84,22 +84,22 @@ $section2_title
 <p>To study the effect of nucleoside analogues on the whole spectra of cellular purine and pyrimidine ribo- and deoxyribonucleotides, <strong class="novo-blue">NOVOCIB</strong> has developed an original cell-based analytical approach in which more than 31 (deoxy)ribonucleotides (mono-, di-, triphosphate) and nucleotide co-factors are extracted from cultured cells, separated by ion-pared chromatography and quantified.</p>
 <div class="nuclotides-profile row align-items-center justify-content-center">
 <div class="col-lg-2 col-sm-6">
-<img class="w-100" src="/app/static/img/cell-analysis.jpg" alt="">
+<img class="w-100" src="/app/img/cell-analysis.jpg" alt="">
 <h5 class="text-center">Cells teatment</h5>
 </div>
 <div class="col-1 text-center" ><i class="col-1 fa-solid fa-arrow-right"></i></div>
 <div class="col-lg-2 col-sm-6">
-<img class="w-100" src="/app/static/img/hplc-analysis.jpg" alt="">
+<img class="w-100" src="/app/img/hplc-analysis.jpg" alt="">
 <h5 class="text-center">Nucleotides extraction (SPE)</h5>
 </div>
 <div class="col-1 text-center" ><i class="col-1 fa-solid fa-arrow-right"></i></div>
 <div class="col-lg-2 col-sm-6">
-<img class="w-100" src="/app/static/img/identifiaction.jpg" alt="">
+<img class="w-100" src="/app/img/identifiaction.jpg" alt="">
 <h5 class="text-center">Nuclotides ldentification and Quantification</h5>
 </div>
 <div class="col-1 text-center" ><i class="col-1 fa-solid fa-arrow-right"></i></div>
 <div class="col-lg-2 col-sm-6">
-<img class="w-100" src="/app/static/img/nuclotide-profile.jpg" alt="">
+<img class="w-100" src="/app/img/nuclotide-profile.jpg" alt="">
 <h5 class="text-center">Nucleotide pofile</h5>
 </div>
 <p class="mt-3">These cellular assays were validated with anti-viral and anti-cancer nucleoside analogues (e.g. ribavirin, gemcitabine) and known anti-metabolites (mycophenolic acid, leflunomide, hydroxyurea, methotrexate).</p>
@@ -201,12 +201,12 @@ If needed, for instance to focus on naturally low-level metabolites, larger samp
 <p><strong>Nucleosides & nucleotides separation and analysis: </strong>The extraction and separation procedures have been optimized and specially developed by NOVOCIB. After a 48h-treatment, nucleosides and nucleotides are extracted; Nucleosides, nucleotides mono-, di-, and triphosphates, deoxynucleotides triphosphates and bases are separated by ion-pairing HPLC (Agilent 1100) with a Zorbax EclipsePlus C18 column and quantified using an Agilent ChemStation software. The resulting values are normalized by cell number. A mixture of 30 authentic standards (Sigma Aldrich, Roth) is run before and after every set of samples analysis.</p>
 <figure class="text-center my-5">
 <figcaption class="w-50 mx-auto"><strong>Figure 1:</strong> Separation by ion-pairing HPLC of a 6.6pmol / 20 µl standard mixture of 30 nucleosides, nucleotide mono-, di-, and triphosphates, deoxynucleotide triphosphates and bases.</figcaption>
-<img style="width:50%" onclick="enlargeImg(this)" src="/app/static/img/Standards-Spectrum.png" alt="Separation by ion-pairing HPLC">
+<img style="width:50%" onclick="enlargeImg(this)" src="/app/img/Standards-Spectrum.png" alt="Separation by ion-pairing HPLC">
 <p class="text-muted" style="font-size:18px !important;"><i class="fa-solid fa-hand-pointer"></i> Click to enlarge</p>
 </figure>
 <figure class="text-center my-5">
 <figcaption class="w-50 mx-auto"><strong>Figure 2:</strong> Quantification of intracellular metabolites in Huh-7 non-treated cells.</figcaption>
-<img style="width:50%" onclick="enlargeImg(this)" src="/app/static/img/HuhSpectrum.png" alt="Quantification of intracellular metabolites in Huh-7 non-treated cells">
+<img style="width:50%" onclick="enlargeImg(this)" src="/app/img/HuhSpectrum.png" alt="Quantification of intracellular metabolites in Huh-7 non-treated cells">
 <p class="text-muted" style="font-size:18px !important;"><i class="fa-solid fa-hand-pointer"></i> Click to enlarge</p>
 </figure>
 <div class="d-flex justify-content-center my-4">
@@ -310,7 +310,7 @@ If needed, for instance to focus on naturally low-level metabolites, larger samp
 
 <p class="my-5"><strong>Nucleotide profiling:</strong> For every nucleotide and nucleoside metabolite, drug-treated / non-treated cells concentration ratios are calculated and graphically reported. The base line indicates the control level.</p>
 <div class="row justify-content-center my-4">
-<img class="col-lg-2 col-4 h-100" src="/app/static/img/pubmed-logo.png" alt="PubMed Logo">
+<img class="col-lg-2 col-4 h-100" src="/app/img/pubmed-logo.png" alt="PubMed Logo">
 <div class="col-lg-8 col-11">
 <strong>
 References (Link to PubMed) <br>

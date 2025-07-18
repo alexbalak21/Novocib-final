@@ -14,7 +14,7 @@
     ?>
     <link rel="stylesheet" href="/app/css/fish-freshness-assay-kit.css">
 
-    <?= Banner::gen("/app/static/img/Fish-freshness/fish-group.jpg") ?>
+    <?= Banner::gen("/app/img/Fish-freshness/fish-group.jpg") ?>
     <script src="/app/js/fish-freshness-page.js" defer></script>
     <main class="container w-100 mt-5">
 
@@ -28,7 +28,7 @@
                     Fish muscle is particularly rich in ATP, which is a most abundant muscle metabolite after amino acids. Post-mortem degradation of ATP in fish muscle is a well-documented process that has significant implications for food quality and shelf life.
                 </p>
                 <p class="fs-5 border text-center">
-                    <span class="fw-bold">ATP</span> ➜ <span class="fs-6">ADP</span> ➜ <span class="fs-6">AMP</span> ➜&nbsp;<span class="text-primary fw-bold">IMP<i class="fa-solid fa-arrow-down"></i></span>&nbsp;➜ inosine ➜ <span class="text-danger fw-bold">hypoxanthine<i class="fa-solid fa-arrow-up"></i></span><img src="/app/static/img/Fish-freshness/crossed_arrow.svg" class="custom-icon" alt="Not going icon" /><span class="me-1">uric acid</span>
+                    <span class="fw-bold">ATP</span> ➜ <span class="fs-6">ADP</span> ➜ <span class="fs-6">AMP</span> ➜&nbsp;<span class="text-primary fw-bold">IMP<i class="fa-solid fa-arrow-down"></i></span>&nbsp;➜ inosine ➜ <span class="text-danger fw-bold">hypoxanthine<i class="fa-solid fa-arrow-up"></i></span><img src="/app/img/Fish-freshness/crossed_arrow.svg" class="custom-icon" alt="Not going icon" /><span class="me-1">uric acid</span>
                 </p>
                 <p>
                     Following slaughter, ATP continues to be hydrolyzed by contracting muscles; however, its resynthesis by mitochondria becomes impossible in the absence of oxygen. Within just a few hours, ATP, ADP, and AMP are enzymatically converted into IMP, which becomes the predominant nucleotide in fresh fish (Wang et al., 1998). During the first few days of storage, IMP levels gradually decline, primarily due to the activity of autolytic enzymes that hydrolyze IMP into inosine. Inosine is subsequently hydrolyzed into hypoxanthine by both autolytic and bacterial enzymes. Since fish muscle lacks xanthine oxidase—an enzyme that converts hypoxanthine into uric acid—these processes lead to the progressive accumulation of hypoxanthine, the final product of ATP degradation in fish. This accumulation has been shown to correlate with spoilage and coincides with the formation of volatile amines in cod (Dalgaard et al., 1993). Although the post-mortem ATP degradation pathway is universal, the rate of IMP degradation and hypoxanthine formation varies considerably among fish species and depends on handling and storage conditions (Surette et al., 1988).
@@ -37,17 +37,17 @@
                     <div class="row justify-content-center enzymatic-conversion">
                         <div class="col-4" style="width: 150px;">
                             <span>IMP</span><br>
-                            <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
+                            <span class="arrow"><img src="/app/img/arrow.jpg" alt="arrow down"></span>
                             <span>NADH<sub>2</sub></span>
                         </div>
                         <div class="col-4" style="width: 150px;">
                             <span>Inosine</span><br>
-                            <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
+                            <span class="arrow"><img src="/app/img/arrow.jpg" alt="arrow down"></span>
                             <span>NADH<sub>2</sub></span>
                         </div>
                         <div class="col-4" style="width: 150px;">
                             <span>Hypoxanthine</span><br>
-                            <span class="arrow"><img src="/app/static/img/arrow.jpg" alt="arrow down"></span>
+                            <span class="arrow"><img src="/app/img/arrow.jpg" alt="arrow down"></span>
                             <span>NADH<sub>2</sub></span>
                         </div>
                         <div class="text-center conversion">
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="col-lg-6 text-center">
-                <img class="w-100" src="/app/static/img/ATP_degradation.jpg" alt="atp degradation schema">
+                <img class="w-100" src="/app/img/ATP_degradation.jpg" alt="atp degradation schema">
                 <h4 class="novo-blue">Post-Mortem ATP Degradation Pathway in Fish Muscle</h4>
             </div>
         </div>
@@ -173,7 +173,7 @@
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-">
-                <img class="border w-100" style="width: 400px;" src="/app/static/img/Fish-freshness/kit-photo.jpg" alt="fish freshness kit composition">
+                <img class="border w-100" style="width: 400px;" src="/app/img/Fish-freshness/kit-photo.jpg" alt="fish freshness kit composition">
             </div>
         </div>
 
@@ -253,13 +253,13 @@
                     For each nucleotide (IMP or hypoxanthine or inosine) the assay is linear between 0.1AU-1.6AU, corresponding to 0.2mmols/Kg to 6mmols/Kg of nucleotide after 20-fold dilution.
                 </p>
                 <div class="row mb-2">
-                    <div class="col-lg-4 col-md-6 mb-1"><img class="w-100" src="/app/static/img/Fish-freshness/LineB.png" alt="Spectrophotometric graph showing absorbance at 340nm for various concentrations of IMP (inosine monophosphate), ranging from 0 to 6 mmol/kg."></div>
-                    <div class="col-lg-4 col-md-6 mb-1"><img class="w-100" src="/app/static/img/Fish-freshness/LineC.png" alt="Spectrophotometric graph displaying absorbance at 340nm for hypoxanthine at multiple concentrations, from 0 to 6 mmol/kg."></div>
-                    <div class="col-lg-4 col-md-6 mb-1"><img class="w-100" src="/app/static/img/Fish-freshness/LineD.png" alt="Spectrophotometric graph illustrating absorbance at 340nm for inosine, comparing concentrations from 0 to 6 mmol/kg."></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img class="w-100" src="/app/img/Fish-freshness/LineB.png" alt="Spectrophotometric graph showing absorbance at 340nm for various concentrations of IMP (inosine monophosphate), ranging from 0 to 6 mmol/kg."></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img class="w-100" src="/app/img/Fish-freshness/LineC.png" alt="Spectrophotometric graph displaying absorbance at 340nm for hypoxanthine at multiple concentrations, from 0 to 6 mmol/kg."></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img class="w-100" src="/app/img/Fish-freshness/LineD.png" alt="Spectrophotometric graph illustrating absorbance at 340nm for inosine, comparing concentrations from 0 to 6 mmol/kg."></div>
                     <p class="text-center mb-5"><b>The reactions were followed at 30°C using PRECICE® microplate (30°C, 200µL per well) and Labsystems iEMS Reader (Thermo).</b></p>
-                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/IMPmmolsPerKg.png" alt="IMP mmols per Kg graph" class="w-100" title="IMP mmols per kg"></div>
-                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Inosine.png" alt="Inosine, mmols per Kg" class="w-100" title="Inosine, mmols per kg"></div>
-                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/static/img/Fish-freshness/Hypoxanthine.png" alt="Hypoxanthine mmols per Kg graph" class="w-100" title="Hypoxanthine mmols per kg"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/img/Fish-freshness/IMPmmolsPerKg.png" alt="IMP mmols per Kg graph" class="w-100" title="IMP mmols per kg"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/img/Fish-freshness/Inosine.png" alt="Inosine, mmols per Kg" class="w-100" title="Inosine, mmols per kg"></div>
+                    <div class="col-lg-4 col-md-6 mb-1"><img src="/app/img/Fish-freshness/Hypoxanthine.png" alt="Hypoxanthine mmols per Kg graph" class="w-100" title="Hypoxanthine mmols per kg"></div>
                 </div>
                 <p class="text-center"><b>Calibration curves for IMP, inosine and hypoxanthine obtained using PRECICE® IMP, inosine, and hypoxanthine Assay kit.</b></p>
             </div>
@@ -388,38 +388,38 @@
                 <div class="col-lg-6 col-12">
                     <p class="mb-0 text-center">The H-value represents <b>the relative concentration of hypoxanthine</b> compared to the total amount of ATP degradation products-namely, IMP, inosine, and hypoxanthine.</p>
                     <div class="text-center border mb-4">
-                        <img class="formula-img w-100" src="/app/static/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
+                        <img class="formula-img w-100" src="/app/img/Fish-freshness/H.jpg" alt="mathematical expression of H-value" title="H(%) = (Hx / (IMP + Ino + Hx)) * 100"><br>
                         <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">H(%) = (Hx / (IMP + Ino + Hx)) * 100</p>
                     </div>
 
                     <p class="mb-0 text-center">The Fr value, on the other hand, reflects <b>the relative concentration of IMP</b> in relation to the sum of these same nucleotides.</p>
                     <div class="text-center border mb-4">
-                        <img class="formula-img w-100" src="/app/static/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
+                        <img class="formula-img w-100" src="/app/img/Fish-freshness/Fr.jpg" alt="mathematical expression of Fr" title="Fr(%) = (IMP / (IMP + Ino + Hx)) * 100"><br>
                         <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">Fr(%) = (IMP / (IMP + Ino + Hx)) * 100</p>
                     </div>
 
                     <p class="mb-0 text-center">The Ki value is <b>the inverse of relative IMP concentration</b> (explanations are shown below).</p>
                     <div class="mb-2 text-center border">
-                        <img class="formula-img w-100" src="/app/static/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
+                        <img class="formula-img w-100" src="/app/img/Fish-freshness/Ki.jpg" alt="mathematical expression of Ki" title="Ki(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100"><br>
                         <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">K<sub>i</sub>(%) = ((Ino + Hx) / (IMP + Ino + Hx)) * 100</p>
                     </div>
                     <div class="text-center border">
-                        <img class="w-75 formula-img w-100" src="/app/static/img/Fish-freshness/Ino_hx.jpg" alt="mathematical expression" title="[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%">
+                        <img class="w-75 formula-img w-100" src="/app/img/Fish-freshness/Ino_hx.jpg" alt="mathematical expression" title="[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%">
                         <br> <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">[(Ino + Hx) / (IMP + Ino + Hx) × 100] + [IMP / (IMP + Ino + Hx) × 100] = 100%</p>
                     </div>
                     <div class="mt-2 text-center border mb-4">
-                        <img class="w-75 formula-img w-100" src="/app/static/img/Fish-freshness/ki100.jpg" alt="mathematical expression" title="Ki (%) = 100% - [IMP / (IMP + Ino + Hx)] × 100">
+                        <img class="w-75 formula-img w-100" src="/app/img/Fish-freshness/ki100.jpg" alt="mathematical expression" title="Ki (%) = 100% - [IMP / (IMP + Ino + Hx)] × 100">
                         <br><i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">K<sub>i</sub>(%) = 100% - [IMP / (IMP + Ino + Hx)] × 100</p>
                     </div>
 
                     <p class="mb-0 text-center mt-4">K<sub>i</sub> value cannot be applied for the fish species with fast autolytic IMP hydrolysis such as cod (Gadus morhua), whiting (Merlangus merlangus) and pollock (Pollachius virens) since in the absence of IMP, K<sub>i</sub> is 100%.</p>
                     <div class="mb-3 text-center border">
-                        <img class="formula-img w-100" src="/app/static/img/Fish-freshness/ki-imp.jpg" alt="mathematical expression of Ki" title="Ki (%) = [(Ino + Hx) / (Ino + Hx)] × 100 = 100%"><br>
+                        <img class="formula-img w-100" src="/app/img/Fish-freshness/ki-imp.jpg" alt="mathematical expression of Ki" title="Ki (%) = [(Ino + Hx) / (Ino + Hx)] × 100 = 100%"><br>
                         <i class="fa-solid fa-angle-down"></i>
                         <p class="mt-1 formula">K<sub>i</sub>(%) = [(Ino + Hx) / ( <strike>IMP</strike> + Ino + Hx)] × 100 = 100%</p>
                     </div>
@@ -438,7 +438,7 @@
             <div class="referances mt-5 pt-2 row justify-content-center">
                 <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
                 <div class="col-2 d-lg-block d-none">
-                    <img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo">
+                    <img class="w-100 pt-3" src="/app/img/pubmed.png" alt="pubmed logo">
                 </div>
                 <div class="col-lg-8">
                     <ol>

@@ -13,7 +13,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 
 
-<?= Banner::gen("/app/static/img/phosphatase-assay-kit.jpg") ?>
+<?= Banner::gen("/app/img/phosphatase-assay-kit.jpg") ?>
 <main class="container mt-5">
     <h2 class="underlinedTitle center">
         <span class="underlined novoblue center">Continuous Phosphatase Assay</span>
@@ -47,7 +47,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         <div class="col-lg-6 text-center">
             <img
                 class="w-100"
-                src="/app/static/img/Phosphatase_Assay_Principle.png"
+                src="/app/img/Phosphatase_Assay_Principle.png"
                 alt="Phosphatase Assay Kit Principle reaction schema"
                 title="Phosphatase Assay Kit Principle" />
             <h4 class="novo-blue">PRECICE® Phosphatase Assay Kit</h4>

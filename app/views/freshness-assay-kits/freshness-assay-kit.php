@@ -17,7 +17,7 @@ $novoblue = "#4167b1";
 
 
 
-addContent(Banner::gen("/app/static/img/fish-water.jpg"));
+addContent(Banner::gen("/app/img/fish-water.jpg"));
 
 $page_content = <<<CONTENT
 <section class="container mt-5">
@@ -48,7 +48,7 @@ $page_content = <<<CONTENT
         <div class="col-lg-6 text-center">
             <img
                 class="col-lg-8 col-12"
-                src="/app/static/img/Freshness_Assay_Kit_Principle.png"
+                src="/app/img/Freshness_Assay_Kit_Principle.png"
                 alt="Fish Freshness Assay Kit photo" />
             <h4 class="novo-blue mt-3">PRECICE® Freshness Assay Kits</h4>
             <h5>Ref. #K0700-01-03</h5>
@@ -230,7 +230,7 @@ $page_content = <<<CONTENT
 
         <div class="d-flex justify-content-center mb-5">
             <figure class="col-lg-7">
-                <img src="/app/static/img/newE.png" alt="ATP degradation Graph" class="w-100" />
+                <img src="/app/img/newE.png" alt="ATP degradation Graph" class="w-100" />
                 <figcaption style="font-weight: 600" class="text-center mt-1">
                     (Scheme 1): Postmortem ATP degradation in muscle
                 </figcaption>

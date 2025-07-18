@@ -11,7 +11,7 @@ ob_start(); ?>
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
-<?= Banner::gen("/app/static/img/city.jpg") ?>
+<?= Banner::gen("/app/img/city.jpg") ?>
 <div class="bg-light pt-4 pt-4 pb-1">
     <h2 class="underlinedTitle center"><span class="underlined novoblue center">Our Latest News</span></h2>
 </div>
@@ -30,7 +30,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 </p>
             </div>
             <div class="col-lg-4 col-7 mx-auto mt-lg-5 mt-4">
-                <a title="Go to Fish Freshness Assay Kit page" href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit"><img src="/app/static/img/Fish-freshness/fish.jpg" alt="fish photo" class="w-100 border"></a>
+                <a title="Go to Fish Freshness Assay Kit page" href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit"><img src="/app/img/Fish-freshness/fish.jpg" alt="fish photo" class="w-100 border"></a>
             </div>
         </div>
         <p class="text-end text-muted mt-4 mb-1">Published on July 15, 2025</p>

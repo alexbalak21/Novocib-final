@@ -31,7 +31,7 @@ echo Banner::gen();
             </p>
         </div>
         <div class="col-lg-6 text-center">
-            <img class="w-100" src="/app/static/img/dCK-phosphorylation-kit.png" alt="dCK phosphorylation kit reaction schema" />
+            <img class="w-100" src="/app/img/dCK-phosphorylation-kit.png" alt="dCK phosphorylation kit reaction schema" />
             <h4 class="novo-blue">PRECICE® dCK Phosphorylation Assay Kit</h4>
             <h5>Ref. #K0307-01</h5>
         </div>
@@ -65,7 +65,7 @@ echo Banner::gen();
             <p class="ms-5"><i class="novo-blue fa-solid fa-arrow-right"></i> Such as gemcitabine, cladribine, aracytidine, efficiently phosphorylated by tumor cells and natural pyrimidine and purine nucleosides.</p>
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-12">
-                    <img class="w-100" src="/app/static/img/dCK-competitors.png" alt="">
+                    <img class="w-100" src="/app/img/dCK-competitors.png" alt="">
                 </div>
                 <div class="col-lg-8">
                     <table class="my-4 w-100 nucleoside-analogues">

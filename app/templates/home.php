@@ -25,7 +25,7 @@ if (!isset($lang)) {
     <!-- BOOTSTRAP  -->
     <link rel="stylesheet" href="/app/css/bootstrap.min.css">
     <script src="/app/js/bootstrap.bundle.min.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="/app/static/img/icon.png" />
+    <link rel="icon" type="image/x-icon" href="/app/img/icon.png" />
     <!-- CUSTOM -->
     <link rel="stylesheet" href="/app/css/main.css">
     <script src="/app/js/app.js" defer></script>

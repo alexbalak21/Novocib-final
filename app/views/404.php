@@ -11,7 +11,7 @@ $cleaned_request = strtolower($request);
 
 ?>
 
-<div class="banner" style="background-image: url(/app/static/img/network.jpg); height: 500px">
+<div class="banner" style="background-image: url(/app/img/network.jpg); height: 500px">
     <div class="overlay">
         <div class="caption w-100">
             <h1 class="title display-4">404 Page not found</h1>

@@ -73,7 +73,7 @@ Crystal structure of open form of human UMP-CMP kinase has been solved recently(
 <div class="mt-4 row align-items-center">
 <div class="col-lg-6 row">
 <div class="col-4 text-center">
-<img class="w-85" src="/app/static/img/CMK_Gel.png" alt="CMK Gel Photo">
+<img class="w-85" src="/app/img/CMK_Gel.png" alt="CMK Gel Photo">
 </div>
 <div class="col-8">
 <p><strong>Storage:</strong> 20°C in a solution containing 150mM KCl, 50mM Tris-Hcl, pH7,5, 2mM β-mercaptoethanol, 50% glycerol.</p>
@@ -85,7 +85,7 @@ Crystal structure of open form of human UMP-CMP kinase has been solved recently(
 <div class="col-lg-6">
 <p><strong>Assay condition:</strong> Enzymatic activity of UMP-CMP kinase is measured by continuous spectrophotometric assays in a coupled lactate dehydrogenase/pyruvate kinase system. Assays are carried out at 37Â°C, at 50mM Tris-HCl pH7,6; 50mM KCl, 10mM MgCl2, 5mM ATP, 0,1mM NADH, 1mM phosphoenolpyruvate, 1mM DTT, PK 10U/ml, LDH 15U/ml, 380nM CMK. Reaction is followed in an iEMS Reader MF (Labsystems, Finland) microtiter plate reader at 340nm</p>
 <div class="text-center">
-<img src="/app/static/img/CMK_Kinetics.png" alt="CMK Kinetics Graph">
+<img src="/app/img/CMK_Kinetics.png" alt="CMK Kinetics Graph">
 </div>
 </div>
 </div>
@@ -96,7 +96,7 @@ Crystal structure of open form of human UMP-CMP kinase has been solved recently(
 <div class="referances my-4 row justify-content-center">
 <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
 <div class="col-2">
-<img class="w-100 pt-3" src="/app/static/img/pubmed.png" alt="pubmed logo">
+<img class="w-100 pt-3" src="/app/img/pubmed.png" alt="pubmed logo">
 </div>
 <div class="col-8">
 <ol>

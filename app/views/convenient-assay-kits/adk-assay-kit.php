@@ -9,7 +9,7 @@ ob_start(); ?>
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
-<?= Banner::gen("/app/static/img/adk-kit.jpg") ?>
+<?= Banner::gen("/app/img/adk-kit.jpg") ?>
 <section class="container mt-5">
     <h2 class="underlinedTitle right"><span class="underlined novoblue right">High Throughput Assay for Human Adenosine Kinase</span></h2>
     <div class="row">
@@ -23,7 +23,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             </p>
         </div>
         <div class="col-lg-6 text-center">
-            <img class="w-100" src="/app/static/img/ADK_Assay_Kit_Principle.png" alt="ADK Assay Kit reaction schema" />
+            <img class="w-100" src="/app/img/ADK_Assay_Kit_Principle.png" alt="ADK Assay Kit reaction schema" />
             <h4 class="novo-blue">PRECICE® ADK Assay Kit</h4>
             <h5>Ref. #K0507-01</h5>
         </div>
@@ -120,7 +120,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <p>The use of <strong>PRECICE® ADK Screening Assay Kit</strong> for the screening of ADK inhibitors and IC50 measurements was validated with compound A-134974, a known ADK inhibitor (Sigma-Aldrich, under license from Abbott Laboratories). Z'-Factor was calculated from 44 negative (no ADK inhibition) and positive (inhibition of ADK with 500nM A-134974) and measured as 0.68, which is an excellent level of performance for a screening assay</p>
             <div class="d-flex justify-content-center">
                 <figure class="col-lg-7">
-                    <img src="/app/static/img/ADK_Inhibition_Curve.png" alt="ADK Inhibition Curve Graph" class="w-100">
+                    <img src="/app/img/ADK_Inhibition_Curve.png" alt="ADK Inhibition Curve Graph" class="w-100">
                     <figcaption class="text-center"><strong>ADK Inhibition curve with compound A-134974 at 12 different concentrations.</strong> <br>
                         All data points represent the mean (+/-SD) of 8 wells (2 wells - duplicate - on 4 independent plates). IC50 was determined by fitting a 4-parameter non-linear curve to the data with least-square method. IMPDH activity assays were run to confirm that IMPDH is not inhibited by compound A-134974 (data not shown</figcaption>
                 </figure>

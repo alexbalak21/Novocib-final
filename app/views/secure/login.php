@@ -19,7 +19,7 @@ function check_customer(string $pid)
 
 
     require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
-    echo Banner::gen("/app/static/img/secure-login.jpg");
+    echo Banner::gen("/app/img/secure-login.jpg");
 
 
     ob_start(); ?>

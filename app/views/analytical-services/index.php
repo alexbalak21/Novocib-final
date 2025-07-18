@@ -15,7 +15,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 ?>
 
-<?= Banner::gen("/app/static/img/analytical-services.jpg") ?>
+<?= Banner::gen("/app/img/analytical-services.jpg") ?>
 
 <section class="container my-5 therapeutic">
     <h2 class="mb-4 text-center">Our Services</h2>

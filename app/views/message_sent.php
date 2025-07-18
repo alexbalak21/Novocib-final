@@ -5,7 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
 ?>
 
 
-<?= Banner::gen("/app/static/img/mail-header.jpg") ?>
+<?= Banner::gen("/app/img/mail-header.jpg") ?>
 <div class="container mt-5">
     <h3 class="my-5 text-center">Your message has been sent.</h3>
     <h4 class="my-5 text-center">Thank you for your inquiry !</h4>

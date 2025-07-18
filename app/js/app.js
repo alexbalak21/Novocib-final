@@ -1,6 +1,6 @@
 //HOME CHAGE HEADER BACKGROUND SOURCE
 if (window.location.pathname === "/")
-    document.querySelector(".carousel-item img").src = "app/static/img/backgound-nameless.jpg"
+    document.querySelector(".carousel-item img").src = "app/img/backgound-nameless.jpg"
 
 // Function to set image dimensions
 function enlargeImg(img) {

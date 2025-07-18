@@ -12,7 +12,7 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-addContent(Banner::gen("/app/static/img/analysis4.webp"));
+addContent(Banner::gen("/app/img/analysis4.webp"));
 $content_title = UnderlinedTitle::get("Yeast Extracts Enriched in Tasty Nucleotides", "novoblue", "right");
 
 
@@ -21,7 +21,7 @@ ob_start(); ?>
     <?= $content_title ?>
     <div class="row my-5">
         <div class="col-lg-4">
-            <img src="/app/static/img/yeast.jpg" alt="yeast picture" title="yeast" class="w-100">
+            <img src="/app/img/yeast.jpg" alt="yeast picture" title="yeast" class="w-100">
         </div>
         <div class="col-lg-8">
             <p> Yeast extract is a versatile ingredient widely used as nutritious and flavor complement for food and feed formulation. It's derived from yeast cells and contains essential nutrients such as high-quality protein, B vitamins, amino acids, minerals, nucleotides and nucleic acid RNA.</p>
@@ -36,7 +36,7 @@ ob_start(); ?>
             </div>
         </div>
         <div class="col-lg-6">
-            <img class="w-100" src="/app/static/img/yeast-rna.jpg" alt="yeast rna schema" title="Yeast RNA Schema">
+            <img class="w-100" src="/app/img/yeast-rna.jpg" alt="yeast rna schema" title="Yeast RNA Schema">
         </div>
     </div>
     <div class="pt-5 mb-5">

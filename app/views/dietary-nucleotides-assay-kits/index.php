@@ -11,7 +11,7 @@ ob_start(); ?>
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
-<?= Banner::gen("/app/static/img/nucleotides.webp"); ?>
+<?= Banner::gen("/app/img/nucleotides.webp"); ?>
 <section class="container mt-4 mb-5 therapeutic">
     <h2 class="underlinedTitle center"><span class="underlined novoblue center">Dietary Nucleotides Assay Kits</span></h2>
     <div>

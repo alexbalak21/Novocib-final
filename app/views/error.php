@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/head.php";
 
 
 
-<?= Banner::gen("/app/static/img/error.jpg") ?>
+<?= Banner::gen("/app/img/error.jpg") ?>
 <div class="container mt-5">
     <?php
     function error_message($message)

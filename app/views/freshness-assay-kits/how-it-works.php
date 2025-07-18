@@ -5,7 +5,7 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-addContent(Banner::gen("/app/static/img/fish-freshness.jpg"));
+addContent(Banner::gen("/app/img/fish-freshness.jpg"));
 $content_title = UnderlinedTitle::get("How does Freshness Assay Kit work?", "novoblue", "center");
 
 $page_content = <<<CONTENT
@@ -13,22 +13,22 @@ $page_content = <<<CONTENT
 $content_title
 <div class="row justify-content-center">
     <div class="col-lg-5 col-10 m-2">
-        <img class="w-100" src="/app/static/img/freshness_1.jpg">
+        <img class="w-100" src="/app/img/freshness_1.jpg">
     </div>
     <div class="col-lg-5 col-10 m-2">
-        <img class="w-100" src="/app/static/img/freshness_2.jpg">
+        <img class="w-100" src="/app/img/freshness_2.jpg">
     </div>
     <div class="col-lg-5 col-10 m-2">
-        <img class="w-100" src="/app/static/img/freshness_3.jpg">
+        <img class="w-100" src="/app/img/freshness_3.jpg">
     </div>
     <div class="col-lg-5 col-10 m-2">
-        <img class="w-100" src="/app/static/img/freshness_4.jpg">
+        <img class="w-100" src="/app/img/freshness_4.jpg">
     </div>
     <div class="col-lg-5 col-10 m-2">
-        <img class="w-100" src="/app/static/img/freshness_5.jpg">
+        <img class="w-100" src="/app/img/freshness_5.jpg">
     </div>
     <div class="col-lg-5 col-10   m-2">
-        <img class="w-100" src="/app/static/img/freshness_6.jpg">
+        <img class="w-100" src="/app/img/freshness_6.jpg">
     </div>
 </div>
 <p class="mt-5 text-end">

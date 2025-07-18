@@ -1,7 +1,7 @@
 <?php
 class Banner
 {
-    static function gen($img_url = "/app/static/img/helix.jpg")
+    static function gen($img_url = "/app/img/helix.jpg")
     {
         $url = parse_url($_SERVER['REQUEST_URI'])['path'];
         $paths = (explode("/", $url));

@@ -10,7 +10,7 @@ ob_start(); ?>
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
-echo Banner::gen("/app/static/img/prps-kit.jpg")
+echo Banner::gen("/app/img/prps-kit.jpg")
 ?>
 
 <section class="container mt-5">
@@ -37,7 +37,7 @@ echo Banner::gen("/app/static/img/prps-kit.jpg")
             </p>
         </div>
         <div class="col-lg-6 text-center">
-            <img class="w-100" src="/app/static/img/PRPP-S-Assay-Kit.png" alt="" />
+            <img class="w-100" src="/app/img/PRPP-S-Assay-Kit.png" alt="" />
             <h4 class="novo-blue">PRECICE® PRPP-S Assay Kit</h4>
             <h5>Ref. #K0709-04-2</h5>
         </div>
@@ -85,7 +85,7 @@ echo Banner::gen("/app/static/img/prps-kit.jpg")
         </div>
         <div style="margin:0px" class="row mb-3 py-2 align-items-center bg-light">
             <div class="text-center col-lg-6">
-                <img class="w-100" src="/app/static/img/PRPP-S-assay.png" alt="PRPP-S assay graph" />
+                <img class="w-100" src="/app/img/PRPP-S-assay.png" alt="PRPP-S assay graph" />
             </div>
             <div class="col-lg-6">
                 <table class="w-100">

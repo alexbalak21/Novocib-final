@@ -12,7 +12,7 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-$banner = Banner::gen("/app/static/img/hplc.jpg");
+$banner = Banner::gen("/app/img/hplc.jpg");
 addContent($banner);
 
 ob_start(); ?>
@@ -29,7 +29,7 @@ ob_start(); ?>
 
     <article class="row">
         <div class="col-lg-6 d-flex align-items-center">
-            <img class="h-50 w-100 h-auto" style="border: 1px solid silver" src="/app/static/img/nucleotides-3.jpg" alt="nucleosides structure" />
+            <img class="h-50 w-100 h-auto" style="border: 1px solid silver" src="/app/img/nucleotides-3.jpg" alt="nucleosides structure" />
         </div>
         <div class="col-lg-6 list-1 d-flex align-items-center">
             <div>
@@ -108,7 +108,7 @@ ob_start(); ?>
         </div>
         <div class="col-lg-6 mt-5">
             <figure class="">
-                <img class="w-100" style="border: 1px solid silver" src="/app/static/img/column-evolution-time.jpg" alt="HPLC spectra" title="Column evolution time" />
+                <img class="w-100" style="border: 1px solid silver" src="/app/img/column-evolution-time.jpg" alt="HPLC spectra" title="Column evolution time" />
                 <figcaption class="text-muted text-center">
                     <small><b>Fig. 1:</b> Representative chromatogram of a mixture of
                         nucleotides mono-, di- and triphosphates, nucleosides and
@@ -165,7 +165,7 @@ ob_start(); ?>
         </div>
         <div class="col-lg-6 mt-5">
             <figure class="">
-                <img class="w-100" style="border: 1px solid silver" src="/app/static/img/nucleotide_spectra.jpg" alt="Nucleotide spectra of yeast extract" title="Nucleotide spectra" />
+                <img class="w-100" style="border: 1px solid silver" src="/app/img/nucleotide_spectra.jpg" alt="Nucleotide spectra of yeast extract" title="Nucleotide spectra" />
                 <figcaption class="text-muted text-center">
                     <small><b>Fig. 2:</b>Nucleotide spectra of yeast extract before (blue) and
                         (red) after nuclease treatment obtained using ion-paired
@@ -175,7 +175,7 @@ ob_start(); ?>
         </div>
         <div class="col-lg-6 my-5">
             <figure class="col-10 mx-auto">
-                <img class="w-100" src="/app/static/img/hplc-photo.jpg" alt="Photo HPLC Analysis and spectra" title="Photo HPLC Analysis" />
+                <img class="w-100" src="/app/img/hplc-photo.jpg" alt="Photo HPLC Analysis and spectra" title="Photo HPLC Analysis" />
             </figure>
         </div>
         <div class="my-5 col-lg-6">

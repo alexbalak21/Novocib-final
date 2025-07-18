@@ -2,14 +2,13 @@
 class Slide
 {
     public function __construct(
-        public string $img_url = "app/static/img/brand-table.jpg",
+        public string $img_url = "app/img/brand-table.jpg",
         public int $duration = 10000,
         public string $title = "Title of slide",
         public string $content = "Some representative placeholder content for the first slide.",
         public string $button_text = "Button Text ",
         public string $button_link = ""
-    ) {
-    }
+    ) {}
     public function gen(): string
     {
         $active = "";

@@ -16,13 +16,13 @@ $page_content = <<<Services
 <h2>Postmortem ATP catabolism in fish muscle:</h2>
 <p>Fish muscles are particularly rich in ATP, second abundant muscle metabolite after amino acids, where it provides the energy for muscle contraction. In a live animal, muscle ATP hydrolysed to ADP is constantly resynthesized by mitochondiral respiratory chain, AMP and IMP concentration is low. After death, ATP continues to be hydrolysed to ADP by contracting muscles, but its resynthesis by mitochondrial ATP-synthetase becomes impossible because of respiratory arrest. ATP is resynthesized by less efficient pathways (anaerobic glycolysis, creatine kinase and myoadenylate kinase), its concentration drops leading to gradual accumulation of ADP. ADP is rapidly dephosphorylated to AMP and deaminated to IMP by muscle AMP-deaminase. IMP is a predominant nucleotide in in-rigor muscle (Wang D et al 1998). Postmortem degradation of IMP to inosine and hypoxanthine results from both autolytic and bacterial enzymes. The rate of IMP degradation varies considerably between fish species and depends on handling and storage conditions (Surette et al., 1988).</p>
 <div class="text-center">
-<img class="col-lg-8" src="/app/static/img/atp_catabolism_freshness.jpg" alt="atp catabolism freshness cycle">
+<img class="col-lg-8" src="/app/img/atp_catabolism_freshness.jpg" alt="atp catabolism freshness cycle">
 </div>
 <p>While measuring absolute concentration of single nucleotide degradation product (e. g. IMP or hypoxanthine) is not appropriate to determine the freshness quality of seafood, measuring relative concentrations provides a method for chemical assessment of fish freshness. In difference to volatile amines (TVA) appearing at a medium- or a late-stage of spoilage, nucleotides allow the detection of very beginning of the spoilage process.</p>
 <p>Measuring nucleotides can be of particular interest for assessment of the freshness of seafood products stored under modified atmosphere or transformed products for which the assessment of volatile amines can not be applied.</p>
 <div class="row align-items-center mt-5">
 <div class="col-3">
-<img src="/app/static/img/kit_spectro.jpg" alt="Photo of kits viles" class="w-100">
+<img src="/app/img/kit_spectro.jpg" alt="Photo of kits viles" class="w-100">
 </div>
 <div class="col-8">
 <p>Nucleotides can be quantified by HPLC or with enzymes, eg. Fresh Tester strips for visual quantification of ATP breakdown products.</p>

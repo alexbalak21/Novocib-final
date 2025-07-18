@@ -46,13 +46,13 @@ While reducing the sodium content, particular attention should be paid to mainta
 The follow up of inosine degradation and hypoxanthine accumulation in cold-smoked salmon provides a scientific way for characterisation of quality changes during storage of cold smoked salmon with modified level of preservatives.</p>
 </div>
 <div class="col-lg-3 col-6 text-center mb-4">
-<img class="w-100" src="/app/static/img/smoked_salmon.jpg" alt="smoked salmon photo">
+<img class="w-100" src="/app/img/smoked_salmon.jpg" alt="smoked salmon photo">
 </div>
 <div class="col-lg-5 mb-2 mx-2">
-<img src="/app/static/img/salmon_conservative_1.jpg" alt="salmon conservative graph" class="w-100">
+<img src="/app/img/salmon_conservative_1.jpg" alt="salmon conservative graph" class="w-100">
 </div>
 <div class="col-lg-5 mb-2 mx-2">
-<img src="/app/static/img/salmon_conservative_2.jpg" alt="salmon conservative graph" class="w-100">
+<img src="/app/img/salmon_conservative_2.jpg" alt="salmon conservative graph" class="w-100">
 </div>
 <p class="col-12"><i>Figure 1,2 :</i> Study of preservative effects on Inosine and Hypoxanthine content in smoked salmon. The analysis was performed in duplicate using PRECICE® Freshness Assay Kit</p>
 </div>
@@ -99,14 +99,14 @@ The follow up of inosine degradation and hypoxanthine accumulation in cold-smoke
 </div>
 <div class="mb-5 d-flex justify-content-center">
 <figure class="col-lg-10">
-<img class="w-100" src="/app/static/img/cod_k_value.png" alt="">
+<img class="w-100" src="/app/img/cod_k_value.png" alt="">
 <figcaption class="text-center"><i>Figure 1. :</i> K-values measured in 13 samples of cod fillets labeled as "quick frozen at sea" compared to 20 "frozen" cod fillets without any label.
 The analysis was performed in duplicate using PRECICE® Freshness Assay Kit</figcaption>
 </figure>
 </div>
 <div class="mb-5 d-flex justify-content-center">
 <figure class="col-lg-8" >
-<img class="w-100" src="/app/static/img/cod.png" alt="">
+<img class="w-100" src="/app/img/cod.png" alt="">
 <figcaption class="text-center"><i>Figure 2. :</i> Nucleotides contents in 13 samples of cod fillets labeled as "quick frozen at sea" compared to 20 "frozen" cod fillets without any label.
 The analysis was performed in duplicate using PRECICE® Freshness Assay Kit</figcaption>
 </figure>
@@ -156,7 +156,7 @@ The analysis was performed in duplicate using PRECICE® Freshness Assay Kit</fig
 <p>K-values of Atlantic salmon were measured in frozen fillets of Atlantic salmon (11 samples) and compared to those of chilled salmon fillets (13 samples). The analysis was performed in duplicate using PRECICE® Freshness Assay Kit following "User Manual"</p>
 <div class="d-flex justify-content-center">
 <figure  class="col-lg-7">
-<img src="/app/static/img/Salmon_K_value.png" alt="Salmon K value graph" class="w-100">
+<img src="/app/img/Salmon_K_value.png" alt="Salmon K value graph" class="w-100">
 <figcaption><i>Figure 3.</i> K-values measured in 11 samples of frozen fillets of Atlantic salmon compared to 13 samples of chilled salmon fillets.
 The analysis was performed in duplicate using PRECICE® Freshness Assay Kit</figcaption>
 </figure>
@@ -197,7 +197,7 @@ The analysis was performed in duplicate using PRECICE® Freshness Assay Kit</fig
 
 <div class="d-flex justify-content-center">
 <figure class="col-lg-8 col-12">
-<img class="w-100" src="/app/static/img/Salmon_nucleotides.png" alt="Salmon nucleotides graph">
+<img class="w-100" src="/app/img/Salmon_nucleotides.png" alt="Salmon nucleotides graph">
 <figcaption class="text-center"><i>Figure 4.</i> Nucleotides contents in 11 samples of frozen fillets of Atlantic salmon compared to 13 samples of chilled salmon fillets.
 The analysis was performed in duplicate using PRECICE® Freshness Assay Kit</figcaption>
 </figure>
@@ -212,7 +212,7 @@ K-values and nucleotide contents were measured in 9 gambas samples collected in 
 </p>
 <div class="d-flex justify-content-center">
 <figure class="col-lg-6">
-<img class="w-100" src="/app/static/img/Gambas_K-value.png" alt="Gambas K-value Graph">
+<img class="w-100" src="/app/img/Gambas_K-value.png" alt="Gambas K-value Graph">
 <figcaption class="text-center">Figure 5. K-values measured in 9 samples of frozen gambas.
 The analysis was performed in duplicate using PRECICE® Freshness Assay Kit</figcaption>
 </figure>
@@ -251,7 +251,7 @@ The analysis was performed in duplicate using PRECICE® Freshness Assay Kit</fig
 </div>
 <div class="d-flex justify-content-center">
 <figure  class="col-lg-6">
-<img src="/app/static/img/Gambas_nucleotides.png" alt="Gambas nucleotides graph" class="w-100">
+<img src="/app/img/Gambas_nucleotides.png" alt="Gambas nucleotides graph" class="w-100">
 <figcaption><i>Figure 6.</i> Nucleotides contents in 9 samples of frozen gambas.
 The analysis was performed in duplicate using PRECICE® Freshness Assay Kit</figcaption>
 </figure>

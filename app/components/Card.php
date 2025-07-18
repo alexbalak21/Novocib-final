@@ -1,7 +1,7 @@
 <?php
 class Card
 {
-  static function get($img_src = "app/static/img/catalogue/analysis.jpg", $card_title = "", $card_content = "", $btn_link = "", $alt = "")
+  static function get($img_src = "app/img/catalogue/analysis.jpg", $card_title = "", $card_content = "", $btn_link = "", $alt = "")
   {
     ob_start(); ?>
     <div class="box">

@@ -28,7 +28,7 @@ $carousel = <<<CAROUSEL
                 
 
         <div class="carousel-item active" data-bs-interval="10000">
-    <img src="app/static/img/backgound-nameless.jpg" class="d-block w-100" alt="app/static/img/brand-table.jpg">
+    <img src="app/img/backgound-nameless.jpg" class="d-block w-100" alt="app/img/brand-table.jpg">
     <div class="carousel-caption">
         <div>
             <h2 class="display-3 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
@@ -60,7 +60,7 @@ $card1_content = <<<CARD1_CONTENT
     <li>Purine analysis.</li>
 </ul>
 CARD1_CONTENT;
-$card1 = Card::get("/app/static/img/analisis-gloves.jpg", "Analytical Services", $card1_content, "/nucleotide-analysis-service", "photo of gloves holiding a vile");
+$card1 = Card::get("/app/img/analisis-gloves.jpg", "Analytical Services", $card1_content, "/nucleotide-analysis-service", "photo of gloves holiding a vile");
 
 $card2_content = <<<CARD1_CONTENT
 <ul>
@@ -69,7 +69,7 @@ $card2_content = <<<CARD1_CONTENT
 <li>Convenient, saves time and preempts possible errors.</li>
 </ul>
 CARD1_CONTENT;
-$card2 = Card::get("/app/static/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/freshness-assay-kits/freshness-principle", "Photo of kit analysis");
+$card2 = Card::get("/app/img/viles.jpg", "PRECICE® One-step Kits", $card2_content, "/freshness-assay-kits/freshness-principle", "Photo of kit analysis");
 
 $card3_content = <<<CARD1_CONTENT
 <ul>
@@ -79,7 +79,7 @@ $card3_content = <<<CARD1_CONTENT
 <li>Shipped worldwide in stable lyophilized form without dry ice or cold blocks.</li>
 </ul>
 CARD1_CONTENT;
-$card3 = Card::get("/app/static/img/structure.jpg", "Active purified enzymes", $card3_content, "/active-purified-enzymes", "molecular picture of enzyme");
+$card3 = Card::get("/app/img/structure.jpg", "Active purified enzymes", $card3_content, "/active-purified-enzymes", "molecular picture of enzyme");
 
 $card_container = <<<CARD_CONTAINER
 <section class="container mt-5" content="section containing the presentation of novocib services">
@@ -108,7 +108,7 @@ $about_us = <<<ABOUTUS
 <h2 class="underlinedTitle center"><span class="underlined novoblue center">About Us</span></h2>
 <div class="row">
     <div class="col-lg-5 d-flex align-items-center">
-        <img class="mb-5 w-100" src="/app/static/img/analysis4.jpg" alt="analysis" />
+        <img class="mb-5 w-100" src="/app/img/analysis4.jpg" alt="analysis" />
     </div>
     <div class="text-container col-lg-7 d-flex justify-content-center align-items-center">
         <div>
@@ -139,12 +139,12 @@ ABOUTUS;
 addContent($about_us);
 
 $paralax = <<<PARALAX
-<div class="parallax" style="background-image: url(app/static/img/header1.jpg); color: white;">
+<div class="parallax" style="background-image: url(app/img/header1.jpg); color: white;">
     <div class="overlay">
     
     <div class="container py-5">
 <div class="text-center d-flex justify-content-center align-items-center">    <h2 class="underlinedTitle right"><span class="underlined white right">CIR (Research Tax Credit)</span></h2>
-     <img class="ms-5 mb-3" src="/app/static/img/marianne.png" height="60" alt="french marianne"></div>
+     <img class="ms-5 mb-3" src="/app/img/marianne.png" height="60" alt="french marianne"></div>
 
 <p>
     NOVOCIB is certified by the French Ministry of Higher Education and Research as a "Research Tax Credit" (Crédit
@@ -166,7 +166,7 @@ $awards = <<<AWARDS
 <p class="mb-5">NOVOCIB SAS is french biotechnology company founded in 2005, a double Laureate of Concours National pour la Création d'Entreprises de Technologie Innovante (I-LAB) in 2003 and 2005 and “Tremplin Entreprises” organized by French Senate (2004). <br> Since its creation in 2005, the company has developed multiple innovative solutions helping scientists and engineers worldwide to quantify nucleotides in their biological samples.</p>
     <div class="row justify-content-center">
         <div class="award col-lg-3">
-            <img class="w-100 mt-2" src="/app/static/img/i-lab-1.jpg" alt="i-lab logo">
+            <img class="w-100 mt-2" src="/app/img/i-lab-1.jpg" alt="i-lab logo">
             <h4 class="text-center mt-3 novo-blue">I-LAB</h4>
             <h5 class="text-center mb-3">2003 &amp; 2005</h5>
             <p>
@@ -182,7 +182,7 @@ $awards = <<<AWARDS
         </div>
 
         <div class="award col-lg-3">
-            <img class="w-100 mt-2" src="/app/static/img/tremplin.png" alt="femmes en or brand">
+            <img class="w-100 mt-2" src="/app/img/tremplin.png" alt="femmes en or brand">
             <h4 class="text-center mt-3 novo-blue">Tremplin des Entreprises</h4>
             <h5 class="text-center mb-3">2005</h5>
             <p>
@@ -198,7 +198,7 @@ $awards = <<<AWARDS
         </div>
 
         <div class="award col-lg-3">
-            <img class="w-100 mt-2" src="/app/static/img/femme-en-or.webp" alt="femmes en or brand">
+            <img class="w-100 mt-2" src="/app/img/femme-en-or.webp" alt="femmes en or brand">
             <h4 class="text-center mt-3 novo-blue">Femmes en Or</h4>
             <h5 class="text-center mb-3">2011</h5>
             <p>
@@ -228,7 +228,7 @@ $owlCarousel = <<<OWLCAROUSEL
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.business-angels.info/">
-                        <img src="/app/static/img/xmp.png" alt="xmp investers logo" />
+                        <img src="/app/img/xmp.png" alt="xmp investers logo" />
                     </a>
                 </div>
                 <h5 class="card-title name text-center">XMP</h5>
@@ -238,7 +238,7 @@ $owlCarousel = <<<OWLCAROUSEL
             <div class="card">
                 <div class="card-img">
                     <a href="https://samba-investisseurs.fr/">
-                        <img src="/app/static/img/samba.jpg" alt="samba logo" />
+                        <img src="/app/img/samba.jpg" alt="samba logo" />
                     </a>
                 </div>
                 <h5 class="card-title name text-center">SAMBA</h5>
@@ -248,7 +248,7 @@ $owlCarousel = <<<OWLCAROUSEL
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.poleaquimer.com/en/">
-                        <img src="/app/static/img/aquimer.png" alt="aquimer logo" />
+                        <img src="/app/img/aquimer.png" alt="aquimer logo" />
                     </a>
                 </div>
                 <h5 class="card-title name text-center">Aquimer</h5>
@@ -258,7 +258,7 @@ $owlCarousel = <<<OWLCAROUSEL
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.agglo-boulonnais.fr/">
-                        <img src="/app/static/img/cab.jpg" alt="boulogne comune association logo" />
+                        <img src="/app/img/cab.jpg" alt="boulogne comune association logo" />
                     </a>
                 </div>
                 <h5 class="card-title name text-center">C A B</h5>
@@ -268,7 +268,7 @@ $owlCarousel = <<<OWLCAROUSEL
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.pfinouvellesvagues.com/">
-                        <img src="/app/static/img/nouvelle-vagues.png" alt="" />
+                        <img src="/app/img/nouvelle-vagues.png" alt="" />
                     </a>
                 </div>
                 <h5 class="card-title name text-center">
@@ -282,7 +282,7 @@ $owlCarousel = <<<OWLCAROUSEL
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.inextenso.fr/en/">
-                        <img src="/app/static/img/InExtenso.jpg" alt="" />
+                        <img src="/app/img/InExtenso.jpg" alt="" />
                     </a>
                 </div>
                 <h5 class="card-title name text-center">In Extenso</h5>
@@ -292,7 +292,7 @@ $owlCarousel = <<<OWLCAROUSEL
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.e.leclerc/ ">
-                        <img src="/app/static/img/Leclerc.jpg" alt="" />
+                        <img src="/app/img/Leclerc.jpg" alt="" />
                     </a>
                 </div>
                 <h5 class="card-title name text-center">E Leclerc</h5>

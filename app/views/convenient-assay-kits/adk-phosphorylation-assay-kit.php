@@ -26,7 +26,7 @@ echo Banner::gen()
             </p>
         </div>
         <div class="col-lg-6 text-center">
-            <img class="w-100" src="/app/static/img/ADK-phosphorylation-kit.png" alt="ADK phosphorylation reaction schema" />
+            <img class="w-100" src="/app/img/ADK-phosphorylation-kit.png" alt="ADK phosphorylation reaction schema" />
             <h4 class="novo-blue">PRECICE® ADK Phosphorylation Assay Kit</h4>
             <h5>#K0507-02</h5>
         </div>
@@ -57,7 +57,7 @@ echo Banner::gen()
             <p class="ms-5"><i class="novo-blue fa-solid fa-arrow-right"></i> Such as mizoribine, tubercidine, ribavirin.</p>
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-12">
-                    <img class="w-100" src="/app/static/img/ADK-competitors.png" alt="">
+                    <img class="w-100" src="/app/img/ADK-competitors.png" alt="">
                 </div>
                 <div class="col-lg-8">
                     <table class="my-4 w-100 nucleoside-analogues">

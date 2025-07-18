@@ -27,7 +27,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 <div id="crouselItem" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-            <img src="/app/static/img/backgound-nameless.jpg" class="d-block w-100" alt="company photo / logo">
+            <img src="/app/img/backgound-nameless.jpg" class="d-block w-100" alt="company photo / logo">
             <div class="carousel-caption">
                 <div>
                     <h2 class="display-3 carousel-caption-title">Reliable solutions for nucleotides assessment</h2>
@@ -71,7 +71,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
     <div class="row justify-content-center">
         <div class="col-lg-4 d-flex justify-content-center">
             <div class="box">
-                <a href="/nucleotide-analysis-service"><img src="/app/static/img/analisis-gloves.jpg" nucleotide="" analysis="" services="" page="Nucleotide Analysis Services page" title="Go to Nucleotide Analysis Services page"></a>
+                <a href="/nucleotide-analysis-service"><img src="/app/img/analisis-gloves.jpg" nucleotide="" analysis="" services="" page="Nucleotide Analysis Services page" title="Go to Nucleotide Analysis Services page"></a>
                 <div class="text-center"><a href="/nucleotide-analysis-service">Dietary Nucleotide Analysis</a></div>
                 <div class="card-content">
                     <ul>
@@ -86,7 +86,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         </div>
         <div class="col-lg-4 d-flex justify-content-center">
             <div class="box">
-                <a href="/convenient-assay-kits"><img src="/app/static/img/HPRT-Assay-kit.jpg" freshness="" assay="" kits="" page="Freshness Assay Kits page" title="Go to Freshness Assay Kits page"></a>
+                <a href="/convenient-assay-kits"><img src="/app/img/HPRT-Assay-kit.jpg" freshness="" assay="" kits="" page="Freshness Assay Kits page" title="Go to Freshness Assay Kits page"></a>
                 <div class="text-center"><a href="/convenient-assay-kits">PRECICE® One-step Kits</a></div>
                 <div class="card-content">
                     <ul>
@@ -101,7 +101,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         </div>
         <div class="col-lg-4 d-flex justify-content-center">
             <div class="box">
-                <a href="/active-purified-enzymes"><img src="/app/static/img/structure.jpg" active="" purified="" enzymes="" page="Active purified enzymes page" title="Active purified enzymes"></a>
+                <a href="/active-purified-enzymes"><img src="/app/img/structure.jpg" active="" purified="" enzymes="" page="Active purified enzymes page" title="Active purified enzymes"></a>
                 <div class="text-center"><a href="/active-purified-enzymes">Active purified enzymes</a></div>
                 <div class="card-content">
                     <ul>
@@ -123,7 +123,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         <h2 class="underlinedTitle center"><span class="underlined novoblue center">About Us</span></h2>
         <div class="row">
             <div class="col-lg-5 d-flex align-items-center">
-                <img class="mb-5 w-100" src="/app/static/img/analysis4.jpg" alt="analysis">
+                <img class="mb-5 w-100" src="/app/img/analysis4.jpg" alt="analysis">
             </div>
             <div class="text-container col-lg-7 d-flex justify-content-center align-items-center">
                 <div>
@@ -154,12 +154,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 
 <!-- CIR -->
-<div class="parallax" style="background-image: url(/app/static/img/header1.jpg); color: white;">
+<div class="parallax" style="background-image: url(/app/img/header1.jpg); color: white;">
     <div class="overlay">
         <div class="container py-5">
             <div class="text-center d-flex justify-content-center align-items-center">
                 <h2 class="underlinedTitle right"><span class="underlined white right">CIR (Research Tax Credit)</span></h2>
-                <img class="ms-5 mb-3" src="/app/static/img/marianne.png" height="60" alt="french marianne">
+                <img class="ms-5 mb-3" src="/app/img/marianne.png" height="60" alt="french marianne">
             </div>
 
             <p>
@@ -180,7 +180,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
     <div class="row justify-content-center">
 
         <div class="award col-lg-3 col-10">
-            <a target="_blank" href="https://www.enseignementsup-recherche.gouv.fr/fr/le-concours-i-lab-49808"><img class="w-100 h-auto mt-2" src="/app/static/img/i-lab-1.jpg" alt="i-lab logo" title="French national i-lab awards"></a>
+            <a target="_blank" href="https://www.enseignementsup-recherche.gouv.fr/fr/le-concours-i-lab-49808"><img class="w-100 h-auto mt-2" src="/app/img/i-lab-1.jpg" alt="i-lab logo" title="French national i-lab awards"></a>
             <h4 class="text-center mt-3 novo-blue">I-LAB</h4>
             <h5 class="text-center mb-3">2003 &amp; 2005</h5>
             <p>
@@ -196,7 +196,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         </div>
 
         <div class="award col-lg-3 col-10">
-            <a href="https://www.senat.fr/salle-de-presse/communiques-de-presse/presse/cp20150113a.html" target="_blank"><img class="w-100 h-auto mt-2" src="/app/static/img/tremplin.jpg" alt="Business Springboard awards logo" title="16th Business Springboard awards"></a>
+            <a href="https://www.senat.fr/salle-de-presse/communiques-de-presse/presse/cp20150113a.html" target="_blank"><img class="w-100 h-auto mt-2" src="/app/img/tremplin.jpg" alt="Business Springboard awards logo" title="16th Business Springboard awards"></a>
             <h4 class="text-center mt-3 novo-blue">Tremplin des Entreprises</h4>
             <h5 class="text-center mb-3">2005</h5>
             <p>
@@ -212,7 +212,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         </div>
 
         <div class="award col-lg-3 col-10">
-            <a href="https://www.facebook.com/femmesenor/" target="_blank"><img class="w-100 h-auto mt-2" src="/app/static/img/femme-en-or.jpg" alt="femmes en or brand" title="women of gold awards"></a>
+            <a href="https://www.facebook.com/femmesenor/" target="_blank"><img class="w-100 h-auto mt-2" src="/app/img/femme-en-or.jpg" alt="femmes en or brand" title="women of gold awards"></a>
             <h4 class="text-center mt-3 novo-blue">Femmes en Or</h4>
             <h5 class="text-center mb-3">2011</h5>
             <p>
@@ -241,7 +241,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.business-angels.info/">
-                        <img src="/app/static/img/xmp.png" alt="xmp investors logo" title="Xmp Investors Business Angels" />
+                        <img src="/app/img/xmp.png" alt="xmp investors logo" title="Xmp Investors Business Angels" />
                         <span>Xmp Investors Business Angels</span>
                     </a>
                 </div>
@@ -252,7 +252,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <div class="card">
                 <div class="card-img">
                     <a href="https://libios.fr/en/">
-                        <img src="/app/static/img/libios.jpg" alt="Libios logo" title="Libios Laboratories" />
+                        <img src="/app/img/libios.jpg" alt="Libios logo" title="Libios Laboratories" />
                         <span>Libios Laboratories</span>
                     </a>
                 </div>
@@ -264,7 +264,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <div class="card">
                 <div class="card-img">
                     <a href="https://samba-investisseurs.fr/">
-                        <img src="/app/static/img/samba.jpg" alt="samba logo" title="SAMBA Investors" />
+                        <img src="/app/img/samba.jpg" alt="samba logo" title="SAMBA Investors" />
                         <span>SAMBA Investors</span>
                     </a>
                 </div>
@@ -275,7 +275,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.poleaquimer.com/en/">
-                        <img src="/app/static/img/aquimer.png" alt="aquimer logo" title="Partner for innovation" />
+                        <img src="/app/img/aquimer.png" alt="aquimer logo" title="Partner for innovation" />
                         <span>Aquimer Website</span>
                     </a>
                 </div>
@@ -286,7 +286,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <div class="card">
                 <div class="card-img">
                     <a href="https://www.agglo-boulonnais.fr/">
-                        <img src="/app/static/img/cab.jpg" alt="boulogne comune association logo" title="Boulogne-sur-Mer City " />
+                        <img src="/app/img/cab.jpg" alt="boulogne comune association logo" title="Boulogne-sur-Mer City " />
                         <span>Boulogne-sur-Mer Website</span>
                     </a>
                 </div>
@@ -297,7 +297,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <div class="card">
                 <div class="card-img">
                     <a href=" https://www.pfinouvellesvagues.com/">
-                        <img src="/app/static/img/nouvelle-vagues.png" alt="nouvelle-vagues logo" title="Innovation platform for seafood" />
+                        <img src="/app/img/nouvelle-vagues.png" alt="nouvelle-vagues logo" title="Innovation platform for seafood" />
                         <span>nouvelle-vagues Website</span>
                     </a>
                 </div>
@@ -312,7 +312,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <div class="card">
                 <div class="card-img">
                     <a href=" https://www.inextenso.fr/en/">
-                        <img src="/app/static/img/InExtenso.jpg" alt="InExtenso logo" title="InExtenso Accounting" />
+                        <img src="/app/img/InExtenso.jpg" alt="InExtenso logo" title="InExtenso Accounting" />
                         <span>InExtenso Website</span>
                     </a>
                 </div>
@@ -323,7 +323,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <div class="card">
                 <div class="card-img">
                     <a href=" https://www.e.leclerc/ ">
-                        <img src="/app/static/img/Leclerc.jpg" alt="Leclerc logo" title="Leclerc supermarket" />
+                        <img src="/app/img/Leclerc.jpg" alt="Leclerc logo" title="Leclerc supermarket" />
                         <span>Leclerc Website</span>
                     </a>
                 </div>

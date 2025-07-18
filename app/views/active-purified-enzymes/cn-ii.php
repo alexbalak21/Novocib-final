@@ -80,7 +80,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 <li>Phosphate acceptor: 5mM inosine</li>
                 <li>Method: Coupling to recombinant IMP-dehydrogenase (IMPDH, NovoCIB)</li>
             </ul>
-            <img class="w-100" src="/app/static/img/cNII-phosphotransferase.jpg" alt="Illustration of phosphotransferase activity of cN-II enzyme">
+            <img class="w-100" src="/app/img/cNII-phosphotransferase.jpg" alt="Illustration of phosphotransferase activity of cN-II enzyme">
         </div>
         <div class="col-lg-6">
             <p><b>Assay condition:</b></p>
@@ -90,7 +90,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 <li>Reagents: 100mM KCl, 20mM MgCl2, 500µM KH2PO4, etc.</li>
                 <li>Method: Coupling with purine nucleoside phosphorylase - xanthine dehydrogenase system.</li>
             </ul>
-            <img class="w-100" src="/app/static/img/cN-II-Kinetics.png" alt="Illustration of cN-II enzyme kinetics">
+            <img class="w-100" src="/app/img/cN-II-Kinetics.png" alt="Illustration of cN-II enzyme kinetics">
         </div>
     </div>
 </div>

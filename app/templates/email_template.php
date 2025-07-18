@@ -10,7 +10,7 @@ function generateEmail($sender_name, $sender_email, $subject, $messageBody)
 
             <!-- Logo Header -->
             <div style="background: #F5F5F5; text-align:center; padding:20px 0; border-top-left-radius:8px; border-top-right-radius:8px;">
-                <a href="https://www.novocib.com/"><img src="https://www.novocib.com/app/static/img/logo.png" alt="NOVOCIB Logo" style="max-width:200px;"></a>
+                <a href="https://www.novocib.com/"><img src="https://www.novocib.com/app/img/logo.png" alt="NOVOCIB Logo" style="max-width:200px;"></a>
             </div>
 
             <!-- Message Content -->

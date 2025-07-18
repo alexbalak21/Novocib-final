@@ -52,7 +52,7 @@ if ($searchResults) {
 <?php $searchItems = ob_get_clean();
 }
 
-addContent(Banner::gen("/app/static/img/search.jpg"));
+addContent(Banner::gen("/app/img/search.jpg"));
 $content_title = UnderlinedTitle::get("Search", "novoblue", "center");
 $searchbar = Searchbar::get();
 $page_content = <<<CONTENT

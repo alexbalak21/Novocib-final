@@ -187,7 +187,7 @@ ob_start(); ?>
 
 <?php $card_form = ob_get_clean(); ?>
 
-<?= Banner::gen("/app/static/img/payment.jpg")  ?>
+<?= Banner::gen("/app/img/payment.jpg")  ?>
 <link rel="stylesheet" href="/app/css/payment.css">
 <main class="container">
     <div class="mt-3 card w-100 px-4 position-relative mb-3" style="background-color: #FBFBFB;">

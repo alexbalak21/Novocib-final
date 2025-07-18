@@ -5,7 +5,7 @@ require_once "app/templates/base.php";
 
 $novoblue = "#4167b1";
 
-addContent(Banner::gen("/app/static/img/contact-us.jpg"));
+addContent(Banner::gen("/app/img/contact-us.jpg"));
 $content_title = UnderlinedTitle::get("Contact Us", "novoblue");
 
 ob_start(); ?>

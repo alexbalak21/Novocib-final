@@ -14,7 +14,7 @@ ob_start(); ?>
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
 
-<?= Banner::gen("/app/static/img/order.jpg") ?>
+<?= Banner::gen("/app/img/order.jpg") ?>
 
 
 
