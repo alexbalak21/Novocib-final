@@ -1,6 +1,9 @@
 <?php
 declare(strict_types=1);
 
+// Set to false to disable debug logging
+define('DEBUG_MODE', false);
+
 // Enable opcache for better performance
 if (function_exists('opcache_invalidate')) {
     opcache_invalidate(__FILE__, true);
@@ -58,15 +61,12 @@ function loadView(string $viewName): bool {
     // Normalize path separators for Windows
     $viewPath = str_replace('\\', '/', $viewPath);
     
-    // Debug: Log the path being checked
-    error_log("Attempting to load: $viewPath");
-    
     if (is_file($viewPath)) {
-        error_log("Found and including: $viewPath");
         include $viewPath;
         return true;
     }
     
+    // Log only file not found errors
     error_log("File not found: $viewPath");
     return false;
 }
