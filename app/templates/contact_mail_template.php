@@ -5,9 +5,9 @@ function generateEmail($sender_name, $sender_email, $subject, $messageBody)
     <html>
 
     <body style="font-family: Arial, sans-serif;">
-        <div style="max-width:600px; margin:auto; background:#fff; padding:0; border-radius:8px; border:3px solid #0072ce;">
+        <div style="max-width: 900px; margin:auto; background:#fff; padding:0; border-radius:8px; border:3px solid #0072ce;">
             <div style="background: #F5F5F5; text-align:center; padding:20px 0; border-top-left-radius:8px; border-top-right-radius:8px;">
-                <a href="https://www.novocib.com/"><img src="https://www.novocib.com/app/img/logo.png" alt="NOVOCIB Logo" style="max-width:200px;"></a>
+                <a href="https://www.novocib.com/"><img src="https://www.novocib.com/app/img/contact-logo.png" alt="Contact Logo" style="max-width:200px;"></a>
             </div>
             <div style="padding:20px;">
                 <h2 style="color:#1b6ec2;">A message form Contact Us 📧</h2>
