@@ -43,8 +43,9 @@ class Nav
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/products.php">Products</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/customer-info.php">Payment</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/visitor-searches.php">User <i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/404-requests.php">
-                                404 <i class="fa-solid fa-xmark"></i> </a></li>
+                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/404-requests.php">404 <i class="fa-solid fa-xmark"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/messages.php">Messages <i class="fa-solid fa-envelope"></i></a></li>
+
                     </ul>
 
                     <!-- Right-aligned Username + Menu for large screens -->
