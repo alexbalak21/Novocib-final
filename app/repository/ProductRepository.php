@@ -1,8 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/models/Product.php";
 
-//DB CONNECTION
-require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect";
+
 
 class ProductRepository
 {
@@ -10,6 +8,7 @@ class ProductRepository
 
     public function __construct()
     {
+        require_once $_SERVER['DOCUMENT_ROOT'] . "/app/db/connect";
         try {
             $this->conn = connect_db();
         } catch (Error $e) {
@@ -23,35 +22,39 @@ class ProductRepository
         $this->conn = null;
     }
 
-    public function save(Product $product): ?int
+    public function create_product(Product $product): ?int
     {
-        $query = "";
-        if ($product->product_id !== null) {
-            // Update existing product
-            $query = "UPDATE products SET reference = :reference, title = :title, size = :size, price = :price, page_url = :page_url WHERE ID = :id";
-        } else {
-            // Insert new product
-            $query = "INSERT INTO products (reference, title, size, price, page_url) VALUES (:reference, :title, :size, :price, :page_url)";
-        }
-
+        $query = "INSERT INTO products (reference, title, size, price, page_url) 
+                  VALUES (:reference, :title, :size, :price, :page_url)";
         $stmt = $this->conn->prepare($query);
-
-        // Use bindValue instead of bindParam for readonly properties
         $stmt->bindValue(':reference', $product->reference);
         $stmt->bindValue(':title', $product->title);
         $stmt->bindValue(':size', $product->size);
         $stmt->bindValue(':price', $product->price);
         $stmt->bindValue(':page_url', $product->page_url);
-
-        if ($product->product_id !== null) {
-            // If updating, bind the product ID
-            $stmt->bindValue(':id', $product->product_id);
-        }
-
-        // Execute the query
         $stmt->execute();
 
-        return $product->product_id ?? $this->conn->lastInsertId();
+        return $this->conn->lastInsertId();
+    }
+
+    public function update_product(Product $product): bool
+    {
+        if ($product->product_id === null) {
+            throw new InvalidArgumentException("Product ID must be provided for update.");
+        }
+
+        $query = "UPDATE products 
+                  SET reference = :reference, title = :title, size = :size, price = :price, page_url = :page_url 
+                  WHERE ID = :id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindValue(':reference', $product->reference);
+        $stmt->bindValue(':title', $product->title);
+        $stmt->bindValue(':size', $product->size);
+        $stmt->bindValue(':price', $product->price);
+        $stmt->bindValue(':page_url', $product->page_url);
+        $stmt->bindValue(':id', $product->product_id);
+
+        return $stmt->execute();
     }
 
     public function findById(int $id): ?Product

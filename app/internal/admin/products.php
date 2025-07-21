@@ -24,16 +24,30 @@ ob_start(); ?>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 <?php $errorAlert = ob_get_clean(); ?>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <p class="text-center">Product Deleted</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<?php $deleteAlert = ob_get_clean(); ?>
+
+
+<?php
+if (isset($_GET['product'])) echo "PRODUCT ";
+
+?>
+
 
 <?php if (isset($_GET['product']) && $_GET['product'] == "added") echo $successAlert; ?>
-<?php if (isset($_GET['product']) && $_GET['product'] == "updated") echo $updateAlert  ?>
-<?php if (isset($_GET['update']) && $_GET['update'] == "error") echo $errorAlert  ?>
+<?php if (isset($_GET['product']) && $_GET['product'] == "updated") echo $updateAlert; ?>
+<?php if (isset($_GET['product']) && $_GET['product'] == "deleted") echo $deleteAlert; ?>
+<?php if (isset($_GET['update']) && $_GET['update'] == "error") echo $errorAlert; ?>
 
 
 <section class="container mt-3">
     <h1 class="text-center">Add Product</h1>
 
-    <form action="addProduct.php" method="POST">
+    <form action="controllers/product_controller.php" method="POST">
+        <input type="hidden" name="_method" value="POST">
         <div class="row mt-5 d-flex justify-content-center">
             <div class="mb-3 col-12">
                 <div class="col-8 mx-auto">
@@ -63,12 +77,6 @@ ob_start(); ?>
         </div>
     </form>
 </section>
-
-
-
-
-
-
 
 <section class="mt-5">
     <style>
@@ -108,13 +116,26 @@ ob_start(); ?>
                             <?= $product['price'] . ".00" ?>
                         </td>
                         <td>
-                            <a href="<?= "https://www.novocib.com/" . $product['page_url'] ?>"><?= $product['title'] ?></a>
+                            <a href="<?= 'http://' . $_SERVER['HTTP_HOST'] . '/' . $product['page_url'] ?>"><?= $product['title'] ?></a>
                         </td>
                         <td>
                             <?= $product['updated_on'] ?>
                         </td>
                         <td>
-                            <a class="btn btn-outline-primary" href="edit-product.php?product_id=<?= $product['ID'] ?>" role="button">Edit</a>
+                            <a class="btn btn-outline-primary mb-1" href="edit-product.php?product_id=<?= $product['ID'] ?>" role="button">Edit</a>
+                            <div class="dropdown">
+                                <button class="btn btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Delete
+                                </button>
+                                <div class="dropdown-menu text-center">
+                                    <h6>Confirm</h6>
+                                    <form action="controllers/product_controller.php" method="POST">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <input type="hidden" name="product" value="<?= $product['ID'] ?>">
+                                        <button class="btn btn-danger">Yes</button>
+                                    </form>
+                                </div>
+                            </div>
                         </td>
                     </tr>
                 <?php endforeach ?>

@@ -1,17 +1,21 @@
 <?php
 global $title;
 $title = "Human Active Adenosine Kinase Enzyme";
-require_once "app/templates/base.php";
-
-$novoblue = "#4167b1";
-
-addContent(Banner::gen());
-$content_title = UnderlinedTitle::get("Human Adenosine Kinase (ADK, EC 2.7.1.20)", "novoblue", "right");
 
 ob_start(); ?>
+<meta name="keywords" content="adenosine kinase, recombinant enzyme, human ADK, ATP phosphorylation, nucleoside analogs, drug discovery, epilepsy, inflammation, NOVOCIB, enzyme assay kit">
+<meta name="description" content="NOVOCIB's recombinant human adenosine kinase (ADK) is a purified enzyme used in drug discovery and nucleoside phosphorylation assays. It plays a key role in regulating adenosine levels and is a therapeutic target for epilepsy, inflammation, and cancer.">
+<?php $metas = ob_get_clean();
+
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+?>
+
+<?= Banner::gen() ?>
 <div class="container mt-5">
     <div class="row">
-        <?= $content_title ?>
+        <h2 class="underlinedTitle center">
+            <span class="underlined novoblue center">Human Adenosine Kinase (ADK, EC 2.7.1.20)</span>
+        </h2>
         <div class="col-lg-6">
             <p>
                 <i><strong>Synonyms: </strong>ADK, Adenosine 5'-phosphotransferase</i>
@@ -64,46 +68,8 @@ ob_start(); ?>
         </div>
         <div class="d-flex justify-content-center mt-4">
             <div class="col-lg-10 col-12">
-                <table class="table product mb-2">
-                    <thead>
-                        <tr>
-                            <th>#REF</th>
-                            <th class="text-center">SIZE</th>
-                            <th class="text-center">PRICE</th>
-                            <th class="pe-5"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#E-Nov5-100</td>
-                            <td class="text-center"><strong>100 mUnits</strong></td>
-                            <td class="price text-center">€ 355.00</td>
-                            <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 100 mUnits">Inquiry <i class="fa-solid fa-comment"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#E-Nov5-200</td>
-                            <td class="text-center"><strong>200 mUnits</strong></td>
-                            <td class="price text-center">€ 565.00</td>
-                            <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 200 mUnits">Inquiry <i class="fa-solid fa-comment"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#E-Nov5-500</td>
-                            <td class="text-center"><strong>500 mUnits</strong></td>
-                            <td class="price text-center">€ 1420.00</td>
-                            <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=none&amp;product=Adenosine Kinase - 500 mUnits">Inquiry <i class="fa-solid fa-comment"></i></a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <?= Products::gen("Human Adenosine Kinase") ?>
                 <h5 class="text-center my-3">Bulk quantity available</h5>
-                <p class="text-muted text-center">
-                    <em>Pricing updated December 8th, 2023.</em><br />
-                </p>
                 <p class="text-center">
                     <strong>Kit is provided in stable lyophilized form and
                         <span class="text-danger">shipped without dry ice</span>
@@ -187,9 +153,3 @@ ob_start(); ?>
         </ol>
     </div>
 </div>
-
-<?php $page_content = ob_get_clean();
-
-
-addContent($page_content);
-render();
