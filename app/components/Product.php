@@ -26,7 +26,7 @@ class Product
                             <div class="d-block d-md-none text-end mb-1 fw-bold">
                                 <?= $product['price'] . ".00 €" ?>
                             </div>
-                            <a class="btn btn-primary" href="/inquiry?ref=<?= $product['reference'] ?>&product=<?= $product['title'] ?>&volume=<?= $product['size'] ?>">
+                            <a class="btn btn-primary" href="/inquiry?ref=<?= $product['reference'] ?>&amp;price=<?= $product['price'] ?>&amp;product=<?= $product['title'] ?>&volume=<?= $product['size'] ?>">
                                 Inquiry <i class="fa-solid fa-comment"></i>
                             </a>
                         </td>

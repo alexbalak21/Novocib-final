@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 $recipient = 'contact@novocib.com';
-$recipient = 'alex.balaki@gmail.com';
+// $recipient = 'alex.balaki@gmail.com';
 
 // 🛠 Error logging function
 function logError($message)

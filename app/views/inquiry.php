@@ -3,8 +3,6 @@
 global $title;
 $title = "Inquiry";
 
-print_r($_GET);
-
 $product = isset($_GET['product']) ? $_GET['product'] : null;
 $ref = isset($_GET['ref']) ? $_GET['ref'] : null;
 $price = isset($_GET['price']) ? $_GET['price'] : null;

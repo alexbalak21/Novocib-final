@@ -21,7 +21,7 @@ class Products
                         <td class="text-center"><?= $product['size'] ?></td>
                         <td class="price text-center"><?= $product['price'] . ".00 €" ?></td>
                         <td class="text-end pe-3">
-                            <a class="btn btn-primary" href="/inquiry?ref=<?= $product['reference'] ?>&product=<?= $product['title'] ?>&volume=<?= $product['size'] ?>">
+                            <a class="btn btn-primary" href="/inquiry?ref=<?= $product['reference'] ?>&amp;price=<?= $product['price'] ?> &amp;product=<?= $product['title'] ?>&volume=<?= $product['size'] ?>">
                                 Inquiry <i class="fa-solid fa-comment"></i>
                             </a>
                         </td>

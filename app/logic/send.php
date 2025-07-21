@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 
 // Set the recipient email directly
 $recipient = 'contact@novocib.com';
-$recipient = 'alex.balaki@gmail.com';
+// $recipient = 'alex.balaki@gmail.com';
 // Error logging function (only logs errors)
 function logError($message)
 {
