@@ -73,7 +73,7 @@ echo Banner::gen();
                                 <td class="d-none d-md-table-cell text-center">330.00 €</td>
                                 <td class="text-end pe-3">
                                     <div class="d-block d-md-none text-end mb-1 fw-bold">330.00 €</div>
-                                    <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;product=HPRT Assay Kit&amp;volume=24 analyses (8 samples in triplicate) with HPRT enzyme">
+                                    <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;price=330&amp;product=HPRT Assay Kit&amp;volume=24 analyses (8 samples in triplicate) with HPRT enzyme">
                                         Inquiry <i class="fa-solid fa-comment"></i>
                                     </a>
                                 </td>

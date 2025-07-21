@@ -19,6 +19,7 @@ return [
 
     // Mail Handling
     '/send' => 'app/logic/send.php',
+    '/send-inquiry' => 'app/logic/send_inquiry.php',
     '/message-error' => 'app/views/message-error.php',
     '/message-sent-successfully' => 'app/views/message_sent.php',
     '/send-fancy' => "app/logic/send_fancy.php",

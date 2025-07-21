@@ -3,7 +3,12 @@
 global $title;
 $title = "Inquiry";
 
-$product = isset($_GET['product']) ? $_GET['product'] : "";
+print_r($_GET);
+
+$product = isset($_GET['product']) ? $_GET['product'] : null;
+$ref = isset($_GET['ref']) ? $_GET['ref'] : null;
+$price = isset($_GET['price']) ? $_GET['price'] : null;
+
 
 // META TAGS 
 ob_start(); ?>
@@ -47,7 +52,7 @@ ob_start(); ?>
     <a class="fs-4" id="mailto" href="mailto:contact@novocib.com"><i class="fa-solid fa-envelope"></i> contact@novocib.com</a>
     <span id="copy" class="text-secondary copy" title="Copy"><i class="fa-solid fa-clipboard"></i><span></span></span>
 
-    <form class="mt-5" id="contact-page-form" action="/send" method="POST" name="contact-page-form">
+    <form class="mt-5" id="contact-page-form" action="/send-inquiry" method="POST" name="contact-page-form">
         <div class="row g-3">
             <div class="col-md-6">
                 <div class="form-floating">
@@ -74,7 +79,7 @@ ob_start(); ?>
             <div class="col-12">
                 <div class="form-floating">
                     <input
-                        name="need"
+                        name="<?= $product ? "product" : "need" ?>"
                         value="<?= $product ?>"
                         min="4"
                         required="true"
@@ -106,6 +111,10 @@ ob_start(); ?>
                 </div>
             </div>
         </div>
+        <?= $ref ? "<input type='hidden' name='ref' value='$ref'>" : "" ?>
+        <?= $price ? "<input type='hidden' name='price' value='$price'>" : "" ?>
+
+
         <div class="my-5"><button type="submit" class="btn btn-primary">Send message <i class="fa-regular fa-paper-plane"></i></button></div>
     </form>
 </div>
