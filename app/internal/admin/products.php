@@ -1,9 +1,11 @@
 <?php
 global $title;
 $title = "Products";
+
 require_once __DIR__ . "/templates/base.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
 
+// Alert markup blocks
 ob_start(); ?>
 <div class="alert alert-success alert-dismissible fade show" role="alert">
     <p class="text-center">Product Added successfully</p>
@@ -23,25 +25,38 @@ ob_start(); ?>
     <p class="text-center">Error Updating the product</p>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
-<?php $errorAlert = ob_get_clean(); ?>
+<?php $errorAlert = ob_get_clean();
+
+ob_start(); ?>
 <div class="alert alert-success alert-dismissible fade show" role="alert">
     <p class="text-center">Product Deleted</p>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 <?php $deleteAlert = ob_get_clean(); ?>
 
-
+<!-- ✅ Alert Display Logic -->
 <?php
-if (isset($_GET['product'])) echo "PRODUCT ";
-
+if (isset($_GET['product'])) {
+    if ($_GET['product'] === "added") echo $successAlert;
+    elseif ($_GET['product'] === "updated") echo $updateAlert;
+    elseif ($_GET['product'] === "deleted") echo $deleteAlert;
+}
+if (isset($_GET['update']) && $_GET['update'] === "error") echo $errorAlert;
 ?>
 
+<!-- ✅ JS: Clean Query Parameters After Load -->
+<script>
+    if (window.location.search.length > 0) {
+        const cleanURL = window.location.origin + window.location.pathname;
+        window.history.replaceState({}, document.title, cleanURL);
+    }
 
-<?php if (isset($_GET['product']) && $_GET['product'] == "added") echo $successAlert; ?>
-<?php if (isset($_GET['product']) && $_GET['product'] == "updated") echo $updateAlert; ?>
-<?php if (isset($_GET['product']) && $_GET['product'] == "deleted") echo $deleteAlert; ?>
-<?php if (isset($_GET['update']) && $_GET['update'] == "error") echo $errorAlert; ?>
-
+    // Optional: Auto-hide alerts after 3 seconds
+    setTimeout(() => {
+        const alerts = document.querySelectorAll('.alert');
+        alerts.forEach(a => a.classList.remove('show'));
+    }, 3000);
+</script>
 
 <section class="container mt-3">
     <h1 class="text-center">Add Product</h1>
@@ -73,7 +88,10 @@ if (isset($_GET['product'])) echo "PRODUCT ";
                     <input name="url" type="text" class="form-control" id="url">
                 </div>
             </div>
-            <div class="text-center"><button class="btn btn-success me-3">Add</button> <a class="btn btn-outline-primary" href="createProduct.php">Reset</a></div>
+            <div class="text-center">
+                <button class="btn btn-success me-3">Add</button>
+                <a class="btn btn-outline-primary" href="createProduct.php">Reset</a>
+            </div>
         </div>
     </form>
 </section>
@@ -91,7 +109,7 @@ if (isset($_GET['product'])) echo "PRODUCT ";
         <table class="table table-bordered mt-2">
             <thead>
                 <tr>
-                    <th class="col-1">reference</th>
+                    <th class="col-1">Reference</th>
                     <th class="col-2">Title</th>
                     <th class="col-4">Size</th>
                     <th class="col-1">Price</th>
@@ -103,30 +121,16 @@ if (isset($_GET['product'])) echo "PRODUCT ";
             <tbody>
                 <?php foreach ($products as $product) : ?>
                     <tr>
+                        <td><?= $product['reference'] ?></td>
+                        <td><?= $product['title'] ?></td>
+                        <td><?= $product['size'] ?></td>
+                        <td><?= $product['price'] . ".00" ?></td>
+                        <td><a href="<?= 'http://' . $_SERVER['HTTP_HOST'] . '/' . $product['page_url'] ?>"><?= $product['title'] ?></a></td>
+                        <td><?= $product['updated_on'] ?></td>
                         <td>
-                            <?= $product['reference'] ?>
-                        </td>
-                        <td>
-                            <?= $product['title'] ?>
-                        </td>
-                        <td>
-                            <?= $product['size'] ?>
-                        </td>
-                        <td>
-                            <?= $product['price'] . ".00" ?>
-                        </td>
-                        <td>
-                            <a href="<?= 'http://' . $_SERVER['HTTP_HOST'] . '/' . $product['page_url'] ?>"><?= $product['title'] ?></a>
-                        </td>
-                        <td>
-                            <?= $product['updated_on'] ?>
-                        </td>
-                        <td>
-                            <a class="btn btn-outline-primary mb-1" href="edit-product.php?product_id=<?= $product['ID'] ?>" role="button">Edit</a>
+                            <a class="btn btn-outline-primary mb-1" href="edit-product.php?product_id=<?= $product['ID'] ?>">Edit</a>
                             <div class="dropdown">
-                                <button class="btn btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Delete
-                                </button>
+                                <button class="btn btn-danger" type="button" data-bs-toggle="dropdown">Delete</button>
                                 <div class="dropdown-menu text-center">
                                     <h6>Confirm</h6>
                                     <form action="controllers/product_controller.php" method="POST">
