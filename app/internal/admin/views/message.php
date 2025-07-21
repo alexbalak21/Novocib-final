@@ -11,7 +11,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/repository/Message_repository.php
 $MessageRepo = new Message_repository();
 $message = $MessageRepo->get_message_by_id($id);
 ?>
-
+<h1 class="text"></h1>
 <section class="mt-5">
     <style>
         .message-container {
