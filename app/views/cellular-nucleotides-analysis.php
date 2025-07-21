@@ -19,7 +19,9 @@ $section6_title = UnderlinedTitle::get("Customized Nucleotide Analysis", "novobl
 $page_content = <<<CONTENT
 <main class="mt-5">
 <section class="container">
-$section1_title
+    <h2 class="underlinedTitle center" style="margin-bottom: 0">
+        <span class="underlined novoblue center">Analytical Service for Validation of Inhibitors of Nucleotide Synthesis</span>
+    </h2>
 <h4>Principle:</h4>
 <p><strong>Cellular Nucleotide Profiling Service</strong> is an analytical service for mesuring nucleotide level in antimetabolite-treated cells. More than 31 cellular (deoxy-) ribonucleotides (mono-, di-, and triphosphate) are extracted by SPE procedure, separated by ion-paired HPLC system in one-run and quantified.</p>
 
@@ -79,8 +81,12 @@ $section1_title
 <p><strong class="novo-blue">Validated</strong> with antimetabolites (known inhibitors of nucleotide synthesis): MPA, hydroxyurea, methotrexate, ribavirin, mizoribine, leflunomide, gemcitabine. These reference drugs do impact differently on nucleotide metabolism, each showing its own mode of action through a specific nucleotide profile. Any new compound's mode of action is analyzed by establishing its nucleotide profile which is then compared with those obtained with reference drugs.</p>
 <p class="mt-2">Download our brochure <a title="Download our PDF documenattion." href="/app/documents/NovoCIB MOA Studies - Nucleotide Profiling.pdf" style="font-weight:500">"Mode of Action Studies by Nucleotide Profiling" <i class="fa-solid fa-file-pdf"></i></a></p>
 </section>
+
+
 <section class="mt-5 container">
-$section2_title
+    <h2 class="underlinedTitle center" style="margin-bottom: 0">
+        <span class="underlined novoblue center">Cellular Nucleotides Profiling - Analytical Service</span>
+    </h2>
 <p>To study the effect of nucleoside analogues on the whole spectra of cellular purine and pyrimidine ribo- and deoxyribonucleotides, <strong class="novo-blue">NOVOCIB</strong> has developed an original cell-based analytical approach in which more than 31 (deoxy)ribonucleotides (mono-, di-, triphosphate) and nucleotide co-factors are extracted from cultured cells, separated by ion-pared chromatography and quantified.</p>
 <div class="nuclotides-profile row align-items-center justify-content-center">
 <div class="col-lg-2 col-sm-6">
