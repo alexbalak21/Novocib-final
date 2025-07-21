@@ -1,18 +1,17 @@
 <?php
 global $title;
 $title = "AMP Deaminase Deficiency Assay Kit";
-require_once "app/templates/base.php";
-
-$novoblue = "#4167b1";
-
-
-
-
-addContent(Banner::gen());
-
 
 ob_start(); ?>
+<meta name="keywords" content="AMP Deaminase Assay Kit, non-radioactive assay, enzyme activity measurement, AMPDA kit, cell lysate assay, 96-well plate assay, NOVOCIB, purine metabolism, biochemical assay kits">
+<meta name="description" content="Discover NOVOCIB's AMP Deaminase Assay Kit – a non-radioactive, one-step solution for measuring AMP deaminase activity in cell lysates using a convenient 96-well plate format. Fast, continuous, and easy-to-use.">
+<?php $metas = ob_get_clean();
 
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+?>
+
+
+<?= Banner::gen() ?>
 <main class="container mt-5">
     <h2 class="underlinedTitle center" style="margin-bottom: 0">
         <span class="underlined novoblue center">Non radioactive AMP Deaminase Assay</span>
@@ -89,14 +88,3 @@ ob_start(); ?>
         <p class="text-center mb-5"><strong>Or ask us by email: <a href="mailto:contact@novocib.com">contact@novocib.com</a></strong></p>
     </div>
 </main>
-
-<?php $page_content = ob_get_clean();
-
-
-
-<<<CONTENT
-
-CONTENT;
-
-addContent($page_content);
-render();
