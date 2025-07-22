@@ -77,8 +77,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $MessageRepo->save_message($name, $visitor_email, $need, $message);
 
         // Prepare email
-        $email_subject = "[Contact]: $need";
-        $email_body = "New message from the NOVOCIB.COM:\n\n" .
+        $email_subject = "[REQUEST]: $need";
+        $email_body = "new message received via NOVOCIB.COM:\n\n" .
             "Name: $name\n" .
             "Email: $visitor_email\n" .
             "Need: $need\n\n" .
