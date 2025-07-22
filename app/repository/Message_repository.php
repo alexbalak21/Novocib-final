@@ -54,16 +54,21 @@ class Message_repository
 
     public function delete_message_by_id($id)
     {
-        if (!$this->conn) return;
+        if (!$this->conn) return false;
 
         try {
             $stmt = $this->conn->prepare("DELETE FROM contact_messages WHERE id = :id");
             $stmt->bindParam(':id', $id, PDO::PARAM_INT);
             $stmt->execute();
+
+            // Check if any row was deleted
+            return $stmt->rowCount() > 0;
         } catch (PDOException $e) {
             error_log("Failed to delete message with ID {$id}: " . $e->getMessage());
+            return false;
         }
     }
+
 
     public function get_message_by_id($id)
     {

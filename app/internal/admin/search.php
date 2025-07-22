@@ -81,7 +81,7 @@ require_once __DIR__ . "/templates/base.php";
                                     <h6>Confirm</h6>
                                     <form action="search.php" method="POST">
                                         <input type="hidden" name="_method" value="DELETE">
-                                        <input type="hidden" name="search" value="<?= $search_item['id'] ?>">
+                                        <input type="hidden" name="search_item" value="<?= $search_item['id'] ?>">
                                         <button class="btn btn-danger">Yes</button>
                                     </form>
                                 </div>

@@ -64,5 +64,18 @@ $message = $MessageRepo->get_message_by_id($id);
         <div class="message-footer">
             Message ID: <?= $message['id'] ?>
         </div>
+        <div class="text-end mt-2 me-2">
+            <button class="btn btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Delete
+            </button>
+            <div class="dropdown-menu text-center">
+                <h6>Confirm</h6>
+                <form action="controllers/message_controller.php" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input type="hidden" name="message" value="<?= $message['id'] ?>">
+                    <button class="btn btn-danger">Yes</button>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
