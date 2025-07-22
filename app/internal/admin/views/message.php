@@ -49,17 +49,6 @@ $message = $MessageRepo->get_message_by_id($id);
         }
     </style>
 
-    <?php
-    $message = [
-        'id' => 3,
-        'name' => 'Candelaria McVicars',
-        'email' => 'turnerfisher348382@gmail.com',
-        'need' => 'Bhzsxixfhelle',
-        'message' => 'Hello Need Help Managing Your Social Media? Social Media Manager keeps your brand active across all platforms: Facebook, Instagram, TikTok, LinkedIn, YouTube, Pinterest, and X. Increases visibility, and saves you time. More engagement, more growth',
-        'created_on' => '2025-07-20 18:32:25'
-    ];
-    ?>
-
     <div class="message-container">
         <div class="message-header">
             <h3><i class="fa fa-user"></i><?= htmlspecialchars($message['name']) ?></h3>
