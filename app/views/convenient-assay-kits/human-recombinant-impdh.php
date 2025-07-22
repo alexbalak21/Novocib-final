@@ -57,58 +57,7 @@ echo Banner::gen();
         </div>
         <div class="d-flex justify-content-center mt-4">
             <div class="col-lg-10 col-12">
-                <table class="table product mb-2">
-                    <thead>
-                        <tr>
-                            <th>#REF</th>
-                            <th class="text-center">SIZE</th>
-                            <th class="text-center">PRICE</th>
-                            <th class="pe-5"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#E-Nov1-50</td>
-                            <td class="text-center"><strong>50 mU</strong></td>
-                            <td class="price text-center">€ 305.00</td>
-                            <td class="text-end pe-3">
-                                <a
-                                    class="btn btn-primary"
-                                    href="/inquiry?ref=K0709-01-2&product=Human IMPDH Ty2 - 5mU">
-                                    Inquiry <i class="fa-solid fa-comment"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#E-Nov1-100</td>
-                            <td class="text-center"><strong>100 mU</strong></td>
-                            <td class="price text-center">€ 495.00</td>
-                            <td class="text-end pe-3">
-                                <a
-                                    class="btn btn-primary"
-                                    href="/inquiry?ref=K0709-01-2&product=Human IMPDH Ty2 - 100mU">
-                                    Inquiry <i class="fa-solid fa-comment"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#E-Nov1-250</td>
-                            <td class="text-center"><strong>250 mU</strong></td>
-                            <td class="price text-center">€ 1220.00</td>
-                            <td class="text-end pe-3">
-                                <a
-                                    class="btn btn-primary"
-                                    href="/inquiry?ref=K0709-01-2&product=Human IMPDH Ty2 - 250mU">
-                                    Inquiry <i class="fa-solid fa-comment"></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="text-muted text-center">
-                    <em>Pricing updated March 19th, 2025.</em>
-                    <br />
-                </p>
+                <?= Products::gen("Human IMPDH Type 2") ?>
                 <p class="text-center">
                     <strong>
                         Kit is provided in stable lyophilized form and
