@@ -1,11 +1,11 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] .  "/app/logic/db_operations.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/logic/db_operations.php";
 
 function logVisit()
 {
     $time = date('Y-m-d H:i:s');
-    $ip = $_SERVER['REMOTE_ADDR'];
-    $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $ip = $_SERVER['REMOTE_ADDR'] ?? 'UNKNOWN';
+    $uri = isset($_SERVER['REQUEST_URI']) ? parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) : '';
 
     // ⛔ IPs to exclude from logging
     $excluded_ips = [
@@ -19,15 +19,21 @@ function logVisit()
     $excluded_extensions = ['png', 'jpg', 'svg'];
 
     // 🧩 Check conditions before logging
-    $ext = strtolower(pathinfo($uri, PATHINFO_EXTENSION));
+    if ($uri !== '') {
+        $ext = strtolower(pathinfo($uri, PATHINFO_EXTENSION));
 
-    if (
-        !in_array($ip, $excluded_ips) &&
-        strpos($uri, '/FA6/') === false &&
-        !in_array($ext, $excluded_extensions)
-    ) {
-
-        logVisitToDB($time, $ip, $uri);
+        if (
+            !in_array($ip, $excluded_ips) &&
+            strpos($uri, '/FA6/') === false &&
+            !in_array($ext, $excluded_extensions)
+        ) {
+            try {
+                logVisitToDB($time, $ip, $uri);
+            } catch (Throwable $e) {
+                error_log("Visit logging failed: " . $e->getMessage());
+            }
+        }
     }
 }
+
 logVisit();

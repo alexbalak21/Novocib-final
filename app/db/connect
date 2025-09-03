@@ -1,19 +1,20 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/config/db_config";
+
 function connect_db(): PDO
 {
     $config = get_config();
-    $host = $config['host'];
-    $username = $config['username'];
-    $password = $config['password'];
-    $database = $config['database'];
+    $host = $config['host'] ?? 'localhost';
+    $username = $config['username'] ?? '';
+    $password = $config['password'] ?? '';
+    $database = $config['database'] ?? '';
+
     try {
-        $conn = new PDO("mysql:host=$host;dbname=$database", $username, $password);
-        // set the PDO error mode to exception
+        $conn = new PDO("mysql:host=$host;dbname=$database;charset=utf8mb4", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     } catch (PDOException $e) {
-        echo '$sql' . "<br>" . $e->getMessage();
+        error_log("Database connection failed: " . $e->getMessage());
+        throw new RuntimeException("Unable to connect to the database.");
     }
-    return null;
 }

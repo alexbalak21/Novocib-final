@@ -1,0 +1,39 @@
+[23-Jul-2025 23:07:43 Europe/Paris] Invalid request method: GET
+[24-Jul-2025 00:36:04 Europe/Paris] Invalid request method: GET
+[24-Jul-2025 04:12:37 Europe/Paris] Invalid request method: GET
+[24-Jul-2025 07:15:43 Europe/Paris] Invalid request method: GET
+[26-Jul-2025 18:25:26 Europe/Paris] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 22
+[26-Jul-2025 18:25:26 Europe/Paris] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 26
+[26-Jul-2025 21:05:14 Europe/Paris] Invalid request method: GET
+[07-Aug-2025 02:06:57 Europe/Paris] Invalid request method: GET
+[08-Aug-2025 16:37:54 Europe/Paris] Invalid request method: GET
+[10-Aug-2025 06:07:39 Europe/Paris] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 22
+[10-Aug-2025 06:07:39 Europe/Paris] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 26
+[10-Aug-2025 06:07:39 Europe/Paris] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 22
+[10-Aug-2025 06:07:39 Europe/Paris] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 26
+[10-Aug-2025 06:07:40 Europe/Paris] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 22
+[10-Aug-2025 06:07:40 Europe/Paris] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 26
+[10-Aug-2025 06:07:40 Europe/Paris] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 22
+[10-Aug-2025 06:07:40 Europe/Paris] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 26
+[10-Aug-2025 06:07:41 Europe/Paris] PHP Deprecated:  pathinfo(): Passing null to parameter #1 ($path) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 22
+[10-Aug-2025 06:07:41 Europe/Paris] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home/cp68325/public_html/app/logic/logVisit.php on line 26
+[13-Aug-2025 01:46:49 Europe/Paris] Invalid request method: GET
+[13-Aug-2025 02:24:34 Europe/Paris] Invalid request method: GET
+[13-Aug-2025 10:15:32 Europe/Paris] Invalid request method: GET
+[27-Aug-2025 03:30:35 Europe/Paris] Invalid request method: GET
+[27-Aug-2025 04:55:25 Europe/Paris] Invalid request method: GET
+[27-Aug-2025 06:08:13 Europe/Paris] Invalid request method: GET
+[27-Aug-2025 06:33:59 Europe/Paris] Invalid request method: GET
+[27-Aug-2025 07:40:25 Europe/Paris] Invalid request method: GET
+[27-Aug-2025 10:01:47 Europe/Paris] Invalid request method: GET
+[02-Sep-2025 10:39:03 Europe/Paris] PHP Fatal error:  Uncaught TypeError: connect_db(): Return value must be of type PDO, null returned in /home/cp68325/public_html/app/db/connect:18
+Stack trace:
+#0 /home/cp68325/public_html/app/logic/db_operations.php(36): connect_db()
+#1 /home/cp68325/public_html/app/logic/logVisit.php(30): logVisitToDB('2025-09-02 10:3...', '66.249.79.35', '/Previous/image...')
+#2 /home/cp68325/public_html/app/logic/logVisit.php(33): logVisit()
+#3 /home/cp68325/public_html/app/templates/new_base.php(3): require_once('/home/cp68325/p...')
+#4 /home/cp68325/public_html/app/views/404.php(4): require_once('/home/cp68325/p...')
+#5 /home/cp68325/public_html/index.php(65): include('/home/cp68325/p...')
+#6 /home/cp68325/public_html/index.php(82): loadView('404.php')
+#7 {main}
+  thrown in /home/cp68325/public_html/app/db/connect on line 18
