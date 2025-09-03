@@ -248,15 +248,16 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 <h5 class="card-title name text-center">XMP</h5>
             </div>
         </div>
+
         <div class="owl-item">
             <div class="card">
                 <div class="card-img">
-                    <a href="https://libios.fr/en/">
-                        <img src="/app/img/libios.jpg" alt="Libios logo" title="Libios Laboratories" />
-                        <span>Libios Laboratories</span>
+                    <a href="https://www.afnor.org/en/">
+                        <img src="/app/img/afnor.png" alt="Afnor logo" title="Afnor" />
+                        <span>Afnor</span>
                     </a>
                 </div>
-                <h5 class="card-title name text-center">LIBIOS</h5>
+                <h5 class="card-title name text-center">AFNOR</h5>
             </div>
         </div>
 
