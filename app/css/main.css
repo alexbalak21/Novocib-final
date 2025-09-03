@@ -76,9 +76,11 @@ body {
   }
 }
 
-p {
+
+p:not(.lead):not(.display-1):not(.display-2):not(.display-3):not(.display-4):not(.display-5):not(.display-6) {
   font-size: 16px !important;
 }
+
 
 p a {
   font-size: 18px;

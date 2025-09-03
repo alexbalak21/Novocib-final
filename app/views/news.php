@@ -18,25 +18,59 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 <div class="container py-4">
     <div class="col-lg-7 mx-auto">
-        <h3 class="text-center">New Service</h3>
-        <div class="row">
-            <div class="col-lg-8">
-                <p class="mt-4 lead ">
-                    <span class="d-block text-center">
-                        We’re excited to introduce our latest innovation: new version of the:
-                    </span>
-                    <a class="text-center mb-1 d-block" href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit">PRECICE® Fish Freshness Assay Kit</a>
-                    This kit has been specifically designed in a 96-well plate format to facilitate the measurement of three major ATP catabolites (IMP, Inosine, and Hypoxanthine) in the same fish sample. In contrast to previous version, requiring two series of pipetting, our latest version includes microplate already prefilled with the enzymes. Just add the fish extract and mesure.
-                </p>
-            </div>
-            <div class="col-lg-4 col-7 mx-auto mt-lg-5 mt-4">
-                <a title="Go to Fish Freshness Assay Kit page" href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit"><img src="/app/img/Fish-freshness/fish.jpg" alt="fish photo" class="w-100 border"></a>
-            </div>
+        <h3 class="text-center mb-3">AFNOR New Standard</h3>
+        <div>
+            <p class="text-center lead">
+                AFNOR has published a new Standard XP V45-077
+            </p>
+            <p class="mb-0">
+                AFNOR has officially released a new standard titled XP V45-077:
+            </p>
+            <p class="text-center mt-1 mb-1">
+                <a href="https://www.boutique.afnor.org/en-gb/standard/xp-v45077/fisheries-and-aquatic-products-assessment-of-fish-flesh-freshness-enzymatic/fa208694/448349">
+                    Fisheries and Aquatic Products - Assessment of Fish Freshness by Measuring Three Nucleotides: IMP, Inosine, and Hypoxanthine
+                </a>
+            </p>
+            <p>
+                This standard introduces a colorimetric enzymatic method for quantifying three key nucleotides-IMP, inosine, and hypoxanthine-which serve as reliable indicators of fish freshness. The method aims to support quality control and ensure product integrity across the seafood industry.
+            </p>
+            <p>
+                To facilitate implementation of this standard, NOVOCIB offers a dedicated solution: <br>
+                <a href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit">
+                    Fish Freshness Assay Kit <i class="fa-solid fa-fish-fins"></i>
+                </a> <br>
+                This kit enables rapid and accurate measurement of the same nucleotides outlined in XP V45-077, making it a practical tool for laboratories and seafood processors seeking compliance and enhanced quality assurance.
+            </p>
         </div>
-        <p class="text-end text-muted mt-4 mb-1">Published on July 15, 2025</p>
     </div>
+    <p class="text-end text-muted mt-4 mb-1">Published on September 3rd, 2025</p>
 </div>
+
+
 <div class="bg-light py-3"></div>
+
+<div class="container py-4">
+    <h3 class="text-center">New Service</h3>
+    <div class="row">
+        <div class="col-lg-8">
+            <p class="mt-4">
+                <span class="d-block text-center">
+                    We’re excited to introduce our latest innovation: new version of the:
+                </span>
+                <a class="text-center mb-1 d-block my-2" href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit">PRECICE® Fish Freshness Assay Kit</a>
+                <span>This kit has been specifically designed in a 96-well plate format to facilitate the measurement of three major ATP catabolites (IMP, Inosine, and Hypoxanthine) in the same fish sample. In contrast to previous version, requiring two series of pipetting, our latest version includes microplate already prefilled with the enzymes. Just add the fish extract an mesure.</span>
+            </p>
+        </div>
+        <div class="col-lg-4 col-7 mx-auto mt-lg-5 mt-4">
+            <a title="Go to Fish Freshness Assay Kit page" href="https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit"><img class="w-75" src="/app/img/Fish-freshness/fish.jpg" alt="fish photo" class="w-100 border"></a>
+        </div>
+    </div>
+    <p class="text-end text-muted mt-4 mb-1 me-5">Published on July 15, 2025</p>
+
+</div>
+
+<div class="bg-light py-3"></div>
+
 <div class="container py-4">
     <div class="col-lg-7 mx-auto">
         <h3 class="text-center">New website</h3>
