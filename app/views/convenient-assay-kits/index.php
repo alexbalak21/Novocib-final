@@ -122,16 +122,4 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             </p>
         </div>
     </div>
-    <div class="kit row align-items-center">
-        <div class="col-3 me-3 text-center">
-            <h5><a href="/convenient-assay-kits/phosphatase-assay-kit">Phosphatase Assay Kit</a></h5>
-        </div>
-        <div class="col-8">
-            <p>
-                Continuous spectrophotometric enzyme assay to monitor the activity of any enzymes (phosphatase; protein
-                phosphatases; ATPase; GTPases; helicases) liberating inorganic phosphate (Pi) during enzymatic
-                reactions.
-            </p>
-        </div>
-    </div>
 </section>
