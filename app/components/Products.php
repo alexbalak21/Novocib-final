@@ -4,6 +4,18 @@ class Products
     static function gen(string $product_title)
     {
         $products = find_all_products_by_title($product_title);
+
+        // Find the most recent update date
+        $latestDate = null;
+        foreach ($products as $product) {
+            if (!empty($product['updated_on'])) {
+                $currentDate = strtotime($product['updated_on']);
+                if ($latestDate === null || $currentDate > $latestDate) {
+                    $latestDate = $currentDate;
+                }
+            }
+        }
+
         ob_start(); ?>
         <div class="table-responsive">
             <table class="table product mb-2">
@@ -22,7 +34,6 @@ class Products
                             <td class="text-center"><?= $product['title'] ?><br><?= $product['size'] ?></td>
                             <td class="text-center d-none d-md-table-cell"><?= $product['price'] . ".00 €" ?></td>
                             <td class="text-end pe-3">
-                                <!-- price visible only on xs–sm -->
                                 <div class="d-block d-md-none text-end mb-1 fw-bold">
                                     <?= $product['price'] . ".00 €" ?>
                                 </div>
@@ -37,10 +48,13 @@ class Products
             </table>
         </div>
 
-        <p class="text-muted text-center">
-            <em>Updated on <?= date('F jS, Y', strtotime($product['updated_on'])) ?>.</em>
-            <br />
-        </p>
+        <?php if ($latestDate): ?>
+            <p class="text-muted text-center">
+                <em>Last updated on : <?= date('F jS, Y', $latestDate) ?>.</em>
+                <br />
+            </p>
+        <?php endif; ?>
 <?php return ob_get_clean();
     }
-} ?>
+}
+?>
