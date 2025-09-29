@@ -150,10 +150,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         <div class="col-md-4 mb-4">
             <div class="text-center p-3 h-100">
                 <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-                    <i class="fas fa-certificate fa-2x text-primary"></i>
+                    <i class="fas fa-award fa-2x text-primary"></i>
                 </div>
-                <h3 class="h5">ISO-Certified Laboratory</h3>
-                <p>Our facilities meet international quality standards, ensuring reliable and accurate results for all your analytical needs.</p>
+                <h3 class="h5">Award-Winning Excellence</h3>
+                <p>Recognized for our innovative analytical methods and exceptional service quality in nucleotide analysis and research.</p>
             </div>
         </div>
         <div class="col-md-4 mb-4">
