@@ -14,7 +14,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 <?= Banner::gen("/app/img/analysis4.webp") ?>
 <main class="container mt-5">
-    <!-- TITLE -->
+    <!-- TITLE MAIN -->
     <h2 class="underlinedTitle right"><span class="underlined novoblue right">Yeast Extracts Enriched in Tasty Nucleotides</span></h2>
     <div class="row my-5">
         <div class="col-lg-3">
