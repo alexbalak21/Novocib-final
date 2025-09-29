@@ -2,28 +2,25 @@
 global $title;
 $title = "Yeast Extracts Nucleotides and Nucleic Acids";
 
+// META TAGS 
 ob_start(); ?>
 <meta name="description" content="NOVOCIB provides HPLC analysis of yeast nucleosides, nucleotides and nucleic acids in yeast extracts">
 <meta name="keywords" content="Yeast extract nucleotides, nucleotides analysis, HPLC nucleotide analysis, 5'nucleotides, inosinate, guanosinate, 5'GMP,5'IMP, nucleic acids">
 <?php $metas = ob_get_clean();
 
 
-require_once "app/templates/base.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+?>
 
-$novoblue = "#4167b1";
-
-addContent(Banner::gen("/app/img/analysis4.webp"));
-$content_title = UnderlinedTitle::get("Yeast Extracts Enriched in Tasty Nucleotides", "novoblue", "right");
-
-
-ob_start(); ?>
+<?= Banner::gen("/app/img/analysis4.webp") ?>
 <main class="container mt-5">
-    <?= $content_title ?>
+    <!-- TITLE -->
+    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Yeast Extracts Enriched in Tasty Nucleotides</span></h2>
     <div class="row my-5">
-        <div class="col-lg-4">
-            <img src="/app/img/yeast.jpg" alt="yeast picture" title="yeast" class="w-100">
+        <div class="col-lg-3">
+            <img src="/app/img/yeast.jpg" alt="yeast picture" title="yeast picture" class="img-fluid rounded">
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-9">
             <p> Yeast extract is a versatile ingredient widely used as nutritious and flavor complement for food and feed formulation. It's derived from yeast cells and contains essential nutrients such as high-quality protein, B vitamins, amino acids, minerals, nucleotides and nucleic acid RNA.</p>
             <p>Yeast cells are naturally abundant in RNA, constituting approximately 6–12% of their dry weight. Such high RNA content makes yeast a valuable raw material for the production of 5'-nucleotides and in particular compounds like inosinate (IMP) and guanylate (GMP), natural flavor enhancers. When combined with other flavor compounds (glutamate or salt), IMP and GMP enhance overall taste perception and reduce the need for salt in food.</p>
         </div>
@@ -72,12 +69,6 @@ ob_start(); ?>
                 </tbody>
             </table>
         </div>
-        <p class="mt-4 mb-4 text-end text-md-center">
-            <i class="fa-solid fa-download"></i> Download
-            <a target="_blank" href="/app/documents/NovoCIB MOA Studies - Nucleotide Profiling.pdf" title="Download our PDF documenattion.">
-                <strong>Mode of Action Studies by Nucleotide Profiling <i class="fa-regular fa-file-pdf"></i></strong>
-            </a> (Brochure)
-        </p>
     </article>
 
     <div class="pt-5 mb-5">
@@ -106,8 +97,3 @@ ob_start(); ?>
         <a class="btn btn-primary" href="/contact-us"><span class="lead">Contact Us</span></a>
     </div>
 </main>
-<?php $page_content = ob_get_clean();
-
-
-addContent($page_content);
-render();

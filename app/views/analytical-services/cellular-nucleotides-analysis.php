@@ -136,7 +136,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                         </tbody>
                     </table>
                 </div>
-                <p class="mt-4 mb-4 text-end text-md-center">
+                <p class="mb-5 text-center text-lg-end">
                     <i class="fa-solid fa-download"></i> Download
                     <a target="_blank" href="/app/documents/NovoCIB MOA Studies - Nucleotide Profiling.pdf" title="Download our PDF documenattion.">
                         <strong>Mode of Action Studies by Nucleotide Profiling <i class="fa-regular fa-file-pdf"></i></strong>
