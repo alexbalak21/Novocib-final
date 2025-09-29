@@ -14,8 +14,7 @@
   padding: 0;
 }
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
 * {
@@ -35,8 +34,7 @@ body {
   height: 600px;
   width: 100%;
   position: relative;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .carousel-item img {
@@ -76,11 +74,9 @@ body {
   }
 }
 
-
 p:not(.lead):not(.display-1):not(.display-2):not(.display-3):not(.display-4):not(.display-5):not(.display-6) {
   font-size: 16px !important;
 }
-
 
 p a {
   font-size: 18px;
@@ -194,7 +190,7 @@ span.novocib {
   cursor: pointer;
   span {
     position: absolute;
-    top: 4px; 
+    top: 4px;
     font-size: 14px;
     margin-left: 4px;
     display: none;
@@ -447,7 +443,7 @@ a {
 
 .underlined {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
   margin: 0 auto;
 }
 
@@ -654,8 +650,7 @@ footer {
   height: 600px;
   width: 100%;
   position: relative;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .carousel-item img {
@@ -781,81 +776,160 @@ header .brand {
   font-weight: 550;
 }
 
-
 .form-outline .form-control {
-    min-height: auto;
-    padding-top: .32rem;
-    padding-bottom: .32rem;
-    padding-left: .75rem;
-    padding-right: .75rem;
-    border: 0;
-    background: rgba(0,0,0,0);
-    transition: all .2s linear
+  min-height: auto;
+  padding-top: 0.32rem;
+  padding-bottom: 0.32rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.2s linear;
 }
 
-
-.border{
-  border: 1px solid silver; 
+.border {
+  border: 1px solid silver;
   border-radius: 6px;
 }
 
-    .nucleoside-analogues {
-        border: 1px solid silver;
+.nucleoside-analogues {
+  border: 1px solid silver;
 
-        tr {
-            border: 1px solid silver;
-        }
+  tr {
+    border: 1px solid silver;
+  }
 
-        th {
-            padding: 12px 0;
-        }
+  th {
+    padding: 12px 0;
+  }
 
-        th,
-        td {
-            text-align: center;
+  th,
+  td {
+    text-align: center;
+  }
+}
 
-        }
-    }
-
-.custom-cell{
+.custom-cell {
   background-color: red;
 }
 
-
 /* DCK */
 .nucleoside-analogues {
-        border: 1px solid silver;
+  border: 1px solid silver;
 
-        tr {
-            border: 1px solid silver;
-        }
+  tr {
+    border: 1px solid silver;
+  }
 
-        th {
-            padding: 12px 0;
-        }
+  th {
+    padding: 12px 0;
+  }
 
-        th,
-        td {
-            text-align: center;
-
-        }
+  th,
+  td {
+    text-align: center;
+  }
 }
 
 /* Adenosine Kinase Phosphorylation Assay Kit */
-    .nucleoside-analogues {
-        border: 1px solid silver;
+.nucleoside-analogues {
+  border: 1px solid silver;
 
-        tr {
-            border: 1px solid silver;
-        }
+  tr {
+    border: 1px solid silver;
+  }
 
-        th {
-            padding: 12px 0;
-        }
+  th {
+    padding: 12px 0;
+  }
 
-        th,
-        td {
-            text-align: center;
+  th,
+  td {
+    text-align: center;
+  }
+}
 
-        }
+/* CELLULAR NUCLEOTIDES ANALYSIS PAGE */
+.nucleotides-table {
+  margin: 50px 0;
+  border: 1px solid silver;
+  border-radius: 8px;
+  text-align: center;
+
+  th {
+    background-color: #f0f0f0;
+    background-color: var(--novo-blue);
+    color: whitesmoke;
+  }
+
+  .table-side {
+    background-color: #f0f0f0;
+    border-right: 1px solid silver;
+
+    a {
+      color: var(--novo-blue);
+      text-decoration: none;
+      font-weight: 500;
     }
+  }
+
+  td,
+  th {
+    padding: 10px 0;
+  }
+}
+
+.nucleotides-table tbody tr td {
+  border-bottom: 1px solid silver;
+}
+
+.nucleotides-table tbody tr td strong {
+  font-weight: 600;
+}
+
+.nucleotides-table tbody tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.nucleotides-table .table-side {
+  border-bottom: none;
+}
+
+.atp-table {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+
+  tr:nth-child(odd) {
+    background-color: WhiteSmoke;
+  }
+
+  td {
+    padding: 4px 0;
+  }
+}
+
+figure img {
+  border: 1px solid silver;
+}
+
+.metabolites {
+  text-align: center;
+
+  th {
+    color: #f8f8f8;
+  }
+
+  tr:nth-child(odd) {
+    background-color: WhiteSmoke;
+  }
+
+  thead tr {
+    background-color: var(--novo-light) !important;
+  }
+
+  th,
+  td {
+    padding: 12px 0;
+  }
+}

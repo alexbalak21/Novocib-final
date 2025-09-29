@@ -3,19 +3,14 @@ global $title;
 $title = "Nucleotide Analysis Service";
 
 ob_start(); ?>
-<meta name="description" content="NOVOCIB Provides Accurate and Customized HPLC analysis of Nucleosides, Nucleotides and Nucleic Acids in feed and food ingredients">
-<meta name="keywords" content="Dietary nucleotides, 5'-nucleotides,  5'AMP, 5'GMP,5'IMP,5'CMP,5'UMP, nucleic acids, hplc nucleotides analysis">
+<meta name="keywords" content="NOVOCIB Provides Accurate and Customized HPLC analysis of Nucleosides, Nucleotides and Nucleic Acids in feed and food ingredients">
+<meta name="description" content="Dietary nucleotides, 5'-nucleotides,  5'AMP, 5'GMP,5'IMP,5'CMP,5'UMP, nucleic acids, hplc nucleotides analysis">
 <?php $metas = ob_get_clean();
 
+require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
+?>
+<?= Banner::gen("/app/img/hplc.jpg") ?>
 
-require_once "app/templates/base.php";
-
-$novoblue = "#4167b1";
-
-$banner = Banner::gen("/app/img/hplc.jpg");
-addContent($banner);
-
-ob_start(); ?>
 <div class="container mt-5">
     <h2 class="underlinedTitle center">
         <span class="underlined novoblue center">Full dietary nucleotides spectra by HPLC</span>
@@ -213,7 +208,7 @@ ob_start(); ?>
                     <tr>
                         <td>#S1200-03</td>
                         <td class="text-center">
-                            <a href="">
+                            <a href="/analytical-services/yeast-extract-nucleotide-analysis">
                                 <h6>Yeast Extract Nucleotides Analysis:</h6>
                             </a>
                             <p>
@@ -230,7 +225,7 @@ ob_start(); ?>
                     <tr>
                         <td>#S1200-04</td>
                         <td class="text-center">
-                            <a href="/analytical-services/yeast-extract-nucleotide-analysis">
+                            <a href="/cellular-nucleotides-analysis">
                                 <h6>Cellular Nucleotides Analysis:</h6>
                             </a>
                             <p>
@@ -270,8 +265,3 @@ ob_start(); ?>
         </div>
     </article>
 </div>
-<?php $page_content = ob_get_clean();
-
-
-addContent($page_content);
-render();
