@@ -85,17 +85,13 @@ class Nav
                         </ul>
                     </li>
 
-                    <!-- SERVICES -->
+                    <!-- Analytical Services -->
                     <li>
                         <a class="large" href="/analytical-services">Analytical Services</a>
                         <ul>
                             <li><a href="/nucleotide-analysis-service">Nucleotide Analysis</a></li>
-                            <li>
-                                <a href="/analytical-services/yeast-extract-nucleotide-analysis">
-                                    Yeast Extract Nucleotide Analysis
-                                </a>
-                            </li>
-                            <li><a href="/cellular-nucleotides-analysis">HPLC analysis of bases nucleosides</a></li>
+                            <li><a href="/analytical-services/yeast-extract-nucleotide-analysis">Yeast Extract Nucleotide Analysis</a></li>
+                            <li><a href="/analytical-services/cellular-nucleotides-analysis">Cellular Nucleotides Analysis</a></li>
                             <li><a href="/dietary-nucleotides">Dietary Nucleotides</a></li>
                         </ul>
                     </li>

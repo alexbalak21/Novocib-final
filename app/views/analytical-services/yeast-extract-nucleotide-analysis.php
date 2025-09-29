@@ -39,6 +39,47 @@ ob_start(); ?>
             <img class="w-100" src="/app/img/yeast-rna.jpg" alt="yeast rna schema" title="Yeast RNA Schema">
         </div>
     </div>
+
+    <article class="my-5 container">
+        <div class="d-flex justify-content-center">
+            <table class="table w-100 product">
+                <thead>
+                    <tr>
+                        <th>#REF</th>
+                        <th class="w-75 text-center" style="width: 800px !important">
+                            PRODUCT NAME
+                        </th>
+                        <th class="text-center">PRICE</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>#S1200-03</td>
+                        <td class="text-center">
+                            <h5 class="novo-blue">Yeast Extract Nucleotides Analysis:</h5>
+                            <p>
+                                HPLC-UV analysis for full spectra of dietary nucleotides (bases, nucleosides and NMP, unhydrolyzed DNA and RNA nucleic acids) present in feed or ingredients.
+                            </p>
+                        </td>
+                        <td class="price">€ 420.00 / sample</td>
+                        <td>
+                            <a class="btn btn-primary" href="/inquiry?ref=S1200-03&amp;price=420&amp;product=Yeast Extract Nucleotides HPLC-UV analysis">Inquiry <i class="fa-solid fa-comment"></i></a>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mt-4 mb-4 text-end text-md-center">
+            <i class="fa-solid fa-download"></i> Download
+            <a target="_blank" href="/app/documents/NovoCIB MOA Studies - Nucleotide Profiling.pdf" title="Download our PDF documenattion.">
+                <strong>Mode of Action Studies by Nucleotide Profiling <i class="fa-regular fa-file-pdf"></i></strong>
+            </a> (Brochure)
+        </p>
+    </article>
+
     <div class="pt-5 mb-5">
         <h5><b>However, several factors can lead to low 5'-nucleotide concentrations in yeast extract and impact its taste properties:</b></h5>
         <ol>

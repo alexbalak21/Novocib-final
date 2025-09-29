@@ -225,7 +225,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                     <tr>
                         <td>#S1200-04</td>
                         <td class="text-center">
-                            <a href="/cellular-nucleotides-analysis">
+                            <a href="/analytical-services/cellular-nucleotides-analysis">
                                 <h6>Cellular Nucleotides Analysis:</h6>
                             </a>
                             <p>

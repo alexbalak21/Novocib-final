@@ -43,6 +43,7 @@ $redirects = [
     "/Cellular_Nucleotides_Analysis.html" => "/cellular-nucleotides-analysis",
     "/nucleotides" => "/dietary-nucleotides",
     "/Yeast_Extract_Nucleotide_Analysis.html" => "/yeast-extract-nucleotide-analysis",
+    "/cellular-nucleotides-analysis" => "/analytical-services/cellular-nucleotides-analysis",
 
     // Other Pages
     "/contact" => "/contact-us",

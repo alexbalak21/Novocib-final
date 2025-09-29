@@ -61,10 +61,11 @@ return [
     '/dietary-nucleotides-assay-kits' => 'app/views/dietary-nucleotides-assay-kits/index.php',
     '/dietary-nucleotides-assay-kits/fish-freshness-assay-kit' => 'app/views/dietary-nucleotides-assay-kits/fish-freshness-assay-kit.php',
 
-    // Services
+    // Analytical Services
     '/services' => 'app/views/analytical-services/index.php',
     '/analytical-services' => 'app/views/analytical-services/index.php',
     '/nucleotide-analysis-service' => 'app/views/nucleotide-analysis-service.php',
+    '/analytical-services/cellular-nucleotides-analysis' => 'app/views/analytical-services/cellular-nucleotides-analysis.php',
     '/analytical-services/yeast-extract-nucleotide-analysis' => 'app/views/analytical-services/yeast-extract-nucleotide-analysis.php',
     '/yeast-extract-nucleotide-analysis' => 'app/views/analytical-services/yeast-extract-nucleotide-analysis.php',
 
@@ -73,7 +74,7 @@ return [
     '/news' => 'app/views/news.php',
     '/search' => 'app/views/search.php',
     '/hplc-analysis-of-bases-nucleosides' => 'app/views/hplc-analysis-of-bases-nucleosides.php',
-    '/cellular-nucleotides-analysis' => 'app/views/cellular-nucleotides-analysis.php',
+
 
     // Secure/Internal Routes
     '/internal/share' => 'app/internal/share/index.php',
