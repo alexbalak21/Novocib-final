@@ -56,7 +56,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <h2 class="underlinedTitle center">
                 <span class="underlined novoblue center">Advanced Nucleotide Analysis Services</span>
             </h2>
-            <p class="lead">Precise, reliable HPLC analysis for pharmaceutical, food, and research applications. Our ISO-certified laboratory provides comprehensive nucleotide profiling with fast turnaround times and expert interpretation.</p>
+            <p class="lead">Precise, reliable HPLC analysis for pharmaceutical, food, and research applications. Our award-winning laboratory provides comprehensive nucleotide profiling with fast turnaround times and expert interpretation.</p>
         </div>
     </div>
 
@@ -152,8 +152,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
                     <i class="fas fa-award fa-2x text-primary"></i>
                 </div>
-                <h3 class="h5">Award-Winning Excellence</h3>
-                <p>Recognized for our innovative analytical methods and exceptional service quality in nucleotide analysis and research.</p>
+                <h3 class="h5">National Award-Winning Lab</h3>
+                <p>Honored at the national level for pioneering analytical services and excellence in nucleotide research.</p>
             </div>
         </div>
         <div class="col-md-4 mb-4">
@@ -217,12 +217,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                     <div class="accordion-item border-0 shadow-sm">
                         <h3 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Do you offer method development and validation?
+                                What are the sample requirements?
                             </button>
                         </h3>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Yes, our team of experts can develop and validate custom analytical methods tailored to your specific needs. We follow ICH guidelines for method validation and can assist with protocol development and regulatory submissions.
+                                The analysis requires 5-10g of yeast extract powder or 10-20mL of liquid sample. Samples should be shipped under refrigerated conditions to preserve integrity.
                             </div>
                         </div>
                     </div>

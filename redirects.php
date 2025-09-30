@@ -29,6 +29,7 @@ $redirects = [
     // Convenient Assay Kits
     "/Convenient_Assay_Kits.html" => "/convenient-assay-kits",
     "/PRPPS_Assay_Kit.html" => "/convenient-assay-kits/prpp-s-assay-kit",
+    "/PRPP_Assay_Kit.html" => "/convenient-assay-kits/prpp-assay-kit",
     "/AMPDA_Assay_Kit.html" => "/convenient-assay-kits/ampda-assay-kit",
     "/ADK_Phosphorylation_Assay_Kit.html" => "/convenient-assay-kits/adk-phosphorylation-assay-kit",
     "/Human_Recombinant_IMPDH.html" => "/convenient-assay-kits/human-recombinant-impdh",
@@ -37,6 +38,7 @@ $redirects = [
     "/HPRT_Assay_Kit.html" => "/convenient-assay-kits/hprt-assay-kit",
     "//HPRT_Assay_Kit.html" => "/convenient-assay-kits/hprt-assay-kit",
     "/dCK_Phosphorylation_In_Vitro_Assay_Service" => "/convenient-assay-kits/dck-phosphorylation-assay-kit",
+    "/Convenient_Assay_Kits" => "/convenient-assay-kits",
 
     // Nucleotides and Analysis
     "/Nucleotide_Analysis_Services.html" => "/nucleotide-analysis-service",
