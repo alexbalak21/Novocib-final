@@ -14,7 +14,7 @@ echo Banner::gen()
 
 
 <section class="container mt-5">
-    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Antiviral and immunosuppressive nucleosides phosphorylation</span></h2>
+    <h2 class="underlinedTitle right"><span class="underlined novoblue">Antiviral and immunosuppressive nucleosides phosphorylation</span></h2>
     <div class="row">
         <div class="col-lg-6">
             <p>

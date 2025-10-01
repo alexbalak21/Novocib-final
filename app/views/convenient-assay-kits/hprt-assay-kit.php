@@ -39,8 +39,7 @@ echo Banner::gen();
                     <img class="img-fluid" src="/app/img/HPRT-Assay-kit.jpg" alt="HPRT Assay Kit Composition" title="HPRT Assay Kit Composition">
                 </figure>
                 <figure>
-                    <img class="w-100" src="/app/img/HPRT-Assay-Kit-Principle.png" alt="HPRT enzyme Molecular Structure" title="HPRT enzyme Molecular Structure">
-
+                    <img class="w-100 border rounded" src="/app/img/HPRT-Assay-Kit-Principle.png" alt="HPRT enzyme Molecular Structure" title="HPRT enzyme Molecular Structure">
                     <figcaption class="text-center">
                         <h4 class="novo-blue">PRECICE® HPRT Assay Kit</h4>
                         <h5>#K0709-01-2</h5>
