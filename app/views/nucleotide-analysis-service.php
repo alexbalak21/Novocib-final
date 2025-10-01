@@ -212,9 +212,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                 <h6>Yeast Extract Nucleotides Analysis:</h6>
                             </a>
                             <p>
-                                HPLC-UV analysis for full spectra of dietary nucleotides (bases,
-                                nucleosides and NMP, unhydrolyzed DNA and RNA nucleic acids)
-                                present in feed or ingredients
+                                HPLC-UV analysis of full spectra of dietary nucleotides—including free bases, nucleosides, nucleotide monophosphates (NMPs), and intact DNA/RNA in feed or food ingredients. These data allow calculation of total purine and pyrimidine content.
                             </p>
                         </td>
                         <td class="price">€ 420.00 / sample</td>
@@ -238,28 +236,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                             <a class="btn btn-primary" href="/inquiry?product=Cellular Nucleotides Analysis&ref=S1200-04">Inquiry <i class="fa-solid fa-comment"></i></a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>#S1200-05</td>
-                        <td class="text-center">
-                            Nucleic acid RNA and DNA quantification by HPLC-UV analysis <br />
-                            &nbsp;
-                        </td>
-                        <td class="price">€ 300.00 / sample</td>
-                        <td>
-                            <a class="btn btn-primary" href="/inquiry?product=RNA and DNA quantification HPLC-UV analysis&ref=S1200-05">Inquiry <i class="fa-solid fa-comment"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>#S1200-06</td>
-                        <td class="text-center">
-                            HPLC-UV analysis for purines <br />
-                            &nbsp;
-                        </td>
-                        <td class="price">€ 300.00 / sample</td>
-                        <td>
-                            <a class="btn btn-primary" href="/inquiry?product=Purines HPLC-UV Analysis&ref=S1200-06">Inquiry <i class="fa-solid fa-comment"></i></a>
-                        </td>
-                    </tr>
+
                 </tbody>
             </table>
         </div>
