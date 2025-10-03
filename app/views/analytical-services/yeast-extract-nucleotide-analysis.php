@@ -142,12 +142,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             </div>
         </div>
         <div class="container mt-5">
-            <h3 class="novo-blue">Detailed description:</h3>
+            <h2 class="novo-blue text-center pt-3">Detailed description</h2>
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <figure class="position-relative">
                         <figcaption class="text-muted mb-1">Current Chromatogram(s):</figcaption>
-                        <figcaption style="color: blue; font-size: 11px; position: absolute; top: 20; left: 45px;">MWD1 A, Sig=254,16 Ref=360,100 (SEPT 2025 2025-09-28 13-21-56\024-P1-A4-RNA-DNA +nuclease proto100'.D)</figcaption>
+                        <figcaption style="color: blue; font-size: 11px; position: absolute; top: 20; left: 45px;">MWD1 A, Sig=254,16 Ref=360,100 (SEPT 2025 \024-P1-A4-RNA-DNA +nuclease proto100'.D)</figcaption>
                         <img src="/app/img/yeast_hplc_graph.png" class="img-fluid border-0" alt="yield of 5'-nucleotides from yeast extract" title="HPLC-UV Chromatogram of Yeast Extract Nucleotide Analysis">
                     </figure>
                 </div>
@@ -157,6 +157,35 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                         <li><b class="fw-bold">Step 2:</b> Standards preparation for calibration of ion-paired UV-HPLC. Molar concentration of each of 20 standards is confirmed by measuring their absorbance at 249–254 nm.</li>
                         <li><b class="fw-bold">Step 3:</b> Enzymatic hydrolysis of nucleic acids with nucleases to hydrolyze all nucleic acids into 5′NMP and 5′dNMP.</li>
                     </ul>
+                </div>
+
+                <div class="col-lg-6 lead">
+                    <ul class="list-unstyled">
+                        <li><b class="fw-bold">Step 4:</b> Determination of soluble bases, nucleosides and nucleotides before and after RNA and DNA hydrolysis by ion-paired HPLC-UV with simultaneous separation of apolar bases, nucleosides, polar NMP and dNMP in one run.</li>
+                        <li><b class="fw-bold">Step 5:</b> As our internal Quality Control, we measure 5’IMP and 5’AMP concentration using independent enzymatic PRECICE® Nucleotide Assay Kit and compare the results of enzymatic assay and HPLC analysis.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <figure class="position-relative">
+                        <figcaption class="text-muted mb-1">Current Chromatogram(s):</figcaption>
+                        <figcaption style="color: blue; font-size: 11px; position: absolute; top: 32px; left: 45px;">MWD1 A Sig=254,16 Ref=360,100 (SEPT 2025 0mg_ml T0 (2) Me.D)</figcaption>
+                        <figcaption style="color: red; font-size: 11px; position: absolute; top: 48px; left: 45px;">MWD1 A Sig=254,16 Ref=360,100 (SEPT 2025 0mg_ml nuc (2) M.D)</figcaption>
+                        <img src="/app/img/yeast_hplc_graph_2.png" class="img-fluid border-0" alt="yield of 5'-nucleotides from yeast extract" title="HPLC-UV Chromatogram of Yeast Extract Nucleotide Analysis">
+                    </figure>
+                </div>
+                <div class="col-lg-6 p-2">
+                    <figure class="border text-center">
+                        <figcaption class="h4 mt-2">IMP content in yeast products: correlation HPLC and enzymatic data</figcaption>
+                        <img src="/app/img/IMP_content.png" alt="IMP content in yeast products: correlation HPLC and enzymatic data" title="Correlation of IMP content in yeast products between HPLC and enzymatic data" class="img-fluid">
+                        <span class="fw-bold">PRECICE® Enzymatic assay</span>
+                    </figure>
+                </div>
+                <div class="col-lg-6 p-2">
+                    <figure class="border text-center">
+                        <figcaption class="h4 mt-2">AMP content in yeast products: correlation HPLC and enzymatic data</figcaption>
+                        <img src="/app/img/AMP_content.png" alt="AMP content in yeast products: correlation HPLC and enzymatic data" title="Correlation of AMP content in yeast products between HPLC and enzymatic data" class="img-fluid">
+                        <span class="fw-bold">PRECICE® Enzymatic assay</span>
+                    </figure>
                 </div>
             </div>
         </div>
