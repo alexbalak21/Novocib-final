@@ -929,3 +929,19 @@ header .brand {
     padding: 12px 0;
   }
 }
+
+.bg-lightgreen {
+  background-color: #d4edda !important;
+}
+
+.bg-lightblue {
+  background-color: #89cff0 !important;
+}
+
+.bg-blue {
+  background-color: #6082b6 !important;
+}
+
+.bg-lightred {
+  background-color: #faa0a0 !important;
+}

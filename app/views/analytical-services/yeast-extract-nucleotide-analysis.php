@@ -173,21 +173,134 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                         <img src="/app/img/yeast_hplc_graph_2.png" class="img-fluid border-0" alt="yield of 5'-nucleotides from yeast extract" title="HPLC-UV Chromatogram of Yeast Extract Nucleotide Analysis">
                     </figure>
                 </div>
-                <div class="col-lg-6 p-2">
+                <div class="col-lg-6 p-2 mt-3">
                     <figure class="border text-center">
                         <figcaption class="h4 mt-2">IMP content in yeast products: correlation HPLC and enzymatic data</figcaption>
                         <img src="/app/img/IMP_content.png" alt="IMP content in yeast products: correlation HPLC and enzymatic data" title="Correlation of IMP content in yeast products between HPLC and enzymatic data" class="img-fluid">
                         <span class="fw-bold">PRECICE® Enzymatic assay</span>
                     </figure>
                 </div>
-                <div class="col-lg-6 p-2">
+                <div class="col-lg-6 p-2 mt-3">
                     <figure class="border text-center">
                         <figcaption class="h4 mt-2">AMP content in yeast products: correlation HPLC and enzymatic data</figcaption>
                         <img src="/app/img/AMP_content.png" alt="AMP content in yeast products: correlation HPLC and enzymatic data" title="Correlation of AMP content in yeast products between HPLC and enzymatic data" class="img-fluid">
                         <span class="fw-bold">PRECICE® Enzymatic assay</span>
                     </figure>
                 </div>
+                <div class="col-lg-8 mx-auto text-center mt-2">
+                    <span class="lead"><b class="fw-bold">Step 6:</b> Data analysis, interpretation and storage</span>
+                    <p class="lead">Data produced are used to calculate the content of each individual bases, nucleosides and NMP (g/kg or g/100g) or purines content (bases adenine, guanine, xanthine and hypoxanthine) </p>
+                </div>
             </div>
+        </div>
+        <div class="table-responsive container text-center">
+            <table class="table table-bordered">
+                <thead class="table-light">
+                    <tr>
+                        <th>Name</th>
+                        <th>Chemical Class</th>
+                        <th>g / 100g</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cytosine</td>
+                        <td></td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Uracil</td>
+                        <td>Bases, pyrimidine</td>
+                        <td>0.07</td>
+                    </tr>
+                    <tr class="bg-lightgreen">
+                        <td>Guanine</td>
+                        <td>Bases, purine</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr class="bg-lightgreen">
+                        <td>Hypoxanthine</td>
+                        <td>Bases, purine</td>
+                        <td>0.21</td>
+                    </tr>
+                    <tr class="bg-lightgreen">
+                        <td>Adenine</td>
+                        <td>Bases, purine</td>
+                        <td>0.21</td>
+                    </tr>
+                    <tr class="bg-lightblue">
+                        <td>Cytidine</td>
+                        <td>Nucleoside, pyrimidine</td>
+                        <td>0.12</td>
+                    </tr>
+                    <tr class="bg-lightblue">
+                        <td>Uridine</td>
+                        <td>Nucleoside, pyrimidine</td>
+                        <td>0.23</td>
+                    </tr>
+                    <tr class="bg-blue">
+                        <td>Guanosine</td>
+                        <td>Nucleoside, purine</td>
+                        <td>0.63</td>
+                    </tr>
+                    <tr class="bg-blue">
+                        <td>Inosine</td>
+                        <td>Nucleoside, purine</td>
+                        <td>0.04</td>
+                    </tr>
+                    <tr class="bg-blue">
+                        <td>Adenosine</td>
+                        <td>Nucleoside, purine</td>
+                        <td>0.54</td>
+                    </tr>
+                    <tr class="bg-lightred">
+                        <td>Na₂*CMP</td>
+                        <td>Nucleotide monophosphate, pyrimidine</td>
+                        <td>4.21</td>
+                    </tr>
+                    <tr class="bg-lightred">
+                        <td>Na₂*UMP</td>
+                        <td>Nucleotide monophosphate, pyrimidine</td>
+                        <td>3.06</td>
+                    </tr>
+                    <tr class="bg-lightred">
+                        <td>Na₂*GMP</td>
+                        <td>Nucleotide monophosphate, purine</td>
+                        <td>4.17</td>
+                    </tr>
+                    <tr class="bg-lightred">
+                        <td>Na₂*IMP</td>
+                        <td>Nucleotide monophosphate, purine</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr class="bg-lightred">
+                        <td>Na₂*AMP</td>
+                        <td>Nucleotide monophosphate, purine</td>
+                        <td>4.19</td>
+                    </tr>
+                    <tr class="bg-lightred">
+                        <td>Total NMP</td>
+                        <td>Soluble Nucleotide Monophosphates</td>
+                        <td>15.63</td>
+                    </tr>
+                    <tr class="bg-lightred">
+                        <td>Nucleic acids (RNA)</td>
+                        <td>Nucleotides monophosphate
+                            Released after nuclease digestion</td>
+                        <td>2.83</td>
+                    </tr>
+                </tbody>
+                <tfoot class="bg-lightred">
+                    <tr>
+                        <td colspan="2"><b>Total NMP</b></td>
+                        <td>15.63</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Total potentially available nucleotides (TPAN)</b></td>
+                        <td>20.53</td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
     </section>
 
@@ -241,11 +354,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                     </div>
                                 </li>
                             </ul>
-
-                            <div class="bg-light p-3 rounded mt-4">
-                                <h5 class="h6 mb-2"><i class="fas fa-lightbulb text-warning me-2"></i>Our Solution</h5>
-                                <p class="small mb-0">Precise control of temperature and pH during processing to inactivate enzymes while preserving nucleotide integrity.</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -290,31 +398,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                     </div>
                                 </li>
                             </ul>
-
-                            <div class="bg-light p-3 rounded mt-4">
-                                <h5 class="h6 mb-2"><i class="fas fa-tools text-primary me-2"></i>Our Approach</h5>
-                                <p class="small mb-0">Customized enzymatic treatments and process optimization to ensure complete RNA breakdown and maximum nucleotide yield.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <div class="col-12">
-                    <div class="card border-0 bg-primary bg-opacity-10">
-                        <div class="card-body p-4">
-                            <div class="row align-items-center">
-                                <div class="col-lg-8">
-                                    <h3 class="h5 mb-3">Need help optimizing your yeast extract production?</h3>
-                                    <p class="mb-0">Our team of experts can help you overcome these challenges and achieve consistent, high-quality results.</p>
-                                </div>
-                                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
-                                    <a href="/contact-us" class="btn btn-primary">
-                                        <i class="fas fa-envelope me-2"></i> Contact Our Specialists
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -400,29 +483,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5 bg-secondary text-white">
-        <div class="container-fluid px-0">
-            <div class="row justify-content-center text-center mx-0">
-                <div class="col-12 px-0">
-                    <div class="mb-4">
-                        <i class="fas fa-flask fa-3x mb-3"></i>
-                        <h2 class="h3 mb-3">Ready to Enhance Your Yeast Extract Products?</h2>
-                        <p class="lead mb-4 px-3">Partner with NOVOCIB for expert nucleotide analysis and optimization solutions tailored to your specific needs.</p>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mb-4">
-                        <a href="/contact-us" class="btn btn-light btn-lg px-4">
-                            <i class="fas fa-envelope me-2"></i> Get in Touch
-                        </a>
-                        <a href="/nucleotide-analysis-service" class="btn btn-outline-light btn-lg px-4">
-                            <i class="fas fa-file-alt me-2"></i> Service Details
-                        </a>
                     </div>
                 </div>
             </div>
