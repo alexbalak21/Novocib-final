@@ -193,7 +193,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 </div>
             </div>
         </div>
-        <div class="table-responsive container text-center">
+        <div class="table-responsive container text-center mt-5">
             <table class="table table-bordered">
                 <thead class="table-light">
                     <tr>
