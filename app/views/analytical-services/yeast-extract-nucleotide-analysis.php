@@ -15,62 +15,61 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 <?= Banner::gen("/app/img/analysis4.webp") ?>
 <main class="mt-5">
     <!-- TITLE MAIN -->
-     <h2 class="underlinedTitle right"><span class="underlined novoblue right">Yeast Extracts Enriched in Tasty Nucleotides</span></h2>
+    <h2 class="underlinedTitle right"><span class="underlined novoblue right">5'Nucleotides and Nucleic Acid Analysis in Yeast Extracts</span></h2>
     <section class="container">
-    <div class="row my-5 align-items-center">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-            <img src="/app/img/yeast.jpg" alt="Yeast cells under microscope" title="Yeast cells under microscope" class="img-fluid rounded shadow">
-        </div>
-        <div class="col-lg-8">
-            <h3 class="h4 mb-3">The Versatility of Yeast Extract</h3>
-            <p class="mb-3">Yeast extract serves as a highly nutritious and flavorful ingredient in food and feed formulations. Derived from carefully processed yeast cells, it's packed with essential nutrients that make it a valuable addition to various products.</p>
-            
-            <h4 class="h5 mt-4 mb-3">Key Nutritional Components:</h4>
-            <ul class="list-unstyled">
-                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> High-quality proteins with complete amino acid profile</li>
-                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Essential B vitamins (B1, B2, B3, B5, B6, B9, B12)</li>
-                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Minerals including zinc, selenium, and potassium</li>
-                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Nucleotides and nucleic acids (6-12% of dry weight)</li>
-            </ul>
-            
-            <div class="alert alert-info mt-4">
-                <i class="fas fa-lightbulb me-2"></i>
-                <strong>Did you know?</strong> The high RNA content in yeast (6-12% of dry weight) makes it an excellent source for producing 5'-nucleotides like IMP and GMP, which are natural flavor enhancers that can reduce sodium requirements in food products.
+        <div class="row my-5 align-items-center">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="/app/img/yeast.jpg" alt="Yeast cells under microscope" title="Yeast cells under microscope" class="img-fluid rounded shadow">
             </div>
-        </div>
-    </div>
-    </section>
+            <div class="col-lg-8">
+                <p class="mb-3">Yeast extract serves as a highly nutritious and flavorful ingredient in food and feed formulations. Derived from carefully processed yeast cells, it's packed with essential nutrients that make it a valuable addition to various products.</p>
 
-    
-
-    <section class="container">
-    <div class="row mb-5 align-items-center">
-        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-            <div class="border rounded p-3 shadow-sm">
-                <img class="img-fluid" src="/app/img/yeast-rna.jpg" alt="Yeast RNA to nucleotides conversion process" title="From Yeast RNA to Flavorful Nucleotides">
-                <p class="text-muted small mt-2 mb-0 text-center">Figure: Conversion of yeast RNA into flavor-enhancing nucleotides</p>
-            </div>
-        </div>
-        <div class="col-lg-6 order-lg-1">
-            <div class="pe-lg-4">
-                <h3 class="h4 novo-blue mb-3">The Science Behind 5'-Nucleotides in Yeast</h3>
-                
-                <h4 class="h5 mt-4">Nucleotide Production Process</h4>
-                <p>Yeast RNA undergoes enzymatic hydrolysis to produce four primary 5'-nucleotides:</p>
+                <h4 class="h5 mt-4 mb-3">Key Nutritional Components:</h4>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><i class="fas fa-dna text-primary me-2"></i> 5'AMP (Adenosine Monophosphate)</li>
-                    <li class="mb-2"><i class="fas fa-dna text-primary me-2"></i> 5'GMP (Guanosine Monophosphate)</li>
-                    <li class="mb-2"><i class="fas fa-dna text-primary me-2"></i> 5'UMP (Uridine Monophosphate)</li>
-                    <li class="mb-2"><i class="fas fa-dna text-primary me-2"></i> 5'CMP (Cytidine Monophosphate)</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> High-quality proteins with complete amino acid profile</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Essential B vitamins (B1, B2, B3, B5, B6, B9, B12)</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Minerals including zinc, selenium, and potassium</li>
+                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i><b>Nucleotides and nucleic acids (6-12% of dry weight)</b></li>
                 </ul>
-                
-                <div class="bg-light p-3 rounded mt-4">
-                    <h5 class="h6">Flavor Enhancement</h5>
-                    <p class="mb-0">For optimal umami taste, 5'AMP is converted to 5'IMP using AMP-deaminase, creating a more balanced and savory flavor profile in yeast extracts.</p>
+
+                <div class="alert alert-info mt-4">
+                    <i class="fas fa-lightbulb me-2"></i>
+                    <strong>Did you know?</strong> The high RNA content in yeast (6-12% of dry weight) makes it an excellent source for producing 5'-nucleotides like IMP and GMP, which are natural flavor enhancers that can reduce sodium requirements in food products.
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+
+
+    <section class="container">
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                <div class="border rounded p-2 shadow-sm text-center">
+                    <img class="img-fluid" src="/app/img/yeast-rna.jpg" alt="Yeast RNA to nucleotides conversion process" title="From Yeast RNA to Flavorful Nucleotides">
+                    <p class="text-muted small mt-2 mb-0 text-center">Figure: Conversion of yeast RNA into flavor-enhancing nucleotides</p>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="pe-lg-4">
+                    <h3 class="h4 novo-blue mb-3">The Science Behind 5'-Nucleotides in Yeast</h3>
+
+                    <h4 class="h5 mt-4">Nucleotide Production Process</h4>
+                    <p>Yeast RNA undergoes enzymatic hydrolysis to produce four primary 5'-nucleotides:</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-dna text-primary me-2"></i> 5'AMP (Adenosine Monophosphate)</li>
+                        <li class="mb-2"><i class="fas fa-dna text-primary me-2"></i> 5'GMP (Guanosine Monophosphate)</li>
+                        <li class="mb-2"><i class="fas fa-dna text-primary me-2"></i> 5'UMP (Uridine Monophosphate)</li>
+                        <li class="mb-2"><i class="fas fa-dna text-primary me-2"></i> 5'CMP (Cytidine Monophosphate)</li>
+                    </ul>
+
+                    <div class="bg-light p-3 rounded mt-4">
+                        <h5 class="h6">Flavor Enhancement</h5>
+                        <p class="mb-0">For optimal umami taste, 5'AMP is converted to 5'IMP using AMP-deaminase, creating a more balanced and savory flavor profile in yeast extracts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="my-5">
@@ -79,7 +78,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 <div class="col-lg-10">
                     <div class="card border-0 shadow-sm">
                         <div class="card-header bg-light">
-                            <h3 class="h5 mb-0"><i class="fas fa-flask me-2 text-primary"></i> Our Yeast Extract Analysis Service</h3>
+                            <h3 class="h5 mb-0"><i class="fas fa-flask me-2 text-primary"></i> Our Service of Yeast Extract Nucleotide Analysis</h3>
                         </div>
                         <div class="card-body p-0">
                             <div class="table-responsive">
@@ -127,7 +126,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                             <div class="row align-items-center">
                                 <div class="col-md-8">
                                     <p class="small mb-0">
-                                        <i class="fas fa-info-circle text-primary me-1"></i> 
+                                        <i class="fas fa-info-circle text-primary me-1"></i>
                                         Typical turnaround time: 5-7 business days. Bulk order discounts available.
                                     </p>
                                 </div>
@@ -142,6 +141,25 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 </div>
             </div>
         </div>
+        <div class="container mt-5">
+            <h3 class="novo-blue">Detailed description:</h3>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <figure class="position-relative">
+                        <figcaption class="text-muted mb-1">Current Chromatogram(s):</figcaption>
+                        <figcaption style="color: blue; font-size: 11px; position: absolute; top: 20; left: 45px;">MWD1 A, Sig=254,16 Ref=360,100 (SEPT 2025 2025-09-28 13-21-56\024-P1-A4-RNA-DNA +nuclease proto100'.D)</figcaption>
+                        <img src="/app/img/yeast_hplc_graph.png" class="img-fluid border-0" alt="yield of 5'-nucleotides from yeast extract" title="HPLC-UV Chromatogram of Yeast Extract Nucleotide Analysis">
+                    </figure>
+                </div>
+                <div class="col-lg-6 lead">
+                    <ul class="list-unstyled">
+                        <li><b class="fw-bold">Step 1:</b> Sample solubilization and proteolytic hydrolysis</li>
+                        <li><b class="fw-bold">Step 2:</b> Standards preparation for calibration of ion-paired UV-HPLC. Molar concentration of each of 20 standards is confirmed by measuring their absorbance at 249–254 nm.</li>
+                        <li><b class="fw-bold">Step 3:</b> Enzymatic hydrolysis of nucleic acids with nucleases to hydrolyze all nucleic acids into 5′NMP and 5′dNMP.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="py-5 bg-light">
@@ -152,7 +170,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                     <p class="lead">Maintaining optimal 5'-nucleotide levels requires careful control of several critical factors throughout the production process.</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="card h-100 border-0 shadow-sm">
@@ -172,7 +190,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <h4 class="h6 mt-4 mb-3">Key Challenges:</h4>
                             <ul class="list-unstyled">
                                 <li class="mb-2">
@@ -194,7 +212,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                     </div>
                                 </li>
                             </ul>
-                            
+
                             <div class="bg-light p-3 rounded mt-4">
                                 <h5 class="h6 mb-2"><i class="fas fa-lightbulb text-warning me-2"></i>Our Solution</h5>
                                 <p class="small mb-0">Precise control of temperature and pH during processing to inactivate enzymes while preserving nucleotide integrity.</p>
@@ -202,7 +220,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-6">
                     <div class="card h-100 border-0 shadow-sm">
                         <div class="card-header bg-white border-0 pt-4 px-4 pb-0">
@@ -221,7 +239,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <h4 class="h6 mt-4 mb-3">Common Issues:</h4>
                             <ul class="list-unstyled">
                                 <li class="mb-2">
@@ -243,7 +261,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                     </div>
                                 </li>
                             </ul>
-                            
+
                             <div class="bg-light p-3 rounded mt-4">
                                 <h5 class="h6 mb-2"><i class="fas fa-tools text-primary me-2"></i>Our Approach</h5>
                                 <p class="small mb-0">Customized enzymatic treatments and process optimization to ensure complete RNA breakdown and maximum nucleotide yield.</p>
@@ -252,7 +270,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                     </div>
                 </div>
             </div>
-            
+
             <div class="row mt-4">
                 <div class="col-12">
                     <div class="card border-0 bg-primary bg-opacity-10">
@@ -287,7 +305,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                 <div class="col-lg-8">
                                     <h4 class="h5 text-primary mb-3">The RNA Challenge in Yeast Protein Products</h4>
                                     <p class="mb-4">Yeast proteins have emerged as a sustainable, high-quality alternative to traditional animal proteins, offering complete amino acid profiles and excellent nutritional value. However, the production process often results in significant RNA co-purification, especially when using microfiltration techniques.</p>
-                                    
+
                                     <div class="alert alert-warning border-warning bg-white">
                                         <div class="d-flex">
                                             <div class="flex-shrink-0 me-3">
@@ -300,7 +318,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="col-lg-4 mt-4 mt-lg-0">
                                     <div class="bg-light p-4 rounded-3 h-100">
                                         <div class="text-center mb-3">
@@ -334,7 +352,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="row mt-4">
                                 <div class="col-12">
                                     <div class="bg-light p-4 rounded-3">
@@ -358,7 +376,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             </div>
         </div>
     </section>
-    
+
     <section class="py-5 bg-secondary text-white">
         <div class="container-fluid px-0">
             <div class="row justify-content-center text-center mx-0">
@@ -368,7 +386,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                         <h2 class="h3 mb-3">Ready to Enhance Your Yeast Extract Products?</h2>
                         <p class="lead mb-4 px-3">Partner with NOVOCIB for expert nucleotide analysis and optimization solutions tailored to your specific needs.</p>
                     </div>
-                    
+
                     <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mb-4">
                         <a href="/contact-us" class="btn btn-light btn-lg px-4">
                             <i class="fas fa-envelope me-2"></i> Get in Touch
