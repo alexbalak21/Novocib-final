@@ -146,7 +146,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <figure class="position-relative">
-                        <figcaption class="text-muted mb-1">Current Chromatogram(s):</figcaption>
+                        <figcaption class="text-muted mb-1">Chromatogram of standard solutions</figcaption>
                         <figcaption style="color: blue; font-size: 11px; position: absolute; top: 20; left: 45px;">MWD1 A, Sig=254,16 Ref=360,100 (SEPT 2025 \024-P1-A4-RNA-DNA +nuclease proto100'.D)</figcaption>
                         <img src="/app/img/yeast_hplc_graph.png" class="img-fluid border-0" alt="yield of 5'-nucleotides from yeast extract" title="HPLC-UV Chromatogram of Yeast Extract Nucleotide Analysis">
                     </figure>
@@ -162,12 +162,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 <div class="col-lg-6 lead">
                     <ul class="list-unstyled">
                         <li><b class="fw-bold">Step 4:</b> Determination of soluble bases, nucleosides and nucleotides before and after RNA and DNA hydrolysis by ion-paired HPLC-UV with simultaneous separation of apolar bases, nucleosides, polar NMP and dNMP in one run.</li>
-                        <li><b class="fw-bold">Step 5:</b> As our internal Quality Control, we measure 5’IMP and 5’AMP concentration using independent enzymatic PRECICE® Nucleotide Assay Kit and compare the results of enzymatic assay and HPLC analysis.</li>
+                        <li><b class="fw-bold">Step 5:</b> As our internal Quality Control, we measure 5'IMP and 5'AMP concentration using independent enzymatic PRECICE® Nucleotide Assay Kit and compare the results of enzymatic assay and HPLC analysis.</li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <figure class="position-relative">
-                        <figcaption class="text-muted mb-1">Current Chromatogram(s):</figcaption>
+                        <figcaption class="text-muted mb-1">Chromatograms of yeast sample containing RNA and DNA</figcaption>
                         <figcaption style="color: blue; font-size: 11px; position: absolute; top: 32px; left: 45px;">MWD1 A Sig=254,16 Ref=360,100 (SEPT 2025 0mg_ml T0 (2) Me.D)</figcaption>
                         <figcaption style="color: red; font-size: 11px; position: absolute; top: 48px; left: 45px;">MWD1 A Sig=254,16 Ref=360,100 (SEPT 2025 0mg_ml nuc (2) M.D)</figcaption>
                         <img src="/app/img/yeast_hplc_graph_2.png" class="img-fluid border-0" alt="yield of 5'-nucleotides from yeast extract" title="HPLC-UV Chromatogram of Yeast Extract Nucleotide Analysis">
@@ -414,7 +414,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                         </div>
                         <div class="card-body p-4">
                             <div class="row align-items-center">
-                                <div class="col-lg-8">
+                                <div class="col-12">
                                     <h4 class="h5 text-primary mb-3">The RNA Challenge in Yeast Protein Products</h4>
                                     <p class="mb-4">Yeast proteins have emerged as a sustainable, high-quality alternative to traditional animal proteins, offering complete amino acid profiles and excellent nutritional value. However, the production process often results in significant RNA co-purification, especially when using microfiltration techniques.</p>
 
@@ -431,54 +431,50 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4 mt-4 mt-lg-0">
-                                    <div class="bg-light p-4 rounded-3 h-100">
-                                        <div class="text-center mb-3">
-                                            <i class="fas fa-microscope fa-3x text-primary mb-3"></i>
-                                            <h5 class="h6 mb-3">Comprehensive Nucleotide Analysis</h5>
-                                        </div>
-                                        <p class="small mb-3">Our advanced HPLC analysis provides detailed insights into your yeast products:</p>
-                                        <ul class="fa-ul small mb-4">
-                                            <li class="mb-2">
-                                                <span class="fa-li"><i class="fas fa-check text-primary"></i></span>
-                                                <strong>Complete Profile:</strong> Analysis of all nucleotide species
-                                            </li>
-                                            <li class="mb-2">
-                                                <span class="fa-li"><i class="fas fa-check text-primary"></i></span>
-                                                <strong>Precision:</strong> Accurate quantification of RNA/DNA content
-                                            </li>
-                                            <li class="mb-2">
-                                                <span class="fa-li"><i class="fas fa-check text-primary"></i></span>
-                                                <strong>Compliance:</strong> Ensure regulatory requirements are met
-                                            </li>
-                                            <li class="mb-0">
-                                                <span class="fa-li"><i class="fas fa-check text-primary"></i></span>
-                                                <strong>Quality Control:</strong> Monitor production consistency
-                                            </li>
-                                        </ul>
-                                        <div class="text-center">
-                                            <a href="/nucleotide-analysis-service" class="btn btn-outline-primary btn-sm w-100">
-                                                <i class="fas fa-chart-line me-1"></i> Explore Analysis Services
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+
+
                             </div>
 
                             <div class="row mt-4">
                                 <div class="col-12">
                                     <div class="bg-light p-4 rounded-3">
                                         <div class="row align-items-center">
-                                            <div class="col-md-8">
+                                            <div class="col-md-12">
                                                 <h5 class="h6 mb-2">Why Choose Our Analysis Services?</h5>
                                                 <p class="small mb-0">With years of experience in nucleotide analysis, we provide accurate, reliable results with fast turnaround times and comprehensive reporting to help you optimize your yeast-based products.</p>
                                             </div>
-                                            <div class="col-md-4 text-md-end mt-3 mt-md-0">
-                                                <a href="/contact-us" class="btn btn-primary btn-sm">
-                                                    <i class="fas fa-paper-plane me-1"></i> Request a Quote
-                                                </a>
-                                            </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mt-4">
+                                    <div class="p-4 col-lg-6">
+                                        <ul class="fa-ul small mb-4">
+                                            <li class="mb-2">
+                                                <span class="fa-li"><i class="fas fa-check text-primary"></i></span>
+                                                <b>Complete Profile:</b> Analysis of all nucleotide species
+                                            </li>
+                                            <li class="mb-2">
+                                                <span class="fa-li"><i class="fas fa-check text-primary"></i></span>
+                                                <b>Precision:</b> Accurate quantification of RNA/DNA content
+                                            </li>
+                                            <li class="mb-2">
+                                                <span class="fa-li"><i class="fas fa-check text-primary"></i></span>
+                                                <b>Compliance:</b> Ensure regulatory requirements are met
+                                            </li>
+                                            <li class="mb-0">
+                                                <span class="fa-li"><i class="fas fa-check text-primary"></i></span>
+                                                <b>Quality Control:</b> Monitor production consistency
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="text-center col-lg-6 mx-auto">
+                                        <a href="/nucleotide-analysis-service" class="btn btn-outline-primary btn-sm mb-5">
+                                            <i class="fas fa-chart-line me-1"></i> Explore Analysis Services
+                                        </a>
+                                        <br>
+                                        <a href="/contact-us" class="btn btn-primary btn-sm">
+                                            <i class="fas fa-paper-plane me-1"></i> Request a Quote
+                                        </a>
                                     </div>
                                 </div>
                             </div>
