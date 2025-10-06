@@ -52,9 +52,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
             </div>
             <div class="col-lg-6 order-lg-1">
                 <div class="pe-lg-4">
-                    <h3 class="h4 novo-blue mb-3">The Science Behind 5'-Nucleotides in Yeast</h3>
-
-                    <h4 class="h5 mt-4">Nucleotide Production Process</h4>
+                    <h3 class="h4 novo-blue mb-3">Nucleotide Production Process</h3>
                     <p>Yeast RNA undergoes enzymatic hydrolysis to produce four primary 5'-nucleotides:</p>
                     <ul class="list-unstyled">
                         <li class="mb-2"><i class="fas fa-dna text-primary me-2"></i> 5'AMP (Adenosine Monophosphate)</li>

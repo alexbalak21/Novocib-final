@@ -338,6 +338,18 @@ echo Banner::gen();
                 <li>
                     <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/22496280/">Prolonged fasting increases purine recycling in post-weaned northern elephant seals <br> José Guadalupe Soñanez-Organis, José Pablo Vázquez-Medina, Tania Zenteno-Savín, Andres Aguilar, Daniel E. Crocker, Rudy M. Ortiz J Exp Biol (2012) 215 (9): 1448-1455.</a>
                 </li>
+                <li>
+                    <a target="_blank" href="https://www.nature.com/articles/s41419-023-05957-z">IF1 ablation prevents ATP synthase oligomerization, enhances mitochondrial ATP turnover and promotes an adenosine-mediated pro-inflammatory phenotype (2023) <br> Joe Carroll, Ian N. Watt, Charlotte J. Wright, Shujing Ding, Ian M. Fearnley, John E. Walker Cell Death Dis. 14(7):413.</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S1095643315002767">Purine metabolism in response to hypoxic conditions associated with breath-hold diving and exercise in erythrocytes and plasma from bottlenose dolphins (Tursiops truncatus) (2016) <br> Iris del Castillo Velasco-Martínez, Claudia J. Hernández-Camacho, Lía C. Méndez-Rodríguez, Tania Zenteno-Savín Comp Biochem Physiol A Mol Integr Physiol 191:196–201.</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1880654624003949">Comparison of human erythrocyte purine nucleotide metabolism and blood purine and pyrimidine degradation product concentrations before and after acute exercise in trained and sedentary subjects (2018) <br> Wioleta Dudzinska, M. Suska, A. Lubkowska, K. Jakubowska, M. Olszewska, K. Safranow, D. Chlubek J Physiol Sci 68(3):293–305.</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.biorxiv.org/content/10.1101/2025.03.29.646096.abstract">NUDT5 regulates purine metabolism and thiopurine sensitivity by interacting with PPAT (2025) <br> Zheng Wu, Phong T Nguyen, Varun Sondhi, Run-Wen Yao, Tao Dai, Jui-Chung Chiang, Zengfu Shang, Feng Cai, Ling Cai, Jing Zhang, et al. bioRxiv.</a>
+                </li>
             </ol>
         </div>
     </div>
