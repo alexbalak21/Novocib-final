@@ -12,8 +12,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 
 <?= Banner::gen() ?>
-<main class="container mt-5">
-    <h2 class="underlinedTitle center" style="margin-bottom: 0">
+<main class="mt-5">
+    <div class="container">
+        <h2 class="underlinedTitle center" style="margin-bottom: 0">
         <span class="underlined novoblue center">Non radioactive AMP Deaminase Assay</span>
     </h2>
     <h4 class="text-center mt-3 mb-4">Including active AMP-DA</h4>
@@ -86,5 +87,21 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
         <p class="text-center"><strong>Please, <a href="/inquiry">Contact us</a> for any questions.</strong></p>
         <p class="text-center mb-5"><strong>Or ask us by email: <a href="mailto:contact@novocib.com">contact@novocib.com</a></strong></p>
+    </div>
+    </div>
+
+      <div class="bg-light">
+        <div class="referances mt-5 pb-3 container">
+            <h2 class="h4 pt-4 pb-3 text-center border-top border-bottom">Scientific Research & Publications</h2>
+        <p class="text-center mb-4">The PRECICE® HPRT Assay Kit has been cited in numerous peer-reviewed publications, demonstrating its reliability and effectiveness in HPRT research:</p>
+            <ol>
+                <li>
+                    <a target="_blank" href="https://www.nature.com/articles/s41467-025-61605-4">Muscle AMP deaminase activity was lower in Neandertals than in modern humans (2025) Nature Communications 16 (1) Macak, Dominik; Lee, Shin-Yu; Nyman, Tomas; Ampah-Korsah, Henry; Strandback, Emilia; Pääbo, Svante; Zeberg, Hugo</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://pubs.acs.org/doi/abs/10.1021/acs.jmedchem.0c00726">Discovery of N-Arylsulfonyl-Indole-2-Carboxamide Derivatives as Potent, Selective, and Orally Bioavailable Fructose-1,6-Bisphosphatase Inhibitors—Design, Synthesis, In Vivo Glucose Lowering Effects, and X-ray Crystal Complex Analysi (2020) J Zhou, J Bie, X Wang, Q Liu, R Li, H Chen- Journal of Medicinal Chemistry, V.63 (18)</a>
+                </li>
+            </ol>
+        </div>
     </div>
 </main>
