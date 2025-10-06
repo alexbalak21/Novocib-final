@@ -39,7 +39,7 @@ echo Banner::gen();
                     <img class="img-fluid" src="/app/img/HPRT-Assay-kit.jpg" alt="HPRT Assay Kit Composition" title="HPRT Assay Kit Composition">
                 </figure>
                 <figure>
-                    <img class="w-100 border rounded" src="/app/img/HPRT-Assay-Kit-Principle.png" alt="HPRT enzyme Molecular Structure" title="HPRT enzyme Molecular Structure">
+                    <a href="/app/img/HPRT-Assay-Kit-Principle.png"><img class="img-fluid p-1 border rounded" src="/app/img/HPRT-Assay-Kit-Principle.png" alt="HPRT enzyme Molecular Structure" title="HPRT enzyme Molecular Structure"></a>
                     <figcaption class="text-center">
                         <h4 class="novo-blue">PRECICE® HPRT Assay Kit</h4>
                         <h5>#K0709-01-2</h5>
@@ -81,7 +81,6 @@ echo Banner::gen();
                     </table>
                 </div>
 
-                <!-- Keep the rest of your content unchanged -->
                 <p class="text-muted text-center">
                     <em>Updated on July 2nd, 2025.</em><br>
                 </p>
@@ -285,7 +284,7 @@ echo Banner::gen();
             <div class="col">
                 <div class="border rounded p-3 h-100 bg-light shadow-sm text-start">
                     <h6 class="mb-2">📈 Real-Time Monitoring</h6>
-                    <p class="mb-0">Direct NADH readout at 340 nm enables continuous kinetic measurements.</p>
+                    <p class="mb-0">Direct NADH readout at 340 nm enables continuous kinetic measurements.</p>
                 </div>
             </div>
         </div>
@@ -353,5 +352,4 @@ echo Banner::gen();
             </ol>
         </div>
     </div>
-
 </main>
