@@ -46,34 +46,24 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                         </tr>
                     </thead>
                     <tbody>
+
                         <tr>
-                            <td>#E-Nov2-20</td>
-                            <td class="text-center"><strong>20 Units</strong></td>
-                            <td class="price text-center">€ 195.00</td>
-                            <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
-                                    Inquiry
-                                    <i class="fa-solid fa-comment"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#E-Nov2-40</td>
-                            <td class="text-center"><strong>40 Units</strong></td>
+                            <td>#E-Nov2-10</td>
+                            <td class="text-center"><strong>10 Units</strong></td>
                             <td class="price text-center">€ 350.00</td>
                             <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                                <a class="btn btn-primary" href="/inquiry?ref=E-Nov2-10&amp;price=350&amp;product=PRECICE PRPP-S Assay Kit&amp;volume=10 Units">
                                     Inquiry
                                     <i class="fa-solid fa-comment"></i>
                                 </a>
                             </td>
                         </tr>
                         <tr>
-                            <td>#E-Nov2-120</td>
-                            <td class="text-center"><strong>120 Units</strong></td>
+                            <td>#E-Nov2-25</td>
+                            <td class="text-center"><strong>25 Units</strong></td>
                             <td class="price text-center">€ 780.00</td>
                             <td class="text-end pe-3">
-                                <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&product=PRECICE PRPP-S Assay Kit">
+                                <a class="btn btn-primary" href="/inquiry?ref=E-Nov2-25&amp;price=780&amp;product=PRECICE PRPP-S Assay Kit&amp;volume=25 Units">
                                     Inquiry
                                     <i class="fa-solid fa-comment"></i>
                                 </a>
@@ -82,7 +72,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                     </tbody>
                 </table>
                 <p class="text-muted text-center">
-                    <em>Pricing updated September 7th, 2015</em>
+                    <em>Updated on October 1st, 2025.</em>
                     <br />
                 </p>
                 <p class="text-center">
