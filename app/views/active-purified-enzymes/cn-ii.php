@@ -35,16 +35,16 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 </tr>
                 <tr>
                     <td>#E-Nov6-100</td>
-                    <td class="text-center"><strong>150 mUnits</strong></td>
-                    <td class="price text-center">€ 650.00</td>
+                    <td class="text-center"><strong>100 mUnits</strong></td>
+                    <td class="price text-center">€ 490.00</td>
                     <td class="text-end pe-3">
-                        <a class="btn btn-primary" href="/inquiry?ref=Nov6-100&amp;product=cN-II 100mU">Inquiry <i class="fa-solid fa-comment"></i></a>
+                        <a class="btn btn-primary" href="/inquiry?ref=Nov6-100&amp;price=490&amp;product=cN-II 100mU">Inquiry <i class="fa-solid fa-comment"></i></a>
                     </td>
                 </tr>
             </tbody>
         </table>
 
-        <p class="text-muted text-center"><em>Pricing updated on July 23, 2024.</em></p>
+        <p class="text-muted text-center"><em>Pricing updated on October 1st, 2025.</em></p>
         <p class="text-center">
             <strong>
                 Kit is provided in stable lyophilized form and
