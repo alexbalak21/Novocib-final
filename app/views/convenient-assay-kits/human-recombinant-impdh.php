@@ -4,8 +4,25 @@ $title = "Active Human IMPDH Type 2 Enzyme";
 
 // META TAGS 
 ob_start(); ?>
-<meta name="description" content="NOVOCIB IMPDH 2 is active enzyme characterized for its affinity for substrates and sensitivity to enzyme inhibitors mycophenolic acid and ribavirine-monophosphate.">
-<meta name="keywords" content="Buy IMPDH, human IMPDH, E.C.1.1.1.205, Inosine Monophosphate Dehydrogenase, recombinant IMPDH, IMP dehydrogenase, GTP biosynthesis, inosine 5'-monophosphate dehydrogenase, mycophenolic acid, ribavirin, validated target, immunosuppression">
+<title>Human IMPDH Type 2 (IMPDH2) Assay Kit | NOVOCIB</title>
+<meta name="description" content="High-purity Human IMPDH Type 2 (IMPDH2) enzyme assay kit for research. Characterized for substrate affinity and inhibitor sensitivity. Ideal for drug discovery and cancer research.">
+<meta name="keywords" content="Human IMPDH2, IMPDH Type 2 Assay Kit, Inosine Monophosphate Dehydrogenase, IMPDH inhibitor screening, mycophenolic acid, ribavirin monophosphate, GTP biosynthesis, cancer research, immunosuppression, enzyme activity assay, E.C.1.1.1.205, drug discovery, NOVOCIB">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.novocib.com/convenient-assay-kits/human-recombinant-impdh">
+<meta property="og:title" content="Human IMPDH Type 2 (IMPDH2) Assay Kit | NOVOCIB">
+<meta property="og:description" content="High-purity Human IMPDH Type 2 enzyme for research and drug discovery. Characterized for substrate affinity and inhibitor sensitivity.">
+<meta property="og:image" content="https://www.novocib.com/app/img/IMPDH-reaction.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Human IMPDH Type 2 (IMPDH2) Assay Kit | NOVOCIB">
+<meta name="twitter:description" content="High-purity Human IMPDH Type 2 enzyme for research and drug discovery. Characterized for substrate affinity and inhibitor sensitivity.">
+<meta name="twitter:image" content="https://www.novocib.com/app/img/IMPDH-reaction.png">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://www.novocib.com/convenient-assay-kits/human-recombinant-impdh" />
 <?php $metas = ob_get_clean();
 
 
@@ -14,7 +31,7 @@ echo Banner::gen();
 ?>
 
 <section class="container mt-5">
-    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Human IMPDH, Type II</span></h2>
+    <h1 class="underlinedTitle right"><span class="underlined novoblue right">Human IMPDH, Type II (IMPDH2) Assay Kit</span></h1>
     <div class="row">
         <div class="col-lg-6">
             <p>
@@ -51,19 +68,31 @@ echo Banner::gen();
             <img
                 class="w-100"
                 src="/app/img/IMPDH-reaction.png"
-                alt="Human IMPDH Type 2 reaction schema" />
+                alt="Human IMPDH Type 2 enzymatic reaction: IMP + NAD+ → XMP + NADH + H+" 
+                title="IMPDH Type 2 Catalytic Reaction" 
+                loading="lazy" />
             <h4 class="novo-blue">Human IMPDH Type 2</h4>
             <h5>Ref. #E-Nov1</h5>
         </div>
-        <div class="d-flex justify-content-center mt-4">
+        <div class="d-flex justify-content-center mt-4" itemscope itemtype="https://schema.org/Product">
+    <meta itemprop="name" content="Human IMPDH Type 2 Assay Kit">
+    <meta itemprop="description" content="High-purity Human IMPDH Type 2 enzyme for research and drug discovery applications.">
+    <div itemprop="brand" itemtype="https://schema.org/Brand" itemscope>
+        <meta itemprop="name" content="NOVOCIB">
+    </div>
             <div class="col-lg-10 col-12">
                 <?= Products::gen("Human IMPDH Type 2") ?>
-                <p class="text-center">
-                    <strong>
-                        Kit is provided in stable lyophilized form and
-                        <span class="text-danger">shipped without dry ice</span>
-                    </strong>
-                </p>
+                <div class="text-center" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <p class="mb-2">
+                        <strong>Product Code: </strong><span itemprop="sku">E-Nov1</span>
+                    </p>
+                    <p class="mb-2">
+                        <strong>Kit is provided in stable lyophilized form and
+                        <span class="text-danger">shipped without dry ice</span></strong>
+                    </p>
+                    <meta itemprop="priceCurrency" content="USD">
+                    <link itemprop="availability" href="https://schema.org/InStock">
+                </div>
                 <p class="my-4 text-center">
                     <strong>
                         You can ask us for a quotation
@@ -87,10 +116,10 @@ echo Banner::gen();
         </p>
         <div class="row justify-content-center">
             <div class="col-lg-2 col-4 my-4">
-                <img height="400" src="/app/img/IMPDH-Gel.png" alt="" />
+                <img height="400" src="/app/img/IMPDH-Gel.png" alt="SDS-PAGE analysis of purified Human IMPDH Type 2 showing high purity" loading="lazy" />
             </div>
             <div class="col-lg-8 my-4">
-                <img height="400" src="/app/img/IMPDH-IC50.png" alt="" />
+                <img height="400" src="/app/img/IMPDH-IC50.png" alt="Dose-response curve showing IMPDH Type 2 inhibition by mycophenolic acid" loading="lazy" />
             </div>
         </div>
         <p class="text-end mt-4">
@@ -113,13 +142,33 @@ echo Banner::gen();
         </p>
     </div>
 </section>
-<section>
-    <div class="container mt-4">
-        <h3 class="novo-blue">IMPDH - a choice target for major therapeutic applications</h3>
-        <p>
-            <strong>Synonyms:</strong>
-            inosine 5'-monophosphate dehydrogenase, IMP dehydrogenase
-        </p>
+<section class="bg-white py-4">
+    <div class="container">
+        <h2 class="novo-blue mb-4">IMPDH - A Key Target for Therapeutic Applications</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Key Features:</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> High-purity human recombinant IMPDH Type 2</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Fully characterized enzyme activity</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Validated for inhibitor screening</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Suitable for cancer and immunology research</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-info">
+    <h4 class="alert-heading">Research Applications</h4>
+    <p class="mb-0">Our IMPDH Type 2 is ideal for: drug discovery, cancer research, immunology studies, enzyme kinetics, and high-throughput screening of potential inhibitors.</p>
+</div>
+
+<p class="mt-4">
+    <strong>Synonyms:</strong>
+    inosine 5'-monophosphate dehydrogenase, IMP dehydrogenase, IMPDH2, IMP (inosine monophosphate) dehydrogenase 2
+</p>
         <p>
             <strong>Catalytic activity</strong>
             <br />
@@ -216,9 +265,9 @@ echo Banner::gen();
     </div>
 </section>
 
-<section class="container">
-    <div class="referances my-5 row justify-content-center">
-        <h6 class="ps-5"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
+<section class="bg-light">
+    <div class="referances row justify-content-center">
+        <h6 class="ps-5 pt-3"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
         <div class="col-2">
             <img class="w-100 pt-3" src="/app/img/pubmed.png" alt="pubmed logo">
         </div>
@@ -234,11 +283,11 @@ echo Banner::gen();
                 <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/15670151" title="Go to PubMed">S. Peñuelas <em>et al.</em> (2005): Modulation of IMPDH2, survivin, topoisomerase I and vimentin increases sensitivity to methotrexate in HT29 human colon cancer cells <em>FEBS</em> 272, 696-710</a></li>
                 <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/10097070" title="Go to PubMed">T. D. Colby <em>et al.</em> (1999): Crystal structure of human type II inosine monophosphate dehydrogenase: implications for ligand binding and drug design <em>PNAS</em>, 96(7), 3531-3536</a></li>
                 <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/12781195" title="Go to PubMed">E. J. Iwanowicz <em>et al.</em> (2003): Inhibitors of inosine monophosphate dehydrogenase: SARs about the N-[3-Methoxy-4-(5-oxazolyl)phenyl moiety <em>Bioorg. Med. Chem. Lett.</em> 13(12), 2059-2063 </a></li>
-                <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/12183689" target="_blank" title="Go to PubMed">J. Jain <em>et al.</em> (2002): Characterization of pharmacological efficacy of VX-148, a new potent immunosuppressive inosine 5'-monophosphate dehydrogenase inhibitor <em>J. Pharm. Exp. Therap.</em> 302(3), 1272-1277</a></li>
-                <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/14757177" target="_blank" title="Go to PubMed">J. Jain <em>et al.</em> (2004): Regulation of inosine monophosphate dehydrogenase type I and type II isoforms in human lymphocytes <em>Biochem. Pharmacol.</em> 67(4), 767-776</a></li>
-                <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/15664851" target="_blank" title="Go to PubMed">G. M. Buckley <em>et al.</em> (2005): Quinazolinethiones and quinazolinediones, novel inhibitors of inosine monophosphate dehydrogenase: synthesis and initial structure–activity relationships <em>Bioorg. Med. Chem. Lett.</em> 15(3), 751-754</a></li>
-                <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/14505670" target="_blank" title="Go to PubMed">T. G. Murali Dhar <em>et al.</em> (2003): 3-Cyanoindole-Based Inhibitors of Inosine Monophosphate Dehydrogenase: Synthesis and Initial Structure–Activity Relationships <em>Bioorg. Med. Chem. Lett.</em> 13(20), 3557-3560</a></li>
+                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/12183689" title="Go to PubMed">J. Jain <em>et al.</em> (2002): Characterization of pharmacological efficacy of VX-148, a new potent immunosuppressive inosine 5'-monophosphate dehydrogenase inhibitor <em>J. Pharm. Exp. Therap.</em> 302(3), 1272-1277</a></li>
+                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/14757177" title="Go to PubMed">J. Jain <em>et al.</em> (2004): Regulation of inosine monophosphate dehydrogenase type I and type II isoforms in human lymphocytes <em>Biochem. Pharmacol.</em> 67(4), 767-776</a></li>
+                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/15664851" title="Go to PubMed">G. M. Buckley <em>et al.</em> (2005): Quinazolinethiones and quinazolinediones, novel inhibitors of inosine monophosphate dehydrogenase: synthesis and initial structure-activity relationships <em>Bioorg. Med. Chem. Lett.</em> 15(3), 751-754</a></li>
+                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/14505670" title="Go to PubMed">T. G. Murali Dhar <em>et al.</em> (2003): 3-Cyanoindole-Based Inhibitors of Inosine Monophosphate Dehydrogenase: Synthesis and Initial Structure-Activity Relationships <em>Bioorg. Med. Chem. Lett.</em> 13(20), 3557-3560</a></li>
             </ol>
         </div>
     </div>
-</section>
+</section>  

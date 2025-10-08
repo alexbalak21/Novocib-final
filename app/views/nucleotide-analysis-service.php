@@ -206,34 +206,42 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 </thead>
                 <tbody>
                     <tr>
-                        <td>#S1200-03</td>
+                        <td>#S1200-03-NA</td>
                         <td class="text-center">
-                            <a href="/analytical-services/yeast-extract-nucleotide-analysis">
-                                <h6>Yeast Extract Nucleotides Analysis:</h6>
-                            </a>
                             <p>
-                                HPLC-UV analysis of full spectra of dietary nucleotides—including free bases, nucleosides, nucleotide monophosphates (NMPs), and intact DNA/RNA in feed or food ingredients. These data allow calculation of total purine and pyrimidine content.
+                                HPLC-UV analysis of full spectra of dietary nucleotides in food and feed ingredients—free bases (adenine, guanine, hypoxanthine, cytidine, uracil), nucleosides (cytosine, uridine, guanosine, inosine and adenosine), nucleotide monophosphates (CMP, UMP, GMP, IMP, AMP) and nucleic acids (DNA** and RNA**), expressed as g/100g.
+                                *The analysis of full spectra nucleotides is realized by ion-paired HPLC-UV allowing simultaneous separation of apolar bases, nucleosides, polar NMP and dNMP in one run
+                                **Nucleic acids DNA and RNA are analyzed after enzymatic digestion of RNA and DNA to NMP and dNMP with nuclease.
                             </p>
                         </td>
                         <td class="price">€ 420.00 / sample</td>
                         <td>
-                            <a class="btn btn-primary" href="/inquiry?product=Dietary Nucleotides Analysis&ref=S1200-03">Inquiry <i class="fa-solid fa-comment"></i></a>
+                            <a class="btn btn-primary" href="/inquiry?ref=S1200-03-NA&amp;price=420&amp;product=Dietary%20Nucleotides%20Analysis">Inquiry <i class="fa-solid fa-comment"></i></a>
                         </td>
                     </tr>
                     <tr>
-                        <td>#S1200-04</td>
+                        <td>#S1200-03-RNA</td>
                         <td class="text-center">
-                            <a href="/analytical-services/cellular-nucleotides-analysis">
-                                <h6>Cellular Nucleotides Analysis:</h6>
-                            </a>
                             <p>
-                                HPLC-UV analysis for full spectra of cellular nucleotides
-                                (bases, nucleosides, NMP, NDP and NTP) in cell extracts.
+                                HPLC-UV analysis of full spectra of dietary nucleotides in food and feed ingredients—free bases, nucleosides, nucleotide monophosphates and nucleic acid RNA (without DNA), expressed as g/100g
                             </p>
                         </td>
-                        <td class="price">€ 350.00 / sample</td>
+                        <td class="price">€ 380.00 / sample</td>
                         <td>
-                            <a class="btn btn-primary" href="/inquiry?product=Cellular Nucleotides Analysis&ref=S1200-04">Inquiry <i class="fa-solid fa-comment"></i></a>
+                            <a class="btn btn-primary" href="/inquiry?ref=S1200-03-RNA&amp;price=380&amp;product=RNA%20Analysis">Inquiry <i class="fa-solid fa-comment"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#S1200-03-PURINES</td>
+                        <td class="text-center">
+                            <p>
+                                Purines content (bases adenine, guanine, xanthine and hypoxanthine, expressed as g/100g) calculated from full spectra of nucleotides
+                                (Ref. #S1200-03-NA or Ref. #S1200-03-RNA)
+                            </p>
+                        </td>
+                        <td class="price">€ 30.00 / sample</td>
+                        <td>
+                            <a class="btn btn-primary" href="/inquiry?ref=S1200-03-PURINES&amp;price=30&amp;product=Purines%20Analysis">Inquiry <i class="fa-solid fa-comment"></i></a>
                         </td>
                     </tr>
 
