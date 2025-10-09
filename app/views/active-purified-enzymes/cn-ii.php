@@ -14,37 +14,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 <div class="container mt-4">
     <h2 class="underlinedTitle center"><span class="underlined novoblue center">Human cytosolic 5'-nucleotidase II (cN-II) (E.C.3.1.3.5)</span></h2>
-    <div class="col-lg-10 col-12">
-        <table class="table product mb-2">
-            <thead>
-                <tr>
-                    <th>#REF</th>
-                    <th class="text-center">SIZE</th>
-                    <th class="text-center">PRICE</th>
-                    <th class="pe-5"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> #E-Nov6-50</td>
-                    <td class="text-center"><strong>50 mUnits</strong></td>
-                    <td class="price text-center">€ 305.00</td>
-                    <td class="text-end pe-3">
-                        <a class="btn btn-primary" href="/inquiry?ref=Nov6-50&amp;product=cN-II 50mU">Inquiry <i class="fa-solid fa-comment"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>#E-Nov6-100</td>
-                    <td class="text-center"><strong>100 mUnits</strong></td>
-                    <td class="price text-center">€ 490.00</td>
-                    <td class="text-end pe-3">
-                        <a class="btn btn-primary" href="/inquiry?ref=Nov6-100&amp;price=490&amp;product=cN-II 100mU">Inquiry <i class="fa-solid fa-comment"></i></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <p class="text-muted text-center"><em>Pricing updated on October 1st, 2025.</em></p>
+    <div class="col-lg-10 col-12 mx-auto">
+        <?= Products::gen("Human cytosolic 5'-nucleotidase II") ?>
         <p class="text-center">
             <strong>
                 Kit is provided in stable lyophilized form and

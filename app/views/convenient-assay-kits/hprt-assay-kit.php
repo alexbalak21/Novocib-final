@@ -17,26 +17,26 @@ ob_start(); ?>
 <meta property="product:price:amount" content="330">
 <meta property="product:price:currency" content="EUR">
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "PRECICE® HPRT Assay Kit",
-  "description": "High-sensitivity assay kit for measuring hypoxanthine-guanine phosphoribosyltransferase (HPRT) activity in biological samples.",
-  "brand": {
-    "@type": "Brand",
-    "name": "NOVOCIB"
-  },
-  "sku": "K0709-01-2",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.novocib.com/convenient-assay-kits/hprt-assay-kit",
-    "priceCurrency": "EUR",
-    "price": "330.00",
-    "itemCondition": "https://schema.org/NewCondition",
-    "availability": "https://schema.org/InStock"
-  },
-  "image": "https://www.novocib.com/app/img/HPRT-Assay-kit.jpg"
-}
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "PRECICE® HPRT Assay Kit",
+        "description": "High-sensitivity assay kit for measuring hypoxanthine-guanine phosphoribosyltransferase (HPRT) activity in biological samples.",
+        "brand": {
+            "@type": "Brand",
+            "name": "NOVOCIB"
+        },
+        "sku": "K0709-01-2",
+        "offers": {
+            "@type": "Offer",
+            "url": "https://www.novocib.com/convenient-assay-kits/hprt-assay-kit",
+            "priceCurrency": "EUR",
+            "price": "330.00",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock"
+        },
+        "image": "https://www.novocib.com/app/img/HPRT-Assay-kit.jpg"
+    }
 </script>
 <?php $metas = ob_get_clean();
 
@@ -52,23 +52,23 @@ echo Banner::gen();
         </h1>
         <p class="lead text-center mb-4">Spectrophotometric microplate assay for precise measurement of hypoxanthine-guanine phosphoribosyltransferase (HPRT) activity in research and clinical diagnostics</p>
         <div class="text-center mb-4">
-    <span class="badge bg-primary me-2">Includes active human HPRT enzyme</span>
-    <span class="badge bg-success me-2">Non-radioactive method</span>
-    <span class="badge bg-info text-dark">96-well microplate format</span>
-</div>
+            <span class="badge bg-primary me-2">Includes active human HPRT enzyme</span>
+            <span class="badge bg-success me-2">Non-radioactive method</span>
+            <span class="badge bg-info text-dark">96-well microplate format</span>
+        </div>
 
         <div class="row">
             <div class="col-lg-6">
                 <section aria-labelledby="hprt-intro">
-    <p>Developed by our R&D team, the PRECICE® HPRT Assay Kit represents a breakthrough in HPRT enzyme analysis. As the first non-radioactive solution for measuring HPRT activity, this innovative kit was specifically designed for user-friendly application in a 96-well plate format, eliminating the need for hazardous radioactive materials while maintaining exceptional sensitivity and accuracy.
-                    <a style="font-size: 16px;" href="https://www.researchgate.net/publication/232784768_A_continuous_spectrophotometric_assay_for_rapid_measurement_of_hypoxanthine-guanine_phosphoribosyltransferase_HPRT_activity_in_cell_lysates" target="_blank">ResarchGate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </p>
+                    <p>Developed by our R&D team, the PRECICE® HPRT Assay Kit represents a breakthrough in HPRT enzyme analysis. As the first non-radioactive solution for measuring HPRT activity, this innovative kit was specifically designed for user-friendly application in a 96-well plate format, eliminating the need for hazardous radioactive materials while maintaining exceptional sensitivity and accuracy.
+                        <a style="font-size: 16px;" href="https://www.researchgate.net/publication/232784768_A_continuous_spectrophotometric_assay_for_rapid_measurement_of_hypoxanthine-guanine_phosphoribosyltransferase_HPRT_activity_in_cell_lysates" target="_blank">ResarchGate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </p>
 
-                <p>HPRT (EC 2.4.2.8) is a pivotal enzyme in the purine salvage pathway, encoded by the highly polymorphic <em>HPRT1</em> gene. Over 300 pathogenic variants have been documented, with mutations linked to partial or complete enzymatic deficiency. Complete HPRT deficiency results in Lesch-Nyhan syndrome, a rare X-linked genetic disorder. In other cases, HPRT deficiency may contribute to secondary forms of gout—one of the most prevalent purine metabolism disorders (Ceballos-Picot I. et al., 2010). Due to the extensive variability of the <em>HPRT1</em> gene, genetic diagnosis can be challenging. Traditional functional assays rely on red blood cell lysates and chromatographic detection with radiolabeled ¹⁴C-hypoxanthine (Cartier P. et al., 1968).</p>
+                    <p>HPRT (EC 2.4.2.8) is a pivotal enzyme in the purine salvage pathway, encoded by the highly polymorphic <em>HPRT1</em> gene. Over 300 pathogenic variants have been documented, with mutations linked to partial or complete enzymatic deficiency. Complete HPRT deficiency results in Lesch-Nyhan syndrome, a rare X-linked genetic disorder. In other cases, HPRT deficiency may contribute to secondary forms of gout—one of the most prevalent purine metabolism disorders (Ceballos-Picot I. et al., 2010). Due to the extensive variability of the <em>HPRT1</em> gene, genetic diagnosis can be challenging. Traditional functional assays rely on red blood cell lysates and chromatographic detection with radiolabeled ¹⁴C-hypoxanthine (Cartier P. et al., 1968).</p>
 
-                <p><b>Assay Principle:</b><br>
-                    HPRT activity is determined by measuring the enzymatic conversion of hypoxanthine to inosine monophosphate (IMP). IMP is then oxidized to xanthosine monophosphate (XMP) by recombinant IMP dehydrogenase (IMPDH), reducing NAD⁺ to NADH in the process. The accumulation of NADH is continuously monitored by absorbance at 340 nm, enabling real-time kinetic analysis of HPRT activity.
-                </p>
+                    <p><b>Assay Principle:</b><br>
+                        HPRT activity is determined by measuring the enzymatic conversion of hypoxanthine to inosine monophosphate (IMP). IMP is then oxidized to xanthosine monophosphate (XMP) by recombinant IMP dehydrogenase (IMPDH), reducing NAD⁺ to NADH in the process. The accumulation of NADH is continuously monitored by absorbance at 340 nm, enabling real-time kinetic analysis of HPRT activity.
+                    </p>
             </div>
             <div class="col-lg-6">
                 <figure class="col-7 mx-auto">
@@ -86,40 +86,8 @@ echo Banner::gen();
 
         <div class="d-flex justify-content-center mt-5">
             <div class="col-lg-10 col-12">
-                <div class="table-responsive">
-                    <table class="table product mb-2">
-                        <thead>
-                            <tr>
-                                <th class="d-none d-md-table-cell">#REF</th>
-                                <th class="text-center">SIZE</th>
-                                <th class="text-center d-none d-md-table-cell">PRICE</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="d-none d-md-table-cell">#K0709-01-2</td>
-                                <td class="text-center">
-                                    <strong>
-                                        <span class="novo-blue">PRECICE® HPRT Assay Kit</span><br>
-                                        10 ml, 24 analyses (8 samples in triplicate)
-                                    </strong>
-                                </td>
-                                <td class="d-none d-md-table-cell text-center">330.00 €</td>
-                                <td class="text-end pe-3">
-                                    <div class="d-block d-md-none text-end mb-1 fw-bold">330.00 €</div>
-                                    <a class="btn btn-primary" href="/inquiry?ref=K0709-01-2&amp;price=330&amp;product=HPRT Assay Kit&amp;volume=24 analyses (8 samples in triplicate) with HPRT enzyme">
-                                        Inquiry <i class="fa-solid fa-comment"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <p class="text-muted text-center">
-                    <em>Updated on July 2nd, 2025.</em><br>
-                </p>
+                <!-- FETCHING PRODUCT FROM THE DATABASE -->
+                <?= Product::gen("PRECICE® HPRT Assay Kit") ?>
 
                 <p class="text-center">
                     <strong>
@@ -348,7 +316,7 @@ echo Banner::gen();
     <div class="bg-light">
         <div class="referances mt-5 pb-3 container">
             <h2 class="h4 pt-4 pb-3 text-center border-top border-bottom">Scientific Research & Publications</h2>
-        <p class="text-center mb-4">The PRECICE® HPRT Assay Kit has been cited in numerous peer-reviewed publications, demonstrating its reliability and effectiveness in HPRT research:</p>
+            <p class="text-center mb-4">The PRECICE® HPRT Assay Kit has been cited in numerous peer-reviewed publications, demonstrating its reliability and effectiveness in HPRT research:</p>
             <ol>
                 <li>
                     <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1873506123001307">CRISPR/Cas9-mediated generation of human embryonic stem cell sub-lines with HPRT1 gene knockout to model Lesch Nyhan disease</a>
@@ -392,76 +360,74 @@ echo Banner::gen();
 </main>
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.novocib.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Convenient Assay Kits",
-      "item": "https://www.novocib.com/convenient-assay-kits"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "HPRT Assay Kit"
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.novocib.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Convenient Assay Kits",
+                "item": "https://www.novocib.com/convenient-assay-kits"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "HPRT Assay Kit"
+            }
+        ]
     }
-  ]
-}
 </script>
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "What is the HPRT Assay Kit used for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The HPRT Assay Kit is designed to measure hypoxanthine-guanine phosphoribosyltransferase (HPRT) enzyme activity in biological samples. It's commonly used in research on Lesch-Nyhan syndrome, purine metabolism disorders, and for screening potential therapeutic compounds."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does the HPRT Assay work?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The assay measures HPRT activity by detecting the conversion of hypoxanthine to inosine monophosphate (IMP), which is then oxidized to xanthosine monophosphate (XMP) by IMP dehydrogenase (IMPDH). The reaction produces NADH, which is measured spectrophotometrically at 340 nm."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What samples can be analyzed with this kit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The kit is suitable for analyzing various sample types including red blood cells (RBCs), peripheral blood mononuclear cells (PBMCs), cultured cells, and tissue lysates. It's been validated for use with both clinical and research samples."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many samples can be tested with one kit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Each kit contains sufficient reagents for 24 analyses (8 samples in triplicate) when following the standard protocol. The kit includes all necessary components except for a microplate reader capable of reading at 340 nm."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the detection range of the assay?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The assay has a wide detection range from 6.75 to 340 nmol/hour/ml, allowing for the measurement of both normal and deficient HPRT activity levels in various sample types."
-      }
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+                "@type": "Question",
+                "name": "What is the HPRT Assay Kit used for?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The HPRT Assay Kit is designed to measure hypoxanthine-guanine phosphoribosyltransferase (HPRT) enzyme activity in biological samples. It's commonly used in research on Lesch-Nyhan syndrome, purine metabolism disorders, and for screening potential therapeutic compounds."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does the HPRT Assay work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The assay measures HPRT activity by detecting the conversion of hypoxanthine to inosine monophosphate (IMP), which is then oxidized to xanthosine monophosphate (XMP) by IMP dehydrogenase (IMPDH). The reaction produces NADH, which is measured spectrophotometrically at 340 nm."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What samples can be analyzed with this kit?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The kit is suitable for analyzing various sample types including red blood cells (RBCs), peripheral blood mononuclear cells (PBMCs), cultured cells, and tissue lysates. It's been validated for use with both clinical and research samples."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many samples can be tested with one kit?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Each kit contains sufficient reagents for 24 analyses (8 samples in triplicate) when following the standard protocol. The kit includes all necessary components except for a microplate reader capable of reading at 340 nm."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the detection range of the assay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The assay has a wide detection range from 6.75 to 340 nmol/hour/ml, allowing for the measurement of both normal and deficient HPRT activity levels in various sample types."
+                }
+            }
+        ]
     }
-  ]
-}
 </script>
