@@ -40,8 +40,8 @@ class Nav
                         <li class="nav-item"><a class="nav-link" href="/"><i class="fa-solid fa-house"></i> NOVO.COM</a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/search.php">
                                 Search <i class="fa-solid fa-file-lines"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/products.php">Products</a> <i class="fa-solid fa-box"></i></li>
-                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/customer-info.php">Payment</a> <i class="fa-solid fa-credit-card"></i></li>
+                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/products.php">Products <i class="fa-solid fa-box"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/app/internal/admin/customer-info.php">Payment <i class="fa-solid fa-credit-card"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/visitor-searches.php">User <i class="fa-solid fa-magnifying-glass"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/404-requests.php">404 <i class="fa-solid fa-xmark"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="/app/internal/admin/messages.php">Messages <i class="fa-solid fa-envelope"></i></a></li>
