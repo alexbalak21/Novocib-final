@@ -106,20 +106,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/base_temp.php";
     </section>
 
     <section class="mb-5">
-        <h2 class="underlinedTitle"><span class="underlined novoblue">Applications</span></h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h3 class="h5">Food Industry</h3>
-                <p>Quality control of umami taste in food products, flavor enhancement analysis, and food processing monitoring.</p>
-            </div>
-            <div class="col-md-6">
-                <h3 class="h5">Research</h3>
-                <p>Biochemical research, metabolic studies, and nucleotide pathway analysis in various organisms.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="mb-5">
         <h2 class="underlinedTitle"><span class="underlined novoblue">Technical Support</span></h2>
         <p>Our technical support team is available to assist with any questions regarding our Nucleotides Assay Kits. Please contact our technical support for protocol optimization, troubleshooting, and application-specific advice.</p>
     </section>
