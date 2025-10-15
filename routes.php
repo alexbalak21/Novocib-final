@@ -69,6 +69,9 @@ return [
     '/analytical-services/yeast-extract-nucleotide-analysis' => 'app/views/analytical-services/yeast-extract-nucleotide-analysis.php',
     '/yeast-extract-nucleotide-analysis' => 'app/views/analytical-services/yeast-extract-nucleotide-analysis.php',
 
+    // Nucleotides Assay Kits
+    '/nucleotides-assay-kits' => 'app/views/nucleotides-assay-kits/index.php',
+
     // Other Pages
     '/bacterial-luciferase' => 'app/views/bacterial-luciferase.php',
     '/news' => 'app/views/news.php',
