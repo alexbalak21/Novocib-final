@@ -11,9 +11,81 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 ?>
 
 <?= Banner::gen("/app/img/enzymes.jpg") ?>
-<div class="container mt-5">
-    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Active Purified Enzymes</span></h2>
-    <p><strong class="novo-blue">NOVOCIB</strong> produces active nucleoside kinases and other nucleotide metabolism enzymes. This portfolio of enzymes represents a unique range of powerful tools for Drug Discovery and research in the field of nucleoside and nucleotide metabolism.</p>
+
+<div class="container mt-5 mb-5">
+    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Nucleoside Kinase Enzymes</span></h2>
+    <h2 class="novo-blue text-center"></h2>
+    <p class="mb-4">
+        <b class="novo-blue">NOVOCIB</b> offers a comprehensive portfolio of <strong>active human recombinant nucleoside kinases</strong> and other <strong>enzymes involved in nucleotide metabolism</strong>.
+        These high-quality enzymes are essential tools for <strong>drug discovery, antiviral and anticancer research</strong>, and the study of <strong>nucleoside and nucleotide metabolism pathways</strong>.
+        Available in lyophilized form, NOVOCIB's enzymes support reliable and reproducible <strong>in vitro phosphorylation assays</strong> and <strong>biochemical screening</strong>.
+    </p>
+
+
+
+    <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle">
+            <thead class="table-secondary">
+                <tr>
+                    <th></th>
+                    <th><a href="/active-purified-enzymes/recombinant-adenosine-kinase" title="Adenosine Kinase" class="text-primary fw-bold"><em>ADK</em> enzyme <i class="fa-solid fa-arrow-up-right-from-square"></i></a></th>
+                    <th><a href="/active-purified-enzymes/recombinant-deoxycytidine-kinase" title="Deoxycytidine Kinase" class="text-primary fw-bold"><em>dCK</em> enzyme <i class="fa-solid fa-arrow-up-right-from-square"></i></a></th>
+                    <th><a href="/active-purified-enzymes/human-ump-cmp-kinase" title="UMP-CMP Kinase" class="text-primary fw-bold"><em>CMK</em> enzyme <i class="fa-solid fa-arrow-up-right-from-square"></i></a></th>
+                    <th><a href="/active-purified-enzymes/cn-ii" title="5'-nucleotidase" class="text-primary fw-bold"><em>cN-II</em> enzyme <i class="fa-solid fa-arrow-up-right-from-square"></i></a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="text-primary">Natural substrates</th>
+                    <td>Adenosine<br>Inosine</td>
+                    <td>Deoxycytidine<br>Cytidine<br>Deoxyadenosine<br>Deoxyguanosine</td>
+                    <td>dCMP<br>CMP<br>UMP</td>
+                    <td>Deoxyinosine<br>Inosine</td>
+                </tr>
+                <tr>
+                    <th class="text-primary">Nucleoside analogues substrates</th>
+                    <td>Ribavirin<br>Tubercidin<br>Mizoribin</td>
+                    <td>Cladribine<br>Fludarabine<br>Gemcitabine (dFdC)<br>Lamivudine<br>Aracytidine (araC)<br>Fluorodeoxyuridine</td>
+                    <td>dFdCMP<br><span class="text-muted">(Gemcitabine monophosphate)</span><br>3TCMP<br>araCMP<br><span class="text-muted">(Aracytidine monophosphate)</span><br>Adefovir (PMEA)</td>
+                    <td>Dideoxyinosine<br>Ribavirin<br>Acyclovir</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="text-lg-end text-center mt-2 mb-3"><i class="fa-solid fa-download"></i> Download our brochure: <a target="_blank" href="/app/documents/Novocib_Nucleoside_kinases.pdf">Novocib Nucleoside kinases <i class="fa-solid fa-file-pdf"></i></a></p>
+
+    <p>
+        Nucleoside analogues have proven to be a highly successful class of anti-cancer and anti-viral drugs.
+        Their therapeutic efficacy depends on intracellular phosphorylation. Two cellular nucleoside kinases—
+        <strong>deoxycytidine kinase (dCK)</strong> and <strong>UMP-CMP kinase (CMK)</strong>—are critical for the phosphorylation of cytidine analogues.
+        These enzymes catalyze the first two steps in activating potent anti-cancer and anti-viral agents such as
+        <em>1-β-D-arabinofuranosylcytosine (araC, aracytidine)</em>,
+        <em>2',2'-difluorodeoxycytidine (dFdC, gemcitabine)</em>, and
+        <em>β-D-2',3'-dideoxycytidine (ddC)</em>.
+    </p>
+
+    <p>
+        Both kinases also phosphorylate unnatural L-nucleosides, including
+        <em>β-L-2',3'-dideoxy-3'-thiacytidine (L-SSdC, 3-TC or lamivudine)</em>.
+        Kinetic constants for araC, dFdC, and 3TC phosphorylation by recombinant dCK and CMK have been published.
+        Comparing the phosphorylation profiles of new nucleoside analogues with those of established drugs
+        provides a rational basis for selecting analogues with superior therapeutic potential.
+    </p>
+    <p>
+        To characterize the phosphorylation properties of new nucleoside analogues,
+        <b class="novo-blue">NOVOCIB</b> has developed human recombinant <b>dCK</b> and <b>CMK</b> nucleoside phosphorylation assays.
+        As shown in <em>Table 1</em>, the <b>CMK assay</b> must be performed using monophosphate forms of nucleoside analogues,
+        which requires preliminary phosphorylation and purification—an often time-consuming step.
+    </p>
+
+    <p>
+        To streamline this process, NOVOCIB has introduced a <strong>coupled dCK-CMK nucleoside phosphorylation assay</strong>,
+        which delivers in a single step critical insights into both <strong>dCK</strong> and <strong>CMK</strong> substrate properties
+        of the nucleoside analogue.
+    </p>
+
+
+
 </div>
 <section class="mb-5">
     <div class="container">
@@ -75,7 +147,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 </tr>
                 <tr>
                     <td class="col-2">
-                        <h5><a href="/active-purified-enzymes/cnII">cN-II <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h5>
+                        <h5><a href="/active-purified-enzymes/cn-ii">cN-II <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h5>
                     </td>
                     <td>Cytosolic 5'-nucleotidase II (EC 3.1.3.5)</td>
                     <td>Human recombinant, expressed in E.coli</td>
