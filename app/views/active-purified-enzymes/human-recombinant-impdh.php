@@ -428,38 +428,84 @@ echo Banner::gen();
 
         </div>
 
-        <h5 class="mt-3">IMPDH in immunology</h5>
-        <p>
-            IMPDH is highly active in lymphocytes. It is a validated target to treat immunological
-            diseases and to induce immunosuppression (CellCept®, a mycophenolic acid (MPA) prodrug - Roche
-            µ CHF1.85 Bn as an immunosuppressive agent in 2006, orphan drug designation in 2006 for
-            Myasthenia Gravis; CellCept® reached positive results in Phase III trials in Lupus Nephritis).
-            IMPDH is also recognized as an excellent target for the treatment of psoriasis, rheumatoid
-            arthritis (RA), and systemic lupus erythematosus (SLE)(3).
-        </p>
-        <h6 class="mt-3">IMPDH in oncology</h6>
-        <p>
-            IMPDH, and particularly Type II, which is overexpressed in tumor cells, is considered as a
-            highly potent target for cancer chemotherapy(1, 2, 4, 5). Several IMPDH inhibitors are under
-            development for the treatment of Acute and Chronic Myelogenous Leukemia (AML, CML)(6), and
-            other cancers (pancreas, colon, bladderï¿½). Additionally, it has been shown that the use of
-            IMPDH inhibitors counteracts the drug resistance(7) that may appear in certain tumors. For
-            instance, methotrexate resistance is directly related to the overexpression of IMPDH, whose
-            inhibition restores the drug efficacy(8). Combination with other anti-cancer drugs extends the
-            potential application of IMPDH inhibitors.
-        </p>
-        <h6 class="mt-3">Current development of IMPDH inhibitors</h6>
-        <p>
-            CellCept®, ribavirin, mizoribine, and tiazofurine are examples of currently used drugs that
-            target IMPDH. Benzamide riboside, tiazofurine, and MPA are under development in Phase II/III
-            in leukemia: results are judged very encouraging(8). The IMPDH II atomic structure has been
-            resolved and it provides a valuable background for further leads optimization(9). Besides
-            nucleosides analogues, NCEs have been identified as IMPDH inhibitors(10, 11, 12, 13, 14) and
-            enter development trials (e.g. AVN-944: Phase I in advanced hematologic malignancies, Phase II
-            in pancreatic and other solid tumors). All this demonstrates how promising new IMPDH
-            inhibitors could be and why the inhibiting activity of compounds is worth being evaluated on
-            such a highly pertinent target.
-        </p>
+        <h2 class="h4 text-primary mt-4">Therapeutic Applications of IMPDH2</h2>
+        
+        <div class="card mb-4 border-0 shadow-sm">
+            <div class="card-header bg-light">
+                <h3 class="h5 mb-0">IMPDH in Immunology and Autoimmune Diseases</h3>
+            </div>
+            <div class="card-body">
+                <p>IMPDH plays a critical role in lymphocyte proliferation and immune response modulation, making it a prime target for:</p>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i> <strong>Immunosuppressive Therapies:</strong> CellCept® (mycophenolate mofetil), a prodrug of mycophenolic acid, is a well-established IMPDH inhibitor used in organ transplantation and autoimmune conditions.</li>
+                    <li class="mt-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Autoimmune Disease Management:</strong> IMPDH inhibitors show significant promise in treating various autoimmune disorders including:</li>
+                    <ul class="list-unstyled ms-4 mt-2">
+                        <li>• Systemic Lupus Erythematosus (SLE)</li>
+                        <li>• Rheumatoid Arthritis (RA)</li>
+                        <li>• Psoriasis</li>
+                        <li>• Myasthenia Gravis</li>
+                        <li>• Lupus Nephritis</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card mb-4 border-0 shadow-sm">
+            <div class="card-header bg-light">
+                <h3 class="h5 mb-0">IMPDH in Oncology and Cancer Research</h3>
+            </div>
+            <div class="card-body">
+                <p>IMPDH Type 2 is overexpressed in many cancer cells, making it an attractive target for anticancer therapies:</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="h6">Key Cancer Targets</h4>
+                        <ul>
+                            <li>Acute Myelogenous Leukemia (AML)</li>
+                            <li>Chronic Myelogenous Leukemia (CML)</li>
+                            <li>Pancreatic cancer</li>
+                            <li>Colorectal cancer</li>
+                            <li>Bladder cancer</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="h6">Therapeutic Advantages</h4>
+                        <ul>
+                            <li>Overcomes drug resistance in cancer cells</li>
+                            <li>Enhances efficacy of other anticancer drugs</li>
+                            <li>Targets rapidly dividing cancer cells</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light">
+                <h3 class="h5 mb-0">Current IMPDH Inhibitors in Development</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="h6">Approved Drugs</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-pills text-primary me-2"></i> <strong>CellCept®</strong> (mycophenolate mofetil)</li>
+                            <li><i class="fas fa-pills text-primary me-2"></i> <strong>Ribavirin</strong> (antiviral)</li>
+                            <li><i class="fas fa-pills text-primary me-2"></i> <strong>Mizoribine</strong> (immunosuppressant)</li>
+                            <li><i class="fas fa-pills text-primary me-2"></i> <strong>Tiazofurine</strong> (antineoplastic)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="h6">Promising Candidates</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-flask text-success me-2"></i> <strong>AVN-944</strong> - In trials for hematologic malignancies and solid tumors</li>
+                            <li><i class="fas fa-flask text-success me-2"></i> <strong>Benzamide riboside</strong> - Phase II/III for leukemia</li>
+                            <li><i class="fas fa-flask text-success me-2"></i> <strong>Novel small molecules</strong> - Multiple candidates in preclinical development</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="mt-3 mb-0">The continued elucidation of IMPDH's atomic structure and mechanism of action continues to drive the development of more potent and selective inhibitors, opening new possibilities for targeted therapies across multiple disease areas.</p>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="row justify-content-evenly">
