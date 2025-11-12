@@ -136,15 +136,17 @@ echo Banner::gen();
                 > 200 mU/mg protein.
             </p>
         </div>
-        <div class="col-lg-6 text-center">
-            <img
-                class="w-100"
+        <div class="col-lg-6 text-center d-flex align-items-center">
+            <div>
+                <img
+                class="img-fluid mb-3"
                 src="/app/img/IMPDH-reaction.png"
                 alt="Human IMPDH Type 2 enzymatic reaction: IMP + NAD+ → XMP + NADH + H+"
                 title="IMPDH Type 2 Catalytic Reaction"
                 loading="lazy" />
             <h4 class="novo-blue">Human IMPDH Type 2</h4>
             <h5>Ref. #E-Nov1</h5>
+            </div>
         </div>
         <div class="d-flex justify-content-center mt-4" itemscope itemtype="https://schema.org/Product">
             <meta itemprop="name" content="Human IMPDH Type 2">
