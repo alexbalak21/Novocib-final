@@ -552,7 +552,7 @@ echo Banner::gen();
 <section class="bg-light">
     <div class="referances row justify-content-center">
         <h5 class="text-center py-3 w-100">
-            References (external links to publishers)
+            Scentific References siting Novocib's IMPDH2 inhibitors
             <i class="novo-blue fa-solid fa-arrow-up-right-from-square ms-2"></i>
         </h5>
         <div class="col-2 d-none d-md-block">
