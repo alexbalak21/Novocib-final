@@ -1,167 +1,512 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <url>
-            <loc>https://www.novocib.com/</loc>
-            <lastmod>2025-07-11T12:05:00+02:00</lastmod>
-            <priority>1.00</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/freshness-assay-kits</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/freshness-assay-kits/freshness-principle</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/freshness-assay-kits/fish-freshness</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/freshness-assay-kits/freshness-assay-kit</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>1.00</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/freshness-assay-kits/how-it-works</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/hprt-assay-kit</loc>
-            <lastmod>2025-07-11T12:05:00+02:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/prpp-s-assay-kit</loc>
-            <lastmod>2025-07-11T12:05:00+02:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/ampda-assay-kit</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/itp-ase-deficiency-assay-kit</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/adk-phosphorylation-assay-kit</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/dck-phosphorylation-assay-kit</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/human-recombinant-impdh</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/human-recombinant-pnp</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/bacterial-recombinant-impdh</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/adk-assay-kit</loc>
-            <lastmod>2025-07-11T12:05:00+02:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/convenient-assay-kits/phosphatase-assay-kit</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/active-purified-enzymes</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>1.0</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/active-purified-enzymes/impdh-recombinant-enzyme</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/active-purified-enzymes/human-recombinant-hgprt</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/active-purified-enzymes/recombinant-adenosine-kinase</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/active-purified-enzymes/recombinant-deoxycytidine-kinase</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/active-purified-enzymes/human-ump-cmp-kinase</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/nucleotide-analysis-service</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/analytical-services/yeast-extract-nucleotide-analysis</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/cellular-nucleotides-analysis</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/bacterial-luciferase</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/contact-us</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/nucleotides</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.80</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/news</loc>
-            <lastmod>2024-04-25T12:01:28+00:00</lastmod>
-            <priority>0.30</priority>
-        </url>
-        <url>
-            <loc>https://www.novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit</loc>
-            <lastmod>2025-07-11T12:03:00+02:00</lastmod>
-            <priority>1.00</priority>
-        </url>
-        
-    </url>
+
+<url>
+  <loc>https://novocib.com/</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://novocib.com/freshness-assay-kits</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/dietary-nucleotides-assay-kits/fish-freshness-assay-kit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/freshness-assay-kits/freshness-principle</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/freshness-assay-kits/fish-freshness</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/freshness-assay-kits/freshness-assay-kit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/freshness-assay-kits/how-it-works</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/convenient-assay-kits</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/convenient-assay-kits/hprt-assay-kit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/convenient-assay-kits/prpp-s-assay-kit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/convenient-assay-kits/ampda-assay-kit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/convenient-assay-kits/itp-ase-assay-kit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/convenient-assay-kits/adk-phosphorylation-assay-kit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/convenient-assay-kits/dck-phosphorylation-assay-kit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/active-purified-enzymes/human-recombinant-impdh</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/convenient-assay-kits/human-recombinant-pnp</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/convenient-assay-kits/bacterial-recombinant-impdh</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/convenient-assay-kits/adk-assay-kit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/active-purified-enzymes</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/active-purified-enzymes/recombinant-adenosine-kinase</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/active-purified-enzymes/recombinant-deoxycytidine-kinase</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/active-purified-enzymes/human-ump-cmp-kinase</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/active-purified-enzymes/cn-ii</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/active-purified-enzymes/human-recombinant-hgprt</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/active-purified-enzymes/fmn-reductase</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/analytical-services</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/nucleotide-analysis-service</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/analytical-services/yeast-extract-nucleotide-analysis</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/analytical-services/cellular-nucleotides-analysis</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/dietary-nucleotides</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/contact-us</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/news</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://novocib.com/dietary-nucleotides-assay-kits</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0700-003-06&amp;product=PRECICE%C2%AE%20IMP,%20Inosine%20and%20Hypoxanthine%20Assay%20Kit&amp;volume=6%20samples%20(microplate)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0700-003-12&amp;product=PRECICE%C2%AE%20IMP,%20Inosine%20and%20Hypoxanthine%20Assay%20Kit&amp;volume=12%20samples%20(microplate)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/PRECICE%20Freshness%20Assay%20Manual%20for%20Spectrophotometer%20K0700-004.pdf</loc>
+  <lastmod>2025-07-21T12:04:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=none&amp;product=Freshness%20Assay%20Kit%20-%2010%20samples</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/PRECICE%20Freshness%20Assay%20Manual%20K0700-003%20140709.pdf</loc>
+  <lastmod>2025-07-21T12:04:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=none&amp;product=Freshness%20Assay%20Kit%20-%2022%20samples</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/PRECICE%20Nucleotides%20Assay%20Kit%20K0700-004.pdf</loc>
+  <lastmod>2025-07-21T12:04:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/PRECICE%20Nucleotides%20Assay%20Kit%20K0700-003.pdf</loc>
+  <lastmod>2025-07-21T12:04:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;product=PRCE%C2%AE%20Freshness%20Assay%20Kit%20-%20K(IMP)%20-%20K0700-001-15</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;product=PRCE%C2%AE%20Freshness%20Assay%20Kit%20-%20K(IMP)%20-%20K0700-001-31</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;product=PRCE%C2%AE%20Freshness%20Assay%20Kit%20-%20(IMP,%20Ino%20&amp;%20Hx)%20-%20K0700-001-22</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/PRECICE%20Ultra-Freshness%20Assay%20Manual%20K0700-01%20131124E.pdf</loc>
+  <lastmod>2025-07-21T12:04:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;price=420&amp;product=PRECICE%C2%AE%20HPRT%20Assay%20Kit&amp;volume=10%20mL,%2024%20analyses%20(8%20samples%20in%20triplicate)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20K0709-01-2%2024%20samples%20User%20Manual%20010725.pdf</loc>
+  <lastmod>2025-07-21T12:04:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/PRECICE%20HPRT%20Assay%20kit%20AN%20K0709-01%20110609.pdf</loc>
+  <lastmod>2025-07-21T12:04:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/Novocib-HPRT-MSDS.pdf</loc>
+  <lastmod>2025-07-21T12:04:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-04-2&amp;price=515&amp;product=PRECICE%C2%AE%20PRPP-S%20Assay%20Kit&amp;volume=10%20mL%20of%20reaction%20mixture%20(half%2096-well%20plate)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20K0709-02-2%20User%20Manual.pdf</loc>
+  <lastmod>2025-07-21T12:04:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-05-2&amp;price=510&amp;product=AMP+Deaminase+Assay+Kit&amp;volume=24%20analyses%20(10%20ml%20reaction%20buffer)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20K0709-05-01%20User%20Manual%20300823.pdf</loc>
+  <lastmod>2025-07-21T12:04:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-06-2&amp;price=440&amp;product=ITP-ase%20Assay%20Kit&amp;volume=10%20mL%20of%20reaction%20mixture%20(half%2096-well%20plate)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20K0709-06-02%20User%20Manual%20230924.pdf</loc>
+  <lastmod>2025-07-21T12:04:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0507-02&amp;price=530&amp;product=ADK%20Phosphorylation%20Assay%20Kit&amp;volume=1%20plate%20(96%20assays)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20K0507-02-User%20Manual%20v140220SR.pdf</loc>
+  <lastmod>2025-07-21T12:04:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0307-01&amp;price=530&amp;product=dCK%20Phosphorylation%20Assay%20Kit&amp;volume=1%20plate%20(96%20assays)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20K0307-01-User%20Manual%20v140213SR%20Phosphorylation.pdf</loc>
+  <lastmod>2025-07-21T12:04:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0307-01&amp;product=dCK%20Phosphorylation%20Assay%20Kit&amp;volume=1%20plate%20(96%20assays)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov1-100&amp;price=295&amp;product=Human+IMPDH+Type+2&amp;volume=100mU</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov1-250&amp;price=550&amp;product=Human+IMPDH+Type+2&amp;volume=250mU</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20IMPDH%20Services.pdf</loc>
+  <lastmod>2025-07-21T12:04:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20E-Nov1.pdf</loc>
+  <lastmod>2025-07-21T12:04:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov2-10&amp;price=350&amp;product=PRECICE%20PRPP-S%20Assay%20Kit&amp;volume=10%20Units</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov2-25&amp;price=780&amp;product=PRECICE%20PRPP-S%20Assay%20Kit&amp;volume=25%20Units</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20E-Nov2.pdf</loc>
+  <lastmod>2025-07-21T12:04:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;product=12%20analyses%20(4%20samples%20in%20triplicate)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0507-01.01&amp;price=530&amp;product=Adk+Assay+Kit&amp;volume=1%20plate%20(96%20assays)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20K0507-01-User%20Manual%20121217%20-%20one%20plate.pdf</loc>
+  <lastmod>2025-07-21T12:04:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0507-01.01&amp;product=Adk%20Assay%20Kit&amp;volume=1%20plate%20(96%20assays)</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/Novocib_Nucleoside_kinases.pdf</loc>
+  <lastmod>2025-10-27T09:38:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/bacterial-luciferase</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov5-100&amp;price=355&amp;product=Human+Adenosine+Kinase&amp;volume=100%20mUnits</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov5-200&amp;price=625&amp;product=Human+Adenosine+Kinase&amp;volume=200%20mUnits</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov3-500&amp;price=295&amp;product=Human+Deoxycytidine+Kinase&amp;volume=500%20mUnits</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov3-2000&amp;price=945&amp;product=Human+Deoxycytidine+Kinase&amp;volume=2%20Units</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;product=Human%20UMP-CMP%20Kinase%20-%201%20Unit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;product=Human%20UMP-CMP%20Kinase%20-%205%20Unit</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20E-Nov4.pdf</loc>
+  <lastmod>2025-07-21T12:04:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov6-50&amp;price=350&amp;product=Human+cytosolic+5%27-nucleotidase+II&amp;volume=50%20mUnits</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov6-100&amp;price=560&amp;product=Human+cytosolic+5%27-nucleotidase+II&amp;volume=100%20mUnits</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/Novocib%20E-Nov6.pdf</loc>
+  <lastmod>2025-07-21T12:04:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;product=Human%20HGPRT%20-%20100mUnits</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov8%2025&amp;price=440&amp;product=FMN-Reductase&amp;volume=25%20Units</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov8%2050&amp;price=705&amp;product=FMN-Reductase&amp;volume=50%20Units</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=E-Nov8%20100&amp;price=825&amp;product=FMN-Reductase&amp;volume=100%20Units</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20E-Nov8.pdf</loc>
+  <lastmod>2025-07-21T12:04:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=S1200-03-NA&amp;price=420&amp;product=Dietary%20Nucleotides%20Analysis</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=S1200-03-RNA&amp;price=380&amp;product=RNA%20Analysis</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=S1200-03-PURINES&amp;price=30&amp;product=Purines%20Analysis</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=S1200-03&amp;price=420&amp;product=Yeast%20Extract%20Nucleotides%20HPLC-UV%20analysis</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=S1200-04&amp;price=350&amp;product=HPLC-UV%20analysis%20for%20full%20spectra%20of%20cellular%20nucleotides%20(bases,%20nucleosides,%20NMP,%20NDP%20and%20NTP)%20in%20cell%20extracts.</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20MOA%20Studies%20-%20Nucleotide%20Profiling.pdf</loc>
+  <lastmod>2025-07-21T12:04:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB-Customized-Nucleotide-Analysis.pdf</loc>
+  <lastmod>2025-07-21T12:04:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;product=Bacterial%20Luciferase%20-%201mg%20-%20</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;product=Bacterial%20Luciferase%20-%202mg%20-%20</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://novocib.com/inquiry?ref=K0709-01-2&amp;product=Bacterial%20Luciferase%20-%205mg%20-%20</loc>
+  <lastmod>2025-11-12T21:46:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://novocib.com/app/documents/NovoCIB%20E-Nov10.pdf</loc>
+  <lastmod>2025-07-21T12:04:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
