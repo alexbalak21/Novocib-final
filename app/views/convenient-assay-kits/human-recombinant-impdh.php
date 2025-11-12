@@ -4,20 +4,20 @@ $title = "Active Human IMPDH Type 2 Enzyme";
 
 // META TAGS 
 ob_start(); ?>
-<title>Human IMPDH Type 2 (IMPDH2) Assay Kit | NOVOCIB</title>
-<meta name="description" content="High-purity Human IMPDH Type 2 (IMPDH2) enzyme assay kit for research. Characterized for substrate affinity and inhibitor sensitivity. Ideal for drug discovery and cancer research.">
-<meta name="keywords" content="Human IMPDH2, IMPDH Type 2 Assay Kit, Inosine Monophosphate Dehydrogenase, IMPDH inhibitor screening, mycophenolic acid, ribavirin monophosphate, GTP biosynthesis, cancer research, immunosuppression, enzyme activity assay, E.C.1.1.1.205, drug discovery, NOVOCIB">
+<title>Human IMPDH Type 2 (IMPDH2)</title>
+<meta name="description" content="High-purity Human IMPDH Type 2 (IMPDH2) enzyme for research. Characterized for substrate affinity and inhibitor sensitivity. Ideal for drug discovery and cancer research.">
+<meta name="keywords" content="Human IMPDH2, IMPDH Type 2, Inosine Monophosphate Dehydrogenase, IMPDH inhibitor screening, mycophenolic acid, ribavirin monophosphate, GTP biosynthesis, cancer research, immunosuppression, enzyme activity assay, E.C.1.1.1.205, drug discovery, NOVOCIB">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.novocib.com/convenient-assay-kits/human-recombinant-impdh">
-<meta property="og:title" content="Human IMPDH Type 2 (IMPDH2) Assay Kit | NOVOCIB">
+<meta property="og:title" content="Human IMPDH Type 2 (IMPDH2)">
 <meta property="og:description" content="High-purity Human IMPDH Type 2 enzyme for research and drug discovery. Characterized for substrate affinity and inhibitor sensitivity.">
 <meta property="og:image" content="https://www.novocib.com/app/img/IMPDH-reaction.png">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Human IMPDH Type 2 (IMPDH2) Assay Kit | NOVOCIB">
+<meta name="twitter:title" content="Human IMPDH Type 2 (IMPDH2)">
 <meta name="twitter:description" content="High-purity Human IMPDH Type 2 enzyme for research and drug discovery. Characterized for substrate affinity and inhibitor sensitivity.">
 <meta name="twitter:image" content="https://www.novocib.com/app/img/IMPDH-reaction.png">
 
@@ -31,7 +31,7 @@ echo Banner::gen();
 ?>
 
 <section class="container mt-5">
-    <h1 class="underlinedTitle right"><span class="underlined novoblue right">Human IMPDH, Type II (IMPDH2) Assay Kit</span></h1>
+    <h1 class="underlinedTitle right"><span class="underlined novoblue right">Human IMPDH, Type II (IMPDH2)</span></h1>
     <div class="row">
         <div class="col-lg-6">
             <p>
@@ -68,18 +68,18 @@ echo Banner::gen();
             <img
                 class="w-100"
                 src="/app/img/IMPDH-reaction.png"
-                alt="Human IMPDH Type 2 enzymatic reaction: IMP + NAD+ → XMP + NADH + H+" 
-                title="IMPDH Type 2 Catalytic Reaction" 
+                alt="Human IMPDH Type 2 enzymatic reaction: IMP + NAD+ → XMP + NADH + H+"
+                title="IMPDH Type 2 Catalytic Reaction"
                 loading="lazy" />
             <h4 class="novo-blue">Human IMPDH Type 2</h4>
             <h5>Ref. #E-Nov1</h5>
         </div>
         <div class="d-flex justify-content-center mt-4" itemscope itemtype="https://schema.org/Product">
-    <meta itemprop="name" content="Human IMPDH Type 2 Assay Kit">
-    <meta itemprop="description" content="High-purity Human IMPDH Type 2 enzyme for research and drug discovery applications.">
-    <div itemprop="brand" itemtype="https://schema.org/Brand" itemscope>
-        <meta itemprop="name" content="NOVOCIB">
-    </div>
+            <meta itemprop="name" content="Human IMPDH Type 2">
+            <meta itemprop="description" content="High-purity Human IMPDH Type 2 enzyme for research and drug discovery applications.">
+            <div itemprop="brand" itemtype="https://schema.org/Brand" itemscope>
+                <meta itemprop="name" content="NOVOCIB">
+            </div>
             <div class="col-lg-10 col-12">
                 <?= Products::gen("Human IMPDH Type 2") ?>
                 <div class="text-center" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
@@ -88,7 +88,7 @@ echo Banner::gen();
                     </p>
                     <p class="mb-2">
                         <strong>Kit is provided in stable lyophilized form and
-                        <span class="text-danger">shipped without dry ice</span></strong>
+                            <span class="text-danger">shipped without dry ice</span></strong>
                     </p>
                     <meta itemprop="priceCurrency" content="USD">
                     <link itemprop="availability" href="https://schema.org/InStock">
@@ -142,9 +142,180 @@ echo Banner::gen();
         </p>
     </div>
 </section>
+<section class="container my-5">
+    <h3 class="text-center text-primary mb-4">How to measure the activity of IMPDH 2</h3>
+    <ol class="list-group list-group-numbered mb-4">
+        <li class="list-group-item">Resuspend the content of the tube with lyophilized IMPDH type 2 (50–100 mU) in 200 µL of deionized water.</li>
+        <li class="list-group-item">Prepare fresh reaction buffer: 1 mL of 50 mM KH₂PO₄ pH 8.5, 5 mM DTT*, 1 mM IMP*, 36°C.</li>
+        <li class="list-group-item">Add 20 µL of IMPDH (or 10 µL for 100 µL) per 1 mL of buffer without NAD*.</li>
+        <li class="list-group-item">Add 200 µL of this mixture to 4 wells and preincubate at 36°C for 10 min.</li>
+        <li class="list-group-item">To start the reaction, add 5 µL of 40 mM NAD (1 mM final concentration) to 2 wells, leaving 2 others as a blank.</li>
+        <li class="list-group-item">Follow the reaction at 340 nm and 25–36°C.</li>
+    </ol>
+    <p class="text-muted"><em>*For best results, always use freshly prepared solutions of DTT, IMP, and NAD.</em></p>
+
+    <h5 class="mt-5 mb-3 text-center text-secondary">Absorbance at 340 nm (200 µL per well, Corning® 3797 microplate)</h5>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped text-center">
+            <thead class="table-light">
+                <tr>
+                    <th>Time (min)</th>
+                    <th>IMP 1 mM, no NAD</th>
+                    <th>IMP 1 mM, no NAD (duplicate)</th>
+                    <th>IMP 1 mM + 1 mM NAD</th>
+                    <th>IMP 1 mM + 1 mM NAD (duplicate)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>0.118</td>
+                    <td>0.116</td>
+                    <td>0.167</td>
+                    <td>0.165</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0.118</td>
+                    <td>0.116</td>
+                    <td>0.205</td>
+                    <td>0.203</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>0.119</td>
+                    <td>0.117</td>
+                    <td>0.244</td>
+                    <td>0.240</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>0.120</td>
+                    <td>0.116</td>
+                    <td>0.283</td>
+                    <td>0.278</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>0.121</td>
+                    <td>0.116</td>
+                    <td>0.322</td>
+                    <td>0.316</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>0.121</td>
+                    <td>0.116</td>
+                    <td>0.362</td>
+                    <td>0.354</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>0.121</td>
+                    <td>0.116</td>
+                    <td>0.401</td>
+                    <td>0.392</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>0.122</td>
+                    <td>0.116</td>
+                    <td>0.440</td>
+                    <td>0.430</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5 class="mt-4">Calculated Slopes (AU/min)</h5>
+    <ul class="list-group mb-3">
+        <li class="list-group-item">IMP 1 mM, no NAD: 0.0006</li>
+        <li class="list-group-item">IMP 1 mM, no NAD (duplicate): 0</li>
+        <li class="list-group-item">IMP 1 mM + 1 mM NAD: 0.0391</li>
+        <li class="list-group-item">IMP 1 mM + 1 mM NAD (duplicate): 0.0378</li>
+    </ul>
+
+    <h5>Slope Mean (AU/min)</h5>
+    <ul class="list-group mb-3">
+        <li class="list-group-item">IMP 1 mM, no NAD: 0.0003</li>
+        <li class="list-group-item">IMP 1 mM + 1 mM NAD: 0.0385</li>
+    </ul>
+
+    <h5>Slope After Blank Subtraction</h5>
+    <p class="mb-3">AU/min: <strong>0.0382</strong></p>
+
+    <h5>Enzyme Activity Calculations</h5>
+    <ul class="list-group">
+        <li class="list-group-item">Activity in well (U/mL): 0.00796</li>
+        <li class="list-group-item">Dilution factor (20 µL per 1 mL): ×50</li>
+        <li class="list-group-item">Activity of enzyme solution (U/mL): <strong>0.398</strong></li>
+        <li class="list-group-item">Amount of enzyme per tube (Units): <strong>0.080</strong></li>
+    </ul>
+
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <div class="container my-5">
+        <h5 class="text-center text-secondary mb-4">Kinetics of NADH Formation</h5>
+        <canvas id="nadGraph" width="600" height="400"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('nadGraph').getContext('2d');
+        const nadGraph = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [0, 1, 2, 3, 4, 5, 6, 7],
+                datasets: [{
+                        label: 'IMP 1mM, no NAD',
+                        data: [0.118, 0.118, 0.119, 0.120, 0.121, 0.121, 0.121, 0.122],
+                        borderColor: 'blue',
+                        fill: false
+                    },
+                    {
+                        label: 'IMP 1mM, no NAD (duplicate)',
+                        data: [0.116, 0.116, 0.117, 0.116, 0.116, 0.116, 0.116, 0.116],
+                        borderColor: 'orange',
+                        fill: false
+                    },
+                    {
+                        label: 'IMP 1mM + 1mM NAD',
+                        data: [0.167, 0.205, 0.244, 0.280, 0.322, 0.362, 0.401, 0.440],
+                        borderColor: 'gray',
+                        fill: false
+                    },
+                    {
+                        label: 'IMP 1mM + 1mM NAD (duplicate)',
+                        data: [0.165, 0.203, 0.241, 0.276, 0.316, 0.354, 0.392, 0.430],
+                        borderColor: 'gold',
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Time (min)'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Absorbance at 340 nm'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</section>
+
 <section class="bg-white py-4">
     <div class="container">
-        <h2 class="novo-blue mb-4">IMPDH - A Key Target for Therapeutic Applications</h2>
+        <h2 class="novo-blue mb-4 text-center">IMPDH - A Key Target for Therapeutic Applications</h2>
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="card shadow-sm mb-4">
@@ -161,14 +332,14 @@ echo Banner::gen();
             </div>
         </div>
         <div class="alert alert-info">
-    <h4 class="alert-heading">Research Applications</h4>
-    <p class="mb-0">Our IMPDH Type 2 is ideal for: drug discovery, cancer research, immunology studies, enzyme kinetics, and high-throughput screening of potential inhibitors.</p>
-</div>
+            <h4 class="alert-heading">Research Applications</h4>
+            <p class="mb-0">Our IMPDH Type 2 is ideal for: drug discovery, cancer research, immunology studies, enzyme kinetics, and high-throughput screening of potential inhibitors.</p>
+        </div>
 
-<p class="mt-4">
-    <strong>Synonyms:</strong>
-    inosine 5'-monophosphate dehydrogenase, IMP dehydrogenase, IMPDH2, IMP (inosine monophosphate) dehydrogenase 2
-</p>
+        <p class="mt-4">
+            <strong>Synonyms:</strong>
+            inosine 5'-monophosphate dehydrogenase, IMP dehydrogenase, IMPDH2, IMP (inosine monophosphate) dehydrogenase 2
+        </p>
         <p>
             <strong>Catalytic activity</strong>
             <br />
@@ -290,4 +461,4 @@ echo Banner::gen();
             </ol>
         </div>
     </div>
-</section>  
+</section>

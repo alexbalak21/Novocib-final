@@ -8,7 +8,7 @@ $requests = request404_read_all($page);
 $total = count_404_requests();
 ?>
 
-<main class="container" style="height: 93vh;">
+<main class="mx-2" style="height: 93vh;">
     <div class="mt-5 mx-auto">
         <table class="table table-bordered">
             <thead class="bg-light">

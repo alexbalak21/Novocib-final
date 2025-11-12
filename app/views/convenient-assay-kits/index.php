@@ -28,38 +28,38 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 <!-- Schema.org markup -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Biochemical Assay Kits for Nucleotide Metabolism Research",
-  "description": "High-quality, ready-to-use biochemical assay kits for nucleotide metabolism research and drug discovery applications.",
-  "url": "https://www.novocib.com/convenient-assay-kits",
-  "publisher": {
-    "@type": "Organization",
-    "name": "NOVOCIB",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.novocib.com/app/img/logo.png"
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Biochemical Assay Kits for Nucleotide Metabolism Research",
+        "description": "High-quality, ready-to-use biochemical assay kits for nucleotide metabolism research and drug discovery applications.",
+        "url": "https://www.novocib.com/convenient-assay-kits",
+        "publisher": {
+            "@type": "Organization",
+            "name": "NOVOCIB",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.novocib.com/app/img/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novocib.com/convenient-assay-kits/"
+        }
     }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.novocib.com/convenient-assay-kits/"
-  }
-}
 </script>
 
 <?= Banner::gen("/app/img/assay-kits.jpg", "Biochemical Assay Kits for Nucleotide Metabolism Research") ?>
 
 <!-- Breadcrumbs -->
-<div aria-label="breadcrumb" class="bg-light py-2">
+<!-- <div aria-label="breadcrumb" class="bg-light py-2">
     <div class="container">
         <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="/">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Convenient Assay Kits</li>
         </ol>
     </div>
-</div>
+</div> -->
 <main class="container mt-5">
     <article>
         <div class="text-center mb-5 py-3">
@@ -72,7 +72,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
         <section class="row align-items-center mb-5">
             <div class="col-lg-8 mx-auto text-center">
                 <p class="mb-4"><strong class="text-novoblue">NOVOCIB</strong> develops and manufactures high-quality biochemical assay kits based on active nucleotide metabolism enzymes. Our portfolio represents a unique range of powerful tools for drug discovery and research in the field of nucleoside and nucleotide metabolism.</p>
-                
+
                 <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
                     <span class="badge bg-primary bg-opacity-10 text-primary p-2"><i class="fas fa-check-circle me-2"></i>Ready-to-use formats</span>
                     <span class="badge bg-primary bg-opacity-10 text-primary p-2"><i class="fas fa-flask me-2"></i>Validated protocols</span>
@@ -92,13 +92,13 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                     </div>
                 </div>
             </div>
-            
+
             <div class="row justify-content-center">
                 <div class="col-lg-5 me-lg-4 mb-4 mb-lg-0">
                     <div class="card h-100 border-0 shadow-sm">
                         <div class="card-body p-4">
                             <h2 class="h3 text-center mb-4">Purine Metabolism Disorders Kits</h2>
-                    <div class="row g-3">
+                            <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="card h-100 border-0 bg-light">
                                         <div class="card-body text-center p-3">
@@ -144,12 +144,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-5">
                     <div class="card h-100 border-0 shadow-sm">
                         <div class="card-body p-4">
                             <h2 class="h3 text-center mb-4">Nucleoside Kinase Assay Kits</h2>
-                    <div class="row g-3">
+                            <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="card h-100 border-0 bg-light">
                                         <div class="card-body text-center p-3">
@@ -192,9 +192,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body text-center p-4">
                         <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-                           <a href="/convenient-assay-kits/human-recombinant-impdh" class="text-decoration-none">
-                            <i class="fas fa-dna fa-2x text-primary"></i>
-                           </a>
+                            <a href="/convenient-assay-kits/human-recombinant-impdh" class="text-decoration-none">
+                                <i class="fas fa-dna fa-2x text-primary"></i>
+                            </a>
                         </div>
                         <h3 class="h5"><a href="/convenient-assay-kits/human-recombinant-impdh" class="text-decoration-none">Human IMPDH Type II</a></h3>
                     </div>
@@ -279,11 +279,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 </div>
             </div>
         </div>
-        
+
         <div class="text-center mt-5 pt-4">
             <h3 class="h4 mb-4">Ready to enhance your research?</h3>
             <a href="/contact" class="btn btn-primary btn-lg me-3">Request a Quote</a>
             <!-- <a href="/technical-support" class="btn btn-outline-primary btn-lg">Technical Support</a> -->
         </div>
-</section>
+    </section>
 </main>
