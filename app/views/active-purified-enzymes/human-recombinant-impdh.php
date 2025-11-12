@@ -27,45 +27,54 @@ ob_start(); ?>
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Active Purified Enzymes for Nucleotide Metabolism Research",
-        "description": "High-purity enzymes for nucleotide metabolism research, drug discovery, and biopharmaceutical development.",
-        "url": "https://www.novocib.com/active-purified-enzymes",
-        "publisher": {
-            "@type": "Organization",
-            "name": "NOVOCIB",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.novocib.com/app/img/logo.png"
-            }
+        "@type": "Product",
+        "name": "Human IMPDH Type 2 (IMPDH2) Enzyme",
+        "description": "High-purity Human IMPDH Type 2 (IMPDH2) enzyme for research. Characterized for substrate affinity and inhibitor sensitivity. Ideal for drug discovery and cancer research.",
+        "brand": {
+            "@type": "Brand",
+            "name": "NOVOCIB"
+        },
+        "url": "https://www.novocib.com/convenient-assay-kits/human-recombinant-impdh",
+        "image": "https://www.novocib.com/app/img/IMPDH-reaction.png",
+        "category": "Research Enzymes",
+        "sku": "IMPDH2-50U",
+        "offers": {
+            "@type": "Offer",
+            "url": "https://www.novocib.com/convenient-assay-kits/human-recombinant-impdh",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
         },
         "mainEntity": [{
             "@type": "FAQPage",
             "mainEntity": [{
-                    "@type": "Question",
-                    "name": "What are the main applications of NOVOCIB's purified enzymes?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Our enzymes are widely used in drug discovery, antiviral and anticancer research, nucleotide metabolism studies, and biochemical screening assays. They are particularly valuable for in vitro phosphorylation studies and nucleoside analogue research."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Are these enzymes suitable for high-throughput screening?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes, our enzymes are provided in lyophilized form with high purity and activity, making them ideal for high-throughput screening applications and reproducible research."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "What quality controls are performed on the enzymes?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Each enzyme batch undergoes rigorous quality control including activity assays, purity assessment by SDS-PAGE, and endotoxin testing to ensure research-grade quality and consistency."
-                    }
+                "@type": "Question",
+                "name": "What is IMPDH Type 2 and what is its biological significance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "IMPDH Type 2 (IMPDH2) is a key enzyme in the de novo biosynthesis of guanine nucleotides. It converts inosine 5'-monophosphate (IMP) to xanthosine 5'-monophosphate (XMP), which is a crucial step in the production of GTP and dGTP. This enzyme is particularly important in rapidly dividing cells and is a validated target for immunosuppressive, antiviral, and anticancer therapies."
                 }
-            ]
+            }, {
+                "@type": "Question",
+                "name": "What are the main applications of Human IMPDH2?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Human IMPDH2 is widely used in drug discovery for cancer and autoimmune diseases, antiviral research, nucleotide metabolism studies, and high-throughput screening of potential enzyme inhibitors. It's particularly valuable for studying the mechanism of action of immunosuppressants like mycophenolic acid and ribavirin."
+                }
+            }, {
+                "@type": "Question",
+                "name": "What quality controls are performed on the IMPDH2 enzyme?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Each batch of Human IMPDH2 undergoes rigorous quality control including: activity assays to ensure specific activity, SDS-PAGE analysis for purity assessment, endotoxin testing, and functional validation in inhibitor screening assays. The enzyme is provided with a detailed Certificate of Analysis."
+                }
+            }, {
+                "@type": "Question",
+                "name": "What is the recommended storage and handling for IMPDH2?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The lyophilized enzyme should be stored at -20°C. Upon reconstitution, the enzyme should be aliquoted and stored at -80°C. Avoid repeated freeze-thaw cycles. The enzyme remains stable for at least 6 months when stored properly. Always keep the enzyme on ice when in use."
+                }
+            }]
         }]
     }
 </script>
@@ -123,8 +132,8 @@ echo Banner::gen();
                 8.8 at 37 µC.
             </p>
             <p>
-                <strong>Specific Activity:</strong>
-                ≥ 0.050 unit/mg protein.
+                <b>High Specific Activity:</b>
+                > 200 mU/mg protein.
             </p>
         </div>
         <div class="col-lg-6 text-center">
@@ -150,8 +159,8 @@ echo Banner::gen();
                         <strong>Product Code: </strong><span itemprop="sku">E-Nov1</span>
                     </p>
                     <p class="mb-2">
-                        <strong>Kit is provided in stable lyophilized form and
-                            <span class="text-danger">shipped without dry ice</span></strong>
+                        <b>Kit is provided in stable lyophilized form and
+                            <span class="text-danger">shipped without dry ice</span></b>
                     </p>
                     <meta itemprop="priceCurrency" content="USD">
                     <link itemprop="availability" href="https://schema.org/InStock">
