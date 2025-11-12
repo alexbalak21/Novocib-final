@@ -563,33 +563,36 @@ echo Banner::gen();
             <ol>
                 <li>
                     <a target="_blank" rel="noopener" href="https://aces.onlinelibrary.wiley.com/doi/10.1002/ajoc.202500584" title="Go to article on Wiley Online Library">
-                        2025: Article DOI 10.1002/ajoc.202500584 <em>Asian Journal of Organic Chemistry</em>
+                        <em>S. Puri, Shalini, K. Juvale, S. Kirubakaran</em><br>
+                        Design and Development of New Benzopyrazole Derivatives as Selective Inhibitors of Helicobacter pylori IMPDH Asian Journal of Organic Chemistry. 2025, e00584.
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/39369481/" title="Go to PubMed">
-                        Y. Zhang <em>et al.</em> (2024): Discovery of novel IMPDH inhibitors targeting cancer metabolism <em>J. Med. Chem.</em> 67(3), 1123–1135
+                        <em>Ayoub N, Upadhyay A, Tête A, Pietrancosta N, Munier-Lehmann H, O'Sullivan TP.</em><br>
+                        Synthesis, evaluation and mechanistic insights of novel IMPDH inhibitors targeting ESKAPEE bacteria. Eur J Med Chem. 2024 Dec 15;280:116920. doi: 10.1016/j.ejmech.2024.116920. Epub 2024 Sep 27. PMID: 39369481.
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/abs/pii/S0223523418307888?via%3Dihub" title="Go to ScienceDirect">
-                        C. P. Shah; P. S. Kharkar <em>et al.</em> (2018): Discovery of novel human inosine 5′-monophosphate dehydrogenase 2 (hIMPDH2) inhibitors as potential anticancer agents <em>European Journal of Medicinal Chemistry</em> 158, 286–301
+                    <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6009919/" title="Go to NIH">
+                       <em>Shah CP, Kharkar PS.</em><br>Newer human inosine 5'-monophosphate dehydrogenase 2 (hIMPDH2) inhibitors as potential anticancer agents. J Enzyme Inhib Med Chem. 2018 Dec;33(1):972-977. doi: 10.1080/14756366.2018.1474211. PMID: 29792360; PMCID: PMC6009919.
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6009919/" title="Go to PubMed Central">
-                        M. S. Diamond <em>et al.</em> (2018): The broad-spectrum antiviral ribonucleoside analog β-D-N<sup>4</sup>-hydroxycytidine inhibits SARS-CoV-2 replication <em>Nat. Commun.</em> 9, Article 4504
+                    <a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/abs/pii/S0223523418307888" title="Go to ScienceDirect">
+                       <em>Chetan P. Shah, Prashant S. Kharkar</em><br>Discovery of novel human inosine 5'-monophosphate dehydrogenase 2 (hIMPDH2) inhibitors as potential anticancer agents,
+                       European Journal of Medicinal Chemistry, Volume 158, 2018, Pages 286-301
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/23346382/" title="Go to PubMed">
-                        PubMed PMID 23346382 (2013): article details on PubMed
+                        <em>Matyugina ES, Andreevskaya SN, Smirnova TG, Khandazhinskaya AL.</em><br>Carbocyclic analogues of inosine-5'-monophosphate: synthesis and biological activity. Acta Naturae. 2012 Oct;4(4):73-7. PMID: 23346382; PMCID: PMC3549521.
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel="noopener" href="https://ashpublications.org/blood/article/144/Supplement%201/1602/532191/Inosine-Monophosphate-Dehydrogenase-2-IMPDH2-As" title="Go to Blood journal">
-                        2023: Inosine Monophosphate Dehydrogenase 2 (IMPDH2) As a Therapeutic Target in Hematologic Malignancies <em>Blood</em> 144(Supplement 1):1602
-                    </a>
+                       <em>Johnvesly Basappa, Shengchun Wang, Cosimo Lobello, David Rushmore, Olga Melnikov, Neil Sen, Vinay Mallikarjuna, Priyanka Jain, Pin Lu, Y. Lynn Wang, Kathy Cai, Reza Nejati, Aaron Goldman, Mariusz Wasik</em><br>
+                        Inosine Monophosphate Dehydrogenase-2 (IMPDH2) As the Potential Novel Therapeutic Target in Mantle Cell Lymphoma (MCL): The Underlying Tyrosine Phosphorylation-Based Activation Mechanism and Translational Implications. Blood 2024; 144 (Supplement 1): 1602
                 </li>
             </ol>
         </div>
