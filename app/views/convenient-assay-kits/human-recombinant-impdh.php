@@ -1,23 +1,28 @@
+<!-- OLD VERSION OF THE PAGE NO LONGER IN USE - REDIRECTING TO THE NEW PATH -->
 <?php
 global $title;
 $title = "Active Human IMPDH Type 2 Enzyme";
 
+//REDIRECT TO /active-purified-enzymes/human-recombinant-impdh.php
+header("Location: /active-purified-enzymes/human-recombinant-impdh");
+exit();
+
 // META TAGS 
 ob_start(); ?>
-<title>Human IMPDH Type 2 (IMPDH2)</title>
-<meta name="description" content="High-purity Human IMPDH Type 2 (IMPDH2) enzyme for research. Characterized for substrate affinity and inhibitor sensitivity. Ideal for drug discovery and cancer research.">
-<meta name="keywords" content="Human IMPDH2, IMPDH Type 2, Inosine Monophosphate Dehydrogenase, IMPDH inhibitor screening, mycophenolic acid, ribavirin monophosphate, GTP biosynthesis, cancer research, immunosuppression, enzyme activity assay, E.C.1.1.1.205, drug discovery, NOVOCIB">
+<title>Human IMPDH Type 2 (IMPDH2) Assay Kit | NOVOCIB</title>
+<meta name="description" content="High-purity Human IMPDH Type 2 (IMPDH2) enzyme assay kit for research. Characterized for substrate affinity and inhibitor sensitivity. Ideal for drug discovery and cancer research.">
+<meta name="keywords" content="Human IMPDH2, IMPDH Type 2 Assay Kit, Inosine Monophosphate Dehydrogenase, IMPDH inhibitor screening, mycophenolic acid, ribavirin monophosphate, GTP biosynthesis, cancer research, immunosuppression, enzyme activity assay, E.C.1.1.1.205, drug discovery, NOVOCIB">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.novocib.com/convenient-assay-kits/human-recombinant-impdh">
-<meta property="og:title" content="Human IMPDH Type 2 (IMPDH2)">
+<meta property="og:title" content="Human IMPDH Type 2 (IMPDH2) Assay Kit | NOVOCIB">
 <meta property="og:description" content="High-purity Human IMPDH Type 2 enzyme for research and drug discovery. Characterized for substrate affinity and inhibitor sensitivity.">
 <meta property="og:image" content="https://www.novocib.com/app/img/IMPDH-reaction.png">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Human IMPDH Type 2 (IMPDH2)">
+<meta name="twitter:title" content="Human IMPDH Type 2 (IMPDH2) Assay Kit | NOVOCIB">
 <meta name="twitter:description" content="High-purity Human IMPDH Type 2 enzyme for research and drug discovery. Characterized for substrate affinity and inhibitor sensitivity.">
 <meta name="twitter:image" content="https://www.novocib.com/app/img/IMPDH-reaction.png">
 
@@ -31,7 +36,8 @@ echo Banner::gen();
 ?>
 
 <section class="container mt-5">
-    <h1 class="underlinedTitle right"><span class="underlined novoblue right">Human IMPDH, Type II (IMPDH2)</span></h1>
+
+    <h1 class="underlinedTitle right"><span class="underlined novoblue right">Human IMPDH, Type II (IMPDH2) Assay Kit</span></h1>
     <div class="row">
         <div class="col-lg-6">
             <p>
@@ -75,7 +81,7 @@ echo Banner::gen();
             <h5>Ref. #E-Nov1</h5>
         </div>
         <div class="d-flex justify-content-center mt-4" itemscope itemtype="https://schema.org/Product">
-            <meta itemprop="name" content="Human IMPDH Type 2">
+            <meta itemprop="name" content="Human IMPDH Type 2 Assay Kit">
             <meta itemprop="description" content="High-purity Human IMPDH Type 2 enzyme for research and drug discovery applications.">
             <div itemprop="brand" itemtype="https://schema.org/Brand" itemscope>
                 <meta itemprop="name" content="NOVOCIB">
@@ -142,180 +148,9 @@ echo Banner::gen();
         </p>
     </div>
 </section>
-<section class="container my-5">
-    <h3 class="text-center text-primary mb-4">How to measure the activity of IMPDH 2</h3>
-    <ol class="list-group list-group-numbered mb-4">
-        <li class="list-group-item">Resuspend the content of the tube with lyophilized IMPDH type 2 (50–100 mU) in 200 µL of deionized water.</li>
-        <li class="list-group-item">Prepare fresh reaction buffer: 1 mL of 50 mM KH₂PO₄ pH 8.5, 5 mM DTT*, 1 mM IMP*, 36°C.</li>
-        <li class="list-group-item">Add 20 µL of IMPDH (or 10 µL for 100 µL) per 1 mL of buffer without NAD*.</li>
-        <li class="list-group-item">Add 200 µL of this mixture to 4 wells and preincubate at 36°C for 10 min.</li>
-        <li class="list-group-item">To start the reaction, add 5 µL of 40 mM NAD (1 mM final concentration) to 2 wells, leaving 2 others as a blank.</li>
-        <li class="list-group-item">Follow the reaction at 340 nm and 25–36°C.</li>
-    </ol>
-    <p class="text-muted"><em>*For best results, always use freshly prepared solutions of DTT, IMP, and NAD.</em></p>
-
-    <h5 class="mt-5 mb-3 text-center text-secondary">Absorbance at 340 nm (200 µL per well, Corning® 3797 microplate)</h5>
-    <div class="table-responsive">
-        <table class="table table-bordered table-striped text-center">
-            <thead class="table-light">
-                <tr>
-                    <th>Time (min)</th>
-                    <th>IMP 1 mM, no NAD</th>
-                    <th>IMP 1 mM, no NAD (duplicate)</th>
-                    <th>IMP 1 mM + 1 mM NAD</th>
-                    <th>IMP 1 mM + 1 mM NAD (duplicate)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>0</td>
-                    <td>0.118</td>
-                    <td>0.116</td>
-                    <td>0.167</td>
-                    <td>0.165</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>0.118</td>
-                    <td>0.116</td>
-                    <td>0.205</td>
-                    <td>0.203</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>0.119</td>
-                    <td>0.117</td>
-                    <td>0.244</td>
-                    <td>0.240</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>0.120</td>
-                    <td>0.116</td>
-                    <td>0.283</td>
-                    <td>0.278</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>0.121</td>
-                    <td>0.116</td>
-                    <td>0.322</td>
-                    <td>0.316</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>0.121</td>
-                    <td>0.116</td>
-                    <td>0.362</td>
-                    <td>0.354</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>0.121</td>
-                    <td>0.116</td>
-                    <td>0.401</td>
-                    <td>0.392</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>0.122</td>
-                    <td>0.116</td>
-                    <td>0.440</td>
-                    <td>0.430</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h5 class="mt-4">Calculated Slopes (AU/min)</h5>
-    <ul class="list-group mb-3">
-        <li class="list-group-item">IMP 1 mM, no NAD: 0.0006</li>
-        <li class="list-group-item">IMP 1 mM, no NAD (duplicate): 0</li>
-        <li class="list-group-item">IMP 1 mM + 1 mM NAD: 0.0391</li>
-        <li class="list-group-item">IMP 1 mM + 1 mM NAD (duplicate): 0.0378</li>
-    </ul>
-
-    <h5>Slope Mean (AU/min)</h5>
-    <ul class="list-group mb-3">
-        <li class="list-group-item">IMP 1 mM, no NAD: 0.0003</li>
-        <li class="list-group-item">IMP 1 mM + 1 mM NAD: 0.0385</li>
-    </ul>
-
-    <h5>Slope After Blank Subtraction</h5>
-    <p class="mb-3">AU/min: <strong>0.0382</strong></p>
-
-    <h5>Enzyme Activity Calculations</h5>
-    <ul class="list-group">
-        <li class="list-group-item">Activity in well (U/mL): 0.00796</li>
-        <li class="list-group-item">Dilution factor (20 µL per 1 mL): ×50</li>
-        <li class="list-group-item">Activity of enzyme solution (U/mL): <strong>0.398</strong></li>
-        <li class="list-group-item">Amount of enzyme per tube (Units): <strong>0.080</strong></li>
-    </ul>
-
-    <!-- Include Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <div class="container my-5">
-        <h5 class="text-center text-secondary mb-4">Kinetics of NADH Formation</h5>
-        <canvas id="nadGraph" width="600" height="400"></canvas>
-    </div>
-
-    <script>
-        const ctx = document.getElementById('nadGraph').getContext('2d');
-        const nadGraph = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: [0, 1, 2, 3, 4, 5, 6, 7],
-                datasets: [{
-                        label: 'IMP 1mM, no NAD',
-                        data: [0.118, 0.118, 0.119, 0.120, 0.121, 0.121, 0.121, 0.122],
-                        borderColor: 'blue',
-                        fill: false
-                    },
-                    {
-                        label: 'IMP 1mM, no NAD (duplicate)',
-                        data: [0.116, 0.116, 0.117, 0.116, 0.116, 0.116, 0.116, 0.116],
-                        borderColor: 'orange',
-                        fill: false
-                    },
-                    {
-                        label: 'IMP 1mM + 1mM NAD',
-                        data: [0.167, 0.205, 0.244, 0.280, 0.322, 0.362, 0.401, 0.440],
-                        borderColor: 'gray',
-                        fill: false
-                    },
-                    {
-                        label: 'IMP 1mM + 1mM NAD (duplicate)',
-                        data: [0.165, 0.203, 0.241, 0.276, 0.316, 0.354, 0.392, 0.430],
-                        borderColor: 'gold',
-                        fill: false
-                    }
-                ]
-            },
-            options: {
-                scales: {
-                    x: {
-                        title: {
-                            display: true,
-                            text: 'Time (min)'
-                        }
-                    },
-                    y: {
-                        title: {
-                            display: true,
-                            text: 'Absorbance at 340 nm'
-                        }
-                    }
-                }
-            }
-        });
-    </script>
-
-</section>
-
 <section class="bg-white py-4">
     <div class="container">
-        <h2 class="novo-blue mb-4 text-center">IMPDH - A Key Target for Therapeutic Applications</h2>
+        <h2 class="novo-blue mb-4">IMPDH - A Key Target for Therapeutic Applications</h2>
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <div class="card shadow-sm mb-4">
@@ -461,4 +296,45 @@ echo Banner::gen();
             </ol>
         </div>
     </div>
-</section>
+</section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      x�Z�n��b �
+�Rl'�6��pdgc$v�Ļ7Eaɑ8�!�˃�j�O��C�I��3<�`o�u� �D���7�)������gq�O�dg�\�'�̕x�c?�1�����H�B���ş�Hd��;;ڻ�r��{�/���79g1����gQ��4�F��q.��x�-��&$,�1�_ ��@0��i%������e�3��=w�����"����Z�e��}1f��u�F���/���~~�ĵ�X�@f��i�r��t~qu�f�NNߎٛ�>\���K�
+
+    ?3c�
+    _.D��^��$�:�Z��U/��X��|i5��A=Lƾ*/+==X!<�F�X1��뿡^�l�ӡ�񵖁2�S?����<� �-���#�"��=y���I�/�Lō�!ؓ��g~:�������/�.�o>���O6a�)O�i.�D�\d�X��x����kp/�똽�q,�/�"޳��h9��`�d9�'W�qy�|ų�xD��)�r�9�<�98g�s��zQ"UX\S�T.�|4s��ǫkX�o���fݥ�ac���Y�8q�Da�N�Õw�P�ŧ܁���vmR�L?��6�{����hV9�;�fp(�f�8� /JR�8�(�y��婎�����"���X���:���0r��PjM�2�V�[d
+            �w�������S,�Ν_
+            �d^ց�x*��2�b�D�q������1�+�b-�H�|�K�m^OkX�AIAX�H�9��w����<'�\*����U�$�J~�NhHmm
+            ��� �L*i��צ"I5�$B5k x+a��:���D� �0�z�#\�R���P�I� e��;M8;60:჌����O�q���{�+�v���/�,Yǳ���H���I���\��=JN��<-k�7O�:�@y��.ga*�H�"9uEr*cL;1��@�:C^pl1S!�G'�
+            f�ަ#q����ŝ�z �E4C1q���|���~f��� ������)Ǥ g����)t�N%��*a ���/Q�Hyڽ�pI��ER�՜"J�6���ʙ_\=\���E.?v�l������jjHj�����s~��z#�p����~h�������_'����Y�JQ�-�&�]/���(�����z�@Oͫ����f�.�+˂?�t ?4�<��Ȋ�}����_����1WzY�����=��,c��D�Sʡ_�N%:��2��2A�F[�S����D�K�d{��`�O���H�R�l֜��Ntl��5 �Qg)�a�0k�z�V�u�&֢"��{]n"��b
+            ��G�5
+            !�;���+�Q��"\z��d�wuqv�wm�f�����D=������z*�>�+�P��ll�S��צ�5:SKT�~��F���#���E2�w�Ҝ
+            +J";�~2]��K���x�\�0�b"9�x��?��ҏa#�~��̦�h��eݴ]����$ �,�>k��#���h�̣mŦ�ʄ��I�C�
+            ��S��b���2O����X��5�G3�(�M�fpD��T=n��:���8k�Rt�p
+            ���'�@c��b���/Y � c�#e����
+            ��a�9a�w�5wm��N)���ӸYxV����[
+            ��<Q���r�U�]��H� �:{;�B�!���敍n{���Q��>Ϲ*?3
+                ,d��,��Y.��Zx�)����h�3�`�A��iNy�є��@�w���?�)Z<�Sz�r�^*0jzL��0��y
+                    ��q�����p� �M\��&��ٲ͆�zT' uD��&�(}ҋ���h0t�W���8�*�$�q\U�wUwB�l��4���sz�8`-e'g�s>~�cv�\�0դ�.���[�|�p�����qP��n�?d�����75������0=��R�"h=j�I���-�
+                    �3�3%D؂��9�w�; ��(�� 0^�ŀ3�+Qr U"1�����8 X"���P�
+                    PƐ �j� �Ϙ�;�Z�!�S�VE�A=��E�8�}FD)�B�s�*:�z33f ������;��NVri���h'��Ń��F�k3|ؠ3��t�tm���@v@R��4̓�����������L��B�,Q�d@i�tI��
+                    �Ҏ��V�9%�~�t��4�:�K��:�4a�v�쉼+xD��������4�|�2�3 �� ��E�p�����^m79~(u Y���H��9(��]q g8A%��S c�u��xA}��H��?������q�:`���h[��AZ�A�$v�n�� gW��h �"��AwR�}Z����~=U���s��i�մ��� &
+                    ��k��y�R ���=�=���� �
+                    �^+���7�L�=�@c��+#ݶN������E�/g�",�T�vc�f{gsv0��O���l�����L;?��=���� �i�ѳ ��@��}���9O�Ri_�~�������h-�����o������hT%Z�$W`,�-����$NF��˫�7y�f���N+cN�M'�M=�����
+                    �⽏��6 �I�M���
+                    ��L�'�f!��C8 U���I�:c�"qfw�LLZ3��w7� ��cl}�mfX̪�,�MSl��:R�ԩ���Co��;�E����ݛݏ@@ëM��ͥ���ؙ.�ᯪYӪha�nP���<>�͆K�f�i���B�T�:��V)`۟��u�|u���Ǐ�A�a
+                        �Y!�U�|g����2���j�mK�C�kz�l��Ӡ�����ū&���v}�jSg����`߅&�o`�O��� �g��?����l�|�� �B�����bc�#d���=��W��o\����/���Y�*s;P���Z�7��~ˬ�>t�\�^ܼ7Y �o�:-�g�l.9�cV�h��W_ݵ7Ը)�����hC&���Qkf�����bq;���p^� @�)9�� ����X�*��2�6��!�TkQ�Ѿ:7�љ����3��*�95:߬�V��!ڎ�����d�v�ʴ�v��u���C�@��`X02��N���g!�;l��>�,X+�9(I;�H�\N�0�Oء��DXa�=�4���D��ٵ�����ca�Ba�56(��́�=���>�ul���zK���9�6'ͼh�B��ru�i�0ZM����[��/`&.6��x4�M�uG��t�#|jIj6����:ͱ*�N y�WX �1ƩWl���|ö����g؁�3��C)�y�p����T�U��,�<b���!,���Zy�0PvP��EbX�`A���׿��                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             x��}Lw�U���F�YvÉ
+                            �]Kkq"�ev-*CLSګ=�w��vT�tE�0��L6LE|�T�q$���2p�eA�v�+�-5��?m�|?����=�>:-�⌃!��f��h��@�
+                            0��h�qs��+��Qp�wﶠ���/cm�X�@�E-�A�LW��\#�j*1��s�x�o�v���]^�k*�d�\_:�|�@ȣ
+                            �fuU����}_Y�u���-�|.�<����f��߯nl��1s��[`��ey��WՋ����#&��Iw��z����=�r��� ���09J�*lWc[aV�ܮVs�^�Ҭ'�_�T�`�%U8J��*�12\/S�-Ӳ��1�M�����s,�V�t7��g��0�� �|�p�aPQ���mk֕쯚�3F˂��t8fSH�D�T�QZ�Z�����G�74�$t���?���h1������� @�(���(�Sf�m
+                                M�vUP$:X�vƽH�:�8d�I��i�۱���>����s��𲥳vm�
+                                =�0�P�
+                                ���5��t��Hͫ��%����7�C_��Ke��{M���<km<e�(�� /c�6�ܣ�A~�䚇P���v�����|����ӏ��S���ĵ�
+                                    Bc���ׄ^^ڽ).5=�����=�o�;��\�C{�ŋ(z�f]
+                                    ]����7��r
+                                    r�E�A�M1��盥!�_�+�z��̀(���7R� �;e �1sMMw�W�`�_V�����j��S? ��&�z���k�=/?0v^�ܲ45�%f%���
+                                    ������(��( �JL����[mU�'���ٷ���c^��3C7;�-i�&c���E�'���9�)>�yuUe�G�;*�0=�#6b�Q8j ��2��Ę�����e�=,��ul�0n�.��f�#Ej�o�m�u��t�H!�B��,�5��\�x޴>�u��sҰ�5��3�RjJ���o�q�t��=���[���kv9���f��yE�Ӳ�������Huϸuʱ��q`�D �}.�q
+                                    �}�w��w"�ŗ�
+                                    ���FK�g�E�𰨰p`4��$)3�D��s��X�����TO~��/��r�X�*�����
+                                    *�i *Y��EuT��Lf����"@�����)����^�܉n���L�tԂ�Ԇ����?�Đ�<Õ��[��6LowQ{�� �QPh�)2\��~����c09eؚڀ�)(˜��_�wn�����A��>�|�����:�4:��
+                                        M9�9�Ϟ6d�V��s36B-pK�5!Z��V��kˎm�/\6�Wdv�J����`�f�Z���m_WoN���;��b �
+                                        }5��[W��hJ��4��
+                                        F`�j� R�()�b��gj|ɟ/��a�U�]����&^ϛ��{\�                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            

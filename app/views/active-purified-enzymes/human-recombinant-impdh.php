@@ -23,6 +23,52 @@ ob_start(); ?>
 
 <!-- Canonical URL -->
 <link rel="canonical" href="https://www.novocib.com/convenient-assay-kits/human-recombinant-impdh" />
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Active Purified Enzymes for Nucleotide Metabolism Research",
+        "description": "High-purity enzymes for nucleotide metabolism research, drug discovery, and biopharmaceutical development.",
+        "url": "https://www.novocib.com/active-purified-enzymes",
+        "publisher": {
+            "@type": "Organization",
+            "name": "NOVOCIB",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.novocib.com/app/img/logo.png"
+            }
+        },
+        "mainEntity": [{
+            "@type": "FAQPage",
+            "mainEntity": [{
+                    "@type": "Question",
+                    "name": "What are the main applications of NOVOCIB's purified enzymes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our enzymes are widely used in drug discovery, antiviral and anticancer research, nucleotide metabolism studies, and biochemical screening assays. They are particularly valuable for in vitro phosphorylation studies and nucleoside analogue research."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Are these enzymes suitable for high-throughput screening?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, our enzymes are provided in lyophilized form with high purity and activity, making them ideal for high-throughput screening applications and reproducible research."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What quality controls are performed on the enzymes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Each enzyme batch undergoes rigorous quality control including activity assays, purity assessment by SDS-PAGE, and endotoxin testing to ensure research-grade quality and consistency."
+                    }
+                }
+            ]
+        }]
+    }
+</script>
 <?php $metas = ob_get_clean();
 
 
