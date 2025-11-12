@@ -16,7 +16,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
 
 <?= Banner::gen() ?>
 <section class="container mt-5">
-    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Human PNP (EC 2.4.2.1)</span></h2>
+    <h2 class="underlinedTitle right"><span class="underlined novoblue right">Purine Nucleoside Phosphorylase (EC 2.4.2.1)</span></h2>
     <div class="row">
         <div class="col-lg-6">
             <p>

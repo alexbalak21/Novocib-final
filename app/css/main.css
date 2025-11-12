@@ -945,3 +945,10 @@ header .brand {
 .bg-lightred {
   background-color: #faa0a0 !important;
 }
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.3em;
+  filter: invert(100%); /* makes black SVG white */
+}

@@ -26,7 +26,7 @@ return [
 
     // Active Purified Enzymes
     '/active-purified-enzymes' => 'app/views/active-purified-enzymes/index.php',
-    '/active-purified-enzymes/impdh-recombinant-enzyme' => 'app/views/active-purified-enzymes/impdh-recombinant-enzyme.php',
+    '/active-purified-enzymes/human-recombinant-impdh' => 'app/views/active-purified-enzymes/human-recombinant-impdh.php',
     '/active-purified-enzymes/human-recombinant-hgprt' => 'app/views/active-purified-enzymes/human-recombinant-hgprt.php',
     '/active-purified-enzymes/recombinant-adenosine-kinase' => 'app/views/active-purified-enzymes/recombinant-adenosine-kinase.php',
     '/active-purified-enzymes/recombinant-deoxycytidine-kinase' => 'app/views/active-purified-enzymes/recombinant-deoxycytidine-kinase.php',
@@ -49,7 +49,7 @@ return [
     '/convenient-assay-kits/itp-ase-assay-kit' => 'app/views/convenient-assay-kits/itp-ase-deficiency-assay-kit.php',
     '/convenient-assay-kits/adk-phosphorylation-assay-kit' => 'app/views/convenient-assay-kits/adk-phosphorylation-assay-kit.php',
     '/convenient-assay-kits/dck-phosphorylation-assay-kit' => 'app/views/convenient-assay-kits/dck-phosphorylation-assay-kit.php',
-    '/convenient-assay-kits/human-recombinant-impdh' => 'app/views/convenient-assay-kits/human-recombinant-impdh.php',
+    // '/convenient-assay-kits/human-recombinant-impdh' => 'app/views/convenient-assay-kits/human-recombinant-impdh.php',
     '/convenient-assay-kits/bacterial-recombinant-impdh' => 'app/views/convenient-assay-kits/bacterial-recombinant-impdh.php',
     '/convenient-assay-kits/human-recombinant-pnp' => 'app/views/convenient-assay-kits/human-recombinant-pnp.php',
     '/convenient-assay-kits/adk-assay-kit' => 'app/views/convenient-assay-kits/adk-assay-kit.php',

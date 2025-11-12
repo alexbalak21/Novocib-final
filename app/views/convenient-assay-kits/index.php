@@ -192,11 +192,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/app/templates/new_base.php";
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body text-center p-4">
                         <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
-                            <a href="/convenient-assay-kits/human-recombinant-impdh" class="text-decoration-none">
+                            <a href="/active-purified-enzymes/human-recombinant-impdh" class="text-decoration-none">
                                 <i class="fas fa-dna fa-2x text-primary"></i>
                             </a>
                         </div>
-                        <h3 class="h5"><a href="/convenient-assay-kits/human-recombinant-impdh" class="text-decoration-none">Human IMPDH Type II</a></h3>
+                        <h3 class="h5"><a href="/active-purified-enzymes/human-recombinant-impdh" class="text-decoration-none">Human IMPDH Type II</a></h3>
                     </div>
                 </div>
             </div>

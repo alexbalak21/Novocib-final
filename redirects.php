@@ -27,16 +27,18 @@ $redirects = [
 
 
     // Convenient Assay Kits
+    "/convenient-assay-kits/human-recombinant-impdh" => "/active-purified-enzymes/human-recombinant-impdh",
+    "/active-purified-enzymes/impdh-recombinant-enzyme" => "/active-purified-enzymes/human-recombinant-impdh",
     "/Convenient_Assay_Kits.html" => "/convenient-assay-kits",
     "/PRPPS_Assay_Kit.html" => "/convenient-assay-kits/prpp-s-assay-kit",
     "/PRPP_Assay_Kit.html" => "/convenient-assay-kits/prpp-assay-kit",
     "/AMPDA_Assay_Kit.html" => "/convenient-assay-kits/ampda-assay-kit",
     "/ADK_Phosphorylation_Assay_Kit.html" => "/convenient-assay-kits/adk-phosphorylation-assay-kit",
-    "/Human_Recombinant_IMPDH.html" => "/convenient-assay-kits/human-recombinant-impdh",
+    "/Human_Recombinant_IMPDH.html" => "/active-purified-enzymes/human-recombinant-impdh",
     "/Human_Recombinant_PNP.html" => "/convenient-assay-kits/human-recombinant-pnp",
     "/ADK_Assay_Kit.html" => "/convenient-assay-kits/adk-assay-kit",
     "/HPRT_Assay_Kit.html" => "/convenient-assay-kits/hprt-assay-kit",
-    "//HPRT_Assay_Kit.html" => "/convenient-assay-kits/hprt-assay-kit",
+    "/HPRT_Assay_Kit.html" => "/convenient-assay-kits/hprt-assay-kit",
     "/dCK_Phosphorylation_In_Vitro_Assay_Service" => "/convenient-assay-kits/dck-phosphorylation-assay-kit",
     "/Convenient_Assay_Kits" => "/convenient-assay-kits",
 
