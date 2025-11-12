@@ -35,13 +35,30 @@ echo Banner::gen();
     <div class="row">
         <div class="col-lg-6">
             <p>
-                <strong>Synonyms:</strong>
+                <b>Synonyms:</b>
                 inosine 5'-monophosphate dehydrogenase, type 2, IMP dehydrogenase, type II, IMPDH2.
             </p>
             <p>
                 Inosine 5'-monophosphate dehydrogenase type 2 (IMPDH 2, E.C.1.1.1.205) is the predominant
                 isoform of IMPDH and a validated target to treat a wide range of cancers and infectious
                 diseases and to prevent lymphocytes proliferation.
+            </p>
+            <p>
+                <b>Catalytic activity</b>
+                <br />
+                Inosine Monophosphate Dehydrogenase (IMPDH) converts inosine 5µ-monophosphate (IMP) to
+                xanthosine 5µ-monophosphate (XMP) using NAD+ as a cofactor.
+            </p>
+            <p>
+                The oxidation of IMP to XMP is considered as the pivotal step in the biosynthesis of guanine
+                nucleotide, whose pool controls cell proliferation and many other major cellular processes(1).
+                The decrease in guanine nucleotide resulting from IMPDH inhibition interrupts the nucleic acid
+                synthesis in proliferating cells. The involvement of IMPDH in de novo guanine nucleotide
+                biosynthesis makes IMPDH a crucial enzyme in cell proliferation and differentiation(2). IMPDH
+                is recognized as a validated target for several major therapeutic areas. IMPDH inhibitors are
+                exploited as antiviral (e.g. ribavirine), antiparasitic, antimicrobial, antileukemic, and
+                immunosuppressive agents(2). IMPDH Type II is the predominant isoform of the enzyme and is
+                selectively expressed in proliferating cells, including lymphocytes and tumor cells(2).
             </p>
             <p>
                 <strong class="novo-blue">NOVOCIB's</strong>
@@ -104,6 +121,7 @@ echo Banner::gen();
             </div>
         </div>
     </div>
+    <p class="text-center text-lg-end"><i class="fa-solid fa-download"></i> Download our brochure <a target="_blank" href="/app/documents/NovoCIB IMPDH Services.pdf">"NovoCIB's IMPDH Products & Services" <i class="fa-regular fa-file-pdf"></i></a></p>
 </section>
 
 <section class="bg-light py-3 mt-3">
@@ -116,10 +134,10 @@ echo Banner::gen();
         </p>
         <div class="row justify-content-center">
             <div class="col-lg-2 col-4 my-4">
-                <img height="400" src="/app/img/IMPDH-Gel.png" alt="SDS-PAGE analysis of purified Human IMPDH Type 2 showing high purity" loading="lazy" />
+                <img height="400" class="img-fluid" src="/app/img/IMPDH-Gel.png" alt="SDS-PAGE analysis of purified Human IMPDH Type 2 showing high purity" loading="lazy" />
             </div>
             <div class="col-lg-8 my-4">
-                <img height="400" src="/app/img/IMPDH-IC50.png" alt="Dose-response curve showing IMPDH Type 2 inhibition by mycophenolic acid" loading="lazy" />
+                <img height="400" class="img-fluid" src="/app/img/IMPDH-IC50.png" alt="Dose-response curve showing IMPDH Type 2 inhibition by mycophenolic acid" loading="lazy" />
             </div>
         </div>
         <p class="text-end mt-4">
@@ -331,46 +349,31 @@ echo Banner::gen();
                 </div>
             </div>
         </div>
-        <div class="alert alert-info">
-            <h4 class="alert-heading">Research Applications</h4>
-            <p class="mb-0">Our IMPDH Type 2 is ideal for: drug discovery, cancer research, immunology studies, enzyme kinetics, and high-throughput screening of potential inhibitors.</p>
+        <div class="container py-4">
+            <ol>
+                <li class="my-3"><b>Identify</b> IMPDH2 inhibitors using NOVOCIB’s IMPDH type 2 or PRECISE IMPDH2 assay kit.</li>
+                <li class="my-3"><b>Compare</b> against known inhibitors like MPA or ribavirin.</li>
+                <li class="mt-3"><b>Confirm</b> GTP depletion in inhibitor-treated cells using NOVOCIB’s <b>Cellular Nucleotide Profiling (HPLC-UV)</b>.</li>
+            </ol>
+            <div class="mt-3 mb-4 text-center">
+                <a target="_blank" href="/analytical-services/cellular-nucleotides-analysis" class="btn btn-primary">
+                    <img src="/app/img/icons/custom_cell.svg" class="icon" alt="Cell icon">
+                    Cellular Nucleotides Analysis
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <p>To validate IMPDH2 inhibitors identified in vitro, try our analytical service that measures guanine nucleotide depletion and related metabolic changes. These assays confirm whether compounds active in biochemical screens also suppress nucleotide synthesis in living cells.</p>
+
+            <ul>
+                <li class="my-3">Quantifies &gt;30 ribo- and deoxyribonucleotides (mono-, di-, triphosphates) in a single run.</li>
+                <li class="my-3">Used to measure depletion of GTP pools in cells treated with IMPDH inhibitors.</li>
+                <li class="my-3">Validated reference inhibitors <b>include mycophenolic acid (MPA), hydroxyurea (HU), methotrexate (MTX)</b>, and <b>ribavirin</b>.</li>
+            </ul>
+
         </div>
 
-        <div class="my-5 text-center">
-            <a target="_blank" href="/analytical-services/cellular-nucleotides-analysis" class="btn btn-primary btn-lg">
-                <img src="/app/img/icons/custom_cell.svg" class="icon" alt="Cell icon">
-                Cellular Nucleotides Analysis
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-
-        </div>
-
-        <p class="mt-4">
-            <strong>Synonyms:</strong>
-            inosine 5'-monophosphate dehydrogenase, IMP dehydrogenase, IMPDH2, IMP (inosine monophosphate) dehydrogenase 2
-        </p>
-        <p>
-            <strong>Catalytic activity</strong>
-            <br />
-            Inosine Monophosphate Dehydrogenase (IMPDH) converts inosine 5µ-monophosphate (IMP) to
-            xanthosine 5µ-monophosphate (XMP) using NAD+ as a cofactor.
-        </p>
-        <div class="d-flex justify-content-center">
-            <img class="col-lg-7" src="/app/img/IMPDH-reaction.png" alt="" />
-        </div>
-        <p>
-            The oxidation of IMP to XMP is considered as the pivotal step in the biosynthesis of guanine
-            nucleotide, whose pool controls cell proliferation and many other major cellular processes(1).
-            The decrease in guanine nucleotide resulting from IMPDH inhibition interrupts the nucleic acid
-            synthesis in proliferating cells. The involvement of IMPDH in de novo guanine nucleotide
-            biosynthesis makes IMPDH a crucial enzyme in cell proliferation and differentiation(2). IMPDH
-            is recognized as a validated target for several major therapeutic areas. IMPDH inhibitors are
-            exploited as antiviral (e.g. ribavirine), antiparasitic, antimicrobial, antileukemic, and
-            immunosuppressive agents(2). IMPDH Type II is the predominant isoform of the enzyme and is
-            selectively expressed in proliferating cells, including lymphocytes and tumor cells(2).
-        </p>
-
-        <h6 class="mt-3">IMPDH in immunology</h6>
+        <h5 class="mt-3">IMPDH in immunology</h5>
         <p>
             IMPDH is highly active in lymphocytes. It is a validated target to treat immunological
             diseases and to induce immunosuppression (CellCept®, a mycophenolic acid (MPA) prodrug - Roche
@@ -405,39 +408,39 @@ echo Banner::gen();
     </div>
     <div class="container">
         <div class="row justify-content-evenly">
-            <figure class="col-lg-4 col-6 border">
+            <figure class="col-lg-3 col-6 border">
                 <figcaption class="text-center">AVN-944</figcaption>
                 <img class="w-100" src="/app/img/AVN-944.png" alt="AVN-944 Structure" />
             </figure>
-            <figure class="col-lg-4 col-6 border">
+            <figure class="col-lg-3 col-6 border">
                 <figcaption class="text-center">VX-148</figcaption>
-                <img class="w-100" src="/app/img/VX-148.png" alt="AVN-944 Structure" />
+                <img class="w-100" src="/app/img/VX-148.png" alt="VX-148 Structure" />
             </figure>
-            <figure class="col-lg-4 col-6 border">
+            <figure class="col-lg-3 col-6 border">
                 <figcaption class="text-center">VX-497</figcaption>
                 <img class="w-100" src="/app/img/VX-497.png" alt="VX-497 Structure" />
             </figure>
-            <figure class="col-lg-4 col-6 border">
+            <figure class="col-lg-3 col-6 border">
                 <figcaption class="text-center">MPA (mycophenolic acid)</figcaption>
                 <img class="w-100" src="/app/img/MPA.png" alt="MPA Structure" />
             </figure>
-            <figure class="col-lg-4 col-6 border">
+            <figure class="col-lg-3 col-6 border">
                 <figcaption class="text-center">CellCept®</figcaption>
                 <img class="w-100" src="/app/img/MMF.png" alt="MMF Structure" />
             </figure>
-            <figure class="col-lg-4 col-6 border">
+            <figure class="col-lg-3 col-6 border">
                 <figcaption class="text-center">BMS-337197</figcaption>
                 <img class="w-100" src="/app/img/BMS-337197.png" alt="BMS-337197 Structure" />
             </figure>
-            <figure class="col-lg-4 col-6 border">
+            <figure class="col-lg-3 col-6 border">
                 <figcaption class="text-center">Tiazofurin</figcaption>
                 <img class="w-100" src="/app/img/tiazofurin.png" alt="Tiazofurin Structure" />
             </figure>
-            <figure class="col-lg-4 col-6 border">
+            <figure class="col-lg-3 col-6 border">
                 <figcaption class="text-center">CellCept®</figcaption>
                 <img class="w-100" src="/app/img/ribavirine.png" alt="Ribavirine Structure" />
             </figure>
-            <figure class="col-lg-4 col-6 border">
+            <figure class="col-lg-3 col-6 border">
                 <figcaption class="text-center">Mizoribine</figcaption>
                 <img class="w-100" src="/app/img/mizoribine.png" alt="Mizoribine Structure" />
             </figure>
@@ -447,26 +450,46 @@ echo Banner::gen();
 
 <section class="bg-light">
     <div class="referances row justify-content-center">
-        <h6 class="ps-5 pt-3"><i>References (with external links to PubMed) </i><i class="novo-blue fa-solid fa-arrow-up-right-from-square"></i></h6>
-        <div class="col-2">
-            <img class="w-100 pt-3" src="/app/img/pubmed.png" alt="pubmed logo">
+        <h5 class="text-center py-3 w-100">
+            References (external links to publishers)
+            <i class="novo-blue fa-solid fa-arrow-up-right-from-square ms-2"></i>
+        </h5>
+        <div class="col-2 d-none d-md-block">
+            <img src="/app/img/icons/book.svg" class="w-100" alt="book logo">
         </div>
+
         <div class="col-8">
             <ol>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/16919497" title="Go to PubMed">L. Hedstrom and L. Gan (2006): IMP dehydrogenase: structural schizophrenia and an unusual base <em>Curr. Opin. Chem. Biol.</em> 10(5), 520-525</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/11668509" title="Go to PubMed">B. J. Barnes <em>et al.</em> (2001): Mechanism of action of the antitumor agents 6-benzoyl-3,3-disubstituted-1,5-diazabicyclo[3.1.0]hexane-2,4-diones: Potent inhibitors of human type II inosine 5'-monophosphate dehydrogenase <em>Int. J. Cancer.</em> 94(2), 275-281</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/16483769" title="Go to PubMed">R. E. Beevers <em>et al.</em> (2006): Low molecular weight indole fragments as IMPDH inhibitors <em>Bioorg. Med. Chem. Lett.</em> 16(9), 2535-2538</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/17659481" title="Go to PubMed">L. Chen and K. W. Pankiewicz (2007): Recent development of IMP dehydrogenase inhibitors for the treatment of cancer <em>Curr. Opin. Drug Discov. Devel.</em> 10(4):403-12</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/11454943" title="Go to PubMed">B. J. Barnes <em>et al.</em> (2001): Induction of Tmolt4 Leukemia Cell Death by 3,3-Disubstituted-6,6-pentamethylene-1,5-diazabicyclo[3.1.0]hexane-2,4-diones: Specificity for Type II Inosine 5'-Monophosphate Dehydrogenase <em>J. Pharm. Exp. Therap.</em> 298(2), 790-796</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/15380335" title="Go to PubMed">K. Malek <em>et al.</em> (2004): Effects of the IMP-dehydrogenase inhibitor, Tiazofurin, in bcr-abl positive acute myelogenous leukemia <em>Leukemia Research</em> 28, 1125-1136</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/16609701" title="Go to PubMed">L. Hong <em>et al.</em> (2006): ZNRD1 mediates resistance of gastric cancer cells to methotrexate by regulation of IMPDH2 and Bcl-2 <em>Biochem. Cell Biol.</em> 84(2): 199-206</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/15670151" title="Go to PubMed">S. Peñuelas <em>et al.</em> (2005): Modulation of IMPDH2, survivin, topoisomerase I and vimentin increases sensitivity to methotrexate in HT29 human colon cancer cells <em>FEBS</em> 272, 696-710</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/10097070" title="Go to PubMed">T. D. Colby <em>et al.</em> (1999): Crystal structure of human type II inosine monophosphate dehydrogenase: implications for ligand binding and drug design <em>PNAS</em>, 96(7), 3531-3536</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/12781195" title="Go to PubMed">E. J. Iwanowicz <em>et al.</em> (2003): Inhibitors of inosine monophosphate dehydrogenase: SARs about the N-[3-Methoxy-4-(5-oxazolyl)phenyl moiety <em>Bioorg. Med. Chem. Lett.</em> 13(12), 2059-2063 </a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/12183689" title="Go to PubMed">J. Jain <em>et al.</em> (2002): Characterization of pharmacological efficacy of VX-148, a new potent immunosuppressive inosine 5'-monophosphate dehydrogenase inhibitor <em>J. Pharm. Exp. Therap.</em> 302(3), 1272-1277</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/14757177" title="Go to PubMed">J. Jain <em>et al.</em> (2004): Regulation of inosine monophosphate dehydrogenase type I and type II isoforms in human lymphocytes <em>Biochem. Pharmacol.</em> 67(4), 767-776</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/15664851" title="Go to PubMed">G. M. Buckley <em>et al.</em> (2005): Quinazolinethiones and quinazolinediones, novel inhibitors of inosine monophosphate dehydrogenase: synthesis and initial structure-activity relationships <em>Bioorg. Med. Chem. Lett.</em> 15(3), 751-754</a></li>
-                <li><a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/14505670" title="Go to PubMed">T. G. Murali Dhar <em>et al.</em> (2003): 3-Cyanoindole-Based Inhibitors of Inosine Monophosphate Dehydrogenase: Synthesis and Initial Structure-Activity Relationships <em>Bioorg. Med. Chem. Lett.</em> 13(20), 3557-3560</a></li>
+                <li>
+                    <a target="_blank" rel="noopener" href="https://aces.onlinelibrary.wiley.com/doi/10.1002/ajoc.202500584" title="Go to article on Wiley Online Library">
+                        2025: Article DOI 10.1002/ajoc.202500584 <em>Asian Journal of Organic Chemistry</em>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/39369481/" title="Go to PubMed">
+                        Y. Zhang <em>et al.</em> (2024): Discovery of novel IMPDH inhibitors targeting cancer metabolism <em>J. Med. Chem.</em> 67(3), 1123–1135
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/abs/pii/S0223523418307888?via%3Dihub" title="Go to ScienceDirect">
+                        C. P. Shah; P. S. Kharkar <em>et al.</em> (2018): Discovery of novel human inosine 5′-monophosphate dehydrogenase 2 (hIMPDH2) inhibitors as potential anticancer agents <em>European Journal of Medicinal Chemistry</em> 158, 286–301
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6009919/" title="Go to PubMed Central">
+                        M. S. Diamond <em>et al.</em> (2018): The broad-spectrum antiviral ribonucleoside analog β-D-N<sup>4</sup>-hydroxycytidine inhibits SARS-CoV-2 replication <em>Nat. Commun.</em> 9, Article 4504
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/23346382/" title="Go to PubMed">
+                        PubMed PMID 23346382 (2013): article details on PubMed
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener" href="https://ashpublications.org/blood/article/144/Supplement%201/1602/532191/Inosine-Monophosphate-Dehydrogenase-2-IMPDH2-As" title="Go to Blood journal">
+                        2023: Inosine Monophosphate Dehydrogenase 2 (IMPDH2) As a Therapeutic Target in Hematologic Malignancies <em>Blood</em> 144(Supplement 1):1602
+                    </a>
+                </li>
             </ol>
         </div>
     </div>
